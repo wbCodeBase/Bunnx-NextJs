@@ -1,16 +1,33 @@
 import localFont from "next/font/local";
+import { Noto_Sans, Quando } from "next/font/google";
 import "./globals.css";
+import Header from "./components/layout/Header";
+import Footer from "./components/layout/Footer";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
   weight: "100 900",
 });
+
 const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
   weight: "100 900",
 });
+
+const notoSans = Noto_Sans({
+  subsets: ['latin'],
+  variable: '--font-notoSans',
+  display: 'swap',
+})
+
+const quando = Quando({
+  weight: ['400'],
+  subsets: ['latin'],
+  variable: '--font-quando',
+  display: 'swap',
+})
 
 export const metadata = {
   title: "Create Next App",
@@ -20,10 +37,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      <body className={`${geistSans.variable} ${quando.variable} ${geistMono.variable} ${notoSans.variable} antialiased`}
       >
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
