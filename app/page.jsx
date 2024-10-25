@@ -7,7 +7,6 @@ import OurServices from "./components/home/OurServices";
 import TechStacknexpertise from "./components/home/TechStacknexpertise";
 import CaseStudiesnProjects from "./components/home/CaseStudiesnProjects";
 import WhyChooseUs from "./components/home/WhyChooseUs";
-import ClientTestimonials from "./components/home/ClientTestimonials";
 import IndustryWeServed from "./components/home/IndustryWeServed";
 import NewComponent from "./components/home/NewComponent";
 import CtaSection from "./components/home/CtaSection";
@@ -42,7 +41,6 @@ export default function Home() {
 
       <IndustryWeServed />
 
-      {/* <ClientTestimonials /> */}
 
 
 
