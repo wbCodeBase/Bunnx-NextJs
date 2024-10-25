@@ -8,7 +8,11 @@ import TechStacknexpertise from "./components/home/TechStacknexpertise";
 import CaseStudiesnProjects from "./components/home/CaseStudiesnProjects";
 import WhyChooseUs from "./components/home/WhyChooseUs";
 import ClientTestimonials from "./components/home/ClientTestimonials";
+import IndustryWeServed from "./components/home/IndustryWeServed";
+import NewComponent from "./components/home/NewComponent";
 import CtaSection from "./components/home/CtaSection";
+import CtaSection2 from "./components/home/CtaSection2";
+import CtaSection3 from "./components/home/CtaSection3";
 
 
 
@@ -20,15 +24,26 @@ export default function Home() {
 
       <NumericCounterInfo />
 
+      <TechStacknexpertise />
+
       <OurServices />
 
-      <TechStacknexpertise />
+      <CtaSection />
+
+      <NewComponent />
 
       <WhyChooseUs />
 
-      <ClientTestimonials />
+      <CtaSection2 />
 
-      <CtaSection />
+      <CaseStudiesnProjects />
+
+      <CtaSection3 />
+
+      <IndustryWeServed />
+
+      {/* <ClientTestimonials /> */}
+
 
 
     </>

@@ -1,5 +1,5 @@
 import localFont from "next/font/local";
-import { Noto_Sans, Quando } from "next/font/google";
+import { AR_One_Sans, Quando } from "next/font/google";
 import "./globals.css";
 import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
@@ -16,9 +16,9 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
-const notoSans = Noto_Sans({
+const arOneSans = AR_One_Sans({
   subsets: ['latin'],
-  variable: '--font-notoSans',
+  variable: '--font-arOneSans',
   display: 'swap',
 })
 
@@ -37,7 +37,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${quando.variable} ${geistMono.variable} ${notoSans.variable} antialiased`}
+      <body className={`${geistSans.variable} ${quando.variable} ${geistMono.variable} ${arOneSans.variable} antialiased`}
       >
         <Header />
         {children}

@@ -30,17 +30,13 @@ const WhyChooseUs = () => {
                     </div>
 
                     <div className='lg:w-[47%] w-full flex rounded-md'>
-                        {/* <div className='border'>Expertise Across Technologies</div>
-                        <div className='border'>Custom Solutions Tailored to Your Needs</div>
-                        <div className='border'>Focus on Quality and Performance</div>
-                        <div className='border'>Comprehensive Services Under One Roof</div> */}
 
 
 
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 p-1">
                             {/* Card 1 style={{ boxShadow: '0 4px 8px rgba(0, 0, 0, 0.15)'}}*/}
 
-                            <div style={{ boxShadow: '0 2px 6px rgba(0, 0, 0, 0.15)' }} className="group relative px-6 overflow-hidden rounded-lg flex items-center justify-center flex-col transition-all duration-300">
+                            <div style={{ boxShadow: '0 2px 6px rgba(0, 0, 0, 0.15)' }} className="group relative py-4 px-6 overflow-hidden rounded-lg flex items-center justify-center flex-col transition-all duration-300">
 
                                 <div className="absolute inset-0 bg-cover bg-center opacity-0 group-hover:opacity-100 transition-opacity duration-500"
                                     style={{ backgroundImage: 'url("https://c4.wallpaperflare.com/wallpaper/410/77/199/5bd0bdc12d414-wallpaper-preview.jpg")' }}
@@ -61,7 +57,7 @@ const WhyChooseUs = () => {
                             </div>
 
                             {/* Card 2 */}
-                            <div style={{ boxShadow: '0 2px 6px rgba(0, 0, 0, 0.15)' }} className="group relative px-6 overflow-hidden rounded-lg flex items-center justify-center flex-col transition-all duration-300">
+                            <div style={{ boxShadow: '0 2px 6px rgba(0, 0, 0, 0.15)' }} className="group relative py-4 px-6 overflow-hidden rounded-lg flex items-center justify-center flex-col transition-all duration-300">
 
                                 <div className="absolute inset-0 bg-cover bg-center opacity-0 group-hover:opacity-100 transition-opacity duration-500"
                                     style={{ backgroundImage: 'url("https://img.pikbest.com/backgrounds/20200512/abstract-black-background-with-square-purple-and-blue-frame-luxury-futuristic-technology-v_1761876jpg!w700wp")' }}
@@ -82,7 +78,7 @@ const WhyChooseUs = () => {
                             </div>
 
                             {/* Card 3 */}
-                            <div style={{ boxShadow: '0 2px 6px rgba(0, 0, 0, 0.15)' }} className="group relative px-6 overflow-hidden rounded-lg flex items-center justify-center flex-col transition-all duration-300">
+                            <div style={{ boxShadow: '0 2px 6px rgba(0, 0, 0, 0.15)' }} className="group relative py-4 px-6 overflow-hidden rounded-lg flex items-center justify-center flex-col transition-all duration-300">
 
                                 <div className="absolute inset-0 bg-cover bg-center opacity-0 group-hover:opacity-100 transition-opacity duration-500"
                                     style={{ backgroundImage: 'url("https://www.phpartners.com/wp-content/uploads/2023/01/AdobeStock_222683930-scaled.jpeg")' }}
@@ -103,10 +99,8 @@ const WhyChooseUs = () => {
                             </div>
 
 
-
-
                             {/* Card 4 */}
-                            <div style={{ boxShadow: '0 2px 6px rgba(0, 0, 0, 0.15)' }} className="group relative px-6 overflow-hidden rounded-lg flex items-center justify-center flex-col transition-all duration-300">
+                            <div style={{ boxShadow: '0 2px 6px rgba(0, 0, 0, 0.15)' }} className="group relative py-4 px-6 overflow-hidden rounded-lg flex items-center justify-center flex-col transition-all duration-300">
 
                                 <div className="absolute inset-0 bg-cover bg-center opacity-0 group-hover:opacity-100 transition-opacity duration-500"
                                     style={{ backgroundImage: 'url("https://png.pngtree.com/background/20210710/original/pngtree-tech-black-gold-line-particle-business-background-picture-image_994449.jpg' }}

@@ -2,7 +2,7 @@ import React from 'react'
 import TechStackMarquee from './TechStackMarquee';
 import { AiOutlineStar } from "react-icons/ai";
 
-const TechStacknexpertise = () => {
+const NewComponent = () => {
     return (
         <>
 
@@ -41,4 +41,7 @@ const TechStacknexpertise = () => {
     )
 }
 
-export default TechStacknexpertise
+export default NewComponent;
+
+
+
