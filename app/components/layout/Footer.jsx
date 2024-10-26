@@ -1,6 +1,5 @@
 import React from 'react'
 import './layout.css'
-import Link from 'next/link'
 import Image from 'next/image'
 
 import bigLogo from "/public/big-logo.png"
