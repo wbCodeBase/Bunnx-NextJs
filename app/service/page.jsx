@@ -6,9 +6,9 @@ const Service = () => {
 
     const heroSectionData = {
         title: "Enterprise",
-        subtitle: "Software Development Company",
+        subtitle: "Software Development Services",
         description: "Custom Software Development Services and Solutions to build top-tier intelligent enterprises with speed and agility.",
-        imageUrl: "https://img.freepik.com/premium-photo/astronaut-outer-space-surrounded-by-planets-satellites-generative-ai_1028873-12416.jpg",
+        imageUrl: "https://cdn-server.hiddenbrains.com/uploads/bnr_large_01_6aed8bff69.webp?ver-20241023164536",
         linkUrl: "/",
     };
 

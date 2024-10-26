@@ -232,7 +232,7 @@ export default function Header() {
 
 
                 <div className="mb-4 py-4 flex items-center border-b">
-                  <span onClick={() => setActiveMenu('')} className="bg-orange-500 p-2 rounded-full mr-3">
+                <span onClick={() => { setActiveMenu(''); setActiveCategory('')}} className="bg-orange-500 p-2 rounded-full mr-3">
                     <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
                     </svg>
@@ -302,7 +302,7 @@ export default function Header() {
 
 
               <div className="mb-4 py-4 flex items-center border-b">
-                <span onClick={() => setActiveMenu('')} className="bg-orange-500 p-2 rounded-full mr-3">
+                <span onClick={() => { setActiveMenu(''); setActiveCategory('')}} className="bg-orange-500 p-2 rounded-full mr-3">
                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
                   </svg>

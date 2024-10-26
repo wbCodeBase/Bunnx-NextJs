@@ -18,10 +18,19 @@ import Faqs from "@/components/home/Faqs";
 
 
 export default function Home() {
+
+  const heroSectionData = {
+    title: "Enterprise",
+    subtitle: "Software Development Company",
+    description: "Custom Software Development Services and Solutions to build top-tier intelligent enterprises with speed and agility.",
+    imageUrl: "https://img.freepik.com/premium-photo/astronaut-outer-space-surrounded-by-planets-satellites-generative-ai_1028873-12416.jpg",
+    linkUrl: "/",
+  };
+
   return (
     <>
 
-      <HeroSection />
+      <HeroSection {...heroSectionData} />
 
       <NumericCounterInfo />
 
@@ -29,12 +38,12 @@ export default function Home() {
 
       <OurServices />
 
-      <BasicComponent/>
+      <BasicComponent />
 
       <CtaSection />
 
       <NewComponent />
-      
+
       <IndustryWeServed />
 
       <WhyChooseUs />
