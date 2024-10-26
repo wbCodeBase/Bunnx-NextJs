@@ -229,7 +229,7 @@ const TechStacknexpertise = () => {
                                         </div>
 
                                         <div className="mt-6">
-                                            <Link href="#" className="text-orange-500 hover:text-orange-600 border border-orange-100 bg-orange-100 rounded-lg p-2 transition-colors duration-200">
+                                            <Link href="#" className="text-orange-500 hover:text-orange-600 border border-orange-100 bg-orange-50 rounded-lg p-2 transition-colors duration-200">
                                                 View More <ChevronRight className="inline h-4 w-4" />
                                             </Link>
                                         </div>

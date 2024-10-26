@@ -9,9 +9,9 @@ const CtaSection = () => {
 
             <section className='border-t container mx-auto max-w-screen-lg xl:max-w-screen-xl px-4 md:px-6 py-10'>
 
-                <div style={{ backgroundImage: "url('https://e1.pxfuel.com/desktop-wallpaper/148/992/desktop-wallpaper-anime-starry-night-sky-live-waifu-1920x1080-for-your-mobile-tablet-anime-night-sky-aesthetic.jpg" }} className="rounded-md container mx-auto max-w-screen-xl px-4 md:px-10 py-10 bg-center bg-cover bg-no-repeat">
+                <div style={{ backgroundImage: "url('https://e1.pxfuel.com/desktop-wallpaper/307/638/desktop-wallpaper-best-4-programming-backgrounds-on-hip-coding-motivation.jpg" }} className="rounded-md container mx-auto max-w-screen-xl px-4 md:px-10 py-10 bg-center bg-cover bg-no-repeat">
 
-                    <div className="h-full w-full flex gap-8 items-center flex-wrap justify-between sm:px-10 px-4 py-6 bg-purple-600 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-50">
+                    <div className="h-full w-full flex gap-8 items-center flex-wrap justify-between sm:px-10 px-4 py-6 bg-gray-200 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-50">
 
                         <div className='text-white flex gap-1 flex-col lg:items-start items-center xl:w-[48%] w-full'>
                             <h2>Bring Your Ideas to Life</h2>

@@ -6,7 +6,7 @@ import { FaLocationArrow } from "react-icons/fa";
 const WhyChooseUs = () => {
     return (
         <>
-            <section className="border-t container mx-auto max-w-screen-lg xl:max-w-screen-xl px-4 md:px-6 py-8">
+            <section className="container mx-auto max-w-screen-lg xl:max-w-screen-xl px-4 md:px-6 py-8">
 
                 <h2 className='font-semibold text-orange-500 text-lg'>Why Choose Us</h2>
                 <h4 className='font-semibold text-3xl my-2'>Empowering Your Vision with Expert Development</h4>

@@ -35,7 +35,6 @@ const NewComponent = () => {
                 </section>
 
             </section>
-
             
         </>
     )

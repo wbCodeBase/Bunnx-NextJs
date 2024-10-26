@@ -155,6 +155,29 @@ export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const dropdownRef = useRef(null)
 
+  const [isScrolled, setIsScrolled] = useState(false);
+
+
+
+
+  const handleScroll = () => {
+    const scrollTop = window.scrollY;
+    if (scrollTop > 0) {
+      setIsScrolled(true);
+    } else {
+      setIsScrolled(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+
+
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
@@ -332,11 +355,11 @@ export default function Header() {
   )
 
   return (
-    <header className="bg-gray800 bg-black shadow-md" ref={dropdownRef}>
+    <header className={`bg-gray800  ${ isScrolled ? "bg-[#00214E]" : "bg-transparent" } shadow-md fixed top-0 left-0 w-full z-20`} ref={dropdownRef}>
 
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between lg:px-10">
-          <div className="flex items-center py-2">
+          <Link href="/" className="flex items-center py-2">
             <Image
               className="w-auto lg:h-auto h-12"
               src={"/logo/bunnx-logo.png"}
@@ -345,7 +368,7 @@ export default function Header() {
               height={30}
               priority
             />
-          </div>
+          </Link>
           <nav className="hidden lg:flex space-x-8">
             {menuItems.map((item) => (
               <div

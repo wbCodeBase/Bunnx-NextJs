@@ -12,6 +12,8 @@ import NewComponent from "./components/home/NewComponent";
 import CtaSection from "./components/home/CtaSection";
 import CtaSection2 from "./components/home/CtaSection2";
 import CtaSection3 from "./components/home/CtaSection3";
+import BasicComponent from "./components/home/BasicComponent";
+import Faqs from "./components/home/Faqs";
 
 
 
@@ -27,9 +29,13 @@ export default function Home() {
 
       <OurServices />
 
+      <BasicComponent/>
+
       <CtaSection />
 
       <NewComponent />
+      
+      <IndustryWeServed />
 
       <WhyChooseUs />
 
@@ -39,8 +45,7 @@ export default function Home() {
 
       <CtaSection3 />
 
-      <IndustryWeServed />
-
+      <Faqs />
 
 
 
