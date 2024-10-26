@@ -20,7 +20,7 @@ const Footer = () => {
                                 <div className='z-10 relative'>
 
 
-                                    <span className='text-white text-3xl block lg:tracking-wide mb-4 text-center font-semibold'>Let's Talk</span>
+                                    <span className='text-white text-3xl block lg:tracking-wide mb-4 text-center font-semibold'>Let&apos;s Talk</span>
 
 
                                     <form className='flex gap-4 flex-col'>
@@ -71,7 +71,7 @@ const Footer = () => {
 
                                     <div className='inne z-10 relative'>
                                         <span className='text-white text-base block lg:tracking-wide'>READY TO DO THIS</span>
-                                        <h2 className='text-5xl text-white lg:text-7xl font-extrabold lg:tracking-wide pr-10 py-6 lg:py-12'>Let's get to work</h2>
+                                        <h2 className='text-5xl text-white lg:text-7xl font-extrabold lg:tracking-wide pr-10 py-6 lg:py-12'>Let&apos;s get to work</h2>
                                         <a href="tel:+91-9971544661" className="text-base lg:text-lg tracking-widest border-2 px-4 lg:px-8 py-3 inline-block duration-200 border-white rounded-lg hover:bg-white text-white hover:text-[#ee076e]">
                                             <span className=''>CONTACT US</span>
                                         </a>
