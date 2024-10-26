@@ -6,11 +6,11 @@ import { ChevronRight, ChevronDown, Menu, X, Phone } from 'lucide-react'
 import Image from 'next/image'
 
 const menuItems = [
-  { title: 'Home', hasSubmenu: false },
-  { title: 'Services', hasSubmenu: true },
-  { title: 'Hire', hasSubmenu: true },
-  { title: 'Technologies', hasSubmenu: false },
-  { title: 'About Us', hasSubmenu: false },
+  { title: 'Home', slug: '/', hasSubmenu: false },
+  { title: 'Services', slug: '/service', hasSubmenu: true },
+  { title: 'Hire', slug: '/hire', hasSubmenu: true },
+  { title: 'Technologies', slug: '/technologies', hasSubmenu: false },
+  { title: 'About Us', slug: '/about-us', hasSubmenu: false },
 ]
 
 const servicesData = {
@@ -355,7 +355,7 @@ export default function Header() {
   )
 
   return (
-    <header className={`bg-gray800  ${ isScrolled ? "bg-[#00214E]" : "bg-transparent" } shadow-md fixed top-0 left-0 w-full z-20`} ref={dropdownRef}>
+    <header className={`${isScrolled ? "bg-[#00214E]" : "bg-black"} shadow-md sticky top-0 left-0 w-full z-20`} ref={dropdownRef}>
 
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between lg:px-10">
@@ -377,12 +377,12 @@ export default function Header() {
                 onMouseEnter={() => item.hasSubmenu && handleMenuHover(item.title)}
                 onMouseLeave={() => setActiveMenu('')}
               >
-                <button
+                <Link href={item.slug}
                   className={`text-white hover:text-orange-500 px-3 py-8 rounded-md text-sm font-medium transition-colors duration-200 ${activeMenu === item.title ? 'text-orange-500' : ''
                     }`}
                 >
                   {item.title}
-                </button>
+                </Link>
               </div>
             ))}
           </nav>

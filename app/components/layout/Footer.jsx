@@ -89,9 +89,9 @@ const Footer = () => {
                     </div>
                 </div>
 
-<div>
-    Hey
-</div>
+                <div>
+                    Comming Soon
+                </div>
 
 
             </footer>
