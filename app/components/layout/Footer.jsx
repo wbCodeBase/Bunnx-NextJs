@@ -15,7 +15,7 @@ const Footer = () => {
                 <div className="relative z-">
                     <div className="flex flex-wrap items-end mx-0">
 
-                        <div className='lg:w-1/2 w-full flex-shrink-0 flex-grow-0 relative'>
+                        <div id='contact-us' className='lg:w-1/2 w-full flex-shrink-0 flex-grow-0 relative'>
                             <div className='footer-left lg:rounded-tr-lg px-8 py-12 lg:px-28 relative'>
                                 <div className='z-10 relative'>
 
@@ -42,7 +42,7 @@ const Footer = () => {
 
                                         <div>
                                             <label className='text-white' htmlFor="message">Message</label>
-                                            <textarea id='message' className='w-full rounded-lg p-2 mt-1' type="text" />
+                                            <textarea id='message' placeholder='Type your concern here' className='w-full rounded-lg p-2 mt-1' type="text" />
                                         </div>
 
                                         <div className='flex items-center justify-center md:justify-start mt-2'>
@@ -83,10 +83,7 @@ const Footer = () => {
                             </div>
                         </div>
 
-
-
-
-                    </div>
+                    </div> 
                 </div>
 
                 <div>

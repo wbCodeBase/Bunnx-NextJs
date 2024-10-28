@@ -7,101 +7,323 @@ import Image from 'next/image'
 
 const menuItems = [
   { title: 'Home', slug: '/', hasSubmenu: false },
-  { title: 'Services', slug: '/service', hasSubmenu: true },
+  { title: 'Services', slug: '/services', hasSubmenu: true },
   { title: 'Hire', slug: '/hire', hasSubmenu: true },
   { title: 'Technologies', slug: '/technologies', hasSubmenu: false },
   { title: 'About Us', slug: '/about-us', hasSubmenu: false },
 ]
 
+
 const servicesData = {
   categories: [
-    'Software Development',
-    'Application Development',
-    'Dedicated Software Teams',
-    'eCommerce',
-    'QA & Testing',
-    'Cloud Services',
-    'Data Engineering',
-    'Artificial Intelligence',
+    {
+      name: 'Software Development',
+      slug: 'software-development'
+    },
+    {
+      name: 'Application Development',
+      slug: 'application-development'
+    },
+    {
+      name: 'Dedicated Software Teams',
+      slug: 'dedicated-software-teams'
+    },
+    {
+      name: 'eCommerce',
+      slug: 'ecommerce'
+    },
+    {
+      name: 'QA & Testing',
+      slug: 'qa-testing'
+    },
+    {
+      name: 'Cloud Services',
+      slug: 'cloud-services'
+    },
+    {
+      name: 'Data Engineering',
+      slug: 'data-engineering'
+    }
   ],
+  
   content: {
     'Software Development': {
       title: 'Software Development',
+      slug: 'software-development',
       description: 'Innovative, future-proof software solutions',
       columns: [
         {
           title: 'CONSULTING',
           items: [
-            { name: 'Software Consulting', description: 'Expert advice on tech' },
-            { name: 'IT Consulting', description: 'Expert IT solutions, delivered' },
-            { name: 'Agile Consulting', description: 'Agile expertise, faster results' },
-            { name: 'CRM Consulting', description: 'Optimizing customer relations' },
+            { name: 'Software Consulting', slug: 'software-consulting', description: 'Expert advice on tech' },
+            { name: 'IT Consulting', slug: 'it-consulting', description: 'Expert IT solutions, delivered' },
+            { name: 'Agile Consulting', slug: 'agile-consulting', description: 'Agile expertise, faster results' },
+            { name: 'CRM Consulting', slug: 'crm-consulting', description: 'Optimizing customer relations' },
           ],
         },
         {
           title: 'DEVELOPMENT',
           items: [
-            { name: 'Custom Software', description: 'Tailored solutions for excellence' },
-            { name: 'Enterprise Software', description: 'Powering enterprise growth' },
-            { name: 'Software Product Engineering', description: 'Building market-ready software' },
-            { name: 'Application Development', description: 'Transform ideas into powerful apps' },
+            { name: 'Custom Software', slug: 'custom-software', description: 'Tailored solutions for excellence' },
+            { name: 'Enterprise Software', slug: 'enterprise-software', description: 'Powering enterprise growth' },
+            { name: 'Software Product Engineering', slug: 'software-product-engineering', description: 'Building market-ready software' },
+            { name: 'Application Development', slug: 'application-development', description: 'Transform ideas into powerful apps' },
           ],
         },
         {
           title: 'MAINTENANCE & SUPPORT',
           items: [
-            { name: 'Application Maintenance', description: 'Effortless app maintenance' },
-            { name: 'Application Modernization', description: 'Update your applications' },
+            { name: 'Application Maintenance', slug: 'application-maintenance', description: 'Effortless app maintenance' },
+            { name: 'Application Modernization', slug: 'application-modernization', description: 'Update your applications' },
           ],
         },
         {
           title: 'DELIVERY MODELS',
           items: [
-            { name: 'IT Staff Augmentation', description: 'On-demand top resources' },
-            { name: 'Dedicated Development Team', description: 'Your expert dev team' },
-            { name: 'Software Development Outsourcing', description: 'Outsource, excel, succeed' },
-            { name: 'Nearshore Software Development', description: 'Nearshore excellence, always' },
+            { name: 'IT Staff Augmentation', slug: 'it-staff-augmentation', description: 'On-demand top resources' },
+            { name: 'Dedicated Development Team', slug: 'dedicated-development-team', description: 'Your expert dev team' },
+            { name: 'Software Development Outsourcing', slug: 'software-development-outsourcing', description: 'Outsource, excel, succeed' },
+            { name: 'Nearshore Software Development', slug: 'nearshore-software-development', description: 'Nearshore excellence, always' },
           ],
         },
       ],
     },
     'Application Development': {
       title: 'Application Development',
+      slug: 'application-development',
       description: 'Cutting-edge application solutions',
       columns: [
         {
           title: 'WEB APPLICATIONS',
           items: [
-            { name: 'Progressive Web Apps', description: 'Next-gen web experiences' },
-            { name: 'Single Page Applications', description: 'Fast, dynamic web apps' },
+            { name: 'Progressive Web Apps', slug: 'progressive-web-apps', description: 'Next-gen web experiences' },
+            { name: 'Single Page Applications', slug: 'single-page-applications', description: 'Fast, dynamic web apps' },
           ],
         },
         {
           title: 'MOBILE APPLICATIONS',
           items: [
-            { name: 'iOS App Development', description: 'Sleek, powerful iOS apps' },
-            { name: 'Android App Development', description: 'Robust Android solutions' },
-            { name: 'Cross-platform Development', description: 'Build once, run everywhere' },
+            { name: 'iOS App Development', slug: 'ios-app-development', description: 'Sleek, powerful iOS apps' },
+            { name: 'Android App Development', slug: 'android-app-development', description: 'Robust Android solutions' },
+            { name: 'Cross-platform Development', slug: 'cross-platform-development', description: 'Build once, run everywhere' },
           ],
         },
         {
           title: 'ENTERPRISE APPLICATIONS',
           items: [
-            { name: 'ERP Systems', description: 'Streamline business processes' },
-            { name: 'CRM Applications', description: 'Enhance customer relationships' },
+            { name: 'ERP Systems', slug: 'erp-systems', description: 'Streamline business processes' },
+            { name: 'CRM Applications', slug: 'crm-applications', description: 'Enhance customer relationships' },
           ],
         },
         {
           title: 'EMERGING TECHNOLOGIES',
           items: [
-            { name: 'IoT Applications', description: 'Connect and control smart devices' },
-            { name: 'AI-powered Apps', description: 'Intelligent app solutions' },
+            { name: 'IoT Applications', slug: 'iot-applications', description: 'Connect and control smart devices' },
+            { name: 'AI-powered Apps', slug: 'ai-powered-apps', description: 'Intelligent app solutions' },
           ],
         },
       ],
     },
-  },
-}
+    'Dedicated Software Teams': {
+      title: 'Dedicated Software Teams',
+      slug: 'dedicated-software-teams',
+      description: 'Skilled developers, transparent billing, and scalable solutions',
+      columns: [
+        {
+          title: 'EXPERTISE',
+          items: [
+            { name: 'Custom Web Applications', slug: 'custom-web-applications', description: 'Tailored web solutions to meet your business needs' },
+            { name: 'Progressive Web Apps', slug: 'progressive-web-apps', description: 'Next-gen web experiences with offline capabilities' },
+            { name: 'Single Page Applications', slug: 'single-page-applications', description: 'Fast, dynamic web apps with seamless user experiences' },
+          ],
+        },
+        {
+          title: 'MOBILE SOLUTIONS',
+          items: [
+            { name: 'iOS App Development', slug: 'ios-app-development', description: 'Sleek, powerful iOS apps for Apple devices' },
+            { name: 'Android App Development', slug: 'android-app-development', description: 'Robust Android solutions for a wide range of devices' },
+            { name: 'Cross-platform Development', slug: 'cross-platform-development', description: 'Build once, deploy on both iOS and Android' },
+          ],
+        },
+        {
+          title: 'ENTERPRISE APPLICATIONS',
+          items: [
+            { name: 'ERP Systems', slug: 'erp-systems', description: 'Streamline business processes with customized ERP solutions' },
+            { name: 'CRM Applications', slug: 'crm-applications', description: 'Enhance customer relationships with tailored CRM tools' },
+            { name: 'Project Management Tools', slug: 'project-management-tools', description: 'Efficiently manage projects with integrated solutions' },
+          ],
+        },
+        {
+          title: 'EMERGING TECHNOLOGIES',
+          items: [
+            { name: 'IoT Applications', slug: 'iot-applications', description: 'Connect and control smart devices with IoT integration' },
+            { name: 'AI-powered Apps', slug: 'ai-powered-apps', description: 'Intelligent app solutions leveraging artificial intelligence' },
+            { name: 'Blockchain Solutions', slug: 'blockchain-solutions', description: 'Secure and transparent blockchain-based systems' },
+          ],
+        },
+      ],
+    },
+
+    "QA & Testing": {
+      "title": "QA & Testing",
+      "description": "Comprehensive testing services to ensure quality, performance, and reliability across all platforms",
+      "columns": [
+        {
+          "title": "FUNCTIONAL TESTING",
+          "items": [
+            { "name": "Manual Testing", "slug": "manual-testing", "description": "Thorough testing by experienced QA engineers to identify and resolve functional issues" },
+            { "name": "Automated Testing", "slug": "automated-testing", "description": "Efficient test automation to accelerate the testing process and enhance coverage" },
+            { "name": "Regression Testing", "slug": "regression-testing", "description": "Ensuring new updates don’t impact existing functionality" }
+          ]
+        },
+        {
+          "title": "PERFORMANCE TESTING",
+          "items": [
+            { "name": "Load Testing", "slug": "load-testing", "description": "Testing under various load conditions to ensure optimal performance" },
+            { "name": "Stress Testing", "slug": "stress-testing", "description": "Assessing system behavior under extreme conditions" },
+            { "name": "Scalability Testing", "slug": "scalability-testing", "description": "Ensuring systems can scale efficiently with user growth" }
+          ]
+        },
+        {
+          "title": "SECURITY TESTING",
+          "items": [
+            { "name": "Vulnerability Assessment", "slug": "vulnerability-assessment", "description": "Identify security loopholes and vulnerabilities" },
+            { "name": "Penetration Testing", "slug": "penetration-testing", "description": "Simulate cyber attacks to discover potential security risks" },
+            { "name": "Data Protection & Privacy Testing", "slug": "data-protection-privacy-testing", "description": "Ensuring data security and compliance with privacy regulations" }
+          ]
+        },
+        {
+          "title": "MOBILE & CROSS-BROWSER TESTING",
+          "items": [
+            { "name": "Mobile App Testing", "slug": "mobile-app-testing", "description": "Testing across various devices, screen sizes, and operating systems" },
+            { "name": "Cross-browser Testing", "slug": "cross-browser-testing", "description": "Ensuring consistent performance across different web browsers" },
+            { "name": "Usability Testing", "slug": "usability-testing", "description": "Enhancing user experience by identifying and resolving usability issues" }
+          ]
+        }
+      ]
+    },
+
+    "eCommerce": {
+      "title": "eCommerce",
+      "description": "Comprehensive eCommerce solutions to drive online sales and enhance customer experiences.",
+      "columns": [
+        {
+          "title": "CUSTOM ECOMMERCE PLATFORMS",
+          "items": [
+            { "name": "Bespoke Online Stores", "slug": "bespoke-online-stores", "description": "Tailored online shopping experiences for your brand" },
+            { "name": "Multi-vendor Marketplaces", "slug": "multi-vendor-marketplaces", "description": "Efficient platforms for managing multiple sellers" },
+            { "name": "B2B & B2C Solutions", "slug": "b2b-b2c-solutions", "description": "Seamless platforms for retail and wholesale businesses" }
+          ]
+        },
+        {
+          "title": "MOBILE ECOMMERCE",
+          "items": [
+            { "name": "iOS Shopping Apps", "slug": "ios-shopping-apps", "description": "Engaging and feature-rich shopping experiences on Apple devices" },
+            { "name": "Android Shopping Apps", "slug": "android-shopping-apps" },
+            { "name": "Cross-platform Mobile Apps", "slug": "cross-platform-mobile-apps", "description": "Consistent shopping experiences across iOS and Android" }
+          ]
+        },
+        {
+          "title": "ECOMMERCE INTEGRATIONS",
+          "items": [
+            { "name": "Payment Gateway Integration", "slug": "payment-gateway-integration", "description": "Secure and reliable payment processing solutions" },
+            { "name": "Inventory Management Systems", "slug": "inventory-management-systems", "description": "Streamlined tools for inventory tracking and management" },
+            { "name": "CRM Integration", "slug": "crm-integration", "description": "Enhance customer relationships with integrated CRM solutions" }
+          ]
+        },
+        {
+          "title": "EMERGING TECHNOLOGIES",
+          "items": [
+            { "name": "AI-driven Personalization", "slug": "ai-driven-personalization", "description": "Boost conversions with personalized product recommendations" },
+            { "name": "Augmented Reality (AR) Shopping", "slug": "ar-shopping" },
+            { "name": "Voice Commerce", "slug": "voice-commerce", "description": "Enable shopping through voice commands on smart devices" }
+          ]
+        }
+      ]
+    },
+
+    "Cloud Services": {
+      "title": "Cloud Services",
+      "description": "Scalable, secure, and cost-effective cloud solutions to transform your business operations.",
+      "columns": [
+        {
+          "title": "CLOUD INFRASTRUCTURE",
+          "items": [
+            { "name": "Cloud Migration", "slug": "cloud-migration", "description": "Seamless transition from on-premises to cloud-based systems" },
+            { "name": "Hybrid Cloud Solutions", "slug": "hybrid-cloud-solutions", "description": "Combine the best of both private and public cloud environments" },
+            { "name": "Cloud Infrastructure Management", "slug": "cloud-infrastructure-management", "description": "Efficient management of cloud resources with monitoring and optimization" }
+          ]
+        },
+        {
+          "title": "CLOUD APPLICATION DEVELOPMENT",
+          "items": [
+            { "name": "Custom Cloud Apps", "slug": "custom-cloud-apps", "description": "Develop scalable cloud-native applications tailored to your needs" },
+            { "name": "Microservices Architecture", "slug": "microservices-architecture", "description": "Build flexible and resilient applications using microservices" },
+            { "name": "API Integration", "slug": "api-integration", "description": "Enable seamless connectivity between cloud services and existing systems" }
+          ]
+        },
+        {
+          "title": "SECURITY & COMPLIANCE",
+          "items": [
+            { "name": "Data Security", "slug": "data-security", "description": "Protect your data with robust security measures and encryption" },
+            { "name": "Compliance Solutions", "slug": "compliance-solutions", "description": "Ensure compliance with industry standards and regulations" },
+            { "name": "Disaster Recovery", "slug": "disaster-recovery", "description": "Reliable backup and recovery solutions to safeguard critical data" }
+          ]
+        },
+        {
+          "title": "CLOUD AUTOMATION & OPTIMIZATION",
+          "items": [
+            { "name": "DevOps & CI/CD", "slug": "devops-cicd", "description": "Streamline deployment with continuous integration and delivery" },
+            { "name": "Cost Optimization", "slug": "cost-optimization", "description": "Analyze and reduce cloud infrastructure costs effectively" },
+            { "name": "Serverless Computing", "slug": "serverless-computing", "description": "Develop and deploy without managing servers, with scalable pay-per-use models" }
+          ]
+        }
+      ]
+    },
+
+    "Data Engineering": {
+      "title": "Data Engineering",
+      "description": "Efficient data pipelines, scalable solutions, and insightful analytics to drive data-driven decision-making",
+      "columns": [
+        {
+          "title": "DATA PIPELINE DEVELOPMENT",
+          "items": [
+            { "name": "ETL/ELT Processes", "slug": "etl-elt-processes", "description": "Efficient data extraction, transformation, and loading" },
+            { "name": "Real-Time Data Processing", "slug": "real-time-data-processing", "description": "Streamline data flows for immediate insights" },
+            { "name": "Batch Data Processing", "slug": "batch-data-processing", "description": "Manage large volumes of data effectively" }
+          ]
+        },
+        {
+          "title": "DATA ARCHITECTURE & MANAGEMENT",
+          "items": [
+            { "name": "Data Warehousing", "slug": "data-warehousing", "description": "Centralized storage solutions for structured data" },
+            { "name": "Data Lakes", "slug": "data-lakes", "description": "Scalable storage for raw and unstructured data" },
+            { "name": "Database Optimization", "slug": "database-optimization", "description": "Enhance performance and scalability of databases" }
+          ]
+        },
+        {
+          "title": "DATA INTEGRATION & GOVERNANCE",
+          "items": [
+            { "name": "Data Integration Services", "slug": "data-integration-services", "description": "Seamlessly integrate multiple data sources" },
+            { "name": "Data Quality Assurance", "slug": "data-quality-assurance", "description": "Ensure data accuracy, consistency, and reliability" },
+            { "name": "Data Security & Compliance", "slug": "data-security-compliance", "description": "Protect data and adhere to regulatory requirements" }
+          ]
+        },
+        {
+          "title": "ADVANCED DATA ANALYTICS & INSIGHTS",
+          "items": [
+            { "name": "Big Data Analytics", "slug": "big-data-analytics", "description": "Analyze vast datasets for meaningful insights" },
+            { "name": "Machine Learning Integration", "slug": "machine-learning-integration", "description": "Leverage machine learning for predictive analytics" },
+            { "name": "Business Intelligence Tools", "slug": "business-intelligence-tools", "description": "Dashboard solutions for data visualization and reporting" }
+          ]
+        }
+      ]
+    }
+
+
+  }
+};
+
 
 const hireData = {
   categories: [
@@ -213,15 +435,16 @@ export default function Header() {
       <div className="container mx-auto flex flex-col lg:flex-row">
         <div className="border-r w-full lg:w-1/4 p-4 hidden md:block">
           {servicesData.categories.map((category) => (
-            <div
-              key={category}
-              className={`py-2.5 px-4 cursor-pointer rounded-md font-medium transition-colors duration-200 ${activeCategory === category ? 'bg-orange-50 text-orange-600' : 'hover:bg-gray-200'
+            <Link href={`/services/${category.slug}`}
+              key={category.name}>
+              <div className={`py-2.5 px-4 cursor-pointer rounded-md font-medium transition-colors duration-200 ${activeCategory === category.name ? 'bg-orange-50 text-orange-600' : 'hover:bg-gray-200'
                 }`}
-              onMouseEnter={() => handleCategoryHover(category)}
-            >
-              {category}
-              <ChevronRight className="float-right h-5 w-5" />
-            </div>
+                onMouseEnter={() => handleCategoryHover(category.name)}
+              >
+                {category.name}
+                <ChevronRight className="float-right h-5 w-5" />
+              </div>
+            </Link>
           ))}
 
         </div>
@@ -232,7 +455,7 @@ export default function Header() {
 
 
                 <div className="mb-4 py-4 flex items-center border-b">
-                <span onClick={() => { setActiveMenu(''); setActiveCategory('')}} className="bg-orange-500 p-2 rounded-full mr-3">
+                  <span onClick={() => { setActiveMenu(''); setActiveCategory('') }} className="bg-orange-500 p-2 rounded-full mr-3">
                     <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
                     </svg>
@@ -249,16 +472,21 @@ export default function Header() {
                     <div key={index} className='relative'>
                       <h3 className="font-medium text-sm text-gray-500 mb-3 py-1 px-2">{column.title}</h3>
                       {column.items.map((item, itemIndex) => (
-                        <div key={itemIndex} className="mb-4 cursor-pointer rounded-lg py-1 px-2 hover:bg-orange-50">
-                          <h4 className="font-medium">{item.name}</h4>
-                          <p className="text-sm text-gray-600">{item.description}</p>
-                        </div>
-                      ))}
 
+                        <Link href={`/services/${item.slug}`} key={itemIndex}>
+                          <div className="mb-4 cursor-pointer rounded-lg py-1 px-2 hover:bg-orange-50">
+                            <h4 className="font-medium">{item.name}</h4>
+                            <p className="text-sm text-gray-600">{item.description}</p>
+                          </div>
+                        </Link>
+
+                      ))}
 
                     </div>
                   ))}
                 </div>
+
+
 
                 <div className="mt-6">
                   <Link href="#" className="text-orange-500 hover:text-orange-600 transition-colors duration-200">
@@ -302,7 +530,7 @@ export default function Header() {
 
 
               <div className="mb-4 py-4 flex items-center border-b">
-                <span onClick={() => { setActiveMenu(''); setActiveCategory('')}} className="bg-orange-500 p-2 rounded-full mr-3">
+                <span onClick={() => { setActiveMenu(''); setActiveCategory('') }} className="bg-orange-500 p-2 rounded-full mr-3">
                   <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
                   </svg>

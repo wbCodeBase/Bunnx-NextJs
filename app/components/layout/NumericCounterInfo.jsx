@@ -7,13 +7,13 @@ export default function NumericCounterInfo() {
     return (
         <>
 
-            <div className="antialiased mb10 -translate-y-16">
+            <div className="antialiased my-10 -translatey-16">
 
                 <main className="flex flex-col justify-center overflow-hidden">
                     <div className="w-full rounded-lg max-w-6xl bg-orange-50 mx-auto px-4 md:px-6 py-6">
 
                         <h2 className='font-semibold text-orange-500 text-lg text-center'>Bunnx</h2>
-                        <h4 className='font-quando font-bold text-xl sm:text-2xl my-2 text-center'>Word Best Development Service Provider</h4>
+                        <h4 className='font-quando font-bold text-xl sm:text-2xl my-2 text-center'>World Best Development Service Provider</h4>
                        
 
                         <section className="font-quando grid gap-6 sm:grid-cols-2 md:grid-cols-4 md:gap-10">
