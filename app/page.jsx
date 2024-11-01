@@ -20,9 +20,9 @@ import Faqs from "@/components/home/Faqs";
 export default function Home() {
 
   const heroSectionData = {
-    title: "Enterprise",
-    subtitle: "Software Development Company",
-    description: "Custom Software Development Services and Solutions to build top-tier intelligent enterprises with speed and agility.",
+    title: "Building",
+    subtitle: "Digital Trust with Smart IT Solutions",
+    description: "Transforming product experiences with data-driven digital strategies, leveraging cutting-edge technologies such as AI, machine learning, blockchain, IoT, and quantum computing.",
     imageUrl: "https://img.freepik.com/premium-photo/astronaut-outer-space-surrounded-by-planets-satellites-generative-ai_1028873-12416.jpg",
     linkUrl: "#contact-us",
   };

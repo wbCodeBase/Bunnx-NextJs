@@ -23,11 +23,11 @@ export default function NumericCounterInfo() {
 
                                 <h2>
                                     <span className="flex tabular-nums text-4xl font-bold mb-2 duration-[3s] ease-out" >
-                                        <span className="text-orange-500"><CountUp end={9} enableScrollSpy />+</span>
+                                        <span className="text-orange-500"><CountUp end={16} enableScrollSpy />+</span>
                                     </span>
                                 </h2>
                                 {/* <span className="inline-flex text-md font-semibold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-pink-400 mb-2">Excellence</span> */}
-                                <p className="text-md text-gray-600 text-center">Years Experience</p>
+                                <p className="text-md text-gray-700 text-center">Years Experience</p>
                             </article>
 
                             <article className='flex justify-center items-center flex-col p-4 rounded-lg'>
@@ -38,7 +38,7 @@ export default function NumericCounterInfo() {
                                     </span>
                                 </h2>
                                 {/* <span className="inline-flex font-semibold text-md bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-pink-400 mb-2">Inception</span> */}
-                                <p className="text-md text-gray-600 text-center">Successful Projects</p>
+                                <p className="text-md text-gray-700 text-center">Successful Projects</p>
                             </article>
 
                             <article className='flex justify-center items-center flex-col p-4 rounded-lg'>
@@ -49,7 +49,7 @@ export default function NumericCounterInfo() {
                                     </span>
                                 </h2>
                                 {/* <span className="inline-flex text-md font-semibold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-pink-400 mb-2">Events</span> */}
-                                <p className="text-md text-gray-600 text-center">Satisfied Clients</p>
+                                <p className="text-md text-gray-700 text-center">Satisfied Clients</p>
                             </article>
 
 
@@ -61,7 +61,7 @@ export default function NumericCounterInfo() {
                                     </span>
                                 </h2>
                                 {/* <span className="inline-flex text-md font-semibold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-pink-400 mb-2">Events</span> */}
-                                <p className="text-md text-gray-600 text-center">Countries</p>
+                                <p className="text-md text-gray-700 text-center">Countries</p>
                             </article>
 
 
@@ -70,7 +70,7 @@ export default function NumericCounterInfo() {
 
 
                         {/* <div className="mx-1 px-2 mb-6 text-center font-quando">
-                            <div className="text-gray-600 p-2 font-semibold text-sm rounded-lg">
+                            <div className="text-gray-700 p-2 font-semibold text-sm rounded-lg">
                             Yoo
                             </div>
                         </div> */}
