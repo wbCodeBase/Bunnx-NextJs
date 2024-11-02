@@ -662,11 +662,11 @@ export default function Header() {
                     <div className="pl-4 mt-2 space-y-2">
                       {(item.title === 'Services' ? servicesData.categories : hireData.categories).map((category) => (
                         <button
-                          key={category}
+                          key={category.name}
                           className="w-full text-left font-medium text-gray-200 hover:text-orange-500 block px-3 py-2 text-sm transition-colors duration-200"
-                          onClick={() => handleCategoryHover(category)}
+                          onClick={() => handleCategoryHover(category.name)}
                         >
-                          {category}
+                          {category.name}
                         </button>
                       ))}
                     </div>
