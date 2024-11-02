@@ -172,7 +172,7 @@ const TechStacknexpertise = () => {
         <>
             <section className="relativ border-t container mx-auto max-w-screen-lg xl:max-w-screen-xl px-4 md:px-6 py-8">
 
-                <h2 className='font-semibold text-orange-500 text-lg'>Tech Stack</h2>
+                <h2 className='font-semibold text-orange-500 text-lg'>Our Services</h2>
                 <h4 className='font-semibold text-3xl my-2'>Software Development & Engineering Services</h4>
                 <p className='text-md text-gray-800'>Whether you require a complex enterprise software solution or seamless software integration, we will convert your ideas into reality with our long-standing, industry-proven IT consulting and bespoke software development services.</p>
 
@@ -203,23 +203,28 @@ const TechStacknexpertise = () => {
 
                                         <div className="mb-4 py-4 border-b">
 
-                                                <h2 className='text-3xl font-bold'> {techStackData.content[activeCategory].title} </h2>
-                                                <p className="text-gray-600 font-medium mt-4">{techStackData.content[activeCategory].description}</p>
+                                            <h2 className='text-3xl font-bold'> {techStackData.content[activeCategory].title} </h2>
+                                            <p className="text-gray-600 font-medium mt-4">{techStackData.content[activeCategory].description}</p>
 
                                         </div>
-
-
 
 
 
                                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 sm:gap-6">
                                             {techStackData.content[activeCategory].columns.map((column, index) => (
                                                 <div key={index} className='relative'>
-                                                    {/* <h3 className="font-medium text-sm text-gray-500 mb-3 py-1 px-2">{column.title}</h3> */}
+
                                                     {column.items.map((item, itemIndex) => (
                                                         <div key={itemIndex} className="mb-4 mt-2 cursor-pointer rounded-lg py-1 px-2 group">
-                                                            <h4 className="font-medium inline-block text-lg relative after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-black after:transition-all after:duration-300 group-hover:after:w-full">{item.name}</h4>
-                                                            {/* <p className="text-sm text-gray-600">{item.description}</p> */}
+                                                            <div className="flex items-center gap-4">
+
+                                                                <span class="relative flex h-3 w-3">
+                                                                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                                                                    <span class="relative inline-flex rounded-full h-3 w-3 bg-blue-500"></span>
+                                                                </span>
+
+                                                                <h4 className="font-medium inline-block text-lg relative after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-black after:transition-all after:duration-300 group-hover:after:w-full">{item.name}</h4>
+                                                            </div>
                                                         </div>
                                                     ))}
 

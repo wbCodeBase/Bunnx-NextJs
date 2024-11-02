@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { FaLocationArrow } from "react-icons/fa";
 import cloudMigration from "/public/cloud-migration.png"
 import arVrIntegration from "/public/ar-vr-integration.png"
 import legacySoftwareModernisation from "/public/legacy-software-modernisation.png"

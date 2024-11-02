@@ -2,9 +2,12 @@
 
 import React from "react";
 import { useParams } from 'next/navigation';
-import OurServices from "@/components/services/OurServices";
+import Services from "@/components/services/Services";
 import HeroSection from '@/components/layout/HeroSection';
 import NumericCounterInfo from "@/components/layout/NumericCounterInfo";
+import CtaSection2 from '@/components/layout/CtaSection2';
+import ChooseUs from "@/components/services/ChooseUs";
+import Faqs from "@/components/home/Faqs";
 
 function formatparameter(input) {
   return input
@@ -34,7 +37,13 @@ export default function RouteDetails() {
 
       <NumericCounterInfo />
 
-      <OurServices />
+      <Services />
+
+      <CtaSection2 />
+
+      <ChooseUs />
+
+      <Faqs/>
 
     </>
   );

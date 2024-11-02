@@ -8,9 +8,9 @@ import Image from 'next/image'
 const menuItems = [
   { title: 'Home', slug: '/', hasSubmenu: false },
   { title: 'Services', slug: '/services', hasSubmenu: true },
-  { title: 'Hire', slug: '/hire', hasSubmenu: true },
-  { title: 'Technologies', slug: '/technologies', hasSubmenu: false },
+  { title: 'Technologies', slug: '/technologies', hasSubmenu: true },
   { title: 'About Us', slug: '/about-us', hasSubmenu: false },
+  { title: 'Contact Us', slug: '/contact-us', hasSubmenu: false },
 ]
 
 

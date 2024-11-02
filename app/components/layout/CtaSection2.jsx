@@ -7,10 +7,10 @@ const CtaSection2 = () => {
         <>
 
 
-            <section className='border-t bg-[#00214E] px-4 md:px-6 py-0'>
-                <div className="rounded-md container mx-auto max-w-screen-xl sm:px-4 md:px-10 py-0">
+            <section className='py-12'>
+                <div className="bg-[#00214E] px-4 md:px-6">
 
-                    <div className="h-full w-full flex gap-8 items-center flex-wrap sm:justify-between justify-center sm:px-10 px-4 py-10 bg-purple900 bg-[#00214E] rounded-md borde border-gray-50">
+                    <div className="container mx-auto max-w-screen-xl flex gap-8 items-center flex-wrap sm:justify-between justify-center sm:px-10 px-4 py-10 bg-purple900 bg-[#00214E] rounded-md borde border-gray-50">
 
                         <div className='text-white flex gap-4 flex-col lg:items-start items-center xl:w-[58%] w-full'>
                             <h2>Your Success, Our Priority</h2>

@@ -10,7 +10,7 @@ import WhyChooseUs from "@/components/home/WhyChooseUs";
 import IndustryWeServed from "@/components/home/IndustryWeServed";
 import NewComponent from "@/components/home/NewComponent";
 import CtaSection from "@/components/home/CtaSection";
-import CtaSection2 from "@/components/home/CtaSection2";
+import CtaSection2 from "@/components/layout/CtaSection2";
 import CtaSection3 from "@/components/home/CtaSection3";
 import BasicComponent from "@/components/home/BasicComponent";
 import Faqs from "@/components/home/Faqs";

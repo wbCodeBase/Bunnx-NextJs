@@ -95,7 +95,7 @@ const Footer = () => {
                                 {/* Who we are & Resources Section */}
                                 <div className="space-y-8">
                                     <div>
-                                        <h3 className="text-xl font-semibold mb-4">Who we are</h3>
+                                        <h3 className="text-md font-medium mb-4">Who we are</h3>
                                         <ul className="space-y-2 text-gray-400 text-sm">
                                             <li><Link href="/about" className="text-gray-300 hover:text-white">About Us</Link></li>
                                             <li><Link href="/founder" className="text-gray-300 hover:text-white">Founder</Link></li>
@@ -104,7 +104,7 @@ const Footer = () => {
                                         </ul>
                                     </div>
                                     <div>
-                                        <h3 className="text-xl font-semibold mb-4">Resources</h3>
+                                        <h3 className="text-md font-medium mb-4">Resources</h3>
                                         <ul className="space-y-2 text-gray-400 text-sm">
                                             <li><Link href="/blog" className="text-gray-300 hover:text-white">Blog</Link></li>
                                             <li><Link href="/guides" className="text-gray-300 hover:text-white">Guides</Link></li>
@@ -115,7 +115,7 @@ const Footer = () => {
 
                                 {/* Digital Transformation Section */}
                                 <div>
-                                    <h3 className="text-xl font-semibold mb-4">Digital Transformation</h3>
+                                    <h3 className="text-md font-medium mb-4">Digital Transformation</h3>
                                     <ul className="space-y-2 text-gray-400 text-sm">
                                         <li><Link href="/ai-transformation" className="text-gray-300 hover:text-white">AI-powered Transformation</Link></li>
                                         <li><Link href="/blockchain" className="text-gray-300 hover:text-white">Blockchain-led Decentralization</Link></li>
@@ -127,8 +127,8 @@ const Footer = () => {
                                 </div>
 
                                 {/* Industries Section */}
-                                <div>
-                                    <h3 className="text-xl font-semibold mb-4">Industries</h3>
+                                <div className='sm:ml-12 ml-0'>
+                                    <h3 className="text-md font-medium mb-4">Industries</h3>
                                     <ul className="space-y-2 text-gray-400 text-sm">
                                         <li><Link href="/healthcare" className="text-gray-300 hover:text-white">Healthcare</Link></li>
                                         <li><Link href="/logistics" className="text-gray-300 hover:text-white">Logistics</Link></li>
@@ -144,10 +144,10 @@ const Footer = () => {
                                 <div className='lg:col-span-2'>
                                     <div className="flex items-center gap-2 mb-4">
                                         <Image src={`https://bunnx.com/sites/images/india-flag.svg`} height={26} width={26} alt='Indian flag' />
-                                        <h3 className="text-md font-semibold">India Offices:</h3>
+                                        <h3 className="text-md font-medium">India Offices:</h3>
                                     </div>
                                     <div className="bg-[#494b77] p-3 rounded-lg">
-                                        <h4 className="font-semibold mb-2">Noida</h4>
+                                        <h4 className="font-semibold text-md mb-2">Noida</h4>
                                         <p className="text-gray-300 text-sm">
                                             H-160, BSI Business Park, Sector-63,<br />
                                             Noida, Uttar Pradesh 201301
