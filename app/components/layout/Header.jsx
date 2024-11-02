@@ -566,8 +566,8 @@ export default function Header() {
       <div className="container mx-auto flex flex-col lg:flex-row">
 
         <div className="w-full lg:w-1/4 border-r p-4 hidden md:block">
-          {hireData.categories.map((category) => (
-            <Link href={`/hire-developers/${category.slug}`} onClick={() => { setActiveMenu(''); setActiveCategory('') }}>
+          {hireData.categories.map((category, i) => (
+            <Link href={`/hire-developers/${category.slug}`} key={i} onClick={() => { setActiveMenu(''); setActiveCategory('') }}>
             <div
               key={category.name}
               className={`py-2.5 px-4 cursor-pointer rounded-md transition-colors font-medium duration-200 ${activeCategory === category.name ? 'bg-orange-100 text-orange-500' : 'hover:bg-gray-200'
