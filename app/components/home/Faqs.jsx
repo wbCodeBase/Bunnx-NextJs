@@ -23,7 +23,7 @@ const Faqs = () => {
                         
                         <h2 className='font-semibold text-orange-500 text-xl'>FAQs</h2>
                         <h4 className='font-semibold text-3xl my-2'>Ask what you want</h4>
-                        <p className='text-lg gray-800 text-gray-800'>Whether you require a complex enterprise software solution or seamless software integration.</p>
+                        <p className='text-lg text-gray-800'>Whether you require a complex enterprise software solution or seamless software integration.</p>
 
 
                     </div>
@@ -32,28 +32,28 @@ const Faqs = () => {
 
                         <Accordion type="single" collapsible className="w-full">
                             <AccordionItem value="item-1">
-                                <AccordionTrigger className='text-xl'>Is it accessible?</AccordionTrigger>
-                                <AccordionContent className='text-lg gray-800'>
+                                <AccordionTrigger className='text-lg text-left text-gray-800'>Is it accessible?</AccordionTrigger>
+                                <AccordionContent className='text-md sm:text-lg text-gray-700'>
                                     Yes. It adheres to the WAI-ARIA design pattern.
                                 </AccordionContent>
                             </AccordionItem>
                             <AccordionItem value="item-2">
-                                <AccordionTrigger className='text-xl'>Is it styled?</AccordionTrigger>
-                                <AccordionContent className='text-lg gray-800'>
+                                <AccordionTrigger className='text-lg text-left text-gray-800'>Is it styled?</AccordionTrigger>
+                                <AccordionContent className='text-md sm:text-lg text-gray-700'>
                                     Yes. It comes with default styles that matches the other
                                     components&apos; aesthetic.
                                 </AccordionContent>
                             </AccordionItem>
                             <AccordionItem value="item-3">
-                                <AccordionTrigger className='text-xl'>Is it animated?</AccordionTrigger>
-                                <AccordionContent className='text-lg gray-800'>
+                                <AccordionTrigger className='text-lg text-left text-gray-800'>Is it animated?</AccordionTrigger>
+                                <AccordionContent className='text-md sm:text-lg text-gray-700'>
                                     Yes. It&apos;s animated by default, but you can disable it if you
                                     prefer.
                                 </AccordionContent>
                             </AccordionItem>
                             <AccordionItem value="item-4">
-                                <AccordionTrigger className='text-xl'>We are strong, we are great. But who we are?</AccordionTrigger>
-                                <AccordionContent className='text-lg gray-800'>
+                                <AccordionTrigger className='text-lg text-left text-gray-800'>We are strong, we are great. But who we are?</AccordionTrigger>
+                                <AccordionContent className='text-md sm:text-lg text-gray-700'>
                                     Yes. It&apos;s animated by default, but you can disable it if you
                                     prefer.
                                 </AccordionContent>

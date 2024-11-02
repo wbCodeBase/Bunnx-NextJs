@@ -1,12 +1,12 @@
 import React from 'react'
-import Techcard from "@/components/technologies/Techcard";
+import Techcard from "@/components/hire/Techcard";
 import ChooseUs from "@/components/services/ChooseUs";
 import HeroSection from '@/components/layout/HeroSection';
 import NumericCounterInfo from "@/components/layout/NumericCounterInfo";
 import CtaSection2 from '@/components/layout/CtaSection2';
 import Faqs from '@/components/home/Faqs';
 
-const Technologies = () => {
+const Hire = () => {
 
     const heroSectionData = {
         title: "Technologies",
@@ -33,4 +33,4 @@ const Technologies = () => {
     )
 }
 
-export default Technologies
+export default Hire

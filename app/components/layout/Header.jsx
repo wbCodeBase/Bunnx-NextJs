@@ -2,13 +2,13 @@
 
 import React, { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
-import { ChevronRight, ChevronDown, Menu, X, Phone } from 'lucide-react'
+import { ChevronRight, ChevronDown, Menu, X } from 'lucide-react'
 import Image from 'next/image'
 
 const menuItems = [
   { title: 'Home', slug: '/', hasSubmenu: false },
   { title: 'Services', slug: '/services', hasSubmenu: true },
-  { title: 'Technologies', slug: '/technologies', hasSubmenu: true },
+  { title: 'Hire', slug: '/hire-developers', hasSubmenu: true },
   { title: 'About Us', slug: '/about-us', hasSubmenu: false },
   { title: 'Contact Us', slug: '/contact-us', hasSubmenu: false },
 ]
@@ -327,49 +327,105 @@ const servicesData = {
 
 const hireData = {
   categories: [
-    'Backend',
-    'Frontend',
-    'AI/ML',
-    'Mobile',
-    'Full Stack',
-    'DevOps',
-    'CMS',
-    'eCommerce',
-    'Digital Marketing',
-    'Blockchain',
-    'Low - Code',
+    { name: 'Backend', slug: 'backend' },
+    { name: 'Frontend', slug: 'frontend' },
+    { name: 'AI/ML', slug: 'ai-ml' },
+    { name: 'Mobile', slug: 'mobile' },
+    { name: 'Full Stack', slug: 'full-stack' },
+    { name: 'DevOps', slug: 'devops' },
+    { name: 'CMS', slug: 'cms' },
+    { name: 'eCommerce', slug: 'ecommerce' },
+    { name: 'Digital Marketing', slug: 'digital-marketing' },
+    { name: 'Blockchain', slug: 'blockchain' },
+    { name: 'Low - Code', slug: 'low-code' },
   ],
   content: {
     Backend: {
       title: 'Backend',
+      slug: 'backend',
       description: 'Build robust backend',
       technologies: [
-        '.NET', 'PHP', 'C/C++', 'Python', 'C#', 'Ruby on Rails',
-        'Django', 'Symfony', 'Firebase', 'Assembly', 'Golang', 'Java',
-        'GraphQL', 'Laravel', 'Node',
+        { name: '.NET', slug: 'dot-net' },
+        { name: 'PHP', slug: 'php' },
+        { name: 'C/C++', slug: 'c-cpp' },
+        { name: 'Python', slug: 'python' },
+        { name: 'C#', slug: 'c-sharp' },
+        { name: 'Ruby on Rails', slug: 'ruby-on-rails' },
+        { name: 'Django', slug: 'django' },
+        { name: 'Symfony', slug: 'symfony' },
+        { name: 'Firebase', slug: 'firebase' },
+        { name: 'Assembly', slug: 'assembly' },
+        { name: 'Golang', slug: 'golang' },
+        { name: 'Java', slug: 'java' },
+        { name: 'GraphQL', slug: 'graphql' },
+        { name: 'Laravel', slug: 'laravel' },
+        { name: 'Node', slug: 'node' },
       ],
       hiring: [
-        { title: 'Hire Dedicated Developers', description: 'Build faster with on-demand team' },
-        { title: 'Staff Augmentation', description: 'Access top technical resources on-demand' },
-        { title: 'Hire Software Developers', description: 'Work with skilled & dedicated developers' },
-        { title: 'Dedicated Software Teams', description: 'Hire Dedicated Developers' },
+        {
+          title: 'Hire Dedicated Developers',
+          slug: 'hire-dedicated-developers',
+          description: 'Build faster with on-demand team',
+        },
+        {
+          title: 'Staff Augmentation',
+          slug: 'staff-augmentation',
+          description: 'Access top technical resources on-demand',
+        },
+        {
+          title: 'Hire Software Developers',
+          slug: 'hire-software-developers',
+          description: 'Work with skilled & dedicated developers',
+        },
+        {
+          title: 'Dedicated Software Teams',
+          slug: 'dedicated-software-teams',
+          description: 'Hire Dedicated Developers',
+        },
       ],
     },
     Frontend: {
       title: 'Frontend',
+      slug: 'frontend',
       description: 'Create stunning user interfaces',
       technologies: [
-        'React', 'Angular', 'Vue.js', 'Svelte', 'JavaScript', 'TypeScript',
-        'HTML5', 'CSS3', 'SASS/SCSS', 'Tailwind CSS', 'Bootstrap', 'Material-UI',
+        { name: 'React', slug: 'react' },
+        { name: 'Angular', slug: 'angular' },
+        { name: 'Vue.js', slug: 'vue-js' },
+        { name: 'Svelte', slug: 'svelte' },
+        { name: 'JavaScript', slug: 'javascript' },
+        { name: 'TypeScript', slug: 'typescript' },
+        { name: 'HTML5', slug: 'html5' },
+        { name: 'CSS3', slug: 'css3' },
+        { name: 'SASS/SCSS', slug: 'sass-scss' },
+        { name: 'Tailwind CSS', slug: 'tailwind-css' },
+        { name: 'Bootstrap', slug: 'bootstrap' },
+        { name: 'Material-UI', slug: 'material-ui' },
       ],
       hiring: [
-        { title: 'Hire Frontend Developers', description: 'Expert UI/UX implementers' },
-        { title: 'Frontend Team Augmentation', description: 'Boost your frontend capabilities' },
-        { title: 'Dedicated Frontend Teams', description: 'Full-service frontend development' },
+        {
+          title: 'Hire Frontend Developers',
+          slug: 'hire-frontend-developers',
+          description: 'Expert UI/UX implementers',
+        },
+        {
+          title: 'Frontend Team Augmentation',
+          slug: 'frontend-team-augmentation',
+          description: 'Boost your frontend capabilities',
+        },
+        {
+          title: 'Dedicated Frontend Teams',
+          slug: 'dedicated-frontend-teams',
+          description: 'Full-service frontend development',
+        },
       ],
     },
   },
+
+
 }
+
+
 
 export default function Header() {
   const [activeMenu, setActiveMenu] = useState('')
@@ -435,7 +491,7 @@ export default function Header() {
       <div className="container mx-auto flex flex-col lg:flex-row">
         <div className="border-r w-full lg:w-1/4 p-4 hidden md:block">
           {servicesData.categories.map((category) => (
-            <Link href={`/services/${category.slug}`}
+            <Link href={`/services/${category.slug}`} onClick={() => { setActiveMenu(''); setActiveCategory('') }}
               key={category.name}>
               <div className={`py-2.5 px-4 cursor-pointer rounded-md font-medium transition-colors duration-200 ${activeCategory === category.name ? 'bg-orange-50 text-orange-600' : 'hover:bg-gray-200'
                 }`}
@@ -473,7 +529,7 @@ export default function Header() {
                       <h3 className="font-medium text-sm text-gray-500 mb-3 py-1 px-2">{column.title}</h3>
                       {column.items.map((item, itemIndex) => (
 
-                        <Link href={`/services/${item.slug}`} key={itemIndex}>
+                        <Link href={`/services/${item.slug}`} key={itemIndex} onClick={() => { setActiveMenu(''); setActiveCategory('') }}>
                           <div className="mb-4 cursor-pointer rounded-lg py-1 px-2 hover:bg-orange-50">
                             <h4 className="font-medium">{item.name}</h4>
                             <p className="text-sm text-gray-600">{item.description}</p>
@@ -508,17 +564,20 @@ export default function Header() {
 
       className="absolute left-0 w-full bg-white shadow-lg z-50 transition-all duration-300 ease-in-out">
       <div className="container mx-auto flex flex-col lg:flex-row">
+
         <div className="w-full lg:w-1/4 border-r p-4 hidden md:block">
           {hireData.categories.map((category) => (
+            <Link href={`/hire-developers/${category.slug}`} onClick={() => { setActiveMenu(''); setActiveCategory('') }}>
             <div
-              key={category}
-              className={`py-2.5 px-4 cursor-pointer rounded-md transition-colors font-medium duration-200 ${activeCategory === category ? 'bg-orange-100 text-orange-500' : 'hover:bg-gray-200'
+              key={category.name}
+              className={`py-2.5 px-4 cursor-pointer rounded-md transition-colors font-medium duration-200 ${activeCategory === category.name ? 'bg-orange-100 text-orange-500' : 'hover:bg-gray-200'
                 }`}
-              onMouseEnter={() => handleCategoryHover(category)}
+              onMouseEnter={() => handleCategoryHover(category.name)}
             >
-              {category}
+              {category.name}
               <ChevronRight className="float-right h-5 w-5" />
             </div>
+            </Link>
           ))}
         </div>
 
@@ -526,8 +585,6 @@ export default function Header() {
         {hireData.content[activeCategory] && (
           <>
             <div className="w-full lg:w-2/4 p-6">
-
-
 
               <div className="mb-4 py-4 flex items-center border-b">
                 <span onClick={() => { setActiveMenu(''); setActiveCategory('') }} className="bg-orange-500 p-2 rounded-full mr-3">
@@ -544,9 +601,9 @@ export default function Header() {
 
               <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                 {hireData.content[activeCategory].technologies.map((tech, index) => (
-                  <div key={index} className="p-2 rounded-md transition-colors duration-200 font-medium cursor-pointer hover:bg-orange-50">
-                    {tech}
-                  </div>
+                  <Link href={`/hire-developers/${tech.slug}`} key={index} onClick={() => { setActiveMenu(''); setActiveCategory('') }} className="p-2 rounded-md transition-colors duration-200 font-medium cursor-pointer hover:bg-orange-50">
+                    {tech.name}
+                  </Link>
                 ))}
               </div>
             </div>

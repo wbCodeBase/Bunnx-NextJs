@@ -16,15 +16,15 @@ function formatparameter(input) {
     .join(' '); // Join them back together without hyphens
 }
 
-export default function ServiceDetails() {
+export default function HireDevOf() {
   const params = useParams();
-  const { serviceDetails } = params;
+  const { hireDevOf } = params;
 
-  console.log(serviceDetails);
+  console.log(hireDevOf);
 
   const heroSectionData = {
     title: "Enterprise",
-    subtitle: formatparameter(serviceDetails),
+    subtitle: formatparameter(hireDevOf),
     description: "Custom Software Development Services and Solutions to build top-tier intelligent enterprises with speed and agility.",
     imageUrl: "https://img.freepik.com/premium-photo/astronaut-outer-space-surrounded-by-planets-satellites-generative-ai_1028873-12416.jpg",
     linkUrl: "#contact-us",

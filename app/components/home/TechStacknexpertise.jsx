@@ -218,9 +218,9 @@ const TechStacknexpertise = () => {
                                                         <div key={itemIndex} className="mb-4 mt-2 cursor-pointer rounded-lg py-1 px-2 group">
                                                             <div className="flex items-center gap-4">
 
-                                                                <span class="relative flex h-3 w-3">
-                                                                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
-                                                                    <span class="relative inline-flex rounded-full h-3 w-3 bg-blue-500"></span>
+                                                                <span className="relative flex h-3 w-3">
+                                                                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                                                                    <span className="relative inline-flex rounded-full h-3 w-3 bg-blue-500"></span>
                                                                 </span>
 
                                                                 <h4 className="font-medium inline-block text-lg relative after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-black after:transition-all after:duration-300 group-hover:after:w-full">{item.name}</h4>

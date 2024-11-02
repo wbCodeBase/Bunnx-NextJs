@@ -7,7 +7,7 @@ const CtaSection2 = () => {
         <>
 
 
-            <section className='py-12'>
+            <section className='sm:py-12 py-2'>
                 <div className="bg-[#00214E] px-4 md:px-6">
 
                     <div className="container mx-auto max-w-screen-xl flex gap-8 items-center flex-wrap sm:justify-between justify-center sm:px-10 px-4 py-10 bg-purple900 bg-[#00214E] rounded-md borde border-gray-50">
