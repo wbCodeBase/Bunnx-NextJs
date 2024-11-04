@@ -19,7 +19,7 @@ const NewComponent = () => {
                         <h5 className='font-semibold text-2xl'>We done our best here</h5>
                         <p className='mt-2 text-md'>We leverage the latest technologies to deliver top-notch software solutions. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda illum repudiandae animi vitae ab dolore nam.</p>
                         <p className='mt-2 text-md'>We leverage the latest technologies to deliver top-notch software solutions. Lorem ipsum dolor sit amet consectetur.</p>
-                        <ul className="text-md mt-2 font-medium flex flex-col gap-1">
+                        <ul className="text-md mt-4 font-medium flex flex-col gap-3">
                             <li className='flex items-center gap-2'> <span className='text-orange-500'> <AiOutlineStar /> </span> <span> Web Development </span></li>
                             <li className='flex items-center gap-2'> <span className='text-orange-500'> <AiOutlineStar /> </span> <span> Software Development </span></li>
                             <li className='flex items-center gap-2'> <span className='text-orange-500'> <AiOutlineStar /> </span> <span> CMS/Ecommerce </span></li>
