@@ -1,8 +1,9 @@
 import React from 'react'
 
 import { GiLaurelsTrophy } from "react-icons/gi";
-import { IoDiamond } from "react-icons/io5";
-
+import { TbDiamond } from "react-icons/tb";
+import { BiDiamond } from "react-icons/bi";
+import { GoLightBulb } from "react-icons/go";
 
 export default function OurCoreValue() {
     return (
@@ -22,32 +23,61 @@ export default function OurCoreValue() {
                             <section className="font-quando grid gap-6 grid-cols-2 md:grid-cols-4 lg:grid-cols-6 md:gap-10">
 
 
-                                <article className='flex justify-cente items-center flex-col p-4 rounded-lg'>
+                                <article className='hover:border hover:shadow-sm flex cursor-pointer group items-center flex-col p-4 rounded-lg'>
                                     <h2>
-                                        <span className="flex tabular-nums text-4xl font-bold mb-2 duration-[3s] ease-out" >
-                                            <span className="text-orange-500 text-7xl"><GiLaurelsTrophy /></span>
+                                        <span className="flex tabular-nums text-4xl font-bold mb-2 duration-\[3s\] ease-out" >                                         
+                                        <span className="text-gray-500 text-7xl group-hover:text-orange-500"><GoLightBulb /></span>
                                         </span>
                                     </h2>
-                                    <p className="text-md text-gray-700 text-center">Excellence</p>
+                                    <p className="text-md text-gray-700 text-center mt-4">Excellence</p>
                                 </article>
 
-                                
-                                <article className='flex justify-cente items-center flex-col p-4 rounded-lg'>
+
+                                <article className='hover:border hover:shadow-sm flex cursor-pointer group items-center flex-col p-4 rounded-lg'>
                                     <h2>
-                                        <span className="flex tabular-nums text-4xl font-bold mb-2 duration-[3s] ease-out" >
-                                            <span className="text-orange-500 text-7xl"><IoDiamond /></span>
+                                        <span className="flex tabular-nums text-4xl font-bold mb-2 duration-\[3s\] ease-out" >                                            
+                                            <span className="text-gray-500 text-7xl group-hover:text-orange-500"><GoLightBulb /></span>
                                         </span>
                                     </h2>
-                                    <p className="text-md text-gray-700 text-center">Transparency & Integrity</p>
+                                    <p className="text-md text-gray-700 text-center mt-4">Transparency</p>
                                 </article>
 
-                                <article className='flex justify-cente items-center flex-col p-4 rounded-lg'>
+
+                                <article className='hover:border hover:shadow-sm flex cursor-pointer group items-center flex-col p-4 rounded-lg'>
                                     <h2>
-                                        <span className="flex tabular-nums text-4xl font-bold mb-2 duration-[3s] ease-out" >
-                                            <span className="text-orange-500 text-7xl"><IoDiamond /></span>
+                                        <span className="flex tabular-nums text-4xl font-bold mb-2 duration-\[3s\] ease-out" >                                            
+                                            <span className="text-gray-500 text-7xl group-hover:text-orange-500"><GoLightBulb /></span>
                                         </span>
                                     </h2>
-                                    <p className="text-md text-gray-700 text-center">Innovation</p>
+                                    <p className="text-md text-gray-700 text-center mt-4">Integrity</p>
+                                </article>
+
+                                <article className='hover:border hover:shadow-sm flex cursor-pointer group items-center flex-col p-4 rounded-lg'>
+                                    <h2>
+                                        <span className="flex tabular-nums text-4xl font-bold mb-2 duration-\[3s\] ease-out" >
+                                            <span className="text-gray-500 text-7xl group-hover:text-orange-500"><GoLightBulb /></span>
+                                        </span>
+                                    </h2>
+                                    <p className="text-md text-gray-700 text-center mt-4">Innovation</p>
+                                </article>
+
+                                <article className='hover:border hover:shadow-sm flex cursor-pointer group items-center flex-col p-4 rounded-lg'>
+                                    <h2>
+                                        <span className="flex tabular-nums text-4xl font-bold mb-2 duration-\[3s\] ease-out" >
+                                            <span className="text-gray-500 text-7xl group-hover:text-orange-500"><GoLightBulb /></span>
+                                        </span>
+                                    </h2>
+                                    <p className="text-md text-gray-700 text-center mt-4">Collaboration</p>
+                                </article>
+
+
+                                <article className='hover:border hover:shadow-sm flex cursor-pointer group items-center flex-col p-4 rounded-lg'>
+                                    <h2>
+                                        <span className="flex tabular-nums text-4xl font-bold mb-2 duration-\[3s\] ease-out" >
+                                            <span className="text-gray-500 text-7xl group-hover:text-orange-500"><GoLightBulb /></span>
+                                        </span>
+                                    </h2>
+                                    <p className="text-md text-gray-700 text-center mt-4">Accountability</p>
                                 </article>
 
 

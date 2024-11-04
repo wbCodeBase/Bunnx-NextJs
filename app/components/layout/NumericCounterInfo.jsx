@@ -22,7 +22,7 @@ export default function NumericCounterInfo() {
                             <article className='flex justify-center items-center flex-col p-4 rounded-lg'>
 
                                 <h2>
-                                    <span className="flex tabular-nums text-4xl font-bold mb-2 duration-[3s] ease-out" >
+                                    <span className="flex tabular-nums text-4xl font-bold mb-2 duration-\[3s\] ease-out" >
                                         <span className="text-orange-500"><CountUp end={16} enableScrollSpy />+</span>
                                     </span>
                                 </h2>
@@ -33,7 +33,7 @@ export default function NumericCounterInfo() {
                             <article className='flex justify-center items-center flex-col p-4 rounded-lg'>
 
                                 <h2>
-                                    <span className="flex tabular-nums text-4xl font-bold mb-2 duration-[3s] ease-out" >
+                                    <span className="flex tabular-nums text-4xl font-bold mb-2 duration-\[3s\] ease-out" >
                                         <span className="text-orange-500"><CountUp end={60} enableScrollSpy />+</span>
                                     </span>
                                 </h2>
@@ -44,7 +44,7 @@ export default function NumericCounterInfo() {
                             <article className='flex justify-center items-center flex-col p-4 rounded-lg'>
 
                                 <h2>
-                                    <span className="flex tabular-nums text-4xl font-bold mb-2 duration-[3s] ease-out" >
+                                    <span className="flex tabular-nums text-4xl font-bold mb-2 duration-\[3s\] ease-out" >
                                         <span className="text-orange-500"><CountUp end={180} enableScrollSpy />+</span>
                                     </span>
                                 </h2>
@@ -56,7 +56,7 @@ export default function NumericCounterInfo() {
                             <article className='flex justify-center items-center flex-col p-4 rounded-lg'>
 
                                 <h2>
-                                    <span className="flex tabular-nums text-4xl font-bold mb-2 duration-[3s] ease-out" >
+                                    <span className="flex tabular-nums text-4xl font-bold mb-2 duration-\[3s\] ease-out" >
                                         <span className="text-orange-500"><CountUp end={12} enableScrollSpy />+</span>
                                     </span>
                                 </h2>
