@@ -1,8 +1,12 @@
+import HeroSection from '@/components/ContactUs/HeroSection'
 import React from 'react'
+
 
 const contactUs = () => {
   return (
-    <div>contactUs</div>
+    <>
+    <HeroSection />
+    </>
   )
 }
 
