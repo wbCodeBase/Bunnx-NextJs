@@ -1,6 +1,4 @@
 import React from 'react'
-import Link from 'next/link';
-import { IoArrowForward } from "react-icons/io5";
 
 
 
@@ -9,35 +7,21 @@ const HereToHelp = () => {
 
     const servicesData = [
         {
-            title: "Software Development",
+            title: "Share your Requirement",
             description:
-                "Responsive and feature-rich websites. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam perferendis, pariatur et veniam at maiores, explicabo magni molestias repellendus dolores aut!",
-            slug: "software-development",
+                "We analyze your project requirements from the beginning for a seamless development process.",
         },
         {
-            title: "Web Development",
+            title: "Non Disclosure Agreement (NDA)",
             description:
-                "Responsive and feature-rich websites. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam perferendis, pariatur et veniam at maiores, explicabo magni molestias repellendus dolores aut!",
-            slug: "web-development",
+                "We assure you complete confidentiality with NDA. Your business ideas are always safe with us.",
         },
         {
-            title: "Application Development",
+            title: "Understanding your Requirement",
             description:
-                "Responsive and feature-rich websites. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam perferendis, pariatur et veniam at maiores, explicabo magni molestias repellendus dolores aut!",
-            slug: "application-development",
+                "Based on your requirement, we will provide experts for consultation to select the right approach.",
         },
-        {
-            title: "Dedicated Software Teams",
-            description:
-                "Responsive and feature-rich websites. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam perferendis, pariatur et veniam at maiores, explicabo magni molestias repellendus dolores aut!",
-            slug: "dedicated-software-teams",
-        },
-        {
-            title: "eCommerce",
-            description:
-                "Responsive and feature-rich websites. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam perferendis, pariatur et veniam at maiores, explicabo magni molestias repellendus dolores aut!",
-            slug: "ecommerce",
-        },
+
 
     ];
 
@@ -48,9 +32,9 @@ const HereToHelp = () => {
 
             <section className="border-t container mx-auto max-w-screen-lg xl:max-w-screen-xl px-4 md:px-6 py-10">
 
-                <h2 className='font-semibold text-orange-500 text-lg'>Our Services</h2>
-                <h4 className='font-semibold text-3xl my-2'>Software Development & Engineering Services</h4>
-                <p className='text-md text-gray-800'>Whether you require a complex enterprise software solution or seamless software integration, we will convert your ideas into reality with our long-standing, industry-proven IT consulting and bespoke software development services.</p>
+                <h2 className='font-semibold text-orange-500 text-lg'>We’re here to help</h2>
+                <h4 className='font-semibold text-3xl my-2'>Solutions and Support, When You Need Them Most</h4>
+                <p className='text-lg text-gray-800'>We provide expert mobile app developers exactly based on your requirements to scale your team.</p>
 
                 <div className='flex items-center justify-center flex-wrap gap-10 mt-6'>
 
@@ -60,13 +44,8 @@ const HereToHelp = () => {
 
                             <h3 className='font-semibold my-3 pb-3 text-gray-800 text-xl border-b border-orange-500'>{service.title}</h3>
 
-                            <p className='text-gray-600'>{service.description}</p>
+                            <p className='text-lg text-gray-600'>{service.description}</p>
 
-                            <div className='flex justify-end items-center'>
-
-                                <Link href={`/services/${service.slug}`} className='flex items-center justify-center text-orange-500 p-1 pl-3 font-medium text-md mt-4'><span className='relative after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[1px] after:bg-orange-500 after:transition-all after:duration-300 hover:after:w-full'> Know more </span> <span className='px-1'> <IoArrowForward /> </span></Link>
-
-                            </div>
 
                         </div>
                     ))

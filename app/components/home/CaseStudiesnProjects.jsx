@@ -1,9 +1,7 @@
-import Image from 'next/image';
-import Link from 'next/link'
 import React from 'react'
+import Image from 'next/image';
 import { MdShield } from "react-icons/md";
 import { CgMonday } from "react-icons/cg";
-import { IoIosCloud } from "react-icons/io";
 import { DiDatabase } from "react-icons/di";
 
 const CaseStudiesnProjects = () => {
