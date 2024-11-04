@@ -8,7 +8,7 @@ import { FaLocationArrow } from "react-icons/fa";
 
 const HeroSection = ({ title, subtitle, description, imageUrl, linkUrl }) => {
 
- 
+
 
   return (
     <>
@@ -23,7 +23,6 @@ const HeroSection = ({ title, subtitle, description, imageUrl, linkUrl }) => {
 
               <div className="flex items-center justify-center sm:justify-start">
                 <Link href={linkUrl || "/"} className='flex items-center justify-center gap-2 bg[#261E80] p-1 pl-3 font-medium text-lg bg-orange-500 rounded-full mt-4 text-white'><span> Get connected with us </span> <span className='bg-white rounded-full p-3 text-black rotate-45'> <FaLocationArrow /> </span></Link>
-                {/* <a href="#contact-us" className='flex items-center justify-center gap-2 bg[#261E80] p-1 pl-3 font-medium text-lg bg-orange-500 rounded-full mt-4 text-white'><span> Get connected with us </span> <span className='bg-white rounded-full p-3 text-black rotate-45'> <FaLocationArrow /> </span></a> */}
               </div>
 
             </div>
