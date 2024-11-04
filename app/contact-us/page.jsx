@@ -1,4 +1,4 @@
-import HeroSection from '@/components/ContactUs/HeroSection'
+import HeroSection from '@/components/contactUs/HeroSection'
 import React from 'react'
 
 
