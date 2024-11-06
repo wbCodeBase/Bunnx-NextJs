@@ -13,7 +13,7 @@ const Footer = () => {
 
             <footer className="md:pt-8 pt-0">
 
-                <div className="relative z-">
+                <div className="relative">
                     <div className="flex flex-wrap items-end mx-0">
 
                         <div id='contact-us' className='lg:w-1/2 w-full flex-shrink-0 flex-grow-0 relative'>

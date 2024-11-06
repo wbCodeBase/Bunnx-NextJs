@@ -23,11 +23,11 @@ export default function HireDevOf() {
   console.log(hireDevOf);
 
   const heroSectionData = {
-    title: "Enterprise",
-    subtitle: formatparameter(hireDevOf),
+    titlePrefix: "Enterprise",
+    title: formatparameter(hireDevOf),
     description: "Custom Software Development Services and Solutions to build top-tier intelligent enterprises with speed and agility.",
     imageUrl: "https://img.freepik.com/premium-photo/astronaut-outer-space-surrounded-by-planets-satellites-generative-ai_1028873-12416.jpg",
-    linkUrl: "#contact-us",
+    ctaRedirectUrl: "#contact-us",
   };
 
   return (

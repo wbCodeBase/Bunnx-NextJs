@@ -33,11 +33,11 @@ export default function ServiceDetails() {
 
 
   const heroSectionData = {
-    title: "Enterprise",
-    subtitle: formatparameter(serviceDetails),
+    titlePrefix: "Enterprise",
+    title: formatparameter(serviceDetails),
     description: "Custom Software Development Services and Solutions to build top-tier intelligent enterprises with speed and agility.",
     imageUrl: "https://img.freepik.com/premium-photo/astronaut-outer-space-surrounded-by-planets-satellites-generative-ai_1028873-12416.jpg",
-    linkUrl: "#contact-us",
+    ctaRedirectUrl: "#contact-us",
   };
 
   return (

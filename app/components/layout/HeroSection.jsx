@@ -1,12 +1,12 @@
 "use client"
 
 
-import Image from "next/image";
+import Image from "next/image"; 
 import Link from "next/link";
 
 import { FaLocationArrow } from "react-icons/fa";
 
-const HeroSection = ({ title, subtitle, description, imageUrl, linkUrl }) => {
+const HeroSection = ({ titlePrefix, title, description, imageUrl, ctaRedirectUrl }) => {
 
 
 
@@ -17,12 +17,12 @@ const HeroSection = ({ title, subtitle, description, imageUrl, linkUrl }) => {
 
           <div className="sm:mt-8 w-full lg:w-[55%] py-10 px-4 flex gap-20 flex-col sm:pt-18">
             <div>
-              <span className="lg:text-3xl text-2xl font-medium">{title || "Enterprise"}</span>
-              <h1 className="lg:text-6xl text-3xl my-2 font-semibold">{subtitle || "Software Development Company"}</h1>
+              <span className="lg:text-3xl text-2xl font-medium">{titlePrefix || "Enterprise"}</span>
+              <h1 className="lg:text-6xl text-3xl my-2 font-semibold">{title || "Software Development Company"}</h1>
               <p className="lg:text-xl text-lg my-6 font-medium">{description || "Custom Software Development Services and Solutions to build top-tier intelligent enterprises with speed and agility."}</p>
 
               <div className="flex items-center justify-center sm:justify-start">
-                <Link href={linkUrl || "/"} className='flex items-center justify-center gap-2 bg[#261E80] p-1 pl-3 font-medium text-lg bg-orange-500 rounded-full mt-4 text-white'><span> Get connected with us </span> <span className='bg-white rounded-full p-3 text-black rotate-45'> <FaLocationArrow /> </span></Link>
+                <Link href={ctaRedirectUrl || "/"} className='flex items-center justify-center gap-2 bg[#261E80] p-1 pl-3 font-medium text-lg bg-orange-500 rounded-full mt-4 text-white'><span> Get connected with us </span> <span className='bg-white rounded-full p-3 text-black rotate-45'> <FaLocationArrow /> </span></Link>
               </div>
 
             </div>

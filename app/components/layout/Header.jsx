@@ -642,7 +642,7 @@ export default function Header() {
   )
 
   return (
-    <header className={`${isScrolled ? "bg-[#00214E]" : "bg-black"} shadow-md sticky top-0 left-0 w-full z-20`} ref={dropdownRef}>
+    <header className={`${isScrolled ? "bg-[#00214E]" : "bg-black"} shadow-md sticky top-0 left-0 w-full z-40`} ref={dropdownRef}>
 
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between lg:px-10">

@@ -4,7 +4,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 export const myApi = createApi({
   reducerPath: 'myApi',
   baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:3000/api' }),
-  tagTypes: ['User'],  // Optional: for automatic cache invalidation
+  tagTypes: ['User', 'Hero'],  // Optional: for automatic cache invalidation
   endpoints: (builder) => ({
     
     getHeroSecItems: builder.query({
@@ -12,15 +12,15 @@ export const myApi = createApi({
       providesTags: ['Hero'], // Ensures refetching after creating or deleting
     }),
 
-    getItemByStr: builder.query({
+    getHeroSecItemByStr: builder.query({
       query: (str) => `heroSection/${str}`,
     }),
 
-    createHeroSecItems: builder.mutation({
-      query: (newHeroItem) => ({
+    createHeroSecContent: builder.mutation({
+      query: (newHeroContent) => ({
         url: 'heroSection',
         method: 'POST',
-        body: newHeroItem,
+        body: newHeroContent,
       }),
       invalidatesTags: ['Hero'], // Refetch users after creation
     }),
@@ -57,9 +57,11 @@ export const myApi = createApi({
 
 export const {
   useGetItemsQuery,
+  useGetHeroSecItemsQuery,
   useGetItemByIdQuery,
   useGetUsersQuery,
   useGetUserByIdQuery,
   useDeleteUserMutation,
+  useCreateHeroSecContentMutation,
   useCreateUserMutation,  // Add the createUser mutation hook
 } = myApi;

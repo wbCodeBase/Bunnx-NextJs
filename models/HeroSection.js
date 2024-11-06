@@ -1,11 +1,11 @@
 const mongoose = require('mongoose');
 
-const heroSectionSchema = new mongoose.Schema({
-  title: {
+const HeroSectionSchema = new mongoose.Schema({
+  titlePrefix: {
     type: String,
     required: true
   },
-  subtitle: {
+  title: {
     type: String,
     required: true
   },
@@ -17,7 +17,7 @@ const heroSectionSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  linkUrl: {
+  ctaRedirectUrl: {
     type: String,
     required: true
   },
@@ -30,6 +30,6 @@ const heroSectionSchema = new mongoose.Schema({
   timestamps: true // Automatically adds createdAt and updatedAt fields
 });
 
-const HeroSection = mongoose.model('HeroSection', heroSectionSchema);
 
-module.exports = HeroSection;
+
+export default mongoose.models.HeroSection || mongoose.model('HeroSection', HeroSectionSchema);

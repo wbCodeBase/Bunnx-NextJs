@@ -1,10 +1,12 @@
+
 import localFont from "next/font/local";
 import { AR_One_Sans, Quando } from "next/font/google";
 import "./globals.css";
-import Header from "./components/layout/Header";
-import Footer from "./components/layout/Footer";
 
 import { ReduxProvider } from '../store/ReduxProvider';
+
+
+import HeaderFooterWrapper from "@/components/layout/HeaderFooterWrapper";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -37,6 +39,8 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+
+
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${quando.variable} ${geistMono.variable} ${arOneSans.variable} antialiased`}
@@ -44,9 +48,7 @@ export default function RootLayout({ children }) {
 
 
         <ReduxProvider>
-          <Header />
-          {children}
-          <Footer />
+          <HeaderFooterWrapper>{children}</HeaderFooterWrapper>
         </ReduxProvider>
 
       </body>

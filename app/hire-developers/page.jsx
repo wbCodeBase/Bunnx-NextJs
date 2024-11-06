@@ -9,11 +9,11 @@ import Faqs from '@/components/home/Faqs';
 const Hire = () => {
 
     const heroSectionData = {
-        title: "Technologies",
-        subtitle: "Our Technologies Expertise",
+        titlePrefix: "Technologies",
+        title: "Our Technologies Expertise",
         description: "Custom Software Development Services and Solutions to build top-tier intelligent enterprises with speed and agility.",
         imageUrl: "https://cdn-server.hiddenbrains.com/uploads/bnr_large_01_6aed8bff69.webp?ver-20241023164536",
-        linkUrl: "#contact-us",
+        ctaRedirectUrl: "#contact-us",
     };
 
     return (

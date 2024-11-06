@@ -22,11 +22,11 @@ const Service = () => {
     // console.log(data);
     
     const heroSectionData = {
-        title: "Enterprise",
-        subtitle: "Software Development Services",
+        titlePrefix: "Enterprise",
+        title: "Software Development Services",
         description: "Custom Software Development Services and Solutions to build top-tier intelligent enterprises with speed and agility.",
         imageUrl: "https://cdn-server.hiddenbrains.com/uploads/bnr_large_01_6aed8bff69.webp?ver-20241023164536",
-        linkUrl: "#contact-us",
+        ctaRedirectUrl: "#contact-us",
     };
 
 
