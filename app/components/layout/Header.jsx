@@ -45,7 +45,7 @@ const servicesData = {
       slug: 'data-engineering'
     }
   ],
-  
+
   content: {
     'Software Development': {
       title: 'Software Development',
@@ -362,11 +362,7 @@ const hireData = {
         { name: 'Node', slug: 'node' },
       ],
       hiring: [
-        {
-          title: 'Hire Dedicated Developers',
-          slug: 'hire-dedicated-developers',
-          description: 'Build faster with on-demand team',
-        },
+
         {
           title: 'Staff Augmentation',
           slug: 'staff-augmentation',
@@ -507,7 +503,7 @@ export default function Header() {
         <div className="w-full lg:w-3/4">
           {servicesData.content[activeCategory] && (
             <>
-              <div className='p-6'>
+              <div className='p-6 h-screen sm:h-auto overflow-y-auto'>
 
 
                 <div className="mb-4 py-4 flex items-center border-b">
@@ -529,7 +525,7 @@ export default function Header() {
                       <h3 className="font-medium text-sm text-gray-500 mb-3 py-1 px-2">{column.title}</h3>
                       {column.items.map((item, itemIndex) => (
 
-                        <Link href={`/services/${item.slug}`} key={itemIndex} onClick={() => { setActiveMenu(''); setActiveCategory('') }}>
+                        <Link href={`/services/${item.slug}`} key={itemIndex} onClick={() => { setActiveMenu(''); setActiveCategory(''); setIsMobileMenuOpen(false) }}>
                           <div className="mb-4 cursor-pointer rounded-lg py-1 px-2 hover:bg-orange-50">
                             <h4 className="font-medium">{item.name}</h4>
                             <p className="text-sm text-gray-600">{item.description}</p>
@@ -568,15 +564,15 @@ export default function Header() {
         <div className="w-full lg:w-1/4 border-r p-4 hidden md:block">
           {hireData.categories.map((category, i) => (
             <Link href={`/hire-developers/${category.slug}`} key={i} onClick={() => { setActiveMenu(''); setActiveCategory('') }}>
-            <div
-              key={category.name}
-              className={`py-2.5 px-4 cursor-pointer rounded-md transition-colors font-medium duration-200 ${activeCategory === category.name ? 'bg-orange-100 text-orange-500' : 'hover:bg-gray-200'
-                }`}
-              onMouseEnter={() => handleCategoryHover(category.name)}
-            >
-              {category.name}
-              <ChevronRight className="float-right h-5 w-5" />
-            </div>
+              <div
+                key={category.name}
+                className={`py-2.5 px-4 cursor-pointer rounded-md transition-colors font-medium duration-200 ${activeCategory === category.name ? 'bg-orange-100 text-orange-500' : 'hover:bg-gray-200'
+                  }`}
+                onMouseEnter={() => handleCategoryHover(category.name)}
+              >
+                {category.name}
+                <ChevronRight className="float-right h-5 w-5" />
+              </div>
             </Link>
           ))}
         </div>
@@ -584,53 +580,59 @@ export default function Header() {
 
         {hireData.content[activeCategory] && (
           <>
-            <div className="w-full lg:w-2/4 p-6">
+            <div className='flex w-full flex-col lg:flex-row h-screen sm:h-auto overflow-auto'>
 
-              <div className="mb-4 py-4 flex items-center border-b">
-                <span onClick={() => { setActiveMenu(''); setActiveCategory('') }} className="bg-orange-500 p-2 rounded-full mr-3">
-                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-                  </svg>
-                </span>
-                <span>
-                  <h2 className='text-xl font-bold'> {hireData.content[activeCategory].title} </h2>
-                  <p className="text-gray-600">{hireData.content[activeCategory].description}</p>
-                </span>
+              <div className="w-full lg:w-8/12 p-6">
+
+                <div className="mb-4 py-4 flex items-center border-b">
+                  <span onClick={() => { setActiveMenu(''); setActiveCategory('') }} className="bg-orange-500 p-2 rounded-full mr-3">
+                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                    </svg>
+                  </span>
+                  <span>
+                    <h2 className='text-xl font-bold'> {hireData.content[activeCategory].title} </h2>
+                    <p className="text-gray-600">{hireData.content[activeCategory].description}</p>
+                  </span>
+                </div>
+
+
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                  {hireData.content[activeCategory].technologies.map((tech, index) => (
+                    <Link href={`/hire-developers/${tech.slug}`} key={index} onClick={() => { setActiveMenu(''); setActiveCategory(''); setIsMobileMenuOpen(false) }} className="p-2 rounded-md transition-colors duration-200 font-medium cursor-pointer hover:bg-orange-50">
+                      {tech.name}
+                    </Link>
+                  ))}
+                </div>
               </div>
 
+              <div className="w-full lg:w-4/12 px-5 py-5 bg-gray-50 mb-6 sm:mb-0">
 
-              <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                {hireData.content[activeCategory].technologies.map((tech, index) => (
-                  <Link href={`/hire-developers/${tech.slug}`} key={index} onClick={() => { setActiveMenu(''); setActiveCategory('') }} className="p-2 rounded-md transition-colors duration-200 font-medium cursor-pointer hover:bg-orange-50">
-                    {tech.name}
+                <div className="mb-4 border-b py-5">
+                  <h3 className="font-semibold text-lg">Hire Dedicated Developers</h3>
+                  <p className="text-sm text-gray-600">Build faster with on-demand team</p>
+                </div>
+
+                {hireData.content[activeCategory].hiring.map((item, index) => (
+                  <Link href={`/services/${item.slug}`} key={index}>
+                    <div className="mb-4 hover:border hover:bg-orange-50 rounded-lg p-3 cursor-pointer">
+                      <h3 className="font-medium text-lg mb-2 flex items-center">
+                        <span className="bg-orange-500 p-1 rounded-full mr-2">
+                          <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                          </svg>
+                        </span>
+                        {item.title}
+                      </h3>
+                      <p className="text-sm text-gray-600">{item.description}</p>
+                    </div>
                   </Link>
                 ))}
-              </div>
-            </div>
-
-            <div className="w-full lg:w-1/4 px-5 py-5 bg-gray-50">
-
-              <div className="mb-4 border-b py-5">
-                <h3 className="font-semibold text-lg">Head content</h3>
-                <p className="text-sm text-gray-600">Lorem ipsum dolor sit amet.</p>
+                <Link href="#" className="text-orange-500 hover:text-orange-600 transition-colors duration-200">
+                  View More <ChevronRight className="inline h-4 w-4" />
+                </Link>
               </div>
 
-              {hireData.content[activeCategory].hiring.map((item, index) => (
-                <div key={index} className="mb-4">
-                  <h3 className="font-medium text-lg mb-2 flex items-center">
-                    <span className="bg-orange-500 p-1 rounded-full mr-2">
-                      <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                      </svg>
-                    </span>
-                    {item.title}
-                  </h3>
-                  <p className="text-sm text-gray-600">{item.description}</p>
-                </div>
-              ))}
-              <Link href="#" className="text-orange-500 hover:text-orange-600 transition-colors duration-200">
-                View More <ChevronRight className="inline h-4 w-4" />
-              </Link>
             </div>
 
           </>
@@ -702,18 +704,21 @@ export default function Header() {
 
       {isMobileMenuOpen && (
         <>
-          <div className="lg:hidden">
+          <div className="lg:hidden h-screen sm:h-auto overflow-y-auto">
             <div className="px-2 pt-2 pb-3 space-y-1">
               {menuItems.map((item) => (
                 <div key={item.title}>
                   <button
-                    className="w-full text-left text-white hover:text-orange-500 block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200"
+                    className="w-full block text-left text-white hover:text-orange-500 px-3 py-2 rounded-md text-base font-medium transition-colors duration-200"
                     onClick={() => item.hasSubmenu && setActiveMenu(activeMenu === item.title ? '' : item.title)}
                   >
+
                     {item.title}
+
                     {item.hasSubmenu && (
                       <ChevronDown className={`float-right h-5 w-5 transform transition-transform duration-200 ${activeMenu === item.title ? 'rotate-180' : ''}`} />
                     )}
+
                   </button>
                   {item.hasSubmenu && activeMenu === item.title && (
                     <div className="pl-4 mt-2 space-y-2">
@@ -751,6 +756,7 @@ export default function Header() {
     </header>
   )
 }
+
 
 
 

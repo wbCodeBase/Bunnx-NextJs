@@ -1,13 +1,16 @@
-"use client"
+'use client';
+
+import { useParams } from 'next/navigation';
 
 import React from "react";
-import { useParams } from 'next/navigation';
 import Services from "@/components/services/Services";
 import HeroSection from '@/components/layout/HeroSection';
 import NumericCounterInfo from "@/components/layout/NumericCounterInfo";
 import CtaSection2 from '@/components/layout/CtaSection2';
 import ChooseUs from "@/components/services/ChooseUs";
 import Faqs from "@/components/home/Faqs";
+
+// import { useGetItemByIdQuery } from '../../../store/api/myApi';
 
 function formatparameter(input) {
   return input
@@ -22,6 +25,13 @@ export default function ServiceDetails() {
 
   console.log(serviceDetails);
 
+  // const { data, error, isLoading } = useGetItemByIdQuery(serviceDetails);
+
+  // if (isLoading) return <div>Loading...</div>;
+  // if (error) return <div>Error: {error.message}</div>;
+
+
+
   const heroSectionData = {
     title: "Enterprise",
     subtitle: formatparameter(serviceDetails),
@@ -33,6 +43,11 @@ export default function ServiceDetails() {
   return (
     <>
 
+      {/* <div>
+        <h1>{data.name}</h1>
+        <p>{data.description}</p>
+      </div> */}
+
       <HeroSection {...heroSectionData} />
 
       <NumericCounterInfo />
@@ -43,7 +58,7 @@ export default function ServiceDetails() {
 
       <ChooseUs />
 
-      <Faqs/>
+      <Faqs />
 
     </>
   );

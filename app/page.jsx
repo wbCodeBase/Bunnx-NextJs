@@ -4,16 +4,18 @@
 import NumericCounterInfo from "@/components/layout/NumericCounterInfo";
 import HeroSection from "@/components/layout/HeroSection";
 import OurServices from "@/components/home/OurServices";
-import TechStacknexpertise from "@/components/home/TechStacknexpertise";
+import OurServices2 from "@/components/home/OurServices2";
 import CaseStudiesnProjects from "@/components/home/CaseStudiesnProjects";
 import WhyChooseUs from "@/components/home/WhyChooseUs";
 import IndustryWeServed from "@/components/home/IndustryWeServed";
-import NewComponent from "@/components/home/NewComponent";
+import TechStackExpertise from "@/components/home/TechStackExpertise";
 import CtaSection from "@/components/home/CtaSection";
 import CtaSection2 from "@/components/layout/CtaSection2";
 import CtaSection3 from "@/components/home/CtaSection3";
 import BasicComponent from "@/components/home/BasicComponent";
 import Faqs from "@/components/home/Faqs";
+
+
 
 
 
@@ -34,15 +36,15 @@ export default function Home() {
 
       <NumericCounterInfo />
 
-      <TechStacknexpertise />
-
       <OurServices />
+
+      <OurServices2 />
 
       <BasicComponent />
 
       <CtaSection />
 
-      <NewComponent />
+      <TechStackExpertise />
 
       <IndustryWeServed />
 
