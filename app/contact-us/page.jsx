@@ -8,6 +8,8 @@ const contactUs = () => {
     <>
 
       <HeroSection />
+      
+      <HeroSection />
 
       <HereToHelp />
 
