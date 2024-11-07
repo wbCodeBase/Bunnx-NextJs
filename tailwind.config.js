@@ -69,10 +69,10 @@ module.exports = {
   			'marquee-reverse': 'marquee-reverse 25s linear infinite',
   			'marquee2-reverse': 'marquee2-reverse 25s linear infinite',
 
-  			marqueeY: 'marqueeY 25s linear infinite',
-  			marqueeY2: 'marqueeY2 25s linear infinite',
-  			'marquee-reverse-y': 'marquee-reverse-y 25s linear infinite',
-  			'marquee2-reverse-y': 'marquee2-reverse-y 25s linear infinite',
+  			marqueeY: 'marqueeY 35s linear infinite',
+  			marqueeY2: 'marqueeY2 35s linear infinite',
+  			'marquee-reverse-y': 'marquee-reverse-y 35s linear infinite',
+  			'marquee2-reverse-y': 'marquee2-reverse-y 35s linear infinite',
 
   			'accordion-down': 'accordion-down 0.2s ease-out',
   			'accordion-up': 'accordion-up 0.2s ease-out'
