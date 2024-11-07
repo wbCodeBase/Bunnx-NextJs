@@ -98,8 +98,8 @@ const Herosection = () => {
                                                 <Input className='bg-gray-50' placeholder="Title prefix" {...field} />
                                             </FormControl>
                                             {/* <FormDescription>
-                                            This is your public display name.
-                                        </FormDescription> */}
+                            This is your public display name.
+                        </FormDescription> */}
                                             <FormMessage />
                                         </FormItem>
                                     )}
@@ -114,9 +114,7 @@ const Herosection = () => {
                                             <FormControl>
                                                 <Input className='bg-gray-50' placeholder="Title" {...field} />
                                             </FormControl>
-                                            {/* <FormDescription>
-                                            This is your public display name.
-                                        </FormDescription> */}
+
                                             <FormMessage />
                                         </FormItem>
                                     )}
@@ -192,7 +190,7 @@ const Herosection = () => {
                             <div className='overflow-y-auto max-h-[35rem] scrollbar-design'>
 
                                 {data && data.map((heroSecCard, i) => (
-                                    
+
                                     <div key={i} className='bg-gray-50 flex gap-2 flex-col rounded-lg p-3 my-2 text-sm'>
                                         <div className='flex gap-2'>
                                             <span className='font-medium'>Prefix:</span>
@@ -222,9 +220,6 @@ const Herosection = () => {
 
                                 )
                                 )}
-
-
-
 
                             </div>
 
