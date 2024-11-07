@@ -14,6 +14,7 @@ import CtaSection2 from "@/components/layout/CtaSection2";
 import CtaSection3 from "@/components/home/CtaSection3";
 import BasicComponent from "@/components/home/BasicComponent";
 import Faqs from "@/components/home/Faqs";
+import Testimonial from "@/components/home/Testimonial";
 
 
 
@@ -55,6 +56,8 @@ export default function Home() {
       <CaseStudiesnProjects />
 
       <CtaSection3 />
+
+      <Testimonial />
 
       <Faqs />
 

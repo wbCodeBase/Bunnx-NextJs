@@ -3,6 +3,9 @@
 import React from 'react';
 import AdminpanelLayout from '@/components/adminpanel/AdminpanelLayout';
 
+import Lottie from "lottie-react";
+import loaderJson from "../../../public/pageAnimations/loader.json";
+
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
@@ -11,7 +14,6 @@ import { Button } from "@/components/ui/button";
 import {
     Form,
     FormControl,
-    FormDescription,
     FormField,
     FormItem,
     FormLabel,
@@ -19,7 +21,10 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 
-import { useCreateHeroSecContentMutation, useGetHeroSecItemsQuery } from '../../../store/api/myApi';
+import {
+    useCreateHeroSecContentMutation,
+    useGetHeroSecItemsQuery
+} from '../../../store/api/myApi';
 
 import "./hero.css";
 
@@ -33,9 +38,8 @@ const formSchema = z.object({
 });
 
 const Herosection = () => {
-
-
     const [createHeroSecContent] = useCreateHeroSecContentMutation();
+    const { data, error, isLoading } = useGetHeroSecItemsQuery();
 
     const form = useForm({
         resolver: zodResolver(formSchema),
@@ -49,190 +53,106 @@ const Herosection = () => {
         },
     });
 
-
     const onSubmit = async (values) => {
-        console.log(values);
-
         try {
-            await createHeroSecContent(values)
+            await createHeroSecContent(values);
             console.log('Hero section content created successfully');
-
             form.reset();
         } catch (error) {
-            console.error('Failed to create user:', error);
+            console.error('Failed to create content:', error);
         }
+    };
 
-    }
-
-
-
-    const { data, error, isLoading } = useGetHeroSecItemsQuery();
-
-    if (isLoading) return <div>Loading...</div>;
+    if (isLoading) return <div className='flex items-center justify-center h-screen w-full'><Lottie animationData={loaderJson} loop={true} /></div>;
     if (error) return <div>Error: {error.message}</div>;
 
-    console.log(data);
-
-
-
     return (
-        <>
-            <AdminpanelLayout>
+        <AdminpanelLayout>
+            <div className="flex items-center flex-col justify-start h-full w-full bg-gray-50">
+                <div className="text-center text-2xl font-semibold p-6">Hero Section</div>
 
-                <div className='flex items-center flex-col justify-start h-full w-full bg-gray-50'>
-
-                    <div className='text-center text-2xl font-semibold p-6'>Hero Section</div>
-
-                    <div className='flex justify-center gap-10 flex-wrap w-full sm:wauto mx-10 p-3'>
-
-                        <Form {...form}>
-                            <form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-col gap-4 w-full sm:w-1/2 border bg-white sm:p-8 p-3 rounded-lg">
-
-                                <FormField
-                                    control={form.control}
-                                    name="titlePrefix"
-                                    render={({ field }) => (
-                                        <FormItem>
-                                            <FormLabel>Title Prefix</FormLabel>
-                                            <FormControl>
-                                                <Input className='bg-gray-50' placeholder="Title prefix" {...field} />
-                                            </FormControl>
-                                            {/* <FormDescription>
-                            This is your public display name.
-                        </FormDescription> */}
-                                            <FormMessage />
-                                        </FormItem>
-                                    )}
-                                />
-
-                                <FormField
-                                    control={form.control}
-                                    name="title"
-                                    render={({ field }) => (
-                                        <FormItem>
-                                            <FormLabel>Title</FormLabel>
-                                            <FormControl>
-                                                <Input className='bg-gray-50' placeholder="Title" {...field} />
-                                            </FormControl>
-
-                                            <FormMessage />
-                                        </FormItem>
-                                    )}
-                                />
-
-
-                                <FormField
-                                    control={form.control}
-                                    name="description"
-                                    render={({ field }) => (
-                                        <FormItem>
-                                            <FormLabel>Description</FormLabel>
-                                            <FormControl>
-                                                <Input className='bg-gray-50' placeholder="Enter Description" {...field} />
-                                            </FormControl>
-                                            <FormMessage />
-                                        </FormItem>
-                                    )}
-                                />
-
-                                <FormField
-                                    control={form.control}
-                                    name="imageUrl"
-                                    render={({ field }) => (
-                                        <FormItem>
-                                            <FormLabel>Image</FormLabel>
-                                            <FormControl>
-                                                <Input className='bg-gray-50' placeholder="Coming Soon" {...field} />
-                                            </FormControl>
-                                            <FormMessage />
-                                        </FormItem>
-                                    )}
-                                />
-
-                                <FormField
-                                    control={form.control}
-                                    name="ctaRedirectUrl"
-                                    render={({ field }) => (
-                                        <FormItem>
-                                            <FormLabel>Cta Redirect Url</FormLabel>
-                                            <FormControl>
-                                                <Input className='bg-gray-50' placeholder="Cta Redirect Url" {...field} />
-                                            </FormControl>
-                                            <FormMessage />
-                                        </FormItem>
-                                    )}
-                                />
-
-                                <FormField
-                                    control={form.control}
-                                    name="primaryKey"
-                                    render={({ field }) => (
-                                        <FormItem>
-                                            <FormLabel>Primary Key</FormLabel>
-                                            <FormControl>
-                                                <Input className='bg-gray-50' placeholder="Enter unique key" {...field} />
-                                            </FormControl>
-                                            <FormMessage />
-                                        </FormItem>
-                                    )}
-                                />
-
-                                <div className='mt-4'>
-                                    <Button type="submit">Submit</Button>
-                                </div>
-
-                            </form>
-                        </Form>
-
-                        <div className='bg-white border p-3 rounded-lg w-full sm:w-1/3'>
-                            <span className='font-semibold mb-2'>Hero Section cards</span>
-
-                            <div className='overflow-y-auto max-h-[35rem] scrollbar-design'>
-
-                                {data && data.map((heroSecCard, i) => (
-
-                                    <div key={i} className='bg-gray-50 flex gap-2 flex-col rounded-lg p-3 my-2 text-sm'>
-                                        <div className='flex gap-2'>
-                                            <span className='font-medium'>Prefix:</span>
-                                            <span className='text-gray-600'>{heroSecCard?.titlePrefix}</span>
-                                        </div>
-                                        <div className='flex gap-2'>
-                                            <span className='font-medium'>Title:</span>
-                                            <span className='text-gray-600'>{heroSecCard?.title}</span>
-                                        </div>
-                                        <div className='flex gap-2'>
-                                            <span className='font-medium'>Para:</span>
-                                            <span className='text-gray-600'>{heroSecCard?.description}</span>
-                                        </div>
-                                        <div className='flex gap-2'>
-                                            <span className='font-medium'>Image:</span>
-                                            <span className='text-gray-600'>Soon</span>
-                                        </div>
-                                        <div className='flex gap-2'>
-                                            <span className='font-medium'>Primary Key:</span>
-                                            <span className='text-gray-600'>{heroSecCard?.primaryKey}</span>
-                                        </div>
-                                        <div className='flex gap-2'>
-                                            <span className='font-medium'>ctaRedirectUrl:</span>
-                                            <span className='text-gray-600'>{heroSecCard?.ctaRedirectUrl}</span>
-                                        </div>
-                                    </div>
-
-                                )
-                                )}
-
-                            </div>
-
-
-                        </div>
-
-                    </div>
-
+                <div className="flex justify-center gap-10 flex-wrap w-full sm:w-auto mx-10 p-3">
+                    <HeroSectionForm form={form} onSubmit={onSubmit} />
+                    <HeroSectionCards data={data} />
                 </div>
-
-            </AdminpanelLayout>
-        </>
+            </div>
+        </AdminpanelLayout>
     );
 };
 
+const HeroSectionForm = ({ form, onSubmit }) => (
+    <Form {...form}>
+        <form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-col gap-4 w-full sm:w-1/2 border bg-white sm:p-8 p-3 rounded-lg">
+            <FormFieldInput form={form} name="titlePrefix" label="Title Prefix" placeholder="Title prefix" />
+            <FormFieldInput form={form} name="title" label="Title" placeholder="Title" />
+            <FormFieldInput form={form} name="description" label="Description" placeholder="Enter Description" />
+            <FormFieldInput form={form} name="imageUrl" label="Image" placeholder="Coming Soon" />
+            <FormFieldInput form={form} name="ctaRedirectUrl" label="CTA Redirect URL" placeholder="CTA Redirect URL" />
+            <FormFieldInput form={form} name="primaryKey" label="Primary Key" placeholder="Enter unique key" />
+
+            <div className="mt-4">
+                <Button type="submit">Submit</Button>
+            </div>
+        </form>
+    </Form>
+);
+
+const FormFieldInput = ({ form, name, label, placeholder }) => (
+    <FormField
+        control={form.control}
+        name={name}
+        render={({ field }) => (
+            <FormItem>
+                <FormLabel>{label}</FormLabel>
+                <FormControl>
+                    <Input className="bg-gray-50" placeholder={placeholder} {...field} />
+                </FormControl>
+                <FormMessage />
+            </FormItem>
+        )}
+    />
+);
+
+const HeroSectionCards = ({ data }) => (
+    <div className="bg-white border p-3 rounded-lg w-full sm:w-1/3">
+        <span className="font-semibold mb-2">Hero Section Cards</span>
+        <div className="overflow-y-auto max-h-[35rem] scrollbar-design">
+            {data && data.map((heroSecCard, i) => (
+                <HeroCard key={i} heroSecCard={heroSecCard} />
+            ))}
+        </div>
+    </div>
+);
+
+const HeroCard = ({ heroSecCard }) => (
+    <div className="bg-gray-50 flex gap-2 flex-col rounded-lg p-3 my-2 text-sm">
+        <CardItem label="Prefix" content={heroSecCard?.titlePrefix} />
+        <CardItem label="Title" content={heroSecCard?.title} />
+        <CardItem label="Para" content={heroSecCard?.description} />
+        <CardItem label="Image" content="Soon" />
+        <CardItem label="Primary Key" content={heroSecCard?.primaryKey} />
+        <CardItem label="CTA Redirect URL" content={heroSecCard?.ctaRedirectUrl} />
+    </div>
+);
+
+const CardItem = ({ label, content }) => (
+    <div className="flex gap-2">
+        <span className="font-medium">{label}:</span>
+        <span className="text-gray-600">{content}</span>
+    </div>
+);
+
 export default Herosection;
+
+
+
+
+
+
+
+
+
+
+
+
+
