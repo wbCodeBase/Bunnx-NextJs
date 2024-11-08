@@ -32,13 +32,15 @@ const formSchema = z.object({
     titlePrefix: z.string().optional(),
     title: z.string().min(2, { message: "Title must be at least 2 characters." }),
     description: z.string().optional(),
-    imageUrl: z.string().optional(),
+    imageUrl: z.string(),
     ctaRedirectUrl: z.string().optional(),
     primaryKey: z.string().optional(),
 });
 
 const Herosection = () => {
+
     const [createHeroSecContent] = useCreateHeroSecContentMutation();
+
     const { data, error, isLoading } = useGetHeroSecItemsQuery();
 
     const form = useForm({
@@ -55,15 +57,26 @@ const Herosection = () => {
 
     const onSubmit = async (values) => {
         try {
-            await createHeroSecContent(values);
-            console.log('Hero section content created successfully');
-            form.reset();
+            // Trigger the mutation
+            const result = await createHeroSecContent(values);    // .unwrap();  Directly access data if successful
+
+            console.log(result.data);
+
+            if (result.data.success) {
+                console.log('Hero section content created successfully');
+                form.reset();
+            } else {
+                console.error("Failed to create content:", result.data.error);  // Error if it fails
+                alert(result.data.error)
+            }
+
         } catch (error) {
             console.error('Failed to create content:', error);
         }
     };
 
     if (isLoading) return <div className='flex items-center justify-center h-screen w-full'><Lottie animationData={loaderJson} loop={true} /></div>;
+
     if (error) return <div>Error: {error.message}</div>;
 
     return (
@@ -149,6 +162,7 @@ export default Herosection;
 
 
 
+  
 
 
 

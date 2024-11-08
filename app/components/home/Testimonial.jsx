@@ -1,51 +1,88 @@
 import React from 'react'
 import Image from 'next/image'
+import { HiMiniUsers } from "react-icons/hi2";
 
 
 const testimonials = [
     {
-        text: "Thanks to pagedone, I feel more informed and confident about my investment decisions than ever before.",
-        name: "Emily Johnson",
-        role: "Design Lead",
-        rating: 4.9,
+        text: "Bunnx was super helpful in optimizing the backend of our website. They identified unused code and streamlined our database queries, leading to a faster and more efficient platform.",
+        name: "Mike Casavant",
+        role: "Kersonic Organics",
+        rating: 4.5,
         image: "https://media.licdn.com/dms/image/v2/D5635AQEhQeOVXs6miw/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1730093324958?e=1731582000&v=beta&t=Bxu5-9SUMWtnQx73vRX5Qq4j3kUTEk1JA_Ge1Ikj9zA"
     },
     {
-        text: "Pagedone has made it possible for me to stay on top of my portfolio and make informed decisions quickly and easily.",
-        name: "Olivia Carter",
-        role: "Product Designer",
-        rating: 4.9,
+        text: "I have worked with Neha and her team on multiple web development projects. They consistently deliver high-quality code, on time and within budget. Excellent communication and technical expertise.",
+        name: "Bhushan",
+        role: "5X Journel",
+        rating: 4.7,
         image: "https://media.licdn.com/dms/image/v2/D5635AQEhQeOVXs6miw/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1730093324958?e=1731582000&v=beta&t=Bxu5-9SUMWtnQx73vRX5Qq4j3kUTEk1JA_Ge1Ikj9zA"
     },
     {
-        text: "I've been using pagedone for a year now and it's made managing my finances so much easier.",
-        name: "Wyatt Turner",
-        role: "CEO",
-        rating: 4.9,
+        text: "Bunnx did an outstanding job setting up our e-commerce store from scratch. They delivered a seamless user experience with excellent categorization and design. Highly recommended for anyone needing a reliable developer.",
+        name: "Parsa Jandaghi",
+        role: "WertFels GmbH",
+        rating: 5,
+        image: "https://media.licdn.com/dms/image/v2/D5635AQEhQeOVXs6miw/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1730093324958?e=1731582000&v=beta&t=Bxu5-9SUMWtnQx73vRX5Qq4j3kUTEk1JA_Ge1Ikj9zA"
+    },
+];
+
+const testimonials2 = [
+    {
+        text: "Bunnx helped us build a scalable and user-friendly e-commerce site. They were professional, responsive, and provided excellent guidance on the tech stack we should use. Highly recommended!",
+        name: "Kyle McConnell",
+        role: "McConnell Enterprises",
+        rating: 5,
         image: "https://media.licdn.com/dms/image/v2/D5635AQEhQeOVXs6miw/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1730093324958?e=1731582000&v=beta&t=Bxu5-9SUMWtnQx73vRX5Qq4j3kUTEk1JA_Ge1Ikj9zA"
     },
     {
-        text: "Thanks to pagedone, I was able to easily and securely transfer funds to my family overseas.",
-        name: "Ethan Miller",
-        role: "CEO",
-        rating: 4.9,
+        text: "Neha was instrumental in our web development projects. Her proactive communication and dedication to delivering clean, optimized code helped us meet our tight deadlines. I highly recommend her services.",
+        name: "Sue Vester",
+        role: "Vester Enterprises",
+        rating: 4.7,
         image: "https://media.licdn.com/dms/image/v2/D5635AQEhQeOVXs6miw/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1730093324958?e=1731582000&v=beta&t=Bxu5-9SUMWtnQx73vRX5Qq4j3kUTEk1JA_Ge1Ikj9zA"
     },
     {
-        text: "The customer service team at pagedone went above and beyond to help me resolve a billing issue.",
-        name: "Jackson Bennett",
-        role: "Design Lead",
-        rating: 4.9,
+        text: "Bunnx went above and beyond on our web application. They ensured that all functionalities were optimized and provided great support during the launch phase. Truly a valuable partner in development.",
+        name: "Joe Morris",
+        role: "Deselect",
+        rating: 4.6,
+        image: "https://media.licdn.com/dms/image/v2/D5635AQEhQeOVXs6miw/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1730093324958?e=1731582000&v=beta&t=Bxu5-9SUMWtnQx73vRX5Qq4j3kUTEk1JA_Ge1Ikj9zA"
+    },
+
+];
+
+const testimonials3 = [
+    {
+        text: "Neha and her team provided invaluable support on our backend API development. They were efficient and maintained a high level of quality throughout the project. Highly recommend them for complex projects.",
+        name: "Sarah Wright",
+        role: "Luxvan",
+        rating: 4.0,
         image: "https://media.licdn.com/dms/image/v2/D5635AQEhQeOVXs6miw/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1730093324958?e=1731582000&v=beta&t=Bxu5-9SUMWtnQx73vRX5Qq4j3kUTEk1JA_Ge1Ikj9zA"
     },
     {
-        text: "Pagedone is simply the best tool of investment in the market right now.",
-        name: "Henry Foster",
-        role: "Product Designer",
+        text: "Bunnx is a team of highly skilled developers and did a fantastic job on our custom software project. They completed everything ahead of schedule, and her expertise made a significant impact on the project’s success.",
+        name: "Jeff Wright",
+        role: "Bridge Storage",
+        rating: 5,
+        image: "https://media.licdn.com/dms/image/v2/D5635AQEhQeOVXs6miw/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1730093324958?e=1731582000&v=beta&t=Bxu5-9SUMWtnQx73vRX5Qq4j3kUTEk1JA_Ge1Ikj9zA"
+    },
+    {
+        text: "Bunnx attention to detail in web development is exceptional. They has become a go-to for any of our custom coding needs. Their commitment to quality and customer satisfaction is remarkable.",
+        name: "Mehmet Alcan",
+        role: "Crocliner Autoparts",
+        rating: 4.6,
+        image: "https://media.licdn.com/dms/image/v2/D5635AQEhQeOVXs6miw/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1730093324958?e=1731582000&v=beta&t=Bxu5-9SUMWtnQx73vRX5Qq4j3kUTEk1JA_Ge1Ikj9zA"
+    },
+    {
+        text: "Bunnx was fantastic to work with on our website overhaul. Use knowledge of development best practices ensured our new site is optimized for performance and scalability. I look forward to working with her again.",
+        name: "Charlotte Chipperfield",
+        role: "Heavy Bucks",
         rating: 4.9,
         image: "https://media.licdn.com/dms/image/v2/D5635AQEhQeOVXs6miw/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1730093324958?e=1731582000&v=beta&t=Bxu5-9SUMWtnQx73vRX5Qq4j3kUTEk1JA_Ge1Ikj9zA"
     }
-]
+];
+
 
 
 const Testimonial = () => {
@@ -57,19 +94,19 @@ const Testimonial = () => {
             <section className="border-t container mx-auto max-w-screen-lg xl:max-w-screen-xl px-4 md:px-6 py-8">
 
                 <h2 className='font-semibold text-orange-500 text-lg'>Testimonial</h2>
-                <h4 className='font-semibold text-3xl my-2'>We leverage the latest technologies to deliver top-notch software solutions.</h4>
-                <p className='text-md text-gray-800'>Whether you require a complex enterprise software solution or seamless software integration, we will convert your ideas into reality with our long-standing, industry-proven IT consulting and bespoke software development services.</p>
+                <h4 className='font-semibold text-3xl my-2'>What our clients say about Bunnx</h4>
+                <p className='text-md text-gray-800'>At Bunnx, our clients’ feedback reflects our dedication to excellence. They appreciate our reliable service, innovative solutions, and personalized approach. Hear directly from our clients about the positive impact we&apos;ve made.</p>
 
 
                 <section className="flex flex-wrap justify-center gap-10 py-2 mt-6">
 
                     <div className="w-full h-[30rem] flex items-center justify-center gap-6 overflow-hidden py-2">
 
-                        <MarqueeRow direction="top" />
+                        <MarqueeRow direction="top" reviews={testimonials} />
 
-                        <MarqueeRow direction="bottom" />
+                        <MarqueeRow direction="bottom" reviews={testimonials2} />
 
-                        <MarqueeRow direction="top" />
+                        <MarqueeRow direction="top" reviews={testimonials3} />
 
                     </div>
 
@@ -86,7 +123,7 @@ const Testimonial = () => {
 
 
 
-function MarqueeRow({ direction }) {
+function MarqueeRow({ direction, reviews }) {
     const animationClass = direction === 'bottom' ? 'animate-marquee-reverse-y' : 'animate-marqueeY'
     const animationClass2 = direction === 'bottom' ? 'animate-marquee2-reverse-y' : 'animate-marqueeY2'
 
@@ -96,7 +133,7 @@ function MarqueeRow({ direction }) {
 
             <div className={`whitespace-nowrap flex flex-col gap-6 ${animationClass} group-hover:pause-animation`}>
 
-                {testimonials.map((testimonial, index) => (
+                {reviews.map((testimonial, index) => (
                     TestimonialCard({ testimonial, index })
                 ))}
 
@@ -105,7 +142,7 @@ function MarqueeRow({ direction }) {
 
             <div className={`absolute flex mt-6 flex-col gap-6 w-full whitespace-nowrap ${animationClass2} group-hover:pause-animation`}>
 
-                {testimonials.map((testimonial, index) => (
+                {reviews.map((testimonial, index) => (
                     TestimonialCard({ testimonial, index })
                 ))}
 
@@ -129,13 +166,18 @@ function TestimonialCard({ testimonial, index }) {
 
             <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                    <Image
+                    
+                    {/* <Image
                         height={48}
                         width={48}
                         src={testimonial.image}
                         alt={testimonial.name}
                         className="w-12 h-12 rounded-full object-cover"
-                    />
+                    /> */}
+                    
+                    <HiMiniUsers className='text-2xl' />
+
+
                     <div>
                         <h3 className="font-semibold text-gray-900">
                             {testimonial.name}

@@ -11,7 +11,7 @@ const Hire = () => {
     const heroSectionData = {
         titlePrefix: "Technologies",
         title: "Our Technologies Expertise",
-        description: "Custom Software Development Services and Solutions to build top-tier intelligent enterprises with speed and agility.",
+        description: "Hire expert developers across top technologies to build intelligent, high-performing solutions tailored to your business needs.",
         imageUrl: "https://cdn-server.hiddenbrains.com/uploads/bnr_large_01_6aed8bff69.webp?ver-20241023164536",
         ctaRedirectUrl: "#contact-us",
     };

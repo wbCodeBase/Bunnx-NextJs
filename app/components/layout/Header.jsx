@@ -8,7 +8,7 @@ import Image from 'next/image'
 const menuItems = [
   { title: 'Home', slug: '/', hasSubmenu: false },
   { title: 'Services', slug: '/services', hasSubmenu: true },
-  { title: 'Hire', slug: '/hire-developers', hasSubmenu: true },
+  { title: 'Hire', slug: '/hire', hasSubmenu: true },
   { title: 'About Us', slug: '/about-us', hasSubmenu: false },
   { title: 'Contact Us', slug: '/contact-us', hasSubmenu: false },
 ]
@@ -327,17 +327,17 @@ const servicesData = {
 
 const hireData = {
   categories: [
-    { name: 'Backend', slug: 'backend' },
-    { name: 'Frontend', slug: 'frontend' },
-    { name: 'AI/ML', slug: 'ai-ml' },
-    { name: 'Mobile', slug: 'mobile' },
-    { name: 'Full Stack', slug: 'full-stack' },
-    { name: 'DevOps', slug: 'devops' },
-    { name: 'CMS', slug: 'cms' },
-    { name: 'eCommerce', slug: 'ecommerce' },
-    { name: 'Digital Marketing', slug: 'digital-marketing' },
-    { name: 'Blockchain', slug: 'blockchain' },
-    { name: 'Low - Code', slug: 'low-code' },
+    { name: 'Backend', slug: 'backend-developers' },
+    { name: 'Frontend', slug: 'frontend-developers' },
+    { name: 'AI/ML', slug: 'ai-ml-developers' },
+    { name: 'Mobile', slug: 'mobile-developers' },
+    { name: 'Full Stack', slug: 'full-stack-developers' },
+    { name: 'DevOps', slug: 'devops-developers' },
+    { name: 'CMS', slug: 'cms-developers' },
+    { name: 'eCommerce', slug: 'ecommerce-developers' },
+    { name: 'Digital Marketing', slug: 'digital-marketing-developers' },
+    { name: 'Blockchain', slug: 'blockchain-developers' },
+    { name: 'Low - Code', slug: 'low-code-developers' },
   ],
   content: {
     Backend: {
@@ -345,21 +345,21 @@ const hireData = {
       slug: 'backend',
       description: 'Build robust backend',
       technologies: [
-        { name: '.NET', slug: 'dot-net' },
-        { name: 'PHP', slug: 'php' },
-        { name: 'C/C++', slug: 'c-cpp' },
-        { name: 'Python', slug: 'python' },
-        { name: 'C#', slug: 'c-sharp' },
-        { name: 'Ruby on Rails', slug: 'ruby-on-rails' },
-        { name: 'Django', slug: 'django' },
-        { name: 'Symfony', slug: 'symfony' },
-        { name: 'Firebase', slug: 'firebase' },
-        { name: 'Assembly', slug: 'assembly' },
-        { name: 'Golang', slug: 'golang' },
-        { name: 'Java', slug: 'java' },
-        { name: 'GraphQL', slug: 'graphql' },
-        { name: 'Laravel', slug: 'laravel' },
-        { name: 'Node', slug: 'node' },
+        { name: '.NET', slug: 'dot-net-developers' },
+        { name: 'PHP', slug: 'php-developers' },
+        { name: 'C/C++', slug: 'c-cpp-developers' },
+        { name: 'Python', slug: 'python-developers' },
+        { name: 'C#', slug: 'c-sharp-developers' },
+        { name: 'Ruby on Rails', slug: 'ruby-on-rails-developers' },
+        { name: 'Django', slug: 'django-developers' },
+        { name: 'Symfony', slug: 'symfony-developers' },
+        { name: 'Firebase', slug: 'firebase-developers' },
+        { name: 'Assembly', slug: 'assembly-developers' },
+        { name: 'Golang', slug: 'golang-developers' },
+        { name: 'Java', slug: 'java-developers' },
+        { name: 'GraphQL', slug: 'graphql-developers' },
+        { name: 'Laravel', slug: 'laravel-developers' },
+        { name: 'Node', slug: 'node-developers' },
       ],
       hiring: [
 
@@ -370,7 +370,7 @@ const hireData = {
         },
         {
           title: 'Hire Software Developers',
-          slug: 'hire-software-developers',
+          slug: 'software-developers',
           description: 'Work with skilled & dedicated developers',
         },
         {
@@ -385,18 +385,16 @@ const hireData = {
       slug: 'frontend',
       description: 'Create stunning user interfaces',
       technologies: [
-        { name: 'React', slug: 'react' },
-        { name: 'Angular', slug: 'angular' },
-        { name: 'Vue.js', slug: 'vue-js' },
-        { name: 'Svelte', slug: 'svelte' },
-        { name: 'JavaScript', slug: 'javascript' },
-        { name: 'TypeScript', slug: 'typescript' },
-        { name: 'HTML5', slug: 'html5' },
-        { name: 'CSS3', slug: 'css3' },
-        { name: 'SASS/SCSS', slug: 'sass-scss' },
-        { name: 'Tailwind CSS', slug: 'tailwind-css' },
-        { name: 'Bootstrap', slug: 'bootstrap' },
-        { name: 'Material-UI', slug: 'material-ui' },
+        { name: 'React', slug: 'react-developers' },
+        { name: 'Angular', slug: 'angular-developers' },
+        { name: 'Vue.js', slug: 'vue-js-developers' },
+        { name: 'Svelte', slug: 'svelte-developers' },
+        { name: 'JavaScript', slug: 'javascript-developers' },
+        { name: 'TypeScript', slug: 'typescript-developers' },
+        { name: 'SASS/SCSS', slug: 'sass-scss-developers' },
+        { name: 'Tailwind CSS', slug: 'tailwind-css-developers' },
+        { name: 'Bootstrap', slug: 'bootstrap-developers' },
+        { name: 'Material-UI', slug: 'material-ui-developers' },
       ],
       hiring: [
         {
@@ -563,7 +561,7 @@ export default function Header() {
 
         <div className="w-full lg:w-1/4 border-r p-4 hidden md:block">
           {hireData.categories.map((category, i) => (
-            <Link href={`/hire-developers/${category.slug}`} key={i} onClick={() => { setActiveMenu(''); setActiveCategory('') }}>
+            <Link href={`/hire/${category.slug}`} key={i} onClick={() => { setActiveMenu(''); setActiveCategory('') }}>
               <div
                 key={category.name}
                 className={`py-2.5 px-4 cursor-pointer rounded-md transition-colors font-medium duration-200 ${activeCategory === category.name ? 'bg-orange-100 text-orange-500' : 'hover:bg-gray-200'
@@ -599,7 +597,7 @@ export default function Header() {
 
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                   {hireData.content[activeCategory].technologies.map((tech, index) => (
-                    <Link href={`/hire-developers/${tech.slug}`} key={index} onClick={() => { setActiveMenu(''); setActiveCategory(''); setIsMobileMenuOpen(false) }} className="p-2 rounded-md transition-colors duration-200 font-medium cursor-pointer hover:bg-orange-50">
+                    <Link href={`/hire/${tech.slug}`} key={index} onClick={() => { setActiveMenu(''); setActiveCategory(''); setIsMobileMenuOpen(false) }} className="p-2 rounded-md transition-colors duration-200 font-medium cursor-pointer hover:bg-orange-50">
                       {tech.name}
                     </Link>
                   ))}

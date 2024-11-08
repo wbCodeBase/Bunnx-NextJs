@@ -15,7 +15,7 @@ const HeroSectionSchema = new mongoose.Schema({
   },
   imageUrl: {
     type: String,
-    required: true
+    // required: [true, "Image file is missing."],
   },
   ctaRedirectUrl: {
     type: String,

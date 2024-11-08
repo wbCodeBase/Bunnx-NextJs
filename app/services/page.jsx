@@ -9,17 +9,8 @@ import CtaSection2 from '@/components/layout/CtaSection2';
 import Faqs from '@/components/home/Faqs';
 
 
-// import { useGetItemsQuery } from '../../store/api/myApi';
-
 
 const Service = () => {
-
-    // const { data, error, isLoading } = useGetItemsQuery();
-
-    // if (isLoading) return <div>Loading...</div>;
-    // if (error) return <div>Error: {error.message}</div>;
-
-    // console.log(data);
     
     const heroSectionData = {
         titlePrefix: "Enterprise",
@@ -33,11 +24,6 @@ const Service = () => {
     return (
         <>
 
-            {/* <div>
-                <h1>Items</h1>
-
-                {data && <div>Status: {data.status}, Method: {data.method}</div>}
-            </div> */}
 
             <HeroSection {...heroSectionData} />
 

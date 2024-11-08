@@ -1,5 +1,5 @@
 // app/api/users/route.js
-import connectToDatabase from '../../../lib/db';
+import connectToDatabase from '../../../utils/database';
 import { getUsers, createUser, updateUser, deleteUser } from '../../../controllers/userController';
 
 export async function GET(request) {

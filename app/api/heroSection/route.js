@@ -1,17 +1,19 @@
 // app/api/users/route.js
-import connectToDatabase from '../../../lib/db';
+import connectToDatabase from '../../../utils/database';
 import { getHeroSectionContent, createHeroSectionContent, updateHeroSectionContent, deleteHeroSectionContent } from '../../../controllers/heroSectionController';
 
-export async function GET(request) {
+export async function GET() {
   await connectToDatabase();
+
   const heroSectionContent = await getHeroSectionContent();
+
   return new Response(JSON.stringify(heroSectionContent), { status: 200 });
 }
 
 export async function POST(request) {
   await connectToDatabase();
   const data = await request.json();
-  
+
   console.log("data", data);
 
   const newUser = await createHeroSectionContent(data);

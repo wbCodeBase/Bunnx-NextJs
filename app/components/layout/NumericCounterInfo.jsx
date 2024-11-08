@@ -10,7 +10,7 @@ export default function NumericCounterInfo() {
             <div className="antialiased my10 -translatey-16">
 
                 <main className="flex flex-col justify-center overflow-hidden">
-                    <div className="w-full rounded-lg max-w6xl bg-orange-50 mx-auto px-4 md:px-6 py-6">
+                    <div className="w-full rounded-lg max-w6xl bg-orange50 mx-auto px-4 md:px-6 py-6">
 
                         {/* <h2 className='font-semibold text-orange-500 text-lg text-center'>Bunnx</h2>
                         <h4 className='font-quando font-bold text-xl sm:text-2xl my-2 text-center'>World Best Development Service Provider</h4> */}

@@ -9,6 +9,12 @@ import CtaSection2 from '@/components/layout/CtaSection2';
 import ChooseUs from "@/components/services/ChooseUs";
 import Faqs from "@/components/home/Faqs";
 
+import { useGetHeroSecItemByStrQuery } from '../../../store/api/myApi';
+
+import Lottie from "lottie-react";
+import loaderJson from "../../../public/pageAnimations/loader.json";
+
+
 function formatparameter(input) {
   return input
     .split('-') // Split the string by hyphen
@@ -20,14 +26,26 @@ export default function HireDevOf() {
   const params = useParams();
   const { hireDevOf } = params;
 
-  console.log(hireDevOf);
+  const { data, error, isLoading } = useGetHeroSecItemByStrQuery(hireDevOf);
+
+  // Handle loading state
+  if (isLoading) return <div className='flex items-center justify-center h-screen w-full'><Lottie animationData={loaderJson} loop={true} /></div>;
+
+
+  // Handle error state
+  if (error) return <p>Error fetching data</p>;
+
+  console.log("data", data);
+
+
+
 
   const heroSectionData = {
-    titlePrefix: "Enterprise",
-    title: formatparameter(hireDevOf),
-    description: "Custom Software Development Services and Solutions to build top-tier intelligent enterprises with speed and agility.",
+    titlePrefix: data?.titlePrefix || "Enterprise",
+    title: data?.title || formatparameter(hireDevOf),
+    description: data?.description || "Custom Software Development Services and Solutions to build top-tier intelligent enterprises with speed and agility.",
     imageUrl: "https://img.freepik.com/premium-photo/astronaut-outer-space-surrounded-by-planets-satellites-generative-ai_1028873-12416.jpg",
-    ctaRedirectUrl: "#contact-us",
+    ctaRedirectUrl: data?.ctaRedirectUrl || "#contact-us",
   };
 
   return (
@@ -43,7 +61,7 @@ export default function HireDevOf() {
 
       <ChooseUs />
 
-      <Faqs/>
+      <Faqs />
 
     </>
   );

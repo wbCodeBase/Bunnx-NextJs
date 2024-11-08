@@ -15,7 +15,7 @@ const frontend = [
 
 export default function TechStackMarquee() {
   return (
-    <div className="lg:w-[46%] w-full overflow-hidden bg-gray100 py-2">
+    <div className="lg:w-[46%] w-full flex flex-col gap-2 overflow-hidden bg-gray100 py-2">
       
       {/* <h3 className='font-semibold '>Front-End</h3> */}
       <MarqueeRow direction="right" />

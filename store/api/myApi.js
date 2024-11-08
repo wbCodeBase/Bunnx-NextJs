@@ -13,7 +13,7 @@ export const myApi = createApi({
     }),
 
     getHeroSecItemByStr: builder.query({
-      query: (str) => `heroSection/${str}`,
+      query: (identifier) => `heroSection/${identifier}`,
     }),
 
     createHeroSecContent: builder.mutation({
@@ -58,6 +58,7 @@ export const myApi = createApi({
 export const {
   useGetItemsQuery,
   useGetHeroSecItemsQuery,
+  useGetHeroSecItemByStrQuery,
   useGetItemByIdQuery,
   useGetUsersQuery,
   useGetUserByIdQuery,
