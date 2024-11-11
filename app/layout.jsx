@@ -57,7 +57,3 @@ export default function RootLayout({ children }) {
 }
 
 
-// Designed "User Guide to Software Development" responsive component for service page
-// Designed "User Guide to Software Development" responsive component for service page
-// Icons & Colors slightly change in Header 
-// Fix Faqs design 
