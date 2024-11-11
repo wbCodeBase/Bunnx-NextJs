@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar"
-import { AppSidebar } from "@/components/app-sidebar"
+import { AppSidebar } from "@/components/adminpanel/app-sidebar"
 
 const AdminpanelLayout = ({ children }) => {
   return (
@@ -19,21 +19,3 @@ const AdminpanelLayout = ({ children }) => {
 
 export default AdminpanelLayout;
 
-
-
-
-
-// import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar"
-// import { AppSidebar } from "@/components/app-sidebar"
-
-// export default function Layout({ children }: { children: React.ReactNode }) {
-//   return (
-//     <SidebarProvider>
-//       <AppSidebar />
-//       <main>
-//         <SidebarTrigger />
-//         {children}
-//       </main>
-//     </SidebarProvider>
-//   )
-// }

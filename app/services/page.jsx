@@ -3,6 +3,8 @@
 import React from 'react'
 import Services from "@/components/services/Services";
 import ChooseUs from "@/components/services/ChooseUs";
+import GuideTopics from "@/components/services/GuideTopics";
+import OurProcess from "@/components/services/OurProcess";
 import HeroSection from '@/components/layout/HeroSection';
 import NumericCounterInfo from "@/components/layout/NumericCounterInfo";
 import CtaSection2 from '@/components/layout/CtaSection2';
@@ -33,7 +35,11 @@ const Service = () => {
 
             <CtaSection2 />
 
+            <OurProcess />
+
             <ChooseUs />
+
+            <GuideTopics />
 
             <Faqs />
         </>

@@ -1,6 +1,14 @@
 import React from 'react'
-import Image from 'next/image'
 import { HiMiniUsers } from "react-icons/hi2";
+
+import {
+    Carousel,
+    CarouselContent,
+    CarouselItem,
+    CarouselNext,
+    CarouselPrevious,
+} from "@/components/ui/carousel"
+import { Card, CardContent } from "@/components/ui/card"
 
 
 const testimonials = [
@@ -84,9 +92,7 @@ const testimonials3 = [
 ];
 
 
-
 const Testimonial = () => {
-
 
     return (
         <>
@@ -98,7 +104,7 @@ const Testimonial = () => {
                 <p className='text-md text-gray-800'>At Bunnx, our clients’ feedback reflects our dedication to excellence. They appreciate our reliable service, innovative solutions, and personalized approach. Hear directly from our clients about the positive impact we&apos;ve made.</p>
 
 
-                <section className="flex flex-wrap justify-center gap-10 py-2 mt-6">
+                <section className="hidden sm:flex flex-wrap justify-center gap-10 py-2 mt-6">
 
                     <div className="w-full h-[30rem] flex items-center justify-center gap-6 overflow-hidden py-2">
 
@@ -111,6 +117,80 @@ const Testimonial = () => {
                     </div>
 
                 </section>
+
+
+                <div className="w-full max-w-6xl sm:hidden block mx-auto px-1 sm:px-4 py-8">
+                    <Carousel
+                        opts={{
+                            align: "start",
+                            loop: true,
+                        }}
+                        className="w-full"
+                    >
+                        <CarouselContent className="-ml-2 md:-ml-4">
+                            {testimonials.map((testimonial, index) => (
+
+                                <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
+                                    <Card className="border-none shadow-sm">
+                                        <CardContent className="p-0">
+
+
+                                            <div
+                                                key={testimonial.name}
+                                                className={`rounded-2xl p-6 transition-all duration-300 hover:shadow-lg ${index % 2 === 0 ? 'bg-[#F8F9FF]' : 'bg-white border'
+                                                    }`}
+                                            >
+                                                <p className="text-gray-600 text-wrap mb-8 min-h-[80px]">
+                                                    {testimonial.text}
+                                                </p>
+
+                                                <div className="flex items-center justify-between">
+                                                    <div className="flex items-center gap-3">
+
+
+                                                        <HiMiniUsers className='text-2xl' />
+
+
+                                                        <div>
+                                                            <h3 className="font-semibold text-gray-900">
+                                                                {testimonial.name}
+                                                            </h3>
+                                                            <p className="text-gray-500 text-sm">
+                                                                {testimonial.role}
+                                                            </p>
+                                                        </div>
+                                                    </div>
+
+                                                    <div className="flex items-center gap-1">
+                                                        <svg
+                                                            className="w-5 h-5 text-[#6366F1]"
+                                                            fill="currentColor"
+                                                            viewBox="0 0 20 20"
+                                                        >
+                                                            <path
+                                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                                                            />
+                                                        </svg>
+                                                        <span className="font-semibold text-[#6366F1]">
+                                                            {testimonial.rating}
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                        </CardContent>
+                                    </Card>
+                                </CarouselItem>
+
+                            ))}
+                        </CarouselContent>
+                        <div className="sm:flex justify-center gap-2 mt-4 hidden">
+                            <CarouselPrevious />
+                            <CarouselNext />
+                        </div>
+                    </Carousel>
+                </div>
 
 
 
@@ -128,7 +208,7 @@ function MarqueeRow({ direction, reviews }) {
     const animationClass2 = direction === 'bottom' ? 'animate-marquee2-reverse-y' : 'animate-marqueeY2'
 
     return (
-        <div className="relative flex gap6 flex-col flex-1 overflow-y-hidden py-2 group">
+        <div className="relative flex flex-col flex-1 overflow-y-hidden py-2 group">
 
 
             <div className={`whitespace-nowrap flex flex-col gap-6 ${animationClass} group-hover:pause-animation`}>
@@ -166,15 +246,8 @@ function TestimonialCard({ testimonial, index }) {
 
             <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3">
-                    
-                    {/* <Image
-                        height={48}
-                        width={48}
-                        src={testimonial.image}
-                        alt={testimonial.name}
-                        className="w-12 h-12 rounded-full object-cover"
-                    /> */}
-                    
+
+
                     <HiMiniUsers className='text-2xl' />
 
 

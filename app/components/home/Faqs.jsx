@@ -19,16 +19,15 @@ const Faqs = () => {
 
                 <section className="flex flex-wrap justify-center md:gap-10 gap-5 py-2 my-6">
 
-                    <div className='lg:w-[46%] w-full'>
+                    <div className='lg:w-[36%] w-full'>
                         
                         <h2 className='font-semibold text-orange-500 text-xl'>FAQs</h2>
                         <h4 className='font-semibold text-3xl my-2'>Ask what you want</h4>
                         <p className='text-lg text-gray-800'>Whether you require a complex enterprise software solution or seamless software integration.</p>
 
-
                     </div>
 
-                    <div className="lg:w-[46%] w-full py-2">
+                    <div className="lg:w-[56%] w-full py-2">
 
                         <Accordion type="single" collapsible className="w-full">
                             <AccordionItem value="item-1">

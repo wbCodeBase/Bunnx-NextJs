@@ -61,7 +61,7 @@ export default function OurPhilosophy() {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <div className="flex justify-center gap-2 mt-4">
+            <div className="sm:flex justify-center gap-2 mt-4 hidden">
               <CarouselPrevious />
               <CarouselNext />
             </div>

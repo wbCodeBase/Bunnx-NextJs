@@ -5,6 +5,9 @@ import Link from 'next/link'
 import { ChevronRight, ChevronDown, Menu, X } from 'lucide-react'
 import Image from 'next/image'
 
+import { FaJava } from "react-icons/fa";
+import { TbCodeDots } from "react-icons/tb";
+
 const menuItems = [
   { title: 'Home', slug: '/', hasSubmenu: false },
   { title: 'Services', slug: '/services', hasSubmenu: true },
@@ -487,7 +490,7 @@ export default function Header() {
           {servicesData.categories.map((category) => (
             <Link href={`/services/${category.slug}`} onClick={() => { setActiveMenu(''); setActiveCategory('') }}
               key={category.name}>
-              <div className={`py-2.5 px-4 cursor-pointer rounded-md font-medium transition-colors duration-200 ${activeCategory === category.name ? 'bg-orange-50 text-orange-600' : 'hover:bg-gray-200'
+              <div className={`py-2.5 px-4 cursor-pointer rounded-md font-medium transition-colors duration-200 ${activeCategory === category.name ? 'bg-amber-50 text-amber-600' : ''
                 }`}
                 onMouseEnter={() => handleCategoryHover(category.name)}
               >
@@ -505,10 +508,13 @@ export default function Header() {
 
 
                 <div className="mb-4 py-4 flex items-center border-b">
-                  <span onClick={() => { setActiveMenu(''); setActiveCategory('') }} className="bg-orange-500 p-2 rounded-full mr-3">
-                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <span onClick={() => { setActiveMenu(''); setActiveCategory('') }} className="bg-amber-500 p-2 rounded-full mr-3">
+                    {/* <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-                    </svg>
+                    </svg> */}
+
+                    <FaJava className='text-white font-semibold text-2xl' />
+
                   </span>
                   <span>
                     <h2 className='text-xl font-bold'> {servicesData.content[activeCategory].title} </h2>
@@ -524,7 +530,7 @@ export default function Header() {
                       {column.items.map((item, itemIndex) => (
 
                         <Link href={`/services/${item.slug}`} key={itemIndex} onClick={() => { setActiveMenu(''); setActiveCategory(''); setIsMobileMenuOpen(false) }}>
-                          <div className="mb-4 cursor-pointer rounded-lg py-1 px-2 hover:bg-orange-50">
+                          <div className="mb-4 cursor-pointer rounded-lg py-1 px-2 hover:bg-amber-50">
                             <h4 className="font-medium">{item.name}</h4>
                             <p className="text-sm text-gray-600">{item.description}</p>
                           </div>
@@ -539,7 +545,7 @@ export default function Header() {
 
 
                 <div className="mt-6">
-                  <Link href="#" className="text-orange-500 hover:text-orange-600 transition-colors duration-200">
+                  <Link href="#" className="text-amber-600 transition-colors duration-200">
                     View More <ChevronRight className="inline h-4 w-4" />
                   </Link>
                 </div>
@@ -564,7 +570,7 @@ export default function Header() {
             <Link href={`/hire/${category.slug}`} key={i} onClick={() => { setActiveMenu(''); setActiveCategory('') }}>
               <div
                 key={category.name}
-                className={`py-2.5 px-4 cursor-pointer rounded-md transition-colors font-medium duration-200 ${activeCategory === category.name ? 'bg-orange-100 text-orange-500' : 'hover:bg-gray-200'
+                className={`py-2.5 px-4 cursor-pointer rounded-md transition-colors font-medium duration-200 ${activeCategory === category.name ? 'bg-amber-50 text-amber-600' : ''
                   }`}
                 onMouseEnter={() => handleCategoryHover(category.name)}
               >
@@ -583,10 +589,11 @@ export default function Header() {
               <div className="w-full lg:w-8/12 p-6">
 
                 <div className="mb-4 py-4 flex items-center border-b">
-                  <span onClick={() => { setActiveMenu(''); setActiveCategory('') }} className="bg-orange-500 p-2 rounded-full mr-3">
-                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <span onClick={() => { setActiveMenu(''); setActiveCategory('') }} className="bg-amber-500 p-2 rounded-full mr-3">
+                    {/* <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-                    </svg>
+                    </svg> */}
+                    <TbCodeDots className='text-white font-semibold text-2xl' />
                   </span>
                   <span>
                     <h2 className='text-xl font-bold'> {hireData.content[activeCategory].title} </h2>
@@ -597,7 +604,7 @@ export default function Header() {
 
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                   {hireData.content[activeCategory].technologies.map((tech, index) => (
-                    <Link href={`/hire/${tech.slug}`} key={index} onClick={() => { setActiveMenu(''); setActiveCategory(''); setIsMobileMenuOpen(false) }} className="p-2 rounded-md transition-colors duration-200 font-medium cursor-pointer hover:bg-orange-50">
+                    <Link href={`/hire/${tech.slug}`} key={index} onClick={() => { setActiveMenu(''); setActiveCategory(''); setIsMobileMenuOpen(false) }} className="p-2 rounded-md transition-colors duration-200 font-medium cursor-pointer hover:bg-amber-50">
                       {tech.name}
                     </Link>
                   ))}
@@ -613,9 +620,9 @@ export default function Header() {
 
                 {hireData.content[activeCategory].hiring.map((item, index) => (
                   <Link href={`/services/${item.slug}`} key={index}>
-                    <div className="mb-4 hover:border hover:bg-orange-50 rounded-lg p-3 cursor-pointer">
+                    <div className="mb-4 hover:border hover:bg-amber-50 rounded-lg p-3 cursor-pointer">
                       <h3 className="font-medium text-lg mb-2 flex items-center">
-                        <span className="bg-orange-500 p-1 rounded-full mr-2">
+                        <span className="bg-amber-500 p-1 rounded-full mr-2">
                           <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                           </svg>
@@ -626,7 +633,7 @@ export default function Header() {
                     </div>
                   </Link>
                 ))}
-                <Link href="#" className="text-orange-500 hover:text-orange-600 transition-colors duration-200">
+                <Link href="#" className="text-amber-600 transition-colors duration-200">
                   View More <ChevronRight className="inline h-4 w-4" />
                 </Link>
               </div>
