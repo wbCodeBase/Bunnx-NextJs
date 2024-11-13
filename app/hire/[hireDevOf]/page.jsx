@@ -3,6 +3,7 @@
 import React from "react";
 import { useParams } from 'next/navigation';
 import Services from "@/components/services/Services";
+import EngagementModel from "@/components/hire/EngagementModel";
 import HeroSection from '@/components/layout/HeroSection';
 import NumericCounterInfo from "@/components/layout/NumericCounterInfo";
 import CtaSection2 from '@/components/layout/CtaSection2';
@@ -58,6 +59,8 @@ export default function HireDevOf() {
       <Services />
 
       <CtaSection2 />
+
+      <EngagementModel hiredevOf={formatparameter(hireDevOf)} />
 
       <ChooseUs />
 

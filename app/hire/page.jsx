@@ -1,3 +1,5 @@
+"use client"
+
 import React from 'react'
 import Techcard from "@/components/hire/Techcard";
 import ChooseUs from "@/components/services/ChooseUs";

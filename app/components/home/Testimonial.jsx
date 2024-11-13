@@ -92,6 +92,10 @@ const testimonials3 = [
 ];
 
 
+
+const testimonialCombinedArray = [...testimonials, ...testimonials2, ...testimonials3];
+
+
 const Testimonial = () => {
 
     return (
@@ -128,7 +132,7 @@ const Testimonial = () => {
                         className="w-full"
                     >
                         <CarouselContent className="-ml-2 md:-ml-4">
-                            {testimonials.map((testimonial, index) => (
+                            {testimonialCombinedArray.map((testimonial, index) => (
 
                                 <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3">
                                     <Card className="border-none shadow-sm">
@@ -191,7 +195,6 @@ const Testimonial = () => {
                         </div>
                     </Carousel>
                 </div>
-
 
 
             </section>

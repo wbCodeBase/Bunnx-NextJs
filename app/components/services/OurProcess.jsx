@@ -46,23 +46,21 @@ export default function OurProcess() {
     ]
 
     return (
-        <section className='container mx-auto max-w-screen-xl px-4 md:px-6 sm:py-10 py-5'>
+
+        <section className='bg-gray-50'>
+            <div className='container mx-auto max-w-screen-xl px-4 md:px-6 sm:py-10 py-5'>
 
 
-            <h2 className='font-semibold text-orange-500 text-lg'>Our Guide</h2>
-            <h4 className='font-semibold text-3xl my-2'>User Guide to Software Development</h4>
-            <p className='text-md text-gray-800'>Explores the essentials of creating, managing, and refining software. It covers methodologies, benefits, best practices, and insights for selecting partners, optimizing processes, and understanding software&apos;s pivotal role in tech.</p>
+                <h2 className='font-semibold text-orange-500 text-lg'>Our Guide</h2>
+                <h4 className='font-semibold text-3xl my-2'>User Guide to Software Development</h4>
+                <p className='text-md text-gray-800'>Explores the essentials of creating, managing, and refining software. It covers methodologies, benefits, best practices, and insights for selecting partners, optimizing processes, and understanding software&apos;s pivotal role in tech.</p>
 
 
-            <div ref={containerRef} className="relative mt-16">
+                <div ref={containerRef} className="relative mt-16">
 
 
-
-
-
-
-                <div className="grid gap-8 grid-col-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6">
-                    {steps.map((step, index) => (
+                    <div className="grid gap-8 grid-col-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6">
+                        {steps.map((step, index) => (
 
 
                             <motion.div
@@ -123,11 +121,12 @@ export default function OurProcess() {
                             </motion.div>
 
 
-                    ))}
+                        ))}
+                    </div>
                 </div>
+
             </div>
-
-
         </section>
+        
     )
 }
