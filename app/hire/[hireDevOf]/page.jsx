@@ -9,6 +9,7 @@ import NumericCounterInfo from "@/components/layout/NumericCounterInfo";
 import CtaSection2 from '@/components/layout/CtaSection2';
 import ChooseUs from "@/components/services/ChooseUs";
 import Faqs from "@/components/home/Faqs";
+import StepToHire from "@/components/hire/StepToHire";
 
 import { useGetHeroSecItemByStrQuery } from '../../../store/api/myApi';
 
@@ -59,6 +60,8 @@ export default function HireDevOf() {
       <Services />
 
       <CtaSection2 />
+
+      <StepToHire hiredevOf={formatparameter(hireDevOf)} />
 
       <EngagementModel hiredevOf={formatparameter(hireDevOf)} />
 

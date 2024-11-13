@@ -28,15 +28,15 @@ export default function ServiceDetails() {
 
   console.log(serviceDetails);
 
-  // const { data, error, isLoading } = useGetHeroSecItemByStrQuery(serviceDetails);
+  const { data, error, isLoading } = useGetHeroSecItemByStrQuery(serviceDetails);
 
-  // // Handle loading state
-  // if (isLoading) return <div className='flex items-center justify-center h-screen w-full'><Lottie animationData={loaderJson} loop={true} /></div>;
+  // Handle loading state
+  if (isLoading) return <div className='flex items-center justify-center h-screen w-full'><Lottie animationData={loaderJson} loop={true} /></div>;
 
 
-  // // Handle error state
-  // if (error) return <p>Error fetching data</p>;
-  var data;
+  // Handle error state
+  if (error) return <p>Error fetching data</p>;
+  // var data;
 
 
   const heroSectionData = {

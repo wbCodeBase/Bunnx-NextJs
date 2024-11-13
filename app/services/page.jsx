@@ -4,7 +4,6 @@ import React from 'react'
 import Services from "@/components/services/Services";
 import ChooseUs from "@/components/services/ChooseUs";
 import GuideTopics from "@/components/services/GuideTopics";
-import OurProcess from "@/components/services/OurProcess";
 import Methodology from "@/components/services/Methodology";
 import HeroSection from '@/components/layout/HeroSection';
 import NumericCounterInfo from "@/components/layout/NumericCounterInfo";
@@ -39,8 +38,6 @@ const Service = () => {
             <Methodology />
 
             <ChooseUs />
-
-            <OurProcess />
 
             <GuideTopics />
 

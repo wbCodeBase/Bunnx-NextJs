@@ -29,11 +29,11 @@ export default function NumericCounterInfo() {
             <div className="antialiased my-10 -translatey-16 md:block hidden">
 
                 <main className="flex flex-col justify-center overflowhidden">
-                    <div className="w-full relative border-y border-gray-400 max-w-6xl bg-orange50 mx-auto px-4 py-0">
+                    <div className="w-full relative border-y border-gray-300 max-w-6xl bg-orange50 mx-auto px-4 py-0">
 
-                        <h4 className='font-quando absolute bg-white px-8 top-0 left-1/2 -translate-y-6 -translate-x-1/2 font-semibold text-gray-500 text-lg my-2 text-center'>Trusted by startups and Fortune <span className='text-orange-300'>12</span>  companies</h4>
+                        <h4 className='font-quando absolute bg-white px-8 top-0 left-1/2 -translate-y-6 -translate-x-1/2 font-medium text-gray-500 text-lg my-2 text-center'>Trusted by <span className='text-orange-300'>Startups</span> and <span className='text-orange-300'>Fortunes</span></h4>
 
-                        <div className="flex flex-col gap-2 overflow-hidden bg-gray100 py-2">
+                        <div className="flex flex-col gap-2 overflow-hidden py-2">
                             <MarqueeRow direction="right" />
                         </div>
 
