@@ -2,6 +2,7 @@
 
 import { motion, useInView } from 'framer-motion'
 import { useEffect, useRef, useState } from 'react'
+
 import Image from 'next/image';
 
 import Agile from "../../../public/iconMethodology/scrum.png";

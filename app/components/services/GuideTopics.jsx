@@ -38,20 +38,21 @@ export default function GuideTopics() {
     const sections = [
         {
             id: 'introduction',
-            title: 'Introduction and Importance of Software Development',
+            title: 'What is Software Development Service?',
+        },
+        {
+            id: 'types',
+            title: 'Types Of Software Development Services',
         },
         {
             id: 'reasons',
-            title: 'Reasons to Hire a Software Development Partner',
+            title: 'Why should one go for Custom Software development?',
         },
         {
             id: 'methodologies',
-            title: 'Software Development Methodologies',
+            title: 'What is the type of software development?',
         },
-        {
-            id: 'process',
-            title: 'Process of Software Development',
-        },
+
         {
             id: 'vendor',
             title: 'Choosing the Right Vendor for Software Development Services',
@@ -93,6 +94,7 @@ export default function GuideTopics() {
                 </nav>
 
                 <main className="max-w-3xl mx-auto">
+
                     <section id="introduction" className="mb-12">
                         <h1 className="mb-6 text-xl font-semibold text-gray-800">Introduction and Importance of Software Development</h1>
                         <Image
@@ -103,91 +105,106 @@ export default function GuideTopics() {
                             className="mb-6 rounded-lg"
                         />
                         <p className="mb-6 text-gray-600">
-                            Software development is the process of creating, designing, programming, and maintaining computer software. It
-                            involves the utilization of various methodologies, tools, and programming languages to develop applications,
-                            websites, mobile apps, and other software solutions. Software development is pivotal in driving innovation,
-                            enabling digital transformation, and empowering businesses and individuals to accomplish their goals in an
-                            increasingly interconnected world.
+                            Software development services are a set of broad activities required to design, modelling, develop and deploy software solutions. Usually these services are being provided either by some companies or teams of developers and the features can be customized for individual business needs. The intent is to provide high-value software that addresses a problem, increases productivity, or offers new business or user capabilities.
                         </p>
-                        <h2 className="mb-4 text-xl font-semibold">Importance of Software Development:</h2>
+
+                    </section>
+
+
+                    {/* ---------- */}
+
+
+                    <section id="types" className="mb-12">
+                        <h2 className="mb-4 text-xl font-semibold">Types Of Software Development Services:</h2>
                         <p className="mb-4 text-gray-600">
                             Software development is of paramount importance in today&apos;s technologically-driven landscape. Here are some
-                            key reasons highlighting its significance:
+                            types Of Software Development Services:
                         </p>
                         <ul className="list-disc space-y-3 pl-6 text-gray-600">
                             <li>
-                                <strong>Enhancing Efficiency:</strong> Software development enables the creation of customized solutions
-                                tailored to specific business needs, streamlining operations, and automating repetitive tasks. This leads to
-                                enhanced productivity and operational efficiency.
+                                <strong>Custom Software Development:</strong> An application developed as per business needs and industry-specific requirements. Everything from initial planning and design through coding, testing, and maintenance.
                             </li>
                             <li>
-                                <strong>Digital Transformation:</strong> It facilitates digital transformation by helping businesses adapt to
-                                changing market demands and technological advancements.
+                                <strong>Mobile App Development:</strong>This is a type of development which concentrates on the applications for mobile devices like Smartphones and Tablets, mostly on iOs and Android platforms.
                             </li>
                             <li>
-                                <strong>Innovation:</strong> Software development drives innovation by creating new solutions to existing
-                                problems and opening up new possibilities.
+                                <strong>Web Development:</strong> Building applications or websites that run on the web and can be accessed through a browser (front-end development & back-end development).
                             </li>
+                            <li>
+                                <strong>Enterprise software development:</strong> This service is suited for creating large-scale applications that cater to business processes, such as ERP systems, CRM platforms and other enterprise solutions.
+
+                            </li>
+                            <li>
+                                <strong>Cloud Application Development:</strong>It relates to the creation of cloud-native apps that can be delivered on a subscription basis over the internet without local infrastructure.
+                            </li>
+                            <li>
+                                <strong>Software Maintenance and Support:</strong>Once deployed, there will be regular updates, bug fixes, etc. To make sure the software is functional and safe while maintaining its security over time.
+                            </li>
+
                         </ul>
                     </section>
+
+                    {/* ---------- */}
 
                     <section id="reasons" className="mb-12">
-                        <h2 className="mb-6 text-xl font-semibold text-gray-800">Reasons to Hire a Software Development Partner</h2>
+                        <h2 className="mb-6 text-xl font-semibold text-gray-800">Why should one go for Custom Software development?</h2>
                         <p className="mb-4 text-gray-600">
-                            Partnering with a software development company can bring numerous benefits to your business. Here are some key reasons:
+                            Custom software development is one of the top services offered by leading software development companies in India because:
                         </p>
                         <ul className="list-disc space-y-3 pl-6 text-gray-600">
+
                             <li>
-                                <strong>Expertise and Experience:</strong> Professional developers bring specialized skills and industry knowledge.
+                                <strong>Custom Fit:</strong>Custom software is built for unique business needs and enhancing workflows and operations.
                             </li>
                             <li>
-                                <strong>Cost-Effectiveness:</strong> Outsourcing can be more economical than maintaining an in-house team.
+                                <strong>Scalability:</strong> It is built for business growth and can be easily upgraded and modified when required.
                             </li>
                             <li>
-                                <strong>Faster Time-to-Market:</strong> Dedicated teams can accelerate development and deployment processes.
+                                <strong>Competitive Edge:</strong>Scalability benefits - Unique attributes offer an advantage over competitors using generic solutions.
                             </li>
                             <li>
-                                <strong>Focus on Core Business:</strong> Allows you to concentrate on your primary business objectives.
+                                <strong>Efficiency:</strong> By automating processes, custom software can enhance productivity and decrease errors.
                             </li>
+
                         </ul>
+                        <p className="mt-4 text-gray-600">
+                            The first round of pricing is indeed expensive, but you wont be paying any more money just for licensing or unnecessary features later.
+                        </p>
+                        <p className="mt-4 text-gray-600">
+                            <strong>Security —</strong> Custom solutions provide better security based on industry requirements, making them less susceptible to attacks.
+                        </p>
                     </section>
+
+
+                    {/* ---------- */}
 
                     <section id="methodologies" className="mb-12">
-                        <h2 className="mb-6 text-xl font-semibold text-gray-800">Software Development Methodologies</h2>
+                        <h2 className="mb-6 text-xl font-semibold text-gray-800">What is the type of software development?</h2>
                         <p className="mb-4 text-gray-600">
-                            Various methodologies guide the software development process. Some popular ones include:
+                            Here are the main types of software development:
                         </p>
                         <ul className="list-disc space-y-3 pl-6 text-gray-600">
                             <li>
-                                <strong>Agile:</strong> Emphasizes flexibility, customer collaboration, and rapid delivery of functional software.
+                                <strong>Front-End Development:</strong> Focuses on building the user interface (UI) and client-side behaviour using languages like HTML, CSS, and JavaScript, ensuring a seamless user experience.
                             </li>
                             <li>
-                                <strong>Scrum:</strong> An Agile framework that focuses on delivering high-quality software through iterative progress.
+                                <strong>Back-End Development:</strong> Involves server-side development, databases management and API integration using languages like Python, Java, php, dot net and Ruby to ensure functionality and system performance.
                             </li>
                             <li>
-                                <strong>Waterfall:</strong> A linear sequential approach to software development.
+                                <strong>Full-Stack Development:</strong> Combines both front-end and back-end development, enabling developers to handle all aspects of a software project from UI, backend and server-side operations.
                             </li>
                             <li>
-                                <strong>DevOps:</strong> Combines software development and IT operations to shorten the development lifecycle.
+                                <strong>Mobile Development:</strong> Specializes in creating applications for mobile platforms (iOS and Android) using technologies like Swift, Kotlin, or React Native for ios and android.
+                            </li>
+                            <li>
+                                <strong>Web Development:</strong> Focuses on building web applications that run on browsers using technologies such as JavaScript, Python, and PHP for both front-end and back-end. 
+                            </li>
+                            <li>
+                                <strong>Desktop Development:</strong> Involves creating applications that run on desktop operating systems like Windows or macOS, often using languages like dotnet or java.
                             </li>
                         </ul>
                     </section>
 
-                    <section id="process" className="mb-12">
-                        <h2 className="mb-6 text-xl font-semibold text-gray-800">Process of Software Development</h2>
-                        <p className="mb-4 text-gray-600">
-                            The software development process typically involves the following stages:
-                        </p>
-                        <ol className="list-decimal space-y-3 pl-6 text-gray-600">
-                            <li><strong>Planning:</strong> Defining project scope, objectives, and requirements.</li>
-                            <li><strong>Analysis:</strong> Gathering and interpreting user needs.</li>
-                            <li><strong>Design:</strong> Creating the software architecture and user interface.</li>
-                            <li><strong>Implementation:</strong> Writing the actual code.</li>
-                            <li><strong>Testing:</strong> Verifying the software meets specified requirements.</li>
-                            <li><strong>Deployment:</strong> Releasing the software to users.</li>
-                            <li><strong>Maintenance:</strong> Ongoing support and updates after release.</li>
-                        </ol>
-                    </section>
 
                     <section id="vendor" className="mb-12">
                         <h2 className="mb-6 text-xl font-semibold text-gray-800">Choosing the Right Vendor for Software Development Services</h2>

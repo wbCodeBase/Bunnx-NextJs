@@ -21,9 +21,13 @@ export default function EngagementModel({ hiredevOf }) {
         <>
             <section className="container mx-auto max-w-screen-xl px-4 md:px-6 py-10">
 
-                <h2 className='font-semibold text-orange-500 text-lg'>Engagement Models to Hire {hiredevOf}</h2>
+                {/* <h2 className='font-semibold text-orange-500 text-lg'>Engagement Models to Hire {hiredevOf}</h2>
                 <h4 className='font-semibold text-3xl my-2'>Flexible Engagement Models to Hire Expert {hiredevOf}</h4>
-                <p className='text-md text-gray-800'>Choose from flexible engagement models to hire experienced {hiredevOf} who adapt to your business needs, ensuring agility, expertise, and scalability. Our models are designed to align with your project requirements for optimal results.</p>
+                <p className='text-md text-gray-800'>Choose from flexible engagement models to hire experienced {hiredevOf} who adapt to your business needs, ensuring agility, expertise, and scalability. Our models are designed to align with your project requirements for optimal results.</p> */}
+
+                <h2 className='font-semibold text-orange-500 text-lg'>Choose from our hiring models</h2>
+                <h4 className='font-semibold text-3xl my-2'>Flexible Hiring Models to Hire Expert {hiredevOf}</h4>
+                <p className='text-md text-gray-800'>Our team will recommend the most appropriate engagement model for your project, taking into account its complexity, vision, and overall product concept.</p>
 
 
 

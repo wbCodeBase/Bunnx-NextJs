@@ -10,8 +10,8 @@ import { TbCodeDots } from "react-icons/tb";
 
 const menuItems = [
   { title: 'Home', slug: '/', hasSubmenu: false },
-  { title: 'Services', slug: '/services', hasSubmenu: true },
-  { title: 'Hire', slug: '/hire', hasSubmenu: true },
+  { title: 'Services', slug: '/services/software-development', hasSubmenu: true },
+  { title: 'Hire', slug: '/hire/backend-developers', hasSubmenu: true },
   { title: 'About Us', slug: '/about-us', hasSubmenu: false },
   { title: 'Contact Us', slug: '/contact-us', hasSubmenu: false },
 ]
@@ -509,9 +509,6 @@ export default function Header() {
 
                 <div className="mb-4 py-4 flex items-center border-b">
                   <span onClick={() => { setActiveMenu(''); setActiveCategory('') }} className="bg-amber-500 p-2 rounded-full mr-3">
-                    {/* <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
-                    </svg> */}
 
                     <FaJava className='text-white font-semibold text-2xl' />
 

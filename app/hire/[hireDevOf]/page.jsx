@@ -2,19 +2,20 @@
 
 import React from "react";
 import { useParams } from 'next/navigation';
-import Services from "@/components/services/Services";
+import TechExpertise from "@/components/hire/TechExpertise";
 import EngagementModel from "@/components/hire/EngagementModel";
 import HeroSection from '@/components/layout/HeroSection';
 import NumericCounterInfo from "@/components/layout/NumericCounterInfo";
 import CtaSection2 from '@/components/layout/CtaSection2';
 import ChooseUs from "@/components/services/ChooseUs";
-import Faqs from "@/components/home/Faqs";
+import Faqs from "@/components/layout/Faqs";
 import StepToHire from "@/components/hire/StepToHire";
 
 import { useGetHeroSecItemByStrQuery } from '../../../store/api/myApi';
 
 import Lottie from "lottie-react";
 import loaderJson from "../../../public/pageAnimations/loader.json";
+import Techcard from "@/components/hire/Techcard";
 
 
 function formatparameter(input) {
@@ -40,8 +41,6 @@ export default function HireDevOf() {
   console.log("data", data);
 
 
-
-
   const heroSectionData = {
     titlePrefix: data?.titlePrefix || "Enterprise",
     title: data?.title || formatparameter(hireDevOf),
@@ -50,6 +49,44 @@ export default function HireDevOf() {
     ctaRedirectUrl: data?.ctaRedirectUrl || "#contact-us",
   };
 
+  const faqData = [
+
+    {
+      id: "default-1",
+      question: "What technology stacks do you use?",
+      answer: {
+        type: "text",
+        content: "We work with a wide array of technologies based on project needs, including frontend frameworks like React and Angular, backend technologies such as Node.js, Python, and Java, as well as mobile frameworks like Flutter and React Native. We can also integrate with popular cloud providers and use databases like MongoDB, MySQL, and PostgreSQL."
+      }
+    },
+    {
+      id: "default-2",
+      question: "How long does a typical software development project take?",
+      answer: {
+        type: "text",
+        content: "The timeline varies based on project complexity, features, and requirements. Small projects may take a few weeks, while larger or more complex solutions could take several months. After an initial consultation, we can provide a more accurate timeline tailored to your project's specifics."
+      }
+    },
+    {
+      id: "default-3",
+      question: "How do you ensure the quality and security of the software?",
+      answer: {
+        type: "text",
+        content: "We follow industry best practices in testing, including functional, integration, and security testing. Our team conducts rigorous quality assurance and performance optimization to ensure reliability and robustness. We also implement the latest security protocols to protect your data and application."
+      }
+    },
+    {
+      id: "default-4",
+      question: "Will I own the software once it’s developed?",
+      answer: {
+        type: "text",
+        content: "Yes, once the project is complete and all payments are made, you retain full ownership of the code and the software. We will provide you with all necessary documentation and source code, allowing you complete control over the final product."
+      }
+    },
+
+
+  ];
+
   return (
     <>
 
@@ -57,7 +94,9 @@ export default function HireDevOf() {
 
       <NumericCounterInfo />
 
-      <Services />
+      <TechExpertise />
+
+      <Techcard />
 
       <CtaSection2 />
 
@@ -67,7 +106,8 @@ export default function HireDevOf() {
 
       <ChooseUs />
 
-      <Faqs />
+      <Faqs faqData={faqData} />
+
 
     </>
   );

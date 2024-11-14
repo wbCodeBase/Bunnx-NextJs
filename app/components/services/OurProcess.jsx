@@ -1,132 +1,316 @@
 'use client'
 
-import { motion, useInView } from 'framer-motion'
-import { useEffect, useRef, useState } from 'react'
-import { ArrowRight, CheckCircle2 } from 'lucide-react'
+import { useState } from 'react'
+import { motion, AnimatePresence, LayoutGroup } from 'framer-motion'
+import { ChevronLeft, ChevronRight } from 'lucide-react'
 
-export default function OurProcess() {
-    const containerRef = useRef(null)
-    const isInView = useInView(containerRef, { once: true, margin: "-100px" })
-    const [activeIndex, setActiveIndex] = useState(0)
+import "./service.css";
 
-    useEffect(() => {
-        if (isInView) {
-            const interval = setInterval(() => {
-                setActiveIndex((prev) => (prev < 5 ? prev + 1 : prev))
-            }, 1000)
-            return () => clearInterval(interval)
-        }
-    }, [isInView])
+// const processSections = [
+//     {
+//         id: 1,
+//         title: "Requirement Assessment",
+//         description: "Initiating the process with a comprehensive understanding of your vision. We delve into your business objectives, market trends, and target audience to ensure a bespoke strategy tailored for success.",
+//         activities: [
+//             "Client objectives and needs analysis",
+//             "Market and user research",
+//             "Technology stack evaluation"
+//         ],
+//         deliverables: [
+//             "Requirements Gathering Report",
+//             "Market Analysis Summary",
+//             "Technology Assessment Report"
+//         ]
+//     },
+//     {
+//         id: 2,
+//         title: "Agreement on Engagement",
+//         description: "Establishing clear terms of collaboration and project scope. We define timelines, milestones, and deliverables to ensure transparent communication and smooth project execution.",
+//         activities: [
+//             "Scope definition",
+//             "Timeline planning",
+//             "Resource allocation"
+//         ],
+//         deliverables: [
+//             "Project Scope Document",
+//             "Timeline Roadmap",
+//             "Resource Plan"
+//         ]
+//     },
+//     {
+//         id: 3,
+//         title: "Design & Development",
+//         description: "Transforming requirements into reality through iterative development. Our expert team creates intuitive designs and robust code following industry best practices.",
+//         activities: [
+//             "UI/UX design",
+//             "Frontend development",
+//             "Backend implementation"
+//         ],
+//         deliverables: [
+//             "Design Mockups",
+//             "Working Prototype",
+//             "Development Milestones"
+//         ]
+//     },
+//     {
+//         id: 4,
+//         title: "Testing & Quality Assurance",
+//         description: "Ensuring excellence through comprehensive testing. We conduct thorough quality checks to deliver a robust and reliable solution.",
+//         activities: [
+//             "Functional testing",
+//             "Performance optimization",
+//             "Security assessment"
+//         ],
+//         deliverables: [
+//             "Test Cases Document",
+//             "QA Reports",
+//             "Performance Metrics"
+//         ]
+//     },
+//     {
+//         id: 5,
+//         title: "Delivery & Support",
+//         description: "Seamless deployment and ongoing support. We ensure smooth transition and provide continuous assistance for optimal performance.",
+//         activities: [
+//             "Deployment preparation",
+//             "Knowledge transfer",
+//             "Maintenance planning"
+//         ],
+//         deliverables: [
+//             "Deployment Guide",
+//             "Documentation",
+//             "Support Plan"
+//         ]
+//     }
+// ]
 
-    const steps = [
-        {
-            title: "Software Kick-off",
-            description: "Dive into bi-weekly sprints and rollouts aligned with project timelines.",
-        },
-        {
-            title: "Task Execution & Development",
-            description: "Combined team tackles tasks, fulfilling user stories and sprint goals.",
-        },
-        {
-            title: "Daily Stand-ups",
-            description: "Daily check-ins led by the Scrum Master to discuss progress and tackle challenges.",
-        },
-        {
-            title: "Feature Quality Check",
-            description: "Quality Engineers rigorously test new features, ensuring seamless integration.",
-        },
-        {
-            title: "Backlog Updates",
-            description: "Our team keeps the sprint backlog updated, staying on track to meet objectives.",
-        },
-        {
-            title: "Sprint Reflections",
-            description: "Post-sprint reflections to refine strategies and enhance future sprints.",
-        },
-    ]
+const processSections = [
+    {
+        id: 1,
+        title: "Gathering Your Requirements",
+        description: "We begin by thoroughly understanding your vision, diving into your business objectives, market trends, and target audience to create a customized strategy designed for success.",
+        activities: [
+            "Client Need Analysis",
+            "Gathering all basic information",
+            "Marketing and competition research",
+            "Tech Stack Assessment"
+        ],
+        deliverables: [
+            "Requirement Gathering Report",
+            "Competition Analysis Report",
+            "Tech Stack Report"
+        ]
+    },
+    {
+        id: 2,
+        title: "Service Agreement",
+        description: "We create a strong base of trust and collaboration by agreeing on the project scope, methodologies, and deliverables, ensuring a transparent and productive partnership.",
+        activities: [
+            "Scope definition and agreement",
+            "Setting up communication channels",
+            "Resource and timeline planning"
+        ],
+        deliverables: [
+            "Project Scope Document",
+            "Communication Plan",
+            "Detailed Project Schedule"
+        ]
+    },
+    {
+        id: 3,
+        title: "Design & Development",
+        description: "Our team works closely together to develop highly responsive and user-friendly software. We ensure that our solutions align with your vision and meet all necessary requirements.",
+        activities: [
+            "UX/UI design and prototyping",
+            "Frontend and backend development",
+            "API Development and Integration"
+        ],
+        deliverables: [
+            "Design Wireframes and Prototype",
+            "Web Application up and running",
+            "Integrated System Interfaces"
+        ]
+    },
+    {
+        id: 4,
+        title: "Testing & Quality Assurance",
+        description: "Ensuring top performance and security, our thorough testing protocols make sure your web app is reliable, secure, and prepared to handle user demands.",
+        activities: [
+            "Integration & Functional Testing",
+            "Security and load testing",
+            "Test Automation"
+        ],
+        deliverables: [
+            "Test Execution Report",
+            "Security and Performance Reports",
+            "Optimized, Bug-Free Code"
+        ]
+    },
+    {
+        id: 5,
+        title: "Delivery & Support",
+        description: "Rolling out your software with assurance and ongoing support. We guarantee a seamless launch and offer continuous maintenance to keep your application current and effective.",
+        activities: [
+            "Deployment to production servers",
+            "User training and documentation",
+            "Ongoing maintenance and updates"
+        ],
+        deliverables: [
+            "Deployed Web Application",
+            "Training Materials and Guides",
+            "Regular Update and Support Logs"
+        ]
+    }
+]
 
-    return (
 
-        <section className='bg-gray-50'>
-            <div className='container mx-auto max-w-screen-xl px-4 md:px-6 sm:py-10 py-5'>
+export default function ProcessShowcase() {
+    const [activeSection, setActiveSection] = useState(1)
 
+    return (<>
+        <div className="max-w-screen-xl container mx-auto p-4 md:p-8">
 
-                <h2 className='font-semibold text-orange-500 text-lg'>Our Guide</h2>
-                <h4 className='font-semibold text-3xl my-2'>User Guide to Software Development</h4>
-                <p className='text-md text-gray-800'>Explores the essentials of creating, managing, and refining software. It covers methodologies, benefits, best practices, and insights for selecting partners, optimizing processes, and understanding software&apos;s pivotal role in tech.</p>
-
-
-                <div ref={containerRef} className="relative mt-16">
+            <h2 className='font-semibold text-orange-500 text-lg'>Our Process</h2>
+            <h4 className='font-semibold text-3xl my-2'>Our Process for Software Development</h4>
+            <p className='text-md text-gray-800'>Whether you require a complex enterprise software solution or seamless software integration, we will convert your ideas into reality with our long-standing, industry-proven IT consulting and bespoke software development services.</p>
 
 
-                    <div className="grid gap-8 grid-col-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6">
-                        {steps.map((step, index) => (
+            <div className='text-white md:my-10 my-6'>
+                {/* Mobile View */}
+                <div className="lg:hidden grid grid-cols-1 sm:grid-cols-2 gap-4 fle items-star justify-cente lg:space-y-8">
+                    {processSections.map((section) => (
+                        <div key={section.id} className="space-y-4 bg-[#1a1a1a] p-6 rounded-lg our-process-box">
+                            <h2 className="text-2xl font-bold">{section.title}</h2>
+                            <p className="text-gray-300">{section.description}</p>
+                            <div className="grid gap-6">
+                                <div>
+                                    <h3 className="text-xl font-semibold mb-2">Task Involved</h3>
+                                    <ul className="list-disc list-inside space-y-2 text-gray-300">
+                                        {section.activities.map((activity, index) => (
+                                            <li key={index}>{activity}</li>
+                                        ))}
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h3 className="text-xl font-semibold mb-2">Outputs</h3>
+                                    <ul className="list-disc list-inside space-y-2 text-gray-300">
+                                        {section.deliverables.map((deliverable, index) => (
+                                            <li key={index}>{deliverable}</li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+                </div>
 
-
+                {/* Desktop View */}
+                <LayoutGroup>
+                    <div className="hidden lg:flex gap-4 h-[400px]">
+                        {processSections.map((section) => (
                             <motion.div
-                                key={index}
-                                className="relative"
-                                initial={{ opacity: 0, y: 20 }}
-                                animate={{
-                                    opacity: isInView ? 1 : 0,
-                                    y: isInView ? 0 : 20,
-                                }}
-                                transition={{ delay: index * 0.2 }}
+                                layout
+                                key={section.id}
+                                className={`relative bg-[#1a1a1a] rounded-lg cursor-pointer overflow-hidden pb-8 transition-colors our-process-box
+                ${activeSection === section.id ? 'flex-1' : 'flex-none w-[120px]'}`}
+                                onHoverStart={() => setActiveSection(section.id)}
+                                transition={{ duration: 0.5, ease: "easeInOut" }}
                             >
 
 
-                                <motion.div className={`relative rounded-3xl p-2 border h-full shadow-sm`}>
-
-
-                                    <motion.div
-                                        className="absolute -top-3 bg-white z-10 shadow-lg rounded-full p-1 right-5 -translate-x-1/2 transform"
-                                        initial={{ opacity: 0, scale: 0 }}
-                                        animate={{
-                                            opacity: index <= activeIndex ? 1 : 0,
-                                            scale: index <= activeIndex ? 1 : 0,
+                                {/* Background Pattern */}
+                                <div className={`absolute inset-0 opacity-10 pointer-events-none`}>
+                                    <div className="absolute inset-0"
+                                        style={{
+                                            backgroundImage: `linear-gradient(60deg, #fff 25%, transparent 25%, transparent 75%, #1a1a1a 75%, #1a1a1a),
+                                  linear-gradient(60deg, #fff 25%, transparent 25%, transparent 75%, #1a1a1a 75%, #1a1a1a)`,
+                                            backgroundSize: '400px 400px',
+                                            backgroundPosition: '0 0, 20px 20px',
+                                            backgroundRepeat: 'no-repeat'
                                         }}
-                                        transition={{ delay: index * 0.2 }}
-                                    >
-                                        <CheckCircle2 className="h-6 w-6 text-amber-500" />
-                                    </motion.div>
+                                    />
+                                </div>
 
-
+                                <motion.div
+                                    layout
+                                    className={`relative h-full flex flex-col ${activeSection === section.id ? 'p-10' : 'p-2'
+                                        }`}
+                                >
                                     <motion.div
-                                        className={`absolute md:top-1/2 top-full md:left-full sm:hidden left-1/2 -translate-x-1/2 transform ${index < activeIndex ? 'lg:block' : 'hidden'}`}
-                                        initial={{ opacity: 0, scale: 0 }}
-                                        animate={{
-                                            opacity: index <= activeIndex ? 1 : 0,
-                                            scale: index <= activeIndex ? 1 : 0,
-                                        }}
-                                        transition={{ delay: index * 0.4 }}
-                                    >
-                                        <ArrowRight className="h-6 w-6 rotate-90 md:rotate-0 text-amber-500" />
-                                    </motion.div>
-
-
-                                    <motion.div
-                                        className={`relative text-center rounded-3xl p-3 transition-colors ${index <= activeIndex ? 'bg-amber-50' : 'bg-background'
+                                        layout
+                                        className={`${activeSection === section.id
+                                            ? ''
+                                            : 'h-full flex flex-col items-center justify-end'
                                             }`}
-                                        animate={{
-                                            backgroundColor: index <= activeIndex ? 'rgb(255 251 235)' : 'rgb(255 255 255)',
-                                        }}
-                                        transition={{ duration: 0.3 }}
                                     >
-                                        <h3 className="text-lg font-semibold">{step.title}</h3>
+                                        {activeSection !== section.id && (
+                                            <div className="absolute top-6 left-0 right-0 flex justify-center animate-pulse">
+                                                <ChevronLeft className="w-6 h-6 verticalBounceLeft" />
+                                                <ChevronRight className="w-6 h-6 verticalBounceRight" />
+                                            </div>
+                                        )}
+
+
+
+                                        <motion.h2
+                                            layout="position"
+                                            className={`text-2xl font-bold whitespace-nowrap ${activeSection === section.id
+                                                ? 'mb-4'
+                                                : 'writing-mode-vertica text-[18px]'
+                                                }`}
+                                            style={{
+                                                writingMode: activeSection === section.id ? 'horizontal-tb' : 'vertical-rl',
+                                                transform: activeSection === section.id ? 'none' : 'rotate(180deg)',
+                                            }}
+                                        >
+                                            {section.title}
+                                        </motion.h2>
+
+
+
                                     </motion.div>
 
+                                    <AnimatePresence>
+                                        {activeSection === section.id && (
+                                            <motion.div
+                                                initial={{ opacity: 0 }}
+                                                animate={{ opacity: 1 }}
+                                                exit={{ opacity: 0 }}
+                                                transition={{ duration: 0.3 }}
+                                                className="space-y-6"
+                                            >
+                                                <p className="text-gray-300 max-w-2xl">{section.description}</p>
 
-                                    <p className="text-sm mt-4 p-2 text-muted-foreground">{step.description}</p>
+                                                <div className="grid md:grid-cols-2 gap-8">
+                                                    <div>
+                                                        <h3 className="text-xl font-semibold mb-4">Task Involved</h3>
+                                                        <ul className="list-disc list-inside space-y-2 text-gray-300">
+                                                            {section.activities.map((activity, index) => (
+                                                                <li key={index}>{activity}</li>
+                                                            ))}
+                                                        </ul>
+                                                    </div>
+
+                                                    <div>
+                                                        <h3 className="text-xl font-semibold mb-4">Outputs</h3>
+                                                        <ul className="list-disc list-inside space-y-2 text-gray-300">
+                                                            {section.deliverables.map((deliverable, index) => (
+                                                                <li key={index}>{deliverable}</li>
+                                                            ))}
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </motion.div>
+                                        )}
+                                    </AnimatePresence>
                                 </motion.div>
                             </motion.div>
-
-
                         ))}
                     </div>
-                </div>
-
+                </LayoutGroup>
             </div>
-        </section>
-        
+
+        </div>
+    </>
     )
 }

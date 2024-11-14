@@ -13,12 +13,14 @@ const ChooseUs = () => {
         <div className='grid sm:grid-cols-2 gap-10 grid-cols-1'>
 
           <div className="rounded-xl flex items-center justify-center flex-col gap-5 px4">
-            {/* <h2 className='font-semibold text-orange-500 text-lg'>Our Success Stories</h2> */}
-            <h4 className='font-bold sm:text-4xl text-2xl my-2'>Choose Bunnx for Your Next Software Development Project</h4>
-            <p className='text-md text-gray-800'>Featuring smooth and effortless software development services customized specifically to your business needs. Our objective at Bunnx is to quickly produce secure software product offerings. </p>
-            <p className='text-md text-gray-800'>We provide software that is safe and easily expandable to meet the needs of your expanding business. Our interest is developing pertinent tech skills to meet industry-specific needs. </p>
 
-            
+            <div>
+              <h2 className='font-semibold text-orange-500 text-left text-lg'>Why Choose Us</h2>
+              <h4 className='font-bold sm:text-4xl text-2xl my-2'>Choose Leading Software Development Company</h4>
+              <p className='text-md text-gray-800 my-4'>Offering seamless and efficient software development services customised to your unique business requirements, Bunnx is committed to delivering secure software solutions swiftly.</p>
+              <p className='text-md text-gray-800'>We create scalable, secure software that grows with your business. Our focus is on developing relevant technical expertise to address industry-specific challenges. </p>
+            </div>
+
             <div className='flex items-center'>
               <Link href="/services/mobile-app" className='flex items-center justify-center gap-2 bg[#261E80] p-2 pl-3 font-medium text-md bg-orange-500 rounded-full mt-4 text-white'><span> Get Started </span> <span className='bg-white rounded-full p-2 text-black'> <FaLocationArrow /> </span></Link>
             </div>
