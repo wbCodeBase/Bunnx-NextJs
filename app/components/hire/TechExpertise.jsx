@@ -21,7 +21,7 @@ const TechExpertise = () => {
     {
       title: "QA & Testing",
       description:
-        "Our certified experts perform thorough testing to detect and resolve any errors or bugs that could affect your software’s performance. Guarantee the quality, reliability, and performance of your software applications with our QA Experts and testing services. ",
+        "Our certified experts perform thorough testing to detect and resolve any errors or bugs that could affect your software&apos;s performance. Guarantee the quality, reliability, and performance of your software applications with our QA Experts and testing services. ",
       slug: "qa-testing",
     },
     {
@@ -69,7 +69,7 @@ const TechExpertise = () => {
 
         <h2 className='font-semibold text-orange-500 text-lg'>Tech Expertise</h2>
         <h4 className='font-semibold text-3xl my-2'>Expertise of our Backend Developers</h4>
-        <p className='text-md text-gray-800'>"Our developers bring top-notch expertise, combining technical skill with innovative problem-solving. Focused on quality and tailored solutions, they deliver robust, scalable results to empower your business in a competitive digital world."</p>
+        <p className='text-md text-gray-800'>Our developers bring top-notch expertise, combining technical skill with innovative problem-solving. Focused on quality and tailored solutions, they deliver robust, scalable results to empower your business in a competitive digital world.</p>
 
         <div className='flex items-center justify-center flex-wrap gap-10 mt-6'>
 

@@ -11,6 +11,7 @@ import ChooseUs from "@/components/services/ChooseUs";
 import Faqs from "@/components/layout/Faqs";
 import ProcessShowcase from '@/components/services/OurProcess';
 import Methodology from '@/components/services/Methodology';
+import HiringModels from '@/components/services/HiringModels';
 import GuideTopics from '@/components/services/GuideTopics';
 
 
@@ -106,6 +107,8 @@ export default function ServiceDetails() {
       <Methodology />
 
       <ChooseUs />
+
+      <HiringModels />
 
       <GuideTopics />
 

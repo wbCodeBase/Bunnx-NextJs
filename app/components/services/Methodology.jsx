@@ -53,7 +53,7 @@ export default function Methodology() {
             <div className='container mx-auto max-w-screen-xl px-4 md:px-6 sm:py-10 py-5'>
 
                 <h2 className='font-semibold text-orange-500 text-lg'>Methodology</h2>
-                <h4 className='font-semibold text-3xl my-2'>Empowering Success through Strategic Methodologies</h4>
+                <h4 className='font-semibold sm:text-4xl text-2xl my-2'>Empowering Success through Strategic Methodologies</h4>
                 <p className='text-md text-gray-800'>Our project leverages targeted methodologies designed to drive efficiency, quality, and innovation. By aligning solutions with business goals, we empower organizations to achieve sustainable growth, streamline processes, and enhance performance.</p>
 
 
