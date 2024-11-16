@@ -10,7 +10,7 @@ import { TbCodeDots } from "react-icons/tb";
 
 const menuItems = [
   { title: 'Home', slug: '/', hasSubmenu: false },
-  { title: 'Services', slug: '/services/software-development', hasSubmenu: true },
+  { title: 'Service', slug: '/service/software-development', hasSubmenu: true },
   { title: 'Hire', slug: '/hire/backend-developers', hasSubmenu: true },
   { title: 'About Us', slug: '/about-us', hasSubmenu: false },
   { title: 'Contact Us', slug: '/contact-us', hasSubmenu: false },
@@ -67,7 +67,7 @@ const servicesData = {
         {
           title: 'DEVELOPMENT',
           items: [
-            { name: 'Custom Software', slug: 'custom-software', description: 'Tailored solutions for excellence' },
+            { name: 'Custom Software', slug: 'custom-software-development', description: 'Tailored solutions for excellence' },
             { name: 'Enterprise Software', slug: 'enterprise-software', description: 'Powering enterprise growth' },
             { name: 'Software Product Engineering', slug: 'software-product-engineering', description: 'Building market-ready software' },
             { name: 'Application Development', slug: 'application-development', description: 'Transform ideas into powerful apps' },
@@ -468,7 +468,7 @@ export default function Header() {
 
   const handleMenuHover = (menu) => {
     setActiveMenu(menu)
-    setActiveCategory(menu === 'Services' ? 'Software Development' : 'Backend')
+    setActiveCategory(menu === 'Service' ? 'Software Development' : 'Backend')
   }
 
   const handleCategoryHover = (category) => {
@@ -488,7 +488,7 @@ export default function Header() {
       <div className="container mx-auto flex flex-col lg:flex-row">
         <div className="border-r w-full lg:w-1/4 p-4 hidden md:block">
           {servicesData.categories.map((category) => (
-            <Link href={`/services/${category.slug}`} onClick={() => { setActiveMenu(''); setActiveCategory('') }}
+            <Link href={`/service/${category.slug}`} onClick={() => { setActiveMenu(''); setActiveCategory('') }}
               key={category.name}>
               <div className={`py-2.5 px-4 cursor-pointer rounded-md font-medium transition-colors duration-200 ${activeCategory === category.name ? 'bg-amber-50 text-amber-600' : ''
                 }`}
@@ -526,7 +526,7 @@ export default function Header() {
                       <h3 className="font-medium text-sm text-gray-500 mb-3 py-1 px-2">{column.title}</h3>
                       {column.items.map((item, itemIndex) => (
 
-                        <Link href={`/services/${item.slug}`} key={itemIndex} onClick={() => { setActiveMenu(''); setActiveCategory(''); setIsMobileMenuOpen(false) }}>
+                        <Link href={`/service/${item.slug}`} key={itemIndex} onClick={() => { setActiveMenu(''); setActiveCategory(''); setIsMobileMenuOpen(false) }}>
                           <div className="mb-4 cursor-pointer rounded-lg py-1 px-2 hover:bg-amber-50">
                             <h4 className="font-medium">{item.name}</h4>
                             <p className="text-sm text-gray-600">{item.description}</p>
@@ -616,7 +616,7 @@ export default function Header() {
                 </div>
 
                 {hireData.content[activeCategory].hiring.map((item, index) => (
-                  <Link href={`/services/${item.slug}`} key={index}>
+                  <Link href={`/service/${item.slug}`} key={index}>
                     <div className="mb-4 hover:border hover:bg-amber-50 rounded-lg p-3 cursor-pointer">
                       <h3 className="font-medium text-lg mb-2 flex items-center">
                         <span className="bg-amber-500 p-1 rounded-full mr-2">
@@ -700,7 +700,7 @@ export default function Header() {
 
       {activeMenu && (
         <div className="absolute left-0 w-full bg-white shadow-lg z-50 transition-all duration-300 ease-in-out transform translate-y-0 opacity-100">
-          {activeMenu === 'Services' ? renderServicesDropdown(activeMenu) : renderHireDropdown(activeMenu)}
+          {activeMenu === 'Service' ? renderServicesDropdown(activeMenu) : renderHireDropdown(activeMenu)}
         </div>
       )}
 
@@ -724,7 +724,7 @@ export default function Header() {
                   </button>
                   {item.hasSubmenu && activeMenu === item.title && (
                     <div className="pl-4 mt-2 space-y-2">
-                      {(item.title === 'Services' ? servicesData.categories : hireData.categories).map((category) => (
+                      {(item.title === 'Service' ? servicesData.categories : hireData.categories).map((category) => (
                         <button
                           key={category.name}
                           className="w-full text-left font-medium text-gray-200 hover:text-orange-500 block px-3 py-2 text-sm transition-colors duration-200"

@@ -47,7 +47,7 @@ export default function EngagementModel({ hiredevOf }) {
                                 </ul>
                             </div>
 
-                            <Link className='text-lg bg-amber-500 group-hover:bg-white group-hover:text-black rounded-lg mt-4 text-white text-center p-2' href="/services/mobile-app"> Hire Us </Link>
+                            <Link className='text-lg bg-amber-500 group-hover:bg-white group-hover:text-black rounded-lg mt-4 text-white text-center p-2' href="/hire/soon"> Hire Us </Link>
                         </div>
                     )}
 

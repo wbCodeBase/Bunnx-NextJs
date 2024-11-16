@@ -1,5 +1,3 @@
-
-
 import React, { useState, useRef, useEffect } from "react"
 import { ChevronRight, ChevronDown, Menu, X, Phone } from 'lucide-react'
 import Link from "next/link"
@@ -13,138 +11,81 @@ const techStackData = {
         'QA & Testing',
         'Cloud Services',
     ],
-    content: {
-        'Software Development': {
-            title: 'Software Development',
-            description: 'Bunnx is your go-to software development agency in this evolving and dynamic era. Our software development services adhere to high-quality coding.',
-            columns: [
-                {
-                    title: 'CONSULTING',
-                    items: [
-                        { name: 'Software Consulting', description: 'Expert advice on tech' },
-                        { name: 'IT Consulting', description: 'Expert IT solutions, delivered' },
-                        { name: 'Agile Consulting', description: 'Agile expertise, faster results' },
-                        { name: 'CRM Consulting', description: 'Optimizing customer relations' },
-                    ],
-                },
-                {
-                    title: 'DEVELOPMENT',
-                    items: [
-                        { name: 'Custom Software', description: 'Tailored solutions for excellence' },
-                        { name: 'Enterprise Software', description: 'Powering enterprise growth' },
-                        { name: 'Software Product Engineering', description: 'Building market-ready software' },
-                        { name: 'Application Development', description: 'Transform ideas into powerful apps' },
-                    ],
-                },
 
-            ],
+    "content": {
+        "Software Development": {
+            "title": "Software Development",
+            "description": "Bunnx is your go-to software development agency in this evolving and dynamic era. Our software development services adhere to high-quality coding.",
+            "columns": [
+                { "name": "Custom Software", "description": "Tailored solutions for excellence", "slug": "custom-software-development" },
+                { "name": "Api Integration", "description": "Api integration, faster results", "slug": "api-integration" },
+                { "name": "Application Development", "description": "Transform ideas into powerful apps", "slug": "application-development" },
+                { "name": "Software Consulting", "description": "Expert advice on tech", "slug": "software-consulting" },
+                
+                { "name": "Software Outsourcing", "description": "Software Outsourcing", "slug": "software-outsourcing" },
+                { "name": "Software Advancement", "description": "Optimizing customer relations", "slug": "crm-consulting" },
+                { "name": "Enterprise Software", "description": "Powering enterprise growth", "slug": "enterprise-software" },
+                { "name": "Software Re-Engineering", "description": "Building market-ready software", "slug": "software-product-engineering" },
+                { "name": "Software Support & Maintenance", "description": "Building market-ready software", "slug": "software-product-engineering" },
+            ]
         },
-        'Application Development': {
-            title: 'Application Development',
-            description: 'Cutting-edge application solutions',
-            columns: [
-                {
-                    title: 'WEB APPLICATIONS',
-                    items: [
-                        { name: 'Progressive Web Apps', description: 'Next-gen web experiences' },
-                        { name: 'Single Page Applications', description: 'Fast, dynamic web apps' },
-                    ],
-                },
-                {
-                    title: 'MOBILE APPLICATIONS',
-                    items: [
-                        { name: 'iOS App Development', description: 'Sleek, powerful iOS apps' },
-                        { name: 'Android App Development', description: 'Robust Android solutions' },
-                        { name: 'Cross-platform Development', description: 'Build once, run everywhere' },
-                    ],
-                }
-            ],
+        "Application Development": {
+            "title": "Application Development",
+            "description": "Cutting-edge application solutions",
+            "columns": [
+                { "name": "Progressive Web Apps", "description": "Next-gen web experiences", "slug": "progressive-web-apps" },
+                { "name": "Mobile App Development", "description": "Fast, dynamic web apps", "slug": "single-page-applications" },
+                { "name": "Cloud Application", "description": "Sleek, powerful iOS apps", "slug": "ios-app-development" },
+                { "name": "App Feature Advancement", "description": "Robust Android solutions", "slug": "android-app-development" },
+                { "name": "Enterprise Mobility", "description": "Build once, run everywhere", "slug": "cross-platform-development" }
+            ]
         },
-        'Dedicated Software Teams': {
-            title: 'Dedicated Software Teams',
-            description: 'Cutting-edge application solutions',
-            columns: [
-                {
-                    title: 'WEB APPLICATIONS',
-                    items: [
-                        { name: 'Progressive Web Apps', description: 'Next-gen web experiences' },
-                        { name: 'Single Page Applications', description: 'Fast, dynamic web apps' },
-                    ],
-                },
-                {
-                    title: 'MOBILE APPLICATIONS',
-                    items: [
-                        { name: 'iOS App Development', description: 'Sleek, powerful iOS apps' },
-                        { name: 'Android App Development', description: 'Robust Android solutions' },
-                        { name: 'Cross-platform Development', description: 'Build once, run everywhere' },
-                    ],
-                }
-            ],
+        "Dedicated Software Teams": {
+            "title": "Dedicated Software Teams",
+            "description": "Cutting-edge application solutions",
+            "columns": [
+                { "name": "Progressive Web Apps", "description": "Next-gen web experiences", "slug": "progressive-web-apps" },
+                { "name": "Single Page Applications", "description": "Fast, dynamic web apps", "slug": "single-page-applications" },
+                { "name": "iOS App Development", "description": "Sleek, powerful iOS apps", "slug": "ios-app-development" },
+                { "name": "Android App Development", "description": "Robust Android solutions", "slug": "android-app-development" },
+                { "name": "Cross-platform Development", "description": "Build once, run everywhere", "slug": "cross-platform-development" }
+            ]
         },
-        'eCommerce': {
-            title: 'eCommerce',
-            description: 'Cutting-edge application solutions',
-            columns: [
-                {
-                    title: 'WEB APPLICATIONS',
-                    items: [
-                        { name: 'Progressive Web Apps', description: 'Next-gen web experiences' },
-                        { name: 'Single Page Applications', description: 'Fast, dynamic web apps' },
-                    ],
-                },
-                {
-                    title: 'MOBILE APPLICATIONS',
-                    items: [
-                        { name: 'iOS App Development', description: 'Sleek, powerful iOS apps' },
-                        { name: 'Android App Development', description: 'Robust Android solutions' },
-                        { name: 'Cross-platform Development', description: 'Build once, run everywhere' },
-                    ],
-                }
-            ],
+        "eCommerce": {
+            "title": "eCommerce",
+            "description": "Cutting-edge application solutions",
+            "columns": [
+                { "name": "Progressive Web Apps", "description": "Next-gen web experiences", "slug": "progressive-web-apps" },
+                { "name": "Single Page Applications", "description": "Fast, dynamic web apps", "slug": "single-page-applications" },
+                { "name": "iOS App Development", "description": "Sleek, powerful iOS apps", "slug": "ios-app-development" },
+                { "name": "Android App Development", "description": "Robust Android solutions", "slug": "android-app-development" },
+                { "name": "Cross-platform Development", "description": "Build once, run everywhere", "slug": "cross-platform-development" }
+            ]
         },
-        'QA & Testing': {
-            title: 'QA & Testing',
-            description: 'Cutting-edge application solutions',
-            columns: [
-                {
-                    title: 'WEB APPLICATIONS',
-                    items: [
-                        { name: 'Progressive Web Apps', description: 'Next-gen web experiences' },
-                        { name: 'Single Page Applications', description: 'Fast, dynamic web apps' },
-                    ],
-                },
-                {
-                    title: 'MOBILE APPLICATIONS',
-                    items: [
-                        { name: 'iOS App Development', description: 'Sleek, powerful iOS apps' },
-                        { name: 'Android App Development', description: 'Robust Android solutions' },
-                        { name: 'Cross-platform Development', description: 'Build once, run everywhere' },
-                    ],
-                }
-            ],
+        "QA & Testing": {
+            "title": "QA & Testing",
+            "description": "Cutting-edge application solutions",
+            "columns": [
+                { "name": "Progressive Web Apps", "description": "Next-gen web experiences", "slug": "progressive-web-apps" },
+                { "name": "Single Page Applications", "description": "Fast, dynamic web apps", "slug": "single-page-applications" },
+                { "name": "iOS App Development", "description": "Sleek, powerful iOS apps", "slug": "ios-app-development" },
+                { "name": "Android App Development", "description": "Robust Android solutions", "slug": "android-app-development" },
+                { "name": "Cross-platform Development", "description": "Build once, run everywhere", "slug": "cross-platform-development" }
+            ]
         },
-        'Cloud Services': {
-            title: 'QA & Testing',
-            description: 'Cutting-edge application solutions',
-            columns: [
-                {
-                    title: 'WEB APPLICATIONS',
-                    items: [
-                        { name: 'Progressive Web Apps', description: 'Next-gen web experiences' },
-                        { name: 'Single Page Applications', description: 'Fast, dynamic web apps' },
-                        { name: 'Cross-platform Development', description: 'Build once, run everywhere' },
-                    ],
-                },
-                {
-                    title: 'MOBILE APPLICATIONS',
-                    items: [
-                        { name: 'iOS App Development', description: 'Sleek, powerful iOS apps' },
-                        { name: 'Android App Development', description: 'Robust Android solutions' },
-                    ],
-                }
-            ],
-        },
-    },
+        "Cloud Services": {
+            "title": "Cloud Services",
+            "description": "Cutting-edge application solutions",
+            "columns": [
+                { "name": "Progressive Web Apps", "description": "Next-gen web experiences", "slug": "progressive-web-apps" },
+                { "name": "Single Page Applications", "description": "Fast, dynamic web apps", "slug": "single-page-applications" },
+                { "name": "Cross-platform Development", "description": "Build once, run everywhere", "slug": "cross-platform-development" },
+                { "name": "iOS App Development", "description": "Sleek, powerful iOS apps", "slug": "ios-app-development" },
+                { "name": "Android App Development", "description": "Robust Android solutions", "slug": "android-app-development" }
+            ]
+        }
+    }
+
 }
 
 
@@ -214,23 +155,22 @@ const OurServices = () => {
 
 
 
-                                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 sm:gap-6">
+                                        <div className="grid grid-cols-1 md:grid-cols-2 mt-8 lg:grid-cols-2 sm:gap-2">
                                             {techStackData.content[activeCategory].columns.map((column, index) => (
                                                 <div key={index} className='relative'>
 
-                                                    {column.items.map((item, itemIndex) => (
-                                                        <div key={itemIndex} className="mb-4 mt-2 cursor-pointer rounded-lg py-1 px-2 group">
-                                                            <div className="flex items-center gap-4">
+                                                    <div className="cursor-pointer rounded-lg py-1 px-2 group">
+                                                        <Link href={`/service/${column.slug}`} className="flex items-center gap-4">
 
-                                                                <span className="relative flex h-3 w-3">
-                                                                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
-                                                                    <span className="relative inline-flex rounded-full h-3 w-3 bg-blue-500"></span>
-                                                                </span>
+                                                            <span className="relative flex h-3 w-3">
+                                                                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                                                                <span className="relative inline-flex rounded-full h-3 w-3 bg-blue-500"></span>
+                                                            </span>
 
-                                                                <h4 className="font-medium inline-block text-lg relative after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-black after:transition-all after:duration-300 group-hover:after:w-full">{item.name}</h4>
-                                                            </div>
-                                                        </div>
-                                                    ))}
+                                                            <h4 className="font-medium inline-block text-lg relative after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-black after:transition-all after:duration-300 group-hover:after:w-full">{column.name}</h4>
+                                                            
+                                                        </Link>
+                                                    </div>
 
 
                                                 </div>

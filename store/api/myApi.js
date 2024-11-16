@@ -4,25 +4,25 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 export const myApi = createApi({
   reducerPath: 'myApi',
   baseQuery: fetchBaseQuery({ baseUrl: process.env.NEXT_PUBLIC_API_BASE_URL }),
-  tagTypes: ['User', 'Hero'],  // Optional: for automatic cache invalidation
+  tagTypes: ['User', 'Template'],  // Optional: for automatic cache invalidation
   endpoints: (builder) => ({
     
-    getHeroSecItems: builder.query({
-      query: () => 'heroSection',
-      providesTags: ['Hero'], // Ensures refetching after creating or deleting
+    getTemplate: builder.query({
+      query: () => 'template',
+      providesTags: ['Template'], // Ensures refetching after creating or deleting
     }),
 
-    getHeroSecItemByStr: builder.query({
-      query: (identifier) => `heroSection/${identifier}`,
+    getTemplateContentByStr: builder.query({
+      query: (identifier) => `template/${identifier}`,
     }),
 
-    createHeroSecContent: builder.mutation({
-      query: (newHeroContent) => ({
-        url: 'heroSection',
+    createComponentContent: builder.mutation({
+      query: (newComponent) => ({
+        url: 'template',
         method: 'POST',
-        body: newHeroContent,
+        body: newComponent,
       }),
-      invalidatesTags: ['Hero'], // Refetch users after creation
+      invalidatesTags: ['Template'], // Refetch users after creation
     }),
 
 
@@ -58,11 +58,11 @@ export const myApi = createApi({
 export const {
   useGetItemsQuery,
   useGetHeroSecItemsQuery,
-  useGetHeroSecItemByStrQuery,
-  useGetItemByIdQuery,
+  useGetTemplateContentByStrQuery,
+  useGetTemplateQuery,
   useGetUsersQuery,
   useGetUserByIdQuery,
   useDeleteUserMutation,
-  useCreateHeroSecContentMutation,
+  useCreateComponentContentMutation,
   useCreateUserMutation,  // Add the createUser mutation hook
 } = myApi;

@@ -11,7 +11,7 @@ import ChooseUs from "@/components/services/ChooseUs";
 import Faqs from "@/components/layout/Faqs";
 import StepToHire from "@/components/hire/StepToHire";
 
-import { useGetHeroSecItemByStrQuery } from '../../../store/api/myApi';
+import { useGetTemplateContentByStrQuery } from '../../../store/api/myApi';   
 
 import Lottie from "lottie-react";
 import loaderJson from "../../../public/pageAnimations/loader.json";
@@ -29,7 +29,8 @@ export default function HireDevOf() {
   const params = useParams();
   const { hireDevOf } = params;
 
-  const { data, error, isLoading } = useGetHeroSecItemByStrQuery(hireDevOf);
+
+  const { data, error, isLoading } = useGetTemplateContentByStrQuery("service");
 
   // Handle loading state
   if (isLoading) return <div className='flex items-center justify-center h-screen w-full'><Lottie animationData={loaderJson} loop={true} /></div>;
@@ -38,16 +39,18 @@ export default function HireDevOf() {
   // Handle error state
   if (error) return <p>Error fetching data</p>;
 
-  console.log("data", data);
+  const heroSectionObj = (data.heroSection).find((heroData) => heroData.fetchOnSlug === hireDevOf)
 
+  console.log("HeroSection data from template obj", heroSectionObj);
 
   const heroSectionData = {
-    titlePrefix: data?.titlePrefix || "Enterprise",
-    title: data?.title || formatparameter(hireDevOf),
-    description: data?.description || "Custom Software Development Services and Solutions to build top-tier intelligent enterprises with speed and agility.",
+    titlePrefix: heroSectionObj?.titlePrefix || "Enterprise",
+    title: heroSectionObj?.title || formatparameter(hireDevOf),
+    description: heroSectionObj?.description || "Custom Software Development Services and Solutions to build top-tier intelligent enterprises with speed and agility.",
     imageUrl: "https://img.freepik.com/premium-photo/astronaut-outer-space-surrounded-by-planets-satellites-generative-ai_1028873-12416.jpg",
-    ctaRedirectUrl: data?.ctaRedirectUrl || "#contact-us",
+    ctaRedirectUrl: heroSectionObj?.ctaRedirectUrl || "#contact-us",
   };
+
 
   const faqData = [
 

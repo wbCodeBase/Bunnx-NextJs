@@ -21,7 +21,7 @@ const CtaSection2 = () => {
 
                         <div className='flex justify-center items-center'>
 
-                            <Link className='flex items-center justify-center gap-2 bg[#261E80] p-1 pr-3 font-medium text-md bg-orange-500 rounded-full mt-4 text-white' href="/services/mobile-app"> <span className='bg-white rounded-full p-3 text-xl text-black animate-bounce'> <FaPhoneAlt /> </span> <span> Lets Talk </span></Link>
+                            <Link className='flex items-center justify-center gap-2 bg[#261E80] p-1 pr-3 font-medium text-md bg-orange-500 rounded-full mt-4 text-white' href="/hire/soon"> <span className='bg-white rounded-full p-3 text-xl text-black animate-bounce'> <FaPhoneAlt /> </span> <span> Lets Talk </span></Link>
 
                         </div>
 
