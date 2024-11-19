@@ -177,9 +177,9 @@ export default function ProcessShowcase() {
 
             <div className='text-white md:my-10 my-6'>
                 {/* Mobile View */}
-                <div className="lg:hidden grid grid-cols-1 sm:grid-cols-2 gap-4 fle items-star justify-cente lg:space-y-8">
+                <div className="lg:hidden grid grid-cols-1 relative sm:grid-cols-2 gap-4 fle items-star justify-cente lg:space-y-8">
                     {processSections.map((section) => (
-                        <div key={section.id} className="space-y-4 bg-[#1a1a1a] p-6 rounded-lg our-process-box">
+                        <div key={section.id} className="space-y-4 bg-[#1a1a1a] p-6 rounded-lg">
                             <h2 className="text-2xl font-bold">{section.title}</h2>
                             <p className="text-gray-300">{section.description}</p>
                             <div className="grid gap-6">
@@ -211,7 +211,7 @@ export default function ProcessShowcase() {
                             <motion.div
                                 layout
                                 key={section.id}
-                                className={`relative bg-[#1a1a1a] rounded-lg cursor-pointer overflow-hidden pb-8 transition-colors our-process-box
+                                className={`relative bg-[#1a1a1a] rounded-lg cursor-pointer overflow-hidden pb-8 transition-colors
                 ${activeSection === section.id ? 'flex-1' : 'flex-none w-[120px]'}`}
                                 onHoverStart={() => setActiveSection(section.id)}
                                 transition={{ duration: 0.5, ease: "easeInOut" }}

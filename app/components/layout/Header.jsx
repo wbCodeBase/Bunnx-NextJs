@@ -5,7 +5,6 @@ import Link from 'next/link'
 import { ChevronRight, ChevronDown, Menu, X } from 'lucide-react'
 import Image from 'next/image'
 
-import { FaJava } from "react-icons/fa";
 import { TbCodeDots } from "react-icons/tb";
 
 const menuItems = [
