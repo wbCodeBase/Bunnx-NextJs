@@ -33,7 +33,6 @@ export default function ServiceDetails() {
   const { serviceDetails } = params;
 
 
-
   const { data, error, isLoading } = useGetTemplateContentByStrQuery("service");
 
   // Handle loading state
@@ -81,24 +80,33 @@ export default function ServiceDetails() {
 
   ];
 
-  const servicesData = [
+
+  const heroSectionObj = (data?.heroSection).find((heroData) => heroData?.fetchOnSlug === serviceDetails)
+  // console.log("HeroSection data from template obj", heroSectionObj);
+  
+  const serviceSectionObj = (data?.servicesSection).filter((serviceData) => serviceData?.fetchOnSlug.includes(serviceDetails))
+  console.log("serviceSection data from template obj", serviceSectionObj);
+  
+
+
+  const servicesData = serviceSectionObj || [
     {
       title: "Custom Software Development",
       description:
         "We are committed to deliver custom software solutions that perfectly align with your complex technical needs. You Share your requirements, and we'll create a custom application that evolves with your business and user demands.",
-      slug: "custom-software-development",
+      ctaRedirectUrl: "custom-software-development",
     },
     {
       title: "Software Outsourcing Services",
       description:
         "Our software outsourcing services reduce costs, accelerate timelines, and connect you with top-tier talent to give you a competitive edge. At Bunnx we have domain experts, our team delivers tailored, efficient solutions that meet your business needs.",
-      slug: "software-outsourcing",
+      ctaRedirectUrl: "software-outsourcing",
     },
     {
       title: "Desktop App Development",
       description:
         "We create robust desktop applications for Mac, Windows, and Linux using C++/Qt, .NET, and Python. Our expertise ensures high-performance solutions tailored to your specific requirements, providing seamless functionality across all major operating systems.",
-      slug: "",
+      ctaRedirectUrl: "",
     },
     {
       title: "Database Integration",
@@ -109,49 +117,49 @@ export default function ServiceDetails() {
       title: "On-demand Software Teams",
       description:
         "Accelerate development projects and access skilled professionals with our flexible on-demand software teams. Integrate our talent into your workflow for efficient collaboration and faster project delivery.",
-      slug: "dedicated-development-teams"
+      ctaRedirectUrl: "dedicated-development-teams"
     },
     {
       title: "QA & Testing",
       description:
         "Our certified experts perform thorough testing to detect and resolve any errors or bugs that could affect your software performance. Guarantee the quality, reliability, and performance of your software applications with our QA Experts and testing services. ",
-      slug: "qa-testing",
+      ctaRedirectUrl: "qa-testing",
     },
     {
       title: "Ecommerce",
       description:
         "As a leading software development company in India, we offer comprehensive e-commerce solutions, including secure payment gateways and streamlined shopping experiences, ensuring convenience for your customers.",
-      slug: "ecommerce",
+      ctaRedirectUrl: "ecommerce",
     },
     {
       title: "Features Advancement",
       description:
         "As a leading software development company in India, we offer comprehensive e-commerce solutions, including secure payment gateways and streamlined shopping experiences, ensuring convenience for your customers.",
-      slug: "features-advancement",
+      ctaRedirectUrl: "features-advancement",
     },
     {
       title: "Web App Development",
       description:
         "Our team builds responsive, scalable, and efficient web applications tailored to your business needs. We focus on creating seamless user experiences, ensuring high performance, security, and easy navigation.",
-      slug: "web-app-development",
+      ctaRedirectUrl: "web-app-development",
     },
     {
       title: "Devops",
       description:
         "Adopt DevOps to optimize software development and operations. With our expertise in collaboration, automation, continuous integration, and delivery pipelines, we empower your business to achieve greater efficiency, quality, and agility.",
-      slug: "devops",
+      ctaRedirectUrl: "devops",
     },
     {
       title: "Mobile App Development",
       description:
         "Our skilled mobile app developers combine deep IT knowledge with extensive hands-on experience across diverse projects. They analyze your business ecosystem to fully understand your needs and goals, delivering tailored solutions that best fit your requirements.",
-      slug: "mobile-app-development",
+      ctaRedirectUrl: "mobile-app-development",
     },
     {
       title: "API & Software Integration",
       description:
         "We utilize API-driven development to seamlessly integrate custom software with your corporate and third-party systems and services. Our approach ensures smooth, efficient connectivity and enhances the functionality of your software solutions.",
-      slug: "api-integration",
+      ctaRedirectUrl: "api-integration",
     },
     {
       title: "Cloud App & Hosting Services",
@@ -163,7 +171,7 @@ export default function ServiceDetails() {
       title: "Support and Maintenance",
       description:
         "At our software development company in India, we prioritise application maintenance just as much as development. We recognize that even the most innovative solutions are only valuable when supported by a stable, well-maintained ecosystem free from bugs and glitches.",
-      slug: "",
+      ctaRedirectUrl: "",
     },
 
 
@@ -171,48 +179,44 @@ export default function ServiceDetails() {
       title: "Application Support Services",
       description:
         "Ensure uninterrupted business operations with proactive support across all levels (L0, L1, L2, L3). Our experts resolve issues, reduce downtime, and enhance system stability, allowing your business to focus on growth and innovation.",
-      slug: "",
+      ctaRedirectUrl: "",
     },
     {
       title: "Application Security Management",
       description:
         "Safeguard your software with end-to-end security management. Our team implements proactive threat detection and prevention measures to minimize risks and ensure your applications remain compliant with industry standards.",
-      slug: "",
+      ctaRedirectUrl: "",
     },
     {
       title: "Application Performance Management",
       description:
         "Achieve peak performance with our application monitoring and optimization services. We ensure your systems run smoothly and efficiently by addressing challenges and improving overall performance for better user experiences.",
-      slug: "",
+      ctaRedirectUrl: "",
     },
     {
       title: "CI/CD and DevOps Implementation",
       description:
         "Accelerate software delivery with seamless CI/CD and DevOps practices. We enhance your development pipelines, enabling faster releases, reduced errors, and greater efficiency for continuous improvements in your applications.",
-      slug: "",
+      ctaRedirectUrl: "",
     },
     {
       title: "Cloud Migration",
       description:
         "Future-proof your software with a smooth transition to the cloud. We provide end-to-end cloud migration services, ensuring minimal disruption while enhancing scalability, flexibility, and cost efficiency.",
-      slug: "",
+      ctaRedirectUrl: "",
     },
-
 
   ];
 
-  const heroSectionObj = (data.heroSection).find((heroData) => heroData.fetchOnSlug === serviceDetails)
-
-  console.log("HeroSection data from template obj", heroSectionObj);
 
   const heroSectionData = {
     titlePrefix: heroSectionObj?.titlePrefix || "Enterprise",
     title: heroSectionObj?.title || formatparameter(serviceDetails),
     description: heroSectionObj?.description || "Custom Software Development Services and Solutions to build top-tier intelligent enterprises with speed and agility.",
-    imageUrl: "https://img.freepik.com/premium-photo/astronaut-outer-space-surrounded-by-planets-satellites-generative-ai_1028873-12416.jpg",
+    imageUrl: "https://img.freepik.com/premium-photo/astronaut-outer-space-surrounded-by-planets-satellites-generative-ai_1028873-12416.jpg", 
+    ctaText: heroSectionObj?.ctaText || "Get Connected With us",
     ctaRedirectUrl: heroSectionObj?.ctaRedirectUrl || "#contact-us",
   };
-
 
 
   return (

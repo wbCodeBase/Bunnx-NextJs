@@ -67,9 +67,9 @@ const servicesData = {
         {
           title: 'DEVELOPMENT',
           items: [
-            { name: 'Custom Software', slug: 'custom-software-development', description: 'Tailored solutions for excellence' },
-            { name: 'Enterprise Software', slug: 'enterprise-software', description: 'Powering enterprise growth' },
-            { name: 'Software Product Engineering', slug: 'software-product-engineering', description: 'Building market-ready software' },
+            { name: 'Custom Software Development', slug: 'custom-software-development', description: 'Tailored solutions for excellence' },
+            { name: 'CMS Development', slug: 'cms-development', description: 'Powering your software' },
+            { name: 'CRM Software Development', slug: 'crm-software-development', description: 'Building market-ready software' },
             { name: 'Application Development', slug: 'application-development', description: 'Transform ideas into powerful apps' },
           ],
         },
@@ -77,7 +77,7 @@ const servicesData = {
           title: 'MAINTENANCE & SUPPORT',
           items: [
             { name: 'Application Maintenance', slug: 'application-maintenance', description: 'Effortless app maintenance' },
-            { name: 'Application Modernization', slug: 'application-modernization', description: 'Update your applications' },
+            { name: 'Application Advancement', slug: 'application-modernization', description: 'Update your applications' },
           ],
         },
         {

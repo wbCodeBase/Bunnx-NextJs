@@ -6,12 +6,21 @@ import {
   SidebarGroup,
   SidebarGroupContent,
   SidebarGroupLabel,
+
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
+  SidebarMenuSub, SidebarMenuSubItem,
 } from "@/components/ui/sidebar"
 
+
+import { Collapsible, CollapsibleTrigger, CollapsibleContent } from "@/components/ui/collapsible"
+
+
+
 import Link from "next/link"
+
+
 
 // Menu items.
 const items = [
@@ -21,8 +30,8 @@ const items = [
     icon: Home,
   },
   {
-    title: "Hero Section",
-    url: "/bunnx-admin/hero-section",
+    title: "Servcie",
+    url: "/bunnx-admin/template",
     icon: Inbox,
   },
   {
@@ -44,12 +53,37 @@ const items = [
 
 export function AppSidebar() {
   return (
+    // <Sidebar className="mt2">
+    //   <SidebarContent>
+    //     <SidebarGroup>
+    //       <SidebarGroupLabel>Menu</SidebarGroupLabel>
+    //       <SidebarGroupContent>
+    //         <SidebarMenu>
+    //           {items.map((item) => (
+    //             <SidebarMenuItem key={item.title}>
+    //               <SidebarMenuButton asChild>
+    //                 <Link href={item.url}>
+    //                   <item.icon />
+    //                   <span>{item.title}</span>
+    //                 </Link>
+    //               </SidebarMenuButton>
+    //             </SidebarMenuItem>
+    //           ))}
+    //         </SidebarMenu>
+    //       </SidebarGroupContent>
+    //     </SidebarGroup>
+    //   </SidebarContent>
+    // </Sidebar>
+
+
+
+
     <Sidebar className="mt2">
       <SidebarContent>
         <SidebarGroup>
           <SidebarGroupLabel>Menu</SidebarGroupLabel>
           <SidebarGroupContent>
-            <SidebarMenu>
+            {/* <SidebarMenu>
               {items.map((item) => (
                 <SidebarMenuItem key={item.title}>
                   <SidebarMenuButton asChild>
@@ -60,10 +94,31 @@ export function AppSidebar() {
                   </SidebarMenuButton>
                 </SidebarMenuItem>
               ))}
+            </SidebarMenu> */}
+
+            <SidebarMenu>
+              <Collapsible defaultOpen className="group/collapsible">
+                <SidebarMenuItem>
+                  <CollapsibleTrigger asChild>
+                    {/* Pass content to SidebarMenuButton explicitly */}
+                    <SidebarMenuButton>Menu Button</SidebarMenuButton>
+                  </CollapsibleTrigger>
+                  <CollapsibleContent>
+                    <SidebarMenuSub>
+                      {/* Ensure SidebarMenuSubItem has valid children */}
+                      <SidebarMenuSubItem>Sub Item 1</SidebarMenuSubItem>
+                      <SidebarMenuSubItem>Sub Item 2</SidebarMenuSubItem>
+                    </SidebarMenuSub>
+                  </CollapsibleContent>
+                </SidebarMenuItem>
+              </Collapsible>
             </SidebarMenu>
+
           </SidebarGroupContent>
         </SidebarGroup>
       </SidebarContent>
     </Sidebar>
+
+
   )
 }

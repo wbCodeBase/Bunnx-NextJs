@@ -44,7 +44,7 @@ const ServiceSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    slug: {
+    ctaRedirectUrl: {
         type: String
     },
     fetchOnSlug: [{

@@ -18,10 +18,15 @@ async function connectToDatabase() {
 
   if (!cached.promise) {
     cached.promise = mongoose.connect(MONGODB_URI)
-      .then((mongoose) => mongoose);
+      .then((mongoose) => mongoose)
+      .catch((err) => {
+        console.error('Database connection failed:', err.message);
+        throw new Error(err.message);
+      });
   }
   cached.conn = await cached.promise;
   return cached.conn;
 }
+
 
 export default connectToDatabase;

@@ -6,7 +6,7 @@ import Link from "next/link";
 
 import { FaLocationArrow } from "react-icons/fa";
 
-const HeroSection = ({ titlePrefix, title, description, imageUrl, ctaRedirectUrl }) => {
+const HeroSection = ({ titlePrefix, title, description, ctaText, imageUrl, ctaRedirectUrl }) => {
 
 
 
@@ -22,12 +22,10 @@ const HeroSection = ({ titlePrefix, title, description, imageUrl, ctaRedirectUrl
               <p className="lg:text-xl text-lg my-6 font-medium">{description || "Custom Software Development Services and Solutions to build top-tier intelligent enterprises with speed and agility."}</p>
 
               <div className="flex items-center justify-center sm:justify-start">
-                <Link href={ctaRedirectUrl || "/"} className='flex items-center justify-center gap-2 bg[#261E80] p-1 pl-3 font-medium text-lg bg-orange-500 rounded-full mt-4 text-white'><span> Get connected with us </span> <span className='bg-white rounded-full p-3 text-black rotate-45'> <FaLocationArrow /> </span></Link>
+                <Link href={ctaRedirectUrl || "/"} className='flex items-center justify-center gap-2 bg[#261E80] p-1 pl-3 font-medium text-lg bg-orange-500 rounded-full mt-4 text-white'><span> {ctaText || "Get Connected with us"} </span> <span className='bg-white rounded-full p-3 text-black rotate-45'> <FaLocationArrow /> </span></Link>
               </div>
 
             </div>
-
-
           </div>
 
           <div className="md:w-[44%] w-full flex items-center justify-center">

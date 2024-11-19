@@ -3,17 +3,20 @@ import connectToDatabase from '../../../utils/database';
 import { getTemplateContent, createComponentContent, updateHeroSectionContent, deleteHeroSectionContent } from '../../../controllers/templateController';
 
 export async function GET() {
-  await connectToDatabase();
-
-  const templateContent = await getTemplateContent();
-
-  return new Response(JSON.stringify(templateContent), { status: 200 });
+  try {
+    await connectToDatabase();
+    const templateContent = await getTemplateContent();
+    return new Response(JSON.stringify(templateContent), { status: 200 });
+  } catch (error) {
+    console.error('Error in GET request:', error.message);
+    return new Response(JSON.stringify({ error: error.message }), { status: 500 });
+  }
 }
 
-
 export async function POST(request) {
-  await connectToDatabase();
   try {
+    await connectToDatabase();
+
     const data = await request.json();
 
     const newComponent = await createComponentContent(data);
@@ -27,7 +30,8 @@ export async function POST(request) {
 
     return new Response(JSON.stringify(newComponent.data), { status: 201 });
   } catch (error) {
-    console.error("Error in POST API:", error.message);console.error("Error in POST API:", error);
+    console.error("Error in POST API:", error.message);
+    // console.error("Error in POST API:", error);
 
     return new Response(
       JSON.stringify({ error: error.message || "An unexpected error occurred" }),

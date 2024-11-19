@@ -1,9 +1,5 @@
 import React, { useState } from 'react';
 
-
-import Lottie from "lottie-react";
-import loaderJson from "../../../public/pageAnimations/loader.json";
-
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
@@ -24,8 +20,6 @@ import { Textarea } from "@/components/ui/textarea"
 
 import {
     useCreateComponentContentMutation,
-    useGetTemplateQuery,
-    useGetTemplateContentByStrQuery
 } from '../../../store/api/myApi';
 
 
@@ -41,14 +35,8 @@ const formSchema = z.object({
     componentName: z.string(),
 });
 
-const HeroSection = ({whichTemplate}) => {
+const HeroSection = ({ heroSection }) => {
 
-    const { data, error, isLoading } = useGetTemplateQuery();
-
-
-    const serviceTemplate = data?.find((templateData) => templateData.templateName === whichTemplate)
-
-    console.log(serviceTemplate);
 
     const [createComponentContent, result] = useCreateComponentContentMutation();
 
@@ -82,9 +70,6 @@ const HeroSection = ({whichTemplate}) => {
     };
 
 
-    if (isLoading) return <div className='flex items-center justify-center h-screen w-full'><Lottie animationData={loaderJson} loop={true} /></div>;
-
-    if (error) return <div>Error: {error.message}</div>;
 
 
     return (
@@ -96,7 +81,7 @@ const HeroSection = ({whichTemplate}) => {
 
                 <div className="flex justify-center gap-10 flex-wrap w-full sm:w-auto p-3">
                     <HeroSectionForm form={form} result={result} onSubmit={onSubmit} />
-                    <HeroSectionCards data={serviceTemplate && serviceTemplate.heroSection} />
+                    <HeroSectionCards data={heroSection} />
                 </div>
             </div>
         </>
@@ -112,7 +97,29 @@ const HeroSectionForm = ({ form, onSubmit, result }) => (
             <FormFieldInput form={form} name="title" label="Title" placeholder="Title" />
             <FormFieldInput form={form} name="description" label="Description" placeholder="Enter Description" />
             <FormFieldInput form={form} name="imageUrl" label="Image" placeholder="Coming Soon" />
-            <FormFieldInput form={form} name="ctaRedirectUrl" label="CTA Redirect URL" placeholder="CTA Redirect URL" />
+            {/* <FormFieldInput form={form} name="ctaRedirectUrl" label="CTA Redirect URL" placeholder="CTA Redirect URL" /> */}
+
+            <FormFieldInput
+                form={form}
+                name="ctaRedirectUrl"
+                label="CTA Redirect URL"
+                placeholder="Select a redirect URL"
+                options={[
+                    { value: "software-development", label: "software-development" },
+                    { value: "application-development", label: "application-development" },
+                    { value: "custom-software-development", label: "custom-software-development" },
+                    { value: "dedicated-software-teams", label: "dedicated-software-teams" },
+                    { value: "ecommerce", label: "ecommerce" },
+                    { value: "qa-testing", label: "qa-testing" },
+                    { value: "software-outsourcing", label: "software-outsourcing" },
+                    { value: "support-maintenance", label: "support-maintenance" },
+                    { value: "devops", label: "devops" },
+                    { value: "cloud-services", label: "cloud-services" },
+                    { value: "mobile-app-development", label: "mobile-app-development" },
+                ]}
+            />
+
+
             <FormFieldInput form={form} name="ctaText" label="CTA Title" placeholder="Enter CTA Tttle" />
             <FormFieldInput form={form} name="fetchOnSlug" label="Fetch on page" placeholder="Enter slug where it display" />
 
@@ -123,7 +130,27 @@ const HeroSectionForm = ({ form, onSubmit, result }) => (
     </Form>
 );
 
-const FormFieldInput = ({ form, name, label, placeholder }) => (
+// const FormFieldInput = ({ form, name, label, placeholder }) => (
+//     <FormField
+//         control={form.control}
+//         name={name}
+//         render={({ field }) => (
+//             <FormItem>
+//                 <FormLabel>{label}</FormLabel>
+//                 <FormControl>
+//                     {name === "description" ? <Textarea className="bg-gray-50" placeholder={placeholder} {...field} /> : 
+//                     <Input className="bg-gray-50" placeholder={placeholder} {...field} />
+//                 }
+//                 </FormControl>
+//                 <FormMessage />
+//             </FormItem>
+//         )}
+//     />
+// );
+
+
+
+const FormFieldInput = ({ form, name, label, placeholder, options = [] }) => (
     <FormField
         control={form.control}
         name={name}
@@ -131,9 +158,26 @@ const FormFieldInput = ({ form, name, label, placeholder }) => (
             <FormItem>
                 <FormLabel>{label}</FormLabel>
                 <FormControl>
-                    {name === "description" ? <Textarea className="bg-gray-50" placeholder={placeholder} {...field} /> : 
-                    <Input className="bg-gray-50" placeholder={placeholder} {...field} />
-                }
+                    {name === "description" ? (
+                        <Textarea className="bg-gray-50" placeholder={placeholder} {...field} />
+                    ) : 
+                    
+                    name === "ctaRedirectUrl" && options.length > 0 ? (
+                        <select className="bg-gray-50 border rounded-md ml-4 w-72 p-1.5 text-sm" {...field}>
+                            <option value="" disabled>
+                                {placeholder || "Select an option"}
+                            </option>
+                            {options.map((option) => (
+                                <option key={option.value} value={option.value}>
+                                    {option.label}
+                                </option>
+                            ))}
+                        </select>
+                    ) 
+                    
+                    : (
+                        <Input className="bg-gray-50" placeholder={placeholder} {...field} />
+                    )}
                 </FormControl>
                 <FormMessage />
             </FormItem>
@@ -141,19 +185,24 @@ const FormFieldInput = ({ form, name, label, placeholder }) => (
     />
 );
 
+
+
+
+
 const HeroSectionCards = ({ data }) => (
     <div className="bg-white border p-3 rounded-lg w-full sm:w-1/3">
         <div className="font-semibold mb-2 text-center">Hero Section Cards</div>
         <div className="overflow-y-auto max-h-[40rem] scrollbar-design">
             {data && data.map((heroSecCard, i) => (
-                <HeroCard key={i} heroSecCard={heroSecCard} />
+                <HeroCard key={i} i={i} heroSecCard={heroSecCard} />
             ))}
         </div>
     </div>
 );
 
-const HeroCard = ({ heroSecCard }) => (
-    <div className="bg-gray-50 flex gap-2 flex-col rounded-lg p-3 my-2 text-sm">
+const HeroCard = ({ heroSecCard, i }) => (
+    <div className="relative bg-gray-50 flex gap-2 flex-col rounded-lg p-3 my-2 text-sm">
+        <span className='absolute top-1 right-1 text-xs px-1 rounded-full text-white bg-gray-400'>{i+1}</span>
         <CardItem label="Prefix" content={heroSecCard?.titlePrefix} />
         <CardItem label="Title" content={heroSecCard?.title} />
         <CardItem label="Desc" content={heroSecCard?.description} />
@@ -166,7 +215,7 @@ const HeroCard = ({ heroSecCard }) => (
 
 const CardItem = ({ label, content }) => (
     <div className="flex gap-2">
-        <span className="font-medium text-nowrap">{label}:</span>
+        <span className="font-medium text-nowrap text-gray-600">{label}:</span>
         <span className="text-gray-600">{content}</span>
     </div>
 );
