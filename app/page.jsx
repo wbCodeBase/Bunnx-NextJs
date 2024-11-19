@@ -10,7 +10,7 @@ import WhyChooseUs from "@/components/home/WhyChooseUs";
 import IndustryWeServed from "@/components/home/IndustryWeServed";
 import TechStackExpertise from "@/components/home/TechStackExpertise";
 import CtaSection from "@/components/home/CtaSection";
-import CtaSection2 from "@/components/layout/CtaSection2";
+import CtaSectionMain from "@/components/layout/CtaSectionMain";
 import CtaSection3 from "@/components/home/CtaSection3";
 import BasicComponent from "@/components/home/BasicComponent";
 import Faqs from "@/components/layout/Faqs";
@@ -51,7 +51,7 @@ export default function Home() {
 
       <WhyChooseUs />
 
-      <CtaSection2 />
+      <CtaSectionMain />
 
       <CaseStudiesnProjects />
 

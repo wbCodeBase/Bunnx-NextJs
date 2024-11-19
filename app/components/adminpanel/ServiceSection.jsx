@@ -28,7 +28,7 @@ const formSchema = z.object({
     title: z.string().min(2, { message: "Title must be at least 2 characters." }),
     description: z.string(),
     ctaRedirectUrl: z.string(),
-    fetchOnSlug: z.array(z.string()),
+    fetchOnSlug: z.array(z.string()).nonempty({ message: "Please select at least one slug." }),
     templateName: z.string(),
     componentName: z.string(),
 });

@@ -6,7 +6,7 @@ import React from "react";
 import Services from "@/components/services/Services";
 import HeroSection from '@/components/layout/HeroSection';
 import NumericCounterInfo from "@/components/layout/NumericCounterInfo";
-import CtaSection2 from '@/components/layout/CtaSection2';
+import CtaSectionMain from '@/components/layout/CtaSectionMain';
 import ChooseUs from "@/components/services/ChooseUs";
 import Faqs from "@/components/layout/Faqs";
 import ProcessShowcase from '@/components/services/OurProcess';
@@ -16,10 +16,11 @@ import GuideTopics from '@/components/services/GuideTopics';
 
 
 import Lottie from "lottie-react";
-import loaderJson from "../../../public/pageAnimations/loader.json";
+import loaderJson from "../../public/pageAnimations/loader.json";
 
 
-import { useGetTemplateContentByStrQuery } from '../../../store/api/myApi';    
+import { useGetTemplateContentByStrQuery } from '../../store/api/myApi';    
+import EngagementModel from '@/components/hire/EngagementModel';
 
 function formatparameter(input) {
   return input
@@ -76,10 +77,25 @@ export default function ServiceDetails() {
         content: "Yes, once the project is complete and all payments are made, you retain full ownership of the code and the software. We will provide you with all necessary documentation and source code, allowing you complete control over the final product."
       }
     },
+    {
+      id: "default-5",
+      question: "What industries can benefit from custom software solutions?",
+      answer: {
+        type: "text",
+        content: "Custom software is suitable for a wide range of industries, including healthcare, finance, retail, education, and more. It ensures tailored solutions that address specific business needs."
+      }
+    },
+    {
+      id: "default-6",
+      question: "How do you ensure the software evolves with my business?",
+      answer: {
+        type: "text",
+        content: "We use scalable architectures and modular design, allowing the software to adapt and integrate with your growing needs and emerging technologies."
+      }
+    },
 
 
   ];
-
 
   const heroSectionObj = (data?.heroSection).find((heroData) => heroData?.fetchOnSlug === serviceDetails)
   // console.log("HeroSection data from template obj", heroSectionObj);
@@ -87,9 +103,9 @@ export default function ServiceDetails() {
   const serviceSectionObj = (data?.servicesSection).filter((serviceData) => serviceData?.fetchOnSlug.includes(serviceDetails))
   console.log("serviceSection data from template obj", serviceSectionObj);
   
-
-
-  const servicesData = serviceSectionObj || [
+  const servicesData = (Array.isArray(serviceSectionObj) && serviceSectionObj.length > 0) 
+  ? serviceSectionObj 
+  : [
     {
       title: "Custom Software Development",
       description:
@@ -228,13 +244,19 @@ export default function ServiceDetails() {
 
       <Services servicesData={servicesData} />
 
-      <CtaSection2 />
+      <CtaSectionMain />
 
       <ProcessShowcase />
 
       <Methodology />
 
       <ChooseUs />
+
+
+
+      <EngagementModel hiredevOf={formatparameter(serviceDetails)} />
+
+
 
       <HiringModels />
 

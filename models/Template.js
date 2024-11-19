@@ -49,8 +49,7 @@ const ServiceSchema = new mongoose.Schema({
     },
     fetchOnSlug: [{
         type: String,
-        required: true,
-        unique: true
+        required: true
     }]
 }, {
     timestamps: true

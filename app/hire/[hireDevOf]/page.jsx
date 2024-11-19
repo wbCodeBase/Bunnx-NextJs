@@ -6,7 +6,7 @@ import TechExpertise from "@/components/hire/TechExpertise";
 import EngagementModel from "@/components/hire/EngagementModel";
 import HeroSection from '@/components/layout/HeroSection';
 import NumericCounterInfo from "@/components/layout/NumericCounterInfo";
-import CtaSection2 from '@/components/layout/CtaSection2';
+import CtaSectionMain from '@/components/layout/CtaSectionMain';
 import ChooseUs from "@/components/services/ChooseUs";
 import Faqs from "@/components/layout/Faqs";
 import StepToHire from "@/components/hire/StepToHire";
@@ -101,7 +101,7 @@ export default function HireDevOf() {
 
       <Techcard />
 
-      <CtaSection2 />
+      <CtaSectionMain />
 
       <StepToHire hiredevOf={formatparameter(hireDevOf)} />
 

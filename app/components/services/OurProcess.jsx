@@ -172,7 +172,7 @@ export default function ProcessShowcase() {
 
             <h2 className='font-semibold text-orange-500 text-lg'>Our Process</h2>
             <h4 className='font-semibold text-3xl my-2'>Our Process for Software Development</h4>
-            <p className='text-md text-gray-800'>Whether you require a complex enterprise software solution or seamless software integration, we will convert your ideas into reality with our long-standing, industry-proven IT consulting and bespoke software development services.</p>
+            <p className='text-md text-gray-800'>As a leading software development company in India, we deliver solutions that are visually striking and technically advanced. Our services combine innovative design with advance development techniques to empower your brand. </p>
 
 
             <div className='text-white md:my-10 my-6'>
