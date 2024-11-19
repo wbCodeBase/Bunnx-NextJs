@@ -11,7 +11,7 @@ import { TbCodeDots } from "react-icons/tb";
 const menuItems = [
   { title: 'Home', slug: '/', hasSubmenu: false },
   { title: 'Service', slug: '/software-development', hasSubmenu: true },
-  { title: 'Hire', slug: '/hire/backend-developers', hasSubmenu: true },
+  { title: 'Hire', slug: '/hire/backend-developer', hasSubmenu: true },
   { title: 'About Us', slug: '/about-us', hasSubmenu: false },
   { title: 'Contact Us', slug: '/contact-us', hasSubmenu: false },
 ]
@@ -21,39 +21,29 @@ const menuItems = [
 
 const hireData = {
   categories: [
-    { name: 'Backend', slug: 'backend-developers' },
-    { name: 'Frontend', slug: 'frontend-developers' },
-    { name: 'AI/ML', slug: 'ai-ml-developers' },
-    { name: 'Mobile', slug: 'mobile-developers' },
-    { name: 'Full Stack', slug: 'full-stack-developers' },
-    { name: 'DevOps', slug: 'devops-developers' },
-    { name: 'CMS', slug: 'cms-developers' },
-    { name: 'eCommerce', slug: 'ecommerce-developers' },
-    { name: 'Digital Marketing', slug: 'digital-marketing-developers' },
-    { name: 'Blockchain', slug: 'blockchain-developers' },
-    { name: 'Low - Code', slug: 'low-code-developers' },
+    { name: 'Backend', slug: 'backend-developer' },
+    { name: 'Frontend', slug: 'frontend-developer' },
+    { name: 'Mobile', slug: 'mobile-developer' },
+    { name: 'Full Stack', slug: 'full-stack-developer' },
+    { name: 'DevOps', slug: 'devops-developer' },
+    { name: 'CMS', slug: 'cms-developer' },
+    { name: 'eCommerce', slug: 'ecommerce-developer' },
   ],
   content: {
     Backend: {
       title: 'Backend',
-      slug: 'backend',
+      slug: 'backend-developer',
       description: 'Build robust backend',
       technologies: [
-        { name: '.NET', slug: 'dot-net-developers' },
-        { name: 'PHP', slug: 'php-developers' },
-        { name: 'C/C++', slug: 'c-cpp-developers' },
-        { name: 'Python', slug: 'python-developers' },
-        { name: 'C#', slug: 'c-sharp-developers' },
-        { name: 'Ruby on Rails', slug: 'ruby-on-rails-developers' },
-        { name: 'Django', slug: 'django-developers' },
-        { name: 'Symfony', slug: 'symfony-developers' },
-        { name: 'Firebase', slug: 'firebase-developers' },
-        { name: 'Assembly', slug: 'assembly-developers' },
-        { name: 'Golang', slug: 'golang-developers' },
-        { name: 'Java', slug: 'java-developers' },
-        { name: 'GraphQL', slug: 'graphql-developers' },
-        { name: 'Laravel', slug: 'laravel-developers' },
-        { name: 'Node', slug: 'node-developers' },
+        { name: 'Php', slug: 'php-developer' },
+        { name: 'Laravel', slug: 'laravel-developer' },
+        { name: 'Node', slug: 'node-developer' },
+        { name: 'Codeigniter', slug: 'codeigniter-developer' },
+        { name: 'C#', slug: 'c-sharp-developer' },
+        { name: 'Ruby on Rails', slug: 'ruby-on-rails-developer' },
+        { name: 'Django', slug: 'django-developer' },
+        { name: 'Golang', slug: 'golang-developer' },
+        { name: 'Java', slug: 'java-developer' }, 
       ],
       hiring: [
 
@@ -64,7 +54,7 @@ const hireData = {
         },
         {
           title: 'Hire Software Developers',
-          slug: 'software-developers',
+          slug: 'software-developer',
           description: 'Work with skilled & dedicated developers',
         },
         {
@@ -79,21 +69,153 @@ const hireData = {
       slug: 'frontend',
       description: 'Create stunning user interfaces',
       technologies: [
-        { name: 'React', slug: 'react-developers' },
-        { name: 'Angular', slug: 'angular-developers' },
-        { name: 'Vue.js', slug: 'vue-js-developers' },
-        { name: 'Svelte', slug: 'svelte-developers' },
-        { name: 'JavaScript', slug: 'javascript-developers' },
-        { name: 'TypeScript', slug: 'typescript-developers' },
-        { name: 'SASS/SCSS', slug: 'sass-scss-developers' },
-        { name: 'Tailwind CSS', slug: 'tailwind-css-developers' },
-        { name: 'Bootstrap', slug: 'bootstrap-developers' },
-        { name: 'Material-UI', slug: 'material-ui-developers' },
+        { name: 'NextJs', slug: 'nextJs-developer' },
+        { name: 'ReactJs', slug: 'reactJs-developer' },
+        { name: 'Angular', slug: 'angularJs-developer' },
+        { name: 'VueJs', slug: 'vueJs-developer' },
       ],
       hiring: [
         {
           title: 'Hire Frontend Developers',
-          slug: 'hire-frontend-developers',
+          slug: 'hire-frontend-developer',
+          description: 'Expert UI/UX implementers',
+        },
+        {
+          title: 'Frontend Team Augmentation',
+          slug: 'frontend-team-augmentation',
+          description: 'Boost your frontend capabilities',
+        },
+        {
+          title: 'Dedicated Frontend Teams',
+          slug: 'dedicated-frontend-teams',
+          description: 'Full-service frontend development',
+        },
+      ],
+    },
+    CMS: {
+      title: 'CMS',
+      slug: 'content-management-system',
+      description: 'Create stunning user interfaces',
+      technologies: [
+        { name: 'Wordpress', slug: 'wordpress-developer' },
+        { name: 'Drupal', slug: 'drupal-developer' },
+        { name: 'Sitecore', slug: 'sitecore-developer' },
+        { name: 'Magento', slug: 'magento-developer' },
+      ],
+      hiring: [
+        {
+          title: 'Hire Frontend Developers',
+          slug: 'hire-frontend-developer',
+          description: 'Expert UI/UX implementers',
+        },
+        {
+          title: 'Frontend Team Augmentation',
+          slug: 'frontend-team-augmentation',
+          description: 'Boost your frontend capabilities',
+        },
+        {
+          title: 'Dedicated Frontend Teams',
+          slug: 'dedicated-frontend-teams',
+          description: 'Full-service frontend development',
+        },
+      ],
+    },
+    eCommerce: {
+      title: 'eCommerce',
+      slug: 'eCommerce-developer',
+      description: 'Create stunning user interfaces',
+      technologies: [
+        { name: 'Shopify', slug: 'shopify-developer' },
+        { name: 'Magento', slug: 'magento-developer' },
+        { name: 'Squarespace', slug: 'squarespace-developer' },
+      ],
+      hiring: [
+        {
+          title: 'Hire Frontend Developers',
+          slug: 'hire-frontend-developer',
+          description: 'Expert UI/UX implementers',
+        },
+        {
+          title: 'Frontend Team Augmentation',
+          slug: 'frontend-team-augmentation',
+          description: 'Boost your frontend capabilities',
+        },
+        {
+          title: 'Dedicated Frontend Teams',
+          slug: 'dedicated-frontend-teams',
+          description: 'Full-service frontend development',
+        },
+      ],
+    },
+    Mobile: {
+      title: 'Mobile',
+      slug: 'mobile-developer',
+      description: 'Create stunning user interfaces',
+      technologies: [
+        { name: 'Android', slug: 'android-developer' },
+        { name: 'Flutter', slug: 'flutter-developer' },
+        { name: 'Ios', slug: 'ios-developer' },
+        { name: 'Swift', slug: 'swift-developer' },
+        { name: 'Iconic', slug: 'iconic-developer' },
+        { name: 'React Native', slug: 'react-native-developer' },
+      ],
+      hiring: [
+        {
+          title: 'Hire Frontend Developers',
+          slug: 'hire-frontend-developer',
+          description: 'Expert UI/UX implementers',
+        },
+        {
+          title: 'Frontend Team Augmentation',
+          slug: 'frontend-team-augmentation',
+          description: 'Boost your frontend capabilities',
+        },
+        {
+          title: 'Dedicated Frontend Teams',
+          slug: 'dedicated-frontend-teams',
+          description: 'Full-service frontend development',
+        },
+      ],
+    },
+    "Full Stack": {
+      title: 'Full Stack Developer',
+      slug: 'full-stack-developer',
+      description: 'Create stunning user interfaces',
+      technologies: [
+        { name: 'MEAN', slug: 'mean-developer' },
+        { name: 'MERN', slug: 'mern-developer' },
+      ],
+      hiring: [
+        {
+          title: 'Hire Frontend Developers',
+          slug: 'hire-frontend-developer',
+          description: 'Expert UI/UX implementers',
+        },
+        {
+          title: 'Frontend Team Augmentation',
+          slug: 'frontend-team-augmentation',
+          description: 'Boost your frontend capabilities',
+        },
+        {
+          title: 'Dedicated Frontend Teams',
+          slug: 'dedicated-frontend-teams',
+          description: 'Full-service frontend development',
+        },
+      ],
+    },
+    "DevOps": {
+      title: 'DevOps',
+      slug: 'devops-developer',
+      description: 'Create stunning user interfaces',
+      technologies: [
+        { name: 'Azure', slug: 'azure-developer' },
+        { name: 'AWS', slug: 'aws-developer' },
+        { name: 'Digital Ocean', slug: 'digital-ocean-developer' },
+      ],
+      hiring: [
+        {
+          title: 'Hire Frontend Developers',
+          slug: 'hire-frontend-developer',
           description: 'Expert UI/UX implementers',
         },
         {
@@ -117,11 +239,11 @@ const hireData = {
 const servicesData = {
   categories: [
     { name: 'Software Development', slug: 'software-development' },
-    { name: 'Application Development', slug: 'frontend-developers' },
-    { name: 'Ecommerce Development', slug: 'ai-ml-developers' },
-    { name: 'Dedicated Technical Team', slug: 'mobile-developers' },
-    { name: 'QA & Testing', slug: 'full-stack-developers' },
-    { name: 'Cloud Services', slug: 'full-stack-developers' },
+    { name: 'Application Development', slug: 'frontend-developer' },
+    { name: 'Ecommerce Development', slug: 'ai-ml-developer' },
+    { name: 'Dedicated Technical Team', slug: 'mobile-developer' },
+    { name: 'QA & Testing', slug: 'full-stack-developer' },
+    { name: 'Cloud Services', slug: 'full-stack-developer' },
 
   ],
   content: {
@@ -146,7 +268,7 @@ const servicesData = {
         },
         {
           title: 'Hire Software Developers',
-          slug: 'software-developers',
+          slug: 'software-developer',
           description: 'Work with skilled & dedicated developers',
         },
         {
@@ -172,7 +294,7 @@ const servicesData = {
       hiring: [
         {
           title: 'Hire Frontend Developers',
-          slug: 'hire-frontend-developers',
+          slug: 'hire-frontend-developer',
           description: 'Expert UI/UX implementers',
         },
         {
@@ -200,7 +322,7 @@ const servicesData = {
       hiring: [
         {
           title: 'Hire Frontend Developers',
-          slug: 'hire-frontend-developers',
+          slug: 'hire-frontend-developer',
           description: 'Expert UI/UX implementers',
         },
         {
@@ -221,7 +343,7 @@ const servicesData = {
       description: 'Hire team for your next project',
       technologies: [
         { name: 'Staff Augumentation', slug: 'staff-ugumentation' },
-        { name: 'Hire Software Developers', slug: 'hire-software-developers' },
+        { name: 'Hire Software Developers', slug: 'hire-software-developer' },
         { name: 'IT Outsourcing', slug: 'it-outsourcing' },
         { name: 'Dedicated Development Team', slug: 'dedicated-development-team' },
         { name: 'Offshore Dedicated Centre', slug: 'offshore-dedicated-centre' },
@@ -230,7 +352,7 @@ const servicesData = {
       hiring: [
         {
           title: 'Hire Frontend Developers',
-          slug: 'hire-frontend-developers',
+          slug: 'hire-frontend-developer',
           description: 'Expert UI/UX implementers',
         },
         {
@@ -251,7 +373,7 @@ const servicesData = {
       description: 'Testing desc',
       technologies: [
         { name: 'QA Consulting', slug: 'qa-consulting' },
-        { name: 'Hire Software Developers', slug: 'hire-software-developers' },
+        { name: 'Hire Software Developers', slug: 'hire-software-developer' },
         { name: 'Software Testing', slug: 'software-testing' },
         { name: 'Mobile App Testing', slug: 'mobile-app-testing' },
         { name: 'Web App Testing', slug: 'web-app-testing' },
@@ -260,7 +382,7 @@ const servicesData = {
       hiring: [
         {
           title: 'Hire Frontend Developers',
-          slug: 'hire-frontend-developers',
+          slug: 'hire-frontend-developer',
           description: 'Expert UI/UX implementers',
         },
         {
@@ -288,7 +410,7 @@ const servicesData = {
       hiring: [
         {
           title: 'Hire Frontend Developers',
-          slug: 'hire-frontend-developers',
+          slug: 'hire-frontend-developer',
           description: 'Expert UI/UX implementers',
         },
         {
@@ -470,7 +592,7 @@ export default function Header() {
                   }`}
                 onMouseEnter={() => handleCategoryHover(category.name)}
               >
-                {category.name}
+                {category.name} 
                 <ChevronRight className="float-right h-5 w-5" />
               </div>
             </Link>
@@ -497,7 +619,7 @@ export default function Header() {
                 </div>
 
 
-                <div className="grid grid-cols-2 md:grid-cols-3 mt-10 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-3 sm:mt-8 gap-2 sm:gap-6">
                   {servicesData.content[activeCategory].technologies.map((tech, index) => (
                     <Link className="transition-colors duration-200 font-medium cursor-pointer group" href={`/${tech.slug}`} key={index} onClick={() => { setActiveMenu(''); setActiveCategory(''); setIsMobileMenuOpen(false) }}>
                       
