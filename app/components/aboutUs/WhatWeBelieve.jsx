@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import Link from 'next/link';
-import { FaLocationArrow } from "react-icons/fa";
+// import Link from 'next/link';
+// import { FaLocationArrow } from "react-icons/fa";
 import bulbVision from "/public/aboutUs/bulbVision.png"
 import rocketMission from "/public/aboutUs/rocketMission.png"
 import diamondValues from "/public/aboutUs/diamondValues.png"

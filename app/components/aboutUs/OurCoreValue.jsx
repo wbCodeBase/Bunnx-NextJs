@@ -1,8 +1,8 @@
 import React from 'react'
 
-import { GiLaurelsTrophy } from "react-icons/gi";
-import { TbDiamond } from "react-icons/tb";
-import { BiDiamond } from "react-icons/bi";
+// import { GiLaurelsTrophy } from "react-icons/gi";
+// import { TbDiamond } from "react-icons/tb";
+// import { BiDiamond } from "react-icons/bi";
 import { GoLightBulb } from "react-icons/go";
 
 export default function OurCoreValue() {
