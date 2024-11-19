@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar"
-import { AppSidebar } from "@/components/adminpanel/App-sidebar"
+import AppSidebar from "@/components/adminpanel/App-sidebar"
 
 const AdminpanelLayout = ({ children, data }) => {
   console.log("data", data);

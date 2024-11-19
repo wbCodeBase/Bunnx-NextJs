@@ -91,9 +91,7 @@ export default function OurCoreValue() {
 
                 </div>
 
-                {/* <div className='flex items-center justify-center flex-wrap gap-10 mt-6'>
 
-                </div> */}
 
             </section>
         </>
