@@ -4,10 +4,10 @@ import { motion, useInView } from 'framer-motion'
 import { useEffect, useRef, useState } from 'react'
 import Image from 'next/image';
 
-import Agile from "../../../public/iconMethodology/scrum.png";
-import Waterfall from "../../../public/iconMethodology/waterfall-chart.png";
-import Rapid from "../../../public/iconMethodology/rapid.png";
-import DevOps from "../../../public/iconMethodology/devops.png";
+import Agile from "/public/iconMethodology/scrum.png";
+import Waterfall from "/public/iconMethodology/waterfall-chart.png";
+import Rapid from "/public/iconMethodology/rapid.png";
+import DevOps from "/public/iconMethodology/devops.png";
 
 export default function Methodology() {
     const containerRef = useRef(null)

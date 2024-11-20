@@ -99,10 +99,7 @@ const defaultFaqData = [
 
 
 
-const Faqs = ({ faqData }) => {
-
-
-
+const Faqs = ({faqData}) => {
 
 
     return (

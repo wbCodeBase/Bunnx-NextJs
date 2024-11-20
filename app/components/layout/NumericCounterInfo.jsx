@@ -2,13 +2,12 @@ import React from 'react'
 import Image from 'next/image'
 import CountUp from 'react-countup';
 
-import eqipped from "../../../public/clientLogos/eqipped.webp"
-import enkarma from "../../../public/clientLogos/enkarma.png"
-import fundingCenter from "../../../public/clientLogos/fundingCenter.png"
-import coreops from "../../../public/clientLogos/coreops.png"
-import eastcoast from "../../../public/clientLogos/eastcoast.png"
-import collab from "../../../public/clientLogos/collab.jpg"
-import whitebunnie from "../../../public/clientLogos/whitebunnie.svg"
+import eqipped from "/public/clientLogos/eqipped.webp"
+import enkarma from "/public/clientLogos/enkarma.png"
+import fundingCenter from "/public/clientLogos/fundingCenter.png"
+import coreops from "/public/clientLogos/coreops.png"
+import collab from "/public/clientLogos/collab.jpg"
+import whitebunnie from "/public/clientLogos/whitebunnie.svg"
 
 const clients = [
     { name: 'Eqipped', icon: eqipped },

@@ -5,11 +5,11 @@ import { useEffect, useRef, useState } from 'react'
 import { ArrowRight, CheckCircle2 } from 'lucide-react'
 import Image from 'next/image'
 
-import dropEnquiry from "../../../public/iconStepToHire/drop-enquiry.png";
-import consult from "../../../public/iconStepToHire/consult.png";
-import engagement from "../../../public/iconStepToHire/engagement.png";
-import signoff from "../../../public/iconStepToHire/signoff.png";
-import Hire_Scale from "../../../public/iconStepToHire/Hire_Scale.png";
+import dropEnquiry from "/public/iconStepToHire/drop-enquiry.png";
+import consult from "/public/iconStepToHire/consult.png";
+import engagement from "/public/iconStepToHire/engagement.png";
+import signoff from "/public/iconStepToHire/signoff.png";
+import Hire_Scale from "/public/iconStepToHire/Hire_Scale.png";
 
 export default function StepToHire({ hiredevOf }) {
     const containerRef = useRef(null)

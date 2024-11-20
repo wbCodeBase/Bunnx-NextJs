@@ -35,7 +35,8 @@ const formSchema = z.object({
     componentName: z.string(),
 });
 
-const HeroSection = ({ heroSection }) => {
+const HeroSection = ({ heroSection, templateName }) => {
+  
 
 
     const [createComponentContent, result] = useCreateComponentContentMutation();
@@ -50,7 +51,7 @@ const HeroSection = ({ heroSection }) => {
             ctaRedirectUrl: "",
             fetchOnSlug: "",
             ctaText: "Get started with us",
-            templateName: "service",
+            templateName: templateName,
             componentName: "heroSection",
         },
     });
@@ -75,7 +76,7 @@ const HeroSection = ({ heroSection }) => {
     return (
         <>
             <div className="flex py-10 flex-col justify-start w-full bg-gray-50">
-                <div className="text-2xl font-semibold mt-6 mx-24">Hero Section <span className='text-sm'>(Service)</span> </div>
+                <div className="text-2xl font-semibold mt-6 mx-24">Hero Section <span className='text-sm'>({templateName})</span> </div>
 
                 {result.isError && <p>Error: {result.error?.data?.error || 'Something went wrong'}</p>}
 

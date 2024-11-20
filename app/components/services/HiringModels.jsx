@@ -118,9 +118,9 @@ import { motion, useInView } from 'framer-motion'
 import { useEffect, useRef, useState } from 'react'
 import Image from 'next/image';
 
-import lightdotnetmodalicon from "../../../public/iconMethodology/light-dot-net-modal-icon.webp";
-import teamAug from "../../../public/iconMethodology/teamAug.webp";
-import ProjectBased from "../../../public/iconMethodology/ProjectBased.webp";
+import lightdotnetmodalicon from "/public/iconMethodology/light-dot-net-modal-icon.webp";
+import teamAug from "/public/iconMethodology/teamAug.webp";
+import ProjectBased from "/public/iconMethodology/ProjectBased.webp";
 
 export default function HiringModels() {
     const containerRef = useRef(null)

@@ -30,8 +30,13 @@ const items = [
     icon: Home,
   },
   {
-    title: "Servcie",
-    url: "/bunnx-admin/template",
+    title: "Service",
+    url: "/bunnx-admin/template/service",
+    icon: Inbox,
+  },
+  {
+    title: "Hire",
+    url: "/bunnx-admin/template/hire",
     icon: Inbox,
   },
   {

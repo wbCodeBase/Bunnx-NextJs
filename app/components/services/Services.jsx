@@ -76,7 +76,7 @@ const Services = ({ servicesData }) => {
         <h4 className='font-semibold text-3xl my-2'>Our Software Development Services</h4>
         <p className='text-md text-gray-800'>We are a leading software development company in India, providing unique and innovative custom software development services that help your business to achieve exponential growth.</p>
 
-        <div className='relative flex items-cente justify-center flex-wrap gap-10 mt-6'>
+        <div className='relative flex justify-center flex-wrap gap-10 mt-6'>
 
           {(servicesData || defaultServicesData).map((service, i) => (
             <div key={i} className="border hover:border-orange-200 rounded-xl shadow-sm p-4 flex itemscenter flex-col w-96  relative">

@@ -33,7 +33,7 @@ const formSchema = z.object({
     componentName: z.string(),
 });
 
-const ServiceSection = ({ servicesSection }) => {
+const ServiceSection = ({ servicesSection, templateName }) => {
 
 
     const [createComponentContent, result] = useCreateComponentContentMutation();
@@ -45,7 +45,7 @@ const ServiceSection = ({ servicesSection }) => {
             description: "",
             ctaRedirectUrl: "",
             fetchOnSlug: [],
-            templateName: "service",
+            templateName: templateName,
             componentName: "servicesSection",
         },
     });
@@ -71,7 +71,7 @@ const ServiceSection = ({ servicesSection }) => {
     return (
         <>
             <div className="flex py-6 border-t flex-col justify-start w-full">
-                <div className="text-2xl font-semibold mt-6 mx-24">Services <span className='text-sm'>(Service)</span> </div>
+                <div className="text-2xl font-semibold mt-6 mx-24">Services <span className='text-sm'>({templateName})</span> </div>
 
                 {result.isError && <p>Error: {result.error?.data?.error || 'Something went wrong'}</p>}
 
@@ -89,16 +89,15 @@ const ServiceSection = ({ servicesSection }) => {
 const ServiceSectionForm = ({ form, onSubmit, result }) => (
 
 
-
-
-
-
     < Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-col gap-4 w-full sm:w-1/2 border bg-white sm:p-8 p-3 rounded-lg">
 
             <FormFieldInput form={form} name="title" label="Title" placeholder="Title" />
             <FormFieldInput form={form} name="description" label="Description" placeholder="Enter Description" />
+            <FormFieldInput form={form} name="ctaRedirectUrl" label="Redirect url" placeholder="Enter redirection slug" />
+            
             <FormFieldFetchOnSlug form={form} name="fetchOnSlug" label="FetchOn" options={["software-development",
+                "php-developer",
                 "application-development",
                 "custom-software-development",
                 "dedicated-software-teams",
@@ -111,7 +110,6 @@ const ServiceSectionForm = ({ form, onSubmit, result }) => (
                 "cloud-services",
                 "mobile-app-development",
             ]} placeholder="Slug where it display" />
-            <FormFieldInput form={form} name="ctaRedirectUrl" label="Redirect url" placeholder="Enter redirection slug" />
 
             <div className="mt-4">
                 <Button type="submit">{result.isLoading ? 'Saving...' : 'Submit'}</Button>
@@ -226,7 +224,7 @@ const ServiceCard = ({ serviceSecCard, i }) => (
         <CardItem label="Title" content={serviceSecCard?.title} />
         <CardItem label="Desc" content={serviceSecCard?.description} />
         <CardItem label="Fetch on" content={serviceSecCard?.fetchOnSlug} />
-        <CardItem label="Redirect URL" content={serviceSecCard?.ctaRedirectUrl} />
+        <CardItem label="Redirect URL" content={serviceSecCard?.ctaRedirectUrl || "CTA not display in this card"} />
     </div>
 );
 
