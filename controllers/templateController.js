@@ -66,9 +66,36 @@ export const updateHeroSectionContent = async (id, data) => {
   return await HeroSection.findByIdAndUpdate(id, data, { new: true });
 };
 
-// // Delete a HeroSection
-export const deleteHeroSectionContent = async (id) => {
-  return await HeroSection.findByIdAndDelete(id);
+
+
+
+
+export const deleteComponentContent = async ({ id, templateName, componentName }) => {
+  try {
+    // Fetch the template by `templateName`
+    const template = await Template.findOne({ templateName });
+
+    if (!template) {
+      throw new Error("Template not found");
+    }
+
+    if (componentName === "heroSection") {
+      // Filter out the component with the given ID from `heroSection`
+      template.heroSection = template.heroSection.filter(item => item._id.toString() !== id);
+    } else if (componentName === "servicesSection") {
+      // Filter out the component with the given ID from `servicesSection`
+      template.servicesSection = template.servicesSection.filter(item => item._id.toString() !== id);
+    } else {
+      throw new Error("Invalid component name");
+    }
+
+    await template.save(); // Save the updated template
+
+    return { success: true, template };
+  } catch (error) {
+    console.error("Error deleting component content:", error.message);
+    throw new Error(error.message || "Failed to delete the component content");
+  }
 };
 
 

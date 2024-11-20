@@ -1,9 +1,15 @@
 // store/services/myApi.js
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
+
+// const dynamicBaseUrl = process.env.NEXT_PUBLIC_API_BASE_URL 
+//   || (typeof window !== 'undefined' 
+//     ? `${window.location.protocol}//${window.location.host}/api` 
+//     : 'http://localhost:3000/api');
+
 export const myApi = createApi({
   reducerPath: 'myApi',
-  baseQuery: fetchBaseQuery({ baseUrl: process.env.NEXT_PUBLIC_API_BASE_URL }),
+  baseQuery: fetchBaseQuery({ baseUrl: process.env.NEXT_PUBLIC_API_BASE_URL || 'http://localhost:3000/api', }),
   tagTypes: ['User', 'Template'],  // Optional: for automatic cache invalidation
   endpoints: (builder) => ({
     
@@ -24,6 +30,17 @@ export const myApi = createApi({
       }),
       invalidatesTags: ['Template'], // Refetch users after creation
     }),
+    
+
+    deleteComponentContent: builder.mutation({
+      query: (editDeleteObj) => ({
+        url: `template`,
+        method: 'DELETE',
+        body: editDeleteObj, // Send as JSON body
+      }),
+      invalidatesTags: ['Template'], // Refetch templates after deletion
+    }),
+    
 
 
     getUsers: builder.query({
@@ -52,12 +69,19 @@ export const myApi = createApi({
       invalidatesTags: ['User'], // Refetch users after deletion
     }),
 
+
+// Header
+    getHeaderMenu: builder.query({
+      query: () => 'header',
+    }),
+
   }),
 });
 
 export const {
   useGetItemsQuery,
-  useGetHeroSecItemsQuery,
+  useDeleteComponentContentMutation,
+  useGetHeaderMenuQuery,
   useGetTemplateContentByStrQuery,
   useGetTemplateQuery,
   useGetUsersQuery,

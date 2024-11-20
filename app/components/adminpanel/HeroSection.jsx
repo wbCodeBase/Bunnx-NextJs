@@ -17,10 +17,11 @@ import {
 
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea"
+import { MdDelete } from "react-icons/md";
+import { MdEdit } from "react-icons/md";
 
-import {
-    useCreateComponentContentMutation,
-} from '../../../store/api/myApi';
+
+import { useCreateComponentContentMutation, useDeleteComponentContentMutation } from '../../../store/api/myApi';
 
 
 const formSchema = z.object({
@@ -36,10 +37,11 @@ const formSchema = z.object({
 });
 
 const HeroSection = ({ heroSection, templateName }) => {
-  
 
+    const [componentName, setComponentName] = useState("heroSection")
 
     const [createComponentContent, result] = useCreateComponentContentMutation();
+    const [deleteComponentContent] = useDeleteComponentContentMutation();
 
     const form = useForm({
         resolver: zodResolver(formSchema),
@@ -52,7 +54,7 @@ const HeroSection = ({ heroSection, templateName }) => {
             fetchOnSlug: "",
             ctaText: "Get started with us",
             templateName: templateName,
-            componentName: "heroSection",
+            componentName: componentName,
         },
     });
 
@@ -71,6 +73,14 @@ const HeroSection = ({ heroSection, templateName }) => {
     };
 
 
+    const editDeleteHandler = (id, operationType) => {
+        if (operationType === "delete") {
+            deleteComponentContent({ id, templateName, componentName });
+        }
+
+        console.log(id, operationType, templateName, componentName);
+    }
+
 
 
     return (
@@ -82,7 +92,7 @@ const HeroSection = ({ heroSection, templateName }) => {
 
                 <div className="flex justify-center gap-10 flex-wrap w-full sm:w-auto p-3">
                     <HeroSectionForm form={form} result={result} onSubmit={onSubmit} />
-                    <HeroSectionCards data={heroSection} />
+                    <HeroSectionCards data={heroSection} editDeleteHandler={editDeleteHandler} />
                 </div>
             </div>
         </>
@@ -131,25 +141,6 @@ const HeroSectionForm = ({ form, onSubmit, result }) => (
     </Form>
 );
 
-// const FormFieldInput = ({ form, name, label, placeholder }) => (
-//     <FormField
-//         control={form.control}
-//         name={name}
-//         render={({ field }) => (
-//             <FormItem>
-//                 <FormLabel>{label}</FormLabel>
-//                 <FormControl>
-//                     {name === "description" ? <Textarea className="bg-gray-50" placeholder={placeholder} {...field} /> : 
-//                     <Input className="bg-gray-50" placeholder={placeholder} {...field} />
-//                 }
-//                 </FormControl>
-//                 <FormMessage />
-//             </FormItem>
-//         )}
-//     />
-// );
-
-
 
 const FormFieldInput = ({ form, name, label, placeholder, options = [] }) => (
     <FormField
@@ -161,24 +152,24 @@ const FormFieldInput = ({ form, name, label, placeholder, options = [] }) => (
                 <FormControl>
                     {name === "description" ? (
                         <Textarea className="bg-gray-50" placeholder={placeholder} {...field} />
-                    ) : 
-                    
-                    name === "ctaRedirectUrl" && options.length > 0 ? (
-                        <select className="bg-gray-50 border rounded-md ml-4 w-72 p-1.5 text-sm" {...field}>
-                            <option value="" disabled>
-                                {placeholder || "Select an option"}
-                            </option>
-                            {options.map((option) => (
-                                <option key={option.value} value={option.value}>
-                                    {option.label}
+                    ) :
+
+                        name === "ctaRedirectUrl" && options.length > 0 ? (
+                            <select className="bg-gray-50 border rounded-md ml-4 w-72 p-1.5 text-sm" {...field}>
+                                <option value="" disabled>
+                                    {placeholder || "Select an option"}
                                 </option>
-                            ))}
-                        </select>
-                    ) 
-                    
-                    : (
-                        <Input className="bg-gray-50" placeholder={placeholder} {...field} />
-                    )}
+                                {options.map((option) => (
+                                    <option key={option.value} value={option.value}>
+                                        {option.label}
+                                    </option>
+                                ))}
+                            </select>
+                        )
+
+                            : (
+                                <Input className="bg-gray-50" placeholder={placeholder} {...field} />
+                            )}
                 </FormControl>
                 <FormMessage />
             </FormItem>
@@ -190,20 +181,26 @@ const FormFieldInput = ({ form, name, label, placeholder, options = [] }) => (
 
 
 
-const HeroSectionCards = ({ data }) => (
+const HeroSectionCards = ({ data, editDeleteHandler }) => (
     <div className="bg-white border p-3 rounded-lg w-full sm:w-1/3">
         <div className="font-semibold mb-2 text-center">Hero Section Cards</div>
         <div className="overflow-y-auto max-h-[40rem] scrollbar-design">
             {data && data.map((heroSecCard, i) => (
-                <HeroCard key={i} i={i} heroSecCard={heroSecCard} />
+                <HeroCard key={i} i={i} editDeleteHandler={editDeleteHandler} heroSecCard={heroSecCard} />
             ))}
         </div>
     </div>
 );
 
-const HeroCard = ({ heroSecCard, i }) => (
-    <div className="relative bg-gray-50 flex gap-2 flex-col rounded-lg p-3 my-2 text-sm">
-        <span className='absolute top-1 right-1 text-xs px-1 rounded-full text-white bg-gray-400'>{i+1}</span>
+
+const HeroCard = ({ heroSecCard, i, editDeleteHandler }) => (
+    <div className="relative bg-gray-50 flex flex-col rounded-lg p-4 my-4 text-sm shadow-md group transition">
+        {/* Card Index Badge */}
+        <span className="absolute top-2 right-2 text-xs px-2 py-1 rounded-full text-white bg-gray-400">
+            {i + 1}
+        </span>
+
+        {/* Card Content */}
         <CardItem label="Prefix" content={heroSecCard?.titlePrefix} />
         <CardItem label="Title" content={heroSecCard?.title} />
         <CardItem label="Desc" content={heroSecCard?.description} />
@@ -211,15 +208,36 @@ const HeroCard = ({ heroSecCard, i }) => (
         <CardItem label="Fetch on page" content={heroSecCard?.fetchOnSlug} />
         <CardItem label="CTA Title" content={heroSecCard?.ctaText} />
         <CardItem label="CTA Redirect URL" content={heroSecCard?.ctaRedirectUrl} />
+
+        {/* Action Buttons (Visible on Hover) */}
+        <div className="absolute top-2 right-12 flex gap-2 opacity0 grouphover:opacity-100 transition-opacity duration-300">
+            {/* Edit Button */}
+            <button
+                onClick={() => editDeleteHandler(heroSecCard._id, "edit")}
+                className="flex items-center gap-1 px-2 py-1 text-sm font-medium text-gray-600 border-gray-500 border hover:border-blue-600 rounded-md bg-white hover:bg-blue-600 hover:text-white transition"
+            >
+                <MdEdit />
+            </button>
+
+            {/* Delete Button */}
+            <button
+                onClick={() => editDeleteHandler(heroSecCard._id, "delete")}
+                className="flex items-center gap-1 px-2 py-1 text-sm font-medium border border-red-500 rounded-md bg-white hover:text-white hover:bg-red-500 text-red-500 transition"
+            >
+                <MdDelete />
+            </button>
+        </div>
     </div>
 );
 
 const CardItem = ({ label, content }) => (
     <div className="flex gap-2">
-        <span className="font-medium text-nowrap text-gray-600">{label}:</span>
+        <span className="font-medium text-gray-600">{label}:</span>
         <span className="text-gray-600">{content}</span>
     </div>
 );
+
+
 
 
 

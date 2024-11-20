@@ -8,7 +8,7 @@ import lightdotnetmodalicon from "/public/iconMethodology/light-dot-net-modal-ic
 import teamAug from "/public/iconMethodology/teamAug.webp";
 import ProjectBased from "/public/iconMethodology/ProjectBased.webp";
 
-export default function HiringModels() {
+export default function HiringModelsHire() {
     const containerRef = useRef(null)
     const isInView = useInView(containerRef, { once: true, margin: "-100px" })
     const [activeIndex, setActiveIndex] = useState(0)
@@ -24,7 +24,7 @@ export default function HiringModels() {
 
     const serviceModels = [
         {
-            title: "Dedicated Team",
+            title: "Bunnx Managed Team",
             icon: lightdotnetmodalicon,
             subtitle: "(also known as product engineering teams)",
             sections: [
@@ -39,7 +39,7 @@ export default function HiringModels() {
             ]
         },
         {
-            title: "Team Augmentation",
+            title: "Client Managed Team",
             icon: teamAug,
             subtitle: "(also known as team extension or staff augmentation)",
             sections: [
@@ -54,7 +54,7 @@ export default function HiringModels() {
             ]
         },
         {
-            title: "Project Based",
+            title: "Hybrid Model",
             icon: ProjectBased,
             subtitle: "(best suited for small-mid scale projects)",
             sections: [

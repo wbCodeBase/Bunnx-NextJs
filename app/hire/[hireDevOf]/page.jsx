@@ -5,6 +5,7 @@ import { useParams } from 'next/navigation';
 import TechExpertise from "@/components/hire/TechExpertise";
 import EngagementModel from "@/components/hire/EngagementModel";
 import BenefitsHiring from "@/components/hire/BenefitsHiring";
+import HiringModelsHire from "@/components/hire/HiringModelsHire";
 import HeroSection from '@/components/layout/HeroSection';
 import NumericCounterInfo from "@/components/layout/NumericCounterInfo";
 import CtaSectionMain from '@/components/layout/CtaSectionMain';
@@ -42,7 +43,7 @@ export default function HireDevOf() {
 
   const heroSectionObj = (data.heroSection).find((heroData) => heroData.fetchOnSlug === hireDevOf)
 
-  console.log("HeroSection data from template obj", heroSectionObj);
+  // console.log("HeroSection data from template obj", heroSectionObj);
 
   const heroSectionData = {
     titlePrefix: heroSectionObj?.titlePrefix || "Hire",
@@ -133,7 +134,7 @@ export default function HireDevOf() {
 
 
   const serviceSectionObj = (data?.servicesSection).filter((serviceData) => serviceData?.fetchOnSlug.includes(hireDevOf))
-  console.log("serviceSection data from template obj", serviceSectionObj);
+  // console.log("serviceSection data from template obj", serviceSectionObj);
   
   const servicesData = (Array.isArray(serviceSectionObj) && serviceSectionObj.length > 0) 
   ? serviceSectionObj 
@@ -272,6 +273,8 @@ export default function HireDevOf() {
       <BenefitsHiring />
 
       <EngagementModel hiredevOf={formatparameter(hireDevOf)} />
+
+      <HiringModelsHire />
 
       <Techcard />
 

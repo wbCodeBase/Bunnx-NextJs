@@ -252,11 +252,7 @@ export default function ServiceDetails() {
 
       <ChooseUs />
 
-
-
       <EngagementModel hiredevOf={formatparameter(serviceDetails)} />
-
-
 
       <HiringModels />
 

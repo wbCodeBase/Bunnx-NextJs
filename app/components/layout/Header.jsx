@@ -6,6 +6,7 @@ import { ChevronRight, ChevronDown, Menu, X } from 'lucide-react'
 import Image from 'next/image'
 
 import { TbCodeDots } from "react-icons/tb";
+import { useGetHeaderMenuQuery } from 'store/api/myApi'
 
 const menuItems = [
   { title: 'Home', slug: '/', hasSubmenu: false },
@@ -14,8 +15,6 @@ const menuItems = [
   { title: 'About Us', slug: '/about-us', hasSubmenu: false },
   { title: 'Contact Us', slug: '/contact-us', hasSubmenu: false },
 ]
-
-
 
 
 const hireData = {
@@ -42,8 +41,8 @@ const hireData = {
         { name: 'Ruby on Rails', slug: 'ruby-on-rails-developer' },
         { name: 'Django', slug: 'django-developer' },
         { name: 'Golang', slug: 'golang-developer' },
-        { name: 'Java', slug: 'java-developer' }, 
-        { name: '.Net', slug: 'dot-net-developer' }, 
+        { name: 'Java', slug: 'java-developer' },
+        { name: '.Net', slug: 'dot-net-developer' },
       ],
       hiring: [
 
@@ -234,7 +233,6 @@ const hireData = {
 
 
 }
-
 
 const servicesData = {
   categories: [
@@ -432,6 +430,9 @@ const servicesData = {
 
 
 
+
+
+
 export default function Header() {
   const [activeMenu, setActiveMenu] = useState('')
   const [activeCategory, setActiveCategory] = useState('')
@@ -440,6 +441,10 @@ export default function Header() {
 
   const [isScrolled, setIsScrolled] = useState(false);
 
+
+  const { data, isLoading, isError, error } = useGetHeaderMenuQuery()
+
+  console.log(data, isLoading, error);
 
 
 
@@ -592,7 +597,7 @@ export default function Header() {
                   }`}
                 onMouseEnter={() => handleCategoryHover(category.name)}
               >
-                {category.name} 
+                {category.name}
                 <ChevronRight className="float-right h-5 w-5" />
               </div>
             </Link>
@@ -622,7 +627,7 @@ export default function Header() {
                 <div className="grid grid-cols-1 md:grid-cols-3 sm:mt-8 gap-2 sm:gap-6">
                   {servicesData.content[activeCategory].technologies.map((tech, index) => (
                     <Link className="transition-colors duration-200 font-medium cursor-pointer group" href={`/${tech.slug}`} key={index} onClick={() => { setActiveMenu(''); setActiveCategory(''); setIsMobileMenuOpen(false) }}>
-                      
+
                       <div className='group-hover:bg-amber-50 py-2 px-4 rounded-md'> {tech.name}
                         <p className="text-sm text-gray-600">Lorem ipsum dolor sit.</p>
                       </div>

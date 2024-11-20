@@ -1,6 +1,6 @@
 // app/api/users/route.js
 import connectToDatabase from '../../../utils/database';
-import { getTemplateContent, createComponentContent, updateHeroSectionContent, deleteHeroSectionContent } from '../../../controllers/templateController';
+import { getTemplateContent, createComponentContent, updateHeroSectionContent, deleteComponentContent } from '../../../controllers/templateController';
 
 export async function GET() {
   try {
@@ -49,9 +49,24 @@ export async function PUT(request) {
   return new Response(JSON.stringify(updatedUser), { status: 200 });
 }
 
+
 export async function DELETE(request) {
-  await connectToDatabase();
-  const { id } = request.nextUrl.searchParams;
-  await deleteHeroSectionContent(id);
-  return new Response(null, { status: 204 });
+  try {
+    const { id, templateName, componentName } = await request.json(); // Parse JSON from the request
+
+    if (!id || !templateName || !componentName) {
+      throw new Error("Missing required fields: id, templateName, or componentName.");
+    }
+
+    const result = await deleteComponentContent({ id, templateName, componentName });
+
+    if (!result) {
+      return new Response(JSON.stringify({ error: "Component not found or could not be deleted." }), { status: 404 });
+    }
+
+    return new Response(JSON.stringify({ success: true, message: "Component deleted successfully." }), { status: 200 });
+  } catch (error) {
+    console.error("Error in DELETE request:", error.message);
+    return new Response(JSON.stringify({ error: error.message }), { status: 500 });
+  }
 }
