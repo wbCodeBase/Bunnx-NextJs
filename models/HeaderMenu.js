@@ -35,11 +35,11 @@ const servicesDataSchema = new mongoose.Schema({
   content: { type: Map, of: categoryContentSchema },
 });
 
-const headerMenuSchema = new mongoose.Schema({
+const HeaderMenuSchema = new mongoose.Schema({
   menuItems: [menuItemSchema],
   hireData: hireDataSchema,
   servicesData: servicesDataSchema,
 });
 
-const HeaderMenu = mongoose.model('HeaderMenu', headerMenuSchema);
+const HeaderMenu = mongoose.model('HeaderMenu', HeaderMenuSchema);
 module.exports = HeaderMenu;

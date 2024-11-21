@@ -37,15 +37,12 @@ const formSchema = z.object({
 });
 
 const HeroSection = ({ heroSection, templateName }) => {
-    const [componentName, setComponentName] = useState("heroSection");
-    const [editMode, setEditMode] = useState(false); // Track edit mode
-    const [editId, setEditId] = useState(null); // Track the ID of the item being edited
+
+    const [componentName, setComponentName] = useState("heroSection")
 
     const [createComponentContent, result] = useCreateComponentContentMutation();
-    const [deleteComponentContent] = useDeleteComponentContentMutation();
-    const [updateComponentContent, { data, isSuccess: updateIsSuccess, isError: updateIsError, error: updateError, isLoading: updateIsLoading, reset }] = useUpdateComponentContentMutation();
-
-
+    const [deleteComponentContent, deleteRes] = useDeleteComponentContentMutation();
+    const [updateComponentContent, updateRes] = useUpdateComponentContentMutation();
 
     const form = useForm({
         resolver: zodResolver(formSchema),
@@ -62,149 +59,91 @@ const HeroSection = ({ heroSection, templateName }) => {
         },
     });
 
-
     const onSubmit = async (values) => {
-        if (editMode && editId) {
-            try {
-                await updateComponentContent({
-                    id: editId,
-                    templateName,
-                    componentName,
-                    componentData: values,
-                }).unwrap();
-                form.reset(); // Reset form values
-                setEditMode(false); // Exit edit mode
-                alert("Content updated successfully!");
-            } catch (err) {
-                console.error("Error updating content:", err);
-                alert("Failed to update content.");
-            } finally {
-                reset(); // Reset the mutation state
+        try {
+            const resData = await createComponentContent(values).unwrap(); // Unwrap for data/error
+            if (resData) {
+                form.reset()
+                alert('Component content added successfully!');
             }
-        } else {
-            try {
-                await createComponentContent(values).unwrap();
-                form.reset(); // Reset form values
-                alert("Component content added successfully!");
-            } catch (err) {
-                console.error("Error adding content:", err);
-                alert("Failed to add content.");
-            } finally {
-                reset(); // Reset the mutation state
-            }
+        } catch (err) {
+            console.error('Error adding content:', err);
+            const errorMessage = err?.data?.error || err.message || 'An error occurred';
+            alert(errorMessage); // Show error message to the user
         }
     };
 
 
-
-    // Handle edit and delete operations
-    const updateDeleteHandler = async (id, operationType) => {
+    const updateDeleteHandler = (id, operationType) => {
         if (operationType === "delete") {
-            await deleteComponentContent({ id, templateName, componentName });
-            alert("Component content deleted successfully!");
-
-        } else if (operationType === "update") {
-            // Enter edit mode and populate form with existing data
-            const contentToEdit = heroSection.find((item) => item._id === id);
-            if (contentToEdit) {
-                setEditMode(true);
-                setEditId(id);
-                form.reset({
-                    titlePrefix: contentToEdit.titlePrefix || "",
-                    title: contentToEdit.title || "",
-                    description: contentToEdit.description || "",
-                    imageUrl: contentToEdit.imageUrl || "",
-                    ctaRedirectUrl: contentToEdit.ctaRedirectUrl || "",
-                    fetchOnSlug: contentToEdit.fetchOnSlug || "",
-                    ctaText: contentToEdit.ctaText || "",
-                    templateName: contentToEdit.templateName || templateName,
-                    componentName: contentToEdit.componentName || componentName,
-                });
-            }
+            deleteComponentContent({ id, templateName, componentName });
+        } else if(operationType === "update"){
+            //need to fill form with existing data and
         }
-    };
+        
+        console.log(id, operationType, templateName, componentName);
+    }
+    
+    // updateComponentContent({ id, templateName, componentName, componentDatra });
 
-
-    const slugArray = [
-        { slug: "software-development", label: "software-development" },
-        { slug: "application-development", label: "application-development" },
-        { slug: "custom-software-development", label: "custom-software-development" },
-        { slug: "dedicated-software-teams", label: "dedicated-software-teams" },
-        { slug: "ecommerce", label: "ecommerce" },
-        { slug: "qa-testing", label: "qa-testing" },
-        { slug: "software-outsourcing", label: "software-outsourcing" },
-        { slug: "support-maintenance", label: "support-maintenance" },
-        { slug: "devops", label: "devops" },
-        { slug: "cloud-services", label: "cloud-services" },
-        { slug: "mobile-app-development", label: "mobile-app-development" },
-    ]
 
     return (
-        <div className="flex py-10 flex-col justify-start w-full bg-gray-50">
-            <div className="text-2xl font-semibold mt-6 mx-24">
-                Hero Section <span className="text-sm">({templateName})</span>
+        <>
+            <div className="flex py-10 flex-col justify-start w-full bg-gray-50">
+                <div className="text-2xl font-semibold mt-6 mx-24">Hero Section <span className='text-sm'>({templateName})</span> </div>
+
+                {result.isError && <p>Error: {result.error?.data?.error || 'Something went wrong'}</p>}
+
+                <div className="flex justify-center gap-10 flex-wrap w-full sm:w-auto p-3">
+                    <HeroSectionForm form={form} result={result} onSubmit={onSubmit} />
+                    <HeroSectionCards data={heroSection} updateDeleteHandler={updateDeleteHandler} />
+                </div>
             </div>
-
-
-            {result.isError && <p className='text-red-600 text-sm'>{result.error?.data?.error || "Something went wrong"}</p>}
-            {updateIsError && <p className='text-red-600 text-sm'>{updateError || "Something went wrong"}</p>}
-
-
-
-            <div className="flex justify-center gap-10 flex-wrap w-full sm:w-auto p-3">
-                <HeroSectionForm
-                    form={form}
-                    result={result}
-                    updateIsLoading={updateIsLoading}
-                    onSubmit={onSubmit}
-                    editMode={editMode}
-                    slugArray={slugArray}
-                />
-                <HeroSectionCards
-                    data={heroSection}
-                    updateDeleteHandler={updateDeleteHandler}
-                />
-            </div>
-        </div>
-    );
-};
+        </>
+    )
+}
 
 
 
-const HeroSectionForm = ({ form, onSubmit, result, editMode, updateIsLoading, slugArray }) => (
+const HeroSectionForm = ({ form, onSubmit, result }) => (
     <Form {...form}>
-        <form
-            onSubmit={form.handleSubmit(onSubmit)}
-            className="flex flex-col gap-4 w-full sm:w-1/2 border bg-white sm:p-8 p-3 rounded-lg"
-        >
+        <form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-col gap-4 w-full sm:w-1/2 border bg-white sm:p-8 p-3 rounded-lg">
             <FormFieldInput form={form} name="titlePrefix" label="Title Prefix" placeholder="Title prefix" />
             <FormFieldInput form={form} name="title" label="Title" placeholder="Title" />
             <FormFieldInput form={form} name="description" label="Description" placeholder="Enter Description" />
             <FormFieldInput form={form} name="imageUrl" label="Image" placeholder="Coming Soon" />
+            {/* <FormFieldInput form={form} name="ctaRedirectUrl" label="CTA Redirect URL" placeholder="CTA Redirect URL" /> */}
+
             <FormFieldInput
                 form={form}
                 name="ctaRedirectUrl"
                 label="CTA Redirect URL"
                 placeholder="Select a redirect URL"
-                options={slugArray}
+                options={[
+                    { value: "software-development", label: "software-development" },
+                    { value: "application-development", label: "application-development" },
+                    { value: "custom-software-development", label: "custom-software-development" },
+                    { value: "dedicated-software-teams", label: "dedicated-software-teams" },
+                    { value: "ecommerce", label: "ecommerce" },
+                    { value: "qa-testing", label: "qa-testing" },
+                    { value: "software-outsourcing", label: "software-outsourcing" },
+                    { value: "support-maintenance", label: "support-maintenance" },
+                    { value: "devops", label: "devops" },
+                    { value: "cloud-services", label: "cloud-services" },
+                    { value: "mobile-app-development", label: "mobile-app-development" },
+                ]}
             />
-            <FormFieldInput form={form} name="ctaText" label="CTA Title" placeholder="Enter CTA Title" />
-            <FormFieldInput
-                form={form}
-                name="fetchOnSlug"
-                label="FetchOn Page"
-                placeholder="Select slug where it displays"
-                options={slugArray}
-            />
-            {/* <FormFieldInput form={form} name="fetchOnSlug" label="FetchOn Page" placeholder="Enter slug where it displays" /> */}
+
+
+            <FormFieldInput form={form} name="ctaText" label="CTA Title" placeholder="Enter CTA Tttle" />
+            <FormFieldInput form={form} name="fetchOnSlug" label="Fetch on page" placeholder="Enter slug where it display" />
 
             <div className="mt-4">
-                <Button type="submit">{result.isLoading ? "Saving..." : updateIsLoading ? "Updating..." : editMode ? "Update" : "Submit"}</Button>
+                <Button type="submit">{result.isLoading ? 'Saving...' : 'Submit'}</Button>
             </div>
         </form>
     </Form>
 );
-
 
 
 const FormFieldInput = ({ form, name, label, placeholder, options = [] }) => (
@@ -219,13 +158,13 @@ const FormFieldInput = ({ form, name, label, placeholder, options = [] }) => (
                         <Textarea className="bg-gray-50" placeholder={placeholder} {...field} />
                     ) :
 
-                        name === "ctaRedirectUrl" && options.length > 0 || name === "fetchOnSlug" && options.length > 0 ? (
+                        name === "ctaRedirectUrl" && options.length > 0 ? (
                             <select className="bg-gray-50 border rounded-md ml-4 w-72 p-1.5 text-sm" {...field}>
                                 <option value="" disabled>
                                     {placeholder || "Select an option"}
                                 </option>
                                 {options.map((option) => (
-                                    <option key={option.slug} value={option.slug}>
+                                    <option key={option.value} value={option.value}>
                                         {option.label}
                                     </option>
                                 ))}

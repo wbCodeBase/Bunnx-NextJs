@@ -1,10 +1,14 @@
+
 import React from 'react'
 import AdminpanelLayout from "@/components/adminpanel/AdminpanelLayout";
-
-
 import "./template.css";
 
+
+
 const Adminpanel = () => {
+
+
+
   return (
     <>
 

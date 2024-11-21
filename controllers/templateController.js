@@ -26,7 +26,7 @@ export const getTemplateByStr = async (data) => {
 // Create a page or component data
 export const createComponentContent = async (data) => {
   
-  console.log("data", data);
+  // console.log("createComponentContent", data);
   
   try {
     const template = await Template.findOne({ templateName: data.templateName });
@@ -62,8 +62,51 @@ export const createComponentContent = async (data) => {
 
 
 
-export const updateHeroSectionContent = async (id, data) => {
-  return await HeroSection.findByIdAndUpdate(id, data, { new: true });
+
+export const updateComponentContent = async ({ id, templateName, componentName, componentData }) => {
+  try {
+    // Fetch the template by `templateName`
+    const template = await Template.findOne({ templateName });
+
+    if (!template) {
+      throw new Error("Template not found");
+    }
+
+    // Update the specific component based on `componentName`
+    if (componentName === "heroSection") {
+      // Find the component to be updated in the heroSection array
+      const heroSectionItem = template.heroSection.find(item => item._id.toString() === id);
+
+      if (!heroSectionItem) {
+        throw new Error("Hero Section content not found");
+      }
+
+      // Update the fields of the component
+      Object.assign(heroSectionItem, componentData);
+
+    } else if (componentName === "servicesSection") {
+      // Find the component to be updated in the servicesSection array
+      const servicesSectionItem = template.servicesSection.find(item => item._id.toString() === id);
+
+      if (!servicesSectionItem) {
+        throw new Error("Services Section content not found");
+      }
+
+      // Update the fields of the component
+      Object.assign(servicesSectionItem, componentData);
+
+    } else {
+      throw new Error("Invalid component name");
+    }
+
+    // Save the updated template
+    await template.save();
+
+    return { success: true, data: template }; // Return the updated template
+  } catch (error) {
+    console.error("Error updating component content:", error.message);
+    throw new Error(error.message || "Failed to update the component content");
+  }
 };
 
 

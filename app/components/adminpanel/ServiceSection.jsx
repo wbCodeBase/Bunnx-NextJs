@@ -17,10 +17,11 @@ import {
 
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea"
+import { MdDelete } from "react-icons/md";
+import { MdEdit } from "react-icons/md";
 
-import {
-    useCreateComponentContentMutation,
-} from '../../../store/api/myApi';
+import { useCreateComponentContentMutation, useDeleteComponentContentMutation, useUpdateComponentContentMutation } from '../../../store/api/myApi';
+
 import React from "react";
 
 
@@ -34,9 +35,15 @@ const formSchema = z.object({
 });
 
 const ServiceSection = ({ servicesSection, templateName }) => {
-
+    const [isEditing, setIsEditing] = useState(false);
+    const [editId, setEditId] = useState(null);
+    const [componentName, setComponentName] = useState("servicesSection");
 
     const [createComponentContent, result] = useCreateComponentContentMutation();
+    const [deleteComponentContent] = useDeleteComponentContentMutation();
+    const [updateComponentContent, { data, isSuccess: updateIsSuccess, isError: updateIsError, error: updateError, isLoading: updateIsLoading, reset: resetUpdate }] = useUpdateComponentContentMutation();
+
+
 
     const form = useForm({
         resolver: zodResolver(formSchema),
@@ -46,26 +53,73 @@ const ServiceSection = ({ servicesSection, templateName }) => {
             ctaRedirectUrl: "",
             fetchOnSlug: [],
             templateName: templateName,
-            componentName: "servicesSection",
+            componentName: componentName,
         },
     });
 
+
+
     const onSubmit = async (values) => {
-
-        console.log("values", values);
-
         try {
-            const resData = await createComponentContent(values).unwrap(); // Unwrap for data/error
-            if (resData) {
-                form.reset()
-                alert('Component content added successfully!');
+            if (isEditing && editId) {
+                await updateComponentContent({
+                    id: editId,
+                    templateName,
+                    componentName,
+                    componentData: values,
+                }).unwrap();
+                alert("Component content updated successfully!");
+            } else {
+                await createComponentContent(values).unwrap();
+                alert("Component content created successfully!");
             }
-        } catch (err) {
-            console.error('Error adding content:', err);
-            const errorMessage = err?.data?.error || err.message || 'An error occurred';
-            alert(errorMessage); // Show error message to the user
+            form.reset();
+            setIsEditing(false);
+            setEditId(null);
+        } catch (error) {
+            console.error("Error:", error);
+            alert(error?.data?.error || error.message || "An error occurred");
         }
     };
+
+    const handleUpdate = (id) => {
+        console.log(id);
+
+        const contentToEdit = servicesSection.find((item) => item._id === id);
+        if (contentToEdit) {
+            setIsEditing(true);
+            setEditId(id);
+            form.reset({
+                ...contentToEdit,
+                templateName: templateName,
+                componentName: contentToEdit.componentName || componentName,
+            });
+        }
+    };
+
+    const handleDelete = async (id) => {
+        try {
+            await deleteComponentContent({ id, templateName, componentName });
+            alert("Component content deleted successfully!");
+        } catch (error) {
+            console.error("Error:", error);
+            alert(error?.data?.error || error.message || "An error occurred");
+        }
+    };
+
+    const slugArray = [
+        { slug: "software-development", label: "software-development" },
+        { slug: "application-development", label: "application-development" },
+        { slug: "custom-software-development", label: "custom-software-development" },
+        { slug: "dedicated-software-teams", label: "dedicated-software-teams" },
+        { slug: "ecommerce", label: "ecommerce" },
+        { slug: "qa-testing", label: "qa-testing" },
+        { slug: "software-outsourcing", label: "software-outsourcing" },
+        { slug: "support-maintenance", label: "support-maintenance" },
+        { slug: "devops", label: "devops" },
+        { slug: "cloud-services", label: "cloud-services" },
+        { slug: "mobile-app-development", label: "mobile-app-development" },
+    ]
 
 
     return (
@@ -76,8 +130,21 @@ const ServiceSection = ({ servicesSection, templateName }) => {
                 {result.isError && <p>Error: {result.error?.data?.error || 'Something went wrong'}</p>}
 
                 <div className="flex justify-center gap-10 flex-wrap w-full sm:w-auto p-3">
-                    <ServiceSectionForm form={form} result={result} onSubmit={onSubmit} />
-                    <ServiceSectionCards data={servicesSection} />
+
+                    <ServiceSectionForm
+                        form={form}
+                        onSubmit={onSubmit}
+                        isEditing={isEditing}
+                        updateIsLoading={updateIsLoading}
+                        result={result}
+                        slugArray={slugArray}
+                    />
+                    <ServiceSectionCards
+                        data={servicesSection}
+                        onEdit={handleUpdate}
+                        onDelete={handleDelete}
+                    />
+
                 </div>
             </div>
         </>
@@ -86,7 +153,7 @@ const ServiceSection = ({ servicesSection, templateName }) => {
 
 
 
-const ServiceSectionForm = ({ form, onSubmit, result }) => (
+const ServiceSectionForm = ({ form, onSubmit, isEditing, updateIsLoading, result, slugArray }) => (
 
 
     < Form {...form}>
@@ -94,31 +161,31 @@ const ServiceSectionForm = ({ form, onSubmit, result }) => (
 
             <FormFieldInput form={form} name="title" label="Title" placeholder="Title" />
             <FormFieldInput form={form} name="description" label="Description" placeholder="Enter Description" />
-            <FormFieldInput form={form} name="ctaRedirectUrl" label="Redirect url" placeholder="Enter redirection slug" />
-            
-            <FormFieldFetchOnSlug form={form} name="fetchOnSlug" label="FetchOn" options={["software-development",
-                "php-developer",
-                "application-development",
-                "custom-software-development",
-                "dedicated-software-teams",
-                "ecommerce",
-                "qa-testing",
-                "software-outsourcing",
-                "support-maintenance",
-                "devops",
-                "cloud-services",
-                "cloud-services",
-                "mobile-app-development",
-            ]} placeholder="Slug where it display" />
+
+
+            {/* <FormFieldInput form={form} name="ctaRedirectUrl" label="Redirect url" placeholder="Enter redirection slug" /> */}
+            <FormFieldInput
+                form={form}
+                name="ctaRedirectUrl"
+                label="Redirect URL"
+                placeholder="Select a redirect URL"
+                options={slugArray}
+            />
+
+
+            <FormFieldFetchOnSlug form={form} name="fetchOnSlug" label="FetchOn Page (Multiple)" options={slugArray} placeholder="Slug where it display" />
 
             <div className="mt-4">
-                <Button type="submit">{result.isLoading ? 'Saving...' : 'Submit'}</Button>
+                <Button type="submit">{result.isLoading ? "Saving..." : updateIsLoading ? "Updating..." : isEditing ? "Update" : "Submit"}</Button>
             </div>
         </form>
     </Form >
 );
 
-const FormFieldInput = ({ form, name, label, placeholder }) => (
+
+
+
+const FormFieldInput = ({ form, name, label, placeholder, options }) => (
     <FormField
         control={form.control}
         name={name}
@@ -126,8 +193,24 @@ const FormFieldInput = ({ form, name, label, placeholder }) => (
             <FormItem>
                 <FormLabel>{label}</FormLabel>
                 <FormControl>
-                    {name === "description" ? <Textarea className="bg-gray-50" placeholder={placeholder} {...field} /> :
-                        <Input className="bg-gray-50" placeholder={placeholder} {...field} />
+                    {name === "description" ?
+                        <Textarea className="bg-gray-50" placeholder={placeholder} {...field} /> :
+
+                        name === "ctaRedirectUrl" && options.length > 0 ? (
+                            <select className="bg-gray-50 border rounded-md ml-4 w-72 p-1.5 text-sm" {...field}>
+                                <option value="" disabled>
+                                    {placeholder || "Select an option"}
+                                </option>
+                                {options.map((option) => (
+                                    <option key={option.slug} value={option.slug}>
+                                        {option.label}
+                                    </option>
+                                ))}
+                            </select>
+                        ) :
+
+                            <Input className="bg-gray-50" placeholder={placeholder} {...field} />
+
                     }
                 </FormControl>
                 <FormMessage />
@@ -139,16 +222,14 @@ const FormFieldInput = ({ form, name, label, placeholder }) => (
 
 
 const FormFieldFetchOnSlug = ({ form, name, label, options }) => {
-
     const [searchTerm, setSearchTerm] = useState("");
 
     // Filter options based on the search query
     const filteredOptions = options.filter((option) =>
-        option.toLowerCase().includes(searchTerm.toLowerCase())
+        option?.label?.toLowerCase().includes(searchTerm.toLowerCase())
     );
 
     return (
-
         <FormField
             control={form.control}
             name={name}
@@ -156,8 +237,8 @@ const FormFieldFetchOnSlug = ({ form, name, label, options }) => {
                 <FormItem>
                     <FormLabel>{label}</FormLabel>
                     <FormControl>
-                        {/* Search Bar */}
                         <>
+                            {/* Search Bar */}
                             <div className="mb-2">
                                 <input
                                     type="text"
@@ -173,19 +254,19 @@ const FormFieldFetchOnSlug = ({ form, name, label, options }) => {
                                 {filteredOptions.map((option, index) => (
                                     <div
                                         key={index}
-                                        className={`px-4 py-2 rounded-lg cursor-pointer whitespace-nowrap ${field.value.includes(option)
-                                            ? "bg-blue-500 text-white"
-                                            : "bg-gray-200 text-black"
+                                        className={`px-4 py-2 rounded-lg cursor-pointer whitespace-nowrap ${field.value.includes(option.slug)
+                                                ? "bg-blue-500 text-white"
+                                                : "bg-gray-200 text-black"
                                             }`}
                                         onClick={() => {
                                             // Toggle option in array
-                                            const newValue = field.value.includes(option)
-                                                ? field.value.filter((val) => val !== option)
-                                                : [...field.value, option];
+                                            const newValue = field.value.includes(option.slug)
+                                                ? field.value.filter((val) => val !== option.slug)
+                                                : [...field.value, option.slug];
                                             field.onChange(newValue);
                                         }}
                                     >
-                                        {option}
+                                        {option.label}
                                     </div>
                                 ))}
 
@@ -199,32 +280,51 @@ const FormFieldFetchOnSlug = ({ form, name, label, options }) => {
                 </FormItem>
             )}
         />
-
-
-
     );
 };
 
 
 
-const ServiceSectionCards = ({ data }) => (
+const ServiceSectionCards = ({ data, onEdit, onDelete }) => (
     <div className="bg-white border p-3 rounded-lg w-full sm:w-1/3">
         <div className="font-semibold mb-2 text-center">Services Cards</div>
         <div className="overflow-y-auto max-h-[40rem] scrollbar-design">
             {data && data.map((heroSecCard, i) => (
-                <ServiceCard key={i} i={i} serviceSecCard={heroSecCard} />
+                <ServiceCard key={i} i={i} serviceSecCard={heroSecCard} onEdit={onEdit} onDelete={onDelete} />
             ))}
         </div>
     </div>
 );
 
-const ServiceCard = ({ serviceSecCard, i }) => (
+const ServiceCard = ({ serviceSecCard, i, onEdit, onDelete }) => (
     <div className="relative bg-gray-50 flex gap-2 flex-col rounded-lg p-3 my-2 text-sm">
+
         <span className='absolute top-1 right-1 text-xs px-1 rounded-full text-white bg-gray-400'>{i + 1}</span>
         <CardItem label="Title" content={serviceSecCard?.title} />
         <CardItem label="Desc" content={serviceSecCard?.description} />
         <CardItem label="Fetch on" content={serviceSecCard?.fetchOnSlug} />
         <CardItem label="Redirect URL" content={serviceSecCard?.ctaRedirectUrl || "CTA not display in this card"} />
+
+
+        {/* Action Buttons (Visible on Hover) */}
+        <div className="absolute top-2 right-12 flex gap-2 opacity0 grouphover:opacity-100 transition-opacity duration-300">
+            {/* Edit Button */}
+            <button
+                onClick={() => onEdit(serviceSecCard._id)}
+                className="flex items-center gap-1 px-2 py-1 text-sm font-medium text-gray-600 border-gray-500 border hover:border-blue-600 rounded-md bg-white hover:bg-blue-600 hover:text-white transition"
+            >
+                <MdEdit />
+            </button>
+
+            {/* Delete Button */}
+            <button
+                onClick={() => onDelete(serviceSecCard._id)}
+                className="flex items-center gap-1 px-2 py-1 text-sm font-medium border border-red-500 rounded-md bg-white hover:text-white hover:bg-red-500 text-red-500 transition"
+            >
+                <MdDelete />
+            </button>
+        </div>
+
     </div>
 );
 

@@ -3,22 +3,23 @@
 import Lottie from "lottie-react";
 import loaderJson from "/public/pageAnimations/loader.json";
 
-import "../../template.css"
+import "../template.css"
 
 import AdminpanelLayout from '@/components/adminpanel/AdminpanelLayout';
 import HeroSection from '@/components/adminpanel/HeroSection';
 import ServiceSection from '@/components/adminpanel/ServiceSection';
 
-import { useGetTemplateQuery } from '../../../../store/api/myApi';
+import { useGetTemplateQuery } from '../../../store/api/myApi';
 import { useParams, useRouter } from "next/navigation";
 
 
 const Template = () => {
 
     const { templateName } = useParams()
-    const { data, isError, error, isLoading } = useGetTemplateQuery();
     const router = useRouter();
 
+
+    const { data, isError, error, isLoading } = useGetTemplateQuery();
 
     if (isLoading) return <div className='flex items-center justify-center h-screen w-full'><Lottie animationData={loaderJson} loop={true} /></div>;
 
@@ -26,7 +27,6 @@ const Template = () => {
         console.error('Error fetching data:', error);
         return <div className="h-screen flex justify-center items-center">Error: {error?.data?.error || 'An error occurred'}</div>;
     }
-
 
     const serviceTemplate = data?.find((templateData) => templateData.templateName === templateName)
 
@@ -37,7 +37,7 @@ const Template = () => {
     }
 
     return (
-        <AdminpanelLayout data={data}>
+        <AdminpanelLayout>
 
             <HeroSection {...serviceTemplate} />
             <ServiceSection {...serviceTemplate} />

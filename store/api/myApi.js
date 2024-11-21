@@ -30,13 +30,21 @@ export const myApi = createApi({
       }),
       invalidatesTags: ['Template'], // Refetch users after creation
     }),
-    
 
     deleteComponentContent: builder.mutation({
-      query: (editDeleteObj) => ({
+      query: (updateDeleteObj) => ({
         url: `template`,
         method: 'DELETE',
-        body: editDeleteObj, // Send as JSON body
+        body: updateDeleteObj, // Send as JSON body
+      }),
+      invalidatesTags: ['Template'], // Refetch templates after deletion
+    }),
+
+    updateComponentContent: builder.mutation({
+      query: (updateDeleteObj) => ({
+        url: `template`,
+        method: 'PUT',
+        body: updateDeleteObj, // Send as JSON body
       }),
       invalidatesTags: ['Template'], // Refetch templates after deletion
     }),
@@ -80,6 +88,7 @@ export const myApi = createApi({
 
 export const {
   useGetItemsQuery,
+  useUpdateComponentContentMutation,
   useDeleteComponentContentMutation,
   useGetHeaderMenuQuery,
   useGetTemplateContentByStrQuery,

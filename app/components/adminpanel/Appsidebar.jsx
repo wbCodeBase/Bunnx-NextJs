@@ -1,3 +1,5 @@
+"use client"
+
 import { Calendar, Home, Inbox, Search, Settings } from "lucide-react"
 
 import {
@@ -10,35 +12,41 @@ import {
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
-  // SidebarMenuSub, SidebarMenuSubItem,
+  SidebarMenuSub, SidebarMenuSubItem, SidebarMenuSubButton
 } from "@/components/ui/sidebar"
 
 
-// import { Collapsible, CollapsibleTrigger, CollapsibleContent } from "@/components/ui/collapsible"
 
 
-
-import Link from "next/link"
+import { useRouter } from "next/navigation";
 
 
 
 // Menu items.
-const items = [
+const adminSidebarMenu = [
   {
     title: "Home",
     url: "/bunnx-admin",
     icon: Home,
   },
+
   {
-    title: "Service",
-    url: "/bunnx-admin/template/service",
-    icon: Inbox,
+    title: "Template",
+    templates: [
+      {
+        title: "Service",
+        url: "/bunnx-admin/service",
+        icon: Inbox,
+      }, {
+        title: "Hire",
+        url: "/bunnx-admin/hire",
+        icon: Inbox,
+      },
+    ],
   },
-  {
-    title: "Hire",
-    url: "/bunnx-admin/template/hire",
-    icon: Inbox,
-  },
+
+
+
   {
     title: "Components",
     url: "/bunnx-admin/",
@@ -57,21 +65,46 @@ const items = [
 ]
 
 export default function AppSidebar() {
+  const router = useRouter();
+
+
+  const redirectOn = (redirectSlug) => {
+
+      if (redirectSlug) {
+        router.push(redirectSlug);
+      } else {
+        console.error("Redirect slug is missing!");
+      }
+    };
+  
+
+
   return (
+
     <Sidebar className="mt2">
       <SidebarContent>
         <SidebarGroup>
-          <SidebarGroupLabel>Menu</SidebarGroupLabel>
+          <SidebarGroupLabel>Admin Menu</SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>
-              {items.map((item) => (
-                <SidebarMenuItem key={item.title}>
-                  <SidebarMenuButton asChild>
-                    <Link href={item.url}>
-                      <item.icon />
-                      <span>{item.title}</span>
-                    </Link>
+              {adminSidebarMenu.map((menu, index) => (
+                <SidebarMenuItem key={index}>
+                  <SidebarMenuButton>
+                    {menu.icon && <menu.icon className="mr-2" />}
+                    {menu.title}
                   </SidebarMenuButton>
+                  {menu.templates && (
+                    <SidebarMenuSub>
+                      {menu.templates.map((template, subIndex) => (
+                        <SidebarMenuSubItem key={subIndex}>
+                          <SidebarMenuSubButton className="cursor-pointer" onClick={() => redirectOn(template.url)}>
+                            {template.icon && <template.icon className="mr-2" />}
+                            {template.title}
+                          </SidebarMenuSubButton>
+                        </SidebarMenuSubItem>
+                      ))}
+                    </SidebarMenuSub>
+                  )}
                 </SidebarMenuItem>
               ))}
             </SidebarMenu>
@@ -79,50 +112,6 @@ export default function AppSidebar() {
         </SidebarGroup>
       </SidebarContent>
     </Sidebar>
-
-
-
-
-    // <Sidebar className="mt2">
-    //   <SidebarContent>
-    //     <SidebarGroup>
-    //       <SidebarGroupLabel>Menu</SidebarGroupLabel>
-    //       <SidebarGroupContent>
-    //         {/* <SidebarMenu>
-    //           {items.map((item) => (
-    //             <SidebarMenuItem key={item.title}>
-    //               <SidebarMenuButton asChild>
-    //                 <Link href={item.url}>
-    //                   <item.icon />
-    //                   <span>{item.title}</span>
-    //                 </Link>
-    //               </SidebarMenuButton>
-    //             </SidebarMenuItem>
-    //           ))}
-    //         </SidebarMenu> */}
-
-    //         <SidebarMenu>
-    //           <Collapsible defaultOpen className="group/collapsible">
-    //             <SidebarMenuItem>
-    //               <CollapsibleTrigger asChild>
-    //                 {/* Pass content to SidebarMenuButton explicitly */}
-    //                 <SidebarMenuButton>Menu Button</SidebarMenuButton>
-    //               </CollapsibleTrigger>
-    //               <CollapsibleContent>
-    //                 <SidebarMenuSub>
-    //                   {/* Ensure SidebarMenuSubItem has valid children */}
-    //                   <SidebarMenuSubItem>Sub Item 1</SidebarMenuSubItem>
-    //                   <SidebarMenuSubItem>Sub Item 2</SidebarMenuSubItem>
-    //                 </SidebarMenuSub>
-    //               </CollapsibleContent>
-    //             </SidebarMenuItem>
-    //           </Collapsible>
-    //         </SidebarMenu>
-
-    //       </SidebarGroupContent>
-    //     </SidebarGroup>
-    //   </SidebarContent>
-    // </Sidebar>
 
 
   )

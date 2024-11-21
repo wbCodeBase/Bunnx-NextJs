@@ -442,9 +442,9 @@ export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
 
 
-  const { data, isLoading, isError, error } = useGetHeaderMenuQuery()
+  // const { data, isLoading, isError, error } = useGetHeaderMenuQuery()
+  // console.log(data, isLoading, error);
 
-  console.log(data, isLoading, error);
 
 
 
