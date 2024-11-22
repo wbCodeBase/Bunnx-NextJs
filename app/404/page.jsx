@@ -16,7 +16,7 @@ export default function Custom404() {
           <div className="text-left">
             <h1 className="text-4xl font-bold text-gray-800">404</h1>
             <h2 className="mt-4 text-2xl font-semibold"> Page Not Found</h2>
-            <p className="text-lg text-gray-600 mt-2">We can't seem to find the page you&apos;re looking for</p>
+            <p className="text-lg text-gray-600 mt-2">We&apos; seem to find the page you&apos;re looking for</p>
 
             <Link href="/" passHref>
               <button className="mt-4 px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition">
@@ -38,7 +38,7 @@ export default function Custom404() {
           <div>
             <h1 className="text-4xl font-bold text-gray-800">404</h1>
             <h2 className="mt-2 text-2xl font-semibold"> Page Not Found</h2>
-            <p className="text-md text-gray-500 mt-2">We can't seem to find the page you&apos;re looking for</p>
+            <p className="text-md text-gray-500 mt-2">We&apos; seem to find the page you&apos;re looking for</p>
           </div>
           <Lottie animationData={loaderJson1} style={{ width: "30rem" }} loop={true} />
         </div>
