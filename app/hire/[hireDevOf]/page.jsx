@@ -1,7 +1,10 @@
 "use client"
 
-import React from "react";
-import { useParams } from 'next/navigation';
+
+import { useEffect } from "react";
+import { useParams, useRouter, usePathname } from "next/navigation";
+
+
 import TechExpertise from "@/components/hire/TechExpertise";
 import EngagementModel from "@/components/hire/EngagementModel";
 import BenefitsHiring from "@/components/hire/BenefitsHiring";
@@ -27,33 +30,50 @@ function formatparameter(input) {
     .join(' '); // Join them back together without hyphens
 }
 
+
+const activeSlug = [
+  { slug: "software-development", label: "software-development", isActive: true },
+  { slug: "application-development", label: "application-development", isActive: true },
+  { slug: "custom-software-development", label: "custom-software-development", isActive: true },
+  { slug: "dedicated-software-teams", label: "dedicated-software-teams", isActive: true },
+  { slug: "ecommerce", label: "ecommerce", isActive: true },
+  { slug: "qa-testing", label: "qa-testing", isActive: true },
+  { slug: "software-outsourcing", label: "software-outsourcing", isActive: true },
+  { slug: "support-maintenance", label: "support-maintenance", isActive: true },
+  { slug: "backend-developer", label: "backend-developer", isActive: true },
+  { slug: "cloud-services", label: "cloud-services", isActive: true },
+  { slug: "mobile-app-development", label: "mobile-app-development", isActive: true },
+];
+
+
+
+
 export default function HireDevOf() {
   const params = useParams();
+  const router = useRouter();
+  const pathname = usePathname();
   const { hireDevOf } = params;
 
+    // Check if the current path matches any active slug
+    useEffect(() => {
+      if (!activeSlug.some((item) => `/hire/${item.slug}` === pathname)) {
+        router.replace("/404"); // Adjust the path to match your 404 page route
+      }
+      console.log("pathname", pathname);
+      
+    }, [pathname, router]);
 
   const { data, error, isLoading } = useGetTemplateContentByStrQuery("hire");
 
   // Handle loading state
-  if (isLoading) return <div className='flex items-center justify-center h-screen w-full'><Lottie animationData={loaderJson} loop={true} /></div>;
-
-
-  // Handle error state
-  if (error) return <p>Error fetching data</p>;
-
-  const heroSectionObj = (data.heroSection).find((heroData) => heroData.fetchOnSlug === hireDevOf)
-
-  // console.log("HeroSection data from template obj", heroSectionObj);
-
-  const heroSectionData = {
-    titlePrefix: heroSectionObj?.titlePrefix || "Hire",
-    title: heroSectionObj?.title || formatparameter(hireDevOf),
-    description: heroSectionObj?.description || "Our skilled php developers seamlessly integrate with your team, offering flexible engagement models with Monthly contracts, part-time collaboration and hourly arrangements.",
-    imageUrl: "https://img.freepik.com/premium-photo/astronaut-outer-space-surrounded-by-planets-satellites-generative-ai_1028873-12416.jpg",
-    ctaText: heroSectionObj?.ctaText || "Book a Consultation",
-    ctaRedirectUrl: heroSectionObj?.ctaRedirectUrl || "#contact-us",
-  };
-
+  if (isLoading || error) {
+    return (
+      <div className="flex items-center justify-center h-screen w-full">
+        {isLoading && <Lottie animationData={loaderJson} loop={true} />}
+        {error && <p>Error fetching template data</p>}
+      </div>
+    );
+  }
 
   const faqData = [
 
@@ -133,7 +153,10 @@ export default function HireDevOf() {
 ];
 
 
-  const serviceSectionObj = (data?.servicesSection).filter((serviceData) => serviceData?.fetchOnSlug.includes(hireDevOf))
+  const heroSectionObj = (data.heroSection).find((heroData) => heroData.fetchOnSlug === hireDevOf) || {};
+  const serviceSectionObj = (data?.servicesSection).filter((serviceData) => serviceData?.fetchOnSlug.includes(hireDevOf)) || [];
+  
+  // console.log("HeroSection data from template obj", heroSectionObj);
   // console.log("serviceSection data from template obj", serviceSectionObj);
   
   const servicesData = (Array.isArray(serviceSectionObj) && serviceSectionObj.length > 0) 
@@ -256,6 +279,18 @@ export default function HireDevOf() {
     },
 
   ];
+
+
+  
+  const heroSectionData = {
+    titlePrefix: heroSectionObj?.titlePrefix || "Hire",
+    title: heroSectionObj?.title || formatparameter(hireDevOf), 
+    description: heroSectionObj?.description || "Our skilled php developers seamlessly integrate with your team, offering flexible engagement models with Monthly contracts, part-time collaboration and hourly arrangements.",
+    imageUrl: "https://img.freepik.com/premium-photo/astronaut-outer-space-surrounded-by-planets-satellites-generative-ai_1028873-12416.jpg",
+    ctaText: heroSectionObj?.ctaText || "Book a Consultation",
+    ctaRedirectUrl: heroSectionObj?.ctaRedirectUrl || "#contact-us",
+  };
+
 
 
 
