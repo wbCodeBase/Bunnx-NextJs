@@ -32,18 +32,32 @@ function formatparameter(input) {
 
 
 const activeSlug = [
-  { slug: "software-development", label: "software-development", isActive: true },
-  { slug: "application-development", label: "application-development", isActive: true },
-  { slug: "custom-software-development", label: "custom-software-development", isActive: true },
-  { slug: "dedicated-software-teams", label: "dedicated-software-teams", isActive: true },
-  { slug: "ecommerce", label: "ecommerce", isActive: true },
-  { slug: "qa-testing", label: "qa-testing", isActive: true },
-  { slug: "software-outsourcing", label: "software-outsourcing", isActive: true },
-  { slug: "support-maintenance", label: "support-maintenance", isActive: true },
-  { slug: "backend-developer", label: "backend-developer", isActive: true },
-  { slug: "cloud-services", label: "cloud-services", isActive: true },
-  { slug: "mobile-app-development", label: "mobile-app-development", isActive: true },
+  // Slugs from servicesDataSlugs
+  { slug: "cms-development", label: "cms-development", isActive: true },
+  { slug: "crm-software-development", label: "crm-software-development", isActive: true },
+  { slug: "software-consulting", label: "software-consulting", isActive: true },
+  { slug: "it-consulting", label: "it-consulting", isActive: true },
+  { slug: "agile-consulting", label: "agile-consulting", isActive: true },
+  { slug: "web-app-development", label: "web-app-development", isActive: true },
+  { slug: "front-end-development", label: "front-end-development", isActive: true },
+  { slug: "backend-development", label: "backend-development", isActive: true },
+  { slug: "api-development", label: "api-development", isActive: true },
+  { slug: "full-stack-development", label: "full-stack-development", isActive: true },
+  { slug: "website-development", label: "website-development", isActive: true },
+  { slug: "ecommerce-web-development", label: "ecommerce-web-development", isActive: true },
+  { slug: "ecommerce-web-consulting", label: "ecommerce-web-consulting", isActive: true },
+  { slug: "ecommerce-advancement", label: "ecommerce-advancement", isActive: true },
+  { slug: "ecommerce-maintenance-support", label: "ecommerce-maintenance-support", isActive: true },
+  { slug: "staff-augmentation", label: "staff-augmentation", isActive: true },
+  { slug: "it-outsourcing", label: "it-outsourcing", isActive: true },
+  { slug: "offshore-dedicated-centre", label: "offshore-dedicated-centre", isActive: true },
+  { slug: "qa-consulting", label: "qa-consulting", isActive: true },
+  { slug: "software-testing", label: "software-testing", isActive: true },
+  { slug: "mobile-app-testing", label: "mobile-app-testing", isActive: true },
+  { slug: "web-app-testing", label: "web-app-testing", isActive: true },
+  { slug: "qa-outsourcing", label: "qa-outsourcing", isActive: true }
 ];
+
 
 
 export default function ServiceDetails() {
