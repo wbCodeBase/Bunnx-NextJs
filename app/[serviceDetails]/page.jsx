@@ -20,7 +20,7 @@ import Lottie from "lottie-react";
 import loaderJson from "../../public/pageAnimations/loader.json";
 
 
-import { useGetTemplateContentByStrQuery } from '../../store/api/myApi';
+import { useGetTemplateContentByStrQuery, useGetActiveSlugQuery } from '../../store/api/myApi';
 
 
 function formatparameter(input) {
@@ -31,32 +31,6 @@ function formatparameter(input) {
 }
 
 
-const activeSlug = [
-  // Slugs from servicesDataSlugs
-  { slug: "cms-development", label: "cms-development", isActive: true },
-  { slug: "crm-software-development", label: "crm-software-development", isActive: true },
-  { slug: "software-consulting", label: "software-consulting", isActive: true },
-  { slug: "it-consulting", label: "it-consulting", isActive: true },
-  { slug: "agile-consulting", label: "agile-consulting", isActive: true },
-  { slug: "web-app-development", label: "web-app-development", isActive: true },
-  { slug: "front-end-development", label: "front-end-development", isActive: true },
-  { slug: "backend-development", label: "backend-development", isActive: true },
-  { slug: "api-development", label: "api-development", isActive: true },
-  { slug: "full-stack-development", label: "full-stack-development", isActive: true },
-  { slug: "website-development", label: "website-development", isActive: true },
-  { slug: "ecommerce-web-development", label: "ecommerce-web-development", isActive: true },
-  { slug: "ecommerce-web-consulting", label: "ecommerce-web-consulting", isActive: true },
-  { slug: "ecommerce-advancement", label: "ecommerce-advancement", isActive: true },
-  { slug: "ecommerce-maintenance-support", label: "ecommerce-maintenance-support", isActive: true },
-  { slug: "staff-augmentation", label: "staff-augmentation", isActive: true },
-  { slug: "it-outsourcing", label: "it-outsourcing", isActive: true },
-  { slug: "offshore-dedicated-centre", label: "offshore-dedicated-centre", isActive: true },
-  { slug: "qa-consulting", label: "qa-consulting", isActive: true },
-  { slug: "software-testing", label: "software-testing", isActive: true },
-  { slug: "mobile-app-testing", label: "mobile-app-testing", isActive: true },
-  { slug: "web-app-testing", label: "web-app-testing", isActive: true },
-  { slug: "qa-outsourcing", label: "qa-outsourcing", isActive: true }
-];
 
 
 
@@ -67,26 +41,53 @@ export default function ServiceDetails() {
   const { serviceDetails } = params;
 
 
-  // Check if the current path matches any active slug
-  useEffect(() => {
-    if (!activeSlug.some((item) => `/${item.slug}` === pathname)) {
-      router.replace("/404"); // Adjust the path to match your 404 page route
-    }
-  }, [pathname, router]);
-
 
 
   const { data, error, isLoading } = useGetTemplateContentByStrQuery("service");
+  const { data: activeSlugData, error: activeSlugError, isLoading: activeSlugIsLoading } = useGetActiveSlugQuery();
+
+  console.log(activeSlugData, activeSlugError, activeSlugIsLoading);
 
 
-  if (isLoading || error) {
+  // Check if the current path matches any active slug
+  useEffect(() => {
+    // Wait until activeSlugData is loaded, then check if the pathname matches
+    if (!isLoading && activeSlugData) {
+      const isSlugActive = activeSlugData.some((item) => `/${item.slug}` === pathname);
+
+      // Redirect to 404 if no matching slug is found
+      if (!isSlugActive) {
+        router.replace("/404");
+      }
+    }
+  }, [activeSlugData, isLoading, pathname, router]);
+
+
+  if (isLoading || activeSlugIsLoading || activeSlugError || error) {
     return (
-      <div className="flex items-center justify-center h-screen w-full">
-        {isLoading && <Lottie animationData={loaderJson} loop={true} />}
-        {error && <p>Error fetching template data</p>}
+      <div className="flex flex-col items-center justify-center h-screen w-full space-y-4">
+        {/* Show loader if either loading flag is true */}
+        {(isLoading || activeSlugIsLoading) && (
+          <div className="flex items-center justify-center h-screen w-full">
+            <Lottie animationData={loaderJson} loop={true} />
+          </div>
+        )}
+
+        {/* Display error messages */}
+        {error && (
+          <p className="text-red-500 text-lg">
+            Error fetching template data: {error?.data?.message || error?.message || "Unknown error"}
+          </p>
+        )}
+        {activeSlugError && (
+          <p className="text-red-500 text-lg">
+            Error fetching active slug data: {activeSlugError?.data?.message || activeSlugError?.message || "Unknown error"}
+          </p>
+        )}
       </div>
     );
   }
+
 
 
   const faqData = [
@@ -312,3 +313,36 @@ export default function ServiceDetails() {
   );
 }
 
+
+
+
+
+
+
+const activeSlug = [
+  // Slugs from servicesDataSlugs
+  { slug: "cms-development", label: "cms-development", isActive: true },
+  { slug: "software-development", label: "software-development", isActive: true },
+  { slug: "crm-software-development", label: "crm-software-development", isActive: true },
+  { slug: "software-consulting", label: "software-consulting", isActive: true },
+  { slug: "it-consulting", label: "it-consulting", isActive: true },
+  { slug: "agile-consulting", label: "agile-consulting", isActive: true },
+  { slug: "web-app-development", label: "web-app-development", isActive: true },
+  { slug: "front-end-development", label: "front-end-development", isActive: true },
+  { slug: "backend-development", label: "backend-development", isActive: true },
+  { slug: "api-development", label: "api-development", isActive: true },
+  { slug: "full-stack-development", label: "full-stack-development", isActive: true },
+  { slug: "website-development", label: "website-development", isActive: true },
+  { slug: "ecommerce-web-development", label: "ecommerce-web-development", isActive: true },
+  { slug: "ecommerce-web-consulting", label: "ecommerce-web-consulting", isActive: true },
+  { slug: "ecommerce-advancement", label: "ecommerce-advancement", isActive: true },
+  { slug: "ecommerce-maintenance-support", label: "ecommerce-maintenance-support", isActive: true },
+  { slug: "staff-augmentation", label: "staff-augmentation", isActive: true },
+  { slug: "it-outsourcing", label: "it-outsourcing", isActive: true },
+  { slug: "offshore-dedicated-centre", label: "offshore-dedicated-centre", isActive: true },
+  { slug: "qa-consulting", label: "qa-consulting", isActive: true },
+  { slug: "software-testing", label: "software-testing", isActive: true },
+  { slug: "mobile-app-testing", label: "mobile-app-testing", isActive: true },
+  { slug: "web-app-testing", label: "web-app-testing", isActive: true },
+  { slug: "qa-outsourcing", label: "qa-outsourcing", isActive: true }
+];

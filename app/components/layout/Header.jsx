@@ -6,7 +6,7 @@ import { ChevronRight, ChevronDown, Menu, X } from 'lucide-react'
 import Image from 'next/image'
 
 import { TbCodeDots } from "react-icons/tb";
-import { useGetHeaderMenuQuery } from 'store/api/myApi'
+// import { useGetHeaderMenuQuery } from 'store/api/myApi'
 
 const menuItems = [
   { title: 'Home', slug: '/', hasSubmenu: false },

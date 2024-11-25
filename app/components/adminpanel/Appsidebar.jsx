@@ -30,6 +30,8 @@ const adminSidebarMenu = [
     icon: Home,
   },
 
+
+
   {
     title: "Template",
     templates: [
@@ -48,10 +50,11 @@ const adminSidebarMenu = [
 
 
   {
-    title: "Components",
-    url: "/bunnx-admin/",
-    icon: Calendar,
+    title: "Manage Slug",
+    url: "/bunnx-admin/manage-slug",
+    icon: Home,
   },
+  
   {
     title: "Search",
     url: "#",
@@ -89,7 +92,7 @@ export default function AppSidebar() {
             <SidebarMenu>
               {adminSidebarMenu.map((menu, index) => (
                 <SidebarMenuItem key={index}>
-                  <SidebarMenuButton>
+                  <SidebarMenuButton className="cursor-pointer" onClick={() => redirectOn(menu.url)}>
                     {menu.icon && <menu.icon className="mr-2" />}
                     {menu.title}
                   </SidebarMenuButton>

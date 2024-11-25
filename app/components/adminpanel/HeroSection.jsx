@@ -36,12 +36,13 @@ const formSchema = z.object({
     componentName: z.string(),
 });
 
-const HeroSection = ({ heroSection, templateName }) => {
+const HeroSection = ({ heroSection, templateName, activeSlugData }) => {
     const [componentName, setComponentName] = useState("heroSection");
     const [editMode, setEditMode] = useState(false); // Track edit mode
     const [editId, setEditId] = useState(null); // Track the ID of the item being edited
 
-    const [createComponentContent, result] = useCreateComponentContentMutation();
+    
+    const [createComponentContent, result] = useCreateComponentContentMutation(); 
     const [deleteComponentContent] = useDeleteComponentContentMutation();
     const [updateComponentContent, { data, isSuccess: updateIsSuccess, isError: updateIsError, error: updateError, isLoading: updateIsLoading, reset }] = useUpdateComponentContentMutation();
 
@@ -96,7 +97,6 @@ const HeroSection = ({ heroSection, templateName }) => {
     };
 
 
-
     // Handle edit and delete operations
     const updateDeleteHandler = async (id, operationType) => {
         if (operationType === "delete") {
@@ -125,23 +125,12 @@ const HeroSection = ({ heroSection, templateName }) => {
     };
 
 
-    const slugArray = [
-        { slug: "software-development", label: "software-development" },
-        { slug: "application-development", label: "application-development" },
-        { slug: "custom-software-development", label: "custom-software-development" },
-        { slug: "dedicated-software-teams", label: "dedicated-software-teams" },
-        { slug: "ecommerce", label: "ecommerce" },
-        { slug: "qa-testing", label: "qa-testing" },
-        { slug: "software-outsourcing", label: "software-outsourcing" },
-        { slug: "support-maintenance", label: "support-maintenance" },
-        { slug: "devops", label: "devops" },
-        { slug: "cloud-services", label: "cloud-services" },
-        { slug: "mobile-app-development", label: "mobile-app-development" },
-    ]
+    const slugArray = activeSlugData;
 
     return (
-        <div className="flex py-10 flex-col justify-start w-full bg-gray-50">
-            <div className="text-2xl font-semibold mt-6 mx-24">
+        <div className="flex sm:py-10 py-5 flex-col justify-start w-full bg-gray-50">
+            
+            <div className="text-2xl font-semibold sm:mt-6 sm:mx-24 mb-2 text-center sm:text-left">
                 Hero Section <span className="text-sm">({templateName})</span>
             </div>
 

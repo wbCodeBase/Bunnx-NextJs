@@ -10,9 +10,11 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 export const myApi = createApi({
   reducerPath: 'myApi',
   baseQuery: fetchBaseQuery({ baseUrl: process.env.NEXT_PUBLIC_API_BASE_URL || 'http://localhost:3000/api', }),
-  tagTypes: ['User', 'Template'],  // Optional: for automatic cache invalidation
+  tagTypes: ['User', 'Template', 'ActiveSlug'],  // Optional: for automatic cache invalidation
   endpoints: (builder) => ({
-    
+
+
+    // Template Hooks Start
     getTemplate: builder.query({
       query: () => 'template',
       providesTags: ['Template'], // Ensures refetching after creating or deleting
@@ -31,15 +33,6 @@ export const myApi = createApi({
       invalidatesTags: ['Template'], // Refetch users after creation
     }),
 
-    deleteComponentContent: builder.mutation({
-      query: (updateDeleteObj) => ({
-        url: `template`,
-        method: 'DELETE',
-        body: updateDeleteObj, // Send as JSON body
-      }),
-      invalidatesTags: ['Template'], // Refetch templates after deletion
-    }),
-
     updateComponentContent: builder.mutation({
       query: (updateDeleteObj) => ({
         url: `template`,
@@ -48,9 +41,48 @@ export const myApi = createApi({
       }),
       invalidatesTags: ['Template'], // Refetch templates after deletion
     }),
+
+    deleteComponentContent: builder.mutation({
+      query: (updateDeleteObj) => ({
+        url: `template`,
+        method: 'DELETE',
+        body: updateDeleteObj, // Send as JSON body
+      }),
+      invalidatesTags: ['Template'], // Refetch templates after deletion
+    }),
+    // Template Hooks End
+    
+    
+    // Active Slug Hooks Start
+    getActiveSlug: builder.query({
+      query: () => 'activeSlug',
+      providesTags: ['ActiveSlug'], // Ensures refetching after creating or deleting
+    }),
+    
+    createActiveSlug: builder.mutation({
+      query: (newSlug) => ({
+        url: 'activeSlug',
+        method: 'POST',
+        body: newSlug,
+      }),
+      invalidatesTags: ['ActiveSlug'], // Refetch users after creation
+    }),
+
+
+    deleteActiveSlug: builder.mutation({
+      query: (deleteActiveSlug) => ({
+        url: `activeSlug`,
+        method: 'DELETE',
+        body: deleteActiveSlug, // Send as JSON body
+      }),
+      invalidatesTags: ['ActiveSlug'], // Refetch templates after deletion
+    }),
+
+    // Active Slug Hooks End
     
 
 
+    // User Hooks Start
     getUsers: builder.query({
       query: () => 'users',
       providesTags: ['User'], // Ensures refetching after creating or deleting
@@ -77,17 +109,22 @@ export const myApi = createApi({
       invalidatesTags: ['User'], // Refetch users after deletion
     }),
 
+    // User Hooks End
 
-// Header
+    // Header Menu Hook Start
     getHeaderMenu: builder.query({
       query: () => 'header',
     }),
+    // Header Menu Hook End
 
   }),
 });
 
 export const {
-  useGetItemsQuery,
+  useGetActiveSlugQuery,
+  useCreateActiveSlugMutation,
+  useDeleteActiveSlugMutation,
+
   useUpdateComponentContentMutation,
   useDeleteComponentContentMutation,
   useGetHeaderMenuQuery,

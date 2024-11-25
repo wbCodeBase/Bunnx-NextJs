@@ -34,7 +34,7 @@ const formSchema = z.object({
     componentName: z.string(),
 });
 
-const ServiceSection = ({ servicesSection, templateName }) => {
+const ServiceSection = ({ servicesSection, templateName, activeSlugData }) => {
     const [isEditing, setIsEditing] = useState(false);
     const [editId, setEditId] = useState(null);
     const [componentName, setComponentName] = useState("servicesSection");
@@ -107,19 +107,7 @@ const ServiceSection = ({ servicesSection, templateName }) => {
         }
     };
 
-    const slugArray = [
-        { slug: "software-development", label: "software-development" },
-        { slug: "application-development", label: "application-development" },
-        { slug: "custom-software-development", label: "custom-software-development" },
-        { slug: "dedicated-software-teams", label: "dedicated-software-teams" },
-        { slug: "ecommerce", label: "ecommerce" },
-        { slug: "qa-testing", label: "qa-testing" },
-        { slug: "software-outsourcing", label: "software-outsourcing" },
-        { slug: "support-maintenance", label: "support-maintenance" },
-        { slug: "devops", label: "devops" },
-        { slug: "cloud-services", label: "cloud-services" },
-        { slug: "mobile-app-development", label: "mobile-app-development" },
-    ]
+    const slugArray = activeSlugData;
 
 
     return (
