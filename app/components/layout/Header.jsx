@@ -340,7 +340,7 @@ const servicesData = {
       slug: 'dedicated-technical-team',
       description: 'Hire team for your next project',
       technologies: [
-        { name: 'Staff Augumentation', slug: 'staff-ugumentation' },
+        { name: 'Staff Augumentation', slug: 'staff-augumentation' },
         { name: 'Hire Software Developers', slug: 'hire-software-developer' },
         { name: 'IT Outsourcing', slug: 'it-outsourcing' },
         { name: 'Dedicated Development Team', slug: 'dedicated-development-team' },
