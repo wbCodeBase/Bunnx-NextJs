@@ -375,7 +375,7 @@ const servicesData = {
         { name: 'Software Testing', slug: 'software-testing' },
         { name: 'Mobile App Testing', slug: 'mobile-app-testing' },
         { name: 'Web App Testing', slug: 'web-app-testing' },
-        { name: 'QA Outsourcing', slug: 'qa-qutsourcing' },
+        { name: 'QA Outsourcing', slug: 'qa-outsourcing' },
       ],
       hiring: [
         {
