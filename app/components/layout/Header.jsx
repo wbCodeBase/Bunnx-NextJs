@@ -340,7 +340,7 @@ const servicesData = {
       slug: 'dedicated-technical-team',
       description: 'Hire team for your next project',
       technologies: [
-        { name: 'Staff Augumentation', slug: 'staff-ugumentation' },
+        { name: 'Staff Augumentation', slug: 'staff-augumentation' },
         { name: 'Hire Software Developers', slug: 'hire-software-developer' },
         { name: 'IT Outsourcing', slug: 'it-outsourcing' },
         { name: 'Dedicated Development Team', slug: 'dedicated-development-team' },
@@ -375,7 +375,7 @@ const servicesData = {
         { name: 'Software Testing', slug: 'software-testing' },
         { name: 'Mobile App Testing', slug: 'mobile-app-testing' },
         { name: 'Web App Testing', slug: 'web-app-testing' },
-        { name: 'QA Outsourcing', slug: 'qa-qutsourcing' },
+        { name: 'QA Outsourcing', slug: 'qa-outsourcing' },
       ],
       hiring: [
         {
