@@ -41,7 +41,7 @@ const ServiceSection = ({ servicesSection, templateName, activeSlugData }) => {
 
     const [createComponentContent, result] = useCreateComponentContentMutation();
     const [deleteComponentContent] = useDeleteComponentContentMutation();
-    const [updateComponentContent, { data, isSuccess: updateIsSuccess, isError: updateIsError, error: updateError, isLoading: updateIsLoading, reset: resetUpdate }] = useUpdateComponentContentMutation();
+    const [updateComponentContent, { data, isSuccess: updateIsSuccess, isError: updateIsError, error: updateError, isLoading: updateIsLoading, reset }] = useUpdateComponentContentMutation();
 
 
 
@@ -73,7 +73,14 @@ const ServiceSection = ({ servicesSection, templateName, activeSlugData }) => {
                 await createComponentContent(values).unwrap();
                 alert("Component content created successfully!");
             }
-            form.reset();
+            form.reset({
+                title: "",
+                description: "",
+                ctaRedirectUrl: "",
+                fetchOnSlug: [],
+                templateName: templateName,
+                componentName: componentName,
+            });
             setIsEditing(false);
             setEditId(null);
         } catch (error) {
@@ -243,8 +250,8 @@ const FormFieldFetchOnSlug = ({ form, name, label, options }) => {
                                     <div
                                         key={index}
                                         className={`px-4 py-2 rounded-lg cursor-pointer whitespace-nowrap ${field.value.includes(option.slug)
-                                                ? "bg-blue-500 text-white"
-                                                : "bg-gray-200 text-black"
+                                            ? "bg-blue-500 text-white"
+                                            : "bg-gray-200 text-black"
                                             }`}
                                         onClick={() => {
                                             // Toggle option in array

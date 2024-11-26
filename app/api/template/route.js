@@ -45,6 +45,9 @@ export async function PUT(request) {
   try {
     const { id, templateName, componentName, componentData } = await request.json(); // Parse JSON from the request
 
+    console.log(id, templateName, componentName, componentData);
+    
+
     if (!id || !templateName || !componentName || !componentData) {
       throw new Error("Missing required fields: id, templateName, or componentName.");
     }

@@ -41,8 +41,8 @@ const HeroSection = ({ heroSection, templateName, activeSlugData }) => {
     const [editMode, setEditMode] = useState(false); // Track edit mode
     const [editId, setEditId] = useState(null); // Track the ID of the item being edited
 
-    
-    const [createComponentContent, result] = useCreateComponentContentMutation(); 
+
+    const [createComponentContent, result] = useCreateComponentContentMutation();
     const [deleteComponentContent] = useDeleteComponentContentMutation();
     const [updateComponentContent, { data, isSuccess: updateIsSuccess, isError: updateIsError, error: updateError, isLoading: updateIsLoading, reset }] = useUpdateComponentContentMutation();
 
@@ -73,13 +73,26 @@ const HeroSection = ({ heroSection, templateName, activeSlugData }) => {
                     componentName,
                     componentData: values,
                 }).unwrap();
-                form.reset(); // Reset form values
+                // form.reset({}); // Reset form values
+
+
                 setEditMode(false); // Exit edit mode
                 alert("Content updated successfully!");
             } catch (err) {
                 console.error("Error updating content:", err);
-                alert("Failed to update content.");
+                alert(err?.data?.error);
             } finally {
+                form.reset({
+                    titlePrefix: "",
+                    title: "",
+                    description: "",
+                    imageUrl: "",
+                    ctaRedirectUrl: "",
+                    fetchOnSlug: "",
+                    ctaText: "",
+                    templateName: "",
+                    componentName: "",
+                });
                 reset(); // Reset the mutation state
             }
         } else {
@@ -89,7 +102,7 @@ const HeroSection = ({ heroSection, templateName, activeSlugData }) => {
                 alert("Component content added successfully!");
             } catch (err) {
                 console.error("Error adding content:", err);
-                alert("Failed to add content.");
+                alert(err?.data?.error);
             } finally {
                 reset(); // Reset the mutation state
             }
@@ -125,18 +138,24 @@ const HeroSection = ({ heroSection, templateName, activeSlugData }) => {
     };
 
 
+    const heroCtaSlugArr = [
+        { slug: "#contact-us", label: "#contact-us", status: true },
+        { slug: "apply-now", label: "apply-now", status: true },
+    ]
+
+
     const slugArray = activeSlugData;
 
     return (
         <div className="flex sm:py-10 py-5 flex-col justify-start w-full bg-gray-50">
-            
+
             <div className="text-2xl font-semibold sm:mt-6 sm:mx-24 mb-2 text-center sm:text-left">
                 Hero Section <span className="text-sm">({templateName})</span>
             </div>
 
 
             {result.isError && <p className='text-red-600 text-sm sm:mx-24 mb-2'>{result.error?.data?.error || "Something went wrong"}</p>}
-            {updateIsError && <p className='text-red-600 text-sm sm:mx-24 mb-2'>{updateError || "Something went wrong"}</p>}
+            {updateIsError && <p className='text-red-600 text-sm sm:mx-24 mb-2'>{updateError?.data?.error || "Something went wrong"}</p>}
 
 
 
@@ -148,6 +167,7 @@ const HeroSection = ({ heroSection, templateName, activeSlugData }) => {
                     onSubmit={onSubmit}
                     editMode={editMode}
                     slugArray={slugArray}
+                    heroCtaSlugArr={heroCtaSlugArr}
                 />
                 <HeroSectionCards
                     data={heroSection}
@@ -160,7 +180,7 @@ const HeroSection = ({ heroSection, templateName, activeSlugData }) => {
 
 
 
-const HeroSectionForm = ({ form, onSubmit, result, editMode, updateIsLoading, slugArray }) => (
+const HeroSectionForm = ({ form, onSubmit, result, editMode, updateIsLoading, slugArray, heroCtaSlugArr }) => (
     <Form {...form}>
         <form
             onSubmit={form.handleSubmit(onSubmit)}
@@ -175,7 +195,7 @@ const HeroSectionForm = ({ form, onSubmit, result, editMode, updateIsLoading, sl
                 name="ctaRedirectUrl"
                 label="CTA Redirect URL"
                 placeholder="Select a redirect URL"
-                options={slugArray}
+                options={heroCtaSlugArr}
             />
             <FormFieldInput form={form} name="ctaText" label="CTA Title" placeholder="Enter CTA Title" />
             <FormFieldInput
@@ -296,3 +316,12 @@ const CardItem = ({ label, content }) => (
 
 
 export default HeroSection
+
+
+
+
+
+
+
+
+
