@@ -16,7 +16,6 @@ const Adminpanel = () => {
         <div className='border border-red-500'>Adminpanel page</div>
       </AdminpanelLayout>
 
-
     </>
   )
 }

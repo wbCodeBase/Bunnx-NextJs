@@ -1,6 +1,6 @@
 // app/api/users/route.js
 import connectToDatabase from '../../../utils/database';
-import { getActiveSlug, createActiveSlug, deleteActiveSlug } from '../../../controllers/activeSlugController';
+import { getActiveSlug, createActiveSlug, deleteActiveSlug, updateActiveSlug } from '../../../controllers/activeSlugController';
 
 
 export async function GET() {
@@ -64,6 +64,27 @@ export async function DELETE(request) {
   }
 }
 
+
+export async function PUT(request) {
+  try {
+    const { id, slugData } = await request.json(); // Parse JSON from the request
+
+    if (!id || !slugData) {
+      throw new Error("Missing required fields: id or slugData.");
+    }
+
+    const result = await updateActiveSlug({ id, slugData });
+
+    if (!result) {
+      return new Response(JSON.stringify({ error: "Slug not found or could not be updated." }), { status: 404 });
+    }
+
+    return new Response(JSON.stringify({ success: true, message: "Slug Updated successfully." }), { status: 200 });
+  } catch (error) {
+    console.error("Error in PUT request:", error.message);
+    return new Response(JSON.stringify({ error: error.message }), { status: 500 });
+  }
+}
 
 
 // export async function PUT(request) {

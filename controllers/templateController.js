@@ -111,8 +111,6 @@ export const updateComponentContent = async ({ id, templateName, componentName, 
 
 
 
-
-
 export const deleteComponentContent = async ({ id, templateName, componentName }) => {
   try {
     // Fetch the template by `templateName`

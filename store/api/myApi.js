@@ -41,7 +41,7 @@ export const myApi = createApi({
       }),
       invalidatesTags: ['Template'], // Refetch templates after deletion
     }),
-
+    
     deleteComponentContent: builder.mutation({
       query: (updateDeleteObj) => ({
         url: `template`,
@@ -68,7 +68,17 @@ export const myApi = createApi({
       invalidatesTags: ['ActiveSlug'], // Refetch users after creation
     }),
 
+    
+    updateActiveSlug: builder.mutation({
+      query: (updateActiveSlugObj) => ({
+        url: `activeSlug`,
+        method: 'PUT',
+        body: updateActiveSlugObj, // Send as JSON body
+      }),
+      invalidatesTags: ['ActiveSlug'], // Refetch templates after deletion
+    }),
 
+    
     deleteActiveSlug: builder.mutation({
       query: (deleteActiveSlug) => ({
         url: `activeSlug`,
@@ -123,6 +133,7 @@ export const myApi = createApi({
 export const {
   useGetActiveSlugQuery,
   useCreateActiveSlugMutation,
+  useUpdateActiveSlugMutation,
   useDeleteActiveSlugMutation,
 
   useUpdateComponentContentMutation,

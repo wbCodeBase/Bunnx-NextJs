@@ -38,21 +38,15 @@ export const createActiveSlug = async (data) => {
 };
 
 
-
-// export const deleteActiveSlug = async (data) => {
-//   console.log(data);
-//   return 0;
-// }
-
-
-
-
 export const deleteActiveSlug = async ({ id }) => {
   try {
 
-    await ActiveSlug.findByIdAndDelete(id);
+    const activeSlug = await ActiveSlug.findByIdAndDelete(id);
+    if (!activeSlug) {
+      throw new Error("Slug not found");
+    }
 
-    return { success: true };
+    return { success: true, data: activeSlug };
   } catch (error) {
     console.error("Error deleting component content:", error.message);
     throw new Error(error.message || "Failed to delete the component content");
@@ -61,7 +55,33 @@ export const deleteActiveSlug = async ({ id }) => {
 
 
 
+export const updateActiveSlug = async ({ id, slugData }) => {
+  try {
 
+    const activeSlug = await ActiveSlug.findByIdAndUpdate(
+      id,
+      slugData,
+      { new: true, runValidators: true } // Enable schema validation
+    );
+
+    if (!activeSlug) {
+      throw new Error("Slug not found");
+    }
+    return { success: true, data: activeSlug }; // Return the updated template
+  } catch (error) {
+    console.error("Error updating slug:", error.message);
+    throw new Error(error.message || "Failed to update slug");
+  }
+};
+
+
+
+
+// export const updateActiveSlug = async (data) => {
+//   const { id, slugData } = data
+//   console.log(id, slugData);
+//   return 0;
+// }
 
 // Create active slugs in bulk
 // export const createActiveSlug = async (data) => {

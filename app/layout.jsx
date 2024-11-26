@@ -4,7 +4,7 @@ import { AR_One_Sans, Quando } from "next/font/google";
 import "./globals.css";
 
 import { ReduxProvider } from '../store/ReduxProvider';
-import MetaTags from "@/components/MetaTags";
+// import MetaTags from "@/components/MetaTags";
 
 
 import HeaderFooterWrapper from "@/components/layout/HeaderFooterWrapper";
@@ -37,6 +37,7 @@ const quando = Quando({
 export const metadata = {
   title: "Software Development Company - Bunnx",
   description: "Custom Software Development Services and Solutions to build top-tier intelligent enterprises with speed and agility.",
+  robots: "noindex", // Ensures pages are marked as noindex
 };
 
 export default function RootLayout({ children }) {
@@ -45,14 +46,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
 
-      <head>
-        {/* Global Meta Tags */}
+      {/* <head>
         <MetaTags
           title="Software Development Company - Bunnx"
           description="Custom Software Development Services and Solutions to build top-tier intelligent enterprises with speed and agility."
           noIndex={true} // Ensure all pages are marked as noindex
         />
-      </head>
+      </head> */}
 
       <body className={`${geistSans.variable} ${quando.variable} ${geistMono.variable} ${arOneSans.variable} antialiased`}
       >

@@ -6,7 +6,7 @@ import { MdDelete, MdEdit } from "react-icons/md";
 import {
     useGetActiveSlugQuery,
     useCreateActiveSlugMutation,
-    useUpdateComponentContentMutation,
+    useUpdateActiveSlugMutation,
     useDeleteActiveSlugMutation,
 } from "../../../store/api/myApi";
 
@@ -19,8 +19,8 @@ const ActiveSlugManage = () => {
     const [editId, setEditId] = useState(null); // Track ID of the slug being edited
 
     const { data: activeSlugData, isLoading, isError, error } = useGetActiveSlugQuery();
-    const [createActiveSlug] = useCreateActiveSlugMutation();
-    const [updateActiveSlug] = useUpdateComponentContentMutation();
+    const [createActiveSlug, result] = useCreateActiveSlugMutation();
+    const [updateActiveSlug, { data, isSuccess: updateIsSuccess, isError: updateIsError, error: updateError, isLoading: updateIsLoading, reset }] = useUpdateActiveSlugMutation();
     const [deleteActiveSlug] = useDeleteActiveSlugMutation();
 
     const [formState, setFormState] = useState({
@@ -29,6 +29,7 @@ const ActiveSlugManage = () => {
         isActive: "",
     });
 
+    
     const handleInputChange = (e) => {
         const { name, value } = e.target;
         setFormState((prev) => ({ ...prev, [name]: value }));
@@ -39,7 +40,7 @@ const ActiveSlugManage = () => {
         try {
             if (editMode) {
                 // Update existing slug
-                await updateComponentContent({ id: editId, slugData: formState }).unwrap();
+                await updateActiveSlug({ id: editId, slugData: formState }).unwrap();
                 alert("Slug updated successfully!");
             } else {
                 // Create new slug
@@ -49,7 +50,7 @@ const ActiveSlugManage = () => {
             resetForm();
         } catch (err) {
             console.error("Error:", err);
-            alert(`Failed to ${editMode ? "update" : "create"} slug.`);
+            alert(err.data.error);
         }
     };
 
@@ -96,7 +97,7 @@ const ActiveSlugManage = () => {
 
     return (
         <div className="sm:p-6 p-4 bg-gray-50">
-            <h2 className="text-2xl sm:text-left text-center font-semibold mb-6">Manage Slugs</h2>
+            <h2 className="text-2xl font-semibold sm:mt-6 sm:mx-24 mb-2 text-center sm:text-left">Manage Slugs</h2>
 
             <div className="flex justify-center items-start gap-10 flex-wrap w-full sm:w-auto p3">
 
@@ -138,7 +139,8 @@ const ActiveSlugManage = () => {
                         </select>
                     </div>
                     <div>
-                        <Button type="submit">{editMode ? "Update" : "Create"}</Button>
+                        {/* <Button type="submit">{editMode ? "Update" : "Create"}</Button> */}
+                        <Button type="submit">{result.isLoading ? "Saving..." : updateIsLoading ? "Updating..." : editMode ? "Update" : "Submit"}</Button>
                     </div>
                 </form>
 
@@ -187,7 +189,7 @@ const SlugCard = ({ slugCard, i, handleEdit, handleDelete }) => (
         <div className="absolute top-2 right-12 flex gap-2 opacity0 grouphover:opacity-100 transition-opacity duration-300">
             {/* Edit Button */}
             <button
-                onClick={() => handleEdit(slugCard._id)}
+                onClick={() => handleEdit(slugCard)}
                 className="flex items-center gap-1 px-2 py-1 text-sm font-medium text-gray-600 border-gray-500 border hover:border-blue-600 rounded-md bg-white hover:bg-blue-600 hover:text-white transition"
             >
                 <MdEdit />

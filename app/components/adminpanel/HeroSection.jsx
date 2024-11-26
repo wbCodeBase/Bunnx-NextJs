@@ -135,8 +135,8 @@ const HeroSection = ({ heroSection, templateName, activeSlugData }) => {
             </div>
 
 
-            {result.isError && <p className='text-red-600 text-sm'>{result.error?.data?.error || "Something went wrong"}</p>}
-            {updateIsError && <p className='text-red-600 text-sm'>{updateError || "Something went wrong"}</p>}
+            {result.isError && <p className='text-red-600 text-sm sm:mx-24 mb-2'>{result.error?.data?.error || "Something went wrong"}</p>}
+            {updateIsError && <p className='text-red-600 text-sm sm:mx-24 mb-2'>{updateError || "Something went wrong"}</p>}
 
 
 

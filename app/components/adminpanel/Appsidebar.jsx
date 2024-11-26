@@ -1,6 +1,6 @@
 "use client"
 
-import { Calendar, Home, Inbox, Search, Settings } from "lucide-react"
+import { Link, Home, LayoutTemplate, Search, Settings } from "lucide-react"
 
 import {
   Sidebar,
@@ -31,6 +31,11 @@ const adminSidebarMenu = [
   },
 
 
+  {
+    title: "Manage Slug",
+    url: "/bunnx-admin/manage-slug",
+    icon: Link,
+  },
 
   {
     title: "Template",
@@ -38,23 +43,16 @@ const adminSidebarMenu = [
       {
         title: "Service",
         url: "/bunnx-admin/service",
-        icon: Inbox,
+        icon: LayoutTemplate,
       }, {
         title: "Hire",
         url: "/bunnx-admin/hire",
-        icon: Inbox,
+        icon: LayoutTemplate,
       },
     ],
   },
 
 
-
-  {
-    title: "Manage Slug",
-    url: "/bunnx-admin/manage-slug",
-    icon: Home,
-  },
-  
   {
     title: "Search",
     url: "#",
@@ -73,13 +71,13 @@ export default function AppSidebar() {
 
   const redirectOn = (redirectSlug) => {
 
-      if (redirectSlug) {
-        router.push(redirectSlug);
-      } else {
-        console.error("Redirect slug is missing!");
-      }
-    };
-  
+    if (redirectSlug) {
+      router.push(redirectSlug);
+    } else {
+      console.error("Redirect slug is missing!");
+    }
+  };
+
 
 
   return (
