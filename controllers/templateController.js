@@ -7,19 +7,24 @@ import Template from '../models/Template';
 export const getTemplateContent = async () => {
   try {
     const templateContent = await Template.find({});
-    return templateContent;
+    return { success: true, data: templateContent }; // Return the updated template
   } catch (error) {
-    console.error('Error fetching template content:', error.message);
-    throw new Error('Unable to fetch template content');
+    console.error('Error in GET request:', error.message);
+    return new Response(JSON.stringify({ error: error.message }), { status: 500 });
   }
 };
 
 
 // Get template by string
 export const getTemplateByStr = async (data) => {
-  const templateComponent = await Template.findOne({ templateName: data });
-  // console.log("templateComponent", templateComponent)
-  return templateComponent
+
+  try {
+    const templateComponent = await Template.findOne({ templateName: data });
+    return { success: true, data: templateComponent }; // Return the updated template
+  } catch (error) {
+    console.error('Error in GET request:', error.message);
+    return new Response(JSON.stringify({ error: error.message }), { status: 500 });
+  }
 };
 
 

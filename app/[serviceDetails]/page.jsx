@@ -62,6 +62,8 @@ export default function ServiceDetails() {
     }
   }, [activeSlugData, isLoading, pathname, router]);
 
+  console.log("error", error);
+
 
   if (isLoading || activeSlugIsLoading || activeSlugError || error) {
     return (
@@ -76,12 +78,12 @@ export default function ServiceDetails() {
         {/* Display error messages */}
         {error && (
           <p className="text-red-500 text-lg">
-            Error fetching template data: {error?.data?.message || error?.message || "Unknown error"}
+            Error fetching template data: {error?.data?.error || error?.message || "Unknown error"}
           </p>
         )}
         {activeSlugError && (
           <p className="text-red-500 text-lg">
-            Error fetching active slug data: {activeSlugError?.data?.message || activeSlugError?.message || "Unknown error"}
+            Error fetching active slug data: {activeSlugError?.data?.error || activeSlugError?.message || "Unknown error"}
           </p>
         )}
       </div>

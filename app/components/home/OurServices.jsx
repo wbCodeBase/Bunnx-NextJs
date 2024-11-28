@@ -160,7 +160,7 @@ const OurServices = () => {
                                                 <div key={index} className='relative'>
 
                                                     <div className="cursor-pointer rounded-lg py-1 px-2 group">
-                                                        <Link href={`/service/${column.slug}`} className="flex items-center gap-4">
+                                                        <Link href={`/${column.slug}`} className="flex items-center gap-4">
 
                                                             <span className="relative flex h-3 w-3">
                                                                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>

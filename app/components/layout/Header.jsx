@@ -593,11 +593,11 @@ export default function Header() {
             <Link href={`/${category.slug}`} key={i} onClick={() => { setActiveMenu(''); setActiveCategory('') }}>
               <div
                 key={category.name}
-                className={`py-2.5 px-4 cursor-pointer borde my-4 rounded-md transition-colors font-medium duration-200 ${activeCategory === category.name ? 'bg-amber-50 text-amber-600' : ''
+                className={`py-2.5 px-4 cursor-pointer flex flex-nowrap justify-between items-center my-4 rounded-md transition-colors font-medium duration-200 ${activeCategory === category.name ? 'bg-amber-50 text-amber-600' : ''
                   }`}
                 onMouseEnter={() => handleCategoryHover(category.name)}
               >
-                {category.name}
+                <span> {category.name} </span>
                 <ChevronRight className="float-right h-5 w-5" />
               </div>
             </Link>
@@ -637,34 +637,6 @@ export default function Header() {
                 </div>
               </div>
 
-              {/* <div className="w-full lg:w-4/12 px-5 py-5 bg-gray-50 mb-6 sm:mb-0">
-
-                <div className="mb-4 border-b py-5">
-                  <h3 className="font-semibold text-lg">Hire Dedicated Developers</h3>
-                  <p className="text-sm text-gray-600">Build faster with on-demand team</p>
-                </div>
-
-                {servicesData.content[activeCategory].hiring.map((item, index) => (
-                  <Link href={`/${item.slug}`} key={index}>
-                    <div className="mb-4 hover:border hover:bg-amber-50 rounded-lg p-3 cursor-pointer">
-                      <h3 className="font-medium text-lg mb-2 flex items-center">
-                        <span className="bg-amber-500 p-1 rounded-full mr-2">
-                          <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                          </svg>
-                        </span>
-                        {item.title}
-                      </h3>
-                      <p className="text-sm text-gray-600">{item.description}</p>
-                    </div>
-                  </Link>
-                ))}
-
-                
-                <Link href="#" className="text-amber-600 transition-colors duration-200">
-                  View More <ChevronRight className="inline h-4 w-4" />
-                </Link>
-              </div> */}
 
             </div>
 

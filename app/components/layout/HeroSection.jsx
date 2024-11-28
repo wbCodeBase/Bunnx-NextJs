@@ -1,14 +1,13 @@
 "use client"
 
-
 import Image from "next/image"; 
 import Link from "next/link";
+
+import heroDefault from "/public/heroDefault.png"
 
 import { FaLocationArrow } from "react-icons/fa";
 
 const HeroSection = ({ titlePrefix, title, description, ctaText, imageUrl, ctaRedirectUrl }) => {
-
-
 
   return (
     <>
@@ -30,7 +29,7 @@ const HeroSection = ({ titlePrefix, title, description, ctaText, imageUrl, ctaRe
 
           <div className="md:w-[44%] w-full flex items-center justify-center">
             <Image
-              src={imageUrl || "https://img.freepik.com/premium-photo/astronaut-outer-space-surrounded-by-planets-satellites-generative-ai_1028873-12416.jpg"}
+              src={imageUrl || heroDefault || "htps://img.freepik.com/premium-photo/astronaut-outer-space-surrounded-by-planets-satellites-generative-ai_1028873-12416.jpg"}
               alt="Digital Brain Visualization"
               width={600}
               height={600}
