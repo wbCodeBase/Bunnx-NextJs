@@ -1,12 +1,12 @@
 import React from 'react'
 import Image from 'next/image'
 
-import clutch from "/public/Certification/clutch.svg";
-import androidEnterprise from "/public/Certification/androidEnterprise.svg";
-import awsPartner from "/public/Certification/aws-partner.png";
-import goodFirm from "/public/Certification/goodFirm.svg";
-import MicrosoftMin from "/public/Certification/Microsoft-min.png";
-import googlePartner from "/public/Certification/googlePartner.png";
+import clutch from "/public/certification/clutch.svg";
+import androidEnterprise from "/public/certification/androidEnterprise.svg";
+import awsPartner from "/public/certification/aws-partner.png";
+import goodFirm from "/public/certification/goodFirm.svg";
+import MicrosoftMin from "/public/certification/Microsoft-min.png";
+import googlePartner from "/public/certification/googlePartner.png";
 
 const frontend = [
   { name: 'React', icon: 'https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png' },
