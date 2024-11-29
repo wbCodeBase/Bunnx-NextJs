@@ -17,71 +17,71 @@ const techStackData = {
             "title": "Software Development",
             "description": "Bunnx is your go-to software development agency in this evolving and dynamic era. Our software development services adhere to high-quality coding.",
             "columns": [
-                { "name": "Custom Software", "description": "Tailored solutions for excellence", "slug": "custom-software-development" },
-                { "name": "Api Integration", "description": "Api integration, faster results", "slug": "api-integration" },
-                { "name": "Application Development", "description": "Transform ideas into powerful apps", "slug": "application-development" },
+                { "name": "Custom Software Development", "description": "Tailored solutions for excellence", "slug": "custom-software-development" },
+                { "name": "CMS Development", "description": "Faster CMS Development", "slug": "cms-development" },
+                { "name": "CRM Software Development", "description": "Transform ideas into powerful apps", "slug": "crm-software-development" },
                 { "name": "Software Consulting", "description": "Expert advice on tech", "slug": "software-consulting" },
                 
-                { "name": "Software Outsourcing", "description": "Software Outsourcing", "slug": "software-outsourcing" },
-                { "name": "Software Advancement", "description": "Optimizing customer relations", "slug": "crm-consulting" },
-                { "name": "Enterprise Software", "description": "Powering enterprise growth", "slug": "enterprise-software" },
-                { "name": "Software Re-Engineering", "description": "Building market-ready software", "slug": "software-product-engineering" },
-                { "name": "Software Support & Maintenance", "description": "Building market-ready software", "slug": "software-product-engineering" },
+                { "name": "IT Consulting", "description": "Software Outsourcing", "slug": "it-consulting" },
+                { "name": "Agile Consulting", "description": "Optimizing customer relations", "slug": "agile-consulting" },
+                // { "name": "Enterprise Software", "description": "Powering enterprise growth", "slug": "enterprise-software" },
+                // { "name": "Software Re-Engineering", "description": "Building market-ready software", "slug": "software-product-engineering" },
+                // { "name": "Software Support & Maintenance", "description": "Building market-ready software", "slug": "software-product-engineering" },
             ]
         },
         "Application Development": {
             "title": "Application Development",
             "description": "Cutting-edge application solutions",
             "columns": [
-                { "name": "Progressive Web Apps", "description": "Next-gen web experiences", "slug": "progressive-web-apps" },
-                { "name": "Mobile App Development", "description": "Fast, dynamic web apps", "slug": "single-page-applications" },
-                { "name": "Cloud Application", "description": "Sleek, powerful iOS apps", "slug": "ios-app-development" },
-                { "name": "App Feature Advancement", "description": "Robust Android solutions", "slug": "android-app-development" },
-                { "name": "Enterprise Mobility", "description": "Build once, run everywhere", "slug": "cross-platform-development" }
+                { "name": "Web App Development", "description": "Next-gen web experiences", "slug": "web-app-development" },
+                { "name": "Mobile App Development", "description": "Fast, dynamic web apps", "slug": "mobile-app-development" },
+                { "name": "Frontend Development", "description": "Sleek, powerful iOS apps", "slug": "frontend-development" },
+                { "name": "Backend Development", "description": "Robust Android solutions", "slug": "backend-development" },
+                { "name": "API Development", "description": "Build once, run everywhere", "slug": "api-development" },
+                { "name": "Full stack Development", "description": "Build once, run everywhere", "slug": "full-stack-development" },
+                { "name": "Website Development", "description": "Build once, run everywhere", "slug": "website-development" },
             ]
         },
         "Dedicated Software Teams": {
             "title": "Dedicated Software Teams",
             "description": "Cutting-edge application solutions",
             "columns": [
-                { "name": "Progressive Web Apps", "description": "Next-gen web experiences", "slug": "progressive-web-apps" },
-                { "name": "Single Page Applications", "description": "Fast, dynamic web apps", "slug": "single-page-applications" },
-                { "name": "iOS App Development", "description": "Sleek, powerful iOS apps", "slug": "ios-app-development" },
-                { "name": "Android App Development", "description": "Robust Android solutions", "slug": "android-app-development" },
-                { "name": "Cross-platform Development", "description": "Build once, run everywhere", "slug": "cross-platform-development" }
+                { "name": "Staff Augmentation", "description": "Next-gen web experiences", "slug": "staff-augmentation" },
+                { "name": "Hire Software Developer", "description": "Fast, dynamic web apps", "slug": "hire-software-developer" },
+                { "name": "IT Outsourcing", "description": "Sleek, powerful iOS apps", "slug": "it-outsourcing" },
+                { "name": "Dedicated Development Teams", "description": "Robust Android solutions", "slug": "dedicated-development-teams" },
+                { "name": "Offshore Dedicated Centre", "description": "Build once, run everywhere", "slug": "offshore-dedicated-centre" }
             ]
         },
         "eCommerce": {
             "title": "eCommerce",
             "description": "Cutting-edge application solutions",
             "columns": [
-                { "name": "Progressive Web Apps", "description": "Next-gen web experiences", "slug": "progressive-web-apps" },
-                { "name": "Single Page Applications", "description": "Fast, dynamic web apps", "slug": "single-page-applications" },
-                { "name": "iOS App Development", "description": "Sleek, powerful iOS apps", "slug": "ios-app-development" },
-                { "name": "Android App Development", "description": "Robust Android solutions", "slug": "android-app-development" },
-                { "name": "Cross-platform Development", "description": "Build once, run everywhere", "slug": "cross-platform-development" }
+                { "name": "Ecommerce Web Development", "description": "Next-gen web experiences", "slug": "ecommerce-web-development" },
+                { "name": "Ecommerce Web Consulting", "description": "Fast, dynamic web apps", "slug": "ecommerce-web-consulting" },
+                { "name": "Ecommerce Advancement", "description": "Sleek, powerful iOS apps", "slug": "ecommerce-advancement" },
+                { "name": "Ecommerce Maintenance & Support", "description": "Robust Android solutions", "slug": "ecommerce-maintenance-support" },
             ]
         },
         "QA & Testing": {
             "title": "QA & Testing",
             "description": "Cutting-edge application solutions",
             "columns": [
-                { "name": "Progressive Web Apps", "description": "Next-gen web experiences", "slug": "progressive-web-apps" },
-                { "name": "Single Page Applications", "description": "Fast, dynamic web apps", "slug": "single-page-applications" },
-                { "name": "iOS App Development", "description": "Sleek, powerful iOS apps", "slug": "ios-app-development" },
-                { "name": "Android App Development", "description": "Robust Android solutions", "slug": "android-app-development" },
-                { "name": "Cross-platform Development", "description": "Build once, run everywhere", "slug": "cross-platform-development" }
+                { "name": "QA Consulting", "description": "Next-gen web experiences", "slug": "qa-consulting" },
+                { "name": "Software Testing", "description": "Fast, dynamic web apps", "slug": "software-testing" },
+                { "name": "Web App Testing", "description": "Sleek, powerful iOS apps", "slug": "web-app-testing" },
+                { "name": "Mobile App Testing", "description": "Robust Android solutions", "slug": "mobile-app-testing" },
+                { "name": "QA Outsourcing", "description": "Build once, run everywhere", "slug": "qa-outsourcing" }
             ]
         },
         "Cloud Services": {
             "title": "Cloud Services",
             "description": "Cutting-edge application solutions",
             "columns": [
-                { "name": "Progressive Web Apps", "description": "Next-gen web experiences", "slug": "progressive-web-apps" },
-                { "name": "Single Page Applications", "description": "Fast, dynamic web apps", "slug": "single-page-applications" },
-                { "name": "Cross-platform Development", "description": "Build once, run everywhere", "slug": "cross-platform-development" },
-                { "name": "iOS App Development", "description": "Sleek, powerful iOS apps", "slug": "ios-app-development" },
-                { "name": "Android App Development", "description": "Robust Android solutions", "slug": "android-app-development" }
+                { "name": "Cloud Application Development", "description": "Sleek, powerful iOS apps", "slug": "cloud-application-development" },
+                { "name": "Cloud Strategy & Consulting", "description": "Next-gen web experiences", "slug": "cloud-strategy-consulting" },
+                { "name": "Cloud Migration", "description": "Fast, dynamic web apps", "slug": "cloud-migration" },
+                { "name": "Devops Integration", "description": "Build once, run everywhere", "slug": "devops-integration" },
             ]
         }
     }

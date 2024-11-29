@@ -29,10 +29,8 @@ const HeroSection = ({ titlePrefix, title, description, ctaText, imageUrl, ctaRe
 
           <div className="md:w-[44%] w-full flex items-center justify-center">
             <Image
-              src={imageUrl || heroDefault || "htps://img.freepik.com/premium-photo/astronaut-outer-space-surrounded-by-planets-satellites-generative-ai_1028873-12416.jpg"}
+              src={heroDefault || imageUrl || "htps://img.freepik.com/premium-photo/astronaut-outer-space-surrounded-by-planets-satellites-generative-ai_1028873-12416.jpg"}
               alt="Digital Brain Visualization"
-              width={600}
-              height={600}
               className="w-full h-auto -translatey6"
             />
           </div>

@@ -1,8 +1,8 @@
 'use client'
 
 import React, { useState, useEffect, useRef } from 'react'
-import Link from 'next/link'
 import { ChevronRight, ChevronDown, Menu, X } from 'lucide-react'
+import Link from 'next/link'
 import Image from 'next/image'
 
 import { TbCodeDots } from "react-icons/tb";
@@ -52,8 +52,8 @@ const hireData = {
           description: 'Access top technical resources on-demand',
         },
         {
-          title: 'Hire Software Developers',
-          slug: 'software-developer',
+          title: 'Hire Software Developer',
+          slug: 'hire-software-developer',
           description: 'Work with skilled & dedicated developers',
         },
         {
@@ -265,8 +265,8 @@ const servicesData = {
           description: 'Access top technical resources on-demand',
         },
         {
-          title: 'Hire Software Developers',
-          slug: 'software-developer',
+          title: 'Hire Software Developer',
+          slug: 'hire-software-developer',
           description: 'Work with skilled & dedicated developers',
         },
         {
@@ -340,8 +340,8 @@ const servicesData = {
       slug: 'dedicated-technical-team',
       description: 'Hire team for your next project',
       technologies: [
-        { name: 'Staff Augumentation', slug: 'staff-augumentation' },
-        { name: 'Hire Software Developers', slug: 'hire-software-developer' },
+        { name: 'Staff Augmentation', slug: 'staff-augmentation' },
+        { name: 'Hire Software Developer', slug: 'hire-software-developer' },
         { name: 'IT Outsourcing', slug: 'it-outsourcing' },
         { name: 'Dedicated Development Team', slug: 'dedicated-development-team' },
         { name: 'Offshore Dedicated Centre', slug: 'offshore-dedicated-centre' },
@@ -371,7 +371,6 @@ const servicesData = {
       description: 'Testing desc',
       technologies: [
         { name: 'QA Consulting', slug: 'qa-consulting' },
-        { name: 'Hire Software Developers', slug: 'hire-software-developer' },
         { name: 'Software Testing', slug: 'software-testing' },
         { name: 'Mobile App Testing', slug: 'mobile-app-testing' },
         { name: 'Web App Testing', slug: 'web-app-testing' },
@@ -400,10 +399,10 @@ const servicesData = {
       slug: 'cloud-services',
       description: 'Cloud service',
       technologies: [
+        { name: 'Cloud Application Development', slug: 'cloud-application-development' },
         { name: 'Cloud Strategy & Consulting', slug: 'cloud-strategy-consulting' },
         { name: 'Cloud Migration', slug: 'cloud-migration' },
         { name: 'Devops Integration', slug: 'devops-integration' },
-        { name: 'Cloud Application Development', slug: 'cloud-application-development' },
       ],
       hiring: [
         {
@@ -444,8 +443,6 @@ export default function Header() {
 
   // const { data, isLoading, isError, error } = useGetHeaderMenuQuery()
   // console.log(data, isLoading, error);
-
-
 
 
   const handleScroll = () => {
@@ -680,9 +677,9 @@ export default function Header() {
           </nav>
           <div className="hidden lg:flex items-center space-x-4">
 
-            <button className="bg-orange-500 text-white px-6 py-3 rounded-full text-md font-medium hover:bg-orange-600 transition-colors duration-300">
+            <Link href="tel:+91-9971544661" className="bg-orange-500 text-white px-6 py-3 rounded-full text-md font-medium hover:bg-orange-600 transition-colors duration-300">
               Get in Touch
-            </button>
+            </Link>
 
           </div>
           <div className="lg:hidden flex items-center justify-center">

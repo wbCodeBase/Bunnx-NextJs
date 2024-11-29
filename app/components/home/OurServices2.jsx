@@ -1,85 +1,87 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import { FaLocationArrow } from "react-icons/fa";
+import { Landmark, Book, HeartPulse, Truck, ShoppingCart, Plane, Film, Factory, Home } from 'lucide-react';
 
 const OurServices2 = () => {
     const services = [
         {
             id: 1,
-            title: "Custom Software Development",
-            description: "Tailored solutions to meet your business needs. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam perferendis, pariatur et veniam at maiores, explicabo magni!",
-            imageSrc: "https://cdn-icons-png.flaticon.com/256/8759/8759045.png",
-            link: "/custom-software-development",
+            title: "Finance & Insurance",
+            description: "Empowering financial and insurance businesses with custom software solutions to streamline processes, enhance security, and ensure compliance.",
+            link: "/finance-insurance-solutions",
+            icon: <Landmark size={52} className="text-black" />,
         },
         {
             id: 2,
-            title: "Mobile App Development",
-            description: "Engaging mobile applications for iOS and Android. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam perferendis, pariatur et veniam at maiores, explicabo magni!",
-            imageSrc: "https://cdn-icons-png.flaticon.com/256/8759/8759045.png",
-            link: "/mobile-app-development",
+            title: "Education",
+            description: "Revolutionizing education with interactive e-learning platforms and mobile applications designed to enhance engagement and accessibility.",
+            link: "/education-software-development",
+            icon: <Book size={52} className="text-black" />,
         },
         {
             id: 3,
-            title: "WebApp Development",
-            description: "Responsive and feature-rich websites. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam perferendis, pariatur et veniam at maiores, explicabo magni molestias repellendus dolores aut!",
-            imageSrc: "https://cdn-icons-png.flaticon.com/256/8759/8759045.png",
-            link: "/web-app-development",
+            title: "Healthcare",
+            description: "Delivering innovative healthcare solutions with feature-rich web and mobile applications for improved patient care and operational efficiency.",
+            link: "/healthcare-app-development",
+            icon: <HeartPulse size={52} className="text-black" />,
         },
         {
             id: 4,
-            title: "Ecommerce Development",
-            description: "Responsive and feature-rich websites. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam perferendis, pariatur et veniam at maiores, explicabo magni molestias repellendus dolores aut!",
-            imageSrc: "https://cdn-icons-png.flaticon.com/256/8759/8759045.png",
-            link: "/ecommerce-development",
+            title: "Logistics & Distribution",
+            description: "Streamlining supply chain operations with advanced logistics and distribution software tailored to boost efficiency and tracking capabilities.",
+            link: "/logistics-software-development",
+            icon: <Truck size={52} className="text-black" />,
         },
         {
             id: 5,
-            title: "Ecommerce Development",
-            description: "Responsive and feature-rich websites. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam perferendis, pariatur et veniam at maiores, explicabo magni molestias repellendus dolores aut!",
-            imageSrc: "https://cdn-icons-png.flaticon.com/256/8759/8759045.png",
-            link: "/ecommerce-development",
+            title: "Retail & eCommerce",
+            description: "Creating dynamic and scalable eCommerce solutions to transform your retail business and enhance the shopping experience.",
+            link: "/retail-ecommerce-solutions",
+            icon: <ShoppingCart size={52} className="text-black" />,
         },
         {
             id: 6,
-            title: "Dedicated Technical Team",
-            description: "Responsive and feature-rich websites. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam perferendis, pariatur et veniam at maiores, explicabo magni molestias repellendus dolores aut!",
-            imageSrc: "https://cdn-icons-png.flaticon.com/256/8759/8759045.png",
-            link: "/dedicated-technical-team",
+            title: "Travel & Hospitality",
+            description: "Empowering the travel and hospitality industry with software solutions that elevate customer experiences and operational efficiency.",
+            link: "/travel-hospitality-solutions",
+            icon: <Plane size={52} className="text-black" />,
         },
         {
             id: 7,
-            title: "QA Testing",
-            description: "Responsive and feature-rich websites. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam perferendis, pariatur et veniam at maiores, explicabo magni molestias repellendus dolores aut!",
-            imageSrc: "https://cdn-icons-png.flaticon.com/256/8759/8759045.png",
-            link: "/qa-testing",
+            title: "Communication, Media & Entertainment",
+            description: "Delivering seamless communication and immersive media experiences with cutting-edge software designed for the entertainment industry.",
+            link: "/media-entertainment-solutions",
+            icon: <Film size={52} className="text-black" />,
         },
         {
             id: 8,
-            title: "Cloud Services",
-            description: "Responsive and feature-rich websites. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam perferendis, pariatur et veniam at maiores, explicabo magni molestias repellendus dolores aut!",
-            imageSrc: "https://cdn-icons-png.flaticon.com/256/8759/8759045.png",
-            link: "/cloud-services",
+            title: "Manufacturing",
+            description: "Optimizing manufacturing operations with tailored software solutions for production, inventory management, and supply chain integration.",
+            link: "/manufacturing-software-solutions",
+            icon: <Factory size={52} className="text-black" />,
         },
         {
             id: 9,
-            title: "Hire Dedicated Developers",
-            description: "Responsive and feature-rich websites. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam perferendis, pariatur et veniam at maiores, explicabo magni molestias repellendus dolores aut!",
-            imageSrc: "https://cdn-icons-png.flaticon.com/256/8759/8759045.png",
-            link: "/hire/php-developer",
+            title: "Real Estate & Construction",
+            description: "Innovative software solutions to simplify real estate and construction project management, improve collaboration, and drive growth.",
+            link: "/real-estate-construction-solutions",
+            icon: <Home size={52} className="text-black" />,
         },
     ];
-
+    
     return (
         <>
             <section className="border-t container mx-auto max-w-screen-lg xl:max-w-screen-xl px-4 md:px-6 py-10">
-                <h2 className='font-semibold text-orange-500 text-lg'>Our Services</h2>
-                <h4 className='font-semibold text-3xl my-2'>Software Development & Engineering Services</h4>
-                <p className='text-md text-gray-800'>Whether you require a complex enterprise software solution or seamless software integration, we will convert your ideas into reality with our long-standing, industry-proven IT consulting and bespoke software development services.</p>
+                <h2 className='font-semibold text-orange-500 text-lg'>Industries</h2>
+                <h4 className='font-semibold text-3xl my-2'>Precision Software for Ambitious Businesses</h4>
+                <p className='text-md text-gray-800'>We collaborate with businesses across diverse sectors to understand their unique challenges and goals. Our team designs efficient, scalable software solutions that streamline processes, solve problems, and drive long-term success.</p>
 
-                <div className='flex items-center justify-center flex-wrap gap-10 mt-6'>
+                <div className='flex items-cente justify-center flex-wrap gap-10 mt-6'>
                     {services.map(service => (
                         <div key={service.id} className="border rounded-xl shadow-lg p-4 flex items-center flex-col w-96 text-center relative">
-                            <Image className='h-20' src={service.imageSrc} alt={service.title} width={80} height={80} />
+                            <div className="h-20 flex items-center justify-center">
+                                {service.icon}
+                            </div>
                             <h3 className='font-semibold my-3 text-lg'>{service.title}</h3>
                             <p>{service.description}</p>
                             <Link

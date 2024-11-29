@@ -1,13 +1,41 @@
-import React from 'react'
+"use client"
+
+import React, { useState } from 'react'
 import './layout.css'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Linkedin, Twitter, Facebook, Youtube, Instagram } from 'lucide-react'
 
+
+import { useSubmitContactFormMutation } from '../../../store/api/myApi';
+
+
 import bigLogo from "/public/big-logo.png"
 
 
 const Footer = () => {
+    const [formData, setFormData] = useState({ name: '', phone: '', email: '', message: '' });
+    const [submitContactForm, { isLoading, isSuccess, isError, error }] = useSubmitContactFormMutation();
+
+    const handleChange = (e) => {
+        const { id, value } = e.target;
+        setFormData((prev) => ({ ...prev, [id]: value }));
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        
+        try {
+            await submitContactForm(formData).unwrap();
+            alert('Form submitted successfully!');
+            setFormData({ name: '', phone: '', email: '', message: '' })
+        } catch (err) {
+            alert('Error submitting form: ' + err.message);
+        }
+    };
+
+    
+
     return (
         <>
 
@@ -24,36 +52,36 @@ const Footer = () => {
                                     <span className='text-white text-3xl block lg:tracking-wide mb-4 text-center font-semibold'>Let&apos;s Talk</span>
 
 
-                                    <form className='flex gap-4 flex-col'>
 
-                                        <div>
-                                            <label className='text-white' htmlFor="name">Name</label>
-                                            <input id='name' placeholder='Enter you name' className='w-full rounded-lg p-2.5 mt-1' type="text" />
+
+
+                                    <form onSubmit={handleSubmit} className="flex gap-4 flex-col">
+                                        {['name', 'phone', 'email', 'message'].map((field) => (
+                                            <div key={field}>
+                                                <label className="text-white" htmlFor={field}>
+                                                    {field.charAt(0).toUpperCase() + field.slice(1)}
+                                                </label>
+                                                <input
+                                                    id={field}
+                                                    type={field === 'message' ? 'textarea' : 'text'}
+                                                    placeholder={`Enter your ${field}`}
+                                                    value={formData[field]}
+                                                    onChange={handleChange}
+                                                    className="w-full rounded-lg p-2.5 mt-1"
+                                                />
+                                            </div>
+                                        ))}
+                                      <div>  
+                                          {isSuccess && <p className="text-white">Form submitted successfully!</p>}
+                                          {isError && <p className="text-white">Error: {error?.data?.error || 'Something went wrong'}</p>}
+                                        <button
+                                            type="submit"
+                                            className="text-base mt-4 lg:text-lg tracking-widest border-2 px-6 lg:px-8 py-3 lg:py-3 inline-block duration-200 border-white rounded-lg hover:bg-white text-white hover:text-[#ee076e]"
+                                            disabled={isLoading}
+                                        >
+                                            {isLoading ? 'Submitting...' : 'Submit'}
+                                        </button>
                                         </div>
-
-                                        <div>
-                                            <label className='text-white' htmlFor="phone">Phone no.</label>
-                                            <input id='phone' placeholder='Enter you phone' className='w-full rounded-lg p-2.5 mt-1' type="text" />
-                                        </div>
-
-                                        <div>
-                                            <label className='text-white' htmlFor="email">Email</label>
-                                            <input id='email' placeholder='Enter you email' className='w-full rounded-lg p-2.5 mt-1' type="text" />
-                                        </div>
-
-                                        <div>
-                                            <label className='text-white' htmlFor="message">Message</label>
-                                            <textarea id='message' placeholder='Type your concern here' className='w-full rounded-lg p-2 mt-1' type="text" />
-                                        </div>
-
-                                        <div className='flex items-center justify-center md:justify-start mt-2'>
-                                            <button type='submit' className="text-base lg:text-lg tracking-widest border-2 px-6 lg:px-8 py-3 lg:py-3 inline-block duration-200 border-white rounded-lg hover:bg-white text-white hover:text-[#ee076e]">
-                                                <span className=''>SUBMIT</span>
-                                            </button>
-                                        </div>
-
-
-
                                     </form>
 
 

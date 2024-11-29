@@ -127,6 +127,17 @@ export const myApi = createApi({
     }),
     // Header Menu Hook End
 
+    submitContactForm: builder.mutation({
+      query: (formData) => ({
+        url: 'contact',
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      }),
+    }),
+
   }),
 });
 
@@ -135,6 +146,8 @@ export const {
   useCreateActiveSlugMutation,
   useUpdateActiveSlugMutation,
   useDeleteActiveSlugMutation,
+
+  useSubmitContactFormMutation,
 
   useUpdateComponentContentMutation,
   useDeleteComponentContentMutation,
