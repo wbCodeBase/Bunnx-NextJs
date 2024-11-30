@@ -21,9 +21,9 @@ const WhyChooseUs = () => {
 
                         <div className='p-6'>
 
-                            <h2 className='font-semibold text-orange-500 text-md'>Why Choose Us</h2>
-                            <h4 className='font-semibold text-xl my-2'>Empowering Your Vision with Expert Development</h4>
-                            <p className='text-md text-gray-800'>Expert solutions tailored to your needs. We deliver quality, scalable, and innovative platforms with seamless collaboration and ongoing support to ensure your business thrives.</p>
+                            <h2 className='font-semibold text-orange-500 text-md'>Our Team</h2>
+                            <h4 className='font-semibold text-xl my-2'>Driven by Passion, Empowered by Expertise</h4>
+                            <p className='text-md text-gray-800'>Our team consists of industry experts who are committed to delivering innovative solutions. We work collaboratively to ensure every project exceeds expectations, combining technical prowess with a client-first approach.</p>
 
                         </div>
 
@@ -43,16 +43,16 @@ const WhyChooseUs = () => {
                                 ></div>
 
                                 <div className="flex flex-col items-center group-hover:text-white justify-cente h-ful">
-                                    <h3 className="text-xl font-semibold mb-2 z-10">Seamless Collaboration</h3>
-                                    <p className="text-center group-hover:opacity-0 opacity-100 transition-opacity duration-300">Transparent and clear Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad itaque perferendis dolorum at. Mollitia non quos harum quasi porro? Commodi!</p>
+                                    <h3 className="text-xl font-semibold mb-2 z-10">Client-Centric</h3>
+                                    <p className="text-center group-hover:opacity-0 opacity-100 transition-opacity duration-300">We prioritize your goals, delivering tailored solutions and personalized support to ensure every project aligns with your vision and business needs.</p>
                                 </div>
                                 <ul className="absolute px-10 font-medium text-md inset-0 flex group-hover:text-white flex-col items-cente mt6 justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                    <li className="mb-2">- Regular Updates</li>
-                                    <li className="mb-2">- Clear Communication</li>
-                                    <li className="mb-2">- Flexible Process</li>
+                                    <li className="mb-2">- Tailored Solutions</li>
+                                    <li className="mb-2">- Personalized Support</li>
+                                    <li className="mb-2">- Vision Alignment</li>
                                 </ul>
 
-                                <Link className='flex z-10 border items-center justify-center gap-2 bg[#261E80] p-1 font-medium text-sm bg-orange-500 group-hover:bg-black rounded-full mt-4 text-white' href="/services/mobile-app"><span className='bg-white rounded-full p-2 text-black'> <FaLocationArrow /> </span></Link>
+                                {/* <Link className='flex z-10 border items-center justify-center gap-2 bg[#261E80] p-1 font-medium text-sm bg-orange-500 group-hover:bg-black rounded-full mt-4 text-white' href="/services/mobile-app"><span className='bg-white rounded-full p-2 text-black'> <FaLocationArrow /> </span></Link> */}
 
                             </div>
 
@@ -64,16 +64,16 @@ const WhyChooseUs = () => {
                                 ></div>
 
                                 <div className="flex flex-col items-center group-hover:text-white justify-cente h-ful">
-                                    <h3 className="text-xl font-semibold mb-2 z-10">Seamless Collaboration</h3>
-                                    <p className="text-center group-hover:opacity-0 opacity-100 transition-opacity duration-300">Transparent and clear Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad itaque perferendis dolorum at. Mollitia non quos harum quasi porro? Commodi!</p>
+                                    <h3 className="text-xl font-semibold mb-2 z-10">Innovative Solutions</h3>
+                                    <p className="text-center group-hover:opacity-0 opacity-100 transition-opacity duration-300">Leverage cutting-edge technologies, advanced tools, and scalable platforms to gain a competitive edge and drive your business forward effectively.</p>
                                 </div>
                                 <ul className="absolute px-10 font-medium text-md inset-0 flex group-hover:text-white flex-col items-cente mt6 justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                    <li className="mb-2">- Regular Updates</li>
-                                    <li className="mb-2">- Clear Communication</li>
-                                    <li className="mb-2">- Flexible Process</li>
+                                    <li className="mb-2">- Advanced Tools</li>
+                                    <li className="mb-2">- Scalable Platforms</li>
+                                    <li className="mb-2">- Competitive Edge</li>
                                 </ul>
 
-                                <Link className='flex z-10 border items-center justify-center gap-2 bg[#261E80] p-1 font-medium text-sm bg-orange-500 group-hover:bg-black rounded-full mt-4 text-white' href="/services/mobile-app"><span className='bg-white rounded-full p-2 text-black'> <FaLocationArrow /> </span></Link>
+                                {/* <Link className='flex z-10 border items-center justify-center gap-2 bg[#261E80] p-1 font-medium text-sm bg-orange-500 group-hover:bg-black rounded-full mt-4 text-white' href="/services/mobile-app"><span className='bg-white rounded-full p-2 text-black'> <FaLocationArrow /> </span></Link> */}
 
                             </div>
 
@@ -85,16 +85,16 @@ const WhyChooseUs = () => {
                                 ></div>
 
                                 <div className="flex flex-col items-center group-hover:text-white justify-cente h-ful">
-                                    <h3 className="text-xl font-semibold mb-2 z-10">Seamless Collaboration</h3>
-                                    <p className="text-center group-hover:opacity-0 opacity-100 transition-opacity duration-300">Transparent and clear Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad itaque perferendis dolorum at. Mollitia non quos harum quasi porro? Commodi!</p>
+                                    <h3 className="text-xl font-semibold mb-2 z-10">Expertise You Can Trust</h3>
+                                    <p className="text-center group-hover:opacity-0 opacity-100 transition-opacity duration-300">With years of proven experience, our team delivers industry-leading solutions designed to meet your unique challenges and achieve measurable results.</p>
                                 </div>
                                 <ul className="absolute px-10 font-medium text-md inset-0 flex group-hover:text-white flex-col items-cente mt6 justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                    <li className="mb-2">- Regular Updates</li>
-                                    <li className="mb-2">- Clear Communication</li>
-                                    <li className="mb-2">- Flexible Process</li>
+                                    <li className="mb-2">- Proven Track Record</li>
+                                    <li className="mb-2">- Industry Knowledge</li>
+                                    <li className="mb-2">- Result-Oriented</li>
                                 </ul>
 
-                                <Link className='flex z-10 border items-center justify-center gap-2 bg[#261E80] p-1 font-medium text-sm bg-orange-500 group-hover:bg-black rounded-full mt-4 text-white' href="/services/mobile-app"><span className='bg-white rounded-full p-2 text-black'> <FaLocationArrow /> </span></Link>
+                                {/* <Link className='flex z-10 border items-center justify-center gap-2 bg[#261E80] p-1 font-medium text-sm bg-orange-500 group-hover:bg-black rounded-full mt-4 text-white' href="/services/mobile-app"><span className='bg-white rounded-full p-2 text-black'> <FaLocationArrow /> </span></Link> */}
 
                             </div>
 
@@ -107,16 +107,16 @@ const WhyChooseUs = () => {
                                 ></div>
 
                                 <div className="flex flex-col items-center group-hover:text-white justify-cente h-ful">
-                                    <h3 className="text-xl font-semibold mb-2 z-10">Seamless Collaboration</h3>
-                                    <p className="text-center group-hover:opacity-0 opacity-100 transition-opacity duration-300">Transparent and clear Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad itaque perferendis dolorum at. Mollitia non quos harum quasi porro? Commodi!</p>
+                                    <h3 className="text-xl font-semibold mb-2 z-10">Reliable Support</h3>
+                                    <p className="text-center group-hover:opacity-0 opacity-100 transition-opacity duration-300">Enjoy 24/7 proactive monitoring, assistance, and quick resolutions to keep your systems running smoothly and ensure peace of mind at all times.</p>
                                 </div>
                                 <ul className="absolute px-10 font-medium text-md inset-0 flex group-hover:text-white flex-col items-cente mt6 justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                    <li className="mb-2">- Regular Updates</li>
-                                    <li className="mb-2">- Clear Communication</li>
-                                    <li className="mb-2">- Flexible Process</li>
+                                    <li className="mb-2">- 24/7 Assistance</li>
+                                    <li className="mb-2">- Proactive Monitoring</li>
+                                    <li className="mb-2">- Quick Resolutions</li>
                                 </ul>
 
-                                <Link className='flex z-10 border items-center justify-center gap-2 bg[#261E80] p-1 font-medium text-sm bg-orange-500 group-hover:bg-black rounded-full mt-4 text-white' href="/services/mobile-app"><span className='bg-white rounded-full p-2 text-black'> <FaLocationArrow /> </span></Link>
+                                {/* <Link className='flex z-10 border items-center justify-center gap-2 bg[#261E80] p-1 font-medium text-sm bg-orange-500 group-hover:bg-black rounded-full mt-4 text-white' href="/services/mobile-app"><span className='bg-white rounded-full p-2 text-black'> <FaLocationArrow /> </span></Link> */}
 
                             </div>
 

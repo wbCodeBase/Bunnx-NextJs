@@ -47,6 +47,12 @@ const solutions = [
         title: "Workforce Management",
         description: "Automate invoicing and billing processes with secure, accurate, and customizable billing systems."
     },
+    {
+        id: 8,
+        image: cloudMigration,
+        title: "Fleet Management",
+        description: "Automate invoicing and billing processes with secure, accurate, and customizable billing systems."
+    },
 ];
 
 const IndustryWeServed = () => {
