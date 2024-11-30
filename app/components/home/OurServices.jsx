@@ -24,10 +24,7 @@ const techStackData = {
                 
                 { "name": "IT Consulting", "description": "Software Outsourcing", "slug": "it-consulting" },
                 { "name": "Agile Consulting", "description": "Optimizing customer relations", "slug": "agile-consulting" },
-                // { "name": "Enterprise Software", "description": "Powering enterprise growth", "slug": "enterprise-software" },
-                // { "name": "Software Re-Engineering", "description": "Building market-ready software", "slug": "software-product-engineering" },
-                // { "name": "Software Support & Maintenance", "description": "Building market-ready software", "slug": "software-product-engineering" },
-            ]
+                          ]
         },
         "Application Development": {
             "title": "Application Development",

@@ -11,6 +11,7 @@ import IndustryWeServed from "@/components/home/IndustryWeServed";
 import TechStackExpertise from "@/components/home/TechStackExpertise";
 import CtaSection from "@/components/home/CtaSection";
 import CtaSectionMain from "@/components/layout/CtaSectionMain";
+import CtaSectionMainOne from "@/components/layout/CtaSectionMainOne";
 import CtaSection3 from "@/components/home/CtaSection3";
 import BasicComponent from "@/components/home/BasicComponent";
 import Faqs from "@/components/layout/Faqs";
@@ -39,7 +40,7 @@ export default function Home() {
 
       <OurServices />
       
-      <CtaSectionMain />
+      <CtaSectionMainOne />
 
       <OurServices2 />
 
@@ -47,13 +48,13 @@ export default function Home() {
 
       <CtaSection />
 
-      <TechStackExpertise />
-
       <IndustryWeServed />
 
-      <WhyChooseUs />
+      <TechStackExpertise />
 
       <CtaSectionMain />
+
+      <WhyChooseUs />
 
       <CaseStudiesnProjects />
 

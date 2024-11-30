@@ -1,6 +1,6 @@
 import React from 'react'
-
 import Image from 'next/image';
+import Link from "next/link";
 
 const CtaSection3 = () => {
     return (
@@ -16,9 +16,9 @@ const CtaSection3 = () => {
                             <h2>Your Success, Our Priority</h2>
                             <p className='text-3xl font-semibold'>Boost Your Business with Reliable Web Apps</p>
                             <p>From design to deployment, we provide innovative solutions to help your business thrive.</p>
-                            <button className="px-6 mt-4 py-3 bg-white/30 backdrop-blur-md text-white font-semibold rounded-full shadow-md hover:bg-white/40 transition duration-300 border border-white/20">
+                            <Link href="tel:+91-9971544661" className="px-6 mt-4 py-3 bg-white/30 backdrop-blur-md text-white font-semibold rounded-full shadow-md hover:bg-white/40 transition duration-300 border border-white/20">
                                 Contact Us Now
-                            </button>
+                            </Link>
                         </div>
 
                         <div className='xl:w-[48%] w-full flex justify-center items-center'>
