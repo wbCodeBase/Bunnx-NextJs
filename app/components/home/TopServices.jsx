@@ -51,7 +51,7 @@ const TopServices = () => {
 
                     <div className="borde rounded-xl p4 flex justify-center items-center flex-col text-center relative">
 
-                        <Image src={"/wall.jpg"} className='rounded-xl' alt="component image" width={500} height={400} />
+                        <Image src={"/basicComponent/wall.jpg"} className='rounded-xl' alt="component image" width={500} height={400} />
 
                        {/* <Link className='flex items-center justify-center gap-2 bg[#261E80] p-1 pl-3 font-medium text-sm bg-orange-500 rounded-full mt-4 text-white' href="/services/mobile-app"><span> Learn more </span> <span className='bg-white rounded-full p-2 text-black'> <FaLocationArrow /> </span></Link> */}
                     </div>
