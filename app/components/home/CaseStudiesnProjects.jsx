@@ -8,7 +8,6 @@ const CaseStudiesnProjects = () => {
     return (
         <>
 
-
             <section className="container mx-auto max-w-screen-lg xl:max-w-screen-xl px-4 md:px-6 py-10">
 
 
@@ -17,7 +16,7 @@ const CaseStudiesnProjects = () => {
 
 
                     <div className="borde rounded-xl p4 flex justify-center items-center flex-col text-center relative">
-                        <Image src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/61cd87177372363.64d4e5b1b085c.png" alt="component image" width={500} height={400} />
+                        <Image src={"/basicComponent/bugCicd.jpg"} className='rounded-xl' alt="component image" width={500} height={400} />
 
                         {/* <Link className='flex items-center justify-center gap-2 bg[#261E80] p-1 pl-3 font-medium text-sm bg-orange-500 rounded-full mt-4 text-white' href="/services/mobile-app"><span> Learn more </span> <span className='bg-white rounded-full p-2 text-black'> <FaLocationArrow /> </span></Link> */}
                     </div>
@@ -25,30 +24,30 @@ const CaseStudiesnProjects = () => {
 
                     <div className="rounded-xl px4">
                         {/* <h2 className='font-semibold text-orange-500 text-lg'>Our Success Stories</h2> */}
-                        <h4 className='font-semibold sm:text-3xl text-2xl my-2'>Transforming Dreams into Achievements</h4>
-                        <p className='text-md text-gray-800'>Every success story reflects determination and collaboration. Every success story reflects determination and collaboration.</p>
+                        <h4 className='font-semibold sm:text-3xl text-2xl my-2'>How We Ensure Code Quality</h4>
+                        <p className='text-md text-gray-800'>We prioritize code quality with rigorous testing, detailed reviews, and best practices to deliver reliable, long-lasting software.</p>
 
 
                         <div className='grid gap-4 mt-6 grid-cols-1 px-4'>
                             <div className="">
                                 {/* <span><SiApacheguacamole className='text-purple-500' /></span> */}
                                 <span><DiDatabase className='text-purple-500 text-xl' /></span>
-                                <h5 className='font-semibold my-1'>Real Time Data</h5>
-                                <p className='text-sm text-gray-500 font-normal'>Every success story reflects design by Abhishek Kashyap</p>
+                                <h5 className='font-semibold my-1'>Unit Testing</h5>
+                                <p className='text-sm text-gray-500 font-normal'>Ensure functionality with robust and precise test cases.</p>
                             </div>
                             <hr />
                             <div className="">
                                 <span><MdShield className='text-red-500 text-xl' /></span>
                                 {/* <span><MdOutlineSecurity className='text-red-500 text-xl' /></span> */}
-                                <h5 className='font-semibold my-1'>Real Time Data</h5>
-                                <p className='text-sm text-gray-500 font-normal'>Every success story reflects design by Abhishek Kashyap</p>
+                                <h5 className='font-semibold my-1'>Code Review Practices</h5>
+                                <p className='text-sm text-gray-500 font-normal'>Enhance code quality through meticulous peer reviews.</p>
                             </div>
                             <hr />
 
                             <div className="">
                                 <span><CgMonday className='text-yellow-500 text-xl' /></span>
-                                <h5 className='font-semibold my-1'>Real Time Data</h5>
-                                <p className='text-sm text-gray-500 font-normal'>Every success story reflects design by Abhishek Kashyap</p>
+                                <h5 className='font-semibold my-1'>Code Quality Metrics</h5>
+                                <p className='text-sm text-gray-500 font-normal'>Measure and improve software standards with key insights.</p>
                             </div>
 
                             {/* <div className="">

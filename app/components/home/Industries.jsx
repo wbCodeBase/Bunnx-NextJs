@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { FaLocationArrow } from "react-icons/fa";
 import { Landmark, Book, HeartPulse, Truck, ShoppingCart, Plane, Film, Factory, Home } from 'lucide-react';
 
-const OurServices2 = () => {
+const Industries = () => {
     const services = [
         {
             id: 1,
@@ -71,7 +71,7 @@ const OurServices2 = () => {
     
     return (
         <>
-            <section className="border-t container mx-auto max-w-screen-lg xl:max-w-screen-xl px-4 md:px-6 py-10">
+            <section className="container mx-auto max-w-screen-lg xl:max-w-screen-xl px-4 md:px-6 py-10">
                 <h2 className='font-semibold text-orange-500 text-lg'>Industries</h2>
                 <h4 className='font-semibold text-3xl my-2'>Precision Software for Ambitious Businesses</h4>
                 <p className='text-md text-gray-800'>We collaborate with businesses across diverse sectors to understand their unique challenges and goals. Our team designs efficient, scalable software solutions that streamline processes, solve problems, and drive long-term success.</p>
@@ -101,4 +101,4 @@ const OurServices2 = () => {
     );
 };
 
-export default OurServices2;
+export default Industries;

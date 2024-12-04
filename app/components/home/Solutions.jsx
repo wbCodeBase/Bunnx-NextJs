@@ -1,31 +1,37 @@
 import Image from 'next/image';
 import cloudMigration from "/public/cloud-migration.png";
-import arVrIntegration from "/public/ar-vr-integration.png";
-import legacySoftwareModernisation from "/public/legacy-software-modernisation.png";
-import enterpriseGradeCyberSecurity from "/public/enterprise-grade-cyber-security.png";
+import crm from "/public/industry/crm.jpg";
+import HRMan from "/public/industry/HRMan.jpeg";
+import FleetManagement from "/public/industry/FleetManagement.jpg";
+import workForceM from "/public/industry/workForceM.jpg";
+import scm from "/public/industry/scm.jpg";
+import operationManagement from "/public/industry/operationManagement.jpg";
+import assetManagement from "/public/industry/assetManagement.webp";
+// import legacySoftwareModernisation from "/public/legacy-software-modernisation.png";
+// import enterpriseGradeCyberSecurity from "/public/enterprise-grade-cyber-security.png";
 
 const solutions = [
     {
         id: 1,
-        image: cloudMigration,
+        image: crm,
         title: "CRM Solutions",
         description: "Streamline customer interactions, manage leads, and boost sales with robust Customer Relationship Management."
     },
     {
         id: 2,
-        image: cloudMigration,
+        image: HRMan,
         title: "HR Management",
         description: "Simplify HR operations with solutions for recruitment, payroll, and employee management, tailored to your business."
     },
     {
         id: 3,
-        image: legacySoftwareModernisation,
+        image: scm,
         title: "Supply Chain Management",
         description: "Optimize your supply chain processes with intelligent tools for inventory, logistics, and procurement management."
     },
     {
         id: 4,
-        image: enterpriseGradeCyberSecurity,
+        image: operationManagement,
         title: "Operation Management",
         description: "Enhance operational efficiency with data-driven solutions for resource planning, production, and workflow automation."
     },
@@ -37,25 +43,25 @@ const solutions = [
     },
     {
         id: 6,
-        image: cloudMigration,
+        image: assetManagement,
         title: "Asset Management",
         description: "Automate invoicing and billing processes with secure, accurate, and customizable billing systems."
     },
     {
         id: 7,
-        image: cloudMigration,
+        image: workForceM,
         title: "Workforce Management",
         description: "Automate invoicing and billing processes with secure, accurate, and customizable billing systems."
     },
     {
         id: 8,
-        image: cloudMigration,
+        image: FleetManagement,
         title: "Fleet Management",
         description: "Automate invoicing and billing processes with secure, accurate, and customizable billing systems."
     },
 ];
 
-const IndustryWeServed = () => {
+const Solutions = () => {
     return (
         <section className="border-t bg-[#00214E] px-4 md:px-6 py-6">
             <div className='container mx-auto max-w-screen-lg xl:max-w-screen-xl px-0 md:px-6 md:py-8'>
@@ -86,4 +92,4 @@ const IndustryWeServed = () => {
     );
 };
 
-export default IndustryWeServed;
+export default Solutions;

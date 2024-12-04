@@ -4,16 +4,16 @@
 import NumericCounterInfo from "@/components/layout/NumericCounterInfo";
 import HeroSection from "@/components/layout/HeroSection";
 import OurServices from "@/components/home/OurServices";
-import OurServices2 from "@/components/home/OurServices2";
+import Industries from "@/components/home/Industries";
 import CaseStudiesnProjects from "@/components/home/CaseStudiesnProjects";
 import WhyChooseUs from "@/components/home/WhyChooseUs";
-import IndustryWeServed from "@/components/home/IndustryWeServed";
+import Solutions from "@/components/home/Solutions";
 import TechStackExpertise from "@/components/home/TechStackExpertise";
 import CtaSection from "@/components/home/CtaSection";
 import CtaSectionMain from "@/components/layout/CtaSectionMain";
 import CtaSectionMainOne from "@/components/layout/CtaSectionMainOne";
 import CtaSection3 from "@/components/home/CtaSection3";
-import BasicComponent from "@/components/home/BasicComponent";
+import TopServices from "@/components/home/TopServices";
 import Faqs from "@/components/layout/Faqs";
 import Testimonial from "@/components/home/Testimonial";
 
@@ -42,13 +42,13 @@ export default function Home() {
       
       <CtaSectionMainOne />
 
-      <OurServices2 />
-
-      <BasicComponent />
+      <Industries />
 
       <CtaSection />
 
-      <IndustryWeServed />
+      <TopServices />
+
+      <Solutions />
 
       <TechStackExpertise />
 
