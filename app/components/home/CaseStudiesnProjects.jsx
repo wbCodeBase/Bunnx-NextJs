@@ -2,7 +2,9 @@ import React from 'react'
 import Image from 'next/image';
 import { MdShield } from "react-icons/md";
 import { CgMonday } from "react-icons/cg";
-import { DiDatabase } from "react-icons/di";
+import { IoBarcode } from "react-icons/io5";
+import { FaClipboardCheck } from "react-icons/fa6";
+import { FaLaptopCode } from "react-icons/fa";
 
 const CaseStudiesnProjects = () => {
     return (
@@ -31,13 +33,13 @@ const CaseStudiesnProjects = () => {
                         <div className='grid gap-4 mt-6 grid-cols-1 px-4'>
                             <div className="">
                                 {/* <span><SiApacheguacamole className='text-purple-500' /></span> */}
-                                <span><DiDatabase className='text-purple-500 text-xl' /></span>
+                                <span><FaClipboardCheck className='text-purple-500 text-xl' /></span>
                                 <h5 className='font-semibold my-1'>Unit Testing</h5>
                                 <p className='text-sm text-gray-500 font-normal'>Ensure functionality with robust and precise test cases.</p>
                             </div>
                             <hr />
                             <div className="">
-                                <span><MdShield className='text-red-500 text-xl' /></span>
+                                <span><FaLaptopCode className='text-red-500 text-xl' /></span>
                                 {/* <span><MdOutlineSecurity className='text-red-500 text-xl' /></span> */}
                                 <h5 className='font-semibold my-1'>Code Review Practices</h5>
                                 <p className='text-sm text-gray-500 font-normal'>Enhance code quality through meticulous peer reviews.</p>
@@ -45,7 +47,7 @@ const CaseStudiesnProjects = () => {
                             <hr />
 
                             <div className="">
-                                <span><CgMonday className='text-yellow-500 text-xl' /></span>
+                                <span><MdShield className='text-yellow-500 text-xl' /></span>
                                 <h5 className='font-semibold my-1'>Code Quality Metrics</h5>
                                 <p className='text-sm text-gray-500 font-normal'>Measure and improve software standards with key insights.</p>
                             </div>

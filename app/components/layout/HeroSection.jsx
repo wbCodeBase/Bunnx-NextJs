@@ -3,7 +3,8 @@
 import Image from "next/image"; 
 import Link from "next/link";
 
-import heroDefault from "/public/heroDefault.png"
+// import heroDefault from "/public/heroDefault.png"
+import heroDefault from "/public/brodbot.jpg"
 
 import { FaLocationArrow } from "react-icons/fa";
 
