@@ -14,27 +14,43 @@ import bigLogo from "/public/big-logo.png"
 
 
 const Footer = () => {
-    const [formData, setFormData] = useState({ name: '', phone: '', email: '', message: '' });
+    const [formData, setFormData] = useState({ name: '', phone: '', email: '', message: '', activeLead: true });
     const [submitContactForm, { isLoading, isSuccess, isError, error }] = useSubmitContactFormMutation();
+
 
     const handleChange = (e) => {
         const { id, value } = e.target;
+
+        // Validate phone number input to allow only digits and ensure it doesn't exceed 10 characters
+        if (id === 'phone') {
+            if (!/^\d*$/.test(value)) return; // Prevent non-digit input
+            if (value.length > 10) return; // Limit to 10 digits
+        }
+
         setFormData((prev) => ({ ...prev, [id]: value }));
     };
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        
+
+        // Additional validation to ensure phone number has exactly 10 digits
+        if (formData.phone.length !== 10) {
+            alert('Please enter a valid 10-digit phone number.');
+            return;
+        }
+
         try {
             await submitContactForm(formData).unwrap();
             alert('Form submitted successfully!');
-            setFormData({ name: '', phone: '', email: '', message: '' })
+            setFormData({ name: '', phone: '', email: '', message: '' });
         } catch (err) {
-            alert('Error submitting form: ' + err.message);
+            console.log(err);
+            alert('Error submitting form: ' + err.data.error);
         }
     };
 
-    
+
+
 
     return (
         <>
@@ -53,34 +69,43 @@ const Footer = () => {
 
 
 
-
-
                                     <form onSubmit={handleSubmit} className="flex gap-4 flex-col">
                                         {['name', 'phone', 'email', 'message'].map((field) => (
                                             <div key={field}>
                                                 <label className="text-white" htmlFor={field}>
                                                     {field.charAt(0).toUpperCase() + field.slice(1)}
                                                 </label>
-                                                <input
-                                                    id={field}
-                                                    type={field === 'message' ? 'textarea' : 'text'}
-                                                    placeholder={`Enter your ${field}`}
-                                                    value={formData[field]}
-                                                    onChange={handleChange}
-                                                    className="w-full rounded-lg p-2.5 mt-1"
-                                                />
+                                                {field === 'message' ? (
+                                                    <textarea
+                                                        id={field}
+                                                        placeholder={`Enter your ${field}`}
+                                                        value={formData[field]}
+                                                        onChange={handleChange}
+                                                        className="w-full rounded-lg p-2.5 mt-1"
+                                                    />
+                                                ) : (
+                                                    <input
+                                                        id={field}
+                                                        type="text"
+                                                        placeholder={`Enter your ${field}`}
+                                                        value={formData[field]}
+                                                        onChange={handleChange}
+                                                        className="w-full rounded-lg p-2.5 mt-1"
+                                                    />
+                                                )}
                                             </div>
                                         ))}
-                                      <div>  
-                                          {isSuccess && <p className="text-white">Form submitted successfully!</p>}
-                                          {isError && <p className="text-white">Error: {error?.data?.error || 'Something went wrong'}</p>}
-                                        <button
-                                            type="submit"
-                                            className="text-base mt-4 lg:text-lg tracking-widest border-2 px-6 lg:px-8 py-3 lg:py-3 inline-block duration-200 border-white rounded-lg hover:bg-white text-white hover:text-[#ee076e]"
-                                            disabled={isLoading}
-                                        >
-                                            {isLoading ? 'Submitting...' : 'Submit'}
-                                        </button>
+
+                                        <div>
+                                            {isSuccess && <p className="text-white">Form submitted successfully!</p>}
+                                            {isError && <p className="text-white">Error: {error?.data?.error || 'Something went wrong'}</p>}
+                                            <button
+                                                type="submit"
+                                                className="text-base mt-4 lg:text-lg tracking-widest border-2 px-6 lg:px-8 py-3 lg:py-3 inline-block duration-200 border-white rounded-lg hover:bg-white text-white hover:text-[#ee076e]"
+                                                disabled={isLoading}
+                                            >
+                                                {isLoading ? 'Submitting...' : 'Submit'}
+                                            </button>
                                         </div>
                                     </form>
 
@@ -125,46 +150,45 @@ const Footer = () => {
                                     <div>
                                         <h3 className="text-md font-medium mb-4">Who we are</h3>
                                         <ul className="space-y-2 text-gray-400 text-sm">
-                                            <li><Link href="/about" className="text-gray-300 hover:text-white">About Us</Link></li>
-                                            <li><Link href="/founder" className="text-gray-300 hover:text-white">Founder</Link></li>
+                                            <li><Link href="/about-us" className="text-gray-300 hover:text-white">About Us</Link></li>
+                                            {/* <li><Link href="/founder" className="text-gray-300 hover:text-white">Founder</Link></li>
                                             <li><Link href="/testimonials" className="text-gray-300 hover:text-white">Testimonials</Link></li>
-                                            <li><Link href="/faqs" className="text-gray-300 hover:text-white">FAQs</Link></li>
+                                            <li><Link href="/faqs" className="text-gray-300 hover:text-white">FAQs</Link></li> */}
                                         </ul>
                                     </div>
                                     <div>
                                         <h3 className="text-md font-medium mb-4">Resources</h3>
                                         <ul className="space-y-2 text-gray-400 text-sm">
-                                            <li><Link href="/blog" className="text-gray-300 hover:text-white">Blog</Link></li>
-                                            <li><Link href="/guides" className="text-gray-300 hover:text-white">Guides</Link></li>
-                                            <li><Link href="/case-studies" className="text-gray-300 hover:text-white">Case Studies</Link></li>
+                                            <li><Link href="#" className="text-gray-300 hover:text-white">Blog</Link></li>
+                                            <li><Link href="#" className="text-gray-300 hover:text-white">Guides</Link></li>
+                                            <li><Link href="#" className="text-gray-300 hover:text-white">Case Studies</Link></li>
                                         </ul>
                                     </div>
                                 </div>
 
                                 {/* Digital Transformation Section */}
                                 <div>
-                                    <h3 className="text-md font-medium mb-4">Digital Transformation</h3>
+                                    <h3 className="text-md font-medium mb-4">Services</h3>
                                     <ul className="space-y-2 text-gray-400 text-sm">
-                                        <li><Link href="/ai-transformation" className="text-gray-300 hover:text-white">AI-powered Transformation</Link></li>
-                                        <li><Link href="/blockchain" className="text-gray-300 hover:text-white">Blockchain-led Decentralization</Link></li>
-                                        <li><Link href="/cloud" className="text-gray-300 hover:text-white">Cloud Migration</Link></li>
-                                        <li><Link href="/ar-vr" className="text-gray-300 hover:text-white">AR/VR Integration</Link></li>
-                                        <li><Link href="/cybersecurity" className="text-gray-300 hover:text-white">Enterprise-Grade Cybersecurity</Link></li>
-                                        <li><Link href="/modernization" className="text-gray-300 hover:text-white">Legacy Software Modernization</Link></li>
+                                        <li><Link href="/software-development" className="text-gray-300 hover:text-white">Software Development</Link></li>
+                                        <li><Link href="/application-development" className="text-gray-300 hover:text-white">Application Development</Link></li>
+                                        <li><Link href="/cloud-services" className="text-gray-300 hover:text-white">Cloud Services</Link></li>
+                                        <li><Link href="/ecommerce-development" className="text-gray-300 hover:text-white">Ecommerce Development</Link></li>
+                                        <li><Link href="/qa-testing" className="text-gray-300 hover:text-white">QA Testing</Link></li>
+                                        <li><Link href="/dedicated-technical-team" className="text-gray-300 hover:text-white">Dedicated Technical-Team</Link></li>
                                     </ul>
                                 </div>
 
                                 {/* Industries Section */}
                                 <div className='sm:ml-12 ml-0'>
-                                    <h3 className="text-md font-medium mb-4">Industries</h3>
+                                    <h3 className="text-md font-medium mb-4">Hire</h3>
                                     <ul className="space-y-2 text-gray-400 text-sm">
-                                        <li><Link href="/healthcare" className="text-gray-300 hover:text-white">Healthcare</Link></li>
-                                        <li><Link href="/logistics" className="text-gray-300 hover:text-white">Logistics</Link></li>
-                                        <li><Link href="/ecommerce" className="text-gray-300 hover:text-white">eCommerce</Link></li>
-                                        <li><Link href="/entertainment" className="text-gray-300 hover:text-white">Entertainment</Link></li>
-                                        <li><Link href="/travel" className="text-gray-300 hover:text-white">Travel</Link></li>
-                                        <li><Link href="/wellness" className="text-gray-300 hover:text-white">Wellness</Link></li>
-                                        <li><Link href="/social-media" className="text-gray-300 hover:text-white">Social Media</Link></li>
+                                        <li><Link href="/node-developer" className="text-gray-300 hover:text-white">Node Developer</Link></li>
+                                        <li><Link href="/java-developer" className="text-gray-300 hover:text-white">Java Developer</Link></li>
+                                        <li><Link href="/c-sharp-developer" className="text-gray-300 hover:text-white">C Sharp Developer</Link></li>
+                                        <li><Link href="/nextJs-developer" className="text-gray-300 hover:text-white">Next Developer</Link></li>
+                                        <li><Link href="/devops-engineer" className="text-gray-300 hover:text-white">DevOps</Link></li>
+                                        <li><Link href="/django-developer" className="text-gray-300 hover:text-white">Django</Link></li>
                                     </ul>
                                 </div>
 
@@ -208,11 +232,11 @@ const Footer = () => {
                                         </Link>
                                     </div>
                                     <div className="flex gap-4 mb-4 md:mb-0">
-                                        <Link href="/terms" className="text-gray-500 hover:text-white text-sm">
+                                        {/* <Link href="/terms" className="text-gray-500 hover:text-white text-sm">
                                             Term of Use
                                         </Link>
-                                        <span className="text-gray-500">|</span>
-                                        <Link href="/privacy" className="text-gray-500 hover:text-white text-sm">
+                                        <span className="text-gray-500">|</span> */}
+                                        <Link href="/privacy-policy" className="text-gray-500 hover:text-white text-sm">
                                             Privacy Policy
                                         </Link>
                                     </div>

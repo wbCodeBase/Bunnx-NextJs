@@ -1,6 +1,6 @@
 "use client"
 
-import { Link, Home, LayoutTemplate, Search, Settings } from "lucide-react"
+import { Link, Home, LayoutTemplate, Search, Settings, Mailbox } from "lucide-react"
 
 import {
   Sidebar,
@@ -54,9 +54,9 @@ const adminSidebarMenu = [
 
 
   {
-    title: "Search",
-    url: "#",
-    icon: Search,
+    title: "Queries",
+    url: "/bunnx-admin/query",
+    icon: Mailbox,
   },
   {
     title: "Settings",

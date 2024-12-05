@@ -1,7 +1,29 @@
 import connectToDatabase from '../../../utils/database';
-import { createContact } from '../../../controllers/activeSlugController';
+import { createContact, getQueries } from '../../../controllers/activeSlugController';
 
 
+
+export async function GET() {
+    try {
+      await connectToDatabase();
+      const queries = await getQueries();
+      
+      
+      if (!queries.success) {
+        return new Response(
+          JSON.stringify({ error: queries.error }),
+          { status: 400 } // Use a suitable status code for your scenario
+        );
+      }
+      
+      return new Response(JSON.stringify(queries.data), { status: 200 });
+  
+  
+    } catch (error) {
+      console.error('Error in GET request:', error.message);
+      return new Response(JSON.stringify({ error: error.message }), { status: 500 });
+    }
+  }
 
 export async function POST(request) {
     try {

@@ -23,7 +23,7 @@ const hireData = {
     { name: 'Frontend', slug: 'frontend-developer' },
     { name: 'Mobile', slug: 'mobile-developer' },
     { name: 'Full Stack', slug: 'full-stack-developer' },
-    { name: 'DevOps', slug: 'devops-developer' },
+    { name: 'DevOps', slug: 'devops-engineer' },
     { name: 'CMS', slug: 'cms-developer' },
     { name: 'eCommerce', slug: 'ecommerce-developer' },
   ],
@@ -68,7 +68,6 @@ const hireData = {
       slug: 'frontend',
       description: 'Create stunning user interfaces',
       technologies: [
-        { name: 'NextJs', slug: 'nextJs-developer' },
         { name: 'ReactJs', slug: 'reactJs-developer' },
         { name: 'Angular', slug: 'angularJs-developer' },
         { name: 'VueJs', slug: 'vueJs-developer' },
@@ -181,6 +180,7 @@ const hireData = {
       slug: 'full-stack-developer',
       description: 'Create stunning user interfaces',
       technologies: [
+        { name: 'NextJs', slug: 'nextJs-developer' },
         { name: 'MEAN', slug: 'mean-developer' },
         { name: 'MERN', slug: 'mern-developer' },
       ],
@@ -204,7 +204,7 @@ const hireData = {
     },
     "DevOps": {
       title: 'DevOps',
-      slug: 'devops-developer',
+      slug: 'devops',
       description: 'Create stunning user interfaces',
       technologies: [
         { name: 'Azure', slug: 'azure-developer' },

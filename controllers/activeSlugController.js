@@ -8,7 +8,7 @@ export const getActiveSlug = async () => {
   try {
     const activeSlug = await ActiveSlug.find({});
 
-    // console.log("activeSlug", activeSlug);
+    console.log("activeSlug", activeSlug);
 
     return activeSlug;
 
@@ -18,6 +18,22 @@ export const getActiveSlug = async () => {
   }
 
 };
+
+
+// Get all users
+export const getQueries = async () => {
+
+  try {
+    const queryContent = await ContactForm.find({});
+    return { success: true, data: queryContent }; // Return the updated template
+  } catch (error) {
+    console.error('Error in GET request:', error.message);
+    return new Response(JSON.stringify({ error: error.message }), { status: 500 });
+  }
+
+};
+
+
 
 
 

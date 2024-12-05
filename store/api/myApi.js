@@ -127,6 +127,10 @@ export const myApi = createApi({
     }),
     // Header Menu Hook End
 
+    getUserQueries: builder.query({
+      query: () => 'contact',
+    }),
+
     submitContactForm: builder.mutation({
       query: (formData) => ({
         url: 'contact',
@@ -148,6 +152,7 @@ export const {
   useDeleteActiveSlugMutation,
 
   useSubmitContactFormMutation,
+  useGetUserQueriesQuery,
 
   useUpdateComponentContentMutation,
   useDeleteComponentContentMutation,
