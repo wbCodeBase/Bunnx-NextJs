@@ -15,13 +15,13 @@ import HiringModels from '@/components/services/HiringModels';
 import GuideTopics from '@/components/services/GuideTopics';
 import EngagementModel from '@/components/hire/EngagementModel';
 
-
 import Lottie from "lottie-react";
 import loaderJson from "../../public/pageAnimations/loader.json";
 
-
 import { useGetTemplateContentByStrQuery, useGetActiveSlugQuery } from '../../store/api/myApi';
 
+import heroBrain from "/public/developmentServices.jpg"
+// import heroBrain from "/public/heroDefault.png"
 
 function formatparameter(input) {
   return input
@@ -29,9 +29,6 @@ function formatparameter(input) {
     .map(word => word.charAt(0).toUpperCase() + word.slice(1)) // Capitalize first letter of each word
     .join(' '); // Join them back together without hyphens
 }
-
-
-
 
 
 export default function ServiceDetails() {
@@ -279,7 +276,7 @@ export default function ServiceDetails() {
     titlePrefix: heroSectionObj?.titlePrefix || "Enterprise",
     title: heroSectionObj?.title || formatparameter(serviceDetails),
     description: heroSectionObj?.description || "Custom Software Development Services and Solutions to build top-tier intelligent enterprises with speed and agility.",
-    imageUrl: "https://img.freepik.com/premium-photo/astronaut-outer-space-surrounded-by-planets-satellites-generative-ai_1028873-12416.jpg",
+    imageUrl: heroBrain,
     ctaText: heroSectionObj?.ctaText || "Get Connected With us",
     ctaRedirectUrl: heroSectionObj?.ctaRedirectUrl || "#contact-us",
   };

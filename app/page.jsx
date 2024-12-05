@@ -17,9 +17,7 @@ import TopServices from "@/components/home/TopServices";
 import Faqs from "@/components/layout/Faqs";
 import Testimonial from "@/components/home/Testimonial";
 
-
-
-
+import heroHomeImage from "/public/brodbot.jpg"
 
 export default function Home() {
 
@@ -27,7 +25,7 @@ export default function Home() {
     titlePrefix: "Building",
     title: "Digital Trust with Smart IT Solutions",
     description: "Transforming product experiences with data-driven digital strategies, leveraging cutting-edge technologies such as AI, machine learning, blockchain, IoT, and quantum computing.",
-    imageUrl: "https://img.freepik.com/premium-photo/astronaut-outer-space-surrounded-by-planets-satellites-generative-ai_1028873-12416.jpg",
+    imageUrl: heroHomeImage,
     ctaRedirectUrl: "#contact-us",
   };
 

@@ -22,6 +22,7 @@ import Lottie from "lottie-react";
 import loaderJson from "/public/pageAnimations/loader.json";
 import Techcard from "@/components/hire/Techcard";
 
+import heroDefault from "/public/hireDev.png"
 
 function formatparameter(input) {
   return input
@@ -29,49 +30,6 @@ function formatparameter(input) {
     .map(word => word.charAt(0).toUpperCase() + word.slice(1)) // Capitalize first letter of each word
     .join(' '); // Join them back together without hyphens
 }
-
-
-const activeSlug = [
-  // Slugs from hireDataSlugs
-  { slug: "frontend-developer", label: "frontend-developer", isActive: true },
-  { slug: "mobile-developer", label: "mobile-developer", isActive: true },
-  { slug: "full-stack-developer", label: "full-stack-developer", isActive: true },
-  { slug: "devops-developer", label: "devops-developer", isActive: true },
-  { slug: "cms-developer", label: "cms-developer", isActive: true },
-  { slug: "ecommerce-developer", label: "ecommerce-developer", isActive: true },
-  { slug: "php-developer", label: "php-developer", isActive: true },
-  { slug: "laravel-developer", label: "laravel-developer", isActive: true },
-  { slug: "node-developer", label: "node-developer", isActive: true },
-  { slug: "codeigniter-developer", label: "codeigniter-developer", isActive: true },
-  { slug: "c-sharp-developer", label: "c-sharp-developer", isActive: true },
-  { slug: "ruby-on-rails-developer", label: "ruby-on-rails-developer", isActive: true },
-  { slug: "django-developer", label: "django-developer", isActive: true },
-  { slug: "golang-developer", label: "golang-developer", isActive: true },
-  { slug: "java-developer", label: "java-developer", isActive: true },
-  { slug: "dot-net-developer", label: "dot-net-developer", isActive: true },
-  { slug: "nextJs-developer", label: "nextJs-developer", isActive: true },
-  { slug: "reactJs-developer", label: "reactJs-developer", isActive: true },
-  { slug: "angularJs-developer", label: "angularJs-developer", isActive: true },
-  { slug: "vueJs-developer", label: "vueJs-developer", isActive: true },
-  { slug: "wordpress-developer", label: "wordpress-developer", isActive: true },
-  { slug: "drupal-developer", label: "drupal-developer", isActive: true },
-  { slug: "sitecore-developer", label: "sitecore-developer", isActive: true },
-  { slug: "magento-developer", label: "magento-developer", isActive: true },
-  { slug: "shopify-developer", label: "shopify-developer", isActive: true },
-  { slug: "squarespace-developer", label: "squarespace-developer", isActive: true },
-  { slug: "android-developer", label: "android-developer", isActive: true },
-  { slug: "flutter-developer", label: "flutter-developer", isActive: true },
-  { slug: "ios-developer", label: "ios-developer", isActive: true },
-  { slug: "swift-developer", label: "swift-developer", isActive: true },
-  { slug: "iconic-developer", label: "iconic-developer", isActive: true },
-  { slug: "react-native-developer", label: "react-native-developer", isActive: true },
-  { slug: "mean-developer", label: "mean-developer", isActive: true },
-  { slug: "mern-developer", label: "mern-developer", isActive: true },
-  { slug: "azure-developer", label: "azure-developer", isActive: true },
-  { slug: "aws-developer", label: "aws-developer", isActive: true },
-  { slug: "digital-ocean-developer", label: "digital-ocean-developer", isActive: true },
-];
-
 
 
 export default function HireDevOf() {
@@ -337,7 +295,7 @@ export default function HireDevOf() {
     titlePrefix: heroSectionObj?.titlePrefix || "Hire",
     title: heroSectionObj?.title || formatparameter(hireDevOf),
     description: heroSectionObj?.description || "Our skilled php developers seamlessly integrate with your team, offering flexible engagement models with Monthly contracts, part-time collaboration and hourly arrangements.",
-    imageUrl: "https://img.freepik.com/premium-photo/astronaut-outer-space-surrounded-by-planets-satellites-generative-ai_1028873-12416.jpg",
+    imageUrl: heroDefault,
     ctaText: heroSectionObj?.ctaText || "Book a Consultation",
     ctaRedirectUrl: heroSectionObj?.ctaRedirectUrl || "#contact-us",
   };
