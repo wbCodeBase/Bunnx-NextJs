@@ -1,13 +1,24 @@
 import Image from 'next/image';
 import React from 'react'
 
+
+
+import clutch from "/public/certification/clutch.svg";
+import androidEnterprise from "/public/certification/androidEnterprise.svg";
+import awsPartner from "/public/certification/aws-partner.png";
+import goodFirm from "/public/certification/goodFirm.svg";
+import MicrosoftMin from "/public/certification/Microsoft-min.png";
+import googlePartner from "/public/certification/googlePartner.png";
+
+
+
 const OurTeam = () => {
     return (
         <>
             <section className="container mx-auto max-w-screen-lg xl:max-w-screen-xl px-4 md:px-6 py-8">
 
                 <h2 className='font-semibold text-orange-500 text-lg'>Our Team</h2>
-                <h4 className='font-semibold text-3xl my-2'>Bunnx team is passionate about delivering excellence to scale New heights of success.</h4>
+                <h4 className='font-semibold text-3xl my-2'>Bunnx team is passionate about delivering excellence</h4>
                 <p className='text-md text-gray-800'>We have a professional and dedicated team with proficiency in web, mobile and emerging technologies. Our in-house team comprises of professional thinkers with decades of experience in the industry and a track record of transforming your idea into a reality that aligns with your needs.</p>
 
 
@@ -37,16 +48,15 @@ const OurTeam = () => {
                         </p>
 
 
-                        <div className='bg-red500 flex sm:justify-start justify-center items-center p-6 gap-8 flex-wrap'>
-
-                            <Image className='h-16 w-auto' src={`https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/2560px-Amazon_Web_Services_Logo.svg.png`} height={30} width={90} alt="partnerLogo" />
-                            <Image className='h-16 w-auto' src={`https://assets.aboutamazon.com/4b/7f/4a4a80724a5e9a6b4a1931e8bf99/prime-logo-rgb-prime-blue-master.png`} height={30} width={90} alt="partnerLogo" />
-                            <Image className='h-16 w-auto' src={`https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/2560px-Amazon_Web_Services_Logo.svg.png`} height={30} width={90} alt="partnerLogo" />
-                            <Image className='h-16 w-auto' src={`https://assets.aboutamazon.com/4b/7f/4a4a80724a5e9a6b4a1931e8bf99/prime-logo-rgb-prime-blue-master.png`} height={30} width={90} alt="partnerLogo" />
-                            <Image className='h-16 w-auto' src={`https://1000logos.net/wp-content/uploads/2022/08/Myntra-Logo.png`} height={30} width={90} alt="partnerLogo" />
-                            <Image className='h-16 w-auto' src={`https://www.cdnlogo.com/logos/d/69/digitalocean.svg`} height={30} width={90} alt="partnerLogo" />
 
 
+                        <div className='flex flex-wrap gap-6 justify-around items-center mt-6'>
+                            <Image src={clutch} className='sm:w-28 w-24 h-auto' alt="Clutch icon" />
+                            <Image src={androidEnterprise} className='sm:w-28 w-24 h-auto' alt="Android Enterprise icon" />
+                            <Image src={awsPartner} className='sm:w-28 w-24 h-auto' alt="awsPartner icon" />
+                            <Image src={goodFirm} className='sm:w-28 w-24 h-auto' alt="goodFirm icon" />
+                            <Image src={MicrosoftMin} className='sm:w-28 w-24 h-auto' alt="MicrosoftMin icon" />
+                            <Image src={googlePartner} className='sm:w-28 w-24 h-auto' alt="MicrosoftMin icon" />
                         </div>
 
 

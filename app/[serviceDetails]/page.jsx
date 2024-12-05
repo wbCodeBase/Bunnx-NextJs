@@ -15,6 +15,8 @@ import HiringModels from '@/components/services/HiringModels';
 import GuideTopics from '@/components/services/GuideTopics';
 import EngagementModel from '@/components/hire/EngagementModel';
 
+import CtaSection3 from "@/components/home/CtaSection3";
+
 import Lottie from "lottie-react";
 import loaderJson from "../../public/pageAnimations/loader.json";
 
@@ -22,6 +24,9 @@ import { useGetTemplateContentByStrQuery, useGetActiveSlugQuery } from '../../st
 
 import heroBrain from "/public/developmentServices.jpg"
 // import heroBrain from "/public/heroDefault.png"
+
+
+import CtaSection from "@/components/home/CtaSection";
 
 function formatparameter(input) {
   return input
@@ -300,9 +305,13 @@ export default function ServiceDetails() {
 
       <ChooseUs />
 
+      <CtaSection />
+
       <EngagementModel hiredevOf={formatparameter(serviceDetails)} />
 
       <HiringModels />
+
+      <CtaSection3 />
 
       <GuideTopics />
 

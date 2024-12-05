@@ -16,6 +16,8 @@ import ChooseUs from "@/components/services/ChooseUs";
 import Faqs from "@/components/layout/Faqs";
 import StepToHire from "@/components/hire/StepToHire";
 
+import CtaSection3 from "@/components/home/CtaSection3";
+
 import { useGetTemplateContentByStrQuery, useGetActiveSlugQuery } from '../../../store/api/myApi';
 
 import Lottie from "lottie-react";
@@ -165,8 +167,6 @@ export default function HireDevOf() {
   const heroSectionObj = (data.heroSection).find((heroData) => heroData.fetchOnSlug === hireDevOf) || {};
   const serviceSectionObj = (data?.servicesSection).filter((serviceData) => serviceData?.fetchOnSlug.includes(hireDevOf)) || [];
 
-  // console.log("HeroSection data from template obj", heroSectionObj);
-  // console.log("serviceSection data from template obj", serviceSectionObj);
 
   const servicesData = (Array.isArray(serviceSectionObj) && serviceSectionObj.length > 0)
     ? serviceSectionObj
@@ -317,6 +317,10 @@ export default function HireDevOf() {
       <BenefitsHiring />
 
       <EngagementModel hiredevOf={formatparameter(hireDevOf)} />
+
+
+      <CtaSection3 />
+
 
       <HiringModelsHire />
 
