@@ -45,8 +45,8 @@ const Query = () => {
 
                 <div className="container mx-auto gap-6 sm:w-11/12 w-full flex flex-wrap">
 
-                    {userQuery && userQuery.map((query) =>
-                        <div className="border rounded-xl p-5 bg-white text-gray-600">
+                    {userQuery && userQuery.map((query, i) =>
+                        <div key={i} className="border rounded-xl p-5 bg-white text-gray-600">
                             <div> <span className="text-sm font-semibold"> Name: </span>{query.name}</div>
                             <div> <span className="text-sm font-semibold"> Phone: </span>{query.phone}</div>
                             <div> <span className="text-sm font-semibold"> Email: </span>{query.email}</div>
