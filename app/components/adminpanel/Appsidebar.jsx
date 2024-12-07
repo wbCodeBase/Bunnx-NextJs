@@ -1,6 +1,6 @@
 "use client"
 
-import { Link, Home, LayoutTemplate, Search, Settings, Mailbox } from "lucide-react"
+import { Link, Home, LayoutTemplate, Settings, Mailbox } from "lucide-react"
 
 import {
   Sidebar,
@@ -14,7 +14,6 @@ import {
   SidebarMenuItem,
   SidebarMenuSub, SidebarMenuSubItem, SidebarMenuSubButton
 } from "@/components/ui/sidebar"
-
 
 
 

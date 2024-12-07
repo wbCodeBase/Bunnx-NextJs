@@ -3,6 +3,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { FaLocationArrow } from "react-icons/fa";
 
+import softwareDev from "/public/Software-Development.webp";
+
 const ChooseUs = () => {
   return (
 
@@ -28,8 +30,7 @@ const ChooseUs = () => {
           </div>
 
           <div className="borde rounded-xl p4 flex justify-center items-center flex-col text-center relative">
-            <Image src="https://cdn-eaocj.nitrocdn.com/bRrUvINWEqyoXCOGVIRtXKCAELdOwonU/assets/images/optimized/rev-89fb845/nimapinfotech.com/wp-content/uploads/2024/08/Software-Development.jpg" alt="component image" width={500} height={600} />
-
+            <Image src={softwareDev} alt="component image" width={500} height={600} />
           </div>
 
         </div>

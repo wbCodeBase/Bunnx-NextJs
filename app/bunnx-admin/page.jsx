@@ -13,7 +13,7 @@ const Adminpanel = () => {
     <>
 
       <AdminpanelLayout>
-        <div className='border border-red-500'>Adminpanel page</div>
+        <div className='flex justify-center text-center items-center text-4xl h-screen'>Welcome to Bunnx AdminPanel</div>
       </AdminpanelLayout>
 
     </>
