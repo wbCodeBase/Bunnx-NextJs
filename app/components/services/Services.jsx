@@ -88,7 +88,7 @@ const Services = ({ servicesData }) => {
 
               {service?.ctaRedirectUrl &&
                 <div className='flex justify-end items-center mt-4'>
-                  <Link href={`/service/${service.ctaRedirectUrl}`} className='flex absolute bottom-2 right-4 items-center justify-center text-orange-500 p-1 pl-3 font-medium text-md mt-4'><span className='relative after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[1px] after:bg-orange-500 after:transition-all after:duration-300 hover:after:w-full'> Know more </span> <span className='px-1'> <IoArrowForward /> </span></Link>
+                  <Link href={`${service.ctaRedirectUrl}`} className='flex absolute bottom-2 right-4 items-center justify-center text-orange-500 p-1 pl-3 font-medium text-md mt-4'><span className='relative after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[1px] after:bg-orange-500 after:transition-all after:duration-300 hover:after:w-full'> Know more </span> <span className='px-1'> <IoArrowForward /> </span></Link>
                 </div>
               }
 

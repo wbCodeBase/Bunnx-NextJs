@@ -3,11 +3,13 @@ import React from 'react'
 import AdminpanelLayout from "@/components/adminpanel/AdminpanelLayout";
 import "./template.css";
 
+import { auth } from "@/auth";
+import { redirect } from "next/navigation"
 
+const Adminpanel = async () => {
 
-const Adminpanel = () => {
-
-
+  const session = await auth()
+  if(!session?.user) redirect("/")
 
   return (
     <>

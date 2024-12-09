@@ -626,7 +626,7 @@ export default function Header() {
                     <Link className="transition-colors duration-200 font-medium cursor-pointer group" href={`/${tech.slug}`} key={index} onClick={() => { setActiveMenu(''); setActiveCategory(''); setIsMobileMenuOpen(false) }}>
 
                       <div className='group-hover:bg-amber-50 py-2 px-4 rounded-md'> {tech.name}
-                        <p className="text-sm text-gray-600">Lorem ipsum dolor sit.</p>
+                        {/* <p className="text-sm text-gray-600">Lorem ipsum dolor sit.</p> */}
                       </div>
 
                     </Link>

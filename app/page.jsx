@@ -1,6 +1,3 @@
-"use client"
-
-
 import NumericCounterInfo from "@/components/layout/NumericCounterInfo";
 import HeroSection from "@/components/layout/HeroSection";
 import OurServices from "@/components/home/OurServices";
@@ -18,8 +15,13 @@ import Faqs from "@/components/layout/Faqs";
 import Testimonial from "@/components/home/Testimonial";
 
 import heroHomeImage from "/public/brodbot.jpg"
+import { auth } from "./auth";
 
-export default function Home() {
+export default async function Home() {
+
+  const session = await auth()
+  console.log("Home - user", session?.user)
+  
 
   const heroSectionData = {
     titlePrefix: "Building",

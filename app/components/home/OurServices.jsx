@@ -1,3 +1,5 @@
+"use client"
+
 import React, { useState, useRef, useEffect } from "react"
 import { ChevronRight, ChevronDown, Menu, X, Phone } from 'lucide-react'
 import Link from "next/link"

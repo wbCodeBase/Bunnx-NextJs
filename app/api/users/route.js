@@ -8,15 +8,22 @@ export async function GET(request) {
   return new Response(JSON.stringify(users), { status: 200 });
 }
 
+
+
 export async function POST(request) {
   await connectToDatabase();
-  const data = await request.json();
-  
-  console.log(data);
 
-  const newUser = await createUser(data);
-  return new Response(JSON.stringify(newUser), { status: 201 });
-}
+  const data = await request.json();
+
+  // Call the createUser function and get the result
+  const result = await createUser(data);
+
+  // Use the status code and data from the result
+  return new Response(JSON.stringify(result), { status: result.status });
+} 
+
+
+
 
 export async function PUT(request) {
   await connectToDatabase();

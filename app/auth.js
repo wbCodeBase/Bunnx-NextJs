@@ -48,21 +48,36 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
 
                 const user = await User.findOne({ email }).select("+password")
 
-                if(!user) throw new CredentialsSignin("Invalid Email or Password");
+                if (!user) throw new CredentialsSignin({ cause: "Invalid Email or Password"});
 
-                if(!user.password) throw new CredentialsSignin("Invalid Email or Password");
-                
+                if (!user.password) throw new CredentialsSignin({ cause: "Invalid Email or Password"});
+
                 const isMatch = await compare(password, user.password)
 
-                if (isMatch) {
-                    throw new CredentialsSignin({
-                        cause: "Password does not match"
-                    });
-                } else return {name: user.name, email: user.email, id: user._id};
+
+                if (!isMatch) throw new CredentialsSignin({ cause: "Password does not match"});
+                else return { name: user.name, email: user.email, id: user._id };
 
             },
         }),
     ],
+
+    session: {
+        strategy: "jwt", // Use JSON Web Token for session handling
+      },
+      callbacks: {
+        async jwt({ token, user }) {
+          if (user) {
+            token.id = user.id;
+          }
+          return token;
+        },
+        async session({ session, token }) {
+          session.user = token;
+          return session;
+        },
+      },
+
     pages: {
         signIn: "/login"
     }

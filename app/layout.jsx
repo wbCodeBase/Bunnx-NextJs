@@ -4,7 +4,7 @@ import { AR_One_Sans, Quando } from "next/font/google";
 import "./globals.css";
 
 import { ReduxProvider } from '../store/ReduxProvider';
-// import MetaTags from "@/components/MetaTags";
+import { Toaster } from "@/components/ui/sonner"
 
 
 import HeaderFooterWrapper from "@/components/layout/HeaderFooterWrapper";
@@ -59,6 +59,7 @@ export default function RootLayout({ children }) {
 
         <ReduxProvider>
           <HeaderFooterWrapper>{children}</HeaderFooterWrapper>
+          <Toaster />
         </ReduxProvider>
 
       </body>
