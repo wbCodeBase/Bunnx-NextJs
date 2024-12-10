@@ -5,17 +5,15 @@ import "../template.css";
 import AdminpanelLayout from "@/components/adminpanel/AdminpanelLayout";
 import { useGetUserQueriesQuery } from "../../../store/api/myApi"
 
+import Middleware from "@/components/adminpanel/Middleware";
 
 import Lottie from "lottie-react";
 import loaderJson from "/public/pageAnimations/loader.json";
 
 
-
 const Query = () => {
 
     const { data: userQuery, isLoading, isError, error } = useGetUserQueriesQuery();
-
-    // console.log("userQuery", userQuery);
 
     if (isLoading) {
         return (
@@ -39,22 +37,26 @@ const Query = () => {
 
         <AdminpanelLayout>
 
-            <section className="bg-gray-50 h-full p-10 ">
+            <Middleware />
 
-                <h2 className="text-2xl font-semibold my-6 sm:mx-20 text-center sm:text-left">User Queries</h2>
+            <section className="bg-gray-50 h-full sm:p-10 p-6">
 
-                <div className="container mx-auto gap-6 sm:w-11/12 w-full flex flex-wrap">
+                <h2 className="text-2xl font-semibold my-6 sm:mx-20 text-center sm:text-left">
+                    User Queries
+                </h2>
 
-                    {userQuery && userQuery.map((query, i) =>
-                        <div key={i} className="border rounded-xl p-5 bg-white text-gray-600">
-                            <div> <span className="text-sm font-semibold"> Name: </span>{query.name}</div>
-                            <div> <span className="text-sm font-semibold"> Phone: </span>{query.phone}</div>
-                            <div> <span className="text-sm font-semibold"> Email: </span>{query.email}</div>
-                            <div> <span className="text-sm font-semibold"> Message: </span>{query.message}</div>
+                <div className="container mx-auto grid gap-6 sm:w-11/12 w-full grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+                    {userQuery && userQuery.map((query, i) => (
+                        <div key={i} className="border rounded-xl p-5 bg-white text-gray-600 shadow-sm hover:shadow-lg transition-shadow">
+                            <div><span className="text-sm font-semibold">Name:</span> {query.name}</div>
+                            <div><span className="text-sm font-semibold">Phone:</span> {query.phone}</div>
+                            <div><span className="text-sm font-semibold">Email:</span> {query.email}</div>
+                            <div><span className="text-sm font-semibold">Message:</span> {query.message}</div>
                         </div>
-                    )}
+                    ))}
                 </div>
             </section>
+
 
         </AdminpanelLayout>
 

@@ -3,7 +3,7 @@
 import React, { useState } from 'react'
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-
+ 
 
 const SignUp = () => {
     const [formData, setFormData] = useState({ name: '', email: '', password: '' });
@@ -52,13 +52,13 @@ const SignUp = () => {
 
 
     return (<>
-        <div className='flex flex-col justify-center items-center h-screen'>
+        <div className='flex flex-col justify-center items-center'>
 
-            <h2 className='mb-6 font-semibold text-4xl'>SignUp</h2>
+            <h2 className='my-4 font-semibold text-3xl'>SignUp</h2>
 
-            <div className="flex gap-4 flex-col border p-10 rounded-xl bg-gray-50">
+            <div className="flex gap-4 flex-col border sm:p-10 p-4 rounded-xl bg-gray-50">
 
-                <form action={handleSubmit} className="flex gap-4 flex-col border p-10 rounded-xl bg-gray-50">
+                <form action={handleSubmit} className="flex gap-4 flex-col border sm:p-10 p-6 rounded-xl bg-gray-50">
 
                     {['name', 'email', 'password'].map((field) => (
                         <div key={field}>

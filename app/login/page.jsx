@@ -7,6 +7,7 @@ import { useRouter } from 'next/navigation';
 import { toast } from "sonner"
 import { credentialsLogin } from "@/actions/loginFunction";
 
+
 const Login = () => {
     const [formData, setFormData] = useState({ email: "", password: "" });
     const [error, setError] = useState(null);
@@ -47,9 +48,11 @@ const Login = () => {
 
     };
 
-    return (
-        <div className="flex flex-col justify-center items-center h-screen">
-            <h2 className="mb-6 font-semibold text-4xl">Login</h2>
+
+    return (<>
+
+        <div className="flex flex-col justify-center items-center">
+            <h2 className="my-6 font-semibold text-3xl">Login</h2>
             <form onSubmit={handleSubmit} className="flex gap-4 flex-col border p-10 rounded-xl bg-gray-50">
                 {["email", "password"].map((field) => (
                     <div key={field}>
@@ -76,12 +79,12 @@ const Login = () => {
 
 
 
-                    <button
-                        type="submit"
-                        className="bg-white rounded-lg py-2 text-center w-full"
-                    >
-                        Login With Google
-                    </button>
+                <button
+                    type="submit"
+                    className="bg-white rounded-lg py-2 text-center w-full"
+                >
+                    Login With Google
+                </button>
 
 
                 <div className="text-center mt-2">
@@ -92,6 +95,7 @@ const Login = () => {
                 </div>
             </form>
         </div>
+    </>
     );
 };
 

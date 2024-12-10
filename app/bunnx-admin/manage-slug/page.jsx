@@ -9,7 +9,7 @@ const ActiveSlug = () => {
 
   return (
     <AdminpanelLayout>
-      
+
       <ActiveSlugManage />
 
     </AdminpanelLayout>

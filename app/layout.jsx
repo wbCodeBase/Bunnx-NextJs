@@ -6,7 +6,6 @@ import "./globals.css";
 import { ReduxProvider } from '../store/ReduxProvider';
 import { Toaster } from "@/components/ui/sonner"
 
-
 import HeaderFooterWrapper from "@/components/layout/HeaderFooterWrapper";
 
 const geistSans = localFont({
@@ -46,13 +45,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
 
-      {/* <head>
-        <MetaTags
-          title="Software Development Company - Bunnx"
-          description="Custom Software Development Services and Solutions to build top-tier intelligent enterprises with speed and agility."
-          noIndex={true} // Ensure all pages are marked as noindex
-        />
-      </head> */}
+
 
       <body className={`${geistSans.variable} ${quando.variable} ${geistMono.variable} ${arOneSans.variable} antialiased`}
       >

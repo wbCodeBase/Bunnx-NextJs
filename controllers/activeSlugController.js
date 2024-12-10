@@ -8,7 +8,7 @@ export const getActiveSlug = async () => {
   try {
     const activeSlug = await ActiveSlug.find({});
 
-    console.log("activeSlug", activeSlug);
+    // console.log("activeSlug", activeSlug);
 
     return activeSlug;
 
@@ -43,7 +43,6 @@ export const createActiveSlug = async (data) => {
   try {
 
     const activeSlug = new ActiveSlug(data);
-    console.log("activeSlug", createActiveSlug);
 
     await activeSlug.save();
 

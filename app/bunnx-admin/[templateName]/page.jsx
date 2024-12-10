@@ -13,6 +13,9 @@ import { useGetTemplateQuery, useGetActiveSlugQuery } from '../../../store/api/m
 import { useParams, useRouter } from "next/navigation";
 
 
+import Middleware from "@/components/adminpanel/Middleware";
+
+
 const Template = () => {
 
     const { templateName } = useParams()
@@ -39,6 +42,9 @@ const Template = () => {
 
     return (
         <AdminpanelLayout>
+
+            <Middleware />
+
             <HeroSection {...serviceTemplate} activeSlugData={activeSlugData} />
             <ServiceSection {...serviceTemplate} activeSlugData={activeSlugData} />
         </AdminpanelLayout>
