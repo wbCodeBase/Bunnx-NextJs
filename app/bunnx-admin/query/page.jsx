@@ -5,8 +5,6 @@ import "../template.css";
 import AdminpanelLayout from "@/components/adminpanel/AdminpanelLayout";
 import { useGetUserQueriesQuery } from "../../../store/api/myApi"
 
-import Middleware from "@/components/adminpanel/Middleware";
-
 import Lottie from "lottie-react";
 import loaderJson from "/public/pageAnimations/loader.json";
 
@@ -36,8 +34,6 @@ const Query = () => {
     return (
 
         <AdminpanelLayout>
-
-            <Middleware />
 
             <section className="bg-gray-50 h-full sm:p-10 p-6">
 

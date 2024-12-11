@@ -16,22 +16,32 @@ export const getTemplateContent = async () => {
 
 
 // Get template by string
-export const getTemplateByStr = async (data) => {
+// export const getTemplateByStr = async (data) => {
 
+//   try {
+//     const templateComponent = await Template.findOne({ templateName: data });
+//     return { success: true, data: templateComponent }; // Return the updated template
+//   } catch (error) {
+//     console.error('Error in GET request:', error.message);
+//     return new Response(JSON.stringify({ error: error.message }), { status: 500 });
+//   }
+// };
+export const getTemplateByStr = async (data) => {
   try {
     const templateComponent = await Template.findOne({ templateName: data });
-    return { success: true, data: templateComponent }; // Return the updated template
+    if (!templateComponent) {
+      throw new Error(`Template with name ${data} not found`);
+    }
+    return { success: true, data: templateComponent };
   } catch (error) {
-    console.error('Error in GET request:', error.message);
-    return new Response(JSON.stringify({ error: error.message }), { status: 500 });
+    console.error('Error in getTemplateByStr:', error.message);
+    return { success: false, error: error.message };
   }
 };
 
 
 // Create a page or component data
 export const createComponentContent = async (data) => {
-  
-  // console.log("createComponentContent", data);
   
   try {
     const template = await Template.findOne({ templateName: data.templateName });

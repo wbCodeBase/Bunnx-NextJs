@@ -13,8 +13,6 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
         }),
 
         Credentials({
-            // You can specify which fields should be submitted, by adding keys to the `credentials` object.
-            // e.g. domain, username, password, 2FA token, etc.
             credentials: {
                 email: {
                     label: "Email",
@@ -36,7 +34,6 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
                         cause: "Please provide missing email or password"
                     });
                 }
-
 
                 await connectToDatabase();
 
@@ -65,18 +62,26 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
     session: {
         strategy: "jwt", // Use JSON Web Token for session handling
       },
+
       callbacks: {
         async jwt({ token, user }) {
           if (user) {
             token.id = user.id;
+            token.name = user.name;
+            token.email = user.email;
           }
           return token;
         },
         async session({ session, token }) {
-          session.user = token;
+          session.user = {
+            id: token.id,
+            name: token.name,
+            email: token.email,
+          };
           return session;
         },
       },
+      
 
     pages: {
         signIn: "/login"

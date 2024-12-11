@@ -9,7 +9,7 @@ import { redirect } from "next/navigation"
 const Adminpanel = async () => {
 
   const session = await auth()
-  if(!session?.user) redirect("/login")
+  if(!session?.user) redirect("/")
 
   return (
     <>
