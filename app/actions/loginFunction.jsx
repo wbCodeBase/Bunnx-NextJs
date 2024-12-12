@@ -11,6 +11,7 @@ const credentialsLogin = async({email, password})=>{
         await signIn("credentials", {
             email,
             password,
+            callbackUrl: "/bunnx-admin"
         });
     
 
