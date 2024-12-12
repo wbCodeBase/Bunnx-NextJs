@@ -6,6 +6,7 @@ import "./globals.css";
 import { ReduxProvider } from '../store/ReduxProvider';
 import { Toaster } from "@/components/ui/sonner"
 
+import { SessionProvider } from "next-auth/react"; // Import SessionProvider
 import HeaderFooterWrapper from "@/components/layout/HeaderFooterWrapper";
 
 const geistSans = localFont({
@@ -49,12 +50,12 @@ export default function RootLayout({ children }) {
 
       <body className={`${geistSans.variable} ${quando.variable} ${geistMono.variable} ${arOneSans.variable} antialiased`}
       >
-
-        <ReduxProvider>
-          <HeaderFooterWrapper>{children}</HeaderFooterWrapper>
-          <Toaster />
-        </ReduxProvider>
-
+        <SessionProvider>
+          <ReduxProvider>
+            <HeaderFooterWrapper>{children}</HeaderFooterWrapper>
+            <Toaster />
+          </ReduxProvider>
+        </SessionProvider>
       </body>
     </html>
   );

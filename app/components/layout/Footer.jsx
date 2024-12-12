@@ -195,7 +195,7 @@ const Footer = () => {
                                 {/* India Office Section */}
                                 <div className='lg:col-span-2'>
                                     <div className="flex items-center gap-2 mb-4">
-                                        <Image src={`https://bunnx.com/sites/images/india-flag.svg`} height={26} width={26} alt='Indian flag' />
+                                        <Image src={`india-flag.svg`} height={26} width={26} alt='Indian flag' />
                                         <h3 className="text-md font-medium">India Offices:</h3>
                                     </div>
                                     <div className="bg-[#494b77] p-3 rounded-lg">

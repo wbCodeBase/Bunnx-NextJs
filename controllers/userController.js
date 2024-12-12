@@ -1,6 +1,6 @@
 
 import User from '../models/User';
-import { hash } from "bcryptjs";
+// import { hash } from "bcryptjs";
 
 // Get all users
 export const getUsers = async () => {
@@ -24,8 +24,8 @@ export const createUser = async (data) => {
     }
 
     // Hash the password and create the user
-    const hashedPassword = await hash(password, 10);
-    const newUser = await User.create({ name, email, password: hashedPassword });
+    // const hashedPassword = await hash(password, 10);
+    const newUser = await User.create({ name, email, password });
 
     return { status: 201, success: true, data: newUser, message: 'User created successfully' };
   } catch (error) {

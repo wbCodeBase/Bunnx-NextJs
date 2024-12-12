@@ -20,8 +20,7 @@ import { auth } from "./auth";
 export default async function Home() {
 
   const session = await auth()
-  console.log("Home - user", session?.user)
-  
+  console.log("Home - User", session?.user || "Not Authenticated")
 
   const heroSectionData = {
     titlePrefix: "Building",
