@@ -11,13 +11,12 @@ const credentialsLogin = async({email, password})=>{
         await signIn("credentials", {
             email,
             password,
-            callbackUrl: "/bunnx-admin"
         });
     
 
     
     } catch (err) {
-        console.log("err", err.message);
+        console.log("err from loginFunction", err.message);
         return err.cause;
     }
 

@@ -6,7 +6,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 import { TbCodeDots } from "react-icons/tb";
-// import { useGetHeaderMenuQuery } from 'store/api/myApi'
+
 
 const menuItems = [
   { title: 'Home', slug: '/', hasSubmenu: false },

@@ -25,7 +25,7 @@ import { useCreateComponentContentMutation, useDeleteComponentContentMutation, u
 
 
 const formSchema = z.object({
-    titlePrefix: z.string().optional(),
+    // titlePrefix: z.string().optional(),
     title: z.string().min(2, { message: "Title must be at least 2 characters." }),
     description: z.string().optional(),
     ctaRedirectUrl: z.string().optional(),
@@ -123,7 +123,7 @@ const HeroSection = ({ heroSection, templateName, activeSlugData }) => {
                 setEditMode(true);
                 setEditId(id);
                 form.reset({
-                    titlePrefix: contentToEdit.titlePrefix || "",
+                    // titlePrefix: contentToEdit.titlePrefix || "",
                     title: contentToEdit.title || "",
                     description: contentToEdit.description || "",
                     imageUrl: contentToEdit.imageUrl || "",
@@ -186,7 +186,7 @@ const HeroSectionForm = ({ form, onSubmit, result, editMode, updateIsLoading, sl
             onSubmit={form.handleSubmit(onSubmit)}
             className="flex flex-col gap-4 w-full sm:w-1/2 border bg-white sm:p-8 p-3 rounded-lg"
         >
-            <FormFieldInput form={form} name="titlePrefix" label="Title Prefix" placeholder="Title prefix" />
+            {/* <FormFieldInput form={form} name="titlePrefix" label="Title Prefix" placeholder="Title prefix" /> */}
             <FormFieldInput form={form} name="title" label="Title" placeholder="Title" />
             <FormFieldInput form={form} name="description" label="Description" placeholder="Enter Description" />
             <FormFieldInput form={form} name="imageUrl" label="Image" placeholder="Coming Soon" />
@@ -275,7 +275,7 @@ const HeroCard = ({ heroSecCard, i, updateDeleteHandler }) => (
         </span>
 
         {/* Card Content */}
-        <CardItem label="Prefix" content={heroSecCard?.titlePrefix} />
+        {/* <CardItem label="Prefix" content={heroSecCard?.titlePrefix} /> */}
         <CardItem label="Title" content={heroSecCard?.title} />
         <CardItem label="Desc" content={heroSecCard?.description} />
         <CardItem label="Image" content="Soon" />

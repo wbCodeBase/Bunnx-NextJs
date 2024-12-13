@@ -44,7 +44,7 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
                 }
 
                 const user = await User.findOne({ email }).select("+password")
-                console.log("User found:", user);
+                // console.log("User found:", user);
 
                 if (!user) throw new CredentialsSignin({ cause: "Invalid Email or Password" });
 

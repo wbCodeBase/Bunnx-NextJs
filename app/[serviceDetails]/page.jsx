@@ -278,7 +278,6 @@ export default function ServiceDetails() {
 
 
   const heroSectionData = {
-    titlePrefix: heroSectionObj?.titlePrefix || "Enterprise",
     title: heroSectionObj?.title || formatparameter(serviceDetails),
     description: heroSectionObj?.description || "Custom Software Development Services and Solutions to build top-tier intelligent enterprises with speed and agility.",
     imageUrl: heroBrain,

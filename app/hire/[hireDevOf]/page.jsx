@@ -292,8 +292,7 @@ export default function HireDevOf() {
 
 
   const heroSectionData = {
-    titlePrefix: heroSectionObj?.titlePrefix || "Hire",
-    title: heroSectionObj?.title || formatparameter(hireDevOf),
+    title: heroSectionObj?.title || "Hire" + formatparameter(hireDevOf),
     description: heroSectionObj?.description || "Our skilled php developers seamlessly integrate with your team, offering flexible engagement models with Monthly contracts, part-time collaboration and hourly arrangements.",
     imageUrl: heroDefault,
     ctaText: heroSectionObj?.ctaText || "Book a Consultation",

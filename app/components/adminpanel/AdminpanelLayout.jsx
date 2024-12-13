@@ -13,12 +13,15 @@ const AdminpanelLayout = ({ children }) => {
 
   const { data: session, status } = useSession();
 
-  if (status === "loading") return <p>Loading...</p>;
-  console.log("AdminLayout", session?.user?.name);
+  console.log("status", status);
 
-  if (!session?.user?.name) {
+  if (status === "loading") return <div className="h-screen flex justify-center items-center"> <p className="text-2xl">Checking Authenticity...</p> </div>;
+  // if (status === "unauthenticated") return <div className="h-screen flex justify-center items-center"> <p className="text-2xl">UnAuthenticcated redirected to Login...</p> </div>;
+  
+  console.log("AdminLayout", session?.user?.name);
+  
+  if (!session?.user) {
     redirect("/login");
-    return null;
   }
 
   //   const session = await auth().catch(err => {

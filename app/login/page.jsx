@@ -38,7 +38,7 @@ const Login = () => {
                 id: toastId,
             })
 
-            router.push("/bunnx-admin");
+            router.push("/");
 
         } else {
             toast.error(String(error), {

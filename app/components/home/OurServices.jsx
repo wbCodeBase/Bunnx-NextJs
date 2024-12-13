@@ -23,14 +23,14 @@ const techStackData = {
                 { "name": "CMS Development", "description": "Faster CMS Development", "slug": "cms-development" },
                 { "name": "CRM Software Development", "description": "Transform ideas into powerful apps", "slug": "crm-software-development" },
                 { "name": "Software Consulting", "description": "Expert advice on tech", "slug": "software-consulting" },
-                
+
                 { "name": "IT Consulting", "description": "Software Outsourcing", "slug": "it-consulting" },
                 { "name": "Agile Consulting", "description": "Optimizing customer relations", "slug": "agile-consulting" },
-                          ]
+            ]
         },
         "Application Development": {
             "title": "Application Development",
-            "description": "Cutting-edge application solutions",
+            "description": "Elevate your digital presence with our comprehensive software development services. From web and mobile app development to full-stack solutions, we provide cutting-edge application development that empowers businesses to achieve their technological objectives efficiently and effectively.",
             "columns": [
                 { "name": "Web App Development", "description": "Next-gen web experiences", "slug": "web-app-development" },
                 { "name": "Mobile App Development", "description": "Fast, dynamic web apps", "slug": "mobile-app-development" },
@@ -43,7 +43,7 @@ const techStackData = {
         },
         "Dedicated Software Teams": {
             "title": "Dedicated Software Teams",
-            "description": "Cutting-edge application solutions",
+            "description": "Maximize your project potential with our dedicated software development teams. As a premier offshore software development company, we offer flexible staffing solutions, expert developer hiring, and comprehensive IT outsourcing services to meet your unique business needs.",
             "columns": [
                 { "name": "Staff Augmentation", "description": "Next-gen web experiences", "slug": "staff-augmentation" },
                 { "name": "Hire Software Developer", "description": "Fast, dynamic web apps", "slug": "hire-software-developer" },
@@ -54,7 +54,7 @@ const techStackData = {
         },
         "eCommerce": {
             "title": "eCommerce",
-            "description": "Cutting-edge application solutions",
+            "description": "Transform your online business with our custom software development services. We specialize in creating robust eCommerce solutions that enhance user experience, drive sales, and provide seamless web development and consulting for businesses of all sizes.",
             "columns": [
                 { "name": "Ecommerce Web Development", "description": "Next-gen web experiences", "slug": "ecommerce-web-development" },
                 { "name": "Ecommerce Web Consulting", "description": "Fast, dynamic web apps", "slug": "ecommerce-web-consulting" },
@@ -64,7 +64,7 @@ const techStackData = {
         },
         "QA & Testing": {
             "title": "QA & Testing",
-            "description": "Cutting-edge application solutions",
+            "description": "Ensure software excellence with our comprehensive QA and testing services. As a top software development company in India, we provide rigorous testing methodologies, consulting, and quality assurance to deliver reliable and high-performing software solutions.",
             "columns": [
                 { "name": "QA Consulting", "description": "Next-gen web experiences", "slug": "qa-consulting" },
                 { "name": "Software Testing", "description": "Fast, dynamic web apps", "slug": "software-testing" },
@@ -75,7 +75,7 @@ const techStackData = {
         },
         "Cloud Services": {
             "title": "Cloud Services",
-            "description": "Cutting-edge application solutions",
+            "description": "Navigate the digital landscape with our advanced cloud services. We offer strategic cloud application development, migration, and consulting that leverage cutting-edge technologies to optimize your business's technological infrastructure and performance.",
             "columns": [
                 { "name": "Cloud Application Development", "description": "Sleek, powerful iOS apps", "slug": "cloud-application-development" },
                 { "name": "Cloud Strategy & Consulting", "description": "Next-gen web experiences", "slug": "cloud-strategy-consulting" },
@@ -112,9 +112,9 @@ const OurServices = () => {
         <>
             <section className="relativ bordert container mx-auto max-w-screen-lg xl:max-w-screen-xl px-4 md:px-6 py-8">
 
-                <h2 className='font-semibold text-orange-500 text-lg'>Our Services</h2>
-                <h4 className='font-semibold text-3xl my-2'>Software Development & Engineering Services</h4>
-                <p className='text-md text-gray-800'>Whether you require a complex enterprise software solution or seamless software integration, we will convert your ideas into reality with our long-standing, industry-proven IT consulting and bespoke software development services.</p>
+                <span className='font-semibold text-orange-500 text-lg'>Our Services</span>
+                <h2 className='font-semibold text-3xl my-2'>Premier Software Development Services in India</h2>
+                <p className='text-md text-gray-800'>As a top-tier custom software development company in India, we transform complex business challenges into innovative digital solutions. Our comprehensive software development services range from enterprise-level software solutions to seamless system integrations, delivering cutting-edge technologies that drive your business forward.</p>
 
                 <div className="w-full my-6 transition-all duration-300 ease-in-out">
                     <div className="container mx-auto flex relative flex-col lg:flex-row">
@@ -147,7 +147,7 @@ const OurServices = () => {
 
                                         <div className="mb-4 py-4 border-b">
 
-                                            <h2 className='text-3xl font-bold'> {techStackData.content[activeCategory].title} </h2>
+                                            <h4 className='text-3xl font-bold'> {techStackData.content[activeCategory].title} </h4>
                                             <p className="text-gray-600 font-medium mt-4">{techStackData.content[activeCategory].description}</p>
 
                                         </div>
@@ -166,8 +166,8 @@ const OurServices = () => {
                                                                 <span className="relative inline-flex rounded-full h-3 w-3 bg-blue-500"></span>
                                                             </span>
 
-                                                            <h4 className="font-medium inline-block text-lg relative after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-black after:transition-all after:duration-300 group-hover:after:w-full">{column.name}</h4>
-                                                            
+                                                            <h5 className="font-medium inline-block text-lg relative after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-black after:transition-all after:duration-300 group-hover:after:w-full">{column.name}</h5>
+
                                                         </Link>
                                                     </div>
 

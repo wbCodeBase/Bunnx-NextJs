@@ -23,9 +23,9 @@ export default async function Home() {
   console.log("Home - User", session?.user || "Not Authenticated")
 
   const heroSectionData = {
-    titlePrefix: "Building",
-    title: "Digital Trust with Smart IT Solutions",
-    description: "Transforming product experiences with data-driven digital strategies, leveraging cutting-edge technologies such as AI, machine learning, blockchain, IoT, and quantum computing.",
+    title: "Building Digital Trust with Smart IT Solutions",
+    description: "Empowering businesses across India with comprehensive software development services that transform innovative ideas into powerful digital realities.",
+    // description: "Transforming product experiences with data-driven digital strategies such as AI, machine learning, blockchain, IoT, and quantum computing.",
     imageUrl: heroHomeImage,
     ctaRedirectUrl: "#contact-us",
   };
