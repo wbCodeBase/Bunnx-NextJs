@@ -68,7 +68,7 @@ const Industries = () => {
             icon: <Home size={52} className="text-black" />,
         },
     ];
-    
+
     return (
         <>
             <section className="container mx-auto max-w-screen-lg xl:max-w-screen-xl px-4 md:px-6 py-10">
@@ -78,12 +78,15 @@ const Industries = () => {
 
                 <div className='flex items-cente justify-center flex-wrap gap-10 mt-6'>
                     {services.map(service => (
-                        <div key={service.id} className="border rounded-xl shadow-lg p-4 flex items-center flex-col w-96 text-center relative">
+                        <div key={service.id} className="border rounded-xl shadow-lg p-4 flex items-center justify-between flex-col w-96 text-center relative">
+                            <div>
                             <div className="h-20 flex items-center justify-center">
                                 {service.icon}
                             </div>
-                            <h3 className='font-semibold my-3 text-lg'>{service.title}</h3>
-                            <p>{service.description}</p>
+                                <h3 className='font-semibold my-3 text-lg'>{service.title}</h3>
+                                <p>{service.description}</p>
+                            </div>
+
                             <Link
                                 className='flex items-center justify-center gap-2 p-1 pl-3 font-medium text-sm bg-orange-500 rounded-full mt-4 text-white'
                                 href={service.link}

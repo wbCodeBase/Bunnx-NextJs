@@ -2,10 +2,6 @@ const mongoose = require('mongoose');
 
 // Define the HeroSection schema
 const HeroSectionSchema = new mongoose.Schema({
-    titlePrefix: {
-        type: String,
-        required: true
-    },
     title: {
         type: String,
         required: true

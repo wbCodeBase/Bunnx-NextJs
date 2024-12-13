@@ -25,6 +25,7 @@ import loaderJson from "/public/pageAnimations/loader.json";
 import Techcard from "@/components/hire/Techcard";
 
 import heroDefault from "/public/hireDev.png"
+// import heroDefault from "/public/hireDev2.png"
 
 function formatparameter(input) {
   return input

@@ -164,7 +164,7 @@ export const deleteComponentContent = async ({ id, templateName, componentName }
 
 //   // Dummy data for servicesSection
 //   const data = {
-//     templateName: "hire",
+//     templateName: "service",
 //     heroSection: [
 //       {
 //         "titlePrefix": "Backend Developers",
@@ -173,7 +173,7 @@ export const deleteComponentContent = async ({ id, templateName, componentName }
 //         "imageUrl": "soon",
 //         "ctaRedirectUrl": "#contact-us",
 //         "ctaText": "Get connected with us",
-//         "fetchOnSlug": "backend-developers1"
+//         "fetchOnSlug": "backend-developers"
 //       },
 //       {
 //         "titlePrefix": "Frontend Developers",
@@ -182,7 +182,7 @@ export const deleteComponentContent = async ({ id, templateName, componentName }
 //         "imageUrl": "soon",
 //         "ctaRedirectUrl": "#contact-us",
 //         "ctaText": "Get connected with us",
-//         "fetchOnSlug": "frontend-developers1"
+//         "fetchOnSlug": "frontend-developers"
 //       },
 //       {
 //         "titlePrefix": "Hire",
@@ -191,10 +191,37 @@ export const deleteComponentContent = async ({ id, templateName, componentName }
 //         "imageUrl": "soon",
 //         "ctaRedirectUrl": "#contact-us",
 //         "ctaText": "Get connected with us",
-//         "fetchOnSlug": "dot-net-developers1"
+//         "fetchOnSlug": "dot-net-developers"
 //       },
-    
+//       {
+//         "titlePrefix": "Professional",
+//         "title": "Software Development Services",
+//         "description": "Highlights customization, security, scalability, and business growth—core benefits of professional software development.",
+//         "imageUrl": "soon",
+//         "ctaRedirectUrl": "#contact-us",
+//         "ctaText": "Get connected with us",
+//         "fetchOnSlug": "software-development"
+//       },
+//       {
+//         "titlePrefix": "Professional",
+//         "title": "Application Development Services",
+//         "description": "Transform your ideas into high-performing, user-friendly applications tailored to your business needs. Our expert team provides end-to-end application development, delivering innovative solutions with speed and precision to drive your digital success.",
+//         "imageUrl": "soon",
+//         "ctaRedirectUrl": "#contact-us",
+//         "ctaText": "Get connected with us",
+//         "fetchOnSlug": "application-development"
+//       },
+//       {
+//         "titlePrefix": "Professional",
+//         "title": "Software Consulting Services",
+//         "description": "Transform your business with expert software consulting services that drive innovation and efficiency. Our consultants provide tailored solutions to optimize processes, reduce costs, and maximize technology investments.",
+//         "imageUrl": "soon",
+//         "ctaRedirectUrl": "#contact-us",
+//         "ctaText": "Get connected with us",
+//         "fetchOnSlug": "software-consulting"
+//       }
 //     ],
+
 
 //   };
 
@@ -210,6 +237,10 @@ export const deleteComponentContent = async ({ id, templateName, componentName }
 
 
 
+
+
+
+
 // heroSection: [
 //   {
 //     "titlePrefix": "Backend Developers",
@@ -218,7 +249,7 @@ export const deleteComponentContent = async ({ id, templateName, componentName }
 //     "imageUrl": "soon",
 //     "ctaRedirectUrl": "#contact-us",
 //     "ctaText": "Get connected with us",
-//     "fetchOnSlug": "backend-developers"
+//     "fetchOnSlug": "backend-developers1"
 //   },
 //   {
 //     "titlePrefix": "Frontend Developers",
@@ -227,7 +258,7 @@ export const deleteComponentContent = async ({ id, templateName, componentName }
 //     "imageUrl": "soon",
 //     "ctaRedirectUrl": "#contact-us",
 //     "ctaText": "Get connected with us",
-//     "fetchOnSlug": "frontend-developers"
+//     "fetchOnSlug": "frontend-developers1"
 //   },
 //   {
 //     "titlePrefix": "Hire",
@@ -236,37 +267,10 @@ export const deleteComponentContent = async ({ id, templateName, componentName }
 //     "imageUrl": "soon",
 //     "ctaRedirectUrl": "#contact-us",
 //     "ctaText": "Get connected with us",
-//     "fetchOnSlug": "dot-net-developers"
+//     "fetchOnSlug": "dot-net-developers1"
 //   },
-//   {
-//     "titlePrefix": "Professional",
-//     "title": "Software Development Services",
-//     "description": "Highlights customization, security, scalability, and business growth—core benefits of professional software development.",
-//     "imageUrl": "soon",
-//     "ctaRedirectUrl": "#contact-us",
-//     "ctaText": "Get connected with us",
-//     "fetchOnSlug": "software-development"
-//   },
-//   {
-//     "titlePrefix": "Professional",
-//     "title": "Application Development Services",
-//     "description": "Transform your ideas into high-performing, user-friendly applications tailored to your business needs. Our expert team provides end-to-end application development, delivering innovative solutions with speed and precision to drive your digital success.",
-//     "imageUrl": "soon",
-//     "ctaRedirectUrl": "#contact-us",
-//     "ctaText": "Get connected with us",
-//     "fetchOnSlug": "application-development"
-//   },
-//   {
-//     "titlePrefix": "Professional",
-//     "title": "Software Consulting Services",
-//     "description": "Transform your business with expert software consulting services that drive innovation and efficiency. Our consultants provide tailored solutions to optimize processes, reduce costs, and maximize technology investments.",
-//     "imageUrl": "soon",
-//     "ctaRedirectUrl": "#contact-us",
-//     "ctaText": "Get connected with us",
-//     "fetchOnSlug": "software-consulting"
-//   }
-// ],
 
+// ],
 
 
 // servicesSection: [
