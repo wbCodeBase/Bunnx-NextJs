@@ -15,13 +15,13 @@ const CtaSectionMain = () => {
                         <div className='text-white flex gap-4 flex-col lg:items-start items-center xl:w-[58%] w-full'>
                             <span>Our expert team is here to turn your vision into reality!</span>
                             <h2 className='text-3xl font-semibold'>Ready to bring your dream project to life?</h2>
-                            <p>Let's create something extraordinary together!</p>
+                            <p>Let&apos;s create something extraordinary together!</p>
 
                         </div>
 
                         <div className='flex justify-center items-center'>
 
-                            <Link href="tel:+91-9971544661" className='flex items-center justify-center gap-2 bg[#261E80] p-1 pr-3 font-medium text-md bg-orange-500 rounded-full mt-4 text-white'> <span className='bg-white rounded-full p-3 text-xl text-black animate-bounce'> <FaPhoneAlt /> </span> <span> Let's Connect! </span></Link>
+                            <Link href="tel:+91-9971544661" className='flex items-center justify-center gap-2 bg[#261E80] p-1 pr-3 font-medium text-md bg-orange-500 rounded-full mt-4 text-white'> <span className='bg-white rounded-full p-3 text-xl text-black animate-bounce'> <FaPhoneAlt /> </span> <span> Let&apos;s Connect! </span></Link>
 
                         </div>
 
