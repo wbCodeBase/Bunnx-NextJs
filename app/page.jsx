@@ -14,7 +14,7 @@ import TopServices from "@/components/home/TopServices";
 import Faqs from "@/components/layout/Faqs";
 import Testimonial from "@/components/home/Testimonial";
 
-import heroHomeImage from "/public/brodbot.jpg"
+import heroHomeImage from "/public/brodbot.png"
 import { auth } from "./auth";
 
 export default async function Home() {
@@ -24,6 +24,7 @@ export default async function Home() {
 
   const heroSectionData = {
     title: "Building Digital Trust with Smart IT Solutions",
+    // title: "Dynamic Software Engineering, Strategic Consulting & Cost-Effective Outsourcing",
     description: "Empowering businesses across India with comprehensive software development services that transform innovative ideas into powerful digital realities.",
     // description: "Transforming product experiences with data-driven digital strategies such as AI, machine learning, blockchain, IoT, and quantum computing.",
     imageUrl: heroHomeImage,

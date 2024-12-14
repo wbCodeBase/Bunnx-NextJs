@@ -8,17 +8,18 @@ const WhyChooseUs = () => {
         <>
             <section className="container mx-auto max-w-screen-lg xl:max-w-screen-xl px-4 md:px-6 py-8">
 
-                <h2 className='font-semibold text-orange-500 text-lg'>Why Choose Us</h2>
-                <h4 className='font-semibold text-3xl my-2'>Empowering Your Vision with Expert Development</h4>
-                <p className='text-md text-gray-800'>Expert solutions tailored to your needs. We deliver quality, scalable, and innovative platforms with seamless collaboration and ongoing support to ensure your business thrives.</p>
+                <span className='font-semibold text-orange-500 text-lg'>Why Choose Us</span>
+                <h2 className='font-semibold text-3xl my-2'>Empowering Your Vision to Life with Heart and Expertise</h2>
+                <p className='text-md text-gray-800'>At our core, we believe in the power of collaboration. Our friendly team is dedicated to crafting personalized solutions that resonate with your unique goals. From innovative platforms to ongoing support, we’re here every step of the way, ensuring your business not only grows but thrives. Let’s embark on this journey together!</p>
 
 
                 <section className="flex flex-wrap justify-cente justify-between gap-2 py-2 mt-6">
 
-                    <div className='lg:w-[52%] w-full border rounded-md'>
+                    <div className='lg:w-[52%] w-full border rounded-lg overflow-hidden'>
 
-                        <Image className='h-auto w-full' src={"/whyChooseUs.jpg"} alt="Custom Software Development" width={650} height={600} />
-
+                        {/* <Image className='h-auto w-full' src={"/whyChooseUs.jpg"} alt="Custom Software Development" width={650} height={600} /> */}
+                        <Image className='h-auto w-full rounded-tlg' src={"/ofc.jpg"} alt="Custom Software Development" width={650} height={600} />
+                     
                         <div className='p-6'>
 
                             <h2 className='font-semibold text-orange-500 text-md'>Our Team</h2>

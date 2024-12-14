@@ -6,7 +6,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 import { TbCodeDots } from "react-icons/tb";
-
+import bunnxLogo from "/public/logo/bunnx-logo.png";
 
 const menuItems = [
   { title: 'Home', slug: '/', hasSubmenu: false },
@@ -441,10 +441,6 @@ export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
 
 
-  // const { data, isLoading, isError, error } = useGetHeaderMenuQuery()
-  // console.log(data, isLoading, error);
-
-
   const handleScroll = () => {
     const scrollTop = window.scrollY;
     if (scrollTop > 0) {
@@ -650,11 +646,10 @@ export default function Header() {
         <div className="flex items-center justify-between lg:px-10">
           <Link href="/" className="flex items-center py-2">
             <Image
-              className="w-auto lg:h-auto h-12"
-              src={"/logo/bunnx-logo.png"}
+              className=""
+              src={bunnxLogo}
               alt="Bunnx logo"
               width={125}
-              height={30}
               priority
             />
           </Link>

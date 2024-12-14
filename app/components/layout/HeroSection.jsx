@@ -14,14 +14,14 @@ const HeroSection = ({ title, description, ctaText, imageUrl, ctaRedirectUrl }) 
       <section className="borde pb20 bg-gray800 bg-black text-white">
         <div className="flex items-cente justify-center flex-wrap container mx-auto sm:w-11/12 w-full">
 
-          <div className="sm:mt-12 w-full lg:w-[55%] py-10 px-4 flex gap-20 flex-col sm:pt-18">
+          <div className="sm:mt12 w-full lg:w-[55%] py-10 px-4 flex justify-center gap-20 flex-col sm:pt-18">
             <div>
               <h1 className="lg:text-6xl text-3xl my-2 font-semibold">{title}</h1>
               <p className="lg:text-xl text-lg my-6 font-medium">{description}</p>
 
-              <div className="flex items-center justify-center sm:justify-start">
-                <Link href={ctaRedirectUrl || "/"} className='flex items-center justify-center gap-2 bg[#261E80] p-1 pl-3 font-medium text-lg bg-orange-500 rounded-full mt-4 text-white'><span> {ctaText || "Get Connected with us"} </span> <span className='bg-white rounded-full p-3 text-black rotate-45'> <FaLocationArrow /> </span></Link>
-              </div>
+              <button className="flex items-center justify-center sm:justify-start">
+                <Link href={ctaRedirectUrl || "/"} className='flex items-center justify-center gap-2 bg[#261E80] p-1 pl-3 font-medium text-lg bg-orange-500 rounded-full mt-4 text-white'><span className="px-2"> {ctaText || "Launch Your Project"} </span> <span className='bg-white rounded-full p-3 text-black rotate-45'> <FaLocationArrow /> </span></Link>
+              </button>
 
             </div>
           </div>

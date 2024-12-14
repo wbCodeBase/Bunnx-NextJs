@@ -232,15 +232,15 @@ const Footer = () => {
                                         </Link>
                                     </div>
                                     <div className="flex gap-4 mb-4 md:mb-0">
-                                        {/* <Link href="/terms" className="text-gray-500 hover:text-white text-sm">
+                                        <Link href="/privacy-policy" className="text-gray-400 hover:text-white text-sm">
                                             Term of Use
                                         </Link>
-                                        <span className="text-gray-500">|</span> */}
-                                        <Link href="/privacy-policy" className="text-gray-500 hover:text-white text-sm">
+                                        <span className="text-gray-500">|</span>
+                                        <Link href="/privacy-policy" className="text-gray-400 hover:text-white text-sm">
                                             Privacy Policy
                                         </Link>
                                     </div>
-                                    <div className="text-gray-500 text-sm">
+                                    <div className="text-gray-400 text-sm hover:text-white">
                                         ©2024 Bunnx All Rights Reserved.
                                     </div>
                                 </div>

@@ -42,23 +42,24 @@ const solutions = [
         description: "Automate invoicing and billing processes with secure, accurate, and customizable billing systems."
     },
     {
-        id: 6,
-        image: assetManagement,
-        title: "Asset Management",
-        description: "Automate invoicing and billing processes with secure, accurate, and customizable billing systems."
+        "id": 6,
+        "image": assetManagement,
+        "title": "Asset Management",
+        "description": "Maximize your investments with smart, tailored asset management solutions."
     },
     {
-        id: 7,
-        image: workForceM,
-        title: "Workforce Management",
-        description: "Automate invoicing and billing processes with secure, accurate, and customizable billing systems."
+        "id": 7,
+        "image": workForceM,
+        "title": "Workforce Management",
+        "description": "Empower your team with efficient workforce management for optimal productivity."
     },
     {
-        id: 8,
-        image: FleetManagement,
-        title: "Fleet Management",
-        description: "Automate invoicing and billing processes with secure, accurate, and customizable billing systems."
-    },
+        "id": 8,
+        "image": FleetManagement,
+        "title": "Fleet Management",
+        "description": "Streamline operations and reduce costs with effective fleet management strategies."
+    }
+
 ];
 
 const Solutions = () => {
@@ -66,16 +67,16 @@ const Solutions = () => {
         <section className="border-t bg-[#00214E] px-4 md:px-6 py-6">
             <div className='container mx-auto max-w-screen-lg xl:max-w-screen-xl px-0 md:px-6 md:py-8'>
 
-                <h2 className='font-semibold text-orange-500 text-lg'>Solutions We Deliver</h2>
-                <h4 className='text-white font-semibold text-3xl my-2'>Software Development & Engineering Services</h4>
+                <span className='font-semibold text-orange-500 text-lg'>Solutions We Deliver</span>
+                <h3 className='text-white font-semibold text-3xl my-2'>Solutions Crafted Just for Your Industry</h3>
                 <p className='text-white text-md'>
-                    Our expertise spans across various business domains, delivering tailored solutions that drive efficiency and innovation for your organization.
+                    Our expertise spans various business domains, delivering solutions that enhance efficiency and foster innovation for your organization.
                 </p>
 
                 <div className='grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-2 md:mt-12'>
                     {solutions.map((solution) => (
-                        <div 
-                            key={solution.id} 
+                        <div
+                            key={solution.id}
                             className="cursor-pointer flex items-center flex-col bg-white hover:shadow-orange-500 shadow-lg transition-all duration-300 ease-in-out"
                         >
                             <Image className='h-full' src={solution.image} alt={solution.title} />

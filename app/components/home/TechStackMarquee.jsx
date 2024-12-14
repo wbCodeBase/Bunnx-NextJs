@@ -8,16 +8,63 @@ import goodFirm from "/public/certification/goodFirm.svg";
 import MicrosoftMin from "/public/certification/Microsoft-min.png";
 import googlePartner from "/public/certification/googlePartner.png";
 
+import redis from "/public/techLogos/redis.png";
+import Jenkins from "/public/techLogos/Jenkins.svg";
+import aws from "/public/techLogos/aws.webp";
+import nginx from "/public/techLogos/nginx.webp";
+import mysql from "/public/techLogos/mysql.webp";
+import docker from "/public/techLogos/docker.webp";
+import graphQL from "/public/techLogos/graphQL.webp";
+import mongodb from "/public/techLogos/mongodb.webp";
+
+import go from "/public/techLogos/go.webp";
+import kotlin from "/public/techLogos/kotlin.png";
+import flutter from "/public/techLogos/flutter.webp";
+import php from "/public/techLogos/php.webp";
+import java from "/public/techLogos/java.png";
+import python from "/public/techLogos/python.svg";
+import nodejs from "/public/techLogos/nodejs.svg";
+
+import svelte from "/public/techLogos/svelte.png";
+import angular from "/public/techLogos/angular.webp";
+import vuejs from "/public/techLogos/vuejs.webp";
+import typescript from "/public/techLogos/typescript.svg";
+import next from "/public/techLogos/next.svg";
+import react from "/public/techLogos/react.webp";
+import tailwind from "/public/techLogos/tailwind.png";
+
+
 const frontend = [
-  { name: 'React', icon: 'https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png' },
-  { name: 'Next.js', icon: 'https://nextjs.org/icons/next.svg' },
-  { name: 'Tailwind CSS', icon: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2560px-Tailwind_CSS_Logo.svg.png' },
-  { name: 'TypeScript', icon: 'https://iconape.com/wp-content/files/rl/371585/svg/371585.svg' },
-  { name: 'Node.js', icon: 'https://nodejs.org/static/logos/nodejsStackedDark.svg' },
-  { name: 'MongoDB', icon: 'https://1000logos.net/wp-content/uploads/2020/08/MongoDB-Logo.png' },
-  { name: 'GraphQL', icon: 'https://www.gokhan-gokalp.com/wp-content/uploads/2017/07/graphQL.png' },
-  { name: 'Docker', icon: 'https://upload.wikimedia.org/wikipedia/commons/7/70/Docker_logo.png' },
+  { name: 'React', icon: react },
+  { name: 'Next.js', icon: next },
+  { name: 'Tailwind CSS', icon: tailwind },
+  { name: 'TypeScript', icon: typescript },
+  { name: 'Vue.js', icon: vuejs },
+  { name: 'Angular.js', icon: angular },
+  { name: 'Svelte', icon: svelte },
 ]
+
+const backend = [
+  { name: 'Node.js', icon: nodejs },
+  { name: 'Python', icon: python },
+  { name: 'Java', icon: java },
+  { name: 'Php', icon: php },
+  { name: 'Flutter', icon: flutter },
+  { name: 'Kotlin', icon: kotlin },
+  { name: 'Go', icon: go },
+]
+
+const toolsAndDbs = [
+  { name: 'MongoDB', icon: mongodb },
+  { name: 'GraphQL', icon: graphQL },
+  { name: 'Docker', icon: docker },
+  { name: 'MySql', icon: mysql },
+  { name: 'Nginx', icon: nginx },
+  { name: 'Aws', icon: aws },
+  { name: 'Jenkins', icon: Jenkins },
+  { name: 'Redis', icon: redis },
+]
+
 
 
 export default function TechStackMarquee() {
@@ -26,12 +73,11 @@ export default function TechStackMarquee() {
       <section className='lg:w-[46%] w-full '>
         <div className="flex flex-col gap-2 overflow-hidden py-2">
 
+          <MarqueeRow direction="right" techArr={frontend} />
 
-          <MarqueeRow direction="right" />
+          <MarqueeRow direction="left" techArr={backend} />
 
-          <MarqueeRow direction="left" />
-
-          <MarqueeRow direction="right" />
+          <MarqueeRow direction="right" techArr={toolsAndDbs} />
 
         </div>
 
@@ -54,19 +100,19 @@ export default function TechStackMarquee() {
   )
 }
 
-function MarqueeRow({ direction }) {
+function MarqueeRow({ direction, techArr }) {
   const animationClass = direction === 'left' ? 'animate-marquee-reverse' : 'animate-marquee'
   const animationClass2 = direction === 'left' ? 'animate-marquee2-reverse' : 'animate-marquee2'
 
   return (
     <div className="relative flex overflow-x-hidden py-1 group">
       <div className={`flex whitespace-nowrap ${animationClass} group-hover:pause-animation`}>
-        {frontend.map((tech, index) => (
+        {techArr.map((tech, index) => (
           <TechIcon key={`${tech.name}-${index}`} name={tech.name} icon={tech.icon} />
         ))}
       </div>
       <div className={`absolute top4 flex whitespace-nowrap ${animationClass2} group-hover:pause-animation`}>
-        {frontend.map((tech, index) => (
+        {techArr.map((tech, index) => (
           <TechIcon key={`${tech.name}-${index}-duplicate`} name={tech.name} icon={tech.icon} />
         ))}
       </div>
@@ -78,9 +124,9 @@ function TechIcon({ name, icon }) {
   return (
     <div className="flex flex-col items-center bg-gray-50 px-6 rounded-lg justify-center mx-2">
       <div className="relative w-16 h-16 mb2">
-        <Image src={icon} alt={`${name} icon`} fill={true} style={{ objectFit: "contain" }} sizes="(max-width: 768px) 100vw, 33vw" />
+        <Image src={icon} alt={`${name} icon`} fill={true} style={{ objectFit: "contain" }} />
       </div>
-      {/* <span className="text-sm font-medium text-gray-600">{name}</span> */}
+      {/* <span className="text-sm font-medium text-gray-600">{name}</span> sizes="(max-width: 768px) 100vw, 33vw"*/}
     </div>
   )
 }

@@ -3,67 +3,68 @@ import { FaLocationArrow } from "react-icons/fa";
 import { Landmark, Book, HeartPulse, Truck, ShoppingCart, Plane, Film, Factory, Home } from 'lucide-react';
 
 const Industries = () => {
+
     const services = [
         {
             id: 1,
             title: "Finance & Insurance",
-            description: "Empowering financial and insurance businesses with custom software solutions to streamline processes, enhance security, and ensure compliance.",
+            description: "We transform financial complexity into simple, secure solutions. Our software acts as your digital shield, protecting assets, automating processes, and turning compliance challenges into competitive advantages.",
             link: "/finance-insurance-solutions",
             icon: <Landmark size={52} className="text-black" />,
         },
         {
             id: 2,
             title: "Education",
-            description: "Revolutionizing education with interactive e-learning platforms and mobile applications designed to enhance engagement and accessibility.",
+            description: "Learning reimagined through smart technology. We craft digital classrooms that break geographical barriers, personalize learning experiences, and make education an exciting, accessible journey for everyone.",
             link: "/education-software-development",
             icon: <Book size={52} className="text-black" />,
         },
         {
             id: 3,
             title: "Healthcare",
-            description: "Delivering innovative healthcare solutions with feature-rich web and mobile applications for improved patient care and operational efficiency.",
+            description: "Healthcare solutions that put human connection first. Our applications bridge patients and professionals, simplify complex medical workflows, and turn data into life-changing insights.",
             link: "/healthcare-app-development",
             icon: <HeartPulse size={52} className="text-black" />,
         },
         {
             id: 4,
             title: "Logistics & Distribution",
-            description: "Streamlining supply chain operations with advanced logistics and distribution software tailored to boost efficiency and tracking capabilities.",
+            description: "We transform logistics from a challenge to a strategic advantage. Our software turns complex supply chains into seamless, trackable networks that save time, reduce costs, and boost efficiency.",
             link: "/logistics-software-development",
             icon: <Truck size={52} className="text-black" />,
         },
         {
             id: 5,
             title: "Retail & eCommerce",
-            description: "Creating dynamic and scalable eCommerce solutions to transform your retail business and enhance the shopping experience.",
+            description: "Beyond transactions, we create digital shopping experiences. Our solutions merge technology and customer insights, transforming online stores into vibrant, personalized marketplaces.",
             link: "/retail-ecommerce-solutions",
             icon: <ShoppingCart size={52} className="text-black" />,
         },
         {
             id: 6,
             title: "Travel & Hospitality",
-            description: "Empowering the travel and hospitality industry with software solutions that elevate customer experiences and operational efficiency.",
+            description: "Technology that makes every journey memorable. We build digital platforms that simplify booking, personalize experiences, and help businesses turn travelers into loyal customers.",
             link: "/travel-hospitality-solutions",
             icon: <Plane size={52} className="text-black" />,
         },
         {
             id: 7,
-            title: "Communication, Media & Entertainment",
-            description: "Delivering seamless communication and immersive media experiences with cutting-edge software designed for the entertainment industry.",
+            title: "Media & Entertainment",
+            description: "Where creativity meets technology. We develop platforms that connect storytellers with audiences, streamline content creation, and transform how media is produced and consumed.",
             link: "/media-entertainment-solutions",
             icon: <Film size={52} className="text-black" />,
         },
         {
             id: 8,
             title: "Manufacturing",
-            description: "Optimizing manufacturing operations with tailored software solutions for production, inventory management, and supply chain integration.",
+            description: "Smart manufacturing starts with intelligent software. We design solutions that optimize production, predict maintenance needs, and turn factory floors into data-driven ecosystems.",
             link: "/manufacturing-software-solutions",
             icon: <Factory size={52} className="text-black" />,
         },
         {
             id: 9,
             title: "Real Estate & Construction",
-            description: "Innovative software solutions to simplify real estate and construction project management, improve collaboration, and drive growth.",
+            description: "Building the future, one digital blueprint at a time. Our software turns complex projects into manageable workflows, enhancing collaboration and transforming how structures come to life.",
             link: "/real-estate-construction-solutions",
             icon: <Home size={52} className="text-black" />,
         },
@@ -72,17 +73,17 @@ const Industries = () => {
     return (
         <>
             <section className="container mx-auto max-w-screen-lg xl:max-w-screen-xl px-4 md:px-6 py-10">
-                <h2 className='font-semibold text-orange-500 text-lg'>Industries</h2>
-                <h4 className='font-semibold text-3xl my-2'>Precision Software for Ambitious Businesses</h4>
-                <p className='text-md text-gray-800'>We collaborate with businesses across diverse sectors to understand their unique challenges and goals. Our team designs efficient, scalable software solutions that streamline processes, solve problems, and drive long-term success.</p>
-
+                <span className='font-semibold text-orange-500 text-lg'>Industries We Empower</span>
+                <h2 className='font-semibold text-3xl my-2'>Develop the Perfectly Fit Solutions for Every Industry</h2>
+                <p className='text-md text-gray-800'>Every industry has a unique rhythm. We listen, understand, and craft software solutions that sync perfectly with your business pulse. Our approach goes beyond coding—we're your strategic technology partner.</p>
+                
                 <div className='flex items-cente justify-center flex-wrap gap-10 mt-6'>
                     {services.map(service => (
                         <div key={service.id} className="border rounded-xl shadow-lg p-4 flex items-center justify-between flex-col w-96 text-center relative">
                             <div>
-                            <div className="h-20 flex items-center justify-center">
-                                {service.icon}
-                            </div>
+                                <div className="h-20 flex items-center justify-center">
+                                    {service.icon}
+                                </div>
                                 <h3 className='font-semibold my-3 text-lg'>{service.title}</h3>
                                 <p>{service.description}</p>
                             </div>

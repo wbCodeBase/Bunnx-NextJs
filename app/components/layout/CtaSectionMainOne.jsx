@@ -13,10 +13,10 @@ const CtaSectionMainOne = () => {
                     <div className="container mx-auto max-w-screen-xl flex gap-8 items-center flex-wrap sm:justify-between justify-center sm:px-10 px-4 py-10 bg-purple900 bg-[#00214E] rounded-md ">
 
                         <div className='text-white flex gap-4 flex-col lg:items-start items-center xl:w-[58%] w-full'>
-                            <h2>Let’s Build Something Extraordinary Together!</h2>
-                            <h2 className='text-3xl font-semibold'>Bring your ideas to life with our expertise and innovation.</h2>
-                            <p>Your vision deserves the best—let’s make it happen!</p>
-
+                            <span className='italic'>Your Digital Transformation Starts Here...</span>
+                            <h3 className='text-3xl font-semibold'>Crafting Tomorrow's Technologies, Today</h3>
+                            <p>We don't just develop software. We architect digital futures that redefine what's possible for your business.
+                            </p>
                         </div>
 
                         <div className='flex justify-center items-center'>
