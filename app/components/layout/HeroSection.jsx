@@ -14,9 +14,9 @@ const HeroSection = ({ title, description, ctaText, imageUrl, ctaRedirectUrl }) 
       <section className="borde pb20 bg-gray800 bg-black text-white">
         <div className="flex items-cente justify-center flex-wrap container mx-auto sm:w-11/12 w-full">
 
-          <div className="sm:mt12 w-full lg:w-[55%] py-10 px-4 flex justify-center gap-20 flex-col sm:pt-18">
+          <div className="sm:mt12 w-full lg:w-[58%] py-10 px-4 flex justify-center gap-20 flex-col sm:pt-18">
             <div>
-              <h1 className="lg:text-6xl text-3xl my-2 font-semibold">{title}</h1>
+              <h1 style={{ lineHeight: "3.7rem" }} className="lg:text-5xl text-3xl my-2 font-semibold">{title}</h1>
               <p className="lg:text-xl text-lg my-6 font-medium">{description}</p>
 
               <button className="flex items-center justify-center sm:justify-start">
@@ -26,7 +26,7 @@ const HeroSection = ({ title, description, ctaText, imageUrl, ctaRedirectUrl }) 
             </div>
           </div>
 
-          <div className="md:w-[44%] w-full flex items-center justify-center">
+          <div className="md:w-[41%] w-full flex items-center justify-center">
             <Image
               src={imageUrl || heroDefault}
               alt="Digital Brain Visualization"

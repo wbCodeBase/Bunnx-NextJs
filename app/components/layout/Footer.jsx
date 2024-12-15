@@ -55,12 +55,12 @@ const Footer = () => {
     return (
         <>
 
-            <footer className="md:pt-8 pt-0">
+            <footer id='contact-us' className="md:pt-8 pt-0">
 
                 <div className="relative">
                     <div className="flex flex-wrap items-end mx-0">
 
-                        <div id='contact-us' className='lg:w-1/2 w-full flex-shrink-0 flex-grow-0 relative'>
+                        <div className='lg:w-1/2 w-full flex-shrink-0 flex-grow-0 relative'>
                             <div className='footer-left lg:rounded-tr-lg px-8 py-12 lg:px-28 relative'>
                                 <div className='z-10 relative'>
 

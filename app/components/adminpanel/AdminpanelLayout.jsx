@@ -16,11 +16,10 @@ const AdminpanelLayout = ({ children }) => {
   console.log("status", status);
 
   if (status === "loading") return <div className="h-screen flex justify-center items-center"> <p className="text-2xl">Checking Authenticity...</p> </div>;
-  // if (status === "unauthenticated") return <div className="h-screen flex justify-center items-center"> <p className="text-2xl">UnAuthenticcated redirected to Login...</p> </div>;
-  
+ 
   console.log("AdminLayout", session?.user?.name);
   
-  if (!session?.user) {
+  if (!session?.user || status === "unauthenticated") {
     redirect("/login");
   }
 

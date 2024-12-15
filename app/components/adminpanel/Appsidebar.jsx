@@ -1,6 +1,6 @@
-"use client"
+// "use client"
 
-import { Link, Home, LayoutTemplate, Settings, Mailbox } from "lucide-react"
+import { Link, Home, LayoutTemplate, Settings, Mailbox, LogOut } from "lucide-react"
 
 import {
   Sidebar,
@@ -15,7 +15,7 @@ import {
   SidebarMenuSub, SidebarMenuSubItem, SidebarMenuSubButton
 } from "@/components/ui/sidebar"
 
-
+import { signOut } from "next-auth/react";
 
 import { useRouter } from "next/navigation";
 
@@ -77,7 +77,14 @@ export default function AppSidebar() {
     }
   };
 
-
+  const logOut = async () => {
+    try {
+      // Sign out the user
+      await signOut({ callbackUrl: '/' }); // Redirect to home page after sign-out
+    } catch (error) {
+      console.error("Error signing out:", error);
+    }
+  };
 
   return (
 
@@ -105,14 +112,27 @@ export default function AppSidebar() {
                       ))}
                     </SidebarMenuSub>
                   )}
+
+
                 </SidebarMenuItem>
               ))}
+
+
+
+
+              <SidebarMenuButton className="cursor-pointer text-red-600 font-semibold" onClick={() => logOut()}>
+                <LogOut className="mr-2" />
+                LogOut
+              </SidebarMenuButton>
+
+
+
             </SidebarMenu>
+
           </SidebarGroupContent>
         </SidebarGroup>
       </SidebarContent>
     </Sidebar>
-
 
   )
 }

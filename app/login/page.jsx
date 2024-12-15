@@ -7,11 +7,29 @@ import { useRouter } from 'next/navigation';
 import { toast } from "sonner"
 import { credentialsLogin } from "@/actions/loginFunction";
 
+import { useSession } from "next-auth/react";
+
 
 const Login = () => {
+
     const [formData, setFormData] = useState({ email: "", password: "" });
     const [error, setError] = useState(null);
     const router = useRouter();
+
+
+
+    const { data: session, status } = useSession();
+
+    console.log("status", status);
+
+    if (status === "loading") return <div className="h-screen flex justify-center items-center"> <p className="text-2xl">Checking Authenticity...</p> </div>;
+
+    console.log("Login", session?.user?.name);
+
+    if (session?.user || status === "authenticated") {
+        router.push("/");
+    }
+
 
 
     const handleChange = (e) => {
@@ -28,7 +46,7 @@ const Login = () => {
             return toast.error("Please provide all fields")
         }
 
-        const toastId = toast.loading("Logging in...")
+        const toastId = toast.loading("Logging in...") 
 
         const error = await credentialsLogin(formData);
 

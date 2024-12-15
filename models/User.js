@@ -10,9 +10,10 @@ const UserSchema = new mongoose.Schema(
       unique: true,
       match: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
     },
+    role: { type: String, default: "user", enum: ['user', 'admin', 'superadmin'] },
     password: { type: String, select: false },
-    googleId: { type: String },
-    // isVerified: { type: Boolean, default: false },
+    // googleId: { type: String },
+    isVerified: { type: Boolean, default: false },
   },
   { timestamps: true }
 );

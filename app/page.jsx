@@ -23,9 +23,9 @@ export default async function Home() {
   console.log("Home - User", session?.user || "Not Authenticated")
 
   const heroSectionData = {
-    title: "Building Digital Trust with Smart IT Solutions",
-    // title: "Dynamic Software Engineering, Strategic Consulting & Cost-Effective Outsourcing",
-    description: "Empowering businesses across India with comprehensive software development services that transform innovative ideas into powerful digital realities.",
+    // title: "Building Digital Trust with Smart IT Solutions",
+    title: "Dynamic Software Engineering, Strategic Consulting & Affordable Outsourcing",
+    description: "We are an acclaimed Indian software engineering firm dedicated to delivering exceptional outsourced development solutions and expert engineering teams to clients around the world.",
     // description: "Transforming product experiences with data-driven digital strategies such as AI, machine learning, blockchain, IoT, and quantum computing.",
     imageUrl: heroHomeImage,
     ctaRedirectUrl: "#contact-us",

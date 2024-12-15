@@ -23,11 +23,13 @@ export const createUser = async (data) => {
       return { status: 409, message: 'User already exists' };
     }
 
-    // Hash the password and create the user
-    // const hashedPassword = await hash(password, 10);
-    const newUser = await User.create({ name, email, password });
 
-    return { status: 201, success: true, data: newUser, message: 'User created successfully' };
+    // const newUser = await User.create({ name, email, password });
+    const newUser = new User({ name, email, password });
+
+    const savedUser = await newUser.save();
+
+    return { status: 201, success: true, data: savedUser, message: 'User created successfully' };
   } catch (error) {
     return { status: 500, message: 'Internal server error', error: error.message };
   }
