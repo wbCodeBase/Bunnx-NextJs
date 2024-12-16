@@ -1,6 +1,6 @@
 // "use client"
 
-import { Link, Home, LayoutTemplate, Settings, Mailbox, LogOut } from "lucide-react"
+import { Link, Home, LayoutTemplate, Settings, Mailbox, LogOut, UserRoundCog } from "lucide-react"
 
 import {
   Sidebar,
@@ -56,6 +56,11 @@ const adminSidebarMenu = [
     title: "Queries",
     url: "/bunnx-admin/query",
     icon: Mailbox,
+  },
+  {
+    title: "Users",
+    url: "/bunnx-admin/users",
+    icon: UserRoundCog,
   },
   {
     title: "Settings",

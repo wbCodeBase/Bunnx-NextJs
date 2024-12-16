@@ -279,7 +279,7 @@ const HeroCard = ({ heroSecCard, i, updateDeleteHandler }) => (
         <CardItem label="Title" content={heroSecCard?.title} />
         <CardItem label="Desc" content={heroSecCard?.description} />
         <CardItem label="Image" content="Soon" />
-        <CardItem label="Fetch on page" content={heroSecCard?.fetchOnSlug} />
+        <CardItem label="Fetch on slug" content={heroSecCard?.fetchOnSlug} />
         <CardItem label="CTA Title" content={heroSecCard?.ctaText} />
         <CardItem label="CTA Redirect URL" content={heroSecCard?.ctaRedirectUrl} />
 

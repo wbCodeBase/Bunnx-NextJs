@@ -1,12 +1,68 @@
 // app/api/users/route.js
 import connectToDatabase from '../../../utils/database';
-import { getUsers, createUser, updateUser, deleteUser } from '../../../controllers/userController';
+import { getUsers, getUserById, createUser, updateUser, deleteUser } from '../../../controllers/userController';
+
 
 export async function GET(request) {
-  await connectToDatabase();
-  const users = await getUsers();
-  return new Response(JSON.stringify(users), { status: 200 });
+  try {
+    // Connect to the database
+    await connectToDatabase();
+
+    // Extract the search parameters
+    const url = new URL(request.url);
+    const id = url.searchParams.get('id');
+
+    if (id) {
+      // If an ID is provided, fetch a single user
+      const user = await getUserById(id);
+
+      if (!user.success) {
+        return new Response(
+          JSON.stringify({ error: user.error }),
+          { status: 404 } // Use a suitable status code for not found
+        );
+      }
+
+      return new Response(JSON.stringify(user.data), { status: 200 });
+    } else {
+      // If no ID is provided, fetch all users
+      const users = await getUsers();
+
+      if (!users.success) {
+        return new Response(
+          JSON.stringify({ error: users.error }),
+          { status: 400 } // Use a suitable status code for your scenario
+        );
+      }
+
+      return new Response(JSON.stringify(users.data), { status: 200 });
+    }
+  } catch (error) {
+    console.error('Error in GET request:', error.message);
+    return new Response(JSON.stringify({ error: error.message }), { status: 500 });
+  }
 }
+
+// export async function GET() {
+//   try {
+//     await connectToDatabase();
+//     const users = await getUsers();
+    
+    
+//     if (!users.success) {
+//       return new Response(
+//         JSON.stringify({ error: users.error }),
+//         { status: 400 } // Use a suitable status code for your scenario
+//       );
+//     }
+    
+//     return new Response(JSON.stringify(users.data), { status: 200 });
+
+//   } catch (error) {
+//     console.error('Error in GET request:', error.message);
+//     return new Response(JSON.stringify({ error: error.message }), { status: 500 });
+//   }
+// }
 
 
 

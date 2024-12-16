@@ -36,6 +36,7 @@ const Template = () => {
         return null; // Prevent rendering
     }
 
+
     return (
         <AdminpanelLayout>
             <HeroSection {...serviceTemplate} activeSlugData={activeSlugData} />

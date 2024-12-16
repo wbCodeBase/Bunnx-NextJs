@@ -25,9 +25,9 @@ const Login = () => {
 
     console.log("Login", session?.user?.name);
 
-    // if (session?.user || status === "authenticated") {
-    //     router.push("/");
-    // }
+    if (session?.user || status === "authenticated") {
+        router.push("/");
+    }
 
 
     const handleChange = (e) => {

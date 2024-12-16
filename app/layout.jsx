@@ -34,11 +34,11 @@ const quando = Quando({
   display: 'swap',
 })
 
-export const metadata = {
-  title: "Software Development Company - Bunnx",
-  description: "Custom Software Development Services and Solutions to build top-tier intelligent enterprises with speed and agility.",
-  robots: "noindex", // Ensures pages are marked as noindex
-};
+// export const metadata = {
+//   title: "Software Development Company - Bunnx",
+//   description: "Custom Software Development Services and Solutions to build top-tier intelligent enterprises with speed and agility.",
+//   robots: "noindex", // Ensures pages are marked as noindex
+// };
 
 export default function RootLayout({ children }) {
 

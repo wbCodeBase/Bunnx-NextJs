@@ -59,6 +59,7 @@ export const myApi = createApi({
       providesTags: ['ActiveSlug'], // Ensures refetching after creating or deleting
     }),
     
+
     createActiveSlug: builder.mutation({
       query: (newSlug) => ({
         url: 'activeSlug',
@@ -98,6 +99,10 @@ export const myApi = createApi({
       providesTags: ['User'], // Ensures refetching after creating or deleting
     }),
 
+    getUserById: builder.query({
+      query: (id) => `users?id=${id}`,
+    }),
+    
     createUser: builder.mutation({
       query: (newUser) => ({
         url: 'users',
@@ -107,9 +112,6 @@ export const myApi = createApi({
       invalidatesTags: ['User'], // Refetch users after creation
     }),
 
-    getUserById: builder.query({
-      query: (id) => `users/${id}`,
-    }),
 
     deleteUser: builder.mutation({
       query: (id) => ({
@@ -159,8 +161,10 @@ export const {
   useGetHeaderMenuQuery,
   useGetTemplateContentByStrQuery,
   useGetTemplateQuery,
+
   useGetUsersQuery,
   useGetUserByIdQuery,
+  
   useDeleteUserMutation,
   useCreateComponentContentMutation,
   useCreateUserMutation,  // Add the createUser mutation hook

@@ -329,7 +329,7 @@ export default function ServiceDetails() {
 const activeSlug = [
   // Slugs from servicesDataSlugs
   { slug: "cms-development", label: "cms-development", isActive: true },
-  { slug: "software-development", label: "software-development", isActive: true },
+  { slug: "best-software-development-company-in-india", label: "software-development", isActive: true },
   { slug: "crm-software-development", label: "crm-software-development", isActive: true },
   { slug: "software-consulting", label: "software-consulting", isActive: true },
   { slug: "it-consulting", label: "it-consulting", isActive: true },

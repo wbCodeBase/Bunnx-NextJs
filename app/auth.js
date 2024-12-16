@@ -53,7 +53,7 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
                 if (!isMatch) throw new CredentialsSignin({ cause: "Password does not match" });
 
 
-                else return { name: user.name, email: user.email, id: user._id, role: user.role, isVerified: user.isVerified };
+                else return { name: user.name, email: user.email, id: user._id };
 
             },
         }),
@@ -69,8 +69,6 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
                 token.id = user.id;
                 token.name = user.name || null;
                 token.email = user.email || null;
-                token.role = user.role || null;
-                // token.isVerified = user.isVerified || null;
             }
             return token;
         },
@@ -79,8 +77,6 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
                 id: token.id,
                 name: token.name,
                 email: token.email,
-                role: token.role,
-                // isVerified: token.isVerified,
             };
             return session;
         },

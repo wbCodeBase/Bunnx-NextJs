@@ -10,7 +10,7 @@ import bunnxLogo from "/public/logo/bunnx-logo.png";
 
 const menuItems = [
   { title: 'Home', slug: '/', hasSubmenu: false },
-  { title: 'Service', slug: '/software-development', hasSubmenu: true },
+  { title: 'Service', slug: '/best-software-development-company-in-india', hasSubmenu: true },
   { title: 'Hire', slug: '/hire/php-developer', hasSubmenu: true },
   { title: 'About Us', slug: '/about-us', hasSubmenu: false },
   { title: 'Contact Us', slug: '/contact-us', hasSubmenu: false },
@@ -236,7 +236,7 @@ const hireData = {
 
 const servicesData = {
   categories: [
-    { name: 'Software Development', slug: 'software-development' },
+    { name: 'Software Development', slug: 'best-software-development-company-in-india' },
     { name: 'Application Development', slug: 'application-development' },
     { name: 'Ecommerce Development', slug: 'ecommerce-development' },
     { name: 'Dedicated Technical Team', slug: 'dedicated-technical-team' },
@@ -247,7 +247,7 @@ const servicesData = {
   content: {
     "Software Development": {
       title: 'Software Development',
-      slug: 'software-development',
+      slug: 'best-software-development-company-in-india',
       description: 'Develop robust software',
       technologies: [
         { name: 'Custom Software Development', slug: 'custom-software-development' },

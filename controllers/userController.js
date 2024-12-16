@@ -4,8 +4,50 @@ import User from '../models/User';
 
 // Get all users
 export const getUsers = async () => {
-  return await User.find({});
+
+  try {
+    const users = await User.find({});
+    return { success: true, data: users }; // Return the updated template
+  } catch (error) {
+    console.error('Error in Users GET request:', error.message);
+    return new Response(JSON.stringify({ error: error.message }));
+  }
+
 };
+
+
+export async function getUserById(id) {
+  try {
+    // Validate the ID format if using MongoDB ObjectId
+    if (!id.match(/^[0-9a-fA-F]{24}$/)) {
+      return {
+        success: false,
+        error: 'Invalid user ID format',
+      };
+    }
+
+    // Find the user by ID
+    const user = await User.findById(id);
+
+    if (!user) {
+      return {
+        success: false,
+        error: 'User not found',
+      };
+    }
+
+    return {
+      success: true,
+      data: user,
+    };
+  } catch (error) {
+    console.error('Error fetching user by ID:', error.message);
+    return {
+      success: false,
+      error: 'An error occurred while fetching the user',
+    };
+  }
+}
 
 
 // Create a new user
@@ -33,8 +75,6 @@ export const createUser = async (data) => {
     return { status: 500, message: 'Internal server error', error: error.message };
   }
 };
-
-
 
 
 // Update a user
