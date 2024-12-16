@@ -1,7 +1,6 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import React from 'react'
-import { FaLocationArrow } from "react-icons/fa";
+import ofc from "/public/ofc.JPG";
 
 const WhyChooseUs = () => {
     return (
@@ -18,7 +17,7 @@ const WhyChooseUs = () => {
                     <div className='lg:w-[52%] w-full border rounded-lg overflow-hidden'>
 
                         {/* <Image className='h-auto w-full' src={"/whyChooseUs.jpg"} alt="Custom Software Development" width={650} height={600} /> */}
-                        <Image className='h-auto w-full rounded-tlg' src={"/ofc.jpg"} alt="Custom Software Development" width={650} height={600} />
+                        <Image className='h-auto w-full rounded-tlg' src={ofc} alt="Custom Software Development" width={650} height={600} />
                      
                         <div className='p-6'>
 
