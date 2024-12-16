@@ -37,7 +37,7 @@ const SignUp = () => {
             const data = await response.json();
 
             if (response.ok) {
-                alert('Sign up successfull');
+                alert('Sign up Successfull');
                 setFormData({ name: '', email: '', password: '' });
                 router.push("/login");
             } else {

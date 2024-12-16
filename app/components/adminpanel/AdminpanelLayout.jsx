@@ -16,13 +16,16 @@ const AdminpanelLayout = ({ children }) => {
   console.log("status", status);
 
   if (status === "loading") return <div className="h-screen flex justify-center items-center"> <p className="text-2xl">Checking Authenticity...</p> </div>;
- 
+
   console.log("AdminLayout", session?.user?.name);
-  
+
   if (!session?.user || status === "unauthenticated") {
     redirect("/login");
+  } else if (session?.user && session?.user?.role !== "admin" && session?.user?.role !== "superadmin") {
+    redirect("/");
   }
 
+  
   //   const session = await auth().catch(err => {
   //     console.error("Error fetching session:", err);
   //   });

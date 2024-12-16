@@ -17,7 +17,6 @@ const Login = () => {
     const router = useRouter();
 
 
-
     const { data: session, status } = useSession();
 
     console.log("status", status);
@@ -26,10 +25,9 @@ const Login = () => {
 
     console.log("Login", session?.user?.name);
 
-    if (session?.user || status === "authenticated") {
-        router.push("/");
-    }
-
+    // if (session?.user || status === "authenticated") {
+    //     router.push("/");
+    // }
 
 
     const handleChange = (e) => {
@@ -52,7 +50,7 @@ const Login = () => {
 
         if (!error) {
 
-            toast.success("Login successfull", {
+            toast.success("Login Successfull", {
                 id: toastId,
             })
 

@@ -23,7 +23,6 @@ export const createUser = async (data) => {
       return { status: 409, message: 'User already exists' };
     }
 
-
     // const newUser = await User.create({ name, email, password });
     const newUser = new User({ name, email, password });
 

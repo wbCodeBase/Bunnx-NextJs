@@ -70,7 +70,7 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
                 token.name = user.name || null;
                 token.email = user.email || null;
                 token.role = user.role || null;
-                token.isVerified = user.isVerified || null;
+                // token.isVerified = user.isVerified || null;
             }
             return token;
         },
@@ -80,7 +80,7 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
                 name: token.name,
                 email: token.email,
                 role: token.role,
-                isVerified: token.isVerified,
+                // isVerified: token.isVerified,
             };
             return session;
         },
