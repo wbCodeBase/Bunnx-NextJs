@@ -17,16 +17,22 @@ import Testimonial from "@/components/home/Testimonial";
 import heroHomeImage from "/public/brodbot.png"
 import { auth } from "./auth";
 
+
+// export const metadata = {
+//   title: "software development company in india | Bunnx",
+//   description: "Custom Software Development Services and Solutions to build top-tier intelligent enterprises with speed and agility.",
+//   robots: "noindex", // Ensures pages are marked as noindex
+// };
+
+
 export default async function Home() {
 
   const session = await auth()
   console.log("Home - User", session?.user || "Not Authenticated")
 
   const heroSectionData = {
-    // title: "Building Digital Trust with Smart IT Solutions",
     title: "Dynamic Software Engineering, Strategic Consulting & Affordable Outsourcing",
     description: "We are an acclaimed Indian software engineering firm dedicated to delivering exceptional outsourced development solutions and expert engineering teams to clients around the world.",
-    // description: "Transforming product experiences with data-driven digital strategies such as AI, machine learning, blockchain, IoT, and quantum computing.",
     imageUrl: heroHomeImage,
     ctaRedirectUrl: "#contact-us",
   };
@@ -39,7 +45,7 @@ export default async function Home() {
       <NumericCounterInfo />
 
       <OurServices />
-      
+
       <CtaSectionMainOne />
 
       <Industries />

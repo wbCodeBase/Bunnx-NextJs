@@ -34,19 +34,17 @@ const quando = Quando({
   display: 'swap',
 })
 
-// export const metadata = {
-//   title: "Software Development Company - Bunnx",
-//   description: "Custom Software Development Services and Solutions to build top-tier intelligent enterprises with speed and agility.",
-//   robots: "noindex", // Ensures pages are marked as noindex
-// };
+export const metadata = {
+  title: "software development company in india | Bunnx",
+  description: "Custom Software Development Services and Solutions to build top-tier intelligent enterprises with speed and agility.",
+  robots: "noindex", // Ensures pages are marked as noindex
+};
 
 export default function RootLayout({ children }) {
 
 
   return (
     <html lang="en">
-
-
 
       <body className={`${geistSans.variable} ${quando.variable} ${geistMono.variable} ${arOneSans.variable} antialiased`}
       >
