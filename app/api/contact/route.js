@@ -44,8 +44,6 @@ export async function POST(request) {
         return new Response(JSON.stringify(contact.data), { status: 201 });
     } catch (error) {
         console.error("Error in POST API:", error.message);
-        // console.error("Error in POST API:", error);
-
         return new Response(
             JSON.stringify({ error: error.message || "An unexpected error occurred" }),
             { status: 500 }

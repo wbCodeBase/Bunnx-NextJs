@@ -1,6 +1,6 @@
 // "use client"
 
-import { Link, Home, LayoutTemplate, Settings, Mailbox, LogOut, UserRoundCog } from "lucide-react"
+import { Link, Home, LayoutTemplate, Settings, Mailbox, LogOut, UserRoundCog, Captions } from "lucide-react"
 
 import {
   Sidebar,
@@ -34,6 +34,12 @@ const adminSidebarMenu = [
     title: "Manage Slug",
     url: "/bunnx-admin/manage-slug",
     icon: Link,
+  },
+
+  {
+    title: "MetaData",
+    url: "/bunnx-admin/metadata",
+    icon: Captions,
   },
 
   {

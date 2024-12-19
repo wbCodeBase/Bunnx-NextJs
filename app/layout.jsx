@@ -34,14 +34,48 @@ const quando = Quando({
   display: 'swap',
 })
 
+
 export const metadata = {
-  title: "software development company in india | Bunnx",
+  title: {
+    template: '%s | Bunnx',
+    default: 'Software Development Company in India | Website Development Agency | Bunnx', // a default is required when creating a template
+  },
   description: "Custom Software Development Services and Solutions to build top-tier intelligent enterprises with speed and agility.",
   robots: "noindex", // Ensures pages are marked as noindex
-};
+
+  metadataBase: new URL('https://bunnx.com'),
+
+  alternates: {
+    canonical: '/',
+  },
+
+  openGraph: {
+    url: '/',
+    siteName: 'Bunnx',
+    images: [
+      {
+        url: 'https://www.bunnx.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbunnx-logo.7358052b.png', // Must be an absolute URL
+        width: 800,
+        height: 600,
+        alt: 'ogImage',
+      },
+      {
+        url: 'https://www.bunnx.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbunnx-logo.7358052b.png', // Must be an absolute URL
+        width: 1800,
+        height: 1600,
+        alt: 'ogImage1',
+      },
+    ],
+
+    locale: 'en_US',
+    type: 'website',
+  },
+
+
+}
+
 
 export default function RootLayout({ children }) {
-
 
   return (
     <html lang="en">

@@ -9,6 +9,7 @@ import { useGetUserByIdQuery } from "../../../store/api/myApi";
 import { redirect } from "next/navigation";
 import { useSession } from "next-auth/react";
 
+
 export const metadata = {
   title: "Admin Panel",
   description: "Secure Admin Dashboard",
@@ -41,8 +42,11 @@ const AdminpanelLayout = ({ children }) => {
   // Handle user query loading
   if (isLoading) {
     return (
-      <div className="flex items-center justify-center h-screen w-full">
-        <Lottie animationData={loaderJson} loop={true} />
+      // <div className="flex items-center justify-center h-screen w-full">
+      //   <Lottie animationData={loaderJson} loop={true} />
+      // </div>
+      <div className="h-screen flex justify-center items-center">
+        <p className="text-2xl">Checking Authenticity...</p>
       </div>
     );
   }

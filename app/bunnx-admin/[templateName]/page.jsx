@@ -1,16 +1,17 @@
 "use client";
 
-import Lottie from "lottie-react";
+import Lottie from "lottie-react"; 
 import loaderJson from "/public/pageAnimations/loader.json";
 
 import "../template.css"
 
 import AdminpanelLayout from '@/components/adminpanel/AdminpanelLayout';
-import HeroSection from '@/components/adminpanel/HeroSection';
-import ServiceSection from '@/components/adminpanel/ServiceSection';
 
 import { useGetTemplateQuery, useGetActiveSlugQuery } from '../../../store/api/myApi';
 import { useParams, useRouter } from "next/navigation";
+
+import HeroSection from '@/components/adminpanel/HeroSection';
+import ServiceSection from '@/components/adminpanel/ServiceSection';
 
 
 const Template = () => {

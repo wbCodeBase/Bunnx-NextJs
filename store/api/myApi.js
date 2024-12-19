@@ -10,7 +10,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 export const myApi = createApi({
   reducerPath: 'myApi',
   baseQuery: fetchBaseQuery({ baseUrl: process.env.NEXT_PUBLIC_API_BASE_URL || 'http://localhost:3000/api', }),
-  tagTypes: ['User', 'Template', 'ActiveSlug'],  // Optional: for automatic cache invalidation
+  tagTypes: ['User', 'Template', 'ActiveSlug', 'Metadata'],  // Optional: for automatic cache invalidation
   endpoints: (builder) => ({
 
 
@@ -144,6 +144,54 @@ export const myApi = createApi({
       }),
     }),
 
+
+
+
+     // Create Metadata
+     createMetadata: builder.mutation({
+      query: (newMetadata) => ({
+          url: '/metadata', // POST API endpoint
+          method: 'POST',
+          body: newMetadata, // Metadata object
+      }),
+      invalidatesTags: ['Metadata'], // Invalidate list to trigger refetch
+  }),
+
+  // Get Metadata by Slug
+  getMetadataBySlug: builder.query({
+      query: (slug) => `/metadata/${slug}`, // GET API endpoint
+      // providesTags: (result, error, slug) =>
+      //     result ? [{ type: 'Metadata', id: slug }] : [],
+  }),
+
+  // Update Metadata
+  updateMetadata: builder.mutation({
+      query: ({ id, updatedMetadata }) => ({
+          url: `/metadata/${id}`, // PUT API endpoint
+          method: 'PUT',
+          body: updatedMetadata, // Updated metadata object
+      }),
+      invalidatesTags: ['Metadata'],
+      // invalidatesTags: (result, error, { id }) => [{ type: 'Metadata', id: id }],
+  }),
+
+  // Delete Metadata
+  deleteMetadata: builder.mutation({
+      query: (id) => ({
+          url: `/metadata/${id}`, // DELETE API endpoint
+          method: 'DELETE',
+      }),
+      invalidatesTags: ['Metadata'],
+  }),
+
+  // Get All Metadata (Optional)
+  getAllMetadata: builder.query({
+      query: () => '/metadata', // GET API endpoint for all metadata
+      providesTags: ['Metadata'],
+  }),
+
+
+
   }),
 });
 
@@ -167,5 +215,12 @@ export const {
   
   useDeleteUserMutation,
   useCreateComponentContentMutation,
-  useCreateUserMutation,  // Add the createUser mutation hook
+  useCreateUserMutation,  
+  
+  useCreateMetadataMutation,
+  useGetMetadataBySlugQuery,
+  useUpdateMetadataMutation,
+  useDeleteMetadataMutation,
+  useGetAllMetadataQuery,
+  
 } = myApi;
