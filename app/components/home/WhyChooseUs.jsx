@@ -26,7 +26,7 @@ const WhyChooseUs = () => {
                             <p className='text-md text-gray-800'>Our team consists of industry experts who are committed to delivering innovative solutions. We work collaboratively to ensure every project exceeds expectations, combining technical prowess with a client-first approach.</p>
 
                         </div>
-
+ 
                     </div>
 
                     <div className='lg:w-[47%] w-full flex rounded-md'>
@@ -46,7 +46,7 @@ const WhyChooseUs = () => {
                                     <h3 className="text-xl font-semibold mb-2 z-10">Client-Centric</h3>
                                     <p className="text-center group-hover:opacity-0 opacity-100 transition-opacity duration-300">We prioritize your goals, delivering tailored solutions and personalized support to ensure every project aligns with your vision and business needs.</p>
                                 </div>
-                                <ul className="absolute px-10 font-medium text-md inset-0 flex group-hover:text-white flex-col items-cente mt6 justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <ul className="absolute px-10 ml-5 font-medium text-md inset-0 flex group-hover:text-white flex-col items-cente mt-10 justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                     <li className="mb-2">- Tailored Solutions</li>
                                     <li className="mb-2">- Personalized Support</li>
                                     <li className="mb-2">- Vision Alignment</li>
@@ -67,7 +67,7 @@ const WhyChooseUs = () => {
                                     <h3 className="text-xl font-semibold mb-2 z-10">Innovative Solutions</h3>
                                     <p className="text-center group-hover:opacity-0 opacity-100 transition-opacity duration-300">Leverage cutting-edge technologies, advanced tools, and scalable platforms to gain a competitive edge and drive your business forward effectively.</p>
                                 </div>
-                                <ul className="absolute px-10 font-medium text-md inset-0 flex group-hover:text-white flex-col items-cente mt6 justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <ul className="absolute px-10 font-medium text-md inset-0 flex group-hover:text-white flex-col items-cente ml-5 mt-8 justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                     <li className="mb-2">- Advanced Tools</li>
                                     <li className="mb-2">- Scalable Platforms</li>
                                     <li className="mb-2">- Competitive Edge</li>
@@ -88,7 +88,7 @@ const WhyChooseUs = () => {
                                     <h3 className="text-xl font-semibold mb-2 z-10">Expertise You Can Trust</h3>
                                     <p className="text-center group-hover:opacity-0 opacity-100 transition-opacity duration-300">With years of proven experience, our team delivers industry-leading solutions designed to meet your unique challenges and achieve measurable results.</p>
                                 </div>
-                                <ul className="absolute px-10 font-medium text-md inset-0 flex group-hover:text-white flex-col items-cente mt6 justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <ul className="absolute px-10 font-medium text-md inset-0 flex group-hover:text-white flex-col items-cente  ml-5 mt-8 justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                     <li className="mb-2">- Proven Track Record</li>
                                     <li className="mb-2">- Industry Knowledge</li>
                                     <li className="mb-2">- Result-Oriented</li>
@@ -110,7 +110,7 @@ const WhyChooseUs = () => {
                                     <h3 className="text-xl font-semibold mb-2 z-10">Reliable Support</h3>
                                     <p className="text-center group-hover:opacity-0 opacity-100 transition-opacity duration-300">Enjoy 24/7 proactive monitoring, assistance, and quick resolutions to keep your systems running smoothly and ensure peace of mind at all times.</p>
                                 </div>
-                                <ul className="absolute px-10 font-medium text-md inset-0 flex group-hover:text-white flex-col items-cente mt6 justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <ul className="absolute px-10 font-medium text-md inset-0 flex group-hover:text-white flex-col items-cente  ml-5 mt-10 justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                     <li className="mb-2">- 24/7 Assistance</li>
                                     <li className="mb-2">- Proactive Monitoring</li>
                                     <li className="mb-2">- Quick Resolutions</li>

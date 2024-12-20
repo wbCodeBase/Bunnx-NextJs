@@ -1,6 +1,6 @@
 "use client"
 
-import Image from "next/image"; 
+import Image from "next/image";
 import Link from "next/link";
 
 import heroDefault from "/public/heroDefault.png"
@@ -16,7 +16,9 @@ const HeroSection = ({ title, description, ctaText, imageUrl, ctaRedirectUrl }) 
 
           <div className="sm:mt12 w-full lg:w-[58%] py-10 px-4 flex justify-center gap-20 flex-col sm:pt-18">
             <div>
-              <h1 style={{ lineHeight: "3.7rem" }} className="lg:text-5xl text-3xl my-2 font-semibold">{title}</h1>
+              <h1 style={{
+                lineHeight: window.innerWidth < 768 ? "2.5rem" : "3.6rem"
+              }} className="lg:text-5xl text-3xl my-2 font-semibold">{title}</h1>
               <p className="lg:text-xl text-lg my-6 font-medium">{description}</p>
 
               <button className="flex items-center justify-center sm:justify-start">
