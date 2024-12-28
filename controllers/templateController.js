@@ -1,4 +1,5 @@
 
+import { log } from 'console';
 import Template from '../models/Template';
 
 
@@ -6,7 +7,18 @@ import Template from '../models/Template';
 // Get template 
 export const getTemplateContent = async () => {
   try {
-    const templateContent = await Template.find({});
+    const templateContent = await Template.find()
+    .populate({
+      path: 'servicesSection.fetchOnSlug', // Path to populate in servicesSection
+      model: 'ActiveSlug', // The referenced model
+    })
+    .populate({
+      path: 'servicesSection.ctaRedirectUrl', // Path to populate in servicesSection
+      model: 'ActiveSlug', // The referenced model
+    });
+
+    templateContent[1].servicesSection.forEach((serObj)=>{console.log(serObj.fetchOnSlug)})
+
     return { success: true, data: templateContent }; // Return the updated template
   } catch (error) {
     console.error('Error in GET request:', error.message);
@@ -15,20 +27,17 @@ export const getTemplateContent = async () => {
 };
 
 
-// Get template by string
-// export const getTemplateByStr = async (data) => {
-
-//   try {
-//     const templateComponent = await Template.findOne({ templateName: data });
-//     return { success: true, data: templateComponent }; // Return the updated template
-//   } catch (error) {
-//     console.error('Error in GET request:', error.message);
-//     return new Response(JSON.stringify({ error: error.message }), { status: 500 });
-//   }
-// };
 export const getTemplateByStr = async (data) => {
   try {
-    const templateComponent = await Template.findOne({ templateName: data });
+    const templateComponent = await Template.findOne({ templateName: data }).populate({
+      path: 'servicesSection.fetchOnSlug', // Path to populate in servicesSection
+      model: 'ActiveSlug', // The referenced model
+    })
+    .populate({
+      path: 'servicesSection.ctaRedirectUrl', // Path to populate in servicesSection
+      model: 'ActiveSlug', // The referenced model
+    });
+    
     if (!templateComponent) {
       throw new Error(`Template with name ${data} not found`);
     }
@@ -42,8 +51,13 @@ export const getTemplateByStr = async (data) => {
 
 // Create a page or component data
 export const createComponentContent = async (data) => {
-  
+
   try {
+
+  if(data?.ctaRedirectUrl === ""){
+    data.ctaRedirectUrl = null;
+  }
+  
     const template = await Template.findOne({ templateName: data.templateName });
 
     if (!template) {
@@ -80,6 +94,12 @@ export const createComponentContent = async (data) => {
 
 export const updateComponentContent = async ({ id, templateName, componentName, componentData }) => {
   try {
+
+    if(componentData?.ctaRedirectUrl === ""){
+      componentData.ctaRedirectUrl = null;
+    }
+    
+
     // Fetch the template by `templateName`
     const template = await Template.findOne({ templateName });
 

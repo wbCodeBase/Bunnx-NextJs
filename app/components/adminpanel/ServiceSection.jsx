@@ -22,14 +22,19 @@ import { MdEdit } from "react-icons/md";
 
 import { useCreateComponentContentMutation, useDeleteComponentContentMutation, useUpdateComponentContentMutation } from '../../../store/api/myApi';
 
-import React from "react";
 
+// Custom validation for ObjectId
+const objectIdSchema = z.custom((value) => {
+    if (value === undefined || value === null || value === "") return true; // Allow empty or omitted values
+    const objectIdRegex = /^[0-9a-fA-F]{24}$/; // Regex to validate MongoDB ObjectId
+    return typeof value === "string" && objectIdRegex.test(value);
+}, { message: "Invalid ObjectId format" });
 
 const formSchema = z.object({
     title: z.string().min(2, { message: "Title must be at least 2 characters." }),
     description: z.string(),
-    ctaRedirectUrl: z.string(),
-    fetchOnSlug: z.array(z.string()).nonempty({ message: "Please select at least one slug." }),
+    ctaRedirectUrl: z.string(), // Validate as ObjectId
+    fetchOnSlug: z.array(objectIdSchema).nonempty({ message: "Please select at least one slug." }),
     templateName: z.string(),
     componentName: z.string(),
 });
@@ -44,6 +49,7 @@ const ServiceSection = ({ servicesSection, templateName, activeSlugData }) => {
     const [updateComponentContent, { data, isSuccess: updateIsSuccess, isError: updateIsError, error: updateError, isLoading: updateIsLoading, reset }] = useUpdateComponentContentMutation();
 
 
+    // console.log(servicesSection);
 
     const form = useForm({
         resolver: zodResolver(formSchema),
@@ -90,14 +96,21 @@ const ServiceSection = ({ servicesSection, templateName, activeSlugData }) => {
     };
 
     const handleUpdate = (id) => {
-        console.log(id);
-
         const contentToEdit = servicesSection.find((item) => item._id === id);
         if (contentToEdit) {
             setIsEditing(true);
             setEditId(id);
-            form.reset({
+
+            // Create a copy of the content to edit
+            const editableContent = {
                 ...contentToEdit,
+                fetchOnSlug: contentToEdit?.fetchOnSlug?.map((slug) => slug?._id), // Update fetchOnSlug safely
+                ctaRedirectUrl: contentToEdit?.ctaRedirectUrl?._id, // Update ctaRedirectUrl safely
+            };
+
+
+            form.reset({
+                ...editableContent,
                 templateName: templateName,
                 componentName: contentToEdit.componentName || componentName,
             });
@@ -197,7 +210,7 @@ const FormFieldInput = ({ form, name, label, placeholder, options }) => (
                                     {placeholder || "Select an option"}
                                 </option>
                                 {options.map((option) => (
-                                    <option key={option.slug} value={option.slug}>
+                                    <option key={option.slug} value={option._id}>
                                         {option.label}
                                     </option>
                                 ))}
@@ -249,15 +262,15 @@ const FormFieldFetchOnSlug = ({ form, name, label, options }) => {
                                 {filteredOptions.map((option, index) => (
                                     <div
                                         key={index}
-                                        className={`px-4 py-2 rounded-lg cursor-pointer whitespace-nowrap ${field.value.includes(option.slug)
+                                        className={`px-4 py-2 rounded-lg cursor-pointer whitespace-nowrap ${field.value.includes(option._id)
                                             ? "bg-blue-500 text-white"
                                             : "bg-gray-200 text-black"
                                             }`}
                                         onClick={() => {
                                             // Toggle option in array
-                                            const newValue = field.value.includes(option.slug)
-                                                ? field.value.filter((val) => val !== option.slug)
-                                                : [...field.value, option.slug];
+                                            const newValue = field.value.includes(option._id)
+                                                ? field.value.filter((val) => val !== option._id)
+                                                : [...field.value, option._id];
                                             field.onChange(newValue);
                                         }}
                                     >
@@ -297,8 +310,8 @@ const ServiceCard = ({ serviceSecCard, i, onEdit, onDelete }) => (
         <span className='absolute top-1 right-1 text-xs px-1 rounded-full text-white bg-gray-400'>{i + 1}</span>
         <CardItem label="Title" content={serviceSecCard?.title} />
         <CardItem label="Desc" content={serviceSecCard?.description} />
-        <CardItem label="Fetch on" content={serviceSecCard?.fetchOnSlug} />
-        <CardItem label="Redirect URL" content={serviceSecCard?.ctaRedirectUrl || "CTA not display in this card"} />
+        <CardItem label="Fetch on" content={serviceSecCard?.fetchOnSlug?.map((slug) => slug?.slug).join(", ")} />
+        <CardItem label="Redirect URL" content={serviceSecCard?.ctaRedirectUrl?.slug || "CTA not display in this card"} />
 
 
         {/* Action Buttons (Visible on Hover) */}

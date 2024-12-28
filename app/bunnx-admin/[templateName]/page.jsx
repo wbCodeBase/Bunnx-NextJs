@@ -30,6 +30,7 @@ const Template = () => {
     }
 
     const serviceTemplate = data?.find((templateData) => templateData.templateName === templateName)
+    // const serviceTemplate = data?.find((templateData) => templateData.templateName === templateName)
 
     // Redirect to 404 if the template is not found
     if (!serviceTemplate) {

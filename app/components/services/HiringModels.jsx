@@ -24,47 +24,47 @@ export default function HiringModels() {
 
     const serviceModels = [
         {
-            title: "Dedicated Team",
+            title: "Dedicated Front End Team",
             icon: lightdotnetmodalicon,
-            subtitle: "(also known as product engineering teams)",
+            subtitle: "(also known as product interface teams)",
             sections: [
                 {
                     type: "para",
-                    content: "It is an expert autonomous team comprising of different roles (e.g. project manager, software engineers, QA engineers, and other roles) capable of delivering technology solutions rapidly and efficiently. The roles are defined for each specific project and management is conducted jointly by a Scrum Master and the client's product owner."
+                    content: "Our front-end development team is a highly skilled, autonomous unit composed of diverse roles, including UI/UX designers, front-end engineers, and component developers. Each role is made to deliver sleek, modern, and responsive web interfaces. Project management is collaboratively handled by a Scrum Master and the client’s product owner."
                 },
                 {
                     type: "list",
-                    content: "Agile processes,Transparent pricing,Monthly billing,Maximum flexibility,Suitable for startups, MVPs and software/product companies"
+                    content: "Agile processes,Clear and competitive pricing,Simplified payment structures,Scalable solutions,Modern front-end technologies,Suitable for startups,Flexible engagement models"
                 }
             ]
         },
         {
-            title: "Team Augmentation",
+            title: "Front End Team Augmentation",
             icon: teamAug,
             subtitle: "(also known as team extension or staff augmentation)",
             sections: [
                 {
                     type: "para",
-                    content: "Suitable for every scale of business and project, team augmentation helps add required talent to you team to fill the talent gap. The augmented team members work as part of your local or distributed team, attending your regular daily meetings and reporting directly to your managers. This helps businesses scale immediately and on-demand."
+                    content: "Suitable for projects of any scale, our team augmentation model integrates specialized front-end developers into your existing team to bridge UI development gaps. Augmented experts collaborate as an extension of your local or distributed team, participating in daily stand-ups and reporting directly to your project leads."
                 },
                 {
                     type: "list",
-                    content: "Scale on-demand,Quick & cost-effective,Monthly billing,Avoid hiring hassles,Transparent pricing"
+                    content: "Scalable On-Demand Expertise,Rapid Deployment & Cost Optimization,Monthly Billing,Eliminate Recruitment Overhead,Transparent and Predictable Cost Structures"
                 }
             ]
         },
         {
             title: "Project Based",
             icon: ProjectBased,
-            subtitle: "(best suited for small-mid scale projects)",
+            subtitle: "(best suited for small-mid scale front end projects)",
             sections: [
                 {
                     type: "para",
-                    content: "Fixed Price Model:\nWhen project specifications, scope, deliverables and acceptance criteria are clearly defined, we can evaluate and offer a fixed quote for the project. This is mostly suitable for small-mid scale projects with well documented specifications."
+                    content: "Fixed Price Model:\nIdeal for front-end projects with well-defined UI specifications, scope, deliverables, and acceptance criteria. Under this model, we provide a detailed project evaluation and a fixed cost estimate. It is suitable for small- to medium-scale front-end development projects and has comprehensive documentation and clear requirements."
                 },
                 {
                     type: "para",
-                    content: "Time & Material Model:\nSuitable for projects that have undefined or dynamic scope requirements or complicated business requirements due to which the cost estimation is not possible. Therefore, developers can be hired per their time."
+                    content: "Time & Material Model:\nDesigned for projects with evolving requirements and complex UI/UX needs, where precise cost estimation is not feasible. This model allows front-end developers to be engaged on an hourly or resource-based billing structure."
                 }
             ]
         }
@@ -77,8 +77,8 @@ export default function HiringModels() {
             <div className='container mx-auto max-w-screen-xl px-4 md:px-6 sm:py-10 py-5'>
 
                 <h2 className='font-semibold text-orange-500 text-lg'>Hiring Models</h2>
-                <h4 className='font-semibold sm:text-4xl text-2xl my-2'>Choose From Our Hiring Models</h4>
-                <p className='text-md text-gray-800'>With us, you can choose from multiple hiring models that best suit your needs</p>
+                <h4 className='font-semibold sm:text-4xl text-2xl my-2'>Choose From Our Front End Development Service Models</h4>
+                <p className='text-md text-gray-800'>We customize engagement strategies to match your project’s vision, scale, and complexity. Our hiring models ensure you have the right team and services at your disposal to ensure smooth services.</p>
 
 
                 <div ref={containerRef} className="relative mt-8 my-4">

@@ -80,52 +80,45 @@ export default function ServiceDetailsComp() {
 
     {
       id: "default-1",
-      question: "What technology stacks do you use?",
+      question: "What technologies do Front End Development companies use?",
       answer: {
         type: "text",
-        content: "We work with a wide array of technologies based on project needs, including frontend frameworks like React and Angular, backend technologies such as Node.js, Python, and Java, as well as mobile frameworks like Flutter and React Native. We can also integrate with popular cloud providers and use databases like MongoDB, MySQL, and PostgreSQL."
+        content: "Top Front End Development companies work with a variety of technologies, including React.js, Angular, and Vue.js. "
       }
     },
     {
       id: "default-2",
-      question: "How long does a typical software development project take?",
+      question: "Do front end Development companies offer post-launch support?",
       answer: {
         type: "text",
-        content: "The timeline varies based on project complexity, features, and requirements. Small projects may take a few weeks, while larger or more complex solutions could take several months. After an initial consultation, we can provide a more accurate timeline tailored to your project's specifics."
+        content: "Yes, most Front End Development companies provide post-launch support and maintenance services, including bug fixes, updates, performance optimization, and feature enhancements to keep your application running smoothly."
       }
     },
     {
       id: "default-3",
-      question: "How do you ensure the quality and security of the software?",
+      question: "Why should I hire a front end Development company?",
       answer: {
         type: "text",
-        content: "We follow industry best practices in testing, including functional, integration, and security testing. Our team conducts rigorous quality assurance and performance optimization to ensure reliability and robustness. We also implement the latest security protocols to protect your data and application."
+        content: "Hiring a front end Development company ensures you get end-to-end development services under one roof. They offer expertise in multiple programming languages, frameworks, and tools, enabling them to deliver seamless, user-friendly, and robust applications tailored to your business needs."
       }
     },
     {
       id: "default-4",
-      question: "Will I own the software once it’s developed?",
+      question: "How does a front end Development company ensure scalability and security?",
       answer: {
         type: "text",
-        content: "Yes, once the project is complete and all payments are made, you retain full ownership of the code and the software. We will provide you with all necessary documentation and source code, allowing you complete control over the final product."
+        content: "A reliable company designs systems with scalability in mind, using modular architecture and cloud solutions to handle growth. For security, they implement best practices like data encryption, secure authentication, and regular vulnerability assessments to protect your application from threats."
       }
     },
     {
       id: "default-5",
-      question: "What industries can benefit from custom software solutions?",
+      question: "Do Front End Development companies offer post-launch support?",
       answer: {
         type: "text",
-        content: "Custom software is suitable for a wide range of industries, including healthcare, finance, retail, education, and more. It ensures tailored solutions that address specific business needs."
+        content: "Yes, most Front End Development companies provide post-launch support and maintenance services, including bug fixes, updates, performance optimization, and feature enhancements."
       }
     },
-    {
-      id: "default-6",
-      question: "How do you ensure the software evolves with my business?",
-      answer: {
-        type: "text",
-        content: "We use scalable architectures and modular design, allowing the software to adapt and integrate with your growing needs and emerging technologies."
-      }
-    },
+   
 
 
   ];
@@ -142,8 +135,9 @@ export default function ServiceDetailsComp() {
   }
 
   const heroSectionObj = data?.heroSection?.find((heroData) => heroData?.fetchOnSlug === serviceDetails) || {};
-  const serviceSectionObj = data?.servicesSection?.filter((serviceData) => serviceData?.fetchOnSlug.includes(serviceDetails)) || [];
 
+  const serviceSectionObj = data?.servicesSection?.filter((service) => service?.fetchOnSlug?.map((slug) => slug?.slug).includes(serviceDetails)) || [];
+  console.log(serviceSectionObj);
 
   const servicesData = (Array.isArray(serviceSectionObj) && serviceSectionObj.length > 0)
     ? serviceSectionObj
@@ -286,11 +280,11 @@ export default function ServiceDetailsComp() {
 
       <NumericCounterInfo />
 
-      <Services servicesData={servicesData} />
+      <Services servicesData={servicesData} extractNameFromSlug={formatparameter(serviceDetails)} />
 
       <CtaSectionMain />
 
-      <ProcessShowcase />
+      <ProcessShowcase extractNameFromSlug={formatparameter(serviceDetails)} />
 
       <Methodology />
 

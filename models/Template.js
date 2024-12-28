@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const Schema = mongoose.Schema
 
 // Define the HeroSection schema
 const HeroSectionSchema = new mongoose.Schema({
@@ -41,12 +42,17 @@ const ServiceSchema = new mongoose.Schema({
         required: true
     },
     ctaRedirectUrl: {
-        type: String
+        type: Schema.Types.ObjectId,
+        ref: 'ActiveSlug',
     },
     fetchOnSlug: [{
-        type: String,
+        type: Schema.Types.ObjectId,
+        ref: 'ActiveSlug',
         required: true
     }]
+
+    // stations: [{ type: Schema.Types.ObjectId, ref: 'Station' }], // References to the stations
+
 }, {
     timestamps: true
 });
@@ -60,7 +66,7 @@ const TemplateSchema = new mongoose.Schema({
     servicesSection: {
         type: [ServiceSchema],
         required: false // servicesSection is also optional if needed
-    },    
+    },
     templateName: {
         type: String,
         required: true,

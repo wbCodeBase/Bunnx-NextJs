@@ -13,9 +13,9 @@ const CtaSectionMain = () => {
                     <div className="container mx-auto max-w-screen-xl flex gap-8 items-center flex-wrap sm:justify-between justify-center sm:px-10 px-4 py-10 bg-purple900 bg-[#00214E] rounded-md borde border-gray-50">
 
                         <div className='text-white flex gap-4 flex-col lg:items-start items-center xl:w-[58%] w-full'>
-                            <span>Our expert team is here to turn your vision into reality!</span>
-                            <h2 className='text-3xl font-semibold'>Ready to bring your dream project to life?</h2>
-                            <p>Let&apos;s create something extraordinary together!</p>
+                            <span>Solutions That Evolve as Your Business Grows!</span>
+                            <h2 className='text-3xl font-semibold'>Frustrated with a lacklustre website design? </h2>
+                            <p>Our expert Front-End Development team is here to help you captivate your visitors.</p>
 
                         </div>
 

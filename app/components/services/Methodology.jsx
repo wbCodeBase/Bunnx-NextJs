@@ -26,23 +26,23 @@ export default function Methodology() {
 
     const steps = [
         {
-            title: "Agile development",
-            description: "We at Bunnx believe in iterative progress followed by continuous improvement and quick delivery.",
+            title: "Agile Development",
+            description: "At Bunnx, we adopt an iterative approach, focusing on continuous feedback and swift iterations to ensure a polished and responsive user interface.",
             icon: Agile,
         },
         {
-            title: "Waterfall development",
-            description: "Depending on your business outcome, we include waterfall development method to ensure successful completion.",
+            title: "Waterfall Development",
+            description: "For projects with well-defined requirements, we utilize the waterfall method to deliver front ends that meet exact specifications in a structured, phase-wise manner.",
             icon: Waterfall,
         },
         {
-            title: "Rapid development",
-            description: "To meet strict deadlines we opt for rapid development by creating prototypes and modifying those based on user feedback.",
+            title: "Rapid Development",
+            description: "To tackle tight deadlines, we employ rapid development practices, building interface prototypes and refining them iteratively based on real-time user feedback.",
             icon: Rapid,
         },
         {
-            title: "DevOps development",
-            description: "By integrating Devops, we at Hidden Brains enhance efficiency and collaboration without compromising on the brand credibility.",
+            title: "DevOps Development",
+            description: "By implementing DevOps, Hidden Brains ensures streamlined collaboration between design and development, accelerating deployment while maintaining code quality and reliability.",
             icon: DevOps,
         },
 
@@ -53,8 +53,8 @@ export default function Methodology() {
             <div className='container mx-auto max-w-screen-xl px-4 md:px-6 sm:py-10 py-5'>
 
                 <h2 className='font-semibold text-orange-500 text-lg'>Methodology</h2>
-                <h4 className='font-semibold sm:text-4xl text-2xl my-2'>Empowering Success through Strategic Methodologies</h4>
-                <p className='text-md text-gray-800'>Our project leverages targeted methodologies designed to drive efficiency, quality, and innovation. By aligning solutions with business goals, we empower organizations to achieve sustainable growth, streamline processes, and enhance performance.</p>
+                <h4 className='font-semibold sm:text-4xl text-2xl my-2'>Get Smarter Applications with Effective Front End Solutions</h4>
+                <p className='text-md text-gray-800'>Our front end development strategies are specifically designed to improve usability, scalability, and performance. By combining user-centric design with technological competence, we enable organisations to provide seamless digital experiences.</p>
 
 
                 <div ref={containerRef} className="relative mt-8 my-4">

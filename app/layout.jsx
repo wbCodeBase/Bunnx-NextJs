@@ -9,6 +9,7 @@ import { Toaster } from "@/components/ui/sonner"
 import { SessionProvider } from "next-auth/react"; // Import SessionProvider
 import HeaderFooterWrapper from "@/components/layout/HeaderFooterWrapper";
 
+
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -79,6 +80,13 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
+
+      {/* <script
+        src="//code.tidio.co/klkqty8577u9fcdp5esahlrjvfnzvguw.js"
+        async
+      ></script> */}
+
+
 
       <body className={`${geistSans.variable} ${quando.variable} ${geistMono.variable} ${arOneSans.variable} antialiased`}
       >

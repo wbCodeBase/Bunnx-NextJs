@@ -6,173 +6,99 @@ import { ChevronLeft, ChevronRight } from 'lucide-react'
 
 import "./service.css";
 
-// const processSections = [
-//     {
-//         id: 1,
-//         title: "Requirement Assessment",
-//         description: "Initiating the process with a comprehensive understanding of your vision. We delve into your business objectives, market trends, and target audience to ensure a bespoke strategy tailored for success.",
-//         activities: [
-//             "Client objectives and needs analysis",
-//             "Market and user research",
-//             "Technology stack evaluation"
-//         ],
-//         deliverables: [
-//             "Requirements Gathering Report",
-//             "Market Analysis Summary",
-//             "Technology Assessment Report"
-//         ]
-//     },
-//     {
-//         id: 2,
-//         title: "Agreement on Engagement",
-//         description: "Establishing clear terms of collaboration and project scope. We define timelines, milestones, and deliverables to ensure transparent communication and smooth project execution.",
-//         activities: [
-//             "Scope definition",
-//             "Timeline planning",
-//             "Resource allocation"
-//         ],
-//         deliverables: [
-//             "Project Scope Document",
-//             "Timeline Roadmap",
-//             "Resource Plan"
-//         ]
-//     },
-//     {
-//         id: 3,
-//         title: "Design & Development",
-//         description: "Transforming requirements into reality through iterative development. Our expert team creates intuitive designs and robust code following industry best practices.",
-//         activities: [
-//             "UI/UX design",
-//             "Frontend development",
-//             "Backend implementation"
-//         ],
-//         deliverables: [
-//             "Design Mockups",
-//             "Working Prototype",
-//             "Development Milestones"
-//         ]
-//     },
-//     {
-//         id: 4,
-//         title: "Testing & Quality Assurance",
-//         description: "Ensuring excellence through comprehensive testing. We conduct thorough quality checks to deliver a robust and reliable solution.",
-//         activities: [
-//             "Functional testing",
-//             "Performance optimization",
-//             "Security assessment"
-//         ],
-//         deliverables: [
-//             "Test Cases Document",
-//             "QA Reports",
-//             "Performance Metrics"
-//         ]
-//     },
-//     {
-//         id: 5,
-//         title: "Delivery & Support",
-//         description: "Seamless deployment and ongoing support. We ensure smooth transition and provide continuous assistance for optimal performance.",
-//         activities: [
-//             "Deployment preparation",
-//             "Knowledge transfer",
-//             "Maintenance planning"
-//         ],
-//         deliverables: [
-//             "Deployment Guide",
-//             "Documentation",
-//             "Support Plan"
-//         ]
-//     }
-// ]
+
+
 
 const processSections = [
     {
         id: 1,
-        title: "Gathering Your Requirements",
-        description: "We begin by thoroughly understanding your vision, diving into your business objectives, market trends, and target audience to create a customized strategy designed for success.",
+        title: "Understanding Your Vision",
+        description: "We start by analyzing your goals, user needs, and market dynamics to deliver tailored front-end solutions that align with your brand identity and objectives.",
         activities: [
-            "Client Need Analysis",
-            "Gathering all basic information",
-            "Marketing and competition research",
-            "Tech Stack Assessment"
+            "Client Requirement Analysis",
+            "Gathering UX/UI preferences",
+            "Research on design trends and competitor interfaces",
+            "Platform and framework assessment"
         ],
         deliverables: [
-            "Requirement Gathering Report",
-            "Competition Analysis Report",
-            "Tech Stack Report"
+            "Requirement Analysis Report",
+            "UX/UI Trends Report",
+            "Technology Stack Recommendation"
         ]
     },
     {
         id: 2,
-        title: "Service Agreement",
-        description: "We create a strong base of trust and collaboration by agreeing on the project scope, methodologies, and deliverables, ensuring a transparent and productive partnership.",
+        title: "Agreement and Planning",
+        description: "Our front end development company establishes a secure framework for collaboration by finalizing the project scope, workflows, and timelines for a seamless development experience.",
         activities: [
-            "Scope definition and agreement",
-            "Setting up communication channels",
-            "Resource and timeline planning"
+            "Defining scope and deliverables",
+            "Establishing communication protocols",
+            "Creating resource allocation and timeline plans"
         ],
         deliverables: [
-            "Project Scope Document",
-            "Communication Plan",
-            "Detailed Project Schedule"
+            "Project Scope Documentation",
+            "Communication and Workflow Plan",
+            "front end Development Timeline"
         ]
     },
     {
         id: 3,
-        title: "Design & Development",
-        description: "Our team works closely together to develop highly responsive and user-friendly software. We ensure that our solutions align with your vision and meet all necessary requirements.",
+        title: "Design & Implementation",
+        description: "Our team creates responsive, accessible, and scalable designs, ensuring seamless user experiences across all devices and browsers.",
         activities: [
-            "UX/UI design and prototyping",
-            "Frontend and backend development",
-            "API Development and Integration"
+            "Wireframe and prototype creation",
+            "HTML/CSS/JavaScript development",
+            "Component integration and state management"
         ],
         deliverables: [
-            "Design Wireframes and Prototype",
-            "Web Application up and running",
-            "Integrated System Interfaces"
+            "Interactive Prototypes and Mockups",
+            "Responsive UI Implementation",
+            "Functional Component Library"
         ]
     },
     {
         id: 4,
-        title: "Testing & Quality Assurance",
-        description: "Ensuring top performance and security, our thorough testing protocols make sure your web app is reliable, secure, and prepared to handle user demands.",
+        title: "Testing & Optimization",
+        description: "Through rigorous testing, we ensure high performance, cross-browser compatibility, and optimal responsiveness for your front-end application.",
         activities: [
-            "Integration & Functional Testing",
-            "Security and load testing",
-            "Test Automation"
+            "Cross-Browser and Device Testing",
+            "Code Validation and Performance Optimization",
+            "Automated Testing for Components"
         ],
         deliverables: [
-            "Test Execution Report",
-            "Security and Performance Reports",
-            "Optimized, Bug-Free Code"
+            "Testing and Compatibility Reports",
+            "Optimized front end Codebase",
+            "Bug-Free and Validated Application"
         ]
     },
     {
         id: 5,
-        title: "Delivery & Support",
-        description: "Rolling out your software with assurance and ongoing support. We guarantee a seamless launch and offer continuous maintenance to keep your application current and effective.",
+        title: "Deployment & Maintenance",
+        description: "We deliver your project ready for production and provide consistent support to ensure smooth functionality and updates as required.",
         activities: [
-            "Deployment to production servers",
-            "User training and documentation",
-            "Ongoing maintenance and updates"
+            "Deployment to hosting platforms",
+            "Knowledge transfer and documentation",
+            "Ongoing monitoring and updates"
         ],
         deliverables: [
-            "Deployed Web Application",
-            "Training Materials and Guides",
-            "Regular Update and Support Logs"
+            "Deployed front end Application",
+            "User Training and Support Documentation",
+            "Maintenance Logs and Updates"
         ]
     }
 ]
 
 
-export default function ProcessShowcase() {
+export default function ProcessShowcase({ extractNameFromSlug }) {
     const [activeSection, setActiveSection] = useState(1)
 
     return (<>
         <div className="max-w-screen-xl container mx-auto p-4 md:p-8">
 
             <h2 className='font-semibold text-orange-500 text-lg'>Our Process</h2>
-            <h4 className='font-semibold text-3xl my-2'>Our Process for Software Development</h4>
-            <p className='text-md text-gray-800'>As a leading software development company in India, we deliver solutions that are visually striking and technically advanced. Our services combine innovative design with advance development techniques to empower your brand. </p>
+            <h4 className='font-semibold text-3xl my-2'>Our Process for {extractNameFromSlug}</h4>
+            <p className='text-md text-gray-800'>As an experienced front end development company in India, we create visually appealing and dynamic user interfaces. To boost your digital presence, we combine innovative layouts with modern technologies and interactive features that help your website stand out. We follow a series of well-planned and strategic steps to craft the website that counts.
+            </p>
 
 
             <div className='text-white md:my-10 my-6'>

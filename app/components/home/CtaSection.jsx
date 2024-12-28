@@ -14,17 +14,15 @@ const CtaSection = () => {
                     <div className="h-full w-full flex gap-8 items-center flex-wrap justify-between sm:px-10 px-4 py-6 bg-gray-200 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-50">
 
                         <div className='text-white flex gap-3 flex-col lg:items-start items-center xl:w-[48%] w-full'>
-                            <span className='italic'>Bring Your Ideas to Life</span>
-                            <h3 className='text-3xl font-semibold'>Turn Your Vision into Reality with Custom Web Solutions!</h3>
-                            <p>We specialize in turning business ideas into stunning, high-performance websites and applications.</p>
+                            <span className='italic'>Shape the Future of Your Online Presence</span>
+                            <h3 className='text-3xl font-semibold'>Elevate Your Brand with Expert Front-End Development!</h3>
+                            <p>We excel in crafting intuitive, visually appealing websites and applications that ensure an outstanding user experience. Trust us to transform your creative concepts into a dynamic, user-friendly online interface.</p>
                         </div>
 
                         <div className='xl:w-[48%] w-full flex justify-center items-center'>
                             <Link href="tel:+91-9971544661" className="px-6 mt-4 py-3 bg-white/30 backdrop-blur-md text-white font-semibold rounded-full shadow-md hover:bg-white/40 transition duration-300 border border-white/20">
-                                Kickstart Your Project
+                                Launch Your Project Now!
                             </Link>
-                            {/* <Image className='transform xl:scale150' src={"/ctaRightImg.webp"} height={230} width={230} alt="ctaSectionImage" /> */}
-                            {/* <Image className='transform xl:scale-150' src="https://static.vecteezy.com/system/resources/previews/020/962/924/non_2x/software-engineer-graphic-clipart-design-free-png.png" height={200} width={200} alt="ctaSectionImage" /> */}
                         </div>
 
                     </div>

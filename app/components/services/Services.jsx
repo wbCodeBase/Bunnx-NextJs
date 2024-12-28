@@ -65,7 +65,7 @@ const defaultServicesData = [
 
 
 
-const Services = ({ servicesData }) => {
+const Services = ({ servicesData, extractNameFromSlug }) => {
 
 
   return (
@@ -73,8 +73,8 @@ const Services = ({ servicesData }) => {
       <section className="container mx-auto max-w-screen-xl px-4 md:px-6 py-10">
 
         <h2 className='font-semibold text-orange-500 text-lg'>Our Services</h2>
-        <h4 className='font-semibold text-3xl my-2'>Our Software Development Services</h4>
-        <p className='text-md text-gray-800'>We are a leading software development company in India, providing unique and innovative custom software development services that help your business to achieve exponential growth.</p>
+        <h4 className='font-semibold text-3xl my-2'>Best {extractNameFromSlug} Services</h4>
+        <p className='text-md text-gray-800'>We are a <strong> top front end development service </strong> provider in India, focused on delivering the best user solutions. We build powerful, integrated websites that make navigation smoother and drive business growth seamlessly. Our innovative range of <strong>front end development services</strong> include</p>
 
         <div className='relative flex justify-center flex-wrap gap-10 mt-6'>
 
@@ -87,8 +87,8 @@ const Services = ({ servicesData }) => {
 
 
               {service?.ctaRedirectUrl &&
-                <div className='flex justify-end items-center mt-4'>
-                  <Link href={`${service.ctaRedirectUrl}`} className='flex absolute bottom-2 right-4 items-center justify-center text-orange-500 p-1 pl-3 font-medium text-md mt-4'><span className='relative after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[1px] after:bg-orange-500 after:transition-all after:duration-300 hover:after:w-full'> Know more </span> <span className='px-1'> <IoArrowForward /> </span></Link>
+                <div className='flex justify-end items-center mt-2'>
+                  <Link href={`${service.ctaRedirectUrl.slug}`} className='flex items-center justify-center text-orange-500 p-1 pl-3 font-medium text-md'><span className='relative after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[1px] after:bg-orange-500 after:transition-all after:duration-300 hover:after:w-full'> Know more </span> <span className='px-1'> <IoArrowForward /> </span></Link>
                 </div>
               }
 

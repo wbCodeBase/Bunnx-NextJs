@@ -1,5 +1,5 @@
 "use client"
-
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -9,6 +9,26 @@ import { FaLocationArrow } from "react-icons/fa";
 
 const HeroSection = ({ title, description, ctaText, imageUrl, ctaRedirectUrl }) => {
 
+  const [lineHeight, setLineHeight] = useState("3.6rem");
+
+  useEffect(() => {
+    const handleResize = () => {
+      setLineHeight(window.innerWidth < 768 ? "2.5rem" : "3.6rem");
+    };
+
+    // Set initial lineHeight based on current window width
+    handleResize();
+
+    // Add event listener for window resize
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  
   return (
     <>
       <section className="borde pb20 bg-gray800 bg-black text-white">
@@ -17,7 +37,7 @@ const HeroSection = ({ title, description, ctaText, imageUrl, ctaRedirectUrl }) 
           <div className="sm:mt12 w-full lg:w-[58%] py-10 px-4 flex justify-center gap-20 flex-col sm:pt-18">
             <div>
               <h1 style={{
-                lineHeight: window.innerWidth < 768 ? "2.5rem" : "3.6rem"
+                lineHeight: window?.innerWidth < 768 ? "2.5rem" : "3.6rem"
               }} className="lg:text-5xl text-3xl my-2 font-semibold">{title}</h1>
               <p className="lg:text-xl text-lg my-6 font-medium">{description}</p>
 
