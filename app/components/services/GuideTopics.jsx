@@ -41,7 +41,7 @@ export default function GuideTopics() {
       "Explore the essentials of creating, managing, and optimizing web interfaces. It covers methodologies, benefits, best practices, and insights for selecting partners, streamlining development, and understanding the front end's crucial role in modern applications.",
     sections: [
       {
-        id: 'introduction',
+        id: '0',
         title: 'What is Software Development Service?',
         content: {
           heading: 'Introduction and Importance of Front End Development',
@@ -55,7 +55,7 @@ export default function GuideTopics() {
         },
       },
       {
-        id: 'types',
+        id: '1',
         title: 'Types Of Software Development Services',
         content: {
           heading: 'Types of Front End Development Services:',
@@ -64,24 +64,161 @@ export default function GuideTopics() {
           ],
           list: [
             {
-              title: 'Custom Software Development',
+              title: 'Component Development',
               detail:
-                'An application developed as per business needs and industry-specific requirements. Everything from initial planning and design through coding, testing, and maintenance.',
+                'Building reusable UI components tailored to business needs and design systems. Includes everything from initial wireframing through development, testing, and maintenance.',
             },
             {
-              title: 'Mobile App Development',
+              title: 'Progressive Web Apps (PWA)',
               detail:
-                'This is a type of development which concentrates on the applications for mobile devices like Smartphones and Tablets, mostly on iOS and Android platforms.',
+                'Development focusing on web applications that offer native-like experiences across devices, with features like offline functionality and push notifications.',
             },
             {
-              title: 'Web Development',
+              title: 'Responsive Web Development',
               detail:
-                'Building applications or websites that run on the web and can be accessed through a browser (front-end development & back-end development).',
+                'Creating fluid interfaces that adapt seamlessly across devices and screen sizes, ensuring consistent user experience.',
+            },
+            {
+              title: 'Enterprise UI Development',
+              detail:
+                'Specialized in creating large-scale application interfaces that handle complex business processes, such as admin dashboards, analytics platforms, and enterprise portals.',
+            },
+            {
+              title: 'JAMstack Development',
+              detail:
+                'Building performant web experiences using JavaScript, APIs, and Markup, delivered through modern CDNs without traditional server dependencies.',
+            },
+            {
+              title: 'Interface Maintenance and Support',
+              detail:
+                'Ongoing updates, performance optimization, and bug fixes to ensure interfaces remain fast, accessible, and secure over time.',
             },
           ],
         },
       },
-      // Add more sections as needed
+
+      {
+        id: '2',
+        title: 'Why Choose Custom Front End Development?',
+        content: {
+          heading: 'Why Choose Custom Front End Development?',
+          description: [
+            "Custom front-end development is a premier service offered by leading front end development companies because:",
+          ],
+          list: [
+            {
+              title: 'Tailored User Experience (UX)',
+              detail:
+                'Custom interfaces are specifically built to meet unique user needs, enhancing functionality and optimizing workflow efficiency.',
+            },
+            {
+              title: 'Scalability',
+              detail:
+                'Designed with a component-based architecture that not only supports growth but is also easily extendable as your business needs evolve.',
+            },
+            {
+              title: 'Competitive Advantage',
+              detail:
+                'By offering unique user interactions, custom solutions provide a distinct edge over competitors relying on standardized template solutions.',
+            },
+            {
+              title: 'Enhanced Performance and Security',
+              detail:
+                'Custom front-end development adopts the latest best practices in security, safeguarding your applications against XSS and other client-side vulnerabilities to ensure superior performance.',
+            },
+
+          ],
+        },
+      },
+
+
+      {
+        id: '3',
+        title: 'What are the Types of Front End Specializations?',
+        content: {
+          heading: 'What are the Types of Front End Specializations?',
+          description: [
+            "Here are key areas of front-end expertise offered in front end development services:",
+          ],
+          list: [
+            {
+              title: 'UI Development',
+              detail:
+                'Focuses on pixel-perfect implementation of designs using modern HTML5, CSS3, and JavaScript, ensuring accessible and beautiful interfaces.',
+            },
+            {
+              title: 'State Management',
+              detail:
+                'Handles complex application state and data flow using technologies like Redux, MobX, or Zustand for predictable user experiences.',
+            },
+            {
+              title: 'Front-end Architecture',
+              detail:
+                'Combines modular design patterns and performance optimization to build maintainable, scalable applications.',
+            },
+            {
+              title: 'Cross-Platform Development',
+              detail:
+                'Creates consistent experiences across devices using frameworks like React Native or Flutter',
+            },
+            {
+              title: 'Modern Web Development',
+              detail:
+                'Leverages cutting-edge tools like Next.js, Remix, or Astro for optimized web applications.',
+            },
+            {
+              title: 'Desktop Web Apps',
+              detail:
+                'Builds desktop-class web applications using Electron or Tauri with web technologies.',
+            },
+          ],
+        },
+      },
+
+
+
+      {
+        id: '4',
+        title: 'Choosing the Right Front End Partner',
+        content: {
+          heading: 'Choosing the Right Front End Partner',
+          description: [
+            "Selecting the right front end development company is crucial. Consider:",
+          ],
+          list: [
+            {
+              title: 'Technical Stack',
+              detail:
+                'Verify expertise in modern front end frameworks and tools.',
+            },
+            {
+              title: 'Component Library',
+              detail:
+                'Review their reusable component systems and design implementations.',
+            },
+            {
+              title: 'Communication',
+              detail:
+                ' Assess their ability to collaborate with designers and backend teams.',
+            },
+            {
+              title: 'Development Process',
+              detail:
+                'Ensure their workflow aligns with your continuous deployment needs.',
+            },
+            {
+              title: 'Performance Focus',
+              detail:
+                'Evaluate their approach to web vitals and optimization.',
+            },
+          ],
+        },
+      },
+
+
+
+
+
     ],
   };
 
@@ -100,11 +237,10 @@ export default function GuideTopics() {
               <button
                 key={section.id}
                 onClick={() => scrollToSection(section.id)}
-                className={`block w-full rounded-lg p-3 text-left text-sm transition-colors ${
-                  activeSection === section.id
+                className={`block w-full rounded-lg p-3 text-left text-sm transition-colors ${activeSection === section.id
                     ? 'bg-amber-50 font-medium text-amber-900'
                     : 'hover:bg-gray-100 font-normal text-gray-600'
-                }`}
+                  }`}
               >
                 {section.title}
               </button>
@@ -354,7 +490,7 @@ export default function GuideTopics() {
 //                                 <strong>Mobile Development:</strong> Specializes in creating applications for mobile platforms (iOS and Android) using technologies like Swift, Kotlin, or React Native for ios and android.
 //                             </li>
 //                             <li>
-//                                 <strong>Web Development:</strong> Focuses on building web applications that run on browsers using technologies such as JavaScript, Python, and PHP for both front-end and back-end. 
+//                                 <strong>Web Development:</strong> Focuses on building web applications that run on browsers using technologies such as JavaScript, Python, and PHP for both front-end and back-end.
 //                             </li>
 //                             <li>
 //                                 <strong>Desktop Development:</strong> Involves creating applications that run on desktop operating systems like Windows or macOS, often using languages like dotnet or java.

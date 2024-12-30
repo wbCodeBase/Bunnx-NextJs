@@ -23,9 +23,8 @@ const HeroSectionSchema = new mongoose.Schema({
         required: true
     },
     fetchOnSlug: {
-        type: String,
-        required: true,
-        unique: true
+        type: Schema.Types.ObjectId,
+        ref: 'ActiveSlug',
     }
 }, {
     timestamps: true
@@ -51,7 +50,6 @@ const ServiceSchema = new mongoose.Schema({
         required: true
     }]
 
-    // stations: [{ type: Schema.Types.ObjectId, ref: 'Station' }], // References to the stations
 
 }, {
     timestamps: true

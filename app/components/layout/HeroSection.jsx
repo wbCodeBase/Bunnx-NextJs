@@ -13,7 +13,7 @@ const HeroSection = ({ title, description, ctaText, imageUrl, ctaRedirectUrl }) 
 
   useEffect(() => {
     const handleResize = () => {
-      setLineHeight(window.innerWidth < 768 ? "2.5rem" : "3.6rem");
+      setLineHeight(window?.innerWidth < 768 ? "2.5rem" : "3.6rem");
     };
 
     // Set initial lineHeight based on current window width
@@ -37,7 +37,7 @@ const HeroSection = ({ title, description, ctaText, imageUrl, ctaRedirectUrl }) 
           <div className="sm:mt12 w-full lg:w-[58%] py-10 px-4 flex justify-center gap-20 flex-col sm:pt-18">
             <div>
               <h1 style={{
-                lineHeight: window?.innerWidth < 768 ? "2.5rem" : "3.6rem"
+                lineHeight: lineHeight
               }} className="lg:text-5xl text-3xl my-2 font-semibold">{title}</h1>
               <p className="lg:text-xl text-lg my-6 font-medium">{description}</p>
 
@@ -48,11 +48,11 @@ const HeroSection = ({ title, description, ctaText, imageUrl, ctaRedirectUrl }) 
             </div>
           </div>
 
-          <div className="md:w-[41%] w-full flex items-center justify-center">
+          <div className="md:w-[41%] w-full flex sm:p-10 p-4 items-center justify-center">
             <Image
               src={imageUrl || heroDefault}
               alt="Digital Brain Visualization"
-              className="w-full h-auto -translatey6"
+              className="w-full h-auto"
             />
           </div>
 

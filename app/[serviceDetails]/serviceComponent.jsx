@@ -134,11 +134,13 @@ export default function ServiceDetailsComp() {
     }
   }
 
-  const heroSectionObj = data?.heroSection?.find((heroData) => heroData?.fetchOnSlug === serviceDetails) || {};
+  
+
+  const heroSectionObj = data?.heroSection?.find((heroData) => heroData?.fetchOnSlug?.slug === serviceDetails) || {};
 
   const serviceSectionObj = data?.servicesSection?.filter((service) => service?.fetchOnSlug?.map((slug) => slug?.slug).includes(serviceDetails)) || [];
-  console.log(serviceSectionObj);
 
+  
   const servicesData = (Array.isArray(serviceSectionObj) && serviceSectionObj.length > 0)
     ? serviceSectionObj
     : [
@@ -280,19 +282,19 @@ export default function ServiceDetailsComp() {
 
       <NumericCounterInfo />
 
-      <Services servicesData={servicesData} extractNameFromSlug={formatparameter(serviceDetails)} />
+      <Services servicesData={servicesData} serviceDetailPageSlug={serviceDetails} extractNameFromSlug={formatparameter(serviceDetails)} />
 
-      <CtaSectionMain />
+      <CtaSectionMain serviceDetailPageSlug={serviceDetails} />
 
-      <ProcessShowcase extractNameFromSlug={formatparameter(serviceDetails)} />
+      <ProcessShowcase serviceDetailPageSlug={serviceDetails} />
 
-      <Methodology />
+      <Methodology serviceDetailPageSlug={serviceDetails} />
 
-      <ChooseUs />
+      <ChooseUs serviceDetailPageSlug={serviceDetails} />
 
-      <CtaSection />
+      <CtaSection serviceDetailPageSlug={serviceDetails} />
 
-      <EngagementModel hiredevOf={formatparameter(serviceDetails)} />
+      <EngagementModel serviceDetailPageSlug={serviceDetails} hiredevOf={formatparameter(serviceDetails)} />
 
       <HiringModels />
 

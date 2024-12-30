@@ -15,7 +15,7 @@ const defaultServicesData = [
     title: "Software Outsourcing Services",
     description:
       "Our software outsourcing services reduce costs, accelerate timelines, and connect you with top-tier talent to give you a competitive edge. At Bunnx we have domain experts, our team delivers tailored, efficient solutions that meet your business needs.",
-    slug: "software-outsourcing",    
+    slug: "software-outsourcing",
     fetchOnSlug: ["support-maintenance", "software-outsourcing", "devops", "ecommerce"]
   },
   {
@@ -64,17 +64,40 @@ const defaultServicesData = [
 ];
 
 
+const OurServicesHeadPara = [
+  {
+    serviceTitle: "Best Front End Development Services",
+    servicePara: "We are a top front end development service provider in India, focused on delivering the best user solutions. We build powerful, integrated websites that make navigation smoother and drive business growth seamlessly. Our innovative range of front end development services include",
+    slug: "front-end-development"
+  },
+  {
+    serviceTitle: "Best Back End Development Services",
+    servicePara: "As a premier back-end development service provider in India, we specialize in crafting powerful, integrated websites designed to deliver seamless navigation and accelerate business growth. Our innovative services redefine user experiences.",
+    slug: "back-end-development"
+  },
+]
 
-const Services = ({ servicesData, extractNameFromSlug }) => {
 
+const Services = ({ servicesData, serviceDetailPageSlug, extractNameFromSlug }) => {
+
+
+  const servicesHeadParaObj = OurServicesHeadPara?.find((serviceHeadPara) => serviceHeadPara?.slug === serviceDetailPageSlug) || {
+    serviceTitle: `Best ${extractNameFromSlug} Services`,
+    servicePara: `We are a top ${extractNameFromSlug} service provider in India, focused on delivering the best user solutions. We build powerful, integrated websites that make navigation smoother and drive business growth seamlessly. Our innovative range of front end development services include`,
+  };
 
   return (
     <>
       <section className="container mx-auto max-w-screen-xl px-4 md:px-6 py-10">
 
         <h2 className='font-semibold text-orange-500 text-lg'>Our Services</h2>
-        <h4 className='font-semibold text-3xl my-2'>Best {extractNameFromSlug} Services</h4>
-        <p className='text-md text-gray-800'>We are a <strong> top front end development service </strong> provider in India, focused on delivering the best user solutions. We build powerful, integrated websites that make navigation smoother and drive business growth seamlessly. Our innovative range of <strong>front end development services</strong> include</p>
+        {
+          servicesHeadParaObj &&
+          <>
+            <h4 className='font-semibold text-3xl my-2'>{servicesHeadParaObj.serviceTitle}</h4>
+            <p className='text-md text-gray-800'>{servicesHeadParaObj.servicePara}</p>
+          </>
+        }
 
         <div className='relative flex justify-center flex-wrap gap-10 mt-6'>
 

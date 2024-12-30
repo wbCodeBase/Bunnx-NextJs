@@ -38,6 +38,8 @@ const Template = () => {
         return null; // Prevent rendering
     }
 
+    console.log(serviceTemplate);
+    
 
     return (
         <AdminpanelLayout>

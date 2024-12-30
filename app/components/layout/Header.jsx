@@ -284,7 +284,7 @@ const servicesData = {
         { name: 'Web App Development', slug: 'web-app-development' },
         { name: 'Mobile App Development', slug: 'mobile-app-development' },
         { name: 'Front End Development', slug: 'front-end-development' },
-        { name: 'Backend Development', slug: 'backend-development' },
+        { name: 'Back End Development', slug: 'back-end-development' },
         { name: 'Api Development', slug: 'api-development' },
         { name: 'Full Stack Development', slug: 'full-stack-development' },
         { name: 'Website Development', slug: 'website-development' },

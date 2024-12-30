@@ -1,5 +1,5 @@
 
-import { log } from 'console';
+
 import Template from '../models/Template';
 
 
@@ -13,11 +13,15 @@ export const getTemplateContent = async () => {
       model: 'ActiveSlug', // The referenced model
     })
     .populate({
+      path: 'heroSection.fetchOnSlug', // Path to populate in servicesSection
+      model: 'ActiveSlug', // The referenced model
+    })
+    .populate({
       path: 'servicesSection.ctaRedirectUrl', // Path to populate in servicesSection
       model: 'ActiveSlug', // The referenced model
     });
 
-    templateContent[1].servicesSection.forEach((serObj)=>{console.log(serObj.fetchOnSlug)})
+    // templateContent[1].servicesSection.forEach((serObj)=>{console.log(serObj.fetchOnSlug)})
 
     return { success: true, data: templateContent }; // Return the updated template
   } catch (error) {
@@ -29,8 +33,13 @@ export const getTemplateContent = async () => {
 
 export const getTemplateByStr = async (data) => {
   try {
-    const templateComponent = await Template.findOne({ templateName: data }).populate({
+    const templateComponent = await Template.findOne({ templateName: data })
+    .populate({
       path: 'servicesSection.fetchOnSlug', // Path to populate in servicesSection
+      model: 'ActiveSlug', // The referenced model
+    })    
+    .populate({
+      path: 'heroSection.fetchOnSlug', // Path to populate in servicesSection
       model: 'ActiveSlug', // The referenced model
     })
     .populate({
@@ -51,6 +60,9 @@ export const getTemplateByStr = async (data) => {
 
 // Create a page or component data
 export const createComponentContent = async (data) => {
+
+  console.log(data);
+  
 
   try {
 

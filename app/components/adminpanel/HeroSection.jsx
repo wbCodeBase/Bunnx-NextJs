@@ -45,6 +45,12 @@ const HeroSection = ({ heroSection, templateName, activeSlugData }) => {
     const [deleteComponentContent] = useDeleteComponentContentMutation();
     const [updateComponentContent, { data, isSuccess: updateIsSuccess, isError: updateIsError, error: updateError, isLoading: updateIsLoading, reset }] = useUpdateComponentContentMutation();
 
+    // Custom validation for ObjectId
+    const objectIdSchema = z.custom((value) => {
+        if (value === undefined || value === null || value === "") return true; // Allow empty or omitted values
+        const objectIdRegex = /^[0-9a-fA-F]{24}$/; // Regex to validate MongoDB ObjectId
+        return typeof value === "string" && objectIdRegex.test(value);
+    }, { message: "Invalid ObjectId format" });
 
 
     const form = useForm({
@@ -53,8 +59,8 @@ const HeroSection = ({ heroSection, templateName, activeSlugData }) => {
             title: "",
             description: "",
             imageUrl: "",
-            ctaRedirectUrl: "",
-            fetchOnSlug: "",
+            ctaRedirectUrl: "", 
+            fetchOnSlug: objectIdSchema,
             ctaText: "Get started with us",
             templateName: templateName,
             componentName: componentName,
@@ -126,7 +132,7 @@ const HeroSection = ({ heroSection, templateName, activeSlugData }) => {
                     description: contentToEdit.description || "",
                     imageUrl: contentToEdit.imageUrl || "",
                     ctaRedirectUrl: contentToEdit.ctaRedirectUrl || "",
-                    fetchOnSlug: contentToEdit.fetchOnSlug || "",
+                    fetchOnSlug: contentToEdit.fetchOnSlug._id || "",
                     ctaText: contentToEdit.ctaText || "",
                     templateName: contentToEdit.templateName || templateName,
                     componentName: contentToEdit.componentName || componentName,
@@ -231,7 +237,7 @@ const FormFieldInput = ({ form, name, label, placeholder, options = [] }) => (
                                     {placeholder || "Select an option"}
                                 </option>
                                 {options.map((option) => (
-                                    <option key={option.slug} value={option.slug}>
+                                    <option key={option.slug} value={name === "fetchOnSlug" ? option._id : option.slug}>
                                         {option.label} | {option.slug}
                                     </option>
                                 ))}
@@ -275,7 +281,7 @@ const HeroCard = ({ heroSecCard, i, updateDeleteHandler }) => (
         <CardItem label="Title" content={heroSecCard?.title} />
         <CardItem label="Desc" content={heroSecCard?.description} />
         <CardItem label="Image" content="Static" />
-        <CardItem label="Fetch on slug" content={heroSecCard?.fetchOnSlug} />
+        <CardItem label="Fetch on slug" content={heroSecCard?.fetchOnSlug?.slug} />
         <CardItem label="CTA Title" content={heroSecCard?.ctaText} />
         <CardItem label="CTA Redirect URL" content={heroSecCard?.ctaRedirectUrl} />
 
