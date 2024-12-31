@@ -13,4 +13,4 @@ const activeSlugSchema = new mongoose.Schema({
 
 
 const ActiveSlug = mongoose.models.ActiveSlug || mongoose.model('ActiveSlug', activeSlugSchema);
-module.exports = ActiveSlug;
+export default ActiveSlug; // Use ES6 export
