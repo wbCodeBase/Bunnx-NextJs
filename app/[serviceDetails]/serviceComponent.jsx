@@ -76,52 +76,7 @@ export default function ServiceDetailsComp() {
   }
 
 
-  const faqData = [
 
-    {
-      id: "default-1",
-      question: "What technologies do Front End Development companies use?",
-      answer: {
-        type: "text",
-        content: "Top Front End Development companies work with a variety of technologies, including React.js, Angular, and Vue.js. "
-      }
-    },
-    {
-      id: "default-2",
-      question: "Do front end Development companies offer post-launch support?",
-      answer: {
-        type: "text",
-        content: "Yes, most Front End Development companies provide post-launch support and maintenance services, including bug fixes, updates, performance optimization, and feature enhancements to keep your application running smoothly."
-      }
-    },
-    {
-      id: "default-3",
-      question: "Why should I hire a front end Development company?",
-      answer: {
-        type: "text",
-        content: "Hiring a front end Development company ensures you get end-to-end development services under one roof. They offer expertise in multiple programming languages, frameworks, and tools, enabling them to deliver seamless, user-friendly, and robust applications tailored to your business needs."
-      }
-    },
-    {
-      id: "default-4",
-      question: "How does a front end Development company ensure scalability and security?",
-      answer: {
-        type: "text",
-        content: "A reliable company designs systems with scalability in mind, using modular architecture and cloud solutions to handle growth. For security, they implement best practices like data encryption, secure authentication, and regular vulnerability assessments to protect your application from threats."
-      }
-    },
-    {
-      id: "default-5",
-      question: "Do Front End Development companies offer post-launch support?",
-      answer: {
-        type: "text",
-        content: "Yes, most Front End Development companies provide post-launch support and maintenance services, including bug fixes, updates, performance optimization, and feature enhancements."
-      }
-    },
-   
-
-
-  ];
 
 
   if (!isLoading && activeSlugData) {
@@ -296,13 +251,13 @@ export default function ServiceDetailsComp() {
 
       <EngagementModel serviceDetailPageSlug={serviceDetails} hiredevOf={formatparameter(serviceDetails)} />
 
-      <HiringModels />
+      <HiringModels serviceDetailPageSlug={serviceDetails} />
 
-      <CtaSection3 />
+      <CtaSection3 serviceDetailPageSlug={serviceDetails} />
 
-      <GuideTopics />
+      <GuideTopics serviceDetailPageSlug={serviceDetails} />
 
-      <Faqs faqData={faqData} />
+      <Faqs serviceDetailPageSlug={serviceDetails}/>
 
     </>
   );

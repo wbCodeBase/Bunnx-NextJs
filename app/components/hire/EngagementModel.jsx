@@ -54,7 +54,13 @@ export default function EngagementModel({ serviceDetailPageSlug }) {
     // Find the data matching the slug
     const content = engageMentModelData.find(
         (item) => item.slug === serviceDetailPageSlug
-    );
+    ) || {
+        slug: "front-end-development",
+        h2: "Choose From Hiring Models",
+        h4: "Hire The Best Front End Developer with the Best Engagement Models",
+        p: "We analyze your project’s requirements to recommend the ideal collaboration model. Our three models are designed to ensure every brand acquires the services that match its needs and budget.",
+        engagement: engagement,
+    };
 
     // Handle case where no content matches the slug
     if (!content) {
@@ -70,7 +76,7 @@ export default function EngagementModel({ serviceDetailPageSlug }) {
                 <h4 className="font-semibold text-3xl my-2">{content.h4}</h4>
                 <p className="text-md text-gray-800">{content.p}</p>
 
-                <div className="flex items-center justify-center flex-wrap gap-5 mt-12">
+                <div className="flex justify-center flex-wrap gap-5 mt-12">
                     {content.engagement &&
                         content.engagement.map((engageItems, i) => (
                             <div

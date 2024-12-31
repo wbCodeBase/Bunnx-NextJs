@@ -31,7 +31,16 @@ const data = [
 
 const ChooseUs = ({ serviceDetailPageSlug }) => {
   // Find the data for the provided slug
-  const content = data.find((item) => item.slug === serviceDetailPageSlug);
+  const content = data.find((item) => item.slug === serviceDetailPageSlug) || {
+    slug: "front-end-development",
+    title: "Leading Front End Development Experts",
+    description1: "Crafting pixel-perfect and performant user interfaces customised to your business vision, Bunnx excels at delivering responsive web applications with lightning-fast load times.",
+    description2: "We build scalable, component-driven front ends that evolve with your product. Our expertise spans modern frameworks like React and Vue.js, ensuring we solve your unique UX challenges.",
+    buttonText: "Get Started!",
+    link: "/front-end-development",
+    imageSrc: softwareDev,
+    altText: "Front End Development",
+  };
 
   // Handle case where slug doesn't match any data
   if (!content) {

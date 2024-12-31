@@ -18,11 +18,9 @@ import heroHomeImage from "/public/brodbot.png"
 import { auth } from "./auth";
 
 
-// export const metadata = {
-//   title: "software development company in india | Bunnx",
-//   description: "Custom Software Development Services and Solutions to build top-tier intelligent enterprises with speed and agility.",
-//   robots: "noindex", // Ensures pages are marked as noindex
-// };
+export const metadata = {
+  robots: "noindex", // Ensures pages are marked as noindex
+};
 
 
 export default async function Home() {

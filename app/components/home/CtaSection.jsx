@@ -22,7 +22,14 @@ const data = [
 
 const CtaSection = ({ serviceDetailPageSlug }) => {
   // Find content for the provided slug
-  const content = data.find((item) => item.slug === serviceDetailPageSlug);
+  const content = data.find((item) => item.slug === serviceDetailPageSlug) || {
+    slug: "back-end-development",
+    tagline: "Building the Backbone of Your Brand’s Success",
+    title: "Great brands deserve great back-end systems!",
+    description: "We design and develop intricate, yet fluid back-end structures that act as the silent architects behind every interaction. Our back-end development agency doesn’t just keep your site running—it transforms your ideas into real-time experiences, supporting your growth with precision and speed.",
+    buttonText: "Launch Your Project Now!",
+    backgroundImage: "https://spirecapital.com/wp-content/uploads/2017/02/CTA-background-get-in-touch.jpg",
+  };
 
   // Handle case where slug doesn't match any data
   if (!content) {
