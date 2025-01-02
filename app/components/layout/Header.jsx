@@ -4,9 +4,9 @@ import React, { useState, useEffect, useRef } from 'react'
 import { ChevronRight, ChevronDown, Menu, X } from 'lucide-react'
 import Link from 'next/link'
 import Image from 'next/image'
-
 import { TbCodeDots } from "react-icons/tb";
 import bunnxLogo from "/public/logo/bunnx-logo.png";
+import { useRouter } from 'next/navigation'
 
 const menuItems = [
   { title: 'Home', slug: '/', hasSubmenu: false },
@@ -433,6 +433,9 @@ const servicesData = {
 
 
 export default function Header() {
+
+  const router = useRouter()
+
   const [activeMenu, setActiveMenu] = useState('')
   const [activeCategory, setActiveCategory] = useState('')
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
@@ -484,6 +487,14 @@ export default function Header() {
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen)
   }
+
+  const clickEventForPhoneViewMenu = (hasSubmenu, slug) => {
+    if (!hasSubmenu) {
+      router.push(slug);
+      toggleMobileMenu()
+      setActiveMenu('')
+    }
+  };
 
 
 
@@ -661,7 +672,7 @@ export default function Header() {
                 onMouseEnter={() => item.hasSubmenu && handleMenuHover(item.title)}
                 onMouseLeave={() => setActiveMenu('')}
               >
-                <Link href={item.slug}
+                <Link href={item.slug} onClick={() => setActiveMenu('')}
                   className={`text-white hover:text-orange-500 px-3 py-8 rounded-md text-sm font-medium transition-colors duration-200 ${activeMenu === item.title ? 'text-orange-500' : ''
                     }`}
                 >
@@ -707,7 +718,7 @@ export default function Header() {
                 <div key={item.title}>
                   <button
                     className="w-full block text-left text-white hover:text-orange-500 px-3 py-2 rounded-md text-base font-medium transition-colors duration-200"
-                    onClick={() => item.hasSubmenu && setActiveMenu(activeMenu === item.title ? '' : item.title)}
+                    onClick={() => { item.hasSubmenu && setActiveMenu(activeMenu === item.title ? '' : item.title), clickEventForPhoneViewMenu(item?.hasSubmenu, item?.slug) }}
                   >
 
                     {item.title}

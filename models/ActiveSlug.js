@@ -1,4 +1,4 @@
-// models/User.js
+
 import mongoose from 'mongoose';
 
 
@@ -12,5 +12,17 @@ const activeSlugSchema = new mongoose.Schema({
 });
 
 
-const ActiveSlug = mongoose.models.ActiveSlug || mongoose.model('ActiveSlug', activeSlugSchema);
-export default ActiveSlug; // Use ES6 export
+// Ensure model registration
+let ActiveSlug;
+try {
+  // Check if model is already registered
+  ActiveSlug = mongoose.model('ActiveSlug');
+} catch (error) {
+  // Model not registered, register it
+  ActiveSlug = mongoose.model('ActiveSlug', activeSlugSchema);
+}
+
+export default ActiveSlug;
+
+// const ActiveSlug = mongoose.models.ActiveSlug || mongoose.model('ActiveSlug', activeSlugSchema);
+// export default ActiveSlug; // Use ES6 export

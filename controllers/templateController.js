@@ -1,6 +1,7 @@
 
 
 import Template from '../models/Template';
+import ActiveSlug from '../models/ActiveSlug';
 
 
 
@@ -9,16 +10,16 @@ export const getTemplateContent = async () => {
   try {
     const templateContent = await Template.find()
     .populate({
-      path: 'servicesSection.fetchOnSlug', // Path to populate in servicesSection
-      model: 'ActiveSlug', // The referenced model
+      path: 'servicesSection.fetchOnSlug',
+      model: ActiveSlug
     })
     .populate({
-      path: 'heroSection.fetchOnSlug', // Path to populate in servicesSection
-      model: 'ActiveSlug', // The referenced model
+      path: 'heroSection.fetchOnSlug',
+      model: ActiveSlug
     })
     .populate({
-      path: 'servicesSection.ctaRedirectUrl', // Path to populate in servicesSection
-      model: 'ActiveSlug', // The referenced model
+      path: 'servicesSection.ctaRedirectUrl',
+      model: ActiveSlug
     });
 
     // templateContent[1].servicesSection.forEach((serObj)=>{console.log(serObj.fetchOnSlug)})
@@ -35,16 +36,16 @@ export const getTemplateByStr = async (data) => {
   try {
     const templateComponent = await Template.findOne({ templateName: data })
     .populate({
-      path: 'servicesSection.fetchOnSlug', // Path to populate in servicesSection
-      model: 'ActiveSlug', // The referenced model
-    })    
-    .populate({
-      path: 'heroSection.fetchOnSlug', // Path to populate in servicesSection
-      model: 'ActiveSlug', // The referenced model
+      path: 'servicesSection.fetchOnSlug',
+      model: ActiveSlug
     })
     .populate({
-      path: 'servicesSection.ctaRedirectUrl', // Path to populate in servicesSection
-      model: 'ActiveSlug', // The referenced model
+      path: 'heroSection.fetchOnSlug',
+      model: ActiveSlug
+    })
+    .populate({
+      path: 'servicesSection.ctaRedirectUrl',
+      model: ActiveSlug
     });
     
     if (!templateComponent) {
@@ -63,7 +64,6 @@ export const createComponentContent = async (data) => {
 
   console.log(data);
   
-
   try {
 
   if(data?.ctaRedirectUrl === ""){

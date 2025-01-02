@@ -4,16 +4,10 @@ import { getTemplateByStr } from "../../../../controllers/templateController";
 
 
 export async function GET(request, { params }) {
-  const dbConnection = await connectToDatabase();
-
-  if (!dbConnection) {
-    return new Response(
-      JSON.stringify({ error: 'Database connection failed' }),
-      { status: 500 }
-    );
-  }
 
   try {
+    await connectToDatabase();
+
     const { identifier } = params;
     const templateContent = await getTemplateByStr(identifier);
 
