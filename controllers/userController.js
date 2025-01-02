@@ -44,7 +44,7 @@ export async function getUserById(id) {
     console.error('Error fetching user by ID:', error.message);
     return {
       success: false,
-      error: 'An error occurred while fetching the user',
+      error: 'An error occurred while fetching the user-' + error.message,
     };
   }
 }

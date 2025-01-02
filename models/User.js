@@ -43,4 +43,5 @@ UserSchema.pre('findOneAndUpdate', async function (next) {
 });
 
 const User = mongoose.models.User || mongoose.model('User', UserSchema);
+
 export default User;

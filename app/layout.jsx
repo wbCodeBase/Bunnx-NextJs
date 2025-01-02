@@ -10,17 +10,17 @@ import { SessionProvider } from "next-auth/react"; // Import SessionProvider
 import HeaderFooterWrapper from "@/components/layout/HeaderFooterWrapper";
 
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
+// const geistSans = localFont({
+//   src: "./fonts/GeistVF.woff",
+//   variable: "--font-geist-sans",
+//   weight: "100 900",
+// });
 
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+// const geistMono = localFont({
+//   src: "./fonts/GeistMonoVF.woff",
+//   variable: "--font-geist-mono",
+//   weight: "100 900",
+// });
 
 const arOneSans = AR_One_Sans({
   subsets: ['latin'],
@@ -55,13 +55,13 @@ export const metadata = {
     siteName: 'Bunnx',
     images: [
       {
-        url: 'https://www.bunnx.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbunnx-logo.7358052b.png', // Must be an absolute URL
+        url: "/public/logo/bunnx-logo.png", // Must be an absolute URL
         width: 800,
         height: 600,
         alt: 'ogImage',
       },
       {
-        url: 'https://www.bunnx.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbunnx-logo.7358052b.png', // Must be an absolute URL
+        url: "/public/logo/bunnx-logo.png", // Must be an absolute URL
         width: 1800,
         height: 1600,
         alt: 'ogImage1',
@@ -81,15 +81,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
 
-      {/* <script
-        src="//code.tidio.co/klkqty8577u9fcdp5esahlrjvfnzvguw.js"
-        async
-      ></script> */}
 
 
-
-      <body className={`${geistSans.variable} ${quando.variable} ${geistMono.variable} ${arOneSans.variable} antialiased`}
-      >
+      <body className={` ${quando.variable} ${arOneSans.variable} antialiased`}>
         <SessionProvider>
           <ReduxProvider>
             <HeaderFooterWrapper>{children}</HeaderFooterWrapper>

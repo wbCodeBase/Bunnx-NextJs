@@ -7,7 +7,7 @@ import { useRouter } from 'next/navigation';
 import { toast } from "sonner"
 import { credentialsLogin } from "@/actions/loginFunction";
 
-import { useSession } from "next-auth/react";
+// import { useSession } from "next-auth/react";
 
 
 const Login = () => {
@@ -17,17 +17,17 @@ const Login = () => {
     const router = useRouter();
 
 
-    const { data: session, status } = useSession();
+    // const { data: session, status } = useSession();
 
-    console.log("status", status);
+    // console.log("status", status);
 
-    if (status === "loading") return <div className="h-screen flex justify-center items-center"> <p className="text-2xl">Checking Authenticity...</p> </div>;
+    // if (status === "loading") return <div className="h-screen flex justify-center items-center"> <p className="text-2xl">Checking Authenticity...</p> </div>;
 
-    console.log("Login", session?.user?.name);
+    // console.log("Login", session?.user?.name);
 
-    if (session?.user || status === "authenticated") {
-        router.push("/");
-    }
+    // if (session?.user || status === "authenticated") {
+    //     router.push("/");
+    // }
 
 
     const handleChange = (e) => {

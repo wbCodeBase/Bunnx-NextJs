@@ -132,7 +132,7 @@ const faqData = {
 const Faqs = ({ serviceDetailPageSlug }) => {
     const data = faqData[serviceDetailPageSlug] || faqData["default"];
 
-    console.log(serviceDetailPageSlug, data);
+    // console.log(serviceDetailPageSlug, data);
     
 
     return (

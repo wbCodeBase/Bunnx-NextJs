@@ -1,4 +1,4 @@
-import mongoose from 'mongoose';
+import mongoose from 'mongoose'; 
 
 const MONGODB_URI = process.env.MONGODB_URI;
 
@@ -9,7 +9,7 @@ if (!MONGODB_URI) {
 async function connectToDatabase() {
   try {
     // Check if already connected
-    if (mongoose.connection.readyState === 1) {
+    if (mongoose.connection.readyState >= 1) {
       console.log('Using existing database connection');
       return mongoose.connection;
     }
@@ -25,6 +25,9 @@ async function connectToDatabase() {
 }
 
 export default connectToDatabase;
+
+
+
 
 // import mongoose from 'mongoose';
 

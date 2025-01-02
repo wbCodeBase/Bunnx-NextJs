@@ -74,4 +74,5 @@ const TemplateSchema = new mongoose.Schema({
     timestamps: true
 });
 
-module.exports = mongoose.models.Template || mongoose.model('Template', TemplateSchema);
+const Template = mongoose.models.Template || mongoose.model('Template', TemplateSchema);
+export default Template;

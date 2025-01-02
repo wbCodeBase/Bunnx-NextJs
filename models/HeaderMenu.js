@@ -42,4 +42,4 @@ const HeaderMenuSchema = new mongoose.Schema({
 });
 
 const HeaderMenu = mongoose.model('HeaderMenu', HeaderMenuSchema);
-module.exports = HeaderMenu;
+export default HeaderMenu;
