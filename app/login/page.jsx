@@ -40,7 +40,7 @@ const Login = () => {
                 id: toastId,
             })
 
-            router.push(result.url || '/bunnx-admin');
+            router.replace(result?.url || '/bunnx-admin');
 
         } else {
             toast.error(String(result?.error), {
@@ -48,7 +48,7 @@ const Login = () => {
             })
 
             // Handle error
-            console.error(result.error);
+            console.error(result?.error);
         }
 
     };

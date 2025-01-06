@@ -1,7 +1,6 @@
 "use server"
 
 import { signIn } from "../auth";
-import { redirect } from "next/navigation";
 
 const credentialsLogin = async ({ email, password }) => {
   try {
