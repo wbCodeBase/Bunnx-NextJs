@@ -10,7 +10,7 @@ const credentialsLogin = async ({ email, password }) => {
 
         await signIn("credentials", {
             email,
-            password,
+            password, 
             redirect: false,
         });
 
