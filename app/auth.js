@@ -69,7 +69,8 @@ export const {
     async jwt({ token, user, trigger, session }) {
       if (user) {
         token.id = user.id
-        token.role = user.role
+        token.role = user.role        
+        token.email = user.email;
       }
       // Handle user updates
       if (trigger === "update" && session) {
@@ -82,10 +83,13 @@ export const {
       if (token) {
         session.user.id = token.id
         session.user.role = token.role
+        session.user.email = token.email;
       }
       return session
     }
   },
+
+  secret: process.env.NEXTAUTH_SECRET,
 
   pages: {
     signIn: '/login',
