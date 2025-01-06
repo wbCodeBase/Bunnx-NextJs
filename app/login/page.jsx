@@ -34,18 +34,21 @@ const Login = () => {
         const result = await credentialsLogin(formData);
 
         console.log(result);
-        
-        if (result.success) {
+
+        if (result?.success) {
             toast.success("Login Successfull", {
                 id: toastId,
-            }) 
+            })
 
-            router.push("/bunnx-admin"); 
+            router.push(result.url || '/bunnx-admin');
 
         } else {
-            toast.error(String(result.error), {
+            toast.error(String(result?.error), {
                 id: toastId
             })
+
+            // Handle error
+            console.error(result.error);
         }
 
     };

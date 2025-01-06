@@ -1,38 +1,39 @@
 "use server"
 
-
 import { signIn } from "../auth";
+import { redirect } from "next/navigation";
 
 const credentialsLogin = async ({ email, password }) => {
+  try {
+    const result = await signIn("credentials", {
+      email,
+      password,
+      redirect: false,
+      callbackUrl: "/bunnx-admin"
+    });
 
-
-    try {
-
-        await signIn("credentials", {
-            email,
-            password, 
-        });
-
-        return { success: true };
-
-    } catch (err) {
-        if (err) {
-          switch (err.type) {
-            case "CredentialsSignin":
-              return { error: "Invalid credentials" };
-            default:
-              return { error: "Something went wrong" };
-          }
-        }
-        
-        // Handle NEXT_REDIRECT error
-        if (err.message.includes("NEXT_REDIRECT")) {
-          return { success: true };
-        }
+    console.log("Login result:", result);
     
-        console.log("err from loginFunction", err.message);
-        return { error: err.message };
-      }
+
+    if (!result?.error) {
+      return { success: true, url: "/bunnx-admin" };
     }
+
+    return { error: "Invalid credentials" };
+  } catch (err) {
+    console.error("Login error:", err);
     
-    export default credentialsLogin;
+    // Handle redirect error
+    if (err.message?.includes("NEXT_REDIRECT")) {
+      return { success: true, url: "/bunnx-admin" };
+    }
+
+    return { 
+      error: err.type === "CredentialsSignin" 
+        ? "Invalid credentials" 
+        : "Something went wrong" 
+    };
+  }
+};
+
+export default credentialsLogin;
