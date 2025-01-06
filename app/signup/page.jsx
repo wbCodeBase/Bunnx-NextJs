@@ -39,7 +39,7 @@ const SignUp = () => {
             const data = await response.json();
 
             if (response.ok) {
-                toast.success('Sign up Successful', { id: toastId });
+                toast.success('Sign up Successfull', { id: toastId });
                 setFormData({ name: '', email: '', password: '' });
 
                 router.push("/login");

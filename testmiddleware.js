@@ -9,9 +9,10 @@ export async function middleware(request) {
   const isAuthPage = request.nextUrl.pathname.startsWith('/login') ||
     request.nextUrl.pathname.startsWith('/signup');
 
-    
+
   const isAdminPage = request.nextUrl.pathname.startsWith('/bunnx-admin');
 
+  console.log("token from middleware", token);
 
   if (!token && !isAuthPage) {
     return NextResponse.redirect(new URL('/login', request.url));
