@@ -2,15 +2,15 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
 
-const dynamicBaseUrl = (typeof window !== 'undefined'
-  ? `${window.location.protocol}//${window.location.host}/api`
-  : 'https://www.bunnx.com/api');
+// const dynamicBaseUrl = (typeof window !== 'undefined'
+//   ? `${window.location.protocol}//${window.location.host}/api`
+//   : 'https://www.bunnx.com/api');
 
 
 export const myApi = createApi({
   reducerPath: 'myApi',
-  baseQuery: fetchBaseQuery({ baseUrl: dynamicBaseUrl }),
-  // baseQuery: fetchBaseQuery({ baseUrl: process.env.NEXT_PUBLIC_API_BASE_URL || 'http://localhost:3000/api', }),
+  // baseQuery: fetchBaseQuery({ baseUrl: dynamicBaseUrl }),
+  baseQuery: fetchBaseQuery({ baseUrl: process.env.NEXT_PUBLIC_API_BASE_URL || 'http://localhost:3000/api', }),
   tagTypes: ['User', 'Template', 'ActiveSlug', 'Metadata'],  // Optional: for automatic cache invalidation
   endpoints: (builder) => ({
 
