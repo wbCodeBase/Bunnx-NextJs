@@ -11,7 +11,6 @@ const credentialsLogin = async ({ email, password }) => {
         await signIn("credentials", {
             email,
             password, 
-            redirect: false,
         });
 
         return { success: true };

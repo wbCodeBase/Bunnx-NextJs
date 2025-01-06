@@ -66,6 +66,7 @@ const Login = () => {
                             type={field === "password" ? "password" : "text"}
                             value={formData[field]}
                             onChange={handleChange}
+                            required
                             className="w-full rounded-lg p-2.5 mt-1 border"
                             placeholder={`Enter your ${field}`}
                         />

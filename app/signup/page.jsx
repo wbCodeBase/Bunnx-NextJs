@@ -74,6 +74,7 @@ const SignUp = () => {
                             <input
                                 id={field}
                                 type="text"
+                                required
                                 placeholder={`Enter your ${field}`}
                                 value={formData[field]}
                                 onChange={handleChange}
