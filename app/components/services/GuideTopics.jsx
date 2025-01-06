@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
-
+import guideIntroDefault from "/public/guideIntroDefault.jpeg";
 
 
 const guideContent = {
@@ -197,7 +197,7 @@ const guideContent = {
         content: {
           heading: 'Introduction and Importance of Back End Development',
           image: {
-            src: 'https://www.valuecoders.com/wp-content/uploads/2024/03/wepik-export-20240321063655leo8.jpeg?height=400&width=800',
+            src: guideIntroDefault,
             alt: 'Software development workspace showing code on a laptop screen',
           },
           description: [

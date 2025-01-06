@@ -1,7 +1,7 @@
 // auth.js
 import NextAuth from "next-auth"
-// import Credentials from "next-auth/providers/credentials"
-import CredentialsProvider from 'next-auth/providers/credentials';
+import Credentials from "next-auth/providers/credentials"
+// import CredentialsProvider from 'next-auth/providers/credentials';
 import GoogleProvider from "next-auth/providers/google"
 import User from "../models/User"
 import connectToDatabase from '../utils/database'
@@ -18,7 +18,7 @@ export const {
       clientId: process.env.GOOGLE_CLIENT_ID,
       clientSecret: process.env.GOOGLE_CLIENT_SECRET,
     }),
-    CredentialsProvider({
+    Credentials({
       credentials: {
         email: { label: "Email", type: "email" },
         password: { label: "Password", type: "password" }
