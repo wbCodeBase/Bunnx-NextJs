@@ -35,7 +35,6 @@ const Login = () => {
 
         console.log(result);
         
-
         if (result.success) {
             toast.success("Login Successfull", {
                 id: toastId,
