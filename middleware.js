@@ -5,6 +5,8 @@ import { NextResponse } from "next/server";
 import { getToken } from "next-auth/jwt";
 
 export async function middleware(request) {
+  console.log(request.url, "Request url");
+
   const token = await getToken({ req: request, secret: process.env.NEXTAUTH_SECRET });
   const isAuthPage = request.nextUrl.pathname.startsWith('/login') ||
     request.nextUrl.pathname.startsWith('/signup');
@@ -12,7 +14,7 @@ export async function middleware(request) {
 
   const isAdminPage = request.nextUrl.pathname.startsWith('/bunnx-admin');
 
-  console.log(token, "Token from middleware", process.env.NEXTAUTH_SECRET);
+  console.log("Token exists:", !!token, process.env.NEXTAUTH_SECRET);
 
   if (!token && !isAuthPage) {
     return NextResponse.redirect(new URL('/login', request.url));
