@@ -10,7 +10,7 @@ export const {
   handlers,
   auth,
   signIn,
-  signOut
+  signOut 
 } = NextAuth({
   providers: [
     GoogleProvider({
@@ -46,8 +46,6 @@ export const {
             name: user.name,
             role: user.role // Include if you have role-based auth
           }
-
-
 
 
         } catch (error) {
@@ -91,7 +89,7 @@ export const {
     signOut: '/logout'
   },
 
-  events: {
+  events: { 
     async signIn({ user }) {
       // Log sign-ins or update last login time
       console.log(`User ${user.email} signed in`)

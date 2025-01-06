@@ -2,14 +2,15 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
 
-// const dynamicBaseUrl = process.env.NEXT_PUBLIC_API_BASE_URL 
-//   || (typeof window !== 'undefined' 
-//     ? `${window.location.protocol}//${window.location.host}/api` 
-//     : 'http://localhost:3000/api');
+const dynamicBaseUrl = (typeof window !== 'undefined'
+  ? `${window.location.protocol}//${window.location.host}/api`
+  : 'http://localhost:3000/api');
+
 
 export const myApi = createApi({
   reducerPath: 'myApi',
-  baseQuery: fetchBaseQuery({ baseUrl: process.env.NEXT_PUBLIC_API_BASE_URL || 'http://localhost:3000/api', }),
+  baseQuery: fetchBaseQuery({ baseUrl: dynamicBaseUrl }),
+  // baseQuery: fetchBaseQuery({ baseUrl: process.env.NEXT_PUBLIC_API_BASE_URL || 'http://localhost:3000/api', }),
   tagTypes: ['User', 'Template', 'ActiveSlug', 'Metadata'],  // Optional: for automatic cache invalidation
   endpoints: (builder) => ({
 
@@ -51,14 +52,13 @@ export const myApi = createApi({
       invalidatesTags: ['Template'], // Refetch templates after deletion
     }),
     // Template Hooks End
-    
-    
+
+
     // Active Slug Hooks Start
     getActiveSlug: builder.query({
       query: () => 'activeSlug',
       providesTags: ['ActiveSlug'], // Ensures refetching after creating or deleting
     }),
-    
 
     createActiveSlug: builder.mutation({
       query: (newSlug) => ({
@@ -79,7 +79,16 @@ export const myApi = createApi({
       invalidatesTags: ['ActiveSlug'], // Refetch templates after deletion
     }),
 
-    
+    updateActiveSlug: builder.mutation({
+      query: (updateActiveSlugObj) => ({
+        url: `activeSlug`,
+        method: 'PUT',
+        body: updateActiveSlugObj, // Send as JSON body
+      }),
+      invalidatesTags: ['ActiveSlug'], // Refetch templates after deletion
+    }),
+
+
     deleteActiveSlug: builder.mutation({
       query: (deleteActiveSlug) => ({
         url: `activeSlug`,
@@ -90,7 +99,7 @@ export const myApi = createApi({
     }),
 
     // Active Slug Hooks End
-    
+
 
 
     // User Hooks Start
@@ -102,7 +111,6 @@ export const myApi = createApi({
     getUserById: builder.query({
       query: (id) => `users?id=${id}`,
     }),
-    
     createUser: builder.mutation({
       query: (newUser) => ({
         url: 'users',
@@ -147,48 +155,48 @@ export const myApi = createApi({
 
 
 
-     // Create Metadata
-     createMetadata: builder.mutation({
+    // Create Metadata
+    createMetadata: builder.mutation({
       query: (newMetadata) => ({
-          url: '/metadata', // POST API endpoint
-          method: 'POST',
-          body: newMetadata, // Metadata object
+        url: '/metadata', // POST API endpoint
+        method: 'POST',
+        body: newMetadata, // Metadata object
       }),
       invalidatesTags: ['Metadata'], // Invalidate list to trigger refetch
-  }),
+    }),
 
-  // Get Metadata by Slug
-  getMetadataBySlug: builder.query({
+    // Get Metadata by Slug
+    getMetadataBySlug: builder.query({
       query: (slug) => `/metadata/${slug}`, // GET API endpoint
       // providesTags: (result, error, slug) =>
       //     result ? [{ type: 'Metadata', id: slug }] : [],
-  }),
+    }),
 
-  // Update Metadata
-  updateMetadata: builder.mutation({
+    // Update Metadata
+    updateMetadata: builder.mutation({
       query: ({ id, updatedMetadata }) => ({
-          url: `/metadata/${id}`, // PUT API endpoint
-          method: 'PUT',
-          body: updatedMetadata, // Updated metadata object
+        url: `/metadata/${id}`, // PUT API endpoint
+        method: 'PUT',
+        body: updatedMetadata, // Updated metadata object
       }),
       invalidatesTags: ['Metadata'],
       // invalidatesTags: (result, error, { id }) => [{ type: 'Metadata', id: id }],
-  }),
+    }),
 
-  // Delete Metadata
-  deleteMetadata: builder.mutation({
+    // Delete Metadata
+    deleteMetadata: builder.mutation({
       query: (id) => ({
-          url: `/metadata/${id}`, // DELETE API endpoint
-          method: 'DELETE',
+        url: `/metadata/${id}`, // DELETE API endpoint
+        method: 'DELETE',
       }),
       invalidatesTags: ['Metadata'],
-  }),
+    }),
 
-  // Get All Metadata (Optional)
-  getAllMetadata: builder.query({
+    // Get All Metadata (Optional)
+    getAllMetadata: builder.query({
       query: () => '/metadata', // GET API endpoint for all metadata
       providesTags: ['Metadata'],
-  }),
+    }),
 
 
 
@@ -212,15 +220,14 @@ export const {
 
   useGetUsersQuery,
   useGetUserByIdQuery,
-  
+
   useDeleteUserMutation,
   useCreateComponentContentMutation,
-  useCreateUserMutation,  
-  
+  useCreateUserMutation,
+
   useCreateMetadataMutation,
   useGetMetadataBySlugQuery,
   useUpdateMetadataMutation,
   useDeleteMetadataMutation,
   useGetAllMetadataQuery,
-  
 } = myApi;

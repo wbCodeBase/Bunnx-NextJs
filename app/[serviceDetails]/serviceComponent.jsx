@@ -89,130 +89,46 @@ export default function ServiceDetailsComp() {
     }
   }
 
-  
+
 
   const heroSectionObj = data?.heroSection?.find((heroData) => heroData?.fetchOnSlug?.slug === serviceDetails) || {};
 
   const serviceSectionObj = data?.servicesSection?.filter((service) => service?.fetchOnSlug?.map((slug) => slug?.slug).includes(serviceDetails)) || [];
 
-  
+
   const servicesData = (Array.isArray(serviceSectionObj) && serviceSectionObj.length > 0)
     ? serviceSectionObj
     : [
       {
-        title: "Custom Software Development",
+        title: "Front-End Development",
         description:
-          "We are committed to deliver custom software solutions that perfectly align with your complex technical needs. You Share your requirements, and we'll create a custom application that evolves with your business and user demands.",
-        ctaRedirectUrl: "custom-software-development",
+          "Take the user level to the next level and develop a flawless website with the top front end development company.",
+        ctaRedirectUrl: {
+          slug: "front-end-development",
+        }
       },
       {
-        title: "Software Outsourcing Services",
+        title: "Back-End Development",
         description:
-          "Our software outsourcing services reduce costs, accelerate timelines, and connect you with top-tier talent to give you a competitive edge. At Bunnx we have domain experts, our team delivers tailored, efficient solutions that meet your business needs.",
-        ctaRedirectUrl: "software-outsourcing",
+          "Redesign the future of your web presence with a flawlessly tuned website, crafted by the wizards of the best back end development.",
+        ctaRedirectUrl: {
+          slug: "back-end-development",
+        }
       },
       {
-        title: "Desktop App Development",
+        title: "Full Stack Development",
         description:
-          "We create robust desktop applications for Mac, Windows, and Linux using C++/Qt, .NET, and Python. Our expertise ensures high-performance solutions tailored to your specific requirements, providing seamless functionality across all major operating systems.",
-        ctaRedirectUrl: "",
+          "Full Stack Development involves building and managing both front-end and back-end of web applications, ensuring seamless functionality.",
+        ctaRedirectUrl: {
+          slug: "full-stack-development",
+        },
       },
       {
-        title: "Database Integration",
-        description:
-          "We organize your raw data efficiently, enabling seamless analysis and informed decision-making. Our database development services ensure your data is structured for optimal performance and accessibility, enhancing your ability to derive actionable insights.",
-      },
-      {
-        title: "On-demand Software Teams",
-        description:
-          "Accelerate development projects and access skilled professionals with our flexible on-demand software teams. Integrate our talent into your workflow for efficient collaboration and faster project delivery.",
-        ctaRedirectUrl: "dedicated-development-teams"
-      },
-      {
-        title: "QA & Testing",
-        description:
-          "Our certified experts perform thorough testing to detect and resolve any errors or bugs that could affect your software performance. Guarantee the quality, reliability, and performance of your software applications with our QA Experts and testing services. ",
-        ctaRedirectUrl: "qa-testing",
-      },
-      {
-        title: "Ecommerce",
-        description:
-          "As a leading software development company in India, we offer comprehensive e-commerce solutions, including secure payment gateways and streamlined shopping experiences, ensuring convenience for your customers.",
-        ctaRedirectUrl: "ecommerce",
-      },
-      {
-        title: "Features Advancement",
-        description:
-          "As a leading software development company in India, we offer comprehensive e-commerce solutions, including secure payment gateways and streamlined shopping experiences, ensuring convenience for your customers.",
-        ctaRedirectUrl: "features-advancement",
-      },
-      {
-        title: "Web App Development",
-        description:
-          "Our team builds responsive, scalable, and efficient web applications tailored to your business needs. We focus on creating seamless user experiences, ensuring high performance, security, and easy navigation.",
-        ctaRedirectUrl: "web-app-development",
-      },
-      {
-        title: "Devops",
-        description:
-          "Adopt DevOps to optimize software development and operations. With our expertise in collaboration, automation, continuous integration, and delivery pipelines, we empower your business to achieve greater efficiency, quality, and agility.",
-        ctaRedirectUrl: "devops",
-      },
-      {
-        title: "Mobile App Development",
-        description:
-          "Our skilled mobile app developers combine deep IT knowledge with extensive hands-on experience across diverse projects. They analyze your business ecosystem to fully understand your needs and goals, delivering tailored solutions that best fit your requirements.",
-        ctaRedirectUrl: "mobile-app-development",
-      },
-      {
-        title: "API & Software Integration",
-        description:
-          "We utilize API-driven development to seamlessly integrate custom software with your corporate and third-party systems and services. Our approach ensures smooth, efficient connectivity and enhances the functionality of your software solutions.",
-        ctaRedirectUrl: "api-integration",
-      },
-      {
-        title: "Cloud App & Hosting Services",
-        description:
-          "Leverage our expertise to build secure, scalable cloud applications tailored to your needs. We assess your requirements, develop a risk-mitigation strategy, ensure smooth integration, and optimize performance for maximum efficiency.",
-
-      },
-      {
-        title: "Support and Maintenance",
-        description:
-          "At our software development company in India, we prioritise application maintenance just as much as development. We recognize that even the most innovative solutions are only valuable when supported by a stable, well-maintained ecosystem free from bugs and glitches.",
-        ctaRedirectUrl: "",
-      },
-
-
-      {
-        title: "Application Support Services",
-        description:
-          "Ensure uninterrupted business operations with proactive support across all levels (L0, L1, L2, L3). Our experts resolve issues, reduce downtime, and enhance system stability, allowing your business to focus on growth and innovation.",
-        ctaRedirectUrl: "",
-      },
-      {
-        title: "Application Security Management",
-        description:
-          "Safeguard your software with end-to-end security management. Our team implements proactive threat detection and prevention measures to minimize risks and ensure your applications remain compliant with industry standards.",
-        ctaRedirectUrl: "",
-      },
-      {
-        title: "Application Performance Management",
-        description:
-          "Achieve peak performance with our application monitoring and optimization services. We ensure your systems run smoothly and efficiently by addressing challenges and improving overall performance for better user experiences.",
-        ctaRedirectUrl: "",
-      },
-      {
-        title: "CI/CD and DevOps Implementation",
-        description:
-          "Accelerate software delivery with seamless CI/CD and DevOps practices. We enhance your development pipelines, enabling faster releases, reduced errors, and greater efficiency for continuous improvements in your applications.",
-        ctaRedirectUrl: "",
-      },
-      {
-        title: "Cloud Migration",
-        description:
-          "Future-proof your software with a smooth transition to the cloud. We provide end-to-end cloud migration services, ensuring minimal disruption while enhancing scalability, flexibility, and cost efficiency.",
-        ctaRedirectUrl: "",
+        title: "Software Development",
+        description: "Custom Software Development Services and Solutions to build top-tier intelligent enterprises with speed and agility.",
+        ctaRedirectUrl: {
+          slug: "best-software-development-company-in-india",
+        },
       },
 
     ];
@@ -257,7 +173,7 @@ export default function ServiceDetailsComp() {
 
       <GuideTopics serviceDetailPageSlug={serviceDetails} />
 
-      <Faqs serviceDetailPageSlug={serviceDetails}/>
+      <Faqs serviceDetailPageSlug={serviceDetails} />
 
     </>
   );

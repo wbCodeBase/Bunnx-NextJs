@@ -3,7 +3,8 @@
 import React, { useState } from 'react'
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
- 
+import { toast } from "sonner"
+
 
 const SignUp = () => {
     const [formData, setFormData] = useState({ name: '', email: '', password: '' });
@@ -24,6 +25,7 @@ const SignUp = () => {
 
 
     const handleSubmit = async () => {
+        const toastId = toast.loading("Signing up...");
 
         try {
             const response = await fetch('/api/users', {
@@ -37,14 +39,16 @@ const SignUp = () => {
             const data = await response.json();
 
             if (response.ok) {
-                alert('Sign up Successfull');
+                toast.success('Sign up Successful', { id: toastId });
                 setFormData({ name: '', email: '', password: '' });
+
                 router.push("/login");
+
             } else {
-                alert(data.message || 'Sign up failed!');
+                toast.error(data.message || 'Sign up failed!', { id: toastId });
             }
         } catch (error) {
-            alert('An error occurred while signing up. Please try again later.');
+            toast.error('An error occurred while signing up', { id: toastId });
             console.error(error);
         }
     };
@@ -96,18 +100,6 @@ const SignUp = () => {
                 </div>
 
             </div>
-
-            {/* <div>
-                {isSuccess && <p className="text-white">Form submitted successfully!</p>}
-                {isError && <p className="text-white">Error: {error?.data?.error || 'Something went wrong'}</p>}
-                <button
-                    type="submit"
-                    className="text-base mt-4 lg:text-lg tracking-widest border-2 px-6 lg:px-8 py-3 lg:py-3 inline-block duration-200 border-white rounded-lg hover:bg-white text-white hover:text-[#ee076e]"
-                    disabled={isLoading}
-                >
-                    {isLoading ? 'Submitting...' : 'Submit'}
-                </button>
-            </div> */}
 
 
         </div>

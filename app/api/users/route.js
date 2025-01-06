@@ -43,30 +43,9 @@ export async function GET(request) {
   }
 }
 
-// export async function GET() {
-//   try {
-//     await connectToDatabase();
-//     const users = await getUsers();
-    
-    
-//     if (!users.success) {
-//       return new Response(
-//         JSON.stringify({ error: users.error }),
-//         { status: 400 } // Use a suitable status code for your scenario
-//       );
-//     }
-    
-//     return new Response(JSON.stringify(users.data), { status: 200 });
-
-//   } catch (error) {
-//     console.error('Error in GET request:', error.message);
-//     return new Response(JSON.stringify({ error: error.message }), { status: 500 });
-//   }
-// }
-
-
 
 export async function POST(request) {
+
   await connectToDatabase();
 
   const data = await request.json();

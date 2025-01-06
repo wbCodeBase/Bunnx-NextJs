@@ -5,9 +5,7 @@ import { useState } from "react";
 
 import { useRouter } from 'next/navigation';
 import { toast } from "sonner"
-import { credentialsLogin } from "@/actions/loginFunction";
-
-// import { useSession } from "next-auth/react";
+import credentialsLogin from "@/actions/loginFunction";
 
 
 const Login = () => {
@@ -15,19 +13,6 @@ const Login = () => {
     const [formData, setFormData] = useState({ email: "", password: "" });
     const [error, setError] = useState(null);
     const router = useRouter();
-
-
-    // const { data: session, status } = useSession();
-
-    // console.log("status", status);
-
-    // if (status === "loading") return <div className="h-screen flex justify-center items-center"> <p className="text-2xl">Checking Authenticity...</p> </div>;
-
-    // console.log("Login", session?.user?.name);
-
-    // if (session?.user || status === "authenticated") {
-    //     router.push("/");
-    // }
 
 
     const handleChange = (e) => {
@@ -44,20 +29,19 @@ const Login = () => {
             return toast.error("Please provide all fields")
         }
 
-        const toastId = toast.loading("Logging in...") 
+        const toastId = toast.loading("Logging in...")
 
-        const error = await credentialsLogin(formData);
+        const result = await credentialsLogin(formData);
 
-        if (!error) {
-
+        if (result.success) {
             toast.success("Login Successfull", {
                 id: toastId,
             })
 
-            router.push("/");
+            router.push("/bunnx-admin");
 
         } else {
-            toast.error(String(error), {
+            toast.error(String(result.error), {
                 id: toastId
             })
         }
