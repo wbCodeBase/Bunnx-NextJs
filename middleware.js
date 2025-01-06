@@ -12,7 +12,7 @@ export async function middleware(request) {
 
   const isAdminPage = request.nextUrl.pathname.startsWith('/bunnx-admin');
 
-  console.log("NEXTAUTH_SECRET", process.env.NEXTAUTH_SECRET, "Token from middleware", token);
+  console.log(token, "Token from middleware", process.env.NEXTAUTH_SECRET);
 
   if (!token && !isAuthPage) {
     return NextResponse.redirect(new URL('/login', request.url));
