@@ -4,7 +4,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
 const dynamicBaseUrl = (typeof window !== 'undefined'
   ? `${window.location.protocol}//${window.location.host}/api`
-  : 'http://localhost:3000/api');
+  : 'https://www.bunnx.com/api');
 
 
 export const myApi = createApi({
