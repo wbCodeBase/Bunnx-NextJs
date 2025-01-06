@@ -1,7 +1,6 @@
 // auth.js
 import NextAuth from "next-auth"
 import Credentials from "next-auth/providers/credentials"
-// import CredentialsProvider from 'next-auth/providers/credentials';
 import GoogleProvider from "next-auth/providers/google"
 import User from "../models/User"
 import connectToDatabase from '../utils/database'
@@ -25,13 +24,16 @@ export const {
       },
       async authorize(credentials) {
         try {
+          let user = null
+
           if (!credentials?.email || !credentials?.password) {
             throw new Error('Missing credentials')
           }
 
           await connectToDatabase()
 
-          const user = await User.findOne({ email: credentials.email }).select('+password')
+          user = await User.findOne({ email: credentials.email }).select('+password')
+          
           if (!user) {
             throw new Error('Invalid credentials')
           }

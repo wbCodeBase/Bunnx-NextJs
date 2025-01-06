@@ -1,6 +1,6 @@
 "use server"
 
-import { signIn } from "../auth";
+import { signIn } from "@/auth";
 
 const credentialsLogin = async ({ email, password }) => {
   try {
