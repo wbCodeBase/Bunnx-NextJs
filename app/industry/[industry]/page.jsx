@@ -42,7 +42,7 @@ export default function Industry() {
           Coming Soon
         </h1>
         <p className="text-lg md:text-xl text-gray-600 mb-8">
-          We're working hard to bring you something amazing. Stay tuned!
+          We&apos;re working hard to bring you something amazing. Stay tuned!
         </p>
         <div className="space-y-4">
           <Link 
