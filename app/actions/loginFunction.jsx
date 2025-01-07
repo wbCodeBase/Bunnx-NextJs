@@ -11,7 +11,7 @@ const credentialsLogin = async ({ email, password }) => {
       callbackUrl: "/bunnx-admin"
     });
 
-    console.log("Login result:", result);
+    // console.log("Login result:", result);
     
 
     if (!result?.error) {

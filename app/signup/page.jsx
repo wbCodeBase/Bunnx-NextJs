@@ -5,10 +5,23 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { toast } from "sonner"
 
+import { useSession } from "next-auth/react";
+
 
 const SignUp = () => {
     const [formData, setFormData] = useState({ name: '', email: '', password: '' });
     const router = useRouter();
+
+
+    const { data: session, status } = useSession();
+
+    console.log("SignUp", session?.user?.name);
+
+    if (session?.user?.role === "admin" && status === "authenticated") {
+        router.push("/bunnx-admin");
+    } else if (session?.user?.role === "user" && status === "authenticated") {
+        router.push("/");
+    } 
 
 
     const handleChange = (e) => {

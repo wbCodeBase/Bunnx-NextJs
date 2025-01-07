@@ -1,6 +1,14 @@
-'use client'
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import AppSidebar from "@/components/adminpanel/Appsidebar";
+
+// import Lottie from "lottie-react";
+// import loaderJson from "/public/pageAnimations/loader.json";
+
+import { useSession } from "next-auth/react";
+import { redirect } from "next/navigation";
+import { useGetUserByIdQuery } from "../../../store/api/myApi";
+
+
 
 export const metadata = {
   title: "Admin Panel",
@@ -8,7 +16,65 @@ export const metadata = {
 };
 
 const AdminpanelLayout = ({ children }) => {
+  const { data: session, status } = useSession();
 
+
+  // Unconditionally call the query with `skip` logic
+  const { data: user, isLoading, isError, error } = useGetUserByIdQuery(
+    session?.user?.id,
+    { skip: !session?.user?.id }
+  );
+
+  // Handle session loading
+  if (status === "loading") {
+    return (
+      <div className="h-screen flex justify-center items-center">
+        <p className="text-2xl">Checking Authenticity...</p>
+      </div>
+    );
+  }
+
+  // Redirect if unauthenticated
+  if (!session?.user || status === "unauthenticated") {
+    redirect("/login");
+    return null;
+  }
+
+
+
+  // Handle user query loading
+  if (isLoading) {
+    return (
+      // <div className="flex items-center justify-center h-screen w-full">
+      //   <Lottie animationData={loaderJson} loop={true} />
+      // </div>
+      <div className="h-screen flex justify-center items-center">
+        <p className="text-2xl">Checking Authenticity...</p>
+      </div>
+    );
+  }
+
+  // console.log("AdminLayout", session?.user, user);
+
+  // Handle errors from user query
+  if (isError) {
+    console.error("Error fetching data:", error);
+    return (
+      <div className="h-screen flex justify-center items-center">
+        Error: {error?.data?.error || "An error occurred"}
+      </div>
+    );
+  }
+
+  // Redirect if the user does not have admin privileges
+  if (user && user?.role !== "admin" && session?.user?.role !== "superadmin") {
+    redirect("/");
+    return null;
+  }
+
+
+
+  // Render layout for admin or superadmin
   return (
     <>
       <SidebarProvider>
@@ -23,5 +89,3 @@ const AdminpanelLayout = ({ children }) => {
 };
 
 export default AdminpanelLayout;
-
-

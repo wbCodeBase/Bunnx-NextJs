@@ -7,6 +7,7 @@ import { useRouter } from 'next/navigation';
 import { toast } from "sonner"
 import credentialsLogin from "@/actions/loginFunction";
 
+import { useSession } from "next-auth/react";
 
 const Login = () => {
 
@@ -14,6 +15,20 @@ const Login = () => {
     const [error, setError] = useState(null);
     const router = useRouter();
 
+
+    const { data: session, status } = useSession();
+
+    // console.log("status", status);
+
+    // if (status === "loading") return <div className="h-screen flex justify-center items-center"> <p className="text-2xl">Checking Authenticity...</p> </div>;
+
+    console.log("Login", session?.user?.name);
+
+    if (session?.user?.role === "admin" && status === "authenticated") {
+        router.push("/bunnx-admin");
+    } else if (session?.user?.role === "user" && status === "authenticated") {
+        router.push("/");
+    } 
 
     const handleChange = (e) => {
         const { id, value } = e.target;
@@ -34,14 +49,15 @@ const Login = () => {
         const result = await credentialsLogin(formData);
 
         console.log(result);
-        
+
         if (result?.success) {
             toast.success("Login Successfull", {
                 id: toastId,
             })
-            
-            router.replace(result?.url || '/bunnx-admin');
-            
+
+            router.replace('/');
+            // router.replace(result?.url || '/bunnx-admin');
+
             console.log("Redirected to", result?.url);
 
         } else {

@@ -42,6 +42,17 @@ UserSchema.pre('findOneAndUpdate', async function (next) {
   next();
 });
 
-const User = mongoose.models.User || mongoose.model('User', UserSchema);
+// Ensure model registration
+let User;
+try {
+  // Check if model is already registered
+  User = mongoose.model('User');
+} catch (error) {
+  // Model not registered, register it
+  User = mongoose.model('User', UserSchema);
+}
 
 export default User;
+
+// const User = mongoose.models.User || mongoose.model('User', UserSchema);
+// export default User;

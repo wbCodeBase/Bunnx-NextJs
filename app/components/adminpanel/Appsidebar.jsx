@@ -1,4 +1,4 @@
-// "use client"
+"use client"
 
 import { Link, Home, LayoutTemplate, Settings, Mailbox, LogOut, UserRoundCog, Captions } from "lucide-react"
 
