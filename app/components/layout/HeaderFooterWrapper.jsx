@@ -8,7 +8,7 @@ import Footer from "./Footer";
 export default function HeaderFooterWrapper({ children }) {
     const pathname = usePathname();
 
-    const isExcluded = pathname.includes("bunnx-admin") || pathname.includes("login") || pathname.includes("signup");
+    const isExcluded = pathname.includes("bunnx-admin") || pathname.includes("login") || pathname.includes("signup") || pathname.includes("industry");
 
 
     return (

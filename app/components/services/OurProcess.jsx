@@ -178,6 +178,91 @@ const contentBySlug = {
             }
         ]
     },
+
+    "best-software-development-company-in-india": {
+        h2: "Our Process",
+        h4: "Our Process for Software Development",
+        p: "As a leading software development company in India, we deliver solutions that are visually striking and technically advanced. Our services combine innovative design with advance development techniques to empower your brand.",
+        processSections: [
+            {
+                id: 1,
+                title: "Gathering Your Requirements",
+                description: "We begin by thoroughly understanding your vision, diving into your business objectives, market trends, and target audience to create a customized strategy designed for success.",
+                "activities": [
+                    "Client Need Analysis",
+                    "Gathering all basic information",
+                    "Marketing and competition research",
+                    "Tech Stack Assessment"
+                ],
+                "deliverables": [
+                    "Requirement Gathering Report",
+                    "Competition Analysis Report",
+                    "Tech Stack Report"
+                ]
+            },
+            {
+                id: 2,
+                title: "Service Agreement",
+                description: "We create a strong base of trust and collaboration by agreeing on the project scope, methodologies, and deliverables, ensuring a transparent and productive partnership.",
+                "activities": [
+                    "Scope definition and agreement",
+                    "Setting up communication channels",
+                    "Resource and timelines planning"
+                ],
+                "deliverables": [
+                    "Project Scope Document",
+                    "Communication Plan",
+                    "Detailed Project Schedule"
+                ]
+            },
+            {
+                id: 3,
+                title: "Design & Development",
+                description: "Our team works closely together to develop highly responsive and user-friendly softwares. We ensure that our solutions align with your vision and meet all necessary requirements.",
+                "activities": [
+                    "Defining technical architecture",
+                    "Database design and schema creation",
+                    "Setting up development environments"
+                ],
+                "deliverables": [
+                    "Technical Architecture Document",
+                    "Database Schema",
+                    "Development Environment Setup"
+                ]
+            },
+            {
+                id: 4,
+                title: "Testing & Quality Assurance",
+                description: "Ensuring top performance and security, our thorough testing protocols make sure your web app is reliable, secure, and prepared to handle user demands.",
+                "activities": [
+                    "Integration & Functional Testing",
+                    "Security and load testing",
+                    "Test Automation"
+                ],
+                "deliverables": [
+                    "Test Execution Report",
+                    "Security and Performance Reports",
+                    "Optimized, Bug-Free Code"
+                ]
+            },
+            {
+                "id": 5,
+                "title": "Delivery & Support",
+                "description": "Rolling out your software with assurance and ongoing support. We guarantee a seamless launch and offer continuous maintenance to keep your application current and effective.",
+                "activities": [
+                    "Deployment to production servers",
+                    "User training and documentation",
+                    "Ongoing maintenance and updates"
+                ],
+                "deliverables": [
+                    "Deployed Web Application",
+                    "Training Materials and Guides",
+                    "Regular Update and Support Logs"
+                ]
+            }
+
+        ]
+    },
 };
 
 

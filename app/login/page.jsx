@@ -13,7 +13,7 @@ const Login = () => {
 
     const [formData, setFormData] = useState({ email: "", password: "" });
     const [error, setError] = useState(null);
-    const router = useRouter();
+    const router = useRouter(); 
 
 
     const { data: session, status } = useSession();
@@ -55,8 +55,8 @@ const Login = () => {
                 id: toastId,
             })
 
-            router.replace('/');
-            // router.replace(result?.url || '/bunnx-admin');
+            // router.replace('/');
+            router.replace(result?.url || '/bunnx-admin');
 
             console.log("Redirected to", result?.url);
 

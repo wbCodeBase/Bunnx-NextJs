@@ -125,6 +125,64 @@ const serviceData = {
       },
     ],
   },
+  'best-software-development-company-in-india': {
+    title: 'Software Development Service Models',
+    description:
+      "Every project comes with its own set of challenges, whether it’s maintaining system reliability, integrating third-party services, or managing large datasets. Our models are designed to allow you to bring in the right expertise at each stage—whether it's a single developer for a task or a team for ongoing maintenance.",
+    models: [
+      {
+        title: 'Software Development Team',
+        icon: lightdotnetmodalicon,
+        subtitle: '(also known as product interface teams)',
+        sections: [
+          {
+            type: 'para',
+            content:
+              "A team from the top back end development company is the ideal solution for projects that require long-term collaboration. With this model, you get a fully dedicated group of back-end developers who work exclusively on your project. This team integrates with your internal processes, and maintains high-quality standards throughout the development lifecycle.",
+          },
+          {
+            type: 'list',
+            content:
+              'Full-time, dedicated back-end developers,Integration with your existing team and workflows.,Scalable team size,Complete ownership of project deadlines.,Long-term collaboration,Specialized expertise in back-end technologies,Flexibility to adapt and adjust team composition',
+          },
+        ],
+      },
+      {
+        title: 'Back End Team Augmentation',
+        icon: teamAug,
+        subtitle: '(also known as team extension or staff augmentation)',
+        sections: [
+          {
+            type: 'para',
+            content:
+              "Back-end team augmentation is a flexible solution that allows you to extend your existing team with additional specialized resources. This model is perfect when you need extra expertise for specific tasks or to scale up quickly during critical project phases. By adding expert back-end developers to your team, you can accelerate development.",
+          },
+          {
+            type: 'list',
+            content:
+              'Ideal for scaling up development resources during peak project phases.,Temporary or long-term support.,Cost-effective solution for handling surges in work without hiring full-time staff.,Reduces the overhead of recruitment.,Facilitates knowledge transfer and skill development.',
+          },
+        ],
+      },
+      {
+        title: 'Project Based',
+        icon: ProjectBased,
+        subtitle: '(best suited for small-mid scale back end projects)',
+        sections: [
+          {
+            type: 'para',
+            content:
+              "Fixed Price Model: It is perfect for back-end projects with well-defined requirements, specifications, and deliverables. This approach works best when the scope is clear. Ideal for small- to medium-scale back-end development, this model makes sure that both you and the development team are aligned on objectives.",
+          },
+          {
+            type: 'para',
+            content:
+              "Time & Material Model: It is designed for back-end projects with dynamic requirements and evolving scopes. This model allows for flexible engagement, where developers work based on hourly or resource-based billing. It’s perfect for projects with uncertain or rapidly changing requirements, such as complex UI/UX needs.",
+          },
+        ],
+      },
+    ],
+  },
 };
 
 export default function HiringModels({ serviceDetailPageSlug }) {

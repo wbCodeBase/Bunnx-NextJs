@@ -1,5 +1,5 @@
 
-import localFont from "next/font/local";
+// import localFont from "next/font/local";
 import { AR_One_Sans, Quando } from "next/font/google";
 import "./globals.css";
 
@@ -8,6 +8,7 @@ import { Toaster } from "@/components/ui/sonner"
 
 import { SessionProvider } from "next-auth/react"; // Import SessionProvider
 import HeaderFooterWrapper from "@/components/layout/HeaderFooterWrapper";
+import ScrollToTop from "@/components/layout/ScrollToTop";
 
 
 // const geistSans = localFont({
@@ -86,6 +87,7 @@ export default function RootLayout({ children }) {
       <body className={` ${quando.variable} ${arOneSans.variable} antialiased`}>
         <SessionProvider>
           <ReduxProvider>
+          <ScrollToTop />
             <HeaderFooterWrapper>{children}</HeaderFooterWrapper>
             <Toaster />
           </ReduxProvider>

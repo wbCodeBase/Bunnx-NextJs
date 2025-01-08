@@ -15,7 +15,7 @@ import Faqs from "@/components/layout/Faqs";
 import Testimonial from "@/components/home/Testimonial";
 
 import heroHomeImage from "/public/brodbot.png"
-import { auth } from "./auth";
+import { auth } from "@/auth";
 
 
 export const metadata = {

@@ -44,8 +44,15 @@ const engageMentModelData = [
     {
         slug: "back-end-development",
         h2: "Choose From Hiring Models",
-        h4: "Collaborate with Top Back-End Developers Through Engagement Models",
-        p: "Our engagement models are designed with one goal in mind: to deliver the right back-end development solution for your brand. We analyze your project’s scope, goals, and timeline to propose a customized collaboration plan.",
+        h4: "Collaborate with Top Back-End Developer Through Engagement Models",
+        p: "Our engagement models are designed with one goal in mind, to deliver the right back-end development solution for your brand. We analyze your project’s scope, goals, and timeline to propose a customized collaboration plan.",
+        engagement: engagement,
+    },
+    {
+        slug: "best-software-development-company-in-india",
+        h2: "Choose From Hiring Models",
+        h4: "Collaborate with Top Software Developer Through Engagement Models",
+        p: "Our team will recommend the most appropriate engagement model for your project, taking into account its complexity, vision, and overall product concept.",
         engagement: engagement,
     },
 ];

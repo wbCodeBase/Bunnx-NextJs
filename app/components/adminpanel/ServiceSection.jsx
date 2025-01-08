@@ -170,6 +170,7 @@ const ServiceSectionForm = ({ form, onSubmit, isEditing, updateIsLoading, result
             <FormFieldInput form={form} name="title" label="Title" placeholder="Title" />
             <FormFieldInput form={form} name="description" label="Description" placeholder="Enter Description" />
 
+            <FormFieldFetchOnSlug form={form} name="fetchOnSlug" label="FetchOn Page (Multiple)" options={slugArray} placeholder="Slug where it display" />
 
             {/* <FormFieldInput form={form} name="ctaRedirectUrl" label="Redirect url" placeholder="Enter redirection slug" /> */}
             <FormFieldInput
@@ -181,7 +182,6 @@ const ServiceSectionForm = ({ form, onSubmit, isEditing, updateIsLoading, result
             />
 
 
-            <FormFieldFetchOnSlug form={form} name="fetchOnSlug" label="FetchOn Page (Multiple)" options={slugArray} placeholder="Slug where it display" />
 
             <div className="mt-4">
                 <Button type="submit">{result.isLoading ? "Saving..." : updateIsLoading ? "Updating..." : isEditing ? "Update" : "Submit"}</Button>

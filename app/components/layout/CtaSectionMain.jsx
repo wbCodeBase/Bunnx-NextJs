@@ -19,6 +19,14 @@ const CtaSectionMain = ({ serviceDetailPageSlug }) => {
             ctaText: "Let's Connect!",
             slug: "back-end-development"
         },
+        {
+            "span": "Smart Solutions That Evolve with Your Business!",
+            "head": "Need Custom Software to Bring Your Ideas to Life?",
+            "para": "Overwhelmed by tech challenges or outdated tools? We create smart, scalable software that simplifies your processes, boosts efficiency, and helps your business thrive in today's fast-paced world.",
+            "ctaText": "Let’s Innovate!",
+            "slug": "best-software-development-company-in-india"
+        }
+        
     ]
 
     const ctaMainObj = CtaMain?.find((ctaMain) => ctaMain?.slug === serviceDetailPageSlug) || {

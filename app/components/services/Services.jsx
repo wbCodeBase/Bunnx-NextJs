@@ -75,6 +75,11 @@ const OurServicesHeadPara = [
     servicePara: "As a premier back-end development service provider in India, we specialize in crafting powerful, integrated websites designed to deliver seamless navigation and accelerate business growth. Our innovative services redefine user experiences.",
     slug: "back-end-development"
   },
+  {
+    serviceTitle: "Our Software Development Services",
+    servicePara: "We are a leading software development company in India, providing unique and innovative custom software development services that help your business to achieve exponential growth.",
+    slug: "best-software-development-company-in-india"
+  },
 ]
 
 

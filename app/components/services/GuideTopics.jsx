@@ -405,7 +405,181 @@ const guideContent = {
 
 
     ],
+  },
+
+  "best-software-development-company-in-india": {
+    "title": "Guide to Software Development Services",
+    "description": "Explore the various aspects of software development services, their types, and why custom solutions are essential for business growth. This guide also highlights the best platforms and methodologies for software development.",
+    "sections": [
+      {
+        "id": "0",
+        "title": "What is Software Development Service?",
+        "content": {
+          "heading": "Introduction and Importance of Software Development",
+          "description": [
+            "Software development services are a set of broad activities required to design, modelling, develop and deploy software solutions. Usually these services are being provided either by some companies or teams of developers and the features can be customized for individual business needs. The intent is to provide high-value software that addresses a problem, increases productivity, or offers new business or user capabilities."
+          ],
+          image: {
+            src: guideIntroDefault,
+            alt: 'Software development workspace showing code on a laptop screen',
+          },
+        }
+      },
+      {
+        "id": "1",
+        "title": "Types of Software Development Services",
+        "content": {
+          "heading": "Types of Software Development Services",
+          "description": [
+            "Here are the various types of software development services offered to meet different business needs:"
+          ],
+          "list": [
+            {
+              "title": "Custom Software Development",
+              "detail": "An application developed as per business needs and industry-specific requirements. Everything from initial planning and design through coding, testing, and maintenance."
+            },
+            {
+              "title": "Mobile App Development",
+              "detail": "This is a type of development which concentrates on the applications for mobile devices like Smartphones and Tablets, mostly on iOs and Android platforms."
+            },
+            {
+              "title": "Web Development",
+              "detail": "Building applications or websites that run on the web and can be accessed through a browser (front-end development & back-end development)."
+            },
+            {
+              "title": "Enterprise software development",
+              "detail": "This service is suited for creating large-scale applications that cater to business processes, such as ERP systems, CRM platforms and other enterprise solutions."
+            },
+            {
+              "title": "Cloud Application Development",
+              "detail": "It relates to the creation of cloud-native apps that can be delivered on a subscription basis over the internet without local infrastructure."
+            },
+            {
+              "title": "Software Maintenance and Support",
+              "detail": "Once deployed, there will be regular updates, bug fixes, etc. To make sure the software is functional and safe while maintaining its security over time."
+            }
+          ]
+        }
+      },
+      {
+        "id": "2",
+        "title": "Why Should One Go for Custom Software Development?",
+        "content": {
+          "heading": "Why Should One Go for Custom Software Development?",
+          "description": [
+            "Custom software development is one of the top services offered by leading software development companies in India because:"
+          ],
+          "list": [
+            {
+              "title": "Custom Fit",
+              "detail": "Custom software is built for unique business needs and enhancing workflows and operations."
+            },
+            {
+              "title": "Scalability",
+              "detail": "It is built for business growth and can be easily upgraded and modified when required."
+            },
+            {
+              "title": "Competitive Edge",
+              "detail": "Scalability benefits - Unique attributes offer an advantage over competitors using generic solutions."
+            },
+            {
+              "title": "Efficiency",
+              "detail": "By automating processes, custom software can enhance productivity and decrease errors."
+            },
+            {
+              "title": "Pricing",
+              "detail": "The first round of pricing is indeed expensive, but you won't be paying any more money just for licensing or unnecessary features later."
+            },
+            {
+              "title": "Security",
+              "detail": "Custom solutions provide better security based on industry requirements, making them less susceptible to attacks."
+            }
+          ]
+        }
+      },
+      {
+        "id": "3",
+        "title": "What are the Types of Software Development?",
+        "content": {
+          "heading": "What are the Types of Software Development?",
+          "description": [
+            "Software development encompasses various types, including:"
+          ],
+          "list": [
+            {
+              "title": "Front-End Development",
+              "detail": "Focuses on building the user interface (UI) and client-side behaviour using languages like HTML, CSS, and JavaScript, ensuring a seamless user experience."
+            },
+            {
+              "title": "Back-End Development",
+              "detail": "Involves server-side development, databases management and API integration using languages like Python, Java, php, dot net and Ruby to ensure functionality and system performance."
+            },
+            {
+              "title": "Full-Stack Development",
+              "detail": "Combines both front-end and back-end development, enabling developers to handle all aspects of a software project from UI, backend and server-side operations."
+            },
+            {
+              "title": "Mobile Development",
+              "detail": "Specializes in creating applications for mobile platforms (iOS and Android) using technologies like Swift, Kotlin, or React Native for ios and android."
+            },
+            {
+              "title": "Web Development",
+              "detail": "Focuses on building web applications that run on browsers using technologies such as JavaScript, Python, and PHP for both front-end and back-end."
+            },
+            {
+              "title": "Desktop Development",
+              "detail": "Involves creating applications that run on desktop operating systems like Windows or macOS, often using languages like dotnet or java."
+            }
+          ]
+        }
+      },
+      {
+        "id": "4",
+        "title": "Which is the Best Platform to Develop Custom Software?",
+        "content": {
+          "heading": "Which is the Best Platform to Develop Custom Software?",
+          "description": [
+            "Choosing the right platform is crucial for smooth operation, scalability, and maintainability. Here are the main options:"
+          ],
+          "list": [
+            {
+              "title": "Web Development",
+              "detail": "Building applications that run on the web using technologies such as JavaScript, Python, and PHP for both front-end and back-end development."
+            },
+            {
+              "title": "Mobile Development",
+              "detail": "Specializes in creating applications for mobile platforms (iOS and Android) using technologies like Swift, Kotlin, or React Native for ios and android."
+            },
+            {
+              "title": "Cloud Platforms",
+              "detail": "Amazon Web Services (AWS), Microsoft Azure, and Google Cloud Platform (GCP) provide hosting, storage, and scalable cloud solutions."
+            }
+          ],
+          "factors": [
+            {
+              "title": "Project Requirements",
+              "detail": "Ensure the platform aligns with specific needs."
+            },
+            {
+              "title": "Scalability",
+              "detail": "Choose a platform capable of growing with demand."
+            },
+            {
+              "title": "Security",
+              "detail": "Prioritize platforms with robust security features."
+            },
+            {
+              "title": "Community and Support",
+              "detail": "Opt for platforms with active communities and good documentation."
+            }
+          ]
+        }
+      }
+
+    ]
   }
+
+
 };
 
 
@@ -685,6 +859,7 @@ export default function GuideTopics({ serviceDetailPageSlug }) {
                     {paragraph}
                   </p>
                 ))}
+
               {content.list && (
                 <ul className="list-disc space-y-3 pl-6 text-gray-600">
                   {content.list.map((item, index) => (
@@ -694,6 +869,23 @@ export default function GuideTopics({ serviceDetailPageSlug }) {
                   ))}
                 </ul>
               )}
+
+
+              {content.factors && (
+                <>
+                  <div className='my-4 text-gray-600'> <strong> Factors </strong></div>
+                  <ul className="list-disc space-y-3 pl-6 text-gray-600">
+                    {content.factors.map((item, index) => (
+                      <li key={index}>
+                        <strong>{item.title}:</strong> {item.detail}
+                      </li>
+                    ))}
+                  </ul>
+                </>
+              )}
+
+
+
             </section>
           ))}
         </main>

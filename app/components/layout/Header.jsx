@@ -8,6 +8,10 @@ import { TbCodeDots } from "react-icons/tb";
 import bunnxLogo from "/public/logo/bunnx-logo.png";
 import { useRouter } from 'next/navigation'
 
+import { signOut } from "next-auth/react";
+
+import { useSession } from "next-auth/react";
+
 const menuItems = [
   { title: 'Home', slug: '/', hasSubmenu: false },
   { title: 'Service', slug: '/best-software-development-company-in-india', hasSubmenu: true },
@@ -428,11 +432,27 @@ const servicesData = {
 }
 
 
-
+  const logOut = async () => {
+    try {
+      // Sign out the user
+      await signOut({ callbackUrl: '/' }); // Redirect to home page after sign-out
+    } catch (error) {
+      console.error("Error signing out:", error);
+    }
+  };
 
 
 
 export default function Header() {
+
+  const { data: session, status } = useSession();
+
+
+  // if (session?.user?.role === "admin" && status === "authenticated") {
+  //   console.log("Header admin", session?.user?.name);
+  // } else if (session?.user?.role === "user" && status === "authenticated") {
+  //   console.log("Header user", session?.user?.name);
+  // }
 
   const router = useRouter()
 
@@ -681,13 +701,25 @@ export default function Header() {
               </div>
             ))}
           </nav>
+
+
+
           <div className="hidden lg:flex items-center space-x-4">
+
+            {session?.user?.role === "admin" && status === "authenticated" ?
+              <Link href="/bunnx-admin" className="text-orange-500 bg-white px-3 py-1 rounded-xl text-md font-medium hover:bg-orange-500 hover:text-white transition-colors duration-300">
+                AdminPanel
+              </Link>
+              : session?.user?.role === "user" && status === "authenticated" ?
+                <div onClick={() => logOut()} className="text-red-600 cursor-pointer bg-white px-3 py-1 rounded-xl text-md font-medium hover:bg-red-500 hover:text-white transition-colors duration-300">
+                  Logout
+                </div> : null}
 
             <Link href="tel:+91-9971544661" className="bg-orange-500 text-white px-6 py-3 rounded-full text-md font-medium hover:bg-orange-600 transition-colors duration-300">
               Get in Touch
             </Link>
-
           </div>
+
           <div className="lg:hidden flex items-center justify-center">
             <button onClick={() => {
               toggleMobileMenu();
