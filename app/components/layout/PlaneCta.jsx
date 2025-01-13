@@ -2,7 +2,7 @@ import React from 'react'
 import { FaPhoneAlt } from "react-icons/fa";
 import Link from 'next/link';
 
-const CtaSectionMain = ({ serviceDetailPageSlug }) => {
+const PlaneCta = ({ serviceDetailPageSlug }) => {
 
     const CtaMain = [
         {
@@ -10,29 +10,29 @@ const CtaSectionMain = ({ serviceDetailPageSlug }) => {
             head: "Frustrated with a lacklustre website design?",
             para: "Our expert Front-End Development team is here to help you captivate your visitors.",
             ctaText: "Let's Connect!",
-            slug: "front-end-development"
+            slug: "front-end-development-services"
         },
         {
             span: "Growth-Oriented Strategies That Adapt to Your Expanding Needs!",
-            head: "Ready to bring your dream project to life?",
-            para: "Tired of unreliable servers and frequent downtimes? Our back-end specialists build robust architectures, improve database performance, and streamline API integrations.",
+            head: "Let us handle complex codes for your website while you scale your business!",
+            para: "Are you fed up with unreliable servers and constant downtime? Say no more! Our back-end experts will design solid architectures to boost your database performance.",
             ctaText: "Let's Connect!",
-            slug: "back-end-development"
+            slug: "back-end-development-services"
         },
         {
-            "span": "Smart Solutions That Evolve with Your Business!",
-            "head": "Need Custom Software to Bring Your Ideas to Life?",
-            "para": "Overwhelmed by tech challenges or outdated tools? We create smart, scalable software that simplifies your processes, boosts efficiency, and helps your business thrive in today's fast-paced world.",
-            "ctaText": "Let’s Innovate!",
-            "slug": "best-software-development-company-in-india"
-        }
+            span: "Smart Solutions That Evolve with Your Business!",
+            head: "Need Custom Software to Bring Your Ideas to Life?",
+            para: "Overwhelmed by tech challenges or outdated tools? We create smart, scalable software that simplifies your processes, boosts efficiency, and helps your business thrive in today's fast-paced world.",
+            ctaText: "Let’s Innovate!",
+            slug: "best-software-development-company-in-india"
+        },
         
     ]
 
     const ctaMainObj = CtaMain?.find((ctaMain) => ctaMain?.slug === serviceDetailPageSlug) || {
-        span: `Your Success, Our Priority`,
-        head: `Boost Your Business with Reliable Web`,
-        para: `From design to deployment, we provide innovative solutions to help your business thrive.`,
+        span: `Where Your Goals Become Our Mission`,
+        head: `Elevate Your Business with Cutting-Edge Web Solutions!`,
+        para: `Are you ready to elevate your business? At [Your Company Name], we turn your vision into reality. From eye-catching designs to smooth deployments, our team is dedicated to crafting solutions that help you thrive.`,
         ctaText: "Let's Connect!",
     };
 
@@ -69,4 +69,17 @@ const CtaSectionMain = ({ serviceDetailPageSlug }) => {
     )
 }
 
-export default CtaSectionMain
+export default PlaneCta;
+
+
+
+
+
+
+
+
+
+
+
+
+

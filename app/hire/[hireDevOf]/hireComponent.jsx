@@ -10,12 +10,12 @@ import BenefitsHiring from "@/components/hire/BenefitsHiring";
 import HiringModelsHire from "@/components/hire/HiringModelsHire";
 import HeroSection from '@/components/layout/HeroSection';
 import NumericCounterInfo from "@/components/layout/NumericCounterInfo";
-import CtaSectionMain from '@/components/layout/CtaSectionMain';
 import ChooseUs from "@/components/services/ChooseUs";
 import Faqs from "@/components/layout/Faqs";
 import StepToHire from "@/components/hire/StepToHire";
 
-import CtaSection3 from "@/components/home/CtaSection3";
+import GlassmorphismCta from '@/components/layout/GlassmorphismCta';
+import PlaneCta2 from "@/components/layout/PlaneCta2";
 
 import { useGetTemplateContentByStrQuery, useGetActiveSlugQuery } from '../../../store/api/myApi';
 
@@ -24,6 +24,7 @@ import loaderJson from "/public/pageAnimations/loader.json";
 import Techcard from "@/components/hire/Techcard";
 
 import heroDefault from "/public/hireDev.png"
+import PlaneCta from "@/components/layout/PlaneCta";
 // import heroDefault from "/public/hireDev2.png"
 
 function formatparameter(input) {
@@ -313,21 +314,20 @@ export default function HireDetailsComponentt() {
 
       <TechExpertise servicesData={servicesData} />
 
-      <CtaSectionMain />
+      <PlaneCta />
 
       <BenefitsHiring />
 
       <EngagementModel hiredevOf={formatparameter(hireDevOf)} />
 
-
-      <CtaSection3 />
+      <GlassmorphismCta />
 
 
       <HiringModelsHire />
 
       <Techcard />
 
-      <CtaSectionMain />
+      <PlaneCta2 />
 
       <StepToHire hiredevOf={formatparameter(hireDevOf)} />
 

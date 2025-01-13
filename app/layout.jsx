@@ -3,10 +3,10 @@
 import { AR_One_Sans, Quando } from "next/font/google";
 import "./globals.css";
 
-import { ReduxProvider } from '../store/ReduxProvider';
-import { Toaster } from "@/components/ui/sonner"
 
 import { SessionProvider } from "next-auth/react"; // Import SessionProvider
+import { ReduxProvider } from '../store/ReduxProvider';
+import { Toaster } from "@/components/ui/sonner"
 import HeaderFooterWrapper from "@/components/layout/HeaderFooterWrapper";
 import ScrollToTop from "@/components/layout/ScrollToTop";
 
@@ -73,27 +73,25 @@ export const metadata = {
     type: 'website',
   },
 
-
 }
 
 
-export default function RootLayout({ children }) {
+
+export default async function RootLayout({ children }) {
 
   return (
     <html lang="en">
 
-
-
       <body className={` ${quando.variable} ${arOneSans.variable} antialiased`}>
         <SessionProvider>
           <ReduxProvider>
-          <ScrollToTop />
+            <ScrollToTop />
             <HeaderFooterWrapper>{children}</HeaderFooterWrapper>
             <Toaster />
           </ReduxProvider>
         </SessionProvider>
       </body>
-    </html>
+    </html> 
   );
 }
 

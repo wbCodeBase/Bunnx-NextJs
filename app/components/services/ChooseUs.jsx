@@ -8,7 +8,7 @@ import softwareDev from "/public/Software-Development.webp";
 // Dummy data for demonstration
 const data = [
   {
-    slug: "front-end-development",
+    slug: "front-end-development-services",
     title: "Leading Front End Development Experts",
     description1: "Crafting pixel-perfect and performant user interfaces customised to your business vision, Bunnx excels at delivering responsive web applications with lightning-fast load times.",
     description2: "We build scalable, component-driven front ends that evolve with your product. Our expertise spans modern frameworks like React and Vue.js, ensuring we solve your unique UX challenges.",
@@ -18,7 +18,7 @@ const data = [
     altText: "Front End Development",
   },
   {
-    slug: "back-end-development",
+    slug: "back-end-development-services",
     title: "Leading Back End Development Experts",
     description1: "We excel in building dynamic back-end infrastructures that are optimized for performance and long-term growth. We are the best back end company that uses cutting-edge technologies like Node.js, Django, and Spring Boot.",
     description2: "Our solutions include seamless API integrations, efficient database management, and real-time data processing, ensuring that your application remains fast and secure.",
@@ -42,12 +42,12 @@ const data = [
 const ChooseUs = ({ serviceDetailPageSlug }) => {
   // Find the data for the provided slug
   const content = data.find((item) => item.slug === serviceDetailPageSlug) || {
-    slug: "front-end-development",
+    slug: "front-end-development-services",
     title: "Leading Front End Development Experts",
     description1: "Crafting pixel-perfect and performant user interfaces customised to your business vision, Bunnx excels at delivering responsive web applications with lightning-fast load times.",
     description2: "We build scalable, component-driven front ends that evolve with your product. Our expertise spans modern frameworks like React and Vue.js, ensuring we solve your unique UX challenges.",
     buttonText: "Get Started!",
-    link: "/front-end-development",
+    link: "/front-end-development-services",
     imageSrc: softwareDev,
     altText: "Front End Development",
   };

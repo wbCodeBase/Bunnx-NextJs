@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const data = [
   {
-    slug: "front-end-development",
+    slug: "front-end-development-services",
     tagline: "Shape the Future of Your Online Presence",
     title: "Elevate Your Brand with Expert Front-End Development!",
     description: "We excel in crafting intuitive, visually appealing websites and applications that ensure an outstanding user experience. Trust us to transform your creative concepts into a dynamic, user-friendly online interface.",
@@ -11,19 +11,19 @@ const data = [
     backgroundImage: "https://spirecapital.com/wp-content/uploads/2017/02/CTA-background-get-in-touch.jpg",
   },
   {
-    slug: "back-end-development",
-    tagline: "Building the Backbone of Your Brand’s Success",
-    title: "Great brands deserve great back-end systems!",
-    description: "We design and develop intricate, yet fluid back-end structures that act as the silent architects behind every interaction. Our back-end development agency doesn’t just keep your site running—it transforms your ideas into real-time experiences, supporting your growth with precision and speed.",
-    buttonText: "Launch Your Project Now!",
+    slug: "back-end-development-services",
+    tagline: "Get a Blueprint for the Back-end of your Application.",
+    title: "Our Database knows no Failures and Long Load Times.",
+    description: "As your business grows, we solve all the tasks by talking technical. We combine the architecture and cybersecurity to provide the best experience to your visitors.",
+    buttonText: "Contact Us Now",
     backgroundImage: "https://spirecapital.com/wp-content/uploads/2017/02/CTA-background-get-in-touch.jpg",
   },
 ];
 
-const CtaSection = ({ serviceDetailPageSlug }) => {
+const GlassmorphismCta = ({ serviceDetailPageSlug }) => { 
   // Find content for the provided slug
   const content = data.find((item) => item.slug === serviceDetailPageSlug) || {
-    slug: "back-end-development",
+    slug: "back-end-development-services",
     tagline: "Building the Backbone of Your Brand’s Success",
     title: "Great brands deserve great back-end systems!",
     description: "We design and develop intricate, yet fluid back-end structures that act as the silent architects behind every interaction. Our back-end development agency doesn’t just keep your site running—it transforms your ideas into real-time experiences, supporting your growth with precision and speed.",
@@ -63,7 +63,7 @@ const CtaSection = ({ serviceDetailPageSlug }) => {
   );
 };
 
-export default CtaSection;
+export default GlassmorphismCta;
 
 
 

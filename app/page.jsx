@@ -6,13 +6,14 @@ import CaseStudiesnProjects from "@/components/home/CaseStudiesnProjects";
 import WhyChooseUs from "@/components/home/WhyChooseUs";
 import Solutions from "@/components/home/Solutions";
 import TechStackExpertise from "@/components/home/TechStackExpertise";
-import CtaSection from "@/components/home/CtaSection";
-import CtaSectionMain from "@/components/layout/CtaSectionMain";
-import CtaSectionMainOne from "@/components/layout/CtaSectionMainOne";
-import CtaSection3 from "@/components/home/CtaSection3";
 import TopServices from "@/components/home/TopServices";
 import Faqs from "@/components/layout/Faqs";
 import Testimonial from "@/components/home/Testimonial";
+
+import PlaneCta from "@/components/layout/PlaneCta";
+import PlaneCta2 from "@/components/layout/PlaneCta2";
+import GlassmorphismCta from "@/components/layout/GlassmorphismCta";
+import GlassmorphismCta2 from "@/components/layout/GlassmorphismCta2";
 
 import heroHomeImage from "/public/brodbot.png"
 import { auth } from "@/auth";
@@ -44,11 +45,11 @@ export default async function Home() {
 
       <OurServices />
 
-      <CtaSectionMainOne />
+      <PlaneCta />
 
       <Industries />
 
-      <CtaSection />
+      <GlassmorphismCta />
 
       <TopServices />
 
@@ -56,13 +57,13 @@ export default async function Home() {
 
       <TechStackExpertise />
 
-      <CtaSectionMain />
+      <PlaneCta2 />
 
       <WhyChooseUs />
 
       <CaseStudiesnProjects />
 
-      <CtaSection3 />
+      <GlassmorphismCta2 />
 
       <Testimonial />
 

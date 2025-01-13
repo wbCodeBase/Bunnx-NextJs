@@ -3,8 +3,12 @@
 import React, { useState } from "react"
 import { ChevronRight } from 'lucide-react'
 import Link from "next/link"
+import { createLinkedContent } from '#/utils/LinkBuilder';
+
 
 const techStackData = {
+    head: "Software Development Services in India",
+    para: "Our approach as a top software solutions company combines innovative thinking with technical expertise, ensuring every project from CRM software development to comprehensive application solutions meets the highest standards of excellence.",
     categories: [
         'Software Development',
         'Application Development',
@@ -26,7 +30,8 @@ const techStackData = {
 
                 { "name": "IT Consulting", "description": "Software Outsourcing", "slug": "it-consulting" },
                 { "name": "Agile Consulting", "description": "Optimizing customer relations", "slug": "agile-consulting" },
-            ]
+            ],
+            linkViewMore: "best-software-development-company-in-india"
         },
         "Application Development": {
             "title": "Application Development",
@@ -39,7 +44,8 @@ const techStackData = {
                 { "name": "API Development", "description": "Build once, run everywhere", "slug": "api-development" },
                 { "name": "Full stack Development", "description": "Build once, run everywhere", "slug": "full-stack-development" },
                 { "name": "Website Development", "description": "Build once, run everywhere", "slug": "website-development" },
-            ]
+            ],
+            linkViewMore: "application-development"
         },
         "Dedicated Software Teams": {
             "title": "Dedicated Software Teams",
@@ -48,9 +54,10 @@ const techStackData = {
                 { "name": "Staff Augmentation", "description": "Next-gen web experiences", "slug": "staff-augmentation" },
                 { "name": "Hire Software Developer", "description": "Fast, dynamic web apps", "slug": "hire-software-developer" },
                 { "name": "IT Outsourcing", "description": "Sleek, powerful iOS apps", "slug": "it-outsourcing" },
-                { "name": "Dedicated Development Teams", "description": "Robust Android solutions", "slug": "dedicated-development-teams" },
+                { "name": "Dedicated Development Team", "description": "Robust Android solutions", "slug": "dedicated-development-team" },
                 { "name": "Offshore Dedicated Centre", "description": "Build once, run everywhere", "slug": "offshore-dedicated-centre" }
-            ]
+            ],
+            linkViewMore: "dedicated-technical-team"
         },
         "eCommerce": {
             "title": "eCommerce",
@@ -60,7 +67,8 @@ const techStackData = {
                 { "name": "Ecommerce Web Consulting", "description": "Fast, dynamic web apps", "slug": "ecommerce-web-consulting" },
                 { "name": "Ecommerce Advancement", "description": "Sleek, powerful iOS apps", "slug": "ecommerce-advancement" },
                 { "name": "Ecommerce Maintenance & Support", "description": "Robust Android solutions", "slug": "ecommerce-maintenance-support" },
-            ]
+            ],
+            linkViewMore: "ecommerce-development"
         },
         "QA & Testing": {
             "title": "QA & Testing",
@@ -71,7 +79,8 @@ const techStackData = {
                 { "name": "Web App Testing", "description": "Sleek, powerful iOS apps", "slug": "web-app-testing" },
                 { "name": "Mobile App Testing", "description": "Robust Android solutions", "slug": "mobile-app-testing" },
                 { "name": "QA Outsourcing", "description": "Build once, run everywhere", "slug": "qa-outsourcing" }
-            ]
+            ],
+            linkViewMore: "qa-testing"
         },
         "Cloud Services": {
             "title": "Cloud Services",
@@ -81,19 +90,28 @@ const techStackData = {
                 { "name": "Cloud Strategy & Consulting", "description": "Next-gen web experiences", "slug": "cloud-strategy-consulting" },
                 { "name": "Cloud Migration", "description": "Fast, dynamic web apps", "slug": "cloud-migration" },
                 { "name": "Devops Integration", "description": "Build once, run everywhere", "slug": "devops-integration" },
-            ]
+            ],
+            linkViewMore: "cloud-services"
         }
     }
 
 }
+
+// Add keyword mapping
+const keywordToSlug = {
+    'CRM software development': 'crm-software-development',
+    'software development agency': 'best-software-development-company-in-india',
+    'web and mobile applications': 'application-development',
+    'Seamless staff augmentation': 'staff-augmentation',
+    'smart eCommerce solutions': 'ecommerce-development',
+};
 
 
 const OurServices = () => {
 
 
     const [activeCategory, setActiveCategory] = useState('Software Development')
-    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
-
+    // const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
 
 
@@ -101,55 +119,54 @@ const OurServices = () => {
         setActiveCategory(category)
     }
 
-    const toggleMobileMenu = () => {
-        setIsMobileMenuOpen(!isMobileMenuOpen)
-    }
-
-
+    // const toggleMobileMenu = () => {
+    //     setIsMobileMenuOpen(!isMobileMenuOpen)
+    // }
 
 
     return (
         <>
-            <section className="relativ bordert container mx-auto max-w-screen-lg xl:max-w-screen-xl px-4 md:px-6 py-8">
 
-                <span className='font-semibold text-orange-500 text-lg'>Our Services</span>
-                <h2 className='font-semibold text-3xl my-2'>Software Development Services in India</h2>
-                {/* <p className='text-md text-gray-800'>As a top-tier custom software development company in India, we transform complex business challenges into innovative digital solutions. Our comprehensive software development services range from enterprise-level software solutions to seamless system integrations, delivering cutting-edge technologies that drive your business forward.</p> */}
-                <p className='text-md text-gray-800'>Our approach as a top software solutions company combines innovative thinking with technical expertise, ensuring every project—from CRM software development to comprehensive application solutions—meets the highest standards of excellence.</p>
+            {techStackData.content[activeCategory] && (
+                <>
 
-                <div className="w-full my-6 transition-all duration-300 ease-in-out">
-                    <div className="container mx-auto flex relative flex-col lg:flex-row">
 
-                        <div className="border-r bg-blue900 bg-black text-white w-full lg:w-1/4 p-6 hidden md:block">
-                            {techStackData.categories.map((category) => (
-                                <div
-                                    key={category}
-                                    className={`py-3 my-1 group px-5 text-lg w-[19rem] text-nowrap transform hover:translate-x-1 transition-all ease-in-out duration-300 flex items-center cursor-pointer font-medium ${activeCategory === category ? 'bg-blue-500 text-white' : 'hover:bg-gray-200'
-                                        }`}
-                                    onMouseEnter={() => handleCategoryHover(category)}
-                                >
-                                    {category}
-                                    <ChevronRight className="float-right h-5 w-5 hidden group-hover:block" />
+                    <section className="relativ bordert container mx-auto max-w-screen-lg xl:max-w-screen-xl px-4 md:px-6 py-8">
+
+                        <span className='font-semibold text-orange-500 text-lg'>Our Services</span>
+                        <h2 className='font-semibold text-3xl my-2'>{techStackData?.head}</h2>
+                        <p className='text-md text-gray-800'>{createLinkedContent(techStackData?.para, keywordToSlug)}</p>
+
+                        <div className="w-full my-6 transition-all duration-300 ease-in-out">
+                            <div className="container mx-auto flex relative flex-col lg:flex-row">
+
+                                <div className="border-r bg-blue900 bg-black text-white w-full lg:w-1/4 p-6 hidden md:block">
+                                    {techStackData.categories.map((category) => (
+                                        <div key={category}
+                                            className={`py-3 my-1 group px-5 text-lg w-[19rem] text-nowrap transform hover:translate-x-1 transition-all ease-in-out duration-300 flex items-center cursor-pointer font-medium ${activeCategory === category ? 'bg-blue-500 text-white' : 'hover:bg-gray-200 hover:text-black'
+                                                }`}
+                                            onMouseEnter={() => handleCategoryHover(category)}
+                                            onClick={() => handleCategoryHover(category)}
+                                        >
+                                            {category}
+                                            <ChevronRight className="float-right h-5 w-5 hidden group-hover:block" />
+                                        </div>
+                                    ))}
+
                                 </div>
-                            ))}
-
-                        </div>
 
 
 
-                        <div className="w-full lg:w-3/4">
+                                <div className="w-full lg:w-3/4">
 
 
-
-                            {techStackData.content[activeCategory] && (
-                                <>
                                     <div className='p-6 sm:px-20 my-5 border'>
 
 
                                         <div className="mb-4 py-4 border-b">
 
                                             <h3 className='text-3xl font-bold'> {techStackData.content[activeCategory].title} </h3>
-                                            <p className="text-gray-600 font-medium mt-4">{techStackData.content[activeCategory].description}</p>
+                                            <p className="text-gray-600 font-medium mt-4">{createLinkedContent(techStackData.content[activeCategory].description, keywordToSlug)}</p>
 
                                         </div>
 
@@ -178,26 +195,29 @@ const OurServices = () => {
                                         </div>
 
                                         <div className="mt-6 flex justify-end">
-                                            <Link href="#" className="text-white bg-blue-600 hover:bg-white border-2 hover:border-blue-600 hover:text-blue-600 rounded-lg px-6 py-3 transition-colors duration-200">
+                                            <Link href={techStackData.content[activeCategory].linkViewMore} className="text-white bg-blue-600 hover:bg-white border-2 hover:border-blue-600 hover:text-blue-600 rounded-lg px-6 py-3 transition-colors duration-200">
                                                 View More <ChevronRight className="inline h-4 w-4" />
                                             </Link>
                                         </div>
 
                                     </div>
-                                </>
-                            )}
 
 
 
+                                </div>
+
+
+
+                            </div>
                         </div>
 
 
-
-                    </div>
-                </div>
+                    </section>
 
 
-            </section>
+                </>
+            )}
+
         </>
     )
 }

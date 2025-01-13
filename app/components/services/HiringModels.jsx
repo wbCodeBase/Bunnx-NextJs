@@ -9,7 +9,7 @@ import teamAug from '/public/iconMethodology/teamAug.webp';
 import ProjectBased from '/public/iconMethodology/ProjectBased.webp';
 
 const serviceData = {
-  'front-end-development': {
+  'front-end-development-services': {
     title: 'Front End Development Service Models',
     description:
       "We customize engagement strategies to match your project’s vision, scale, and complexity. Our hiring models ensure you have the right team and services at your disposal to ensure smooth services.",
@@ -67,15 +67,15 @@ const serviceData = {
       },
     ],
   },
-  'back-end-development': {
-    title: 'Back End Development Service Models',
+  'back-end-development-services': {
+    title: 'Choose From Back End Development Service Models',
     description:
       "Every project comes with its own set of challenges, whether it’s maintaining system reliability, integrating third-party services, or managing large datasets. Our models are designed to allow you to bring in the right expertise at each stage—whether it's a single developer for a task or a team for ongoing maintenance.",
     models: [
       {
         title: 'Dedicated Back End Team',
         icon: lightdotnetmodalicon,
-        subtitle: '(also known as product interface teams)',
+        subtitle: '(also known as product operations team)',
         sections: [
           {
             type: 'para',

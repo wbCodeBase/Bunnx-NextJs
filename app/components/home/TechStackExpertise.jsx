@@ -1,6 +1,11 @@
 import React from 'react'
 import TechStackMarquee from './TechStackMarquee';
 import { AiOutlineStar } from "react-icons/ai";
+import { createLinkedContent } from '#/utils/LinkBuilder';
+
+const keywordToSlug = {
+"best software development company in India": "it-outsourcing",
+};
 
 const TechStackExpertise = () => {
     return (
@@ -10,7 +15,7 @@ const TechStackExpertise = () => {
 
                 <span className='font-semibold text-orange-500 text-lg'>Our Technology Expertise</span>
                 <h3 className='font-semibold text-3xl my-2'>Technologies That Speaks Your Business Language</h3>
-                <p className='text-md text-gray-800'>Whether you require a complex enterprise software solution or seamless software integration, As a best software development company in India, we will convert your ideas into reality with our long-standing, industry-proven IT consulting and software development services.</p>
+                <p className='text-md text-gray-800'>{createLinkedContent("Whether you require a complex enterprise software solution or seamless software integration, As a best software development company in India, we will convert your ideas into reality with our long-standing, industry-proven IT consulting and software development services.", keywordToSlug)}</p>
 
 
                 <section className="flex flex-wrap justify-center gap-10 py-2 mt-6">

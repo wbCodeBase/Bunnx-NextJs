@@ -7,57 +7,106 @@ import {
     AccordionItem,
     AccordionTrigger,
 } from "@/components/ui/accordion";
+import { createLinkedContent } from '#/utils/LinkBuilder';
+
+
+const keywordToSlug = {
+"outsourcing software development": "it-outsourcing",
+"white-label software development services": "it-outsourcing",
+"Front-End Development companies": "front-end-development-services",
+"Front-End Development company": "front-end-development-services",
+"back-end development agency": "back-end-development-services",
+};
+
 
 const faqData = {
-    default: [
-        {
-            id: "default-1",
-            question: "What technologies do Front-End Development companies use?",
-            answer: {
-                type: "text",
-                content:
-                    "Top Front End Development companies work with a variety of technologies, including React.js, Angular, and Vue.js. ",
-            },
-        },
+    "default": [
+
         {
             id: "default-2",
-            question: "Do Front-End Development companies offer post-launch support?",
+            question: "Why Choose Bunnx for Software Engineering, Consulting, and Outsourcing?",
             answer: {
-                type: "text",
-                content:
-                    "Yes, most Front-End Development companies provide post-launch support and maintenance services, including bug fixes, updates, performance optimization, and feature enhancements to keep your application running smoothly.",
-            },
+                type: "list",
+                para: "Bunnx offers a highly skilled team dedicated to delivering quality software solutions. Here’s why we stand out:",
+                content: [
+                    "Over 675 developers capable of handling complex projects.",
+                    "Expertise across a wide range of technologies.",
+                    "Known for delivering high-standard, reliable work.",
+                    "Experience across diverse sectors, bringing valuable insights."
+                ]
+            }
         },
         {
-            id: "default-3",
-            question: "Why should I hire a Front-End Development company?",
+            id: "default-1",
+            question: "How much does it cost to outsource software development to India?",
             answer: {
                 type: "text",
-                content:
-                    "Hiring a Front-End Development company ensures you get end-to-end development services under one roof. They offer expertise in multiple programming languages, frameworks, and tools, enabling them to deliver seamless, user-friendly, and robust applications tailored to your business needs.",
-            },
+                content: "The cost of outsourcing software development to India varies based on the project scope, application complexity, and specific needs—like features, integrations, APIs, animations, localization, backend requirements, cross-platform support, and more. If you share a general idea of your project, we’ll gladly provide you with an estimated timeline and cost tailored to your goals."
+            }
         },
         {
             id: "default-4",
-            question:
-                "How does a Front-End Development company ensure scalability and security?",
+            question: "I own a digital agency. Do you offer white-label software development services?",
             answer: {
                 type: "text",
-                content:
-                    "A reliable company designs systems with scalability in mind, using modular architecture and cloud solutions to handle growth. For security, they implement best practices like data encryption, secure authentication, and regular vulnerability assessments to protect your application from threats.",
-            },
+                content: "Absolutely! We offer full white-label software development services across B2B, B2C, and SaaS models. Our approach is transparent and collaborative, understanding that every business is unique. We work closely with our clients to meet specific needs and offer 24/7 support to keep your business running smoothly. Reach out to one of our experts to learn more about how our white-label solutions can support your agency."
+            }
+        },
+        {
+            id: "default-3",
+            question: "Is outsourcing software development risky? How do you protect intellectual property and data?",
+            answer: {
+                type: "list",
+                para: "Outsourcing software development can be secure and straightforward when you partner with a trusted company. At ValueCoders, we prioritize your intellectual property (IP) and data protection through various measures:",
+                content: [
+                    "Signing a Non-Disclosure Agreement (NDA)",
+                    "Complying with industry-specific regulations like GDPR and HIPAA",
+                    "Adhering to secure coding and robust data protection practices",
+                    "Using firewalls, encryption, and VPNs to safeguard against online threats",
+                    "Carefully verifying all employees before they join our team"
+                ]
+            }
+        },
+        {
+            id: "default-6",
+            question: "What kind of developers can I hire through your service?",
+            answer: {
+                type: "text",
+                content: "We offer a wide range of developers, including PHP, React, Node.js, Python, Angular, .NET, and many more. Whether you need frontend, backend, or full-stack developers, we can connect you with experts who fit your project’s unique requirements."
+            }
         },
         {
             id: "default-5",
-            question: "Do Front-End Development companies offer post-launch support?",
+            question: "Do you offer project management support along with developers?",
             answer: {
                 type: "text",
-                content:
-                    "Yes, most Front End Development companies provide post-launch support and maintenance services, including bug fixes, updates, performance optimization, and feature enhancements.",
-            },
+                content: "Yes, we can provide project management support to help oversee your project, track progress, and ensure smooth communication between your team and our developers. This option is particularly helpful for clients who want end-to-end support."
+            }
         },
+        {
+            id: "default-7",
+            question: "How do you handle intellectual property and data security?",
+            answer: {
+                type: "text",
+                content: "We take IP and data security very seriously. We sign Non-Disclosure Agreements (NDAs) and adhere to industry standards for secure coding, data protection, and compliance with GDPR and other relevant regulations. You retain full ownership of the work completed."
+            }
+        },
+        {
+            id: "default-8",
+            question: "I want to outsource software development. What engagement options do you offer?",
+            answer: {
+                type: "paragraph",
+                headPara: "At Bunnx, we offer a variety of engagement models to suit your specific project requirements. Whether you need a dedicated team of coders for an ongoing project or just a few extra hands for a one-off task, we have an engagement model that will fit your needs.",
+                content: [
+                    { title: "Dedicated Team", para: "Dedicated team model comprises a PM, SW Engineer, QA Engineer, and other roles defined for each specific project." },
+                    { title: "Staff Augmentation", para: "We provide extra talent to boost your specific projects. This extended team works as a part of your local team, attending your daily meetings and reporting directly to your manager." },
+                    { title: "Offshore Development Center", para: "We also provide a dedicated software development office with all required infrastructure and employees in India. Our ODC model helps you save budget and speed up development, recruiting, and optimizing accounting and HR." },
+                ]
+            }
+        },
+
     ],
-    "back-end-development": [
+    "back-end-development-services": [
         {
             id: "backend-1",
             question: "What technologies do you specialize in?",
@@ -114,7 +163,7 @@ const faqData = {
             },
         },
     ],
-    "front-end-development": [
+    "front-end-development-services": [
         {
             id: "default-1",
             question: "What technologies do Front-End Development companies use?",
@@ -232,9 +281,45 @@ const Faqs = ({ serviceDetailPageSlug }) => {
                                     {faq.question || "No question available"}
                                 </AccordionTrigger>
                                 <AccordionContent className="text-[16px] text-gray-700 my-6">
+
                                     {faq.answer?.type === "text" && faq.answer?.content && (
-                                        <p>{faq.answer.content}</p>
+                                        <p>{createLinkedContent(faq?.answer?.content, keywordToSlug)}</p>
                                     )}
+
+                                    {faq.answer?.type === "paragraph" && Array.isArray(faq.answer.content) && (
+                                        <>
+                                            {faq.answer.headPara && (
+                                                <p className="mb-3">{faq.answer.headPara}</p>
+                                            )}
+
+                                            {faq.answer.content.map((item, index) => (
+                                                <div key={index} className="mb-4 flex">
+                                                    {item.para && item.title && <p> <strong>{item.title}:</strong> {item.para}</p>}
+                                                </div>
+                                            ))}
+
+                                        </>
+
+
+                                    )}
+
+                                    {faq.answer?.type === "list" && (
+                                        <>
+                                            {/* Optional paragraph before the list */}
+                                            {faq.answer.para && (
+                                                <p className="mb-3">{faq.answer.para}</p>
+                                            )}
+                                            {/* List content */}
+                                            {Array.isArray(faq.answer.content) && (
+                                                <ul className='list-disc mt-6 list-inside space-y-2'>
+                                                    {faq.answer.content.map((item, index) => (
+                                                        <li key={index}>{item}</li>
+                                                    ))}
+                                                </ul>
+                                            )}
+                                        </>
+                                    )}
+
                                 </AccordionContent>
                             </AccordionItem>
                         ))}

@@ -3,39 +3,45 @@
 import { useState } from 'react'
 import { motion, AnimatePresence, LayoutGroup } from 'framer-motion'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
+import { createLinkedContent } from '#/utils/LinkBuilder';
 
 import "./service.css";
 
+const keywordToSlug = {
+    'front end development company in India': 'front-end-development-services',
+    'front end development company': 'front-end-development-services',
+};
+
 
 const contentBySlug = {
-    "back-end-development": {
+    "back-end-development-services": {
         h2: "Our Process",
         h4: "Our Process for Back End Development",
-        p: "Our back-end development process begins with an in-depth analysis of your system requirements and business logic. We design scalable server architectures, implement secure RESTful or GraphQL APIs, and optimize database structures using relational or NoSQL technologies. We use advanced caching strategies, CI/CD pipelines, and rigorous QA testing, and future-ready solutions.",
+        p: "Our back-end development process is not too complex and begins with an analysis of your system requirements. Based on this, we provide you with your server architectures and execute RESTful or GraphQL APIs. Our company also makes database structures using relational or NoSQL technologies. We even use advanced caching strategies, CI/CD pipelines, and QA testing.",
         processSections: [
             {
                 id: 1,
                 title: "Engineering & System Analysis",
-                description: "We begin by conducting a comprehensive system analysis to understand your business logic, data workflows, and integration requirements.",
+                description: "We start our process by knowing how your business works and identifying how your customer's will connect with your system. This forms the basis of building a solution for your backend.",
                 activities: [
-                    "Business Logic Analysis",
-                    "Database Modeling and Entity-Relationship Mapping",
-                    "API Requirement Specification",
-                    "Technology and Framework Selection"
+                    "Breaking down your business processes",
+                    "Mapping out how your data flows",
+                    "Writing clear instructions for APIs",
+                    "Choosing the right tools and tech"
                 ],
                 deliverables: [
-                    "Detailed System Requirement Specification (SRS)",
-                    "Proposed Architecture Diagram",
-                    "Technology Stack Blueprint"
+                    "A document outlining the system features",
+                    "A diagram showing how the system will be structured",
+                    "A list of tools and platforms to be used"
                 ]
             },
             {
                 id: 2,
-                title: "Agreement and Planning",
+                title: "Architecture & Development Plan",
                 description: "Our back end development company designs a scalable, modular back-end architecture for a better data flow, security, and performance. The development strategy is outlined for agile execution.",
                 activities: [
-                    "Architecting Microservices or Monolithic Structures",
-                    "Database Schema Design (Relational/NoSQL)",
+                    "Microservices or Monolithic Structures",
+                    "Database Schema Design",
                     "Defining API Endpoints and Data Flows",
                     "Task Breakdown and Sprint Planning"
                 ],
@@ -95,10 +101,10 @@ const contentBySlug = {
             }
         ]
     },
-    "front-end-development": {
+    "front-end-development-services": {
         h2: "Our Process",
         h4: "Our Process for Frontend Development",
-        p: "As an experienced front-end development company in India, we create visually appealing and dynamic user interfaces. To boost your digital presence, we combine innovative layouts with modern technologies and interactive features that help your website stand out. We follow a series of well-planned and strategic steps to craft the website that counts.",
+        p: "As an experienced front end development company in India, we create visually appealing and dynamic user interfaces. To boost your digital presence, we combine innovative layouts with modern technologies and interactive features that help your website stand out. We follow a series of well-planned and strategic steps to craft the website that counts.",
         processSections: [
             {
                 id: 1,
@@ -267,7 +273,7 @@ const contentBySlug = {
 
 
 export default function ProcessShowcase({ serviceDetailPageSlug }) {
-    const content = contentBySlug[serviceDetailPageSlug] || contentBySlug["front-end-development"]; // Fallback to a default slug
+    const content = contentBySlug[serviceDetailPageSlug] || contentBySlug["front-end-development-services"]; // Fallback to a default slug
     const { h2, h4, p, processSections } = content;
     const [activeSection, setActiveSection] = useState(1);
 
@@ -276,7 +282,7 @@ export default function ProcessShowcase({ serviceDetailPageSlug }) {
             <div className="max-w-screen-xl container mx-auto p-4 md:p-8">
                 <h2 className='font-semibold text-orange-500 text-lg'>{h2}</h2>
                 <h4 className='font-semibold text-3xl my-2'>{h4}</h4>
-                <p className='text-md text-gray-800'>{p}</p>
+                <p className='text-md text-gray-800'>{createLinkedContent(p, keywordToSlug)}</p>
 
 
 
@@ -286,7 +292,7 @@ export default function ProcessShowcase({ serviceDetailPageSlug }) {
                         {processSections.map((section) => (
                             <div key={section.id} className="space-y-4 bg-[#1a1a1a] p-6 rounded-lg">
                                 <h2 className="text-2xl font-bold">{section.title}</h2>
-                                <p className="text-gray-300">{section.description}</p>
+                                <p className="text-gray-300">{createLinkedContent(section.description, keywordToSlug)}</p>
                                 <div className="grid gap-6">
                                     <div>
                                         <h3 className="text-xl font-semibold mb-2">Task Involved</h3>
@@ -384,7 +390,7 @@ export default function ProcessShowcase({ serviceDetailPageSlug }) {
                                                     transition={{ duration: 0.3 }}
                                                     className="space-y-6"
                                                 >
-                                                    <p className="text-gray-300 max-w-2xl">{section.description}</p>
+                                                    <p className="text-gray-300 max-w-2xl">{createLinkedContent(section.description, keywordToSlug)}</p>
 
                                                     <div className="grid md:grid-cols-2 gap-5">
                                                         <div>

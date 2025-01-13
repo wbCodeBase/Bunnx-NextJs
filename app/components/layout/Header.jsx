@@ -260,6 +260,8 @@ const servicesData = {
         { name: 'Software Consulting', slug: 'software-consulting' },
         { name: 'IT Consulting', slug: 'it-consulting' },
         { name: 'Agile Consulting', slug: 'agile-consulting' },
+        { name: 'Application Maintenance', slug: 'application-maintenance' },
+        { name: 'Application Upgradation', slug: 'application-upgradation' },
       ],
       hiring: [
 
@@ -287,8 +289,8 @@ const servicesData = {
       technologies: [
         { name: 'Web App Development', slug: 'web-app-development' },
         { name: 'Mobile App Development', slug: 'mobile-app-development' },
-        { name: 'Front End Development', slug: 'front-end-development' },
-        { name: 'Back End Development', slug: 'back-end-development' },
+        { name: 'Front End Development', slug: 'front-end-development-services' },
+        { name: 'Back End Development', slug: 'back-end-development-services' },
         { name: 'Api Development', slug: 'api-development' },
         { name: 'Full Stack Development', slug: 'full-stack-development' },
         { name: 'Website Development', slug: 'website-development' },
@@ -320,6 +322,8 @@ const servicesData = {
         { name: 'Ecommerce Web Consulting', slug: 'ecommerce-web-consulting' },
         { name: 'Ecommerce Advancement', slug: 'ecommerce-advancement' },
         { name: 'Ecommerce Maintenance & Support', slug: 'ecommerce-maintenance-support' },
+        { name: 'Shopify', slug: 'shopify' },
+        { name: 'WooCommerce', slug: 'woo-commerce' },
       ],
       hiring: [
         {
@@ -432,14 +436,14 @@ const servicesData = {
 }
 
 
-  const logOut = async () => {
-    try {
-      // Sign out the user
-      await signOut({ callbackUrl: '/' }); // Redirect to home page after sign-out
-    } catch (error) {
-      console.error("Error signing out:", error);
-    }
-  };
+const logOut = async () => {
+  try {
+    // Sign out the user
+    await signOut({ callbackUrl: '/' }); // Redirect to home page after sign-out
+  } catch (error) {
+    console.error("Error signing out:", error);
+  }
+};
 
 
 

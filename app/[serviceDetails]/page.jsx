@@ -4,7 +4,7 @@ import ServiceDetailsComp from "./serviceComponent";
 export async function generateMetadata({ params }, parent) {
   // read route params
   const currentSlug = params.serviceDetails
-  console.log("Slug", currentSlug);
+  console.log("Slug service page", currentSlug);
 
   // fetch data
   const response = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/metadata/${currentSlug}`);

@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link';
 import { IoArrowForward } from "react-icons/io5";
+import { createLinkedContent } from '#/utils/LinkBuilder';
 
 
 const defaultServicesData = [
@@ -68,12 +69,12 @@ const OurServicesHeadPara = [
   {
     serviceTitle: "Best Front End Development Services",
     servicePara: "We are a top front end development service provider in India, focused on delivering the best user solutions. We build powerful, integrated websites that make navigation smoother and drive business growth seamlessly. Our innovative range of front end development services include",
-    slug: "front-end-development"
+    slug: "front-end-development-services"
   },
   {
     serviceTitle: "Best Back End Development Services",
-    servicePara: "As a premier back-end development service provider in India, we specialize in crafting powerful, integrated websites designed to deliver seamless navigation and accelerate business growth. Our innovative services redefine user experiences.",
-    slug: "back-end-development"
+    servicePara: "We create backend systems using frameworks like Node.js, Python, or Ruby. We build server logic that handles data and connects with frontend of your website. Our focus is on making APIs for data sharing and setting up databases that store and retrieve information without a hitch. Security and performance are always priorities for us. So, if you are building something new or upgrading your current setup, we will provide you with the best backend.",
+    slug: "back-end-development-services"
   },
   {
     serviceTitle: "Our Software Development Services",
@@ -82,6 +83,12 @@ const OurServicesHeadPara = [
   },
 ]
 
+
+const keywordToSlug = {
+  'top front end development service provider': 'front-end-development-services',
+  'front end development services': 'front-end-development-services',
+  'front end development company': 'front-end-development-services',
+};
 
 const Services = ({ servicesData, serviceDetailPageSlug, extractNameFromSlug }) => {
 
@@ -100,7 +107,7 @@ const Services = ({ servicesData, serviceDetailPageSlug, extractNameFromSlug }) 
           servicesHeadParaObj &&
           <>
             <h4 className='font-semibold text-3xl my-2'>{servicesHeadParaObj.serviceTitle}</h4>
-            <p className='text-md text-gray-800'>{servicesHeadParaObj.servicePara}</p>
+            <p className='text-md text-gray-800'>{createLinkedContent(servicesHeadParaObj.servicePara, keywordToSlug)}</p>
           </>
         }
 
@@ -111,7 +118,7 @@ const Services = ({ servicesData, serviceDetailPageSlug, extractNameFromSlug }) 
 
               <h3 className='font-semibold my-3 pb-3 text-gray-800 text-xl border-b border-orange-500'>{service.title}</h3>
 
-              <p className='text-gray-600'>{service.description}</p>
+              <p className='text-gray-600'>{createLinkedContent(service.description, keywordToSlug)}</p>
 
 
               {service?.ctaRedirectUrl && service?.ctaRedirectUrl?.slug &&

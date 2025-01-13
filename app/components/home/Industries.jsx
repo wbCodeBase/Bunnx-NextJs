@@ -2,6 +2,16 @@ import Link from 'next/link';
 import { FaLocationArrow } from "react-icons/fa";
 import { Landmark, Book, HeartPulse, Truck, ShoppingCart, Plane, Film, Factory, Home } from 'lucide-react';
 
+
+// Add keyword mapping
+// const keywordToSlug = {
+//     'CRM software development': 'crm-software-development',
+//     'software development agency': 'best-software-development-company-in-india',
+//     'web and mobile applications': 'application-development',
+//     'Seamless staff augmentation': 'staff-augmentation',
+//     'smart eCommerce solutions': 'ecommerce-development',
+// };
+
 const Industries = () => {
 
     const industries = [
@@ -75,7 +85,7 @@ const Industries = () => {
             <section className="container mx-auto max-w-screen-lg xl:max-w-screen-xl px-4 md:px-6 py-10">
                 <span className='font-semibold text-orange-500 text-lg'>Industries We Empower</span>
                 <h2 className='font-semibold text-3xl my-2'>Developing Perfectly Fitting Solutions for Every Industry</h2>
-                <p className='text-md text-gray-800'>Every industry has a unique rhythm. We listen, understand, and craft software solutions that sync perfectly with your business pulse. Our approach goes beyond coding—we&apos;re your strategic technology partner.</p>
+                <p className='text-md text-gray-800'>Every industry has a unique rhythm. We listen, understand, and craft software solutions that sync perfectly with your business pulse. Our approach goes beyond coding we&apos;re your strategic technology partner.</p>
                 
                 <div className='flex items-cente justify-center flex-wrap gap-10 mt-6'>
                     {industries.map(service => (

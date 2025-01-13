@@ -9,11 +9,14 @@ import Waterfall from "/public/iconMethodology/waterfall-chart.png";
 import Rapid from "/public/iconMethodology/rapid.png";
 import DevOps from "/public/iconMethodology/devops.png";
 
+import { createLinkedContent } from '#/utils/LinkBuilder';
 
-
+const keywordToSlug = {
+    'front end development': 'front-end-development-services',
+};
 
 const contentBySlug = {
-    "front-end-development": {
+    "front-end-development-services": {
         h2: "Methodology",
         h4: "Get Smarter Applications with Effective Front End Solutions",
         p: "Our front end development strategies are specifically designed to improve usability, scalability, and performance. By combining user-centric design with technological competence, we enable organisations to provide seamless digital experiences.",
@@ -41,7 +44,7 @@ const contentBySlug = {
 
         ]
     },
-    "back-end-development": {
+    "back-end-development-services": {
         h2: "Methodology",
         h4: "Get Smarter Applications with Effective Back End Solutions",
         p: "Our back end development strategies are specifically designed to improve usability, scalability, and performance. By combining user-centric design with technological competence, we enable organisations to provide digital experiences.",
@@ -77,7 +80,7 @@ const contentBySlug = {
 
 export default function Methodology({ serviceDetailPageSlug }) {
 
-    const content = contentBySlug[serviceDetailPageSlug] || contentBySlug["front-end-development"]; // Fallback to a default slug
+    const content = contentBySlug[serviceDetailPageSlug] || contentBySlug["front-end-development-services"]; // Fallback to a default slug
     const { h2, h4, p, steps } = content;
 
     const containerRef = useRef(null)
@@ -104,7 +107,7 @@ export default function Methodology({ serviceDetailPageSlug }) {
 
                 <h2 className='font-semibold text-orange-500 text-lg'>{h2}</h2>
                 <h4 className='font-semibold sm:text-4xl text-2xl my-2'>{h4}</h4>
-                <p className='text-md text-gray-800'>{p}</p>
+                <p className='text-md text-gray-800'>{createLinkedContent(p, keywordToSlug)}</p>
                
                 <div ref={containerRef} className="relative mt-8 my-4">
 

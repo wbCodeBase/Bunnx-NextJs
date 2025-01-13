@@ -35,17 +35,17 @@ const engagement = [
 // Dummy data for different services
 const engageMentModelData = [
     {
-        slug: "front-end-development",
+        slug: "front-end-development-services",
         h2: "Choose From Hiring Models",
         h4: "Hire The Best Front End Developer with the Best Engagement Models",
         p: "We analyze your project’s requirements to recommend the ideal collaboration model. Our three models are designed to ensure every brand acquires the services that match its needs and budget.",
         engagement: engagement,
     },
     {
-        slug: "back-end-development",
+        slug: "back-end-development-services",
         h2: "Choose From Hiring Models",
         h4: "Collaborate with Top Back-End Developer Through Engagement Models",
-        p: "Our engagement models are designed with one goal in mind, to deliver the right back-end development solution for your brand. We analyze your project’s scope, goals, and timeline to propose a customized collaboration plan.",
+        p: "Our engagement models are designed with one goal in mind: to deliver the right back-end development solution for your brand. We analyze your project’s scope, goals, and timeline to propose a customized collaboration plan.",
         engagement: engagement,
     },
     {
@@ -62,7 +62,7 @@ export default function EngagementModel({ serviceDetailPageSlug }) {
     const content = engageMentModelData.find(
         (item) => item.slug === serviceDetailPageSlug
     ) || {
-        slug: "front-end-development",
+        slug: "front-end-development-services",
         h2: "Choose From Hiring Models",
         h4: "Hire The Best Front End Developer with the Best Engagement Models",
         p: "We analyze your project’s requirements to recommend the ideal collaboration model. Our three models are designed to ensure every brand acquires the services that match its needs and budget.",
@@ -108,7 +108,7 @@ export default function EngagementModel({ serviceDetailPageSlug }) {
 
                                 <Link
                                     className="text-lg bg-amber-500 group-hover:bg-white group-hover:text-black rounded-lg mt-4 text-white text-center p-2"
-                                    href="/hire/soon"
+                                    href="/hire/node-developer"
                                 >
                                     Hire Us
                                 </Link>

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const data = [
   {
-    slug: "front-end-development",
+    slug: "front-end-development-services",
     tagline: "Get a Digital Ecosystem with Our Experts!",
     title: "Accelerate Your Project’s Success with the Best Front End Technologies.",
     description: "From databases to deployment, we create intelligent solutions that scale with your ambitions.",
@@ -11,24 +11,25 @@ const data = [
     backgroundImage: "https://images.pexels.com/photos/316681/pexels-photo-316681.jpeg",
   },
   {
-    slug: "back-end-development",
-    tagline: "Get a Digital Ecosystem with Our Experts!",
-    title: "Drive Unstoppable Growth with Agile, Secure Back-End Development.",
-    description: "From database optimization to reliable deployment, our back end development company develops back-end systems that evolve with you.",
+    slug: "back-end-development-services",
+    tagline: "Get a Blueprint for the Back-end of your Application.",
+    title: "Our Database knows no Failures and Long Load Times.",
+    description: "As your business grows, we solve all the tasks by talking technical. We combine the architecture and cybersecurity to provide the best experience to your visitors.",
     buttonText: "Contact Us Now",
     backgroundImage: "https://images.pexels.com/photos/316681/pexels-photo-316681.jpeg",
   },
 ];
 
-const CtaSection3 = ({ serviceDetailPageSlug }) => {
+const GlassmorphismCta2 = ({ serviceDetailPageSlug }) => {
   // Find content for the provided slug
   const content = data.find((item) => item.slug === serviceDetailPageSlug) || {
-    tagline: "Building the Backbone of Your Brand’s Success",
-    title: "Great brands deserve great back-end systems!",
-    description: "We design and develop intricate, yet fluid back-end structures that act as the silent architects behind every interaction. Our back-end development agency doesn’t just keep your site running—it transforms your ideas into real-time experiences, supporting your growth with precision and speed.",
-    buttonText: "Launch Your Project Now!",
+    slug: "back-end-development-services",
+    tagline: "Get a Digital Ecosystem with Our Experts!",
+    title: "Drive Unstoppable Growth with Agile, Secure Back-End Development.",
+    description: "From database optimization to reliable deployment, our back end development company develops back-end systems that evolve with you.",
+    buttonText: "Contact Us Now",
     backgroundImage: "https://images.pexels.com/photos/316681/pexels-photo-316681.jpeg",
-  };
+  }
 
   // Handle case where slug doesn't match any data
   if (!content) {
@@ -63,6 +64,5 @@ const CtaSection3 = ({ serviceDetailPageSlug }) => {
 };
 
 
-
-export default CtaSection3
+export default GlassmorphismCta2;
 

@@ -2,7 +2,7 @@ import React from 'react'
 import { FaPhoneAlt } from "react-icons/fa";
 import Link from 'next/link';
 
-const CtaSectionMainOne = () => {
+const PlaneCta2 = () => {
     return (
         <>
 
@@ -35,4 +35,4 @@ const CtaSectionMainOne = () => {
     )
 }
 
-export default CtaSectionMainOne
+export default PlaneCta2;
