@@ -14,7 +14,7 @@ export async function middleware(request) {
     const isAdminPage = request.nextUrl.pathname.startsWith('/bunnx-admin');
 
     const token = await getToken({ req: request, secret: process.env.NEXTAUTH_SECRET, 
-      // secureCookie: true
+      secureCookie: true
      });
     console.log("Token exists:", token, process.env.NEXTAUTH_SECRET);
 
