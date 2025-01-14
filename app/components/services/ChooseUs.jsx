@@ -2,10 +2,17 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { FaLocationArrow } from "react-icons/fa";
-
+import { createLinkedContent } from '#/utils/LinkBuilder';
 import softwareDev from "/public/Software-Development.webp";
 
-// Dummy data for demonstration
+
+const keywordToSlug = {
+  'software development services': 'best-software-development-company-in-india',
+  'CRM software solutions': 'crm-software-development-services',
+};
+
+
+
 const data = [
   {
     slug: "front-end-development-services",
@@ -35,22 +42,24 @@ const data = [
     buttonText: "Get Started! ",
     link: "#contact-us",
     imageSrc: softwareDev,
-    altText: "Backend Development",
+    altText: "Software Development",
+  },
+  {
+    slug: "crm-software-development-services",
+    title: "Experienced CRM Software Development Specialists",
+    description1: "We have created CRM software solutions for the growth of all types of businesses and to strengthen customer relationships. Our CRM software development company also depends on only proven technologies like Salesforce and Microsoft Dynamics",
+    description2: "We also have services like comprehensive contact management, sales pipeline automation, and detailed reporting capabilities that help your business track customer interactions.",
+    buttonText: "Get Started! ",
+    link: "#contact-us",
+    imageSrc: softwareDev,
+    altText: "CRM Development",
   },
 ];
 
+
 const ChooseUs = ({ serviceDetailPageSlug }) => {
   // Find the data for the provided slug
-  const content = data.find((item) => item.slug === serviceDetailPageSlug) || {
-    slug: "front-end-development-services",
-    title: "Leading Front End Development Experts",
-    description1: "Crafting pixel-perfect and performant user interfaces customised to your business vision, Bunnx excels at delivering responsive web applications with lightning-fast load times.",
-    description2: "We build scalable, component-driven front ends that evolve with your product. Our expertise spans modern frameworks like React and Vue.js, ensuring we solve your unique UX challenges.",
-    buttonText: "Get Started!",
-    link: "/front-end-development-services",
-    imageSrc: softwareDev,
-    altText: "Front End Development",
-  };
+  const content = data.find((item) => item.slug === serviceDetailPageSlug || item.slug === "crm-software-development-services") 
 
   // Handle case where slug doesn't match any data
   if (!content) {
@@ -64,8 +73,8 @@ const ChooseUs = ({ serviceDetailPageSlug }) => {
           <div>
             <h2 className="font-semibold text-orange-500 text-left text-lg">Why Choose Us</h2>
             <h4 className="font-bold sm:text-4xl text-2xl my-2">{content.title}</h4>
-            <p className="text-md text-gray-800 my-4">{content.description1}</p>
-            <p className="text-md text-gray-800">{content.description2}</p>
+            <p className="text-md text-gray-800 my-4">{createLinkedContent(content.description1, keywordToSlug)}</p>
+            <p className="text-md text-gray-800">{createLinkedContent(content.description2, keywordToSlug)}</p>
           </div>
           <div className="flex items-center">
             <Link

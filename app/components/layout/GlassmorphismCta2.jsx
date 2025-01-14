@@ -18,19 +18,39 @@ const data = [
     buttonText: "Contact Us Now",
     backgroundImage: "https://images.pexels.com/photos/316681/pexels-photo-316681.jpeg",
   },
-];
-
-const GlassmorphismCta2 = ({ serviceDetailPageSlug }) => {
-  // Find content for the provided slug
-  const content = data.find((item) => item.slug === serviceDetailPageSlug) || {
-    slug: "back-end-development-services",
-    tagline: "Get a Digital Ecosystem with Our Experts!",
-    title: "Drive Unstoppable Growth with Agile, Secure Back-End Development.",
-    description: "From database optimization to reliable deployment, our back end development company develops back-end systems that evolve with you.",
+  {
+    slug: "best-software-development-company-in-india",
+    tagline: "Get Rid of Outdated Softwares Today!",
+    title: "Get Ready to Stay Ahead with Best Software Development Services",
+    description: "We provide you with enormous benefits like better productivity of your apps even when the visitors are high, minimize delays, and automate the software delivery process. So, hurry up!",
+    buttonText: "Contact Us Now",
+    backgroundImage: "https://images.pexels.com/photos/316681/pexels-photo-316681.jpeg",
+  },
+  {
+    slug: "crm-software-development-services",
+    tagline: "Scale Your Business with Expert CRM Solutions!",
+    title: "Transform Customer Relationships into Business Success with Professional CRM Development.",
+    description: "From database optimization to reliable deployment, ourCRM software developers develop CRM software solutions that evolve with you.",
     buttonText: "Contact Us Now",
     backgroundImage: "https://images.pexels.com/photos/316681/pexels-photo-316681.jpeg",
   }
+];
 
+const getCtaContent = (data, serviceDetailPageSlug) => {
+  // First try to find content matching the page slug
+  const contentBySlug = data.find(item => item?.slug === serviceDetailPageSlug);
+  
+  if (contentBySlug) {
+    return contentBySlug;
+  }
+
+  // Fallback to default content if no match
+  return data.find(item => item?.slug === "best-software-development-company-in-india") || data[0];
+};
+
+const GlassmorphismCta2 = ({ serviceDetailPageSlug }) => {
+  // Find content for the provided slug
+  const content = getCtaContent(data, serviceDetailPageSlug);
   // Handle case where slug doesn't match any data
   if (!content) {
     return <p>Content not found for the provided slug.</p>;

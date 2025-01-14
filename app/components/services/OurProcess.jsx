@@ -9,7 +9,10 @@ import "./service.css";
 
 const keywordToSlug = {
     'front end development company in India': 'front-end-development-services',
-    'front end development company': 'front-end-development-services',
+    'software development company in India': 'best-software-development-company-in-india',
+    'CRM software solutions': 'crm-software-development-services',
+    'CRM software development company': 'crm-software-development-services',
+    'CRM software solution': 'crm-software-development-services',
 };
 
 
@@ -269,11 +272,99 @@ const contentBySlug = {
 
         ]
     },
+
+    "crm-software-development-services": {
+    h2: "Our Process",
+    h4: "Our Process for CRM Software Development",
+    p: "Our CRM development process begins by understanding how your business operations take place and about your customer management. Hence, we develop CRM software solutions that help in customer data management and integrate with your existing tools. We also implement proven development methods and quality testing.",
+    processSections: [
+        {
+            id: 1,
+            title: "Analysis of Your System",
+            description: "At Bunnx, we analyze your customer relationship. The team also manages the analysed data to create a CRM system that works best for your business.",
+            "activities": [
+                "Sales process analysis",
+                "Planning of your business data",
+                "Mapping customer journey",
+                "Platform compatibility assessment"
+            ],
+            "deliverables": [
+                "Technology implementation plan",
+                "Detailed CRM requirement document",
+                "System flow diagrams"
+            ]
+        },
+        {
+            id: 2,
+            title: "Design & Development Strategy",
+            description: "Our CRM software development company not only creates a structured CRM architecture but also checks your user access levels, data organization, and automation in various operations. We even plan development phases to get to the final execution of our plan.",
+            "activities": [
+                "Making user role hierarchies",
+                "Workflow automation planning",
+                "Sprint and timeline organization",
+                "Customer data schema design"
+            ],
+            "deliverables": [
+                "CRM System architecture",
+                "Development schedule",
+                "Feature documentation"
+            ]
+        },
+        {
+            id: 3,
+            title: "CRM Development & Integration",
+            description: "Our team takes full responsibility for the core CRM functionalities, implements data handling, and connects with the latest business tools and services.",
+            "activities": [
+                "Core CRM Module Development",
+                "User Authentication Systems",
+                "Customer Data API Creation",
+                "Business Tool Integration"
+            ],
+            "deliverables": [
+                "CRM System that always works",
+                "Connected APIs",
+                "Integrated Business Tools"
+            ]
+        },
+        {
+            id: 4,
+            title: "Quality & Performance Testing",
+            description: "Our professionals are talented enough to assure quality work. So, you can rely on us and get data accuracy through testing procedures.",
+            "activities": [
+                "Feature and Integration Testing",
+                "Data Management Verification",
+                "Security Protocol Testing",
+                "Speed and Response Monitoring"
+            ],
+            "deliverables": [
+                "Quality Test Documentation",
+                "Verified System",
+                "Performance Reports"
+            ]
+        },
+        {
+            "id": 5,
+            "title": "Ongoing Support",
+            "description": "We deploy the CRM software solution and provide continuous assistance to maintain functionality of your apps or websites.",
+            "activities": [
+                "Implementation of all strategies",
+                "Track your setup working",
+                "Maintaining updated versions of the system"
+            ],
+            "deliverables": [
+                "Live CRM system with optimized performance.",
+                "Performance dashboards and monitoring configurations.",
+                "Training materials and user guides."
+            ]
+        }
+    ]
+}
+
 };
 
 
 export default function ProcessShowcase({ serviceDetailPageSlug }) {
-    const content = contentBySlug[serviceDetailPageSlug] || contentBySlug["front-end-development-services"]; // Fallback to a default slug
+    const content = contentBySlug[serviceDetailPageSlug] || contentBySlug["best-software-development-company-in-india"]; // Fallback to a default slug
     const { h2, h4, p, processSections } = content;
     const [activeSection, setActiveSection] = useState(1);
 

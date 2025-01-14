@@ -85,7 +85,7 @@ const SignUp = () => {
                             </label>
 
                             <input
-                                id={field}
+                                id={field} 
                                 type="text"
                                 required
                                 placeholder={`Enter your ${field}`}

@@ -25,7 +25,7 @@ const techStackData = {
             "columns": [
                 { "name": "Custom Software Development", "description": "Tailored solutions for excellence", "slug": "custom-software-development" },
                 { "name": "CMS Development", "description": "Faster CMS Development", "slug": "cms-development" },
-                { "name": "CRM Software Development", "description": "Transform ideas into powerful apps", "slug": "crm-software-development" },
+                { "name": "CRM Software Development", "description": "Transform ideas into powerful apps", "slug": "crm-software-development-services" },
                 { "name": "Software Consulting", "description": "Expert advice on tech", "slug": "software-consulting" },
 
                 { "name": "IT Consulting", "description": "Software Outsourcing", "slug": "it-consulting" },
@@ -99,7 +99,7 @@ const techStackData = {
 
 // Add keyword mapping
 const keywordToSlug = {
-    'CRM software development': 'crm-software-development',
+    'CRM software development': 'crm-software-development-services',
     'software development agency': 'best-software-development-company-in-india',
     'web and mobile applications': 'application-development',
     'Seamless staff augmentation': 'staff-augmentation',

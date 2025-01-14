@@ -585,8 +585,211 @@ const guideContent = {
       }
 
     ]
-  }
+  },
+  "crm-software-development-services": {
+    "title": "User Guide to CRM Software Development",
+    "description": "This guide is meant to help you understand CRM systems and how they can support business growth. We’ll cover key features, benefits, and ways on how we use CRM technologies for your business. If you’re just starting with CRM or improving your current system, this guide will help you organize customer management and use CRM.",
+    "sections": [
+      {
+        "id": "0",
+        "title": "What is CRM Software Development?",
+        "content": {
+          "heading": "Introduction and Importance of Back End Development",
+          "description": [
+            "Developers use platforms for CRM like Salesforce, Microsoft Dynamics, or custom-built services to make day-to-day operations more simple. CRM software is central to modern business, organizing customer data, tracking sales, and improving customer relationships. CRM systems include tools like lead tracking, contact management, and service integration."
+          ],
+          image: {
+            src: guideIntroDefault,
+            alt: 'Software development workspace showing code on a laptop screen',
+          },
+        }
+      },
+      {
+        "id": "1",
+        "title": "Types of CRM Software Development Services",
+        "content": {
+          "heading": "Types of CRM Software Development Services",
+          "description": [
+            "A CRM software development company provides services for your business to manage customers and improve sales based on its metrics. Here are the main services offered:"
+          ],
+          "list": [
+            {
+              "title": "Custom CRM Module Development",
+              "detail": "We create CRM modules for lead tracking and customer management. These modules are designed to fit your existing processes and integrate with the tools you already use and are emerging."
+            },
+            {
+              "title": "Real-Time CRM Systems",
+              "detail": "Our team organizes your customer data to make it easy to store, retrieve, and maintain."
+            },
+            {
+              "title": "Sales Pipeline Automation",
+              "detail": "At Bunnx, we have the best developers who automate leads tracking and manage customer interactions, including lead scoring, opportunity tracking, and sales forecasting."
+            },
+            {
+              "title": "Customer Service Integration",
+              "detail": "Our CRM systems include features like ticket management and service request tracking. It helps your support team provide better service across all customer touchpoints."
+            },
+            {
+              "title": "Cloud-Based CRM Implementation",
+              "detail": "We set up CRM systems on cloud platforms like AWS, Azure, and Google Cloud, making your system easy to access and expand as your business grows."
+            },
+            {
+              "title": "Multi-Channel Customer Engagement",
+              "detail": "We integrate different customer communication channels like email, social media, phone, and web into one system. So, now you can manage all interactions in one place."
+            },
+            {
+              "title": "Data Security and Privacy",
+              "detail": "Don't worry because you can trust us as we keep your customer's information safe with our team. We take steps to protect customer data through secure authentication, encryption, and compliance with privacy regulations."
+            },
+            {
+              "title": "Integration and Automation",
+              "detail": "Our professionals will make you feel more connected to your customers and less manual. We connect your CRM system with other business tools, automating data flow between sales, marketing, and customer service."
+            },
+            {
+              "title": "Analytics and Reporting",
+              "detail": "Our CRM experts create custom dashboards and reporting tools to help you track customer behavior, sales trends, and other important metrics."
+            }
+          ]
 
+        }
+      },
+      {
+        "id": "2",
+        "title": "Why Choose Custom CRM Software Development?",
+        "content": {
+          "heading": "Why Choose Custom CRM Software Development?",
+          "description": [
+            "Custom CRM systems are designed for your business, unlike off-the-shelf solutions that may require you to adjust your processes. Here’s why custom CRM makes sense:"
+          ],
+          "list": [
+            {
+              "title": "Get More ROI",
+              "detail": "A custom CRM is built around how you work. This will make it easier to manage customer interactions and get more sales every year."
+            },
+            {
+              "title": "Grow with Your Business",
+              "detail": "As your company expands, your custom CRM system can grow with you. If you need more features, more users, or more data capacity, the system can adjust as your needs change."
+            },
+            {
+              "title": "You Control Security and Data",
+              "detail": "With a custom system, you decide how to protect your customer data, including how to secure it, who has access, and how to stay compliant with laws."
+            },
+            {
+              "title": "Generate Better Experiences",
+              "detail": "A custom CRM has features that matter most to your business, eliminating the clutter of unnecessary tools. This not only simplifies the user interface but also reduces the learning curve for your team."
+            }
+          ]
+        }
+      },
+      {
+        "id": "3",
+        "title": "What are the Types of CRM Specializations?",
+        "content": {
+          "heading": "What are the Types of CRM Specializations?",
+          "description": [
+            "Here are some specific areas of expertise we provide through CRM development:"
+          ],
+          "list": [
+            {
+              "title": "API Development and Integration",
+              "detail": "We create and manage APIs that allow your CRM to connect with other important tools so that the systems work well together."
+            },
+            {
+              "title": "Database Development and Management",
+              "detail": "Our team organizes and optimizes both SQL and NoSQL databases to make sure your customer data is easy to manage and available when you need it."
+            },
+            {
+              "title": "Cloud CRM Solutions and DevOps",
+              "detail": "We deploy your CRM system to cloud platforms like AWS, Azure, or Google Cloud, and automate processes to update."
+            },
+            {
+              "title": "Security and Compliance",
+              "detail": "We take security measures into account and this includes encryption and authentication to protect customer data and make sure your CRM is compliant with privacy laws."
+            },
+            {
+              "title": "Microservices Architecture",
+              "detail": "We design CRM systems as smaller, independent parts that can be updated or scaled without affecting the whole system."
+            },
+            {
+              "title": "Performance Optimization",
+              "detail": "We focus on minimizing delays and improving the speed of data retrieval. It makes sure the system performs well during busy times."
+            },
+            {
+              "title": "Server Management and Administration",
+              "detail": "We manage the infrastructure required for CRM operations. It makes servers run properly and configure your systems."
+            },
+            {
+              "title": "Data Science and Analytics",
+              "detail": "We integrate data tools and analytics into CRM systems. Moreover, we are confident that our team will track customer behaviors, sales trends, and predict future actions that will make your revenue grow and increase ROI."
+            }
+          ]
+        }
+      },
+      {
+        "id": "4",
+        "title": "Choosing the Right CRM Development Partner",
+        "content": {
+          "heading": "Choosing the Right CRM Development Partner",
+          "description": [
+            "Choosing the right CRM software development company has always been important for all types of companies. Here’s what to look for:"
+          ],
+          "list": [
+            {
+              "title": "Technical Knowledge",
+              "detail": "Make sure the CRM partner has experience with the tools and technologies you need, like Node.js, Python, Java, or PHP, and that they know how to build the features you need."
+            },
+            {
+              "title": "API Design and System Architecture",
+              "detail": "They should be capable of building reliable, scalable APIs and designing systems that can handle your needs now and in the future."
+            },
+            {
+              "title": "Development Process",
+              "detail": "Check that their development process uses modern techniques like version control and automated testing to make sure the final product meets your standards."
+            },
+            {
+              "title": "Data Management and Security",
+              "detail": "They must have experience in handling sensitive customer data and be able to apply encryption, authentication, and other measures to keep that data safe."
+            },
+            {
+              "title": "Scaling and Handling Traffic",
+              "detail": "They should be skilled in scaling systems, including handling spikes in traffic and keeping your CRM fast and stable no matter how much data you’re managing."
+            }
+          ],
+
+        }
+      },
+      {
+        "id": "5",
+        "title": "Strategies to Reduce Time and Cost in Back End Development",
+        "content": {
+          "heading": "Strategies to Reduce Time and Cost in Back End Development",
+          "description": [
+            "We use several strategies to make CRM development more efficient, saving you time and money:"
+          ],
+          "list": [
+            {
+              "title": "Microservices Architecture",
+              "detail": "We stick to the microservices-based approach for the CRM system, where each core functionality—such as user authentication, lead management, reporting, and customer support—runs as an isolated service. Each service communicates via RESTful APIs or message brokers like Kafka or RabbitMQ."
+            },
+            {
+              "title": "API-First Approach",
+              "detail": "We start by designing strong APIs that help different parts of your CRM communicate with each other and with external tools."
+            },
+            {
+              "title": "Serverless Computing",
+              "detail": "Our company uses serverless platforms, like AWS Lambda and Google Cloud Functions, to execute CRM processes without managing physical servers."
+            },
+            {
+              "title": "Caching",
+              "detail": "The team always run behind reducing the load on databases, speed up response times, and lower operational costs. Our strategy for this is to reduce redundant database queries."
+            }
+          ],
+
+        }
+      }
+
+    ]
+  },
 
 };
 
@@ -623,193 +826,6 @@ export default function GuideTopics({ serviceDetailPageSlug }) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
   };
-
-
-
-  // const guideData = {
-  //   title: "User Guide to Front End Development",
-  //   description:
-  //     "Explore the essentials of creating, managing, and optimizing web interfaces. It covers methodologies, benefits, best practices, and insights for selecting partners, streamlining development, and understanding the front end's crucial role in modern applications.",
-  //   sections: [
-  //     {
-  //       id: '0',
-  //       title: 'What is Software Development Service?',
-  //       content: {
-  //         heading: 'Introduction and Importance of Front End Development',
-  //         image: {
-  //           src: 'https://www.valuecoders.com/wp-content/uploads/2024/03/wepik-export-20240321063655leo8.jpeg?height=400&width=800',
-  //           alt: 'Software development workspace showing code on a laptop screen',
-  //         },
-  //         description: [
-  //           "Front End development is critical to bridging the gap between backend logic and user interaction, translating complex functionalities into appealing interfaces. Our expertise uses modern technologies such as React.js, Angular, Vue.js, and Tailwind CSS to craft high-performance applications. By implementing robust UI frameworks, modular architectures, and scalable design systems, we build apps that align with industry standards.",
-  //         ],
-  //       },
-  //     },
-  //     {
-  //       id: '1',
-  //       title: 'Types Of Software Development Services',
-  //       content: {
-  //         heading: 'Types of Front End Development Services:',
-  //         description: [
-  //           "With front end development services, businesses can reduce time-to-market and achieve alignment between visual design and backend systems. Here are the main types:",
-  //         ],
-  //         list: [
-  //           {
-  //             title: 'Component Development',
-  //             detail:
-  //               'Building reusable UI components tailored to business needs and design systems. Includes everything from initial wireframing through development, testing, and maintenance.',
-  //           },
-  //           {
-  //             title: 'Progressive Web Apps (PWA)',
-  //             detail:
-  //               'Development focusing on web applications that offer native-like experiences across devices, with features like offline functionality and push notifications.',
-  //           },
-  //           {
-  //             title: 'Responsive Web Development',
-  //             detail:
-  //               'Creating fluid interfaces that adapt seamlessly across devices and screen sizes, ensuring consistent user experience.',
-  //           },
-  //           {
-  //             title: 'Enterprise UI Development',
-  //             detail:
-  //               'Specialized in creating large-scale application interfaces that handle complex business processes, such as admin dashboards, analytics platforms, and enterprise portals.',
-  //           },
-  //           {
-  //             title: 'JAMstack Development',
-  //             detail:
-  //               'Building performant web experiences using JavaScript, APIs, and Markup, delivered through modern CDNs without traditional server dependencies.',
-  //           },
-  //           {
-  //             title: 'Interface Maintenance and Support',
-  //             detail:
-  //               'Ongoing updates, performance optimization, and bug fixes to ensure interfaces remain fast, accessible, and secure over time.',
-  //           },
-  //         ],
-  //       },
-  //     },
-
-  //     {
-  //       id: '2',
-  //       title: 'Why Choose Custom Front End Development?',
-  //       content: {
-  //         heading: 'Why Choose Custom Front End Development?',
-  //         description: [
-  //           "Custom front-end development is a premier service offered by leading front end development companies because:",
-  //         ],
-  //         list: [
-  //           {
-  //             title: 'Tailored User Experience (UX)',
-  //             detail:
-  //               'Custom interfaces are specifically built to meet unique user needs, enhancing functionality and optimizing workflow efficiency.',
-  //           },
-  //           {
-  //             title: 'Scalability',
-  //             detail:
-  //               'Designed with a component-based architecture that not only supports growth but is also easily extendable as your business needs evolve.',
-  //           },
-  //           {
-  //             title: 'Competitive Advantage',
-  //             detail:
-  //               'By offering unique user interactions, custom solutions provide a distinct edge over competitors relying on standardized template solutions.',
-  //           },
-  //           {
-  //             title: 'Enhanced Performance and Security',
-  //             detail:
-  //               'Custom front-end development adopts the latest best practices in security, safeguarding your applications against XSS and other client-side vulnerabilities to ensure superior performance.',
-  //           },
-
-  //         ],
-  //       },
-  //     },
-
-
-  //     {
-  //       id: '3',
-  //       title: 'What are the Types of Front End Specializations?',
-  //       content: {
-  //         heading: 'What are the Types of Front End Specializations?',
-  //         description: [
-  //           "Here are key areas of front-end expertise offered in front end development services:",
-  //         ],
-  //         list: [
-  //           {
-  //             title: 'UI Development',
-  //             detail:
-  //               'Focuses on pixel-perfect implementation of designs using modern HTML5, CSS3, and JavaScript, ensuring accessible and beautiful interfaces.',
-  //           },
-  //           {
-  //             title: 'State Management',
-  //             detail:
-  //               'Handles complex application state and data flow using technologies like Redux, MobX, or Zustand for predictable user experiences.',
-  //           },
-  //           {
-  //             title: 'Front-end Architecture',
-  //             detail:
-  //               'Combines modular design patterns and performance optimization to build maintainable, scalable applications.',
-  //           },
-  //           {
-  //             title: 'Cross-Platform Development',
-  //             detail:
-  //               'Creates consistent experiences across devices using frameworks like React Native or Flutter',
-  //           },
-  //           {
-  //             title: 'Modern Web Development',
-  //             detail:
-  //               'Leverages cutting-edge tools like Next.js, Remix, or Astro for optimized web applications.',
-  //           },
-  //           {
-  //             title: 'Desktop Web Apps',
-  //             detail:
-  //               'Builds desktop-class web applications using Electron or Tauri with web technologies.',
-  //           },
-  //         ],
-  //       },
-  //     },
-
-  //     {
-  //       id: '4',
-  //       title: 'Choosing the Right Front End Partner',
-  //       content: {
-  //         heading: 'Choosing the Right Front End Partner',
-  //         description: [
-  //           "Selecting the right front end development company is crucial. Consider:",
-  //         ],
-  //         list: [
-  //           {
-  //             title: 'Technical Stack',
-  //             detail:
-  //               'Verify expertise in modern front end frameworks and tools.',
-  //           },
-  //           {
-  //             title: 'Component Library',
-  //             detail:
-  //               'Review their reusable component systems and design implementations.',
-  //           },
-  //           {
-  //             title: 'Communication',
-  //             detail:
-  //               ' Assess their ability to collaborate with designers and backend teams.',
-  //           },
-  //           {
-  //             title: 'Development Process',
-  //             detail:
-  //               'Ensure their workflow aligns with your continuous deployment needs.',
-  //           },
-  //           {
-  //             title: 'Performance Focus',
-  //             detail:
-  //               'Evaluate their approach to web vitals and optimization.',
-  //           },
-  //         ],
-  //       },
-  //     },
-
-
-
-
-
-  //   ],
-  // };
 
 
   const guideData = guideContent[serviceDetailPageSlug] || guideContent['front-end-development-services'];

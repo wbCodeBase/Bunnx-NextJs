@@ -8,9 +8,12 @@ import heroDefault from "/public/heroDefault.png"
 
 import { FaLocationArrow } from "react-icons/fa";
 
+// Keep value empty if no redirection is required 
 const keywordToSlug = {
   'top front end development company': 'front-end-development-services',
   'back end development company': 'back-end-development-services',
+  'software development company in India': 'best-software-development-company-in-india',
+  'CRM software solutions': '',
 };
 
 const HeroSection = ({ title, description, ctaText, imageUrl, ctaRedirectUrl }) => {

@@ -81,6 +81,11 @@ const OurServicesHeadPara = [
     servicePara: "We are a leading software development company in India, providing unique and innovative custom software development services that help your business to achieve exponential growth.",
     slug: "best-software-development-company-in-india"
   },
+  {
+    serviceTitle: "Best CRM Software Development Services",
+    servicePara: "Being one of the top CRM software development companies in India, we are experts in providing reliable CRM development services that improve processes and accelerate company expansion. We have made solutions that will help you modify engagement of your visitors.",
+    slug: "crm-software-development-services"
+  },
 ]
 
 
@@ -88,10 +93,15 @@ const keywordToSlug = {
   'top front end development service provider': 'front-end-development-services',
   'front end development services': 'front-end-development-services',
   'front end development company': 'front-end-development-services',
+  'software development company in India': 'best-software-development-company-in-india',
+  'CRM software development companies': 'crm-software-development-services',
+  'CRM development services': 'crm-software-development-services',
+  'CRM software development company': 'crm-software-development-services',
+  'CRM development services': 'crm-software-development-services',
 };
 
-const Services = ({ servicesData, serviceDetailPageSlug, extractNameFromSlug }) => {
 
+const Services = ({ servicesData, serviceDetailPageSlug, extractNameFromSlug }) => {
 
   const servicesHeadParaObj = OurServicesHeadPara?.find((serviceHeadPara) => serviceHeadPara?.slug === serviceDetailPageSlug) || {
     serviceTitle: `Best ${extractNameFromSlug} Services`,

@@ -36,38 +36,49 @@ const engagement = [
 const engageMentModelData = [
     {
         slug: "front-end-development-services",
-        h2: "Choose From Hiring Models",
+        h2: "Choose From Our Hiring Models",
         h4: "Hire The Best Front End Developer with the Best Engagement Models",
         p: "We analyze your project’s requirements to recommend the ideal collaboration model. Our three models are designed to ensure every brand acquires the services that match its needs and budget.",
         engagement: engagement,
     },
     {
         slug: "back-end-development-services",
-        h2: "Choose From Hiring Models",
+        h2: "Choose From Our Hiring Models",
         h4: "Collaborate with Top Back-End Developer Through Engagement Models",
         p: "Our engagement models are designed with one goal in mind: to deliver the right back-end development solution for your brand. We analyze your project’s scope, goals, and timeline to propose a customized collaboration plan.",
         engagement: engagement,
     },
     {
         slug: "best-software-development-company-in-india",
-        h2: "Choose From Hiring Models",
+        h2: "Choose From Our Hiring Models",
         h4: "Collaborate with Top Software Developer Through Engagement Models",
         p: "Our team will recommend the most appropriate engagement model for your project, taking into account its complexity, vision, and overall product concept.",
         engagement: engagement,
     },
+    {
+        slug: "crm-software-development-services",
+        h2: "Choose From Our Hiring Models",
+        h4: "Collaborate with Top CRM Software Developer Through Engagement Models",
+        p: "Our engagement models are designed with one goal in mind: to deliver the right back-end development solution for your brand. We analyze your project’s scope, goals, and timeline to propose a customized collaboration plan.",
+        engagement: engagement,
+    },
 ];
+
+const getCtaContent = (data, serviceDetailPageSlug) => {
+    // First try to find content matching the page slug
+    const contentBySlug = data.find(item => item?.slug === serviceDetailPageSlug);
+    
+    if (contentBySlug) {
+      return contentBySlug;
+    }
+  
+    // Fallback to default content if no match
+    return data.find(item => item?.slug === "best-software-development-company-in-india") || data[0];
+  };
 
 export default function EngagementModel({ serviceDetailPageSlug }) {
     // Find the data matching the slug
-    const content = engageMentModelData.find(
-        (item) => item.slug === serviceDetailPageSlug
-    ) || {
-        slug: "front-end-development-services",
-        h2: "Choose From Hiring Models",
-        h4: "Hire The Best Front End Developer with the Best Engagement Models",
-        p: "We analyze your project’s requirements to recommend the ideal collaboration model. Our three models are designed to ensure every brand acquires the services that match its needs and budget.",
-        engagement: engagement,
-    };
+    const content = getCtaContent(engageMentModelData, serviceDetailPageSlug);
 
     // Handle case where no content matches the slug
     if (!content) {

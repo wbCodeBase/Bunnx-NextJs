@@ -5,7 +5,7 @@ import { Landmark, Book, HeartPulse, Truck, ShoppingCart, Plane, Film, Factory, 
 
 // Add keyword mapping
 // const keywordToSlug = {
-//     'CRM software development': 'crm-software-development',
+//     'CRM software development': 'crm-software-development-services',
 //     'software development agency': 'best-software-development-company-in-india',
 //     'web and mobile applications': 'application-development',
 //     'Seamless staff augmentation': 'staff-augmentation',

@@ -8,11 +8,18 @@ import Agile from "/public/iconMethodology/scrum.png";
 import Waterfall from "/public/iconMethodology/waterfall-chart.png";
 import Rapid from "/public/iconMethodology/rapid.png";
 import DevOps from "/public/iconMethodology/devops.png";
+import Meeting from "/public/iconMethodology/meeting.png";
+import Startup from "/public/iconMethodology/startup.png";
+import Coding from "/public/iconMethodology/coding.png";
+import FeaturesValidation from "/public/iconMethodology/integration.png";
+import Backlog from "/public/iconMethodology/backlog.PNG";
+import RealTime from "/public/iconMethodology/realTime.PNG";
 
 import { createLinkedContent } from '#/utils/LinkBuilder';
 
 const keywordToSlug = {
     'front end development': 'front-end-development-services',
+    'software development services': 'best-software-development-company-in-india',
 };
 
 const contentBySlug = {
@@ -71,6 +78,72 @@ const contentBySlug = {
             },
 
         ]
+    },
+    "best-software-development-company-in-india": {
+        h2: "Methodology",
+        h4: "Get Softwares that Require Low Maintenance",
+        p: "Our software development services team works towards developing a more secure and advanced software solution by using technologies that are latest and fruitful.",
+        steps: [
+            {
+                title: "Daily Sync Meetings",
+                description: "The Scrum Master facilitates daily stand-ups to resolve blockers,  review progress, and other challenges faced by our team members.",
+                icon: Meeting,
+            },
+            {
+                title: "Project Initiation",
+                description: "We kick off with bi-weekly sprints and planned rollouts. Our experts adhere to defined project timelines for this.",
+                icon: Startup,
+            },
+            {
+                title: "Task Implementation & Development",
+                description: "Our team works in collaboration with your staff to execute tasks, address user stories, and move towards sprint objectives.",
+                icon: Coding,
+            },
+            {
+                title: "Feature Validation",
+                description: "Quality Assurance Engineers are used to validate and test new features for good functionality and integration of your system.",
+                icon: FeaturesValidation,
+            },
+            {
+                title: "Backlog Management",
+                description: "The software development services team takes full responsibility for updating the sprint backlog and making sure your projects are provided to you on time.",
+                icon: Backlog,
+            },
+            {
+                title: "Sprint Retrospectives",
+                description: "Post-sprint reviews are made to identify areas of improvement,  check workflows of the team, and improve0 future sprint planning.",
+                icon: Agile,
+            },
+
+        ]
+    },
+    "crm-software-development-services": {
+        h2: "Methodology",
+        h4: "Get Smarter Applications with Effective CRM Software Development Solutions",
+        p: "We build real-time back-end systems that allow for communication and data updates across multiple users and devices. Our expertise includes setting up WebSockets, Kafka, and RabbitMQ to process streaming data, handle high-throughput messaging, and push notifications.",
+        steps: [ 
+            {
+                title: "CRM Module Integration",
+                description: "At Bunnx, we develop lead management pipelines with Django ORM or Hibernate. We also design contact tracking modules with indexed database queries. Our API development helps in integration with ERP systems, marketing automation tools, and analytics platforms.",
+                icon: FeaturesValidation,
+            },
+            {
+                title: "Advanced Customer Data Management",
+                description: "We implement data management systems using SQL schemas for relational data in PostgreSQL or MySQL. The document-based NoSQL architectures with MongoDB or Couchbase are also used to manage unstructured customer interaction data.",
+                icon: Agile,
+            },
+            {
+                title: "Cloud-Native CRM Execution",
+                description: "Some of the technologies we, at Bunnx, use are AWS EC2, S3, and RDS for application hosting and data storage. Azure Cosmos DB for globally distributed databases supporting low-latency customer queries.",
+                icon: Coding,
+            },
+            {
+                title: "Real-Time CRM Systems",
+                description: "We build WebSocket-based notification for instant updates on lead or customer status. Event-driven architecture using Apache Kafka or RabbitMQ for high-throughput messaging and task queuing is also our go-to strategy.",
+                icon: RealTime,
+            }
+        ]
+        
     },
 }
 

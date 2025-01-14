@@ -256,7 +256,7 @@ const servicesData = {
       technologies: [
         { name: 'Custom Software Development', slug: 'custom-software-development' },
         { name: 'CMS Development', slug: 'cms-development' },
-        { name: 'CRM Software Development', slug: 'crm-software-development' },
+        { name: 'CRM Software Development', slug: 'crm-software-development-services' },
         { name: 'Software Consulting', slug: 'software-consulting' },
         { name: 'IT Consulting', slug: 'it-consulting' },
         { name: 'Agile Consulting', slug: 'agile-consulting' },

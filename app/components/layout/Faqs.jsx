@@ -16,11 +16,12 @@ const keywordToSlug = {
 "Front-End Development companies": "front-end-development-services",
 "Front-End Development company": "front-end-development-services",
 "back-end development agency": "back-end-development-services",
+"software development services": "best-software-development-company-in-india",
 };
 
 
 const faqData = {
-    "default": [
+    "it-outsourcing": [
 
         {
             id: "default-2",
@@ -212,54 +213,112 @@ const faqData = {
         },
     ],
 
-
     "best-software-development-company-in-india": [
         {
             "id": "default-1",
-            "question": "What technologies do you specialize in for software development?",
+            "question": "What software technologies does Bunnx use for development?",
             "answer": {
                 "type": "text",
-                "content": "We work with a wide range of software development technologies, including but not limited to Python, Java, C++, Node.js, JavaScript frameworks like React and Angular, and database technologies like MySQL, MongoDB, and PostgreSQL. We choose the best fit for each project based on its unique requirements."
+                "content": "We use a wide range of advanced software tools and technologies. And it depends on the type of software you are looking for."
             }
         },
         {
             "id": "default-2",
-            "question": "How do you ensure the security of the software you develop?",
+            "question": "What’s your pricing model?",
             "answer": {
                 "type": "text",
-                "content": "Security is a top priority in our development process. We implement advanced encryption techniques, perform regular vulnerability assessments, and use secure authentication methods to ensure that your software is safe from threats. Additionally, we stay up-to-date with the latest security standards and best practices."
+                "content": "We have an affordable pricing model for the projects we take on. Our estimates will go well with your budget and provide you with a great value."
             }
         },
         {
             "id": "default-3",
-            "question": "Why should I choose your software development services?",
+            "question": "Do you provide end-to-end software delivery?",
             "answer": {
                 "type": "text",
-                "content": "Choosing our software development services means working with a team that’s passionate about delivering high-quality, tailor-made solutions. We take the time to understand your business needs, ensuring the software we build is not only functional but also scalable and secure. With our expertise in multiple programming languages and frameworks, we guarantee a seamless experience for your users."
+                "content": "Absolutely! From design and development to implementation, integration, setup, and post-deployment support – we handle it all. Our team builds only industry standard projects. With our software development services, we save your time and resources."
             }
         },
         {
             "id": "default-4",
-            "question": "What is your approach to ensuring scalability and flexibility in your software solutions?",
+            "question": "Will you match my timeline?",
             "answer": {
                 "type": "text",
-                "content": "We believe that software should grow with your business. That's why we build solutions with scalability in mind. Our team leverages cloud platforms, microservices architecture, and modular design patterns to ensure that your software can handle increasing demands. Whether you're expecting more users, bigger data, or new features, we ensure your system can scale with ease."
+                "content": "Yes, we will! After discussing what your requirements are, we create a plan and agree on a timeline together. We always commit to delivering projects on time with minimal hurdles."
             }
         },
         {
             "id": "default-5",
-            "question": "Do you offer post-launch support for the software you develop?",
+            "question": "Do you provide quality software delivery?",
             "answer": {
                 "type": "text",
-                "content": "Absolutely! Our relationship with clients doesn’t end once the software is launched. We offer comprehensive post-launch support, including bug fixes, software updates, performance optimization, and new feature development. We are here to ensure that your software continues to perform at its best long after launch."
+                "content": "Quality is our top priority and we’re known for it. At every stage of development, we integrate thorough testing to catch and fix issues early. When you work with us, you can trust that quality will never be a concern."
+            }
+        },
+        {
+            "id": "default-6",
+            "question": "Do you offer after-sales software development services?",
+            "answer": {
+                "type": "text",
+                "content": "Yes, we provide support even after your project is delivered. We’re here to help with everything including updates, maintenance, or guidance."
+            }
+        }
+    ],
+    "crm-software-development-services": [
+        {
+            "id": "crm-1",
+            "question": "How do you make my CRM systems genuine and authentic?",
+            "answer": {
+                "type": "text",
+                "content": "We are using modular designs, cloud-native platforms like Docker and Kubernetes. These methods will help your company handle traffic of your visitors, transactions, and data without issues."
+            }
+        },
+        {
+            "id": "crm-2",
+            "question": "Do you have post-launch support for my CRM systems?",
+            "answer": {
+                "type": "text",
+                "content": "Yes, we provide full post-launch support for your CRM system. This makes us fix any issues, update the software you currently have, and add new features to keep it up to date."
+            }
+        },
+        {
+            "id": "crm-3",
+            "question": "What is your approach to managing CRM development projects?",
+            "answer": {
+                "type": "text",
+                "content": "We manage CRM development projects by following an iterative approach. With tools like Jira and Trello, we keep clients updated on progress and deliver updates in stages. It allows a big room for feedback throughout the process."
+            }
+        },
+        {
+            "id": "crm-4",
+            "question": "How do you handle security in CRM systems?",
+            "answer": {
+                "type": "text",
+                "content": "We have tools such as OAuth and JWT for authentication of systems, use SSL/TLS encryption for data in transit, and perform regular security audits to safeguard your CRM and customer information from threats."
+            }
+        },
+        {
+            "id": "crm-5",
+            "question": "What technologies are you using for CRM software development?",
+            "answer": {
+                "type": "text",
+                "content": "Our CRM software developers company have been using back-end technologies like Python, Java, Node.js, and PHP to make your CRM systems. For data storage and management, we have been relying on databases such as MySQL, PostgreSQL, and MongoDB."
+            }
+        },
+        {
+            "id": "crm-6",
+            "question": "Why should we choose your CRM development services?",
+            "answer": {
+                "type": "text",
+                "content": "Choosing us means working with a team that understands your business and creates CRM systems. We use proven technologies and techniques to build CRM systems and for long-term support."
             }
         }
     ]
+    
 
 };
 
 const Faqs = ({ serviceDetailPageSlug }) => {
-    const data = faqData[serviceDetailPageSlug] || faqData["default"];
+    const data = faqData[serviceDetailPageSlug] || faqData["best-software-development-company-in-india"];
 
     return (
         <section className="border-t container mx-auto max-w-screen-lg xl:max-w-screen-xl px-4 md:px-6 py-8">
@@ -331,173 +390,3 @@ const Faqs = ({ serviceDetailPageSlug }) => {
 };
 
 export default Faqs;
-
-// "use client"
-
-// import * as React from 'react';
-
-// import {
-//     Accordion,
-//     AccordionContent,
-//     AccordionItem,
-//     AccordionTrigger,
-// } from "@/components/ui/accordion"
-
-//   ];
-
-// const defaultFaqData = [
-
-//     {
-//         id: "default-2",
-//         question: "Why Choose Bunnx for Software Engineering, Consulting, and Outsourcing?",
-//         answer: {
-//             type: "list",
-//             para: "Bunnx offers a highly skilled team dedicated to delivering quality software solutions. Here’s why we stand out:",
-//             content: [
-//                 "Over 675 developers capable of handling complex projects.",
-//                 "Expertise across a wide range of technologies.",
-//                 "Known for delivering high-standard, reliable work.",
-//                 "Experience across diverse sectors, bringing valuable insights."
-//             ]
-//         }
-//     },
-//     {
-//         id: "default-1",
-//         question: "How much does it cost to outsource software development to India?",
-//         answer: {
-//             type: "text",
-//             content: "The cost of outsourcing software development to India varies based on the project scope, application complexity, and specific needs—like features, integrations, APIs, animations, localization, backend requirements, cross-platform support, and more. If you share a general idea of your project, we’ll gladly provide you with an estimated timeline and cost tailored to your goals."
-//         }
-//     },
-//     {
-//         id: "default-4",
-//         question: "I own a digital agency. Do you offer white-label software development services?",
-//         answer: {
-//             type: "text",
-//             content: "Absolutely! We offer full white-label software development services across B2B, B2C, and SaaS models. Our approach is transparent and collaborative, understanding that every business is unique. We work closely with our clients to meet specific needs and offer 24/7 support to keep your business running smoothly. Reach out to one of our experts to learn more about how our white-label solutions can support your agency."
-//         }
-//     },
-//     {
-//         id: "default-3",
-//         question: "Is outsourcing software development risky? How do you protect intellectual property and data?",
-//         answer: {
-//             type: "list",
-//             para: "Outsourcing software development can be secure and straightforward when you partner with a trusted company. At ValueCoders, we prioritize your intellectual property (IP) and data protection through various measures:",
-//             content: [
-//                 "Signing a Non-Disclosure Agreement (NDA)",
-//                 "Complying with industry-specific regulations like GDPR and HIPAA",
-//                 "Adhering to secure coding and robust data protection practices",
-//                 "Using firewalls, encryption, and VPNs to safeguard against online threats",
-//                 "Carefully verifying all employees before they join our team"
-//             ]
-//         }
-//     },
-//     {
-//         id: "default-6",
-//         question: "What kind of developers can I hire through your service?",
-//         answer: {
-//             type: "text",
-//             content: "We offer a wide range of developers, including PHP, React, Node.js, Python, Angular, .NET, and many more. Whether you need frontend, backend, or full-stack developers, we can connect you with experts who fit your project’s unique requirements."
-//         }
-//     },
-//     {
-//         id: "default-5",
-//         question: "Do you offer project management support along with developers?",
-//         answer: {
-//             type: "text",
-//             content: "Yes, we can provide project management support to help oversee your project, track progress, and ensure smooth communication between your team and our developers. This option is particularly helpful for clients who want end-to-end support."
-//         }
-//     },
-//     {
-//         id: "default-7",
-//         question: "How do you handle intellectual property and data security?",
-//         answer: {
-//             type: "text",
-//             content: "We take IP and data security very seriously. We sign Non-Disclosure Agreements (NDAs) and adhere to industry standards for secure coding, data protection, and compliance with GDPR and other relevant regulations. You retain full ownership of the work completed."
-//         }
-//     },
-//     {
-//         id: "default-8",
-//         question: "I want to outsource software development. What engagement options do you offer?",
-//         answer: {
-//             type: "paragraph",
-//             headPara: "At Bunnx, we offer a variety of engagement models to suit your specific project requirements. Whether you need a dedicated team of coders for an ongoing project or just a few extra hands for a one-off task, we have an engagement model that will fit your needs.",
-//             content: [
-//                 { title: "Dedicated Team", para: "Dedicated team model comprises a PM, SW Engineer, QA Engineer, and other roles defined for each specific project." },
-//                 { title: "Staff Augmentation", para: "We provide extra talent to boost your specific projects. This extended team works as a part of your local team, attending your daily meetings and reporting directly to your manager." },
-//                 { title: "Offshore Development Center", para: "We also provide a dedicated software development office with all required infrastructure and employees in India. Our ODC model helps you save budget and speed up development, recruiting, and optimizing accounting and HR." },
-//             ]
-//         }
-//     },
-
-// ];
-
-// const Faqs = () => {
-
-//     return (
-//         <>
-//             <section className="border-t container mx-auto max-w-screen-lg xl:max-w-screen-xl px-4 md:px-6 py-8">
-//                 <section className="flex flex-wrap justify-center md:gap-10 gap-5 py-2 my-6">
-//                     <div className='lg:w-[30%] w-full'>
-//                         <h2 className='font-semibold text-orange-500 text-xl'>FAQs</h2>
-//                         <h4 className='font-semibold text-3xl my-2'>Ask what you want</h4>
-//                         <p className='text-lg text-gray-800'>Whether you require a complex enterprise software solution or seamless software integration.</p>
-//                     </div>
-
-//                     <div className="lg:w-[62%] w-full py-2">
-//                         <Accordion type="single" collapsible className="w-full">
-//                             {(faqData || defaultFaqData).map((faq) => (
-//                                 <AccordionItem key={faq.id} value={faq.id}>
-//                                     <AccordionTrigger className='text-[17px] text-left text-gray-800 hover:no-underline'>
-//                                         {faq.question || "No question available"}
-//                                     </AccordionTrigger>
-//                                     <AccordionContent className='text-[16px] text-gray-700 my-6'>
-//                                         {/* Render answer based on its type */}
-//                                         {faq.answer?.type === "text" && faq.answer?.content && (
-//                                             <p className=''>{faq.answer.content}</p>
-//                                         )}
-
-//                                         {faq.answer?.type === "paragraph" && Array.isArray(faq.answer.content) && (
-//                                             <>
-//                                                 {faq.answer.headPara && (
-//                                                     <p className="mb-3">{faq.answer.headPara}</p>
-//                                                 )}
-
-//                                                 {faq.answer.content.map((item, index) => (
-//                                                     <div key={index} className="mb-4 flex">
-//                                                         {item.para && item.title && <p> <strong>{item.title}:</strong> {item.para}</p>}
-//                                                     </div>
-//                                                 ))}
-
-//                                             </>
-
-//                                         )}
-
-//                                         {faq.answer?.type === "list" && (
-//                                             <>
-//                                                 {/* Optional paragraph before the list */}
-//                                                 {faq.answer.para && (
-//                                                     <p className="mb-3">{faq.answer.para}</p>
-//                                                 )}
-//                                                 {/* List content */}
-//                                                 {Array.isArray(faq.answer.content) && (
-//                                                     <ul className='list-disc mt-6 list-inside space-y-2'>
-//                                                         {faq.answer.content.map((item, index) => (
-//                                                             <li key={index}>{item}</li>
-//                                                         ))}
-//                                                     </ul>
-//                                                 )}
-//                                             </>
-//                                         )}
-//                                     </AccordionContent>
-//                                 </AccordionItem>
-//                             ))}
-//                         </Accordion>
-//                     </div>
-//                 </section>
-//             </section>
-//         </>
-//     )
-// }
-
-// export default Faqs;

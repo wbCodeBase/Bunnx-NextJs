@@ -21,10 +21,17 @@ const PlaneCta = ({ serviceDetailPageSlug }) => {
         },
         {
             span: "Smart Solutions That Evolve with Your Business!",
-            head: "Need Custom Software to Bring Your Ideas to Life?",
-            para: "Overwhelmed by tech challenges or outdated tools? We create smart, scalable software that simplifies your processes, boosts efficiency, and helps your business thrive in today's fast-paced world.",
-            ctaText: "Let’s Innovate!",
+            head: "Let us handle complex codes for your website while you scale your business!",
+            para: "Are you fed up with unreliable servers and constant downtime? Say no more! Our software development services experts will design solid architectures to boost your database performance.",
+            ctaText: "Let's Connect!",
             slug: "best-software-development-company-in-india"
+        },
+        {
+            span: "Smart Solutions That Evolve with Your Business!",
+            head: "Scale Your Success with Adaptive CRM Development!",
+            para: "Transform your business operations with a CRM software solution that grows alongside your company. We build powerful systems that eliminate workflow bottlenecks and maximize team efficiency.",
+            ctaText: "Let's Connect!",
+            slug: "crm-software-development-services"
         },
         
     ]
@@ -32,7 +39,7 @@ const PlaneCta = ({ serviceDetailPageSlug }) => {
     const ctaMainObj = CtaMain?.find((ctaMain) => ctaMain?.slug === serviceDetailPageSlug) || {
         span: `Where Your Goals Become Our Mission`,
         head: `Elevate Your Business with Cutting-Edge Web Solutions!`,
-        para: `Are you ready to elevate your business? At [Your Company Name], we turn your vision into reality. From eye-catching designs to smooth deployments, our team is dedicated to crafting solutions that help you thrive.`,
+        para: `Are you ready to elevate your business? At Bunnx, we turn your vision into reality. From eye-catching designs to smooth deployments, our team is dedicated to crafting solutions that help you thrive.`,
         ctaText: "Let's Connect!",
     };
 
