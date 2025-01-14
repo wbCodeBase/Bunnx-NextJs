@@ -12,8 +12,8 @@ import Meeting from "/public/iconMethodology/meeting.png";
 import Startup from "/public/iconMethodology/startup.png";
 import Coding from "/public/iconMethodology/coding.png";
 import FeaturesValidation from "/public/iconMethodology/integration.png";
-import Backlog from "/public/iconMethodology/backlog.PNG";
-import RealTime from "/public/iconMethodology/realTime.PNG";
+import Backlog from "/public/iconMethodology/backlog.png";
+import RealTime from "/public/iconMethodology/realTime.png";
 
 import { createLinkedContent } from '#/utils/LinkBuilder';
 
