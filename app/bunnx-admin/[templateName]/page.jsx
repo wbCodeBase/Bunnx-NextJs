@@ -11,6 +11,7 @@ import { useGetTemplateQuery, useGetActiveSlugQuery } from '../../../store/api/m
 import { useParams, useRouter } from "next/navigation";
 
 import HeroSection from '@/components/adminpanel/HeroSection';
+import CreateCta from '@/components/adminpanel/CreateCta';
 import ServiceSection from '@/components/adminpanel/ServiceSection';
 
 
@@ -30,7 +31,6 @@ const Template = () => {
     }
 
     const serviceTemplate = data?.find((templateData) => templateData.templateName === templateName)
-    // const serviceTemplate = data?.find((templateData) => templateData.templateName === templateName)
 
     // Redirect to 404 if the template is not found
     if (!serviceTemplate) {
@@ -38,13 +38,14 @@ const Template = () => {
         return null; // Prevent rendering
     }
 
-    console.log(serviceTemplate);
-    
+    // console.log(serviceTemplate);
+     
 
     return (
         <AdminpanelLayout>
             <HeroSection {...serviceTemplate} activeSlugData={activeSlugData} />
             <ServiceSection {...serviceTemplate} activeSlugData={activeSlugData} />
+            <CreateCta {...serviceTemplate} activeSlugData={activeSlugData} />
         </AdminpanelLayout>
     );
 };

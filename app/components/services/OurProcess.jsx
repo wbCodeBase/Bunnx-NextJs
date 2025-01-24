@@ -274,94 +274,179 @@ const contentBySlug = {
     },
 
     "crm-software-development-services": {
-    h2: "Our Process",
-    h4: "Our Process for CRM Software Development",
-    p: "Our CRM development process begins by understanding how your business operations take place and about your customer management. Hence, we develop CRM software solutions that help in customer data management and integrate with your existing tools. We also implement proven development methods and quality testing.",
-    processSections: [
-        {
-            id: 1,
-            title: "Analysis of Your System",
-            description: "At Bunnx, we analyze your customer relationship. The team also manages the analysed data to create a CRM system that works best for your business.",
-            "activities": [
-                "Sales process analysis",
-                "Planning of your business data",
-                "Mapping customer journey",
-                "Platform compatibility assessment"
-            ],
-            "deliverables": [
-                "Technology implementation plan",
-                "Detailed CRM requirement document",
-                "System flow diagrams"
-            ]
-        },
-        {
-            id: 2,
-            title: "Design & Development Strategy",
-            description: "Our CRM software development company not only creates a structured CRM architecture but also checks your user access levels, data organization, and automation in various operations. We even plan development phases to get to the final execution of our plan.",
-            "activities": [
-                "Making user role hierarchies",
-                "Workflow automation planning",
-                "Sprint and timeline organization",
-                "Customer data schema design"
-            ],
-            "deliverables": [
-                "CRM System architecture",
-                "Development schedule",
-                "Feature documentation"
-            ]
-        },
-        {
-            id: 3,
-            title: "CRM Development & Integration",
-            description: "Our team takes full responsibility for the core CRM functionalities, implements data handling, and connects with the latest business tools and services.",
-            "activities": [
-                "Core CRM Module Development",
-                "User Authentication Systems",
-                "Customer Data API Creation",
-                "Business Tool Integration"
-            ],
-            "deliverables": [
-                "CRM System that always works",
-                "Connected APIs",
-                "Integrated Business Tools"
-            ]
-        },
-        {
-            id: 4,
-            title: "Quality & Performance Testing",
-            description: "Our professionals are talented enough to assure quality work. So, you can rely on us and get data accuracy through testing procedures.",
-            "activities": [
-                "Feature and Integration Testing",
-                "Data Management Verification",
-                "Security Protocol Testing",
-                "Speed and Response Monitoring"
-            ],
-            "deliverables": [
-                "Quality Test Documentation",
-                "Verified System",
-                "Performance Reports"
-            ]
-        },
-        {
-            "id": 5,
-            "title": "Ongoing Support",
-            "description": "We deploy the CRM software solution and provide continuous assistance to maintain functionality of your apps or websites.",
-            "activities": [
-                "Implementation of all strategies",
-                "Track your setup working",
-                "Maintaining updated versions of the system"
-            ],
-            "deliverables": [
-                "Live CRM system with optimized performance.",
-                "Performance dashboards and monitoring configurations.",
-                "Training materials and user guides."
-            ]
-        }
-    ]
-}
+        h2: "Our Process",
+        h4: "Our Process for CRM Software Development",
+        p: "Our CRM development process begins by understanding how your business operations take place and about your customer management. Hence, we develop CRM software solutions that help in customer data management and integrate with your existing tools. We also implement proven development methods and quality testing.",
+        processSections: [
+            {
+                id: 1,
+                title: "Analysis of Your System",
+                description: "At Bunnx, we analyze your customer relationship. The team also manages the analysed data to create a CRM system that works best for your business.",
+                "activities": [
+                    "Sales process analysis",
+                    "Planning of your business data",
+                    "Mapping customer journey",
+                    "Platform compatibility assessment"
+                ],
+                "deliverables": [
+                    "Technology implementation plan",
+                    "Detailed CRM requirement document",
+                    "System flow diagrams"
+                ]
+            },
+            {
+                id: 2,
+                title: "Design & Development Strategy",
+                description: "Our CRM software development company not only creates a structured CRM architecture but also checks your user access levels, data organization, and automation in various operations. We even plan development phases to get to the final execution of our plan.",
+                "activities": [
+                    "Making user role hierarchies",
+                    "Workflow automation planning",
+                    "Sprint and timeline organization",
+                    "Customer data schema design"
+                ],
+                "deliverables": [
+                    "CRM System architecture",
+                    "Development schedule",
+                    "Feature documentation"
+                ]
+            },
+            {
+                id: 3,
+                title: "CRM Development & Integration",
+                description: "Our team takes full responsibility for the core CRM functionalities, implements data handling, and connects with the latest business tools and services.",
+                "activities": [
+                    "Core CRM Module Development",
+                    "User Authentication Systems",
+                    "Customer Data API Creation",
+                    "Business Tool Integration"
+                ],
+                "deliverables": [
+                    "CRM System that always works",
+                    "Connected APIs",
+                    "Integrated Business Tools"
+                ]
+            },
+            {
+                id: 4,
+                title: "Quality & Performance Testing",
+                description: "Our professionals are talented enough to assure quality work. So, you can rely on us and get data accuracy through testing procedures.",
+                "activities": [
+                    "Feature and Integration Testing",
+                    "Data Management Verification",
+                    "Security Protocol Testing",
+                    "Speed and Response Monitoring"
+                ],
+                "deliverables": [
+                    "Quality Test Documentation",
+                    "Verified System",
+                    "Performance Reports"
+                ]
+            },
+            {
+                "id": 5,
+                "title": "Ongoing Support",
+                "description": "We deploy the CRM software solution and provide continuous assistance to maintain functionality of your apps or websites.",
+                "activities": [
+                    "Implementation of all strategies",
+                    "Track your setup working",
+                    "Maintaining updated versions of the system"
+                ],
+                "deliverables": [
+                    "Live CRM system with optimized performance.",
+                    "Performance dashboards and monitoring configurations.",
+                    "Training materials and user guides."
+                ]
+            }
+        ]
+    },
+    "custom-software-development-services": {
+        h2: "Our Process",
+        h4: "Our Process for Custom Software Development",
+        p: "Our custom software development company follows a structured process while following this to give you a functional product. Here’s our approach:",
+        processSections: [
+            {
+                id: 1,
+                title: "Know Your Mission of Software Development",
+                description: "What problem are we solving? Who will use it? What’s your long term goal with the software? These questions drive discussions to shape a technical path forward.",
+                "activities": [
+                    "Host collaborative sessions.",
+                    "Map out your  success metrics.",
+                    "Document workflows and sketch user scenarios.",
+                ],
+                "deliverables": [
+                    "A crystal-clear roadmap.",
+                    "A deep understanding of the project scope",
+                    "Defined milestones and outcomes."
+                ]
+            },
+            {
+                id: 2,
+                title: "Designing With Purpose",
+                description: "Good softwares is more than being helpful to your customers as they also make it enjoyable during usage. We understand this and bring a lot of ideas to life through thoughtful design.",
+                "activities": [
+                    "Making user role hierarchies",
+                    "Workflow automation planning",
+                    "Sprint and timeline organization",
+                    "Customer data schema design"
+                ],
+                "deliverables": [
+                    "CRM System architecture",
+                    "Development schedule",
+                    "Feature documentation"
+                ]
+            },
+            {
+                id: 3,
+                title: "CRM Development & Integration",
+                description: "Our team takes full responsibility for the core CRM functionalities, implements data handling, and connects with the latest business tools and services.",
+                "activities": [
+                    "Core CRM Module Development",
+                    "User Authentication Systems",
+                    "Customer Data API Creation",
+                    "Business Tool Integration"
+                ],
+                "deliverables": [
+                    "CRM System that always works",
+                    "Connected APIs",
+                    "Integrated Business Tools"
+                ]
+            },
+            {
+                id: 4,
+                title: "Quality & Performance Testing",
+                description: "Our professionals are talented enough to assure quality work. So, you can rely on us and get data accuracy through testing procedures.",
+                "activities": [
+                    "Feature and Integration Testing",
+                    "Data Management Verification",
+                    "Security Protocol Testing",
+                    "Speed and Response Monitoring"
+                ],
+                "deliverables": [
+                    "Quality Test Documentation",
+                    "Verified System",
+                    "Performance Reports"
+                ]
+            },
+            {
+                "id": 5,
+                "title": "Ongoing Support",
+                "description": "We deploy the CRM software solution and provide continuous assistance to maintain functionality of your apps or websites.",
+                "activities": [
+                    "Implementation of all strategies",
+                    "Track your setup working",
+                    "Maintaining updated versions of the system"
+                ],
+                "deliverables": [
+                    "Live CRM system with optimized performance.",
+                    "Performance dashboards and monitoring configurations.",
+                    "Training materials and user guides."
+                ]
+            }
+        ]
+    },
 
 };
-
+ 
 
 export default function ProcessShowcase({ serviceDetailPageSlug }) {
     const content = contentBySlug[serviceDetailPageSlug] || contentBySlug["best-software-development-company-in-india"]; // Fallback to a default slug

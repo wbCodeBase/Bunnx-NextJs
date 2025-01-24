@@ -9,8 +9,8 @@ const defaultServicesData = [
     title: "Custom Software Development",
     description:
       "We are committed to deliver custom software solutions that perfectly align with your complex technical needs. You Share your requirements, and we'll create a custom application that evolves with your business and user demands.",
-    slug: "custom-software-development",
-    fetchOnSlug: ["custom-software-development", "software-outsourcing", "qa-testing", "ecommerce"]
+    slug: "custom-software-development-services",
+    fetchOnSlug: ["custom-software-development-services", "software-outsourcing", "qa-testing", "ecommerce"]
   },
   {
     title: "Software Outsourcing Services",
@@ -24,7 +24,7 @@ const defaultServicesData = [
     description:
       "Our certified experts perform thorough testing to detect and resolve any errors or bugs that could affect your software’s performance. Guarantee the quality, reliability, and performance of your software applications with our QA Experts and testing services. ",
     slug: "qa-testing",
-    fetchOnSlug: ["custom-software-development", "mobile-app-development", "qa-testing", "cloud-services"]
+    fetchOnSlug: ["custom-software-development-services", "mobile-app-development", "qa-testing", "cloud-services"]
   },
   {
     title: "Ecommerce",
@@ -86,6 +86,11 @@ const OurServicesHeadPara = [
     servicePara: "Being one of the top CRM software development companies in India, we are experts in providing reliable CRM development services that improve processes and accelerate company expansion. We have made solutions that will help you modify engagement of your visitors.",
     slug: "crm-software-development-services"
   },
+  {
+    serviceTitle: "Best custom software Development Services",
+    servicePara: "Need a mobile app that feels effortless to use? A custom platform tailored to your business operations? We’re here to create software that not only works flawlessly but also makes your brand stand out. Let’s build software that doesn’t just meet expectations—it exceeds them. At Bunnx, it’s more than development; it’s about creating something exceptional. Ready to get started?",
+    slug: "custom-software-development-services"
+  },
 ]
 
 
@@ -121,7 +126,7 @@ const Services = ({ servicesData, serviceDetailPageSlug, extractNameFromSlug }) 
           </>
         }
 
-        <div className='relative flex justify-center flex-wrap gap-10 mt-6'>
+        <div className='relative flex justify-start flex-wrap gap-10 mt-6'>
 
           {(servicesData || defaultServicesData).map((service, i) => (
             <div key={i} className="border hover:border-orange-200 rounded-xl shadow-sm p-4 flex itemscenter flex-col w-96  relative">

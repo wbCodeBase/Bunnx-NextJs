@@ -254,7 +254,7 @@ const servicesData = {
       slug: 'best-software-development-company-in-india',
       description: 'Develop robust software',
       technologies: [
-        { name: 'Custom Software Development', slug: 'custom-software-development' },
+        { name: 'Custom Software Development', slug: 'custom-software-development-services' },
         { name: 'CMS Development', slug: 'cms-development' },
         { name: 'CRM Software Development', slug: 'crm-software-development-services' },
         { name: 'Software Consulting', slug: 'software-consulting' },

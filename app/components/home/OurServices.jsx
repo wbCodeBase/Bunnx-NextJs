@@ -23,7 +23,7 @@ const techStackData = {
             "title": "Software Development",
             "description": "Bunnx is your go-to software development agency in this evolving and dynamic era. Our software development services adhere to high-quality coding.",
             "columns": [
-                { "name": "Custom Software Development", "description": "Tailored solutions for excellence", "slug": "custom-software-development" },
+                { "name": "Custom Software Development", "description": "Tailored solutions for excellence", "slug": "custom-software-development-services" },
                 { "name": "CMS Development", "description": "Faster CMS Development", "slug": "cms-development" },
                 { "name": "CRM Software Development", "description": "Transform ideas into powerful apps", "slug": "crm-software-development-services" },
                 { "name": "Software Consulting", "description": "Expert advice on tech", "slug": "software-consulting" },
@@ -111,17 +111,12 @@ const OurServices = () => {
 
 
     const [activeCategory, setActiveCategory] = useState('Software Development')
-    // const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
 
 
     const handleCategoryHover = (category) => {
         setActiveCategory(category)
     }
-
-    // const toggleMobileMenu = () => {
-    //     setIsMobileMenuOpen(!isMobileMenuOpen)
-    // }
 
 
     return (

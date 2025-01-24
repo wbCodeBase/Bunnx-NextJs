@@ -111,6 +111,7 @@ export const myApi = createApi({
     getUserById: builder.query({
       query: (id) => `users?id=${id}`,
     }),
+    
     createUser: builder.mutation({
       query: (newUser) => ({
         url: 'users',

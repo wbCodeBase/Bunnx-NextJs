@@ -21,7 +21,7 @@ const ActiveSlugManage = () => {
     const { data: activeSlugData, isLoading, isError, error } = useGetActiveSlugQuery();
     const [createActiveSlug, result] = useCreateActiveSlugMutation();
     const [updateActiveSlug, { data, isSuccess: updateIsSuccess, isError: updateIsError, error: updateError, isLoading: updateIsLoading, reset }] = useUpdateActiveSlugMutation();
-    const [deleteActiveSlug] = useDeleteActiveSlugMutation();
+    const [deleteActiveSlug] = useDeleteActiveSlugMutation(); 
 
     const [formState, setFormState] = useState({
         label: "",

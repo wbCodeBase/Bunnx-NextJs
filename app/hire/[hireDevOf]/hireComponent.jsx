@@ -178,7 +178,7 @@ export default function HireDetailsComponentt() {
         title: "Custom Software Development",
         description:
           "We are committed to deliver custom software solutions that perfectly align with your complex technical needs. You Share your requirements, and we'll create a custom application that evolves with your business and user demands.",
-        ctaRedirectUrl: "custom-software-development",
+        ctaRedirectUrl: "custom-software-development-services",
       },
       {
         title: "Software Outsourcing Services",

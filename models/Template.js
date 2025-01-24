@@ -55,6 +55,44 @@ const ServiceSchema = new mongoose.Schema({
     timestamps: true
 });
 
+const CallToActionSchema = new mongoose.Schema({
+
+    tagline: {
+        type: String,
+        required: true
+    },
+    title: {
+        type: String,
+        required: true
+    },
+    description: {
+        type: String,
+        required: true
+    },
+    ctaHref: {
+        type: String,
+        required: true
+    },
+    ctaText: {
+        type: String,
+        required: true
+    },
+    ctaType: {
+        type: String,
+        required: true
+    },
+
+    imageUrl: { type: String },
+
+    fetchOnSlug: {
+        type: Schema.Types.ObjectId,
+        ref: 'ActiveSlug',
+    }
+
+}, {
+    timestamps: true
+});
+
 // Define the Template schema, including heroSection and servicesSection as arrays of sub-documents
 const TemplateSchema = new mongoose.Schema({
     heroSection: {
@@ -63,6 +101,10 @@ const TemplateSchema = new mongoose.Schema({
     },
     servicesSection: {
         type: [ServiceSchema],
+        required: false // servicesSection is also optional if needed
+    },
+    callToAction: {
+        type: [CallToActionSchema],
         required: false // servicesSection is also optional if needed
     },
     templateName: {

@@ -4,14 +4,14 @@ import Link from 'next/link';
 
 const PlaneCta = ({ serviceDetailPageSlug }) => {
 
-    const CtaMain = [
+    const CtaMain = [ 
         {
             span: "Solutions That Evolve as Your Business Grows!",
             head: "Frustrated with a lacklustre website design?",
             para: "Our expert Front-End Development team is here to help you captivate your visitors.",
             ctaText: "Let's Connect!",
             slug: "front-end-development-services"
-        },
+        }, 
         {
             span: "Growth-Oriented Strategies That Adapt to Your Expanding Needs!",
             head: "Let us handle complex codes for your website while you scale your business!",
@@ -32,6 +32,13 @@ const PlaneCta = ({ serviceDetailPageSlug }) => {
             para: "Transform your business operations with a CRM software solution that grows alongside your company. We build powerful systems that eliminate workflow bottlenecks and maximize team efficiency.",
             ctaText: "Let's Connect!",
             slug: "crm-software-development-services"
+        },
+        {
+            span: "",
+            head: "We create apps that do more than perform—they connect and solve.",
+            para: "It all starts with your unique idea. We dig deep to not just technically sound but also help you how real people will use it. Our custom software development delivers tools that truly integrate into your users’ lives. It’s not just about what the app does—it’s about how it makes them feel.",
+            ctaText: "Let's Connect!",
+            slug: "custom-software-development-services"
         },
         
     ]

@@ -66,7 +66,7 @@ export const createComponentContent = async (data) => {
   
   try {
 
-  if(data?.ctaRedirectUrl === ""){
+  if(data?.ctaRedirectUrl === ""){ // this is for service cards of service template because they have ctaRedirectUrl as null too
     data.ctaRedirectUrl = null;
   }
   
@@ -75,14 +75,23 @@ export const createComponentContent = async (data) => {
     if (!template) {
       throw new Error("Template not found");
     }
+    
 
+    if (data.componentName === 'callToAction') {
+      // Ensure heroSection is initialized as an array if not already
+      if (!Array.isArray(template.callToAction)) {
+        template.callToAction = [];
+      }
+      template.callToAction.push(data); // Add new data to the array
+    } else 
     if (data.componentName === 'heroSection') {
       // Ensure heroSection is initialized as an array if not already
       if (!Array.isArray(template.heroSection)) {
         template.heroSection = [];
       }
       template.heroSection.push(data); // Add new data to the array
-    } else if (data.componentName === 'servicesSection') {
+    } else 
+    if (data.componentName === 'servicesSection') {
       // Ensure servicesSection is initialized as an array if not already
       if (!Array.isArray(template.servicesSection)) {
         template.servicesSection = [];
@@ -310,7 +319,7 @@ export const deleteComponentContent = async ({ id, templateName, componentName }
 //     title: "Custom Software Development",
 //     description:
 //       "We are committed to deliver custom software solutions that perfectly align with your complex technical needs. You Share your requirements, and we'll create a custom application that evolves with your business and user demands.",
-//     ctaRedirectUrl: "custom-software-development",
+//     ctaRedirectUrl: "custom-software-development-services",
 //     fetchOnSlug: ["software-development", "software-outsourcing", "qa-testing", "ecommerce"]
 //   },
 //   {
