@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-export const createLinkedContent = (content, keywordToSlug) => {
+export const createLinkedContent = (content, keywordToSlug, serviceDetailPageSlug) => {
     const parts = [];
     let lastIndex = 0;
 
@@ -10,6 +10,17 @@ export const createLinkedContent = (content, keywordToSlug) => {
 
         while ((match = regex.exec(content)) !== null) {
             parts.push(content.slice(lastIndex, match.index));
+            if(slug === serviceDetailPageSlug || slug === '') {
+                parts.push(
+                    <span key={`${slug}-${match.index}`} className="font-semibold">
+                        {keyword}
+                    </span>
+                );
+                lastIndex = regex.lastIndex;
+                continue;
+
+            }
+
             parts.push(
                 <Link
                     key={`${slug}-${match.index}`}
@@ -19,6 +30,7 @@ export const createLinkedContent = (content, keywordToSlug) => {
                     {keyword}
                 </Link>
             );
+            
             lastIndex = regex.lastIndex;
         }
     });

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import Select from "react-select";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
@@ -219,6 +219,42 @@ const HeroSectionForm = ({ form, onSubmit, result, editMode, updateIsLoading, sl
 
 
 
+// const FormFieldInput = ({ form, name, label, placeholder, options = [] }) => (
+//     <FormField
+//         control={form.control}
+//         name={name}
+//         render={({ field }) => (
+//             <FormItem>
+//                 <FormLabel>{label}</FormLabel>
+//                 <FormControl>
+//                     {name === "description" ? (
+//                         <Textarea className="bg-gray-50" placeholder={placeholder} {...field} />
+//                     ) :
+
+//                         name === "fetchOnSlug" && options.length > 0 || name === "ctaRedirectUrl" && options.length > 0 ? (
+//                             <select className="bg-gray-50 border rounded-md ml-4 w-72 p-1.5 text-sm" {...field}>
+//                                 <option value="" disabled>
+//                                     {placeholder || "Select an option"}
+//                                 </option>
+//                                 {options.map((option) => (
+//                                     <option key={option.slug} value={name === "fetchOnSlug" ? option._id : option.slug}>
+//                                         {option.label} | {option.slug}
+//                                     </option>
+//                                 ))}
+//                             </select>
+//                         )
+
+//                             : (
+//                                 <Input className="bg-gray-50" placeholder={placeholder} {...field} />
+//                             )}
+//                 </FormControl>
+//                 <FormMessage />
+//             </FormItem>
+//         )}
+//     />
+// );
+
+
 const FormFieldInput = ({ form, name, label, placeholder, options = [] }) => (
     <FormField
         control={form.control}
@@ -229,33 +265,42 @@ const FormFieldInput = ({ form, name, label, placeholder, options = [] }) => (
                 <FormControl>
                     {name === "description" ? (
                         <Textarea className="bg-gray-50" placeholder={placeholder} {...field} />
-                    ) :
-
-                        name === "fetchOnSlug" && options.length > 0 || name === "ctaRedirectUrl" && options.length > 0 ? (
-                            <select className="bg-gray-50 border rounded-md ml-4 w-72 p-1.5 text-sm" {...field}>
-                                <option value="" disabled>
-                                    {placeholder || "Select an option"}
+                    ) : name === "fetchOnSlug" && options.length > 0 ? (
+                        <Select
+                            className="bg-gray-50 rounded-md"
+                            placeholder={placeholder || "Select an option"}
+                            options={options.map((option) => ({
+                                value: option._id,
+                                label: `${option.label} | ${option.slug}`,
+                            }))}
+                            value={options.find((option) => option._id === field.value) || null}
+                            onChange={(selectedOption) => field.onChange(selectedOption ? selectedOption.value : "")}
+                            isClearable
+                            isSearchable
+                        />
+                    ) : name === "ctaRedirectUrl" && options.length > 0 ? (
+                        <select
+                            className="bg-gray-50 border rounded-md ml-4 w-72 p-1.5 text-sm"
+                            {...field}
+                        >
+                            <option value="" disabled>
+                                {placeholder || "Select an option"}
+                            </option>
+                            {options.map((option) => (
+                                <option key={option.slug} value={option.slug}>
+                                    {option.label} | {option.slug}
                                 </option>
-                                {options.map((option) => (
-                                    <option key={option.slug} value={name === "fetchOnSlug" ? option._id : option.slug}>
-                                        {option.label} | {option.slug}
-                                    </option>
-                                ))}
-                            </select>
-                        )
-
-                            : (
-                                <Input className="bg-gray-50" placeholder={placeholder} {...field} />
-                            )}
+                            ))}
+                        </select>
+                    ) : (
+                        <Input className="bg-gray-50" placeholder={placeholder} {...field} />
+                    )}
                 </FormControl>
                 <FormMessage />
             </FormItem>
         )}
     />
 );
-
-
-
 
 
 const HeroSectionCards = ({ data, updateDeleteHandler }) => (

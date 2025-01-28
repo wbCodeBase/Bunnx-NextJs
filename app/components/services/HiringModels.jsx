@@ -8,6 +8,7 @@ import lightdotnetmodalicon from '/public/iconMethodology/light-dot-net-modal-ic
 import teamAug from '/public/iconMethodology/teamAug.webp';
 import ProjectBased from '/public/iconMethodology/ProjectBased.webp';
 
+
 const serviceData = {
   'front-end-development-services': {
     title: 'Choose From Our Front End Development Service Models ',
@@ -126,7 +127,7 @@ const serviceData = {
     ],
   },
   'best-software-development-company-in-india': {
-    title: 'Choose From Our Software Development Service Models',
+    title: 'Custom Engagement Models for Software Development Services',
     description:
       "We make engagement strategies as per your vision, size, and complexity. Our hiring options include the right team and services. And this is what makes us the best custom software development company.",
     models: [
@@ -143,7 +144,7 @@ const serviceData = {
           {
             type: 'list',
             content:
-              'Simple processes and fast delivery,Latest approaches for your future growth,Experts working with modern technologies,Engagement models for all types of clients,Affordable pricing options,Model made for startups or growing businesses',
+              'Simple processes and fast delivery.,Latest approaches for your future growth.,Experts working with modern technologies.,Engagement models for all types of clients.,Affordable pricing options.,Model made for startups or growing businesses.',
           },
         ],
       },
@@ -160,7 +161,7 @@ const serviceData = {
           {
             type: 'list',
             content:
-              'Access to skilled developers,Quick deployment and cost savings,Monthly billing with no recruitment hassle,Predictable and transparent costs',
+              'Access to skilled developers.,Quick deployment and cost savings.,Monthly billing with no recruitment hassle.,Predictable and transparent costs.',
           },
         ],
       },
@@ -182,13 +183,12 @@ const serviceData = {
           {
             type: 'list',
             content:
-              "Fixed-price model for any project,Hourly or resource-based billing,Clear documentation and regular updates,Suitable for small to medium-sized projects",
+              "Fixed-price model for any project.,Hourly or resource-based billing.,Clear documentation and regular updates.,Suitable for small to medium-sized projects.",
           },
         ],
       },
     ],
   },
-
 
   'crm-software-development-services': {
     title: 'Choose From Our CRM Software Development Service Models',
@@ -208,7 +208,7 @@ const serviceData = {
           {
             type: 'list',
             content:
-              'Integration with your existing team and workflows,Full-time, dedicated CRM software developers,Scalable team size,Complete ownership of project deadlines,Long-term collaboration,Specialized expertise in back-end technologies,Adapt and adjust team composition',
+              'Integration with your existing team and workflows Full-time., Dedicated CRM software developers & Scalable team size.,Complete ownership of project deadlines.,Long-term collaboration & Specialized expertise in back-end technologies. ,Adapt and adjust team composition',
           },
         ],
       },
@@ -225,7 +225,8 @@ const serviceData = {
           {
             type: 'list',
             content:
-              'Made to scale up development resources during peak project phases,Temporary or long-term support,Cost-effective solution for handling surges in work without hiring full-time staff,Reduces the overhead of recruitment,Facilitates knowledge transfer and skill development'},
+              'Made to scale up development resources during peak project phases,Temporary or long-term support,Cost-effective solution for handling surges in work without hiring full-time staff,Reduces the overhead of recruitment,Facilitates knowledge transfer and skill development'
+          },
         ],
       },
       {
@@ -248,6 +249,131 @@ const serviceData = {
     ],
   },
 
+  'custom-software-development-services': {
+    title: 'Choose From Our Custom Software Development Service Models',
+    description:
+      "We, at Bunnx, make your project after knowing what you really want from the software. Even though it requires our full team to be on it, we don't delay the process at any cost. But it would be best if you could choose from our service models to get what you really  need.",
+    models: [
+      {
+        title: 'Dedicated Software Development Team',
+        icon: lightdotnetmodalicon,
+        subtitle: '(also known as product interface teams)',
+        sections: [
+          {
+            type: 'para',
+            content:
+              "If you have a project that demands a lot of focus and deep collaboration, this model is for you. Why? That's because it gives you a talented group of developers who work only for your project.",
+          },
+          {
+            type: 'list',
+            content:
+              'Full-time experts who work with your team all the time.,A team size that matches your needs.,Get ownership of deadlines with a strong focus on quality.,Expert problem-solving from professionals specializing in custom software.,Perfect for businesses looking to build long-term services.',
+          },
+        ],
+      },
+      {
+        title: 'Team Augmentation',
+        icon: teamAug,
+        subtitle: '(also known as team extension or staff augmentation)',
+        sections: [
+          {
+            type: 'para',
+            content:
+              "If you need extra hands on deck without the overhead of permanent hires, our team augmentation model is for you. It fills the skill gap or scales your team.",
+          },
+          {
+            type: 'list',
+            content:
+              'Collaborate with experienced developers and add them to your existing team.,Made for short-term boosts or extended support.,Save time and money by not recruiting and training.,Bring in fresh perspectives and experienced individuals.'
+          },
+        ],
+      },
+      {
+        title: 'Project Based Model',
+        icon: ProjectBased,
+        subtitle: '(best suited for small-mid scale projects)',
+        sections: [
+          {
+            type: 'para',
+            content:
+              "Our project-based model, you'll get the following benefits:",
+          },
+          {
+            type: 'para',
+            content:
+              "Fixed Price Model: It's perfect for projects with well-defined goals and timelines. Get everything delivered on time and within budget with no surprises.",
+          },
+          {
+            type: 'para',
+            content:
+              "Time & Material Model: Best for projects where requirements may evolve. Pay as you go with hourly billing, giving you the flexibility to adapt as needed.",
+          }
+        ],
+      },
+    ],
+  },
+
+  'software-development-consultants': {
+    title: 'Choose From Our Software Consulting Service Models',
+    description:
+      "We understand that every project is different. If it’s a complex integration task, managing a large volume of data, or navigating a new set of challenges. But we can make it happen with our professionals. The team at Bunnx don’t just work for you—we work with you to build a plan that fits your goals, timeline, and resources.",
+    models: [
+      {
+        title: 'Dedicated Consultancy Team',
+        icon: lightdotnetmodalicon,
+        subtitle: '(also known as Industry Experts)',
+        sections: [
+          {
+            type: 'para',
+            content:
+              "For projects that need continuous collaboration and in-depth involvement, our team becomes an extension of your own. These product-focused teams dive deep into refining strategies, integrating with your internal processes. When you choose this model, you’re not just getting a group of developers—you’re getting a full-time, dedicated team that’s committed to the success of your project from start to finish. The team focuses on your project and maintains quality at every step.",
+          },
+          {
+            type: 'list',
+            content:
+              "A team that can adjust when any situation is thrown.,Full-time developers on your team and for your project.,Long-term focus and project ownership."},
+        ],
+      },
+      {
+        title: 'Back End Team Augmentation',
+        icon: teamAug,
+        subtitle: '(also known as team extension or staff augmentation)',
+        sections: [
+          {
+            type: 'para',
+            content:
+              "Sometimes, you just need an extra set of hands. Our back-end team augmentation service helps you add specialized expertise when you need it most. Whether it’s a short-term project or a longer-term phase, we’ll give you the support you need to push things forward. It’s a smart way to scale without the hassle of recruitment.",
+          },
+          {
+            type: 'list',
+            content:
+              'Add developers to your team for a specific task or peak phase,Quick support without the need for full-time hiring,Boost your team’s capacity and skills as needed,'
+          },
+        ],
+      },
+      {
+        title: 'Project Based Model',
+        icon: ProjectBased,
+        subtitle: '(best suited for small-mid scale projects)',
+        sections: [
+          {
+            type: 'para',
+            content:
+              "Our project-based model, you'll get the following benefits:",
+          },
+          {
+            type: 'para',
+            content: "Fixed Price Model: For smaller or mid-sized back-end projects, our fixed-price model is perfect if you have a clear scope and well-defined requirements. You know what you need, and we get it done, ensuring both sides are aligned on the outcome. For projects with more fluid requirements, the time & material model gives you the ability to adapt and adjust as things evolve.",
+          },
+          {
+            type: 'para',
+            content:
+              "Time & Material Model: With our software consultants, your customer relationships are about to get a whole lot better. We bring custom software consulting services, from optimizing your database to making sure everything works smoothly when it’s deployed.",
+          }
+        ],
+      },
+    ],
+  },
 
 };
 

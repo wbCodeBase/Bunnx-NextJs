@@ -12,7 +12,7 @@ import Meeting from "/public/iconMethodology/meeting.png";
 import Startup from "/public/iconMethodology/startup.png";
 import Coding from "/public/iconMethodology/coding.png";
 import FeaturesValidation from "/public/iconMethodology/integration.png";
-import Backlog from "/public/iconMethodology/backlog.png";
+import Backlog from "/public/iconMethodology/backlog.PNG";
 import RealTime from "/public/iconMethodology/realTime.png";
 
 import { createLinkedContent } from '#/utils/LinkBuilder';
@@ -20,7 +20,9 @@ import { createLinkedContent } from '#/utils/LinkBuilder';
 const keywordToSlug = {
     'front end development': 'front-end-development-services',
     'software development services': 'best-software-development-company-in-india',
+    'custom software development company': 'custom-software-development-services',
 };
+
 
 const contentBySlug = {
     "front-end-development-services": {
@@ -121,7 +123,7 @@ const contentBySlug = {
         h2: "Methodology",
         h4: "Get Smarter Applications with Effective CRM Software Development Solutions",
         p: "We build real-time back-end systems that allow for communication and data updates across multiple users and devices. Our expertise includes setting up WebSockets, Kafka, and RabbitMQ to process streaming data, handle high-throughput messaging, and push notifications.",
-        steps: [ 
+        steps: [
             {
                 title: "CRM Module Integration",
                 description: "At Bunnx, we develop lead management pipelines with Django ORM or Hibernate. We also design contact tracking modules with indexed database queries. Our API development helps in integration with ERP systems, marketing automation tools, and analytics platforms.",
@@ -143,11 +145,67 @@ const contentBySlug = {
                 icon: RealTime,
             }
         ]
-        
+
+    },
+
+    "custom-software-development-services": {
+        h2: "Methodology",
+        h4: "Get Smarter Custom Softwares with Effective Custom Software Solutions",
+        p: "Making custom software is all about solving the right problems in the smartest way. And our approach involves this as we deliver not just software, but solutions. Here's how custom software development company get it done:",
+        steps: [
+            {
+                title: "Discovery and Strategy",
+                description: "Every project starts with a question: what challenge are we solving? And hence, we’ll map out the big picture and focus on what matters most. Our team will hold detailed discussions to define your software’s purpose. We also have experts who share a shared understanding of the problem.",
+                icon: FeaturesValidation
+            },
+            {
+                title: "Sketching the Blueprint",
+                description: "Before writing a single line of code, we make a solid foundation by creating a detailed plan of how your software will work and look. We will create user flow diagrams to visualize how users navigate the system.",
+                icon: Agile
+            },
+            {
+                title: "Making It Real",
+                description: "This is where ideas take shape with our developers. They have been building clean and maintainable code for a long time. The experts at Bunnx code the front end for your interface and core features.",
+                icon: Coding
+            },
+            {
+                title: "Testing",
+                description: "No software leaves our hands rigorous testing is done. For this, we run functional tests to verify every feature works as intended. Our plan also involves conducting performance testing, simulating real-world scenarios, creating detailed feedback reports and resolving issues.",
+                icon: RealTime
+            }
+        ]
+
+    },
+
+    "software-development-consultants": {
+        h2: "Methodology",
+        h4: "Get Smarter Software with our Consultants",
+        p: "We have IT software consulting services that allow for communication and data updates across multiple users and devices. We process streaming data and handle high-throughput messaging.",
+        "steps": [
+            {
+                "title": "Getting to Know You",
+                "description": "We start by a little chit-chat with you to understand your business and the challenges you're facing. It's an open conversation to grasp what's working, what's not, and where you want to go. This helps us figure out how we can assist you.",
+                "icon": FeaturesValidation
+            },
+            {
+                "title": "Crafting a Plan",
+                "description": "We work on creating a plan that's just right for you. This involves outlining the steps we'll take together, the tools we'll use, and setting clear milestones. Think of it as drawing up a roadmap for our journey ahead.",
+                "icon": Agile
+            },
+            {
+                "title": "Recommending the Right Tools",
+                "description": "With a plan in place, we suggest technologies and methods that fit your specific situation. Our goal is to find solutions that align with your business processes and help you achieve your objectives without unnecessary complexity.",
+                "icon": Coding
+            },
+            {
+                "title": "Walking You Through the Process",
+                "description": "We don't just hand over a plan and leave you to it. The team will guide you through each step, working closely with your team to implement the solutions we've discussed. It's a collaborative effort to make sure everything fits into your operations.",
+                "icon": RealTime
+            }
+        ]
+
     },
 }
-
-
 
 
 
@@ -180,8 +238,8 @@ export default function Methodology({ serviceDetailPageSlug }) {
 
                 <h2 className='font-semibold text-orange-500 text-lg'>{h2}</h2>
                 <h4 className='font-semibold sm:text-4xl text-2xl my-2'>{h4}</h4>
-                <p className='text-md text-gray-800'>{createLinkedContent(p, keywordToSlug)}</p>
-               
+                <p className='text-md text-gray-800'>{createLinkedContent(p, keywordToSlug, serviceDetailPageSlug)}</p>
+
                 <div ref={containerRef} className="relative mt-8 my-4">
 
                     <div className="grid gap-5 grid-col-1 sm:grid-cols-2 md:grid-cols-4">
@@ -216,12 +274,11 @@ export default function Methodology({ serviceDetailPageSlug }) {
                                         <Image src={step.icon} className='h-12 w-auto' alt={step.title} />
 
 
-
                                     </motion.div>
 
                                     <h3 className="text-lg my-4 font-semibold">{step.title}</h3>
 
-                                    <p className="text-md text-muted-foreground">{step.description}</p>
+                                    <p className="text-md text-muted-foreground">{createLinkedContent(step.description, keywordToSlug, serviceDetailPageSlug)}</p>
                                 </motion.div>
                             </motion.div>
 

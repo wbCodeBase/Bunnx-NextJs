@@ -259,7 +259,7 @@ export const deleteComponentContent = async ({ id, templateName, componentName }
 //         "imageUrl": "soon",
 //         "ctaRedirectUrl": "#contact-us",
 //         "ctaText": "Get connected with us",
-//         "fetchOnSlug": "software-consulting"
+//         "fetchOnSlug": "software-development-consultants"
 //       }
 //     ],
 

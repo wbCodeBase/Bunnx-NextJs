@@ -12,6 +12,8 @@ const keywordToSlug = {
   'back end development services': 'back-end-development-services',
   'backend development services': 'back-end-development-services',
   'back end development company': 'back-end-development-services',
+  'software development companies in India': 'best-software-development-company-in-india',
+  'custom software development company': 'custom-software-development-services',
 };
 
 const guideContent = {
@@ -26,7 +28,7 @@ const guideContent = {
         content: {
           heading: 'Introduction and Importance of Front End Development',
           image: {
-            src: 'https://www.valuecoders.com/wp-content/uploads/2024/03/wepik-export-20240321063655leo8.jpeg?height=400&width=800',
+            src: '/techGrpImg.jpg',
             alt: 'Software development workspace showing code on a laptop screen',
           },
           description: [
@@ -195,6 +197,210 @@ const guideContent = {
 
 
     ],
+  },
+  "crm-software-development-services": {
+    "title": "User Guide to CRM Software Development",
+    "description": "This guide is meant to help you understand CRM systems and how they can support business growth. We’ll cover key features, benefits, and ways on how we use CRM technologies for your business. If you’re just starting with CRM or improving your current system, this guide will help you organize customer management and use CRM.",
+    "sections": [
+      {
+        "id": "0",
+        "title": "What is CRM Software Development?",
+        "content": {
+          "heading": "Introduction and Importance of Back End Development",
+          "description": [
+            "Developers use platforms for CRM like Salesforce, Microsoft Dynamics, or custom-built services to make day-to-day operations more simple. CRM software is central to modern business, organizing customer data, tracking sales, and improving customer relationships. CRM systems include tools like lead tracking, contact management, and service integration."
+          ],
+          image: {
+            src: guideIntroDefault,
+            alt: 'Software development workspace showing code on a laptop screen',
+          },
+        }
+      },
+      {
+        "id": "1",
+        "title": "Types of CRM Software Development Services",
+        "content": {
+          "heading": "Types of CRM Software Development Services",
+          "description": [
+            "A CRM software development company provides services for your business to manage customers and improve sales based on its metrics. Here are the main services offered:"
+          ],
+          "list": [
+            {
+              "title": "Custom CRM Module Development",
+              "detail": "We create CRM modules for lead tracking and customer management. These modules are designed to fit your existing processes and integrate with the tools you already use and are emerging."
+            },
+            {
+              "title": "Real-Time CRM Systems",
+              "detail": "Our team organizes your customer data to make it easy to store, retrieve, and maintain."
+            },
+            {
+              "title": "Sales Pipeline Automation",
+              "detail": "At Bunnx, we have the best developers who automate leads tracking and manage customer interactions, including lead scoring, opportunity tracking, and sales forecasting."
+            },
+            {
+              "title": "Customer Service Integration",
+              "detail": "Our CRM systems include features like ticket management and service request tracking. It helps your support team provide better service across all customer touchpoints."
+            },
+            {
+              "title": "Cloud-Based CRM Implementation",
+              "detail": "We set up CRM systems on cloud platforms like AWS, Azure, and Google Cloud, making your system easy to access and expand as your business grows."
+            },
+            {
+              "title": "Multi-Channel Customer Engagement",
+              "detail": "We integrate different customer communication channels like email, social media, phone, and web into one system. So, now you can manage all interactions in one place."
+            },
+            {
+              "title": "Data Security and Privacy",
+              "detail": "Don't worry because you can trust us as we keep your customer's information safe with our team. We take steps to protect customer data through secure authentication, encryption, and compliance with privacy regulations."
+            },
+            {
+              "title": "Integration and Automation",
+              "detail": "Our professionals will make you feel more connected to your customers and less manual. We connect your CRM system with other business tools, automating data flow between sales, marketing, and customer service."
+            },
+            {
+              "title": "Analytics and Reporting",
+              "detail": "Our CRM experts create custom dashboards and reporting tools to help you track customer behavior, sales trends, and other important metrics."
+            }
+          ]
+
+        }
+      },
+      {
+        "id": "2",
+        "title": "Why Choose Custom CRM Software Development?",
+        "content": {
+          "heading": "Why Choose Custom CRM Software Development?",
+          "description": [
+            "Custom CRM systems are designed for your business, unlike off-the-shelf solutions that may require you to adjust your processes. Here’s why custom CRM makes sense:"
+          ],
+          "list": [
+            {
+              "title": "Get More ROI",
+              "detail": "A custom CRM is built around how you work. This will make it easier to manage customer interactions and get more sales every year."
+            },
+            {
+              "title": "Grow with Your Business",
+              "detail": "As your company expands, your custom CRM system can grow with you. If you need more features, more users, or more data capacity, the system can adjust as your needs change."
+            },
+            {
+              "title": "You Control Security and Data",
+              "detail": "With a custom system, you decide how to protect your customer data, including how to secure it, who has access, and how to stay compliant with laws."
+            },
+            {
+              "title": "Generate Better Experiences",
+              "detail": "A custom CRM has features that matter most to your business, eliminating the clutter of unnecessary tools. This not only simplifies the user interface but also reduces the learning curve for your team."
+            }
+          ]
+        }
+      },
+      {
+        "id": "3",
+        "title": "What are the Types of CRM Specializations?",
+        "content": {
+          "heading": "What are the Types of CRM Specializations?",
+          "description": [
+            "Here are some specific areas of expertise we provide through CRM development:"
+          ],
+          "list": [
+            {
+              "title": "API Development and Integration",
+              "detail": "We create and manage APIs that allow your CRM to connect with other important tools so that the systems work well together."
+            },
+            {
+              "title": "Database Development and Management",
+              "detail": "Our team organizes and optimizes both SQL and NoSQL databases to make sure your customer data is easy to manage and available when you need it."
+            },
+            {
+              "title": "Cloud CRM Solutions and DevOps",
+              "detail": "We deploy your CRM system to cloud platforms like AWS, Azure, or Google Cloud, and automate processes to update."
+            },
+            {
+              "title": "Security and Compliance",
+              "detail": "We take security measures into account and this includes encryption and authentication to protect customer data and make sure your CRM is compliant with privacy laws."
+            },
+            {
+              "title": "Microservices Architecture",
+              "detail": "We design CRM systems as smaller, independent parts that can be updated or scaled without affecting the whole system."
+            },
+            {
+              "title": "Performance Optimization",
+              "detail": "We focus on minimizing delays and improving the speed of data retrieval. It makes sure the system performs well during busy times."
+            },
+            {
+              "title": "Server Management and Administration",
+              "detail": "We manage the infrastructure required for CRM operations. It makes servers run properly and configure your systems."
+            },
+            {
+              "title": "Data Science and Analytics",
+              "detail": "We integrate data tools and analytics into CRM systems. Moreover, we are confident that our team will track customer behaviors, sales trends, and predict future actions that will make your revenue grow and increase ROI."
+            }
+          ]
+        }
+      },
+      {
+        "id": "4",
+        "title": "Choosing the Right CRM Development Partner",
+        "content": {
+          "heading": "Choosing the Right CRM Development Partner",
+          "description": [
+            "Choosing the right CRM software development company has always been important for all types of companies. Here’s what to look for:"
+          ],
+          "list": [
+            {
+              "title": "Technical Knowledge",
+              "detail": "Make sure the CRM partner has experience with the tools and technologies you need, like Node.js, Python, Java, or PHP, and that they know how to build the features you need."
+            },
+            {
+              "title": "API Design and System Architecture",
+              "detail": "They should be capable of building reliable, scalable APIs and designing systems that can handle your needs now and in the future."
+            },
+            {
+              "title": "Development Process",
+              "detail": "Check that their development process uses modern techniques like version control and automated testing to make sure the final product meets your standards."
+            },
+            {
+              "title": "Data Management and Security",
+              "detail": "They must have experience in handling sensitive customer data and be able to apply encryption, authentication, and other measures to keep that data safe."
+            },
+            {
+              "title": "Scaling and Handling Traffic",
+              "detail": "They should be skilled in scaling systems, including handling spikes in traffic and keeping your CRM fast and stable no matter how much data you’re managing."
+            }
+          ],
+
+        }
+      },
+      {
+        "id": "5",
+        "title": "Strategies to Reduce Time and Cost in Back End Development",
+        "content": {
+          "heading": "Strategies to Reduce Time and Cost in Back End Development",
+          "description": [
+            "We use several strategies to make CRM development more efficient, saving you time and money:"
+          ],
+          "list": [
+            {
+              "title": "Microservices Architecture",
+              "detail": "We stick to the microservices-based approach for the CRM system, where each core functionality—such as user authentication, lead management, reporting, and customer support—runs as an isolated service. Each service communicates via RESTful APIs or message brokers like Kafka or RabbitMQ."
+            },
+            {
+              "title": "API-First Approach",
+              "detail": "We start by designing strong APIs that help different parts of your CRM communicate with each other and with external tools."
+            },
+            {
+              "title": "Serverless Computing",
+              "detail": "Our company uses serverless platforms, like AWS Lambda and Google Cloud Functions, to execute CRM processes without managing physical servers."
+            },
+            {
+              "title": "Caching",
+              "detail": "The team always run behind reducing the load on databases, speed up response times, and lower operational costs. Our strategy for this is to reduce redundant database queries."
+            }
+          ],
+
+        }
+      }
+
+    ]
   },
   'back-end-development-services': {
     title: "User Guide to Back End Development",
@@ -586,17 +792,18 @@ const guideContent = {
 
     ]
   },
-  "crm-software-development-services": {
-    "title": "User Guide to CRM Software Development",
-    "description": "This guide is meant to help you understand CRM systems and how they can support business growth. We’ll cover key features, benefits, and ways on how we use CRM technologies for your business. If you’re just starting with CRM or improving your current system, this guide will help you organize customer management and use CRM.",
+
+  "custom-software-development-services": {
+    "title": "User Guide to custom software Development",
+    "description": "Learn about custom software development and it can be achieved with the right technologies and programming languages. Our custom software development services are armed with the right tools so that we can help you build something remarkable.",
     "sections": [
       {
         "id": "0",
-        "title": "What is CRM Software Development?",
+        "title": "What is Software Development Service?",
         "content": {
-          "heading": "Introduction and Importance of Back End Development",
+          "heading": "Introduction and Importance of custom software Development",
           "description": [
-            "Developers use platforms for CRM like Salesforce, Microsoft Dynamics, or custom-built services to make day-to-day operations more simple. CRM software is central to modern business, organizing customer data, tracking sales, and improving customer relationships. CRM systems include tools like lead tracking, contact management, and service integration."
+            "Custom software development requires creation of both the visible, interactive parts of an application (the front end) and the behind-the-scenes systems (the back end). It could be a web app, a mobile app, or a software solution. It isn’t just about building software—it’s about solving problems and automating tasks. Custom software development is a process that covers an interface, back-end systems, and technology use. With advanced tools, programming languages, and innovative approaches, custom software solutions grow your company. It helps in operating the company and delivering experiences that your customers can never forget."
           ],
           image: {
             src: guideIntroDefault,
@@ -606,190 +813,370 @@ const guideContent = {
       },
       {
         "id": "1",
-        "title": "Types of CRM Software Development Services",
+        "title": "Types of Custom Software Development Services",
         "content": {
-          "heading": "Types of CRM Software Development Services",
+          "heading": "Types of Custom Software Development Services",
           "description": [
-            "A CRM software development company provides services for your business to manage customers and improve sales based on its metrics. Here are the main services offered:"
+            "The custom software development services are made to serve at the best of its abilities. Here's what it includes:"
           ],
           "list": [
             {
-              "title": "Custom CRM Module Development",
-              "detail": "We create CRM modules for lead tracking and customer management. These modules are designed to fit your existing processes and integrate with the tools you already use and are emerging."
+              "title": "Custom Software Development",
+              "detail": "Solutions built from scratch to make a custom scheduling app to streamline your customer's activities. Similarly, this can be used in a number of softwares to track shipments to minimize delays and directly address operational inefficiencies. It gives control over features, architecture, and workflows."
             },
             {
-              "title": "Real-Time CRM Systems",
-              "detail": "Our team organizes your customer data to make it easy to store, retrieve, and maintain."
+              "title": "Mobile App Development",
+              "detail": "From building softwares for cross-platform to native development, all of it is done using Swift, Kotlin, and Flutter. Cross-platform strategies like Flutter allow a single codebase to work on multiple platforms, reducing development time and cost. A retail business might find it cost-effective, while a gaming company may opt for the full potential of hardware capabilities."
             },
             {
-              "title": "Sales Pipeline Automation",
-              "detail": "At Bunnx, we have the best developers who automate leads tracking and manage customer interactions, including lead scoring, opportunity tracking, and sales forecasting."
+              "title": "Progressive Web softwares (PWAs)",
+              "detail": "Hybrid solutions that combine the best of web and mobile. For example, Pinterest switched to a PWA and saw a significant boost in engagement, including an increase in interaction and ad revenue. Offline capabilities, push notifications, and performance using tools like Service Workers and Web App Manifests are part of our services."
             },
             {
-              "title": "Customer Service Integration",
-              "detail": "Our CRM systems include features like ticket management and service request tracking. It helps your support team provide better service across all customer touchpoints."
+              "title": "Web Development",
+              "detail": "Responsive web softwares built with React, Angular, or Vue.js for the front end and back ends powered by Django or Node.js. With API integrations, it helps in the dynamic functionality of your software."
             },
             {
-              "title": "Cloud-Based CRM Implementation",
-              "detail": "We set up CRM systems on cloud platforms like AWS, Azure, and Google Cloud, making your system easy to access and expand as your business grows."
+              "title": "E-commerce Solutions",
+              "detail": "Platforms designed for online sales, payment gateways, inventory management, and real-time tracking. These solutions provide control of high transaction volumes and user experiences."
             },
             {
-              "title": "Multi-Channel Customer Engagement",
-              "detail": "We integrate different customer communication channels like email, social media, phone, and web into one system. So, now you can manage all interactions in one place."
+              "title": "Integration Services",
+              "detail": "Connecting various systems for data flow, integration of CRM with an e-commerce platform, and setting up customer data and purchase history. This creates personalized marketing and improves inventory forecasting. Integrations include third-party APIs, cloud services, and legacy systems."
             },
             {
-              "title": "Data Security and Privacy",
-              "detail": "Don't worry because you can trust us as we keep your customer's information safe with our team. We take steps to protect customer data through secure authentication, encryption, and compliance with privacy regulations."
-            },
-            {
-              "title": "Integration and Automation",
-              "detail": "Our professionals will make you feel more connected to your customers and less manual. We connect your CRM system with other business tools, automating data flow between sales, marketing, and customer service."
-            },
-            {
-              "title": "Analytics and Reporting",
-              "detail": "Our CRM experts create custom dashboards and reporting tools to help you track customer behavior, sales trends, and other important metrics."
+              "title": "Maintenance and Support",
+              "detail": "Get updates, debugging, and improvements in your software with custom software services available 24/7."
             }
           ]
-
         }
       },
       {
         "id": "2",
-        "title": "Why Choose Custom CRM Software Development?",
+        "title": "Why Choose Custom Software Development?",
         "content": {
-          "heading": "Why Choose Custom CRM Software Development?",
+          "heading": "Why Choose Custom Software Development?",
           "description": [
-            "Custom CRM systems are designed for your business, unlike off-the-shelf solutions that may require you to adjust your processes. Here’s why custom CRM makes sense:"
+            "While the initial investment may be higher, custom development will remove future costs associated with licensing or unnecessary features. This can be a smart and long-term choice. Check these solutions you should choose for custom software development:"
           ],
           "list": [
             {
-              "title": "Get More ROI",
-              "detail": "A custom CRM is built around how you work. This will make it easier to manage customer interactions and get more sales every year."
+              "title": "Custom Architecture",
+              "detail": "Workflows for integration with your existing ecosystem, including ERP and CRM platforms."
             },
             {
-              "title": "Grow with Your Business",
-              "detail": "As your company expands, your custom CRM system can grow with you. If you need more features, more users, or more data capacity, the system can adjust as your needs change."
+              "title": "API Integration",
+              "detail": "Develop communication across systems with RESTful APIs, GraphQL endpoints, or legacy SOAP services."
             },
             {
-              "title": "You Control Security and Data",
-              "detail": "With a custom system, you decide how to protect your customer data, including how to secure it, who has access, and how to stay compliant with laws."
-            },
-            {
-              "title": "Generate Better Experiences",
-              "detail": "A custom CRM has features that matter most to your business, eliminating the clutter of unnecessary tools. This not only simplifies the user interface but also reduces the learning curve for your team."
+              "title": "Performance Optimization",
+              "detail": "Tools like Redis and RabbitMQ for faster processing, reduced latency, and resource use."
             }
           ]
         }
       },
       {
         "id": "3",
-        "title": "What are the Types of CRM Specializations?",
+        "title": "Specializations in Custom Software Development",
         "content": {
-          "heading": "What are the Types of CRM Specializations?",
+          "heading": "Specializations in Custom Software Development",
           "description": [
-            "Here are some specific areas of expertise we provide through CRM development:"
+            "Specializations in Custom Software Development:"
           ],
           "list": [
             {
-              "title": "API Development and Integration",
-              "detail": "We create and manage APIs that allow your CRM to connect with other important tools so that the systems work well together."
+              "title": "Front-End Development",
+              "detail": "Interact with your customers directly through codes like HTML5, CSS3, JavaScript, React, or Angular."
             },
             {
-              "title": "Database Development and Management",
-              "detail": "Our team organizes and optimizes both SQL and NoSQL databases to make sure your customer data is easy to manage and available when you need it."
+              "title": "Back-End Development",
+              "detail": "Manage visuals with databases and APIs with Python, Java, PHP, Django, or Node.js."
             },
             {
-              "title": "Cloud CRM Solutions and DevOps",
-              "detail": "We deploy your CRM system to cloud platforms like AWS, Azure, or Google Cloud, and automate processes to update."
+              "title": "Data Security",
+              "detail": "Implementing encryption, user authentication, and compliance with GDPR or HIPAA standards."
             },
             {
-              "title": "Security and Compliance",
-              "detail": "We take security measures into account and this includes encryption and authentication to protect customer data and make sure your CRM is compliant with privacy laws."
+              "title": "Mobile Development",
+              "detail": "Native and hybrid apps for iOS and Android for superior performance."
             },
             {
-              "title": "Microservices Architecture",
-              "detail": "We design CRM systems as smaller, independent parts that can be updated or scaled without affecting the whole system."
+              "title": "Cloud Integration",
+              "detail": "Access computing resources over the internet with AWS, Azure, or Google Cloud."
             },
             {
-              "title": "Performance Optimization",
-              "detail": "We focus on minimizing delays and improving the speed of data retrieval. It makes sure the system performs well during busy times."
+              "title": "Features",
+              "detail": "Get live chats, notifications, and data analytics by WebSockets or Apache Kafka."
             },
             {
-              "title": "Server Management and Administration",
-              "detail": "We manage the infrastructure required for CRM operations. It makes servers run properly and configure your systems."
+              "title": "DevOps Integration",
+              "detail": "Automating test, deployment, and monitor to development cycles."
+            }
+          ]
+
+        }
+      },
+      {
+        "id": "4",
+        "title": "How to Choose the Right Development Partner",
+        "content": {
+          "heading": "How to Choose the Right Development Partner",
+          "description": [
+            "Here’s what to look for when selecting a custom software development company:"
+          ],
+          "list": [
+            {
+              "title": "Technical Proficiency",
+              "detail": "Get expertise in front-end frameworks (React.js, Vue.js), back-end platforms (Django, Spring Boot), and mobile technologies (Swift, Kotlin, Flutter)."
             },
             {
-              "title": "Data Science and Analytics",
-              "detail": "We integrate data tools and analytics into CRM systems. Moreover, we are confident that our team will track customer behaviors, sales trends, and predict future actions that will make your revenue grow and increase ROI."
+              "title": "Version Control Expertise",
+              "detail": "A strong grasp of Git, GitHub Actions, or Bitbucket Pipelines for collaboration."
+            },
+            {
+              "title": "Build Architectures",
+              "detail": "Infrastructure building with microservices, serverless computing, and containerization platforms like Docker and Kubernetes."
+            },
+            {
+              "title": "SDLC Implementation",
+              "detail": "Experience with Agile and DevOps methodologies to reduce release cycles and ensure timely delivery."
+            },
+            {
+              "title": "Security Practices",
+              "detail": "Adherence to SSDLC principles, data encryption, and testing methodologies."
             }
           ]
         }
       },
       {
-        "id": "4",
-        "title": "Choosing the Right CRM Development Partner",
-        "content": {
-          "heading": "Choosing the Right CRM Development Partner",
-          "description": [
-            "Choosing the right CRM software development company has always been important for all types of companies. Here’s what to look for:"
-          ],
-          "list": [
-            {
-              "title": "Technical Knowledge",
-              "detail": "Make sure the CRM partner has experience with the tools and technologies you need, like Node.js, Python, Java, or PHP, and that they know how to build the features you need."
-            },
-            {
-              "title": "API Design and System Architecture",
-              "detail": "They should be capable of building reliable, scalable APIs and designing systems that can handle your needs now and in the future."
-            },
-            {
-              "title": "Development Process",
-              "detail": "Check that their development process uses modern techniques like version control and automated testing to make sure the final product meets your standards."
-            },
-            {
-              "title": "Data Management and Security",
-              "detail": "They must have experience in handling sensitive customer data and be able to apply encryption, authentication, and other measures to keep that data safe."
-            },
-            {
-              "title": "Scaling and Handling Traffic",
-              "detail": "They should be skilled in scaling systems, including handling spikes in traffic and keeping your CRM fast and stable no matter how much data you’re managing."
-            }
-          ],
-
-        }
-      },
-      {
         "id": "5",
-        "title": "Strategies to Reduce Time and Cost in Back End Development",
+        "title": "Strategies to Save Time and Costs",
         "content": {
-          "heading": "Strategies to Reduce Time and Cost in Back End Development",
+          "heading": "Strategies to Save Time and Costs",
           "description": [
-            "We use several strategies to make CRM development more efficient, saving you time and money:"
+            "Custom software doesn’t have to break the bank. Here’s how we make the process efficient:", "For instance, during a recent project for an e-commerce client, we applied these strategies to deliver a solution within tight deadlines. By breaking the platform into independent modules—like payment integration, inventory management, and user interface—different teams worked on each component simultaneously.", "Our custom software development company uses open-source libraries for the payment gateway, reducing development time by 30%. Automated testing tools like Selenium helped us identify and fix bugs quickly. Starting with an MVP allowed the client to launch the core features first, gather user feedback, and refine the platform in subsequent updates"
           ],
           "list": [
             {
-              "title": "Microservices Architecture",
-              "detail": "We stick to the microservices-based approach for the CRM system, where each core functionality—such as user authentication, lead management, reporting, and customer support—runs as an isolated service. Each service communicates via RESTful APIs or message brokers like Kafka or RabbitMQ."
+              "title": "Modular Development",
+              "detail": "Breaking the software into smaller, independent sections for parallel development."
             },
             {
-              "title": "API-First Approach",
-              "detail": "We start by designing strong APIs that help different parts of your CRM communicate with each other and with external tools."
+              "title": "Use Open-Source Tools",
+              "detail": "Using trusted libraries and frameworks to save time."
             },
             {
-              "title": "Serverless Computing",
-              "detail": "Our company uses serverless platforms, like AWS Lambda and Google Cloud Functions, to execute CRM processes without managing physical servers."
+              "title": "Reusable Code",
+              "detail": "Writing code that can be repurposed to reduce repetitive work."
             },
             {
-              "title": "Caching",
-              "detail": "The team always run behind reducing the load on databases, speed up response times, and lower operational costs. Our strategy for this is to reduce redundant database queries."
+              "title": "Automated Testing",
+              "detail": "Deploying tools like Selenium or Jenkins to streamline updates and bug fixes."
+            },
+            {
+              "title": "MVP Approach",
+              "detail": "Launching a Minimum Viable Product (MVP) with core features to gather user feedback and iterate quickly."
             }
-          ],
-
+          ]
         }
       }
 
     ]
   },
+
+  "software-development-consultants": {
+    "title": "User Guide to Software Consultancy",
+    "description": "This guide is designed to help you understand how working with a software consultancy can transform your business. Whether you’re new to the custom software or looking to improve your existing systems, this guide breaks down the essentials to help you make informed decisions and optimize your operations.",
+    "sections": [
+
+      {
+        "id": "0",
+        "title": "What is Software Development Consultancy?",
+        "content": {
+          "heading": "Introduction and Importance of Software Consultancy",
+          "description": [
+            "Our job is to help you find the right solutions, design systems that work for you. We’re here to make sure your technology supports your goals, not holds you back. You might have stuck with outdated systems, or you’re just not getting the results you need from your current tech. That’s where a custom software consulting services comes in."
+          ],
+          image: {
+            src: guideIntroDefault,
+            alt: 'Software development consultancy img on a laptop screen',
+          },
+        }
+      },
+
+      {
+        "id": "1",
+        "title": "Types of Software Consultancy Services",
+        "content": {
+          "heading": "Types of Software Consultancy Services",
+          "description": [
+            "A software consultancy has a wide range of services to help your business with everythings from software developments to system optimization. Here are some of the core services that we are currently offering:"
+          ],
+          "list": [
+            {
+              "title": "Custom Software Development",
+              "detail": "With custom software, you don’t have to compromise or make do with generic solutions. We believe that your software should work for you, not the other way around."
+            },
+            {
+              "title": "Cloud Solutions",
+              "detail": "We help you move your systems to the cloud—making them accessible from anywhere, and able to grow as you do. Cloud solutions make it easier to store, access, and protect your data, while ensuring everything is backed up securely."
+            },
+            {
+              "title": "Automation & Process Improvement",
+              "detail": "We work to make your operations better, automate repetitive tasks so your team can focus on what matters. From managing inventory to tracking customer interactions, we simplify your day-to-day."
+            },
+            {
+              "title": "Systems Integration",
+              "detail": "If your current systems aren’t talking to each other, things can get messy. We integrate all the parts of your business—whether it’s customer management, sales tracking, or inventory control—into one smooth-running system that talks to itself."
+            },
+            {
+              "title": "Data & Analytics",
+              "detail": "Making sense of all your data can feel like trying to read a map without directions. Our team has a firm belief on this and hence they turn data into insights. We help you track performance through this for better understanding of latest trends."
+            },
+            {
+              "title": "Support & Maintenance",
+              "detail": "Technology doesn’t stop evolving, and neither should your systems. But our job isn’t over after we deliver your solution. Hence, we provide continuous updates for your software so that it keeps running without any lags."
+            }
+          ]
+        }
+      },
+
+      {
+        "id": "2",
+        "title": "Why Choose Software Consultancy?",
+        "content": {
+          "heading": "Why Choose Software Consultancy?",
+          "description": [
+            "Working with a software consultancy means getting more than just a tech solution. It’s about building a partnership with experts who understand your challenges and work alongside you to solve them. Here’s why a consultancy might be the right choice:"
+          ],
+          "list": [
+            {
+              "title": "Get a Fresh Perspective",
+              "detail": "We offer insights that your team might not have considered. It's the best way for your experts to work with the tools you already have or to create something entirely new. Sometimes, it helps to step back and see things from a different angle."
+            },
+            {
+              "title": "Faster, Smarter Decisions",
+              "detail": "With expert advice at your fingertips, you can make decisions faster. Instead of getting bogged down with tech issues, you get to focus on growing your business."
+            },
+            {
+              "title": "Solutions for Real Impact",
+              "detail": "We don’t believe in one-size-fits-all. Every solution we create is made with your needs in mind. So, you will get the most out of your custom software consulting services and technology investments."
+            },
+            {
+              "title": "Hands-On Expertise",
+              "detail": "You'll get access to a team of professionals with years of experience in solving problems. If you want to build new systems or troubleshoot existing ones, we bring the know-how to deliver results."
+            }
+          ]
+        }
+      },
+
+
+      {
+        "id": "3",
+        "title": "What are the Types of Software Consultancy Specializations?",
+        "content": {
+          "heading": "What are the Types of Software Consultancy Specializations?",
+          "description": [
+            "Here’s where we really shine. Our team handles a lot of technical areas and help you make the most of your technology:"
+          ],
+          "list": [
+            {
+              "title": "API Development and Integration",
+              "detail": "We manage APIs that let your systems talk to each other—whether it's connecting to a third-party service or linking up your internal tools."
+            },
+            {
+              "title": "Database Optimization",
+              "detail": "We help you organize and optimize your databases, ensuring your data is easy to access, secure, and well-maintained."
+            },
+            {
+              "title": "Cloud Deployment and Support",
+              "detail": "We deploy your systems to the cloud, ensuring they’re efficient and ready for growth. Our team handles the heavy lifting so you don’t have to."
+            },
+            {
+              "title": "Security & Compliance",
+              "detail": "When it comes to your business data, security isn’t optional. We work to ensure your systems are secure, protected from breaches, and in compliance with the latest privacy regulations."
+            },
+            {
+              "title": "Performance Tuning",
+              "detail": "We focus on improving your systems’ speed and responsiveness. From reducing lag to improving load times, we make sure your systems run at their best."
+            },
+            {
+              "title": "DevOps Support",
+              "detail": "Our team helps optimize development and operational processes, making sure that your software is constantly improving without slowing things down."
+            }
+          ]
+
+        }
+      },
+
+
+      {
+        "id": "4",
+        "title": "Choosing the Right Software Consultancy Partner",
+        "content": {
+          "heading": "Choosing the Right Software Consultancy Partner",
+          "description": [
+            "The right software consultancy isn’t just about having the technical skills; it’s about having the right mindset and approach. Here’s how you can find the perfect partner for your business:"
+          ],
+          "list": [
+            {
+              "title": "Clear Communication",
+              "detail": "You’ll want a team that can explain complex problems in simple terms. A good consultancy will keep you in the loop every step of the way, ensuring you understand what’s going on."
+            },
+            {
+              "title": "Real-World Experience",
+              "detail": "Look for a team with a proven track record of solving problems similar to yours. If you need help building something from scratch or fixing an existing system, the right experience makes all the difference."
+            },
+            {
+              "title": "Approach",
+              "detail": "While technology is important, it’s equally important to approach problems with creativity. A good consultancy will think outside the box to find solutions that work best for you."
+            },
+            {
+              "title": "Support",
+              "detail": "Technology isn’t static, and neither are your needs. Make sure you choose a partner who provides continuous support, from troubleshooting issues to offering advice on future upgrades."
+            }
+          ]
+        }
+      },
+
+
+
+      {
+        "id": "5",
+        "title": "Strategies to Reduce Time and Cost in Software Consultancy",
+        "content": {
+          "heading": "Strategies to Reduce Time and Cost in Software Consultancy",
+          "description": [
+            "Developing custom software doesn’t have to be expensive or take forever. Here are a few strategies that help us save you time and money while still delivering top-notch solutions:"
+          ],
+          "list": [
+            {
+              "title": "Lean Methodology",
+              "detail": "We deliver only the features you truly need and use, avoid unnecessary complexity and reduce development time."
+            },
+            {
+              "title": "Modular Development",
+              "detail": "Our team makes software in smaller, independent modules that can be developed, tested, and updated separately. This approach reduces development time and makes updates quicker."
+            },
+            {
+              "title": "Cloud & Serverless Computing",
+              "detail": "We eliminate the need for hardware setup and reduce operational costs with the use of cloud platforms and serverless computing."
+            },
+            {
+              "title": "Automation",
+              "detail": "The team at Bunnx automates routine tasks and processes. We also free up time for more strategic work and reduce manual errors."
+            },
+            {
+              "title": "Prototyping and Feedback",
+              "detail": "This will make the end product while reducing the risk of costly mistakes. Before diving deep into full-scale development, our team builds prototypes and gathers feedback."
+            }
+          ]
+        }
+      }
+
+    ]
+  },
+
 
 };
 
@@ -828,7 +1215,7 @@ export default function GuideTopics({ serviceDetailPageSlug }) {
   };
 
 
-  const guideData = guideContent[serviceDetailPageSlug] || guideContent['front-end-development-services'];
+  const guideData = guideContent[serviceDetailPageSlug] || guideContent['best-software-development-company-in-india'];
 
   if (!guideData) {
     return <p>Hiring models content not found for the provided slug.</p>;
@@ -880,7 +1267,7 @@ export default function GuideTopics({ serviceDetailPageSlug }) {
               {content.description &&
                 content.description.map((paragraph, index) => (
                   <p key={index} className="mb-4 text-gray-600">
-                    {createLinkedContent(paragraph, keywordToSlug)}
+                    {createLinkedContent(paragraph, keywordToSlug, serviceDetailPageSlug)}
                   </p>
                 ))}
 
@@ -888,7 +1275,7 @@ export default function GuideTopics({ serviceDetailPageSlug }) {
                 <ul className="list-disc space-y-3 pl-6 text-gray-600">
                   {content.list.map((item, index) => (
                     <li key={index}>
-                      <strong>{item.title}:</strong> {createLinkedContent(item.detail, keywordToSlug)}
+                      <strong>{item.title}:</strong> {createLinkedContent(item.detail, keywordToSlug, serviceDetailPageSlug)}
                     </li>
                   ))}
                 </ul>

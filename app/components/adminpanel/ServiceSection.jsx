@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+import Select from "react-select";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
@@ -172,7 +173,6 @@ const ServiceSectionForm = ({ form, onSubmit, isEditing, updateIsLoading, result
 
             <FormFieldFetchOnSlug form={form} name="fetchOnSlug" label="FetchOn Page (Multiple)" options={slugArray} placeholder="Slug where it display" />
 
-            {/* <FormFieldInput form={form} name="ctaRedirectUrl" label="Redirect url" placeholder="Enter redirection slug" /> */}
             <FormFieldInput
                 form={form}
                 name="ctaRedirectUrl"
@@ -204,17 +204,22 @@ const FormFieldInput = ({ form, name, label, placeholder, options }) => (
                     {name === "description" ?
                         <Textarea className="bg-gray-50" placeholder={placeholder} {...field} /> :
 
+
                         name === "ctaRedirectUrl" && options.length > 0 ? (
-                            <select className="bg-gray-50 border rounded-md ml-4 w-72 p-1.5 text-sm" {...field}>
-                                <option value="" disabled>
-                                    {placeholder || "Select an option"}
-                                </option>
-                                {options.map((option) => (
-                                    <option key={option.slug} value={option._id}>
-                                        {option.label}
-                                    </option>
-                                ))}
-                            </select>
+                            <Select
+                                className="bg-gray-50 rounded-md"
+                                placeholder={placeholder || "Select an option"}
+                                options={options.map((option) => ({
+                                    value: option._id,
+                                    label: `${option.label} | ${option.slug}`,
+                                }))}
+                                value={options.find((option) => option._id === field.value) || null}
+                                onChange={(selectedOption) => field.onChange(selectedOption ? selectedOption.value : "")}
+                                isClearable
+                                isSearchable
+                            />
+
+
                         ) :
 
                             <Input className="bg-gray-50" placeholder={placeholder} {...field} />

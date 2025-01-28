@@ -9,11 +9,22 @@ import softwareDev from "/public/Software-Development.webp";
 const keywordToSlug = {
   'software development services': 'best-software-development-company-in-india',
   'CRM software solutions': 'crm-software-development-services',
+  'custom software development companies': 'custom-software-development-services',
 };
 
 
 
 const data = [
+  {
+    slug: "custom-software-development-services",
+    title: "Leading Custom Software Development Experts",
+    description1: "With years of experience and a team that is passionate about making software, Bunnx has become one of the best custom software development companies in India.",
+    description2: "If you want us to simplify complex workflows or build something from scratch, our team will do it all.",
+    buttonText: "Get Started!",
+    link: "#contact-us",
+    imageSrc: softwareDev,
+    altText: "Custom Software Development",
+  },
   {
     slug: "front-end-development-services",
     title: "Leading Front End Development Experts",
@@ -35,6 +46,16 @@ const data = [
     altText: "Backend Development",
   },
   {
+    slug: "crm-software-development-services",
+    title: "Experienced CRM Software Development Specialists",
+    description1: "We have created CRM software solutions for the growth of all types of businesses and to strengthen customer relationships. Our CRM software development company also depends on only proven technologies like Salesforce and Microsoft Dynamics",
+    description2: "We also have services like comprehensive contact management, sales pipeline automation, and detailed reporting capabilities that help your business track customer interactions.",
+    buttonText: "Get Started! ",
+    link: "#contact-us",
+    imageSrc: softwareDev,
+    altText: "CRM Development",
+  },
+  {
     slug: "best-software-development-company-in-india",
     title: "Choose Leading Software Development Company",
     description1: "Offering seamless and efficient software development services customised to your unique business requirements, Bunnx is committed to delivering secure software solutions swiftly.",
@@ -45,26 +66,33 @@ const data = [
     altText: "Software Development",
   },
   {
-    slug: "crm-software-development-services",
-    title: "Experienced CRM Software Development Specialists",
-    description1: "We have created CRM software solutions for the growth of all types of businesses and to strengthen customer relationships. Our CRM software development company also depends on only proven technologies like Salesforce and Microsoft Dynamics",
-    description2: "We also have services like comprehensive contact management, sales pipeline automation, and detailed reporting capabilities that help your business track customer interactions.",
+    slug: "software-development-consultants",
+    title: "Experienced Software Consultants",
+    description1: "We have created solutions for the growth of all types of businesses and to strengthen customer relationships. Our software consultancy company also depends on only proven technologies like Salesforce and Microsoft Dynamics.",
+    description2: "We also have IT software consulting services like comprehensive contact management, sales pipeline automation, and detailed reporting capabilities that help your business track customer interactions.",
     buttonText: "Get Started! ",
     link: "#contact-us",
     imageSrc: softwareDev,
-    altText: "CRM Development",
+    altText: "Software Development",
   },
+
+
 ];
 
 
 const ChooseUs = ({ serviceDetailPageSlug }) => {
   // Find the data for the provided slug
-  const content = data.find((item) => item.slug === serviceDetailPageSlug || item.slug === "crm-software-development-services") 
+  var content = data.find((item) => (item?.slug).includes(serviceDetailPageSlug))
 
   // Handle case where slug doesn't match any data
   if (!content) {
-    return <p>Content not found for the provided slug.</p>;
+    content = data.find((item) => item?.slug === "best-software-development-company-in-india")
+
+    if (!content) {
+      return <p>Content not found for the provided slug.</p>;
+    }
   }
+
 
   return (
     <section className="container mx-auto max-w-screen-lg xl:max-w-screen-xl px-4 md:px-6 py-12">
@@ -73,8 +101,8 @@ const ChooseUs = ({ serviceDetailPageSlug }) => {
           <div>
             <h2 className="font-semibold text-orange-500 text-left text-lg">Why Choose Us</h2>
             <h4 className="font-bold sm:text-4xl text-2xl my-2">{content.title}</h4>
-            <p className="text-md text-gray-800 my-4">{createLinkedContent(content.description1, keywordToSlug)}</p>
-            <p className="text-md text-gray-800">{createLinkedContent(content.description2, keywordToSlug)}</p>
+            <p className="text-md text-gray-800 my-4">{createLinkedContent(content.description1, keywordToSlug, serviceDetailPageSlug)}</p>
+            <p className="text-md text-gray-800">{createLinkedContent(content.description2, keywordToSlug, serviceDetailPageSlug)}</p>
           </div>
           <div className="flex items-center">
             <Link

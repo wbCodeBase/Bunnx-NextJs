@@ -26,7 +26,7 @@ const techStackData = {
                 { "name": "Custom Software Development", "description": "Tailored solutions for excellence", "slug": "custom-software-development-services" },
                 { "name": "CMS Development", "description": "Faster CMS Development", "slug": "cms-development" },
                 { "name": "CRM Software Development", "description": "Transform ideas into powerful apps", "slug": "crm-software-development-services" },
-                { "name": "Software Consulting", "description": "Expert advice on tech", "slug": "software-consulting" },
+                { "name": "Software Consulting", "description": "Expert advice on tech", "slug": "software-development-consultants" },
 
                 { "name": "IT Consulting", "description": "Software Outsourcing", "slug": "it-consulting" },
                 { "name": "Agile Consulting", "description": "Optimizing customer relations", "slug": "agile-consulting" },
@@ -89,7 +89,7 @@ const techStackData = {
                 { "name": "Cloud Application Development", "description": "Sleek, powerful iOS apps", "slug": "cloud-application-development" },
                 { "name": "Cloud Strategy & Consulting", "description": "Next-gen web experiences", "slug": "cloud-strategy-consulting" },
                 { "name": "Cloud Migration", "description": "Fast, dynamic web apps", "slug": "cloud-migration" },
-                { "name": "Devops Integration", "description": "Build once, run everywhere", "slug": "devops-integration" },
+                { "name": "Devops & CI/CD Pipelines", "description": "Build once, run everywhere", "slug": "devops-and-ci-cd-pipelines" },
             ],
             linkViewMore: "cloud-services"
         }
@@ -111,7 +111,6 @@ const OurServices = () => {
 
 
     const [activeCategory, setActiveCategory] = useState('Software Development')
-
 
 
     const handleCategoryHover = (category) => {

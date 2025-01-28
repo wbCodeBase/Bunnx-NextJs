@@ -19,10 +19,10 @@ const data = [
     backgroundImage: "https://spirecapital.com/wp-content/uploads/2017/02/CTA-background-get-in-touch.jpg",
   },
   {
-    slug: "best-software-development-company-in-india",
-    tagline: "We build industry specific softwares with cost-effective solutions.",
-    title: "Get benefit from our expert analysis for better software performance!",
-    description: "Access a skilled team that works for your growth. Get people who know how to handle your software in both ups and downs. From fast fixes to system functionality, we focus on everything.",
+    slug: "custom-software-development-services",
+    tagline: "We don’t Just Build Softwares; We Make Solutions",
+    title: "Designed for Impact, Built for Results.",
+    description: "We don’t just build software; we aim to simplify your customers' lives and enhance your business intelligence, driving smarter operations and growth. Our solutions are designed to streamline processes, increase efficiency, and boost customer satisfaction, ensuring your business thrives.",
     buttonText: "Launch Your Project Now!",
     backgroundImage: "https://spirecapital.com/wp-content/uploads/2017/02/CTA-background-get-in-touch.jpg",
   },
@@ -33,7 +33,23 @@ const data = [
     description: "Our experts design and implement CRM software solutions to serve as the central hub for all your customer interactions. At Bunnx, we also balance your app load and do auto-scaling configurations on cloud platforms to handle fluctuating user demands.",
     buttonText: "Launch Your Project Now!",
     backgroundImage: "https://spirecapital.com/wp-content/uploads/2017/02/CTA-background-get-in-touch.jpg",
-  }
+  },
+  {
+    slug: "best-software-development-company-in-india",
+    tagline: "We build industry specific softwares with cost-effective solutions.",
+    title: "Get benefit from our expert analysis for better software performance!",
+    description: "Access a skilled team that works for your growth. Get people who know how to handle your software in both ups and downs. From fast fixes to system functionality, we focus on everything.",
+    buttonText: "Launch Your Project Now!",
+    backgroundImage: "https://spirecapital.com/wp-content/uploads/2017/02/CTA-background-get-in-touch.jpg",
+  },
+  {
+    slug: "software-development-consultants",
+    tagline: "Make Successful Softwares With Our Experts",
+    title: "Get Access to New Technologies and Talented Software Experts.",
+    description: "Our IT software consulting services work to make your customer interactions better. At Bunnx, we also dig deep in the roots of your problems rather than giving surface-level advice.",
+    buttonText: "Launch Your Project Now!",
+    backgroundImage: "https://spirecapital.com/wp-content/uploads/2017/02/CTA-background-get-in-touch.jpg",
+  },
 ];
 
 const getCtaContent = (data, serviceDetailPageSlug) => {

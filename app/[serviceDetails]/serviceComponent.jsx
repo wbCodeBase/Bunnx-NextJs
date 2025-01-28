@@ -19,8 +19,6 @@ import loaderJson from "../../public/pageAnimations/loader.json";
 
 import { useGetTemplateContentByStrQuery, useGetActiveSlugQuery } from '../../store/api/myApi';
 
-import heroBrain from "/public/developmentServices.jpg"
-
 
 import PlaneCta from '@/components/layout/PlaneCta';
 import GlassmorphismCta from "@/components/layout/GlassmorphismCta";
@@ -97,64 +95,19 @@ export default function ServiceDetailsComp() {
   const serviceSectionObj = data?.servicesSection?.filter((service) => service?.fetchOnSlug?.map((slug) => slug?.slug).includes(serviceDetails)) || [];
 
 
-  const servicesData = (Array.isArray(serviceSectionObj) && serviceSectionObj.length > 0)
-    ? serviceSectionObj
-    : [
-      {
-        title: "Front-End Development",
-        description:
-          "Take the user level to the next level and develop a flawless website with the top front end development company.",
-        ctaRedirectUrl: {
-          slug: "front-end-development-services",
-        }
-      },
-      {
-        title: "Back-End Development",
-        description:
-          "Redesign the future of your web presence with a flawlessly tuned website, crafted by the wizards of the best back end development.",
-        ctaRedirectUrl: {
-          slug: "back-end-development-services",
-        }
-      },
-      {
-        title: "Full Stack Development",
-        description:
-          "Full Stack Development involves building and managing both front-end and back-end of web applications, ensuring seamless functionality.",
-        ctaRedirectUrl: {
-          slug: "full-stack-development",
-        },
-      },
-      {
-        title: "Software Development",
-        description: "Custom Software Development Services and Solutions to build top-tier intelligent enterprises with speed and agility.",
-        ctaRedirectUrl: {
-          slug: "best-software-development-company-in-india",
-        },
-      },
-
-    ];
 
 
-
-
-  const heroSectionData = {
-    title: heroSectionObj?.title || formatparameter(serviceDetails),
-    description: heroSectionObj?.description || "Custom Software Development Services and Solutions to build top-tier intelligent enterprises with speed and agility.",
-    imageUrl: heroBrain,
-    ctaText: heroSectionObj?.ctaText || "Get Connected With us",
-    ctaRedirectUrl: heroSectionObj?.ctaRedirectUrl || "#contact-us",
-  };
 
 
 
   return (
     <>
 
-      <HeroSection {...heroSectionData} />
+      <HeroSection heroSectionObj={heroSectionObj} pageSlug={serviceDetails} extractNameFromSlug={formatparameter(serviceDetails)} />
 
       <NumericCounterInfo />
 
-      <Services servicesData={servicesData} serviceDetailPageSlug={serviceDetails} extractNameFromSlug={formatparameter(serviceDetails)} />
+      <Services serviceSectionObj={serviceSectionObj} serviceDetailPageSlug={serviceDetails} extractNameFromSlug={formatparameter(serviceDetails)} />
 
       <PlaneCta serviceDetailPageSlug={serviceDetails} />
 

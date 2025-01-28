@@ -161,9 +161,6 @@ export default function HireDetailsComponentt() {
       }
     },
 
-
-
-
   ];
 
 
@@ -294,21 +291,10 @@ export default function HireDetailsComponentt() {
 
 
 
-  const heroSectionData = {
-    title: heroSectionObj?.title || "Hire " + formatparameter(hireDevOf),
-    description: heroSectionObj?.description || "Our skilled php developers seamlessly integrate with your team, offering flexible engagement models with Monthly contracts, part-time collaboration and hourly arrangements.",
-    imageUrl: heroDefault,
-    ctaText: heroSectionObj?.ctaText || "Book a Consultation",
-    ctaRedirectUrl: heroSectionObj?.ctaRedirectUrl || "#contact-us",
-  };
-
-
-
-
   return (
     <>
 
-      <HeroSection {...heroSectionData} />
+      <HeroSection heroSectionObj={heroSectionObj} pageSlug={hireDevOf} extractNameFromSlug={formatparameter(hireDevOf)} />
 
       <NumericCounterInfo />
 

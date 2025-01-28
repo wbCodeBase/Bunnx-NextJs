@@ -11,12 +11,14 @@ import { createLinkedContent } from '#/utils/LinkBuilder';
 
 
 const keywordToSlug = {
-"outsourcing software development": "it-outsourcing",
-"white-label software development services": "it-outsourcing",
-"Front-End Development companies": "front-end-development-services",
-"Front-End Development company": "front-end-development-services",
-"back-end development agency": "back-end-development-services",
-"software development services": "best-software-development-company-in-india",
+    "outsourcing software development": "it-outsourcing",
+    "custom application development company": "custom-software-development-services",
+    "white-label software development services": "it-outsourcing",
+    "Front-End Development companies": "front-end-development-services",
+    "Front-End Development company": "front-end-development-services",
+    "back-end development agency": "back-end-development-services",
+    "software development services": "best-software-development-company-in-india",
+    "custom software consulting services": "software-development-consultants",
 };
 
 
@@ -263,6 +265,7 @@ const faqData = {
             }
         }
     ],
+
     "crm-software-development-services": [
         {
             "id": "crm-1",
@@ -312,12 +315,117 @@ const faqData = {
                 "content": "Choosing us means working with a team that understands your business and creates CRM systems. We use proven technologies and techniques to build CRM systems and for long-term support."
             }
         }
-    ]
-    
+    ],
+
+    "custom-software-development-services": [
+        {
+            "id": "csd-1",
+            "question": "What tech stack do you use for custom software development?",
+            "answer": {
+                "type": "text",
+                "content": "Our custom application development company uses React, Angular, and Vue.js for the front end. On the back end, the experts at Bunnx stick to Node.js and Python for building mobile apps. And when it comes to the cloud, we have extreme trust in AWS, Azure, and Google Cloud."
+            }
+        },
+        {
+            "id": "csd-2",
+            "question": "Can you integrate third-party services with my custom software?",
+            "answer": {
+                "type": "text",
+                "content": "At Bunnx, we sync with CRM systems or add analytics platforms. Our team has also got the API expertise to integrate third-party services with your custom software."
+            }
+        },
+        {
+            "id": "csd-3",
+            "question": "Do you have a support team after launching our custom software?",
+            "answer": {
+                "type": "text",
+                "content": "Of course! Launch day isn’t the finish line—it’s just the start. We do lower the bugs, tweak features, and roll out updates."
+            }
+        },
+        {
+            "id": "csd-4",
+            "question": "How will you manage my project?",
+            "answer": {
+                "type": "text",
+                "content": "We keep things transparent and organized. Using tools such as Jira, our experts break your project into bite-sized phases. This way, you can share feedback at every step. It will make us stay laser-focused on what matters to your project."
+            }
+        },
+        {
+            "id": "csd-5",
+            "question": "Do you create mobile apps using Flutter?",
+            "answer": {
+                "type": "text",
+                "content": "Yes, we do! If it’s iOS or Android, Flutter and React Native are our go-to tools for creating apps. Which one we use depends on your app—whether you’re going for a UI, fast performance, or both."
+            }
+        },
+        {
+            "id": "csd-6",
+            "question": "How do you get safe custom software?",
+            "answer": {
+                "type": "text",
+                "content": "Security is mandated into every stage of our development process. From encrypting data with SSL/TLS protocols to implementing OAuth and JWT for authentication, our custom application development company takes no chances."
+            }
+        }
+    ],
+
+    "software-development-consultants": [
+    {
+      "id": "csd-1",
+      "question": "How do you make sure about our software security?",
+      "answer": {
+        "type": "text",
+        "content": "We take security seriously. From secure authentication methods like OAuth and JWT to SSL/TLS encryption for data, we ensure your software and data are safe. With our regular security audits, you can keep your system protected from threats."
+      }
+    },
+    {
+      "id": "csd-2",
+      "question": "How do you make software consulting services reliable?",
+      "answer": {
+        "type": "text",
+        "content": "We take a practical approach to software consulting. This is done by analyzing your business and recommendations from our team for the right technologies. Our custom software consulting services keep things simple and easy for your team to manage."
+      }
+    },
+    {
+      "id": "csd-3",
+      "question": "Do you offer support after delivering the solution?",
+      "answer": {
+        "type": "text",
+        "content": "Yes. The work at Bunnx doesn’t stop once the project is delivered. We stick around to help you fix any issues and add new features to your software. Think of it as having a trusted tech partner by your side."
+      }
+    },
+    {
+      "id": "csd-4",
+      "question": "How do you manage software consultancy projects?",
+      "answer": {
+        "type": "text",
+        "content": "We like to keep things transparent and collaborative. Using tools like Trello and Jira, we break down the work into smaller steps, so you know exactly what’s happening and when. This way, you can give feedback at every stage, ensuring we’re always moving in the right direction."
+      }
+    },
+    {
+      "id": "csd-5",
+      "question": "What technologies do you rely on in your software consultancy services?",
+      "answer": {
+        "type": "text",
+        "content": "As we work with a range of technologies, we still prefer Python, Java, Node.js, and PHP for back-end. For databases, we stick to options like MySQL, PostgreSQL, and MongoDB. And when it comes to architecture, we make sure it’s modern and scalable."
+      }
+    },
+    {
+      "id": "csd-6",
+      "question": "Why should you choose us for software consultancy?",
+      "answer": {
+        "type": "text",
+        "content": "Because we genuinely care about solving your challenges, not just delivering a product. We take the time to understand your business, suggest the right solutions, and stick with you for the long haul. It’s not just about building great software—it’s about building trust."
+      }
+    }
+  ]
+
 
 };
 
+
+
 const Faqs = ({ serviceDetailPageSlug }) => {
+
     const data = faqData[serviceDetailPageSlug] || faqData["best-software-development-company-in-india"];
 
     return (
@@ -342,7 +450,7 @@ const Faqs = ({ serviceDetailPageSlug }) => {
                                 <AccordionContent className="text-[16px] text-gray-700 my-6">
 
                                     {faq.answer?.type === "text" && faq.answer?.content && (
-                                        <p>{createLinkedContent(faq?.answer?.content, keywordToSlug)}</p>
+                                        <p>{createLinkedContent(faq?.answer?.content, keywordToSlug, serviceDetailPageSlug)}</p>
                                     )}
 
                                     {faq.answer?.type === "paragraph" && Array.isArray(faq.answer.content) && (

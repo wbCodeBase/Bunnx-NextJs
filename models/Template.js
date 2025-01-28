@@ -25,6 +25,8 @@ const HeroSectionSchema = new mongoose.Schema({
     fetchOnSlug: {
         type: Schema.Types.ObjectId,
         ref: 'ActiveSlug',
+        required: true,
+        unique: true
     }
 }, {
     timestamps: true

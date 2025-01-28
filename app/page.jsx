@@ -29,7 +29,7 @@ export default async function Home() {
   const session = await auth()
   console.log("Home - User", session?.user || "Not Authenticated")
 
-  const heroSectionData = {
+  const heroSectionObj = {
     title: "Dynamic Software Engineering, Strategic Consulting & Affordable Outsourcing",
     description: "We are an acclaimed Indian software engineering firm dedicated to delivering exceptional outsourced development solutions and expert engineering teams to clients around the world.",
     imageUrl: heroHomeImage,
@@ -39,7 +39,7 @@ export default async function Home() {
   return (
     <>
 
-      <HeroSection {...heroSectionData} />
+      <HeroSection heroSectionObj={heroSectionObj} />
 
       <NumericCounterInfo />
 

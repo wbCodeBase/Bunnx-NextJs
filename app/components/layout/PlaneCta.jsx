@@ -1,6 +1,7 @@
 import React from 'react'
 import { FaPhoneAlt } from "react-icons/fa";
 import Link from 'next/link';
+import { createLinkedContent } from '#/utils/LinkBuilder';
 
 const PlaneCta = ({ serviceDetailPageSlug }) => {
 
@@ -27,18 +28,25 @@ const PlaneCta = ({ serviceDetailPageSlug }) => {
             slug: "best-software-development-company-in-india"
         },
         {
-            span: "Smart Solutions That Evolve with Your Business!",
-            head: "Scale Your Success with Adaptive CRM Development!",
+            span: "Scale Your Success with Adaptive CRM Development!",
+            head: "Get all your details at one place with the best CRM solutions!",
             para: "Transform your business operations with a CRM software solution that grows alongside your company. We build powerful systems that eliminate workflow bottlenecks and maximize team efficiency.",
             ctaText: "Let's Connect!",
-            slug: "crm-software-development-services"
+            slug: "software-development-consultants"
         },
         {
-            span: "",
-            head: "We create apps that do more than perform—they connect and solve.",
+            span: "We create softwares that redefines your processes.",
+            head: "Get connected with us and gain applications that connect and solve!",
             para: "It all starts with your unique idea. We dig deep to not just technically sound but also help you how real people will use it. Our custom software development delivers tools that truly integrate into your users’ lives. It’s not just about what the app does—it’s about how it makes them feel.",
             ctaText: "Let's Connect!",
             slug: "custom-software-development-services"
+        },
+        {
+            span: "Smart Solutions That Evolve with Your Business!",
+            head: "Let us handle complex codes for your website while you scale your business!",
+            para: "Are you fed up with unreliable servers and constant downtime? Say no more! Our software development services experts will design solid architectures to boost your database performance.",
+            ctaText: "Let's Connect!",
+            slug: "best-software-development-company-in-india"
         },
         
     ]
@@ -50,9 +58,14 @@ const PlaneCta = ({ serviceDetailPageSlug }) => {
         ctaText: "Let's Connect!",
     };
 
+    
+const keywordToSlug = {
+    'software development services': 'best-software-development-company-in-india',
+}
+
+
     return (
         <>
-
 
             <section className='sm:py-12 py-2'>
                 <div className="bg-[#00214E] px-4 md:px-6">
@@ -62,7 +75,7 @@ const PlaneCta = ({ serviceDetailPageSlug }) => {
                         {ctaMainObj && <div className='text-white flex gap-4 flex-col lg:items-start items-center xl:w-[58%] w-full'>
                             <span>{ctaMainObj.span}</span>
                             <h2 className='text-3xl font-semibold'>{ctaMainObj.head}</h2>
-                            <p>{ctaMainObj.para}</p>
+                            <p>{createLinkedContent(ctaMainObj.para, keywordToSlug, serviceDetailPageSlug)}</p>
                         </div>
                         }
 

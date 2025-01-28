@@ -7,15 +7,15 @@ import { getToken } from "next-auth/jwt";
 
 export async function middleware(request) {
   try {
-    console.log(request.url, "Request url");
 
     const isAuthPage = request.nextUrl.pathname.startsWith('/login') ||
       request.nextUrl.pathname.startsWith('/signup');
     const isAdminPage = request.nextUrl.pathname.startsWith('/bunnx-admin');
 
-    const token = await getToken({ req: request, secret: process.env.NEXTAUTH_SECRET, 
+    const token = await getToken({
+      req: request, secret: process.env.NEXTAUTH_SECRET,
       secureCookie: true
-     });
+    });
     console.log("Token exists:", token, process.env.NEXTAUTH_SECRET);
 
     if (!token && !isAuthPage) {

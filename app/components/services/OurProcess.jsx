@@ -10,6 +10,7 @@ import "./service.css";
 const keywordToSlug = {
     'front end development company in India': 'front-end-development-services',
     'software development company in India': 'best-software-development-company-in-india',
+    'custom software development company': 'custom-software-development-services',
     'CRM software solutions': 'crm-software-development-services',
     'CRM software development company': 'crm-software-development-services',
     'CRM software solution': 'crm-software-development-services',
@@ -229,14 +230,14 @@ const contentBySlug = {
                 title: "Design & Development",
                 description: "Our team works closely together to develop highly responsive and user-friendly softwares. We ensure that our solutions align with your vision and meet all necessary requirements.",
                 "activities": [
-                    "Defining technical architecture",
-                    "Database design and schema creation",
-                    "Setting up development environments"
+                    "UX/UI design and prototyping",
+                    "Frontend and backend development",
+                    "API Development and Integration"
                 ],
                 "deliverables": [
-                    "Technical Architecture Document",
-                    "Database Schema",
-                    "Development Environment Setup"
+                    "Design Wireframes and Prototype",
+                    "Web Application up and running",
+                    "Integrated System Interfaces"
                 ]
             },
             {
@@ -366,12 +367,13 @@ const contentBySlug = {
         processSections: [
             {
                 id: 1,
-                title: "Know Your Mission of Software Development",
+                title: "Know Your Software Needs",
                 description: "What problem are we solving? Who will use it? What’s your long term goal with the software? These questions drive discussions to shape a technical path forward.",
                 "activities": [
                     "Host collaborative sessions.",
                     "Map out your  success metrics.",
-                    "Document workflows and sketch user scenarios.",
+                    "Manage document workflows.",
+                    "Sketch user scenarios.",
                 ],
                 "deliverables": [
                     "A crystal-clear roadmap.",
@@ -384,62 +386,145 @@ const contentBySlug = {
                 title: "Designing With Purpose",
                 description: "Good softwares is more than being helpful to your customers as they also make it enjoyable during usage. We understand this and bring a lot of ideas to life through thoughtful design.",
                 "activities": [
-                    "Making user role hierarchies",
-                    "Workflow automation planning",
-                    "Sprint and timeline organization",
-                    "Customer data schema design"
+                    "Outline app structure with wireframes.",
+                    "Focus on layout in mockups.",
+                    "Build prototypes for pre-launch testing.",
+                    "Experience app with clickable prototypes."
                 ],
                 "deliverables": [
-                    "CRM System architecture",
-                    "Development schedule",
-                    "Feature documentation"
+                    "A blueprint of your software.",
+                    "A design that balances form.",
+                    "Feedback-driven prototypes."
                 ]
             },
             {
                 id: 3,
-                title: "CRM Development & Integration",
-                description: "Our team takes full responsibility for the core CRM functionalities, implements data handling, and connects with the latest business tools and services.",
+                title: "Making Codes",
+                description: "Once the designs are locked, it’s time to build them. Our professionals use the programming languages. It helps us develop software that not only looks amazing but has real function.",
                 "activities": [
-                    "Core CRM Module Development",
-                    "User Authentication Systems",
-                    "Customer Data API Creation",
-                    "Business Tool Integration"
+                    "Code the front end.",
+                    "Build a back end to maintain large data.",
+                    "Test module to catch issues.",
                 ],
                 "deliverables": [
-                    "CRM System that always works",
-                    "Connected APIs",
-                    "Integrated Business Tools"
+                    "A working product with core features.",
+                    "Infrastructure ready to handle real-world use. ",
+                    "Updates on development progress."
                 ]
             },
             {
                 id: 4,
-                title: "Quality & Performance Testing",
-                description: "Our professionals are talented enough to assure quality work. So, you can rely on us and get data accuracy through testing procedures.",
+                title: "Testing, Refining & Perfecting",
+                description: "No software is perfect but we can achieve it. That’s why we rigorously test it—breaking it down, pushing it to its limits.",
                 "activities": [
-                    "Feature and Integration Testing",
-                    "Data Management Verification",
-                    "Security Protocol Testing",
-                    "Speed and Response Monitoring"
+                    "Perform functional tests to make every feature work as intended.",
+                    "Test performance under real-world conditions to check speed.",
+                    "Refine the app based on user feedback from beta testing.",
                 ],
                 "deliverables": [
-                    "Quality Test Documentation",
-                    "Verified System",
-                    "Performance Reports"
+                    "Bug-free, production-ready software.",
+                    "Performance reports and testing insights.",
+                    "Final adjustments to fine-tune the experience."
                 ]
             },
             {
                 "id": 5,
-                "title": "Ongoing Support",
-                "description": "We deploy the CRM software solution and provide continuous assistance to maintain functionality of your apps or websites.",
+                "title": "Launch and Beyond",
+                "description": "The big moment has arrived. We don’t just hand over your software and disappear—we deploy it, monitor it, and stand by your side.",
                 "activities": [
-                    "Implementation of all strategies",
-                    "Track your setup working",
-                    "Maintaining updated versions of the system"
+                    "Launch the software.",
+                    "Check performance metrics.",
+                    "Updates, upgrades, or new features."
                 ],
                 "deliverables": [
-                    "Live CRM system with optimized performance.",
-                    "Performance dashboards and monitoring configurations.",
-                    "Training materials and user guides."
+                    "A successful launch.",
+                    "Insights into software.",
+                    "Support for software future-proof."
+                ]
+            }
+        ]
+    },
+
+    "software-development-consultants": {
+        h2: "Our Process",
+        h4: "Our Process for Custom Software Development",
+        p: "Our custom software development company follows a structured process while following this to give you a functional product. Here’s our approach:",
+        processSections: [
+            {
+                id: 1,
+                title: "Know Your Software Needs",
+                description: "What problem are we solving? Who will use it? What’s your long term goal with the software? These questions drive discussions to shape a technical path forward.",
+                "activities": [
+                    "Host collaborative sessions.",
+                    "Map out your  success metrics.",
+                    "Manage document workflows.",
+                    "Sketch user scenarios.",
+                ],
+                "deliverables": [
+                    "A crystal-clear roadmap.",
+                    "A deep understanding of the project scope",
+                    "Defined milestones and outcomes."
+                ]
+            },
+            {
+                id: 2,
+                title: "Designing With Purpose",
+                description: "Good softwares is more than being helpful to your customers as they also make it enjoyable during usage. We understand this and bring a lot of ideas to life through thoughtful design.",
+                "activities": [
+                    "Outline app structure with wireframes.",
+                    "Focus on layout in mockups.",
+                    "Build prototypes for pre-launch testing.",
+                    "Experience app with clickable prototypes."
+                ],
+                "deliverables": [
+                    "A blueprint of your software.",
+                    "A design that balances form.",
+                    "Feedback-driven prototypes."
+                ]
+            },
+            {
+                id: 3,
+                title: "Making Codes",
+                description: "Once the designs are locked, it’s time to build them. Our professionals use the programming languages. It helps us develop software that not only looks amazing but has real function.",
+                "activities": [
+                    "Code the front end.",
+                    "Build a back end to maintain large data.",
+                    "Test module to catch issues.",
+                ],
+                "deliverables": [
+                    "A working product with core features.",
+                    "Infrastructure ready to handle real-world use. ",
+                    "Updates on development progress."
+                ]
+            },
+            {
+                id: 4,
+                title: "Testing, Refining & Perfecting",
+                description: "No software is perfect but we can achieve it. That’s why we rigorously test it—breaking it down, pushing it to its limits.",
+                "activities": [
+                    "Perform functional tests to make every feature work as intended.",
+                    "Test performance under real-world conditions to check speed.",
+                    "Refine the app based on user feedback from beta testing.",
+                ],
+                "deliverables": [
+                    "Bug-free, production-ready software.",
+                    "Performance reports and testing insights.",
+                    "Final adjustments to fine-tune the experience."
+                ]
+            },
+            {
+                "id": 5,
+                "title": "Launch and Beyond",
+                "description": "The big moment has arrived. We don’t just hand over your software and disappear—we deploy it, monitor it, and stand by your side.",
+                "activities": [
+                    "Launch the software.",
+                    "Check performance metrics.",
+                    "Updates, upgrades, or new features."
+                ],
+                "deliverables": [
+                    "A successful launch.",
+                    "Insights into software.",
+                    "Support for software future-proof."
                 ]
             }
         ]
@@ -458,7 +543,7 @@ export default function ProcessShowcase({ serviceDetailPageSlug }) {
             <div className="max-w-screen-xl container mx-auto p-4 md:p-8">
                 <h2 className='font-semibold text-orange-500 text-lg'>{h2}</h2>
                 <h4 className='font-semibold text-3xl my-2'>{h4}</h4>
-                <p className='text-md text-gray-800'>{createLinkedContent(p, keywordToSlug)}</p>
+                <p className='text-md text-gray-800'>{createLinkedContent(p, keywordToSlug, serviceDetailPageSlug)}</p>
 
 
 
@@ -468,7 +553,7 @@ export default function ProcessShowcase({ serviceDetailPageSlug }) {
                         {processSections.map((section) => (
                             <div key={section.id} className="space-y-4 bg-[#1a1a1a] p-6 rounded-lg">
                                 <h2 className="text-2xl font-bold">{section.title}</h2>
-                                <p className="text-gray-300">{createLinkedContent(section.description, keywordToSlug)}</p>
+                                <p className="text-gray-300">{createLinkedContent(section.description, keywordToSlug, serviceDetailPageSlug)}</p>
                                 <div className="grid gap-6">
                                     <div>
                                         <h3 className="text-xl font-semibold mb-2">Task Involved</h3>
@@ -566,7 +651,7 @@ export default function ProcessShowcase({ serviceDetailPageSlug }) {
                                                     transition={{ duration: 0.3 }}
                                                     className="space-y-6"
                                                 >
-                                                    <p className="text-gray-300 max-w-2xl">{createLinkedContent(section.description, keywordToSlug)}</p>
+                                                    <p className="text-gray-300 max-w-2xl">{createLinkedContent(section.description, keywordToSlug, serviceDetailPageSlug)}</p>
 
                                                     <div className="grid md:grid-cols-2 gap-5">
                                                         <div>

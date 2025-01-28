@@ -19,21 +19,37 @@ const data = [
     backgroundImage: "https://images.pexels.com/photos/316681/pexels-photo-316681.jpeg",
   },
   {
-    slug: "best-software-development-company-in-india",
-    tagline: "Get Rid of Outdated Softwares Today!",
-    title: "Get Ready to Stay Ahead with Best Software Development Services",
-    description: "We provide you with enormous benefits like better productivity of your apps even when the visitors are high, minimize delays, and automate the software delivery process. So, hurry up!",
-    buttonText: "Contact Us Now",
-    backgroundImage: "https://images.pexels.com/photos/316681/pexels-photo-316681.jpeg",
-  },
-  {
     slug: "crm-software-development-services",
     tagline: "Scale Your Business with Expert CRM Solutions!",
     title: "Transform Customer Relationships into Business Success with Professional CRM Development.",
     description: "From database optimization to reliable deployment, ourCRM software developers develop CRM software solutions that evolve with you.",
     buttonText: "Contact Us Now",
     backgroundImage: "https://images.pexels.com/photos/316681/pexels-photo-316681.jpeg",
-  }
+  },
+  {
+    slug: "custom-software-development-services",
+    tagline: "Get Lightweight Frameworks, Heavy Results!",
+    title: "Drive Unstoppable Growth with Agile, Secure custom software Development.",
+    description: "Every line of code, feature, and interaction is built with your purpose. From mapping out ideas to delivering a product, we stay hands-on every step of the way.",
+    buttonText: "Contact Us Now",
+    backgroundImage: "https://images.pexels.com/photos/316681/pexels-photo-316681.jpeg",
+  },
+  {
+    slug: "software-development-consultants",
+    tagline: "Ready to elevate your customer relationships?",
+    title: "Turn Your Customer Relationships into Lasting Success with our Software Consulting Services.",
+    description: "We’re here to help you with custom software consulting services that fits your business today!",
+    buttonText: "Contact Us Now",
+    backgroundImage: "https://images.pexels.com/photos/316681/pexels-photo-316681.jpeg",
+  },
+  {
+    slug: "best-software-development-company-in-india",
+    tagline: "Be Success-Ready With the Right Software!",
+    title: "Get Ready to Stay Ahead with Best Software Development Services",
+    description: "Whether you need a custom-made software or one that can merge with your existing system, we have the right solution. Connect with us and get the best software development services in no time.",
+    buttonText: "Contact Us Now",
+    backgroundImage: "https://images.pexels.com/photos/316681/pexels-photo-316681.jpeg",
+  },
 ];
 
 const getCtaContent = (data, serviceDetailPageSlug) => {

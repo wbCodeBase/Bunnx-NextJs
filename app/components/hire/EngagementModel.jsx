@@ -49,10 +49,10 @@ const engageMentModelData = [
         engagement: engagement,
     },
     {
-        slug: "best-software-development-company-in-india",
-        h2: "Choose From Our Hiring Models",
+        slug: "software-development-consultants",
+        h2: "Choose From Hiring Models",
         h4: "Collaborate with Top Software Developer Through Engagement Models",
-        p: "Our team will recommend the most appropriate engagement model for your project, taking into account its complexity, vision, and overall product concept.",
+        p: "At our software consultancy company, our team helps businesses grow by building strong customer relationships. We make solutions that are simple yet powerful, using trusted platforms like Salesforce and Microsoft Dynamics to deliver results that matter. Our IT software consulting services cover everything from smart contact management and automating your sales pipeline to giving you detailed reports that track customer interactions effectively.",
         engagement: engagement,
     },
     {
@@ -62,7 +62,22 @@ const engageMentModelData = [
         p: "Our engagement models are designed with one goal in mind: to deliver the right back-end development solution for your brand. We analyze your project’s scope, goals, and timeline to propose a customized collaboration plan.",
         engagement: engagement,
     },
+    {
+        slug: "custom-software-development-services",
+        h2: "Choose From Our Hiring Models",
+        h4: "Collaborate with Top App Developers Through Engagement Models",
+        p: "We offer custom software development with flexible models tailored for any project, maximizing resources, meeting timelines, and achieving your goals.",
+        engagement: engagement,
+    },
+    {
+        slug: "best-software-development-company-in-india",
+        h2: "Choose From Our Hiring Models",
+        h4: "Collaborate with Top Software Developer Through Engagement Models",
+        p: "Our team will recommend the most appropriate engagement model for your project, taking into account its complexity, vision, and overall product concept.",
+        engagement: engagement,
+    },
 ];
+
 
 const getCtaContent = (data, serviceDetailPageSlug) => {
     // First try to find content matching the page slug

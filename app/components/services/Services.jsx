@@ -91,6 +91,11 @@ const OurServicesHeadPara = [
     servicePara: "Need a mobile app that feels effortless to use? A custom platform tailored to your business operations? We’re here to create software that not only works flawlessly but also makes your brand stand out. Let’s build software that doesn’t just meet expectations—it exceeds them. At Bunnx, it’s more than development; it’s about creating something exceptional. Ready to get started?",
     slug: "custom-software-development-services"
   },
+  {
+    serviceTitle: "Our Software Consulting Services",
+    servicePara: "When it comes to optimizing your software ecosystem, we’re here to make sense of the chaos and deliver solutions that work. Here’s how we can help:",
+    slug: "software-development-consultants"
+  },
 ]
 
 
@@ -99,14 +104,55 @@ const keywordToSlug = {
   'front end development services': 'front-end-development-services',
   'front end development company': 'front-end-development-services',
   'software development company in India': 'best-software-development-company-in-india',
+  'custom application development company': 'best-software-development-company-in-india',
+  'best software development companies': 'best-software-development-company-in-india',
   'CRM software development companies': 'crm-software-development-services',
   'CRM development services': 'crm-software-development-services',
   'CRM software development company': 'crm-software-development-services',
-  'CRM development services': 'crm-software-development-services',
+  'CRM development services': 'crm-software-development-services', 
+  'custom software development company': 'custom-software-development-services',
 };
 
 
-const Services = ({ servicesData, serviceDetailPageSlug, extractNameFromSlug }) => {
+const Services = ({ serviceSectionObj, serviceDetailPageSlug, extractNameFromSlug }) => {
+
+  const servicesData = (Array.isArray(serviceSectionObj) && serviceSectionObj.length > 0)
+    ? serviceSectionObj
+    : [
+      {
+        title: "Front-End Development",
+        description:
+          "Take the user level to the next level and develop a flawless website with the top front end development company.",
+        ctaRedirectUrl: {
+          slug: "front-end-development-services",
+        }
+      },
+      {
+        title: "Back-End Development",
+        description:
+          "Redesign the future of your web presence with a flawlessly tuned website, crafted by the wizards of the best back end development.",
+        ctaRedirectUrl: {
+          slug: "back-end-development-services",
+        }
+      },
+      {
+        title: "Full Stack Development",
+        description:
+          "Full Stack Development involves building and managing both front-end and back-end of web applications, ensuring seamless functionality.",
+        ctaRedirectUrl: {
+          slug: "full-stack-development",
+        },
+      },
+      {
+        title: "Software Development",
+        description: "Custom Software Development Services and Solutions to build top-tier intelligent enterprises with speed and agility.",
+        ctaRedirectUrl: {
+          slug: "best-software-development-company-in-india",
+        },
+      },
+
+    ];
+
 
   const servicesHeadParaObj = OurServicesHeadPara?.find((serviceHeadPara) => serviceHeadPara?.slug === serviceDetailPageSlug) || {
     serviceTitle: `Best ${extractNameFromSlug} Services`,
@@ -122,7 +168,7 @@ const Services = ({ servicesData, serviceDetailPageSlug, extractNameFromSlug }) 
           servicesHeadParaObj &&
           <>
             <h4 className='font-semibold text-3xl my-2'>{servicesHeadParaObj.serviceTitle}</h4>
-            <p className='text-md text-gray-800'>{createLinkedContent(servicesHeadParaObj.servicePara, keywordToSlug)}</p>
+            <p className='text-md text-gray-800'>{createLinkedContent(servicesHeadParaObj.servicePara, keywordToSlug, serviceDetailPageSlug)}</p>
           </>
         }
 
@@ -133,7 +179,7 @@ const Services = ({ servicesData, serviceDetailPageSlug, extractNameFromSlug }) 
 
               <h3 className='font-semibold my-3 pb-3 text-gray-800 text-xl border-b border-orange-500'>{service.title}</h3>
 
-              <p className='text-gray-600'>{createLinkedContent(service.description, keywordToSlug)}</p>
+              <p className='text-gray-600'>{createLinkedContent(service.description, keywordToSlug, serviceDetailPageSlug)}</p>
 
 
               {service?.ctaRedirectUrl && service?.ctaRedirectUrl?.slug &&

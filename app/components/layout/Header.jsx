@@ -257,7 +257,7 @@ const servicesData = {
         { name: 'Custom Software Development', slug: 'custom-software-development-services' },
         { name: 'CMS Development', slug: 'cms-development' },
         { name: 'CRM Software Development', slug: 'crm-software-development-services' },
-        { name: 'Software Consulting', slug: 'software-consulting' },
+        { name: 'Software Consulting', slug: 'software-development-consultants' },
         { name: 'IT Consulting', slug: 'it-consulting' },
         { name: 'Agile Consulting', slug: 'agile-consulting' },
         { name: 'Application Maintenance', slug: 'application-maintenance' },
@@ -410,7 +410,7 @@ const servicesData = {
         { name: 'Cloud Application Development', slug: 'cloud-application-development' },
         { name: 'Cloud Strategy & Consulting', slug: 'cloud-strategy-consulting' },
         { name: 'Cloud Migration', slug: 'cloud-migration' },
-        { name: 'Devops Integration', slug: 'devops-integration' },
+        { name: 'Devops & CI/CD Pipelines', slug: 'devops-and-ci-cd-pipelines' },
       ],
       hiring: [
         {

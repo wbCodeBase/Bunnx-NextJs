@@ -5,7 +5,7 @@ import Link from "next/link";
 
 import { createLinkedContent } from '#/utils/LinkBuilder';
 import heroDefault from "/public/heroDefault.png"
-
+import heroBrain from "/public/developmentServices.jpg"
 import { FaLocationArrow } from "react-icons/fa";
 
 // Keep value empty if no redirection is required 
@@ -13,10 +13,22 @@ const keywordToSlug = {
   'top front end development company': 'front-end-development-services',
   'back end development company': 'back-end-development-services',
   'software development company in India': 'best-software-development-company-in-india',
-  'CRM software solutions': '',
+  'software development services': 'best-software-development-company-in-india',
+  'CRM software solutions': 'crm-software-development-services',
+  "custom software development company": 'custom-software-development-services',
 };
 
-const HeroSection = ({ title, description, ctaText, imageUrl, ctaRedirectUrl }) => {
+const HeroSection = ({ heroSectionObj, pageSlug, extractNameFromSlug }) => {
+
+  const heroSectionData = { 
+    title: heroSectionObj?.title || extractNameFromSlug,
+    description: heroSectionObj?.description || "Custom Software Development Services and Solutions to build top-tier intelligent enterprises with speed and agility.",
+    imageUrl: heroBrain,
+    ctaText: heroSectionObj?.ctaText || "Get Connected With us",
+    ctaRedirectUrl: heroSectionObj?.ctaRedirectUrl || "#contact-us",
+  };
+
+  const { title, description, imageUrl, ctaText, ctaRedirectUrl } = heroSectionData;
 
 
   return (
@@ -27,7 +39,7 @@ const HeroSection = ({ title, description, ctaText, imageUrl, ctaRedirectUrl }) 
           <div className="sm:mt12 w-full lg:w-[58%] py-10 px-4 flex justify-center gap-20 flex-col sm:pt-18">
             <div>
               <h1 className="lg:text-5xl text-3xl my-2 font-semibold responsive-heading">{title}</h1>
-              <p className="lg:text-xl text-lg my-6 font-medium">{createLinkedContent(description, keywordToSlug)}</p>
+              <p className="lg:text-xl text-lg my-6 font-medium">{createLinkedContent(description, keywordToSlug, pageSlug)}</p>
 
               <button className="flex items-center justify-center sm:justify-start">
                 <Link href={ctaRedirectUrl || "/"} className='flex items-center justify-center gap-2 bg[#261E80] p-1 pl-3 font-medium text-lg bg-orange-500 rounded-full mt-4 text-white'><span className="px-2"> {ctaText || "Launch Your Project"} </span> <span className='bg-white rounded-full p-3 text-black rotate-45'> <FaLocationArrow /> </span></Link>
