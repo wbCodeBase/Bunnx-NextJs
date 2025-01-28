@@ -19,6 +19,8 @@ const keywordToSlug = {
     "back-end development agency": "back-end-development-services",
     "software development services": "best-software-development-company-in-india",
     "custom software consulting services": "software-development-consultants",
+    "IT consulting services India": "it-consulting-services",
+    "CRM software developers company": "crm-software-development-services",
 };
 
 
@@ -369,56 +371,114 @@ const faqData = {
     ],
 
     "software-development-consultants": [
-    {
-      "id": "csd-1",
-      "question": "How do you make sure about our software security?",
-      "answer": {
-        "type": "text",
-        "content": "We take security seriously. From secure authentication methods like OAuth and JWT to SSL/TLS encryption for data, we ensure your software and data are safe. With our regular security audits, you can keep your system protected from threats."
-      }
-    },
-    {
-      "id": "csd-2",
-      "question": "How do you make software consulting services reliable?",
-      "answer": {
-        "type": "text",
-        "content": "We take a practical approach to software consulting. This is done by analyzing your business and recommendations from our team for the right technologies. Our custom software consulting services keep things simple and easy for your team to manage."
-      }
-    },
-    {
-      "id": "csd-3",
-      "question": "Do you offer support after delivering the solution?",
-      "answer": {
-        "type": "text",
-        "content": "Yes. The work at Bunnx doesn’t stop once the project is delivered. We stick around to help you fix any issues and add new features to your software. Think of it as having a trusted tech partner by your side."
-      }
-    },
-    {
-      "id": "csd-4",
-      "question": "How do you manage software consultancy projects?",
-      "answer": {
-        "type": "text",
-        "content": "We like to keep things transparent and collaborative. Using tools like Trello and Jira, we break down the work into smaller steps, so you know exactly what’s happening and when. This way, you can give feedback at every stage, ensuring we’re always moving in the right direction."
-      }
-    },
-    {
-      "id": "csd-5",
-      "question": "What technologies do you rely on in your software consultancy services?",
-      "answer": {
-        "type": "text",
-        "content": "As we work with a range of technologies, we still prefer Python, Java, Node.js, and PHP for back-end. For databases, we stick to options like MySQL, PostgreSQL, and MongoDB. And when it comes to architecture, we make sure it’s modern and scalable."
-      }
-    },
-    {
-      "id": "csd-6",
-      "question": "Why should you choose us for software consultancy?",
-      "answer": {
-        "type": "text",
-        "content": "Because we genuinely care about solving your challenges, not just delivering a product. We take the time to understand your business, suggest the right solutions, and stick with you for the long haul. It’s not just about building great software—it’s about building trust."
-      }
-    }
-  ]
+        {
+            "id": "csd-1",
+            "question": "How do you make sure about our software security?",
+            "answer": {
+                "type": "text",
+                "content": "We take security seriously. From secure authentication methods like OAuth and JWT to SSL/TLS encryption for data, we ensure your software and data are safe. With our regular security audits, you can keep your system protected from threats."
+            }
+        },
+        {
+            "id": "csd-2",
+            "question": "How do you make software consulting services reliable?",
+            "answer": {
+                "type": "text",
+                "content": "We take a practical approach to software consulting. This is done by analyzing your business and recommendations from our team for the right technologies. Our custom software consulting services keep things simple and easy for your team to manage."
+            }
+        },
+        {
+            "id": "csd-3",
+            "question": "Do you offer support after delivering the solution?",
+            "answer": {
+                "type": "text",
+                "content": "Yes. The work at Bunnx doesn’t stop once the project is delivered. We stick around to help you fix any issues and add new features to your software. Think of it as having a trusted tech partner by your side."
+            }
+        },
+        {
+            "id": "csd-4",
+            "question": "How do you manage software consultancy projects?",
+            "answer": {
+                "type": "text",
+                "content": "We like to keep things transparent and collaborative. Using tools like Trello and Jira, we break down the work into smaller steps, so you know exactly what’s happening and when. This way, you can give feedback at every stage, ensuring we’re always moving in the right direction."
+            }
+        },
+        {
+            "id": "csd-5",
+            "question": "What technologies do you rely on in your software consultancy services?",
+            "answer": {
+                "type": "text",
+                "content": "As we work with a range of technologies, we still prefer Python, Java, Node.js, and PHP for back-end. For databases, we stick to options like MySQL, PostgreSQL, and MongoDB. And when it comes to architecture, we make sure it’s modern and scalable."
+            }
+        },
+        {
+            "id": "csd-6",
+            "question": "Why should you choose us for software consultancy?",
+            "answer": {
+                "type": "text",
+                "content": "Because we genuinely care about solving your challenges, not just delivering a product. We take the time to understand your business, suggest the right solutions, and stick with you for the long haul. It’s not just about building great software—it’s about building trust."
+            }
+        }
+    ],
 
+    "it-consulting-services": [
+        {
+            "id": "1",
+            "question": "What services are included in IT consulting?",
+            "answer": {
+                "type": "text",
+                "content": "IT consulting services India help businesses set up new systems, fix issues in the old apps, or get advice on how to use emerging tech. If you work with the latest technology, your system will remain updated and the business will grow."
+            }
+        },
+        {
+            "id": "2",
+            "question": "How can an IT consulting company help my business?",
+            "answer": {
+                "type": "text",
+                "content": "An IT consulting services India can make your team work smarter. They can maintain the security of your systems. Our agency will also analyze the current IT structure and install new systems."
+            }
+        },
+        {
+            "id": "3",
+            "question": "Why should I go for a custom IT solution instead of buying something off the shelf?",
+            "answer": {
+                "type": "text",
+                "content": "Off-the-shelf software might work for some, but custom IT solutions are built just for you. They’re designed only after looking at how your business works and whether it will be able to adopt advanced tech or not."
+            }
+        },
+        {
+            "id": "4",
+            "question": "What does working with an IT consultant look like?",
+            "answer": {
+                "type": "text",
+                "content": "Our team will reach out to you for a chat on the tech challenges you're facing. Then, together, we will figure out the best way to tackle those challenges. From there, we can set things to keep you updated every step of the way."
+            }
+        },
+        {
+            "id": "5",
+            "question": "Should I invest a lot of my budget for IT consulting services?",
+            "answer": {
+                "type": "text",
+                "content": "The cost depends on what you need and how big or small your project is. Custom-built services might require a bigger investment upfront, but they save you time and reduce the need for constant fixes. If you need just a little assistance, you'll not be required to allocate a higher budget on this."
+            }
+        },
+        {
+            "id": "6",
+            "question": "Can IT consultants help with data security?",
+            "answer": {
+                "type": "text",
+                "content": "Data security is a priority of every IT consultant at Bunnx. They protect your customer information with measures, like encryption and access control. Plus, it keeps your systems compliant with privacy laws. So, you don’t have to worry about your data being exposed."
+            }
+        },
+        {
+            "id": "7",
+            "question": "How do I know when I need IT consulting?",
+            "answer": {
+                "type": "text",
+                "content": "If you're struggling with various tech problems you can’t solve on your own, that’s when you should reach out to an IT consultant. We’re here to help you with technical and make sure everything works like it should."
+            }
+        }
+    ]
 
 };
 

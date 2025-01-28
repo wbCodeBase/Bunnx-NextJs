@@ -50,6 +50,14 @@ const data = [
     buttonText: "Launch Your Project Now!",
     backgroundImage: "https://spirecapital.com/wp-content/uploads/2017/02/CTA-background-get-in-touch.jpg",
   },
+  {
+    slug: "it-consulting-services",
+    tagline: "We Help Lay the Foundation for your Business Success through IT Consulting.",
+    title: "Fix Tech Challenges or Set Up Better Systems with Us!",
+    description: "At Bunnx, we’ll work with you to find the right solutions—like setting up cloud platforms, automating workflows, or making sure your systems can handle busy times.",
+    buttonText: "Launch Your Project Now!",
+    backgroundImage: "https://spirecapital.com/wp-content/uploads/2017/02/CTA-background-get-in-touch.jpg",
+  },
 ];
 
 const getCtaContent = (data, serviceDetailPageSlug) => {

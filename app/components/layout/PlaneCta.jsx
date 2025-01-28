@@ -21,11 +21,11 @@ const PlaneCta = ({ serviceDetailPageSlug }) => {
             slug: "back-end-development-services"
         },
         {
-            span: "Smart Solutions That Evolve with Your Business!",
-            head: "Let us handle complex codes for your website while you scale your business!",
-            para: "Are you fed up with unreliable servers and constant downtime? Say no more! Our software development services experts will design solid architectures to boost your database performance.",
+            span: "Scale Your Success with Adaptive CRM Development!",
+            head: "Get Expert Insights to Build Better CRM Solutions with Us!",
+            para: "Transform your business operations with a CRM software solution that grows alongside your company. We build powerful systems that eliminate workflow bottlenecks and maximize team efficiency.",
             ctaText: "Let's Connect!",
-            slug: "best-software-development-company-in-india"
+            slug: "crm-software-development-services"
         },
         {
             span: "Scale Your Success with Adaptive CRM Development!",
@@ -48,6 +48,13 @@ const PlaneCta = ({ serviceDetailPageSlug }) => {
             ctaText: "Let's Connect!",
             slug: "best-software-development-company-in-india"
         },
+        {
+            span: "Get Results with Smart IT Solutions!",
+            head: "Stay away from outdated systems with the best IT consulting firm!",
+            para: "Use our IT consulting services India to tackle your challenges and simplify complex processes. Let’s turn technology into a tool that helps your business thrive every step of the way.",
+            ctaText: "Let's Connect!",
+            slug: "it-consulting-services"
+        },
         
     ]
 
@@ -61,6 +68,7 @@ const PlaneCta = ({ serviceDetailPageSlug }) => {
     
 const keywordToSlug = {
     'software development services': 'best-software-development-company-in-india',
+    'IT consulting services India': 'it-consulting-services',
 }
 
 

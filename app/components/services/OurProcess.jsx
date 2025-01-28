@@ -398,6 +398,99 @@ const contentBySlug = {
                 ]
             },
             {
+                "id": 3,
+                "title": "Building and Integrating Your CRM",
+                "description": "Once the design is approved, we build a CRM system that works with your existing tools and processes. Whether it’s core functionalities or third-party integrations, we make sure your system is ready for action.",
+                "activities": [
+                    "Implement user authentication systems for controlled access.",
+                    "Develop features such as contact and lead management.",
+                    "Build APIs to share data across platforms.",
+                    "Integrate third-party tools like marketing or analytics software."
+                ],
+                "deliverables": [
+                    "A fully functional software for your business.",
+                    "Integrated tools that work in harmony with your workflows.",
+                    "APIs built to handle your data."
+                ]
+            }
+            ,
+            {
+                "id": 4,
+                "title": "Testing and Refining for Perfection",
+                "description": "Before any software consulting services goes live, it undergoes rigorous testing. Before launch, we make all features work as intended, security measures are in place, and every security protocol is airtight.",
+                "activities": [
+                    "Test each feature and tool integration for accuracy.",
+                    "Verify data accuracy across the system.",
+                    "Conduct security checks for sensitive information.",
+                    "Monitor system speed and responsiveness."
+                ],
+                "deliverables": [
+                    "A thoroughly tested CRM system for use.",
+                    "Test reports to back every feature.",
+                    "A high-performing solution you can count on."
+                ]
+            }
+            ,
+            {
+                "id": 5,
+                "title": "Ongoing Support and Optimization",
+                "description": "A great software evolves alongside your business. We stick around to ensure your CRM remains an asset for years to come. From updates to user training, we help you make the most of your investment.",
+                "activities": [
+                    "Providing regular updates and enhancements.",
+                    "Offering user training and support resources.",
+                    "Deployment of your fully developed CRM system.",
+                    "Monitoring system performance."
+                ],
+                "deliverables": [
+                    "A live CRM system optimized for your business.",
+                    "Dashboards to track performance and system health.",
+                    "Training materials and resources for easy onboarding."
+                ]
+            }
+
+        ]
+    },
+
+    "software-development-consultants": {
+        h2: "Our Process",
+        h4: "Our Process as Software Development Consultants",
+        p: "Our process? To help you not just solve problems but transform how your business operates. Let’s build software that doesn’t just support your goals but drives them forward.",
+        processSections: [
+            {
+                "id": 1,
+                "title": "Analyzing Your Current System",
+                "description": "We thoroughly examine your existing workflows and customer interaction processes. From evaluating sales processes to understanding how data flows through your organization, we check for inefficiencies and missed opportunities. Our team identifies inefficiencies and uncovers opportunities to optimize how your business operates.",
+                "activities": [
+                    "Breaking down your sales process for inefficiencies",
+                    "Organize and structure your data for better usability",
+                    "Map customer journey to identify critical touchpoints",
+                    "Assess how well your current platforms are"
+                ],
+                "deliverables": [
+                    "A step-by-step implementation plan for your solution",
+                    "A detailed requirements document for your business",
+                    "Visual system diagrams for better visualization"
+                ]
+            }
+            ,
+            {
+                "id": 2,
+                "title": "Designing Architecture",
+                "description": "The architecture of your software should enhance your business, not complicate it. We create a robust architecture that scales with your business, improves data organization, and introduces smart automation where it matters most.",
+                "activities": [
+                    "Break development into manageable sprints.",
+                    "Design an intuitive and efficient customer data model.",
+                    "Plan automation for repetitive tasks to save time.",
+                    "Define user roles and access levels."
+                ],
+                "deliverables": [
+                    "Documentation for every planned functionality.",
+                    "A CRM architecture that scales with your business.",
+                    "A clear roadmap for development and execution."
+                ]
+            },
+
+            {
                 id: 3,
                 title: "Making Codes",
                 description: "Once the designs are locked, it’s time to build them. Our professionals use the programming languages. It helps us develop software that not only looks amazing but has real function.",
@@ -445,93 +538,98 @@ const contentBySlug = {
         ]
     },
 
-    "software-development-consultants": {
+    "it-consulting-services": {
         h2: "Our Process",
-        h4: "Our Process for Custom Software Development",
-        p: "Our custom software development company follows a structured process while following this to give you a functional product. Here’s our approach:",
+        h4: "Our Process for IT Consulting",
+        p: "With expertly crafted IT consulting services from Bunnx, a top-tier consulting company, you can completely transform how your business operates. Here’s our strategy.",
         processSections: [
             {
-                id: 1,
-                title: "Know Your Software Needs",
-                description: "What problem are we solving? Who will use it? What’s your long term goal with the software? These questions drive discussions to shape a technical path forward.",
+                "id": 1,
+                "title": "Know Your Target Set",
+                "description": "We begin our process by getting insights of your workflows and customer management approach. It helps us understand the current IT system you are using for various processes and to improve connection with customers.",
                 "activities": [
-                    "Host collaborative sessions.",
-                    "Map out your  success metrics.",
-                    "Manage document workflows.",
-                    "Sketch user scenarios.",
+                    "Sales funnel in-depth analysis.",
+                    "Mapping out customer journeys.",
+                    "Creating data flow diagrams."
                 ],
                 "deliverables": [
-                    "A crystal-clear roadmap.",
-                    "A deep understanding of the project scope",
-                    "Defined milestones and outcomes."
+                    "Technical documentation.",
+                    "Clear document outlining for system.",
+                    "Technology stack defining.",
+                    "Proper implementation strategy."
                 ]
             },
             {
-                id: 2,
-                title: "Designing With Purpose",
-                description: "Good softwares is more than being helpful to your customers as they also make it enjoyable during usage. We understand this and bring a lot of ideas to life through thoughtful design.",
+                "id": 2,
+                "title": "Building the Framework",
+                "description": "We don’t just build a system; our team rather creates a well-thought-out structure that organizes your data and adds automation where it matters.",
                 "activities": [
-                    "Outline app structure with wireframes.",
-                    "Focus on layout in mockups.",
-                    "Build prototypes for pre-launch testing.",
-                    "Experience app with clickable prototypes."
+                    "Design a structured hierarchy.",
+                    "Automate data schema.",
+                    "Improve task automation.",
+                    "Organize customer data."
                 ],
                 "deliverables": [
-                    "A blueprint of your software.",
-                    "A design that balances form.",
-                    "Feedback-driven prototypes."
+                    "Structured blueprint with data models.",
+                    "Timeline for development.",
+                    "Document on technical specifications."
                 ]
             },
             {
-                id: 3,
-                title: "Making Codes",
-                description: "Once the designs are locked, it’s time to build them. Our professionals use the programming languages. It helps us develop software that not only looks amazing but has real function.",
+                "id": 3,
+                "title": "Development and Integration",
+                "description": "This is where the experts of Bunnx create software that’s not difficult to use and still connects with the tools you already use.",
                 "activities": [
-                    "Code the front end.",
-                    "Build a back end to maintain large data.",
-                    "Test module to catch issues.",
+                    "Build the software features.",
+                    "Add secure login.",
+                    "Create APIs for tasks.",
+                    "Integrate external services."
                 ],
                 "deliverables": [
-                    "A working product with core features.",
-                    "Infrastructure ready to handle real-world use. ",
-                    "Updates on development progress."
+                    "A fully functional system.",
+                    "Tools and systems sync.",
+                    "Modern architecture for upgrades."
                 ]
             },
             {
-                id: 4,
-                title: "Testing, Refining & Perfecting",
-                description: "No software is perfect but we can achieve it. That’s why we rigorously test it—breaking it down, pushing it to its limits.",
+                "id": 4,
+                "title": "Testing for Performance",
+                "description": "No system goes live without passing our testing services. We check every function of your app, verify data accuracy and test how the system handles its usage.",
                 "activities": [
-                    "Perform functional tests to make every feature work as intended.",
-                    "Test performance under real-world conditions to check speed.",
-                    "Refine the app based on user feedback from beta testing.",
+                    "Proper case validation.",
+                    "Data handling to prevent errors.",
+                    "Conduct tests for encryption.",
+                    "System speed and performance under load."
                 ],
                 "deliverables": [
-                    "Bug-free, production-ready software.",
-                    "Performance reports and testing insights.",
-                    "Final adjustments to fine-tune the experience."
+                    "Reports documenting test results.",
+                    "A system handling your daily operations.",
+                    "Insights on performance.",
+                    "Define future improvements."
                 ]
             },
             {
                 "id": 5,
-                "title": "Launch and Beyond",
-                "description": "The big moment has arrived. We don’t just hand over your software and disappear—we deploy it, monitor it, and stand by your side.",
+                "title": "Deployment and Ongoing Support",
+                "description": "When the software is ready, we deploy it and stay by your side to help you adapt. From updates to training, our experts make sure everything works as it should.",
                 "activities": [
-                    "Launch the software.",
-                    "Check performance metrics.",
-                    "Updates, upgrades, or new features."
+                    "Deploy the system on cloud.",
+                    "Provide updates.",
+                    "Configure dashboards.",
+                    "Train your team on IT services."
                 ],
                 "deliverables": [
-                    "A successful launch.",
-                    "Insights into software.",
-                    "Support for software future-proof."
+                    "Live system for your team.",
+                    "Real-time tracking.",
+                    "Performance dashboards.",
+                    "Easy-to-follow training guides."
                 ]
             }
         ]
     },
 
 };
- 
+
 
 export default function ProcessShowcase({ serviceDetailPageSlug }) {
     const content = contentBySlug[serviceDetailPageSlug] || contentBySlug["best-software-development-company-in-india"]; // Fallback to a default slug
@@ -578,7 +676,7 @@ export default function ProcessShowcase({ serviceDetailPageSlug }) {
 
                     {/* Desktop View */}
                     <LayoutGroup>
-                        <div className="hidden lg:flex gap-4 h-[400px]">
+                        <div className="hidden lg:flex gap-4 h-[400px] hauto">
                             {processSections.map((section) => (
                                 <motion.div
                                     layout
@@ -651,12 +749,12 @@ export default function ProcessShowcase({ serviceDetailPageSlug }) {
                                                     transition={{ duration: 0.3 }}
                                                     className="space-y-6"
                                                 >
-                                                    <p className="text-gray-300 max-w-2xl">{createLinkedContent(section.description, keywordToSlug, serviceDetailPageSlug)}</p>
+                                                    <p className="text-gray-300 textsm max-w-2xl">{createLinkedContent(section.description, keywordToSlug, serviceDetailPageSlug)}</p>
 
                                                     <div className="grid md:grid-cols-2 gap-5">
                                                         <div>
                                                             <h3 className="text-xl font-semibold mb-4">Task Involved</h3>
-                                                            <ul className="list-disc list-inside space-y-2 text-gray-300">
+                                                            <ul className="list-disc list-inside space-y-2 textsm text-gray-300">
                                                                 {section.activities.map((activity, index) => (
                                                                     <li key={index}>{activity}</li>
                                                                 ))}
@@ -665,7 +763,7 @@ export default function ProcessShowcase({ serviceDetailPageSlug }) {
 
                                                         <div>
                                                             <h3 className="text-xl font-semibold mb-4">Outputs</h3>
-                                                            <ul className="list-disc list-inside space-y-2 text-gray-300">
+                                                            <ul className="list-disc list-inside space-y-2 textsm text-gray-300">
                                                                 {section.deliverables.map((deliverable, index) => (
                                                                     <li key={index}>{deliverable}</li>
                                                                 ))}

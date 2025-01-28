@@ -76,6 +76,13 @@ const engageMentModelData = [
         p: "Our team will recommend the most appropriate engagement model for your project, taking into account its complexity, vision, and overall product concept.",
         engagement: engagement,
     },
+    {
+        slug: "it-consulting-services",
+        h2: "Choose From Our Hiring Models",
+        h4: "Collaborate with Top CRM Software Developers Through Engagement Models",
+        p: "Our engagement models are based on the size of the project and timeline. After you've chosen a plan that works for you, we'll help with a single project or provide ongoing support. Our team believes that the client should be on the same page with us to make a real difference.",
+        engagement: engagement,
+    },
 ];
 
 

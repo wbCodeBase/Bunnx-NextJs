@@ -79,7 +79,8 @@ export default function ServiceDetailsComp() {
 
 
   if (!isLoading && activeSlugData) {
-    const isSlugActive = activeSlugData.some((item) => `/${item.slug}` === pathname);
+    const isSlugActive = activeSlugData?.some((item) => `/${item?.slug}` === pathname);
+    console.log("isSlugActive", activeSlugData);
 
     // Redirect to 404 if no matching slug is found
     if (!isSlugActive) {

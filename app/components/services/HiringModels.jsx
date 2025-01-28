@@ -26,9 +26,16 @@ const serviceData = {
               "Our front-end development team is a highly skilled, autonomous unit composed of diverse roles, including UI/UX designers, front-end engineers, and component developers. Each role is made to deliver sleek, modern, and responsive web interfaces. Project management is collaboratively handled by a Scrum Master and the client’s product owner.",
           },
           {
-            type: 'list',
-            content:
-              'Agile processes,Clear and competitive pricing,Simplified payment structures,Scalable solutions,Modern front-end technologies,Suitable for startups,Flexible engagement models',
+            "type": "list",
+            "content": [
+              "Agile processes",
+              "Clear and competitive pricing",
+              "Simplified payment structures",
+              "Scalable solutions",
+              "Modern front-end technologies",
+              "Suitable for startups",
+              "Flexible engagement models"
+            ]
           },
         ],
       },
@@ -43,10 +50,15 @@ const serviceData = {
               "Suitable for projects of any scale, our team augmentation model integrates specialized front-end developers into your existing team to bridge UI development gaps. Augmented experts collaborate as an extension of your local or distributed team, participating in daily stand-ups and reporting directly to your project leads.",
           },
           {
-            type: 'list',
-            content:
-              'Scalable On-Demand Expertise,Rapid Deployment & Cost Optimization,Monthly Billing,Eliminate Recruitment Overhead,Transparent and Predictable Cost Structures',
-          },
+            "type": "list",
+            "content": [
+              "Scalable On-Demand Expertise",
+              "Rapid Deployment & Cost Optimization",
+              "Monthly Billing",
+              "Eliminate Recruitment Overhead",
+              "Transparent and Predictable Cost Structures"
+            ]
+          }
         ],
       },
       {
@@ -68,6 +80,7 @@ const serviceData = {
       },
     ],
   },
+
   'back-end-development-services': {
     title: 'Choose From Back End Development Service Models',
     description:
@@ -84,9 +97,16 @@ const serviceData = {
               "A team from the top back end development company is the ideal solution for projects that require long-term collaboration. With this model, you get a fully dedicated group of back-end developers who work exclusively on your project. This team integrates with your internal processes, and maintains high-quality standards throughout the development lifecycle.",
           },
           {
-            type: 'list',
-            content:
-              'Full-time, dedicated back-end developers,Integration with your existing team and workflows.,Scalable team size,Complete ownership of project deadlines.,Long-term collaboration,Specialized expertise in back-end technologies,Flexibility to adapt and adjust team composition',
+            "type": "list",
+            "content": [
+              "Full-time, dedicated back-end developers.",
+              "Integration with your existing team and workflows.",
+              "Scalable team size.",
+              "Complete ownership of project deadlines.",
+              "Long-term collaboration.",
+              "Specialized expertise in back-end technologies.",
+              "Flexibility to adapt and adjust team composition."
+            ]
           },
         ],
       },
@@ -101,9 +121,14 @@ const serviceData = {
               "Back-end team augmentation is a flexible solution that allows you to extend your existing team with additional specialized resources. This model is perfect when you need extra expertise for specific tasks or to scale up quickly during critical project phases. By adding expert back-end developers to your team, you can accelerate development.",
           },
           {
-            type: 'list',
-            content:
-              'Ideal for scaling up development resources during peak project phases.,Temporary or long-term support.,Cost-effective solution for handling surges in work without hiring full-time staff.,Reduces the overhead of recruitment.,Facilitates knowledge transfer and skill development.',
+            "type": "list",
+            "content": [
+              "Ideal for scaling up development resources during peak project phases.",
+              "Temporary or long-term support.",
+              "Cost-effective solution for handling surges in work without hiring full-time staff.",
+              "Reduces the overhead of recruitment.",
+              "Facilitates knowledge transfer and skill development."
+            ]
           },
         ],
       },
@@ -115,17 +140,18 @@ const serviceData = {
           {
             type: 'para',
             content:
-              "Fixed Price Model: It is perfect for back-end projects with well-defined requirements, specifications, and deliverables. This approach works best when the scope is clear. Ideal for small- to medium-scale back-end development, this model makes sure that both you and the development team are aligned on objectives.",
+              "Fixed Price Model:\nIt is perfect for back-end projects with well-defined requirements, specifications, and deliverables. This approach works best when the scope is clear. Ideal for small- to medium-scale back-end development, this model makes sure that both you and the development team are aligned on objectives.",
           },
           {
             type: 'para',
             content:
-              "Time & Material Model: It is designed for back-end projects with dynamic requirements and evolving scopes. This model allows for flexible engagement, where developers work based on hourly or resource-based billing. It’s perfect for projects with uncertain or rapidly changing requirements, such as complex UI/UX needs.",
+              "Time & Material Model:\nIt is designed for back-end projects with dynamic requirements and evolving scopes. This model allows for flexible engagement, where developers work based on hourly or resource-based billing. It’s perfect for projects with uncertain or rapidly changing requirements, such as complex UI/UX needs.",
           },
         ],
       },
     ],
   },
+
   'best-software-development-company-in-india': {
     title: 'Custom Engagement Models for Software Development Services',
     description:
@@ -142,9 +168,15 @@ const serviceData = {
               "Our team is a group of experts working towards your project. It consists of software developers, designers, and engineers who work together to deliver high-quality results. They are responsible for modern interfaces and backend functionality. Project management is a shared effort between our Scrum Master and your team’s product owner.",
           },
           {
-            type: 'list',
-            content:
-              'Simple processes and fast delivery.,Latest approaches for your future growth.,Experts working with modern technologies.,Engagement models for all types of clients.,Affordable pricing options.,Model made for startups or growing businesses.',
+            "type": "list",
+            "content": [
+              "Simple processes and fast delivery.",
+              "Latest approaches for your future growth.",
+              "Experts working with modern technologies.",
+              "Engagement models for all types of clients.",
+              "Affordable pricing options.",
+              "Model made for startups or growing businesses."
+            ]
           },
         ],
       },
@@ -159,9 +191,13 @@ const serviceData = {
               "If you already have a team but need extra help, our augmentation model is perfect. We’ll add skilled developers to your existing team to fill in any gaps. These experts will work as an extension of your team, joining your daily meetings and reporting directly to your leads.",
           },
           {
-            type: 'list',
-            content:
-              'Access to skilled developers.,Quick deployment and cost savings.,Monthly billing with no recruitment hassle.,Predictable and transparent costs.',
+            "type": "list",
+            "content": [
+              "Access to skilled developers.",
+              "Quick deployment and cost savings.",
+              "Monthly billing with no recruitment hassle.",
+              "Predictable and transparent costs."
+            ]
           },
         ],
       },
@@ -181,9 +217,13 @@ const serviceData = {
               "For projects with evolving requirements, we offer a time-and-materials model. This allows you to pay based on the hours worked or the resources used.",
           },
           {
-            type: 'list',
-            content:
-              "Fixed-price model for any project.,Hourly or resource-based billing.,Clear documentation and regular updates.,Suitable for small to medium-sized projects.",
+            "type": "list",
+            "content": [
+              "Fixed-price model for any project.",
+              "Hourly or resource-based billing.",
+              "Clear documentation and regular updates.",
+              "Suitable for small to medium-sized projects."
+            ]
           },
         ],
       },
@@ -206,9 +246,14 @@ const serviceData = {
               "For projects that demand consistent collaboration and deep involvement, a dedicated CRM software team is your best choice. Often referred to as product interface teams, our experts of such teams make refining strategies. With this model, you get a fully dedicated group of CRM software developers who work exclusively on your project. This team integrates with your internal processes, and maintains high-quality standards throughout the development lifecycle.",
           },
           {
-            type: 'list',
-            content:
-              'Integration with your existing team and workflows Full-time., Dedicated CRM software developers & Scalable team size.,Complete ownership of project deadlines.,Long-term collaboration & Specialized expertise in back-end technologies. ,Adapt and adjust team composition',
+            "type": "list",
+            "content": [
+              "Integration with your existing team and workflows Full-time.",
+              "Dedicated CRM software developers & Scalable team size.",
+              "Complete ownership of project deadlines.",
+              "Long-term collaboration & Specialized expertise in back-end technologies.",
+              "Adapt and adjust team composition."
+            ]
           },
         ],
       },
@@ -223,9 +268,14 @@ const serviceData = {
               "CRM software developer team augmentation is a solution that allows you to extend your existing team with additional specialized resources. This model has been made for the companies that need extra expertise for their specific tasks or to scale up quickly during critical project phases. By adding expert CRM software developers to their team, they can accelerate development.",
           },
           {
-            type: 'list',
-            content:
-              'Made to scale up development resources during peak project phases,Temporary or long-term support,Cost-effective solution for handling surges in work without hiring full-time staff,Reduces the overhead of recruitment,Facilitates knowledge transfer and skill development'
+            "type": "list",
+            "content": [
+              "Made to scale up development resources during peak project phases.",
+              "Temporary or long-term support.",
+              "Cost-effective solution for handling surges in work without hiring full-time staff.",
+              "Reduces the overhead of recruitment.",
+              "Facilitates knowledge transfer and skill development."
+            ]
           },
         ],
       },
@@ -237,12 +287,12 @@ const serviceData = {
           {
             type: 'para',
             content:
-              "Fixed Price Model: It is perfect for back-end projects with well-defined requirements, specifications, and deliverables. This approach works best when the scope is clear. Ideal for small- to medium-scale back-end development, this model makes sure that both you and the development team are aligned on objectives.",
+              "Fixed Price Model:\nIt is perfect for back-end projects with well-defined requirements, specifications, and deliverables. This approach works best when the scope is clear. Ideal for small- to medium-scale back-end development, this model makes sure that both you and the development team are aligned on objectives.",
           },
           {
             type: 'para',
             content:
-              "Time & Material Model: It is designed for back-end projects with dynamic requirements and evolving scopes. This model allows for flexible engagement, where developers work based on hourly or resource-based billing. It’s perfect for projects with uncertain or rapidly changing requirements, such as complex UI/UX needs.",
+              "Time & Material Model:\nIt is designed for back-end projects with dynamic requirements and evolving scopes. This model allows for flexible engagement, where developers work based on hourly or resource-based billing. It’s perfect for projects with uncertain or rapidly changing requirements, such as complex UI/UX needs.",
           }
         ],
       },
@@ -265,9 +315,14 @@ const serviceData = {
               "If you have a project that demands a lot of focus and deep collaboration, this model is for you. Why? That's because it gives you a talented group of developers who work only for your project.",
           },
           {
-            type: 'list',
-            content:
-              'Full-time experts who work with your team all the time.,A team size that matches your needs.,Get ownership of deadlines with a strong focus on quality.,Expert problem-solving from professionals specializing in custom software.,Perfect for businesses looking to build long-term services.',
+            "type": "list",
+            "content": [
+              "Full-time experts who work with your team all the time.",
+              "A team size that matches your needs.",
+              "Get ownership of deadlines with a strong focus on quality.",
+              "Expert problem-solving from professionals specializing in custom software.",
+              "Perfect for businesses looking to build long-term services."
+            ]
           },
         ],
       },
@@ -282,9 +337,13 @@ const serviceData = {
               "If you need extra hands on deck without the overhead of permanent hires, our team augmentation model is for you. It fills the skill gap or scales your team.",
           },
           {
-            type: 'list',
-            content:
-              'Collaborate with experienced developers and add them to your existing team.,Made for short-term boosts or extended support.,Save time and money by not recruiting and training.,Bring in fresh perspectives and experienced individuals.'
+            "type": "list",
+            "content": [
+              "Collaborate with experienced developers and add them to your existing team.",
+              "Made for short-term boosts or extended support.",
+              "Save time and money by not recruiting and training.",
+              "Bring in fresh perspectives and experienced individuals."
+            ]
           },
         ],
       },
@@ -301,12 +360,12 @@ const serviceData = {
           {
             type: 'para',
             content:
-              "Fixed Price Model: It's perfect for projects with well-defined goals and timelines. Get everything delivered on time and within budget with no surprises.",
+              "Fixed Price Model:\nIt's perfect for projects with well-defined goals and timelines. Get everything delivered on time and within budget with no surprises.",
           },
           {
             type: 'para',
             content:
-              "Time & Material Model: Best for projects where requirements may evolve. Pay as you go with hourly billing, giving you the flexibility to adapt as needed.",
+              "Time & Material Model:\nBest for projects where requirements may evolve. Pay as you go with hourly billing, giving you the flexibility to adapt as needed.",
           }
         ],
       },
@@ -329,9 +388,13 @@ const serviceData = {
               "For projects that need continuous collaboration and in-depth involvement, our team becomes an extension of your own. These product-focused teams dive deep into refining strategies, integrating with your internal processes. When you choose this model, you’re not just getting a group of developers—you’re getting a full-time, dedicated team that’s committed to the success of your project from start to finish. The team focuses on your project and maintains quality at every step.",
           },
           {
-            type: 'list',
-            content:
-              "A team that can adjust when any situation is thrown.,Full-time developers on your team and for your project.,Long-term focus and project ownership."},
+            "type": "list",
+            "content": [
+              "A team that can adjust when any situation is thrown.",
+              "Full-time developers on your team and for your project.",
+              "Long-term focus and project ownership."
+            ]
+          },
         ],
       },
       {
@@ -345,10 +408,14 @@ const serviceData = {
               "Sometimes, you just need an extra set of hands. Our back-end team augmentation service helps you add specialized expertise when you need it most. Whether it’s a short-term project or a longer-term phase, we’ll give you the support you need to push things forward. It’s a smart way to scale without the hassle of recruitment.",
           },
           {
-            type: 'list',
-            content:
-              'Add developers to your team for a specific task or peak phase,Quick support without the need for full-time hiring,Boost your team’s capacity and skills as needed,'
-          },
+            "type": "list",
+            "content": [
+              "Add developers to your team for a specific task or peak phase.",
+              "Quick support without the need for full-time hiring.",
+              "Boost your team’s capacity and skills as needed."
+            ]
+          }
+          ,
         ],
       },
       {
@@ -363,16 +430,84 @@ const serviceData = {
           },
           {
             type: 'para',
-            content: "Fixed Price Model: For smaller or mid-sized back-end projects, our fixed-price model is perfect if you have a clear scope and well-defined requirements. You know what you need, and we get it done, ensuring both sides are aligned on the outcome. For projects with more fluid requirements, the time & material model gives you the ability to adapt and adjust as things evolve.",
+            content: "Fixed Price Model:\nFor smaller or mid-sized back-end projects, our fixed-price model is perfect if you have a clear scope and well-defined requirements. You know what you need, and we get it done, ensuring both sides are aligned on the outcome. For projects with more fluid requirements, the time & material model gives you the ability to adapt and adjust as things evolve.",
           },
           {
             type: 'para',
             content:
-              "Time & Material Model: With our software consultants, your customer relationships are about to get a whole lot better. We bring custom software consulting services, from optimizing your database to making sure everything works smoothly when it’s deployed.",
+              "Time & Material Model:\nWith our software consultants, your customer relationships are about to get a whole lot better. We bring custom software consulting services, from optimizing your database to making sure everything works smoothly when it’s deployed.",
           }
         ],
       },
     ],
+  },
+
+  'it-consulting-services': {
+    title: 'Choose From Our IT Consulting Service Models',
+    description:
+      "Each project comes with its own set of challenges—whether it’s working with advanced tools, managing large datasets, or tackling specific tasks. That’s where our engagement models come in. If you need a single expert for a short-term task or a full team for ongoing development, we’ve got you covered.",
+    "models": [
+      {
+        "title": "Dedicated Consultancy Team",
+        "icon": lightdotnetmodalicon,
+        "subtitle": "(also known as Industry Experts)",
+        "sections": [
+          {
+            "type": "para",
+            "content": "Do you need close collaboration and full-time focus? Choose Bunnx's dedicated IT consulting team. Think of it as having a team that’s part of your company but focused entirely on your project. They’ll work alongside your internal processes, handle deadlines, and bring in expertise to help refine your strategies. It’s a great fit for projects where long-term involvement is key."
+          },
+          {
+            "type": "list",
+            "content": [
+              "Full-time CRM software developers.",
+              "Works closely with your existing workflows.",
+              "Team size can be adjusted as needed.",
+              "Long-term collaboration with complete focus on your project."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Back End Team Augmentation",
+        "icon": teamAug,
+        "subtitle": "(also known as team extension or staff augmentation)",
+        "sections": [
+          {
+            "type": "para",
+            "content": "Need a little extra help for your team? Back-end team augmentation is like adding specialists to your workforce without the hassle of hiring full-time staff. For a short-term spike in work or a long-term task, we’ll help you fill the gaps with skilled developers who can hit the ground running."
+          },
+          {
+            "type": "list",
+            "content": [
+              "Add extra resources when workload increases.",
+              "Temporary or long-term support based on your needs.",
+              "Cuts down recruitment time and costs.",
+              "Boosts your team’s skills and speeds up development."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Project Based Model",
+        "icon": ProjectBased,
+        "subtitle": "(best suited for small-mid scale projects)",
+        "sections": [
+          {
+            "type": "para",
+            "content": "For smaller or mid-sized projects, a project-based model might be the best fit."
+          },
+          {
+            type: 'para',
+            content: "Fixed Price Model:\nPerfect when you know exactly what you want. We agree on the requirements, timeline, and costs upfront, so we’re both on the same page from day one. Great for projects with clear goals.",
+          },
+          {
+            type: 'para',
+            content: "Time & Material Model:\nIf your project needs a flexible solution, this is the way to go. If the requirements are changing or you’re figuring things out as you go, this model lets you pay based on hours worked or resources used."
+          }
+
+        ]
+      }
+    ]
   },
 
 };
@@ -455,7 +590,7 @@ export default function HiringModels({ serviceDetailPageSlug }) {
                         </p>
                       ) : (
                         <ul className="space-y-3">
-                          {section.content.split(',').map((item, i) => (
+                          {section.content.map((item, i) => (
                             <li key={i} className="flex items-start gap-2">
                               <span className="mt-1.5 flex-shrink-0">
                                 <svg

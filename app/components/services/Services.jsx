@@ -96,6 +96,11 @@ const OurServicesHeadPara = [
     servicePara: "When it comes to optimizing your software ecosystem, we’re here to make sense of the chaos and deliver solutions that work. Here’s how we can help:",
     slug: "software-development-consultants"
   },
+  {
+    serviceTitle: "Best IT Consulting Services",
+    servicePara: "If you’re upgrading old systems or starting fresh with something new, we focus on creating new technologies. Let’s redefine what your IT systems can do for you.  Our team creates solutions that help you make better decisions backed by data.",
+    slug: "it-consulting-services"
+  },
 ]
 
 
@@ -111,6 +116,7 @@ const keywordToSlug = {
   'CRM software development company': 'crm-software-development-services',
   'CRM development services': 'crm-software-development-services', 
   'custom software development company': 'custom-software-development-services',
+  'best IT consulting services in India': 'it-consulting-services',
 };
 
 

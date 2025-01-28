@@ -75,6 +75,16 @@ const data = [
     imageSrc: softwareDev,
     altText: "Software Development",
   },
+  {
+    slug: "it-consulting-services",
+    title: "Experienced IT Consulting Specialists",
+    description1: "We help businesses figure out how to use technology to make things easier. If you’re looking to move your systems to the cloud, fix clunky workflows, or get better insights from your data, we’ve got you covered.",
+    description2: "We stick to tools like AWS, Azure, and Google Cloud—because they work well and get the job done. Whether it’s setting up smoother processes or organizing your data in a way that actually makes sense, we’re here to make tech feel less complicated.",
+    buttonText: "Get Started! ",
+    link: "#contact-us",
+    imageSrc: softwareDev,
+    altText: "Software Development",
+  },
 
 
 ];

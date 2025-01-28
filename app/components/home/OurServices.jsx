@@ -28,7 +28,7 @@ const techStackData = {
                 { "name": "CRM Software Development", "description": "Transform ideas into powerful apps", "slug": "crm-software-development-services" },
                 { "name": "Software Consulting", "description": "Expert advice on tech", "slug": "software-development-consultants" },
 
-                { "name": "IT Consulting", "description": "Software Outsourcing", "slug": "it-consulting" },
+                { "name": "IT Consulting", "description": "Software Outsourcing", "slug": "it-consulting-services" },
                 { "name": "Agile Consulting", "description": "Optimizing customer relations", "slug": "agile-consulting" },
             ],
             linkViewMore: "best-software-development-company-in-india"

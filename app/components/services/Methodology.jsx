@@ -21,6 +21,7 @@ const keywordToSlug = {
     'front end development': 'front-end-development-services',
     'software development services': 'best-software-development-company-in-india',
     'custom software development company': 'custom-software-development-services',
+    'best IT consulting services in India': 'it-consulting-services',
 };
 
 
@@ -201,6 +202,41 @@ const contentBySlug = {
                 "title": "Walking You Through the Process",
                 "description": "We don't just hand over a plan and leave you to it. The team will guide you through each step, working closely with your team to implement the solutions we've discussed. It's a collaborative effort to make sure everything fits into your operations.",
                 "icon": RealTime
+            }
+        ]
+
+    },
+
+
+    "it-consulting-services": {
+        h2: "Methodology",
+        h4: "Get Smarter Applications with Effective IT Consulting Solutions",
+        p: "Bring balance to your tech ecosystem with our experts. We have built methodologies to connect dots of your business ideas and give you the real advantage.",
+        "steps": [
+            {
+                "title": "Back-End Systems",
+                "description": "At Bunnx, the best IT consulting services in India, we create systems that keep users and devices connected. We use technologies like WebSockets for live communication, Kafka for managing high-volume data, and RabbitMQ for efficient message queuing. Our experts also make instant data synchronization across your platforms.",
+                "icon": FeaturesValidation
+            },
+              {
+                "title": "Modular System Integration",
+                "description": "We build pipelines for data and system integration frameworks like Django ORM and Hibernate to simplify the management of relational data. Our expertise extends to APIs that connect your core systems with external platforms, such as ERP, analytics tools, or marketing automation software.",
+                "icon": Agile
+            },
+              {
+                "title": "Advanced Data Management Systems",
+                "description": "Handling structured and unstructured data is at the core of what we do. If it’s setting up databases using PostgreSQL, MySQL or NoSQL for datasets, we design architectures that make data retrieval and management.",
+                "icon": Coding
+            },
+              {
+                "title": "Cloud-Native Solutions",
+                "description": "Our team uses cloud platforms like AWS and EC2 for application deployment, S3 for storage, and RDS. For businesses requiring global reach, we also implement Azure Cosmos DB for distributed, low-latency database solutions.",
+                "icon": RealTime
+            },
+              {
+                "title": "Event-Driven Architectures",
+                "description": "If you are building IT systems, you can rely on proven technologies like WebSockets for instant updates and Apache Kafka for task automation. This strategy makes sure that your systems are not just reactive but proactive.",
+                "icon": Rapid
             }
         ]
 

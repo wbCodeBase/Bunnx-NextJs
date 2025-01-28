@@ -14,6 +14,7 @@ const keywordToSlug = {
   'back end development company': 'back-end-development-services',
   'software development companies in India': 'best-software-development-company-in-india',
   'custom software development company': 'custom-software-development-services',
+  'IT consulting services India': 'it-consulting-services',
 };
 
 const guideContent = {
@@ -1169,6 +1170,179 @@ const guideContent = {
             {
               "title": "Prototyping and Feedback",
               "detail": "This will make the end product while reducing the risk of costly mistakes. Before diving deep into full-scale development, our team builds prototypes and gathers feedback."
+            }
+          ]
+        }
+      }
+
+    ]
+  },
+
+
+  "it-consulting-services": {
+    "title": "User Guide to IT consulting",
+    "description": "In this guide, we’ll walk you through what IT consulting is all about and how it can support your business. For businesses looking to boost their current systems or starting fresh, we’ve got you covered. We’ll talk about how IT solutions can help streamline your processes, support your growth, and make your operations smoother.",
+    "sections": [
+
+      {
+        "id": "0",
+        "title": "What is IT Consulting Services?",
+        "content": {
+          "heading": "Introduction and Importance of IT consulting Services",
+          "description": [
+            "At the heart of any modern business is technology, and making sure it works well is what IT consulting is all about. Whether it’s fine-tuning your existing systems or building new ones, we help businesses get the most out of their tech. A lot of the time, IT consultants come in to help with the behind-the-scenes work, like ensuring smooth data flow, improving your team’s efficiency, or solving specific tech challenges."
+          ],
+          image: {
+            src: guideIntroDefault,
+            alt: 'Software development consultancy img on a laptop screen',
+          },
+        }
+      },
+
+      {
+        "id": "1",
+        "title": "Types of IT Consulting Services",
+        "content": {
+          "heading": "Types of IT Consulting Services",
+          "description": [
+            "An IT consulting services India steps in to improve the way businesses use their technology. Here’s a look at the main services we provide:"
+          ],
+          "list": [
+            {
+              "title": "Custom Software Solutions",
+              "detail": "If you have specific needs that off-the-shelf tools just can’t meet, we create custom software solutions tailored for your business. Whether it's a special customer management tool or an internal process system, we build it from the ground up to fit perfectly into your operations."
+            },
+            {
+              "title": "Cloud Solutions and Support",
+              "detail": "We help you move to the cloud and take advantage of platforms like AWS, Google Cloud, and Azure. This makes only authenticated access to your software and scales things up or down as needed. So, you'll not need maintenance of physical servers."
+            },
+            {
+              "title": "Tech Support and Troubleshooting",
+              "detail": "Problems happen—whether it’s a glitch, bug, or something not working as it should. We’re here to help with ongoing support, diagnosing and fixing issues quickly so you can stay focused on your business goals."
+            },
+            {
+              "title": "Data Management and Analysis",
+              "detail": "We take your data seriously. With our expertise, we help organize and optimize how your business collects, stores, and accesses data. We make sure you can pull the insights you need to make informed decisions and drive your business forward."
+            },
+            {
+              "title": "System Integration",
+              "detail": "Having different systems that don’t talk to each other can create a lot of headaches. We help businesses connect their various software tools so they work together seamlessly. This improves productivity, reduces errors, and keeps your operations running smoothly."
+            },
+            {
+              "title": "Cybersecurity and Privacy",
+              "detail": "In today’s world, protecting your data and your customers’ information is more important than ever. We work with you to set up strong security measures, protecting against cyber threats and making sure you comply with privacy laws."
+            }
+          ]
+        }
+      },
+      {
+        "id": "2",
+        "title": "Why Choose Custom IT Consulting?",
+        "content": {
+          "heading": "Why Choose Custom IT Consulting?",
+          "description": [
+            "When you choose IT consulting services India, you get something that’s made just for your business. Unlike off-the-shelf products that require you to change how you work, custom systems are designed around your needs. Here’s why it’s worth considering:"
+          ],
+          "list": [
+            {
+              "title": "It’s Built for You",
+              "detail": "A custom solution fits perfectly into your workflow, making things more efficient and easier to use."
+            },
+            {
+              "title": "Room to Grow",
+              "detail": "As your business grows, your custom system can grow with you. Need more features or storage? We can add them without a major overhaul."
+            },
+            {
+              "title": "Better Security",
+              "detail": "You have full control over your data and how it’s protected, so you can make sure it’s safe."
+            },
+            {
+              "title": "Cost-Effective in the Long Run",
+              "detail": "While the initial investment might be higher, you won’t be paying for licenses or unnecessary features, which makes it more affordable over time."
+            }
+          ]
+        }
+      },
+      {
+        "id": "3",
+        "title": "What Are the Types of IT Consulting Specializations?",
+        "content": {
+          "heading": "What Are the Types of IT Consulting Specializations?",
+          "description": [
+            "We have a team that handles a wide range of IT consulting services India to meet your needs:"
+          ],
+          "list": [
+            {
+              "title": "API Development and Integration",
+              "detail": "We make sure your systems communicate with each other seamlessly, using APIs to link everything together smoothly."
+            },
+            {
+              "title": "Cloud Solutions",
+              "detail": "Whether you’re just starting with the cloud or need to expand, we’ll help you get the most out of your cloud platforms."
+            },
+            {
+              "title": "Data Security",
+              "detail": "From encryption to authentication, we help you protect your data from potential breaches and make sure your business stays secure."
+            },
+            {
+              "title": "Performance Optimization",
+              "detail": "We focus on making your systems run fast, so you won’t experience slowdowns when you need to access data quickly."
+            },
+            {
+              "title": "Database Management",
+              "detail": "We help you store and manage your data, whether it’s through SQL or NoSQL databases, ensuring you can find what you need without a hitch."
+            }
+          ]
+        }
+      },
+      {
+        "id": "4",
+        "title": "Choosing the Right IT Consulting Partner",
+        "content": {
+          "heading": "Choosing the Right IT Consulting Partner",
+          "description": [
+            "When choosing an IT consulting services India, here’s what we recommend looking for:"
+          ],
+          "list": [
+            {
+              "title": "Experience with Your Tech",
+              "detail": "Make sure your IT consultant knows the tools and systems you use or want to use. Whether it’s Python, Node.js, or a specific CRM system, they should have expertise in those areas."
+            },
+            {
+              "title": "A Smooth Process",
+              "detail": "The right consultant will have a clear, efficient process for developing and deploying systems, so you won’t have to worry about delays or confusion."
+            },
+            {
+              "title": "Security and Data Management",
+              "detail": "You need a consultant who understands the importance of securing data and putting systems in place to protect your business."
+            },
+            {
+              "title": "Adaptability",
+              "detail": "Your business will evolve, and so should your IT systems. So, look for a partner who can adapt and grow with you."
+            }
+          ]
+        }
+      },
+      {
+        "id": "5",
+        "title": "Strategies to Reduce Time and Cost in IT Consulting",
+        "content": {
+          "heading": "Strategies to Reduce Time and Cost in IT Consulting",
+          "description": [
+            "We understand that businesses want to save both time and money. That’s why we use strategies like:"
+          ],
+          "list": [
+            {
+              "title": "Modular Development",
+              "detail": "By breaking projects into smaller parts, we can get things done faster and more efficiently, without starting over every time something changes."
+            },
+            {
+              "title": "Cloud-Based Solutions",
+              "detail": "Moving to the cloud can reduce the need for costly hardware and maintenance, while giving you access to the tools you need without the upfront costs."
+            },
+            {
+              "title": "Automated Processes",
+              "detail": "We automate as much as we can to speed up operations and reduce the need for manual work, so you can focus on what matters."
             }
           ]
         }

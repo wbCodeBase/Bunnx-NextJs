@@ -16,6 +16,7 @@ const keywordToSlug = {
   'software development services': 'best-software-development-company-in-india',
   'CRM software solutions': 'crm-software-development-services',
   "custom software development company": 'custom-software-development-services',
+  "IT consulting services India": 'it-consulting-services',
 };
 
 const HeroSection = ({ heroSectionObj, pageSlug, extractNameFromSlug }) => {
