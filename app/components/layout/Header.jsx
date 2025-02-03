@@ -287,13 +287,13 @@ const servicesData = {
       slug: 'application-development',
       description: 'Create your dream app',
       technologies: [
-        { name: 'Web App Development', slug: 'web-app-development' },
-        { name: 'Mobile App Development', slug: 'mobile-app-development' },
+        { name: 'Web App Development', slug: 'web-app-development-services' },
+        { name: 'Mobile App Development', slug: 'mobile-app-development-services' },
         { name: 'Front End Development', slug: 'front-end-development-services' },
         { name: 'Back End Development', slug: 'back-end-development-services' },
-        { name: 'Api Development', slug: 'api-development' },
+        { name: 'API Development & Integration', slug: 'api-development-and-integration-services' },
         { name: 'Full Stack Development', slug: 'full-stack-development' },
-        { name: 'Website Development', slug: 'website-development' },
+        { name: 'Website Development', slug: 'website-development-services' },
       ],
       hiring: [
         {

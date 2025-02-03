@@ -14,6 +14,8 @@ const keywordToSlug = {
     'CRM software solutions': 'crm-software-development-services',
     'CRM software development company': 'crm-software-development-services',
     'CRM software solution': 'crm-software-development-services',
+    'mobile app development company': 'mobile-app-development-services',
+    'API Development & Integration Services': 'api-development-and-integration-services',
 };
 
 
@@ -628,6 +630,180 @@ const contentBySlug = {
         ]
     },
 
+    "mobile-app-development-services": {
+        h2: "Our Process",
+        h4: "Our Process for Mobile App Development",
+        p: "We are always providing mobile applications through a technology-driven approach. Here’s how our mobile app development company build apps to exceed expectations:",
+        processSections: [
+            {
+                "id": 1,
+                "title": "Analysis & Technical Scoping",
+                "description": "Our team begins with knowing what your app requires to make a clear development roadmap.",
+                "activities": [
+                    "Detailed charts for navigation.",
+                    "Use codes for cross-platform.",
+                    "Check database schemas for sync."
+                ],
+                "deliverables": [
+                    "System Requirement Specification (SRS).",
+                    "Detailed stack documentation.",
+                    "Wireframes diagrams."
+                ]
+            },
+            {
+                "id": 2,
+                "title": "UI/UX Design Analysis",
+                "description": "Our design team uses the following tasks to create interfaces particularly focused for your visitors.",
+                "activities": [
+                    "Make designs through Figma.",
+                    "Go for motion studies.",
+                    "Adaptive layouts for resolutions."
+                ],
+                "deliverables": [
+                    "Get UI/UX design mockups.",
+                    "Clickable prototypes with effects.",
+                    "Complete design handoff package."
+                ]
+            },
+            {
+                "id": 3,
+                "title": "Custom Full Stack Development",
+                "description": "We use the latest technologies that will work on your app's performance, no matter how complex the features are.",
+                "activities": [
+                    "Make interfaces.",
+                    "Develop microservices.",
+                    "Use MySQL or NoSQL databases.",
+                    "Execute WebSockets."
+                ],
+                "deliverables": [
+                    "Fully functional application code",
+                    "Make GraphQL APIs",
+                    "Integrate backend for synchronization"
+                ]
+            },
+            {
+                "id": 4,
+                "title": "Testing and Benchmarking",
+                "description": "Our mobile app development company writes unit tests for key components using JUnit, XCTest, or Mocha/Chai. The teams, at Bunnx, often use end-to-end testings for payments flows. Our team also implements integration tests to validate the interaction between UI, backend services, and APIs.",
+                "activities": [
+                    "Test multiple device types.",
+                    "Set up CI/CD pipelines.",
+                    "Profile using Xcode."
+                ],
+                "deliverables": [
+                    "Performance benchmarks",
+                    "Provide debugging documentation",
+                    "Get coverage reports"
+                ]
+            },
+            {
+                "id": 5,
+                "title": "Final Phase and Support",
+                "description": "We configure production environments with infrastructure such as AWS EC2, Kubernetes and automate deployment workflows for zero-downtime rollouts.",
+                "activities": [
+                    "Compliance with Google Store guidelines.",
+                    "Set up tools like New Relic.",
+                    "Roll out regular updates."
+                ],
+                "deliverables": [
+                    "Deployed applications with store links",
+                    "Monitor dashboards",
+                    "Get release notes."
+                ]
+            }
+        ]
+    },
+
+    "api-development-and-integration-services": {
+        h2: "Our Process",
+        h4: "Our Process for API Development & Integration",
+        p: "Our API Development & Integration Services follow a structured, detail-oriented approach to deliver secure, scalable, and high-performing APIs. Here's how we transform your requirements into robust API solutions:",
+        processSections: [
+            {
+                "id": 1,
+                "title": "Requirement Analysis & Planning",
+                "description": "We start by thoroughly analyzing your system requirements, workflows, and integration needs to design APIs that align with your business goals.",
+                "activities": [
+                    "Identifying Data Exchange",
+                    "API Use Case Definition",
+                    "Selection of API Standards",
+                    "Technology and Framework Evaluation"
+                ],
+                "deliverables": [
+                    "API Specification Document",
+                    "Proposed API Diagram",
+                    "Technology Stack Recommendation"
+                ]
+            },
+            {
+                "id": 2,
+                "title": "Architecture & Development",
+                "description": "We design a scalable API architecture with security, performance, and modularity in mind, ensuring seamless integration with your existing systems.",
+                "activities": [
+                    "Defining API Endpoints",
+                    "Designing Secure Authentication Mechanisms",
+                    "Database Schema Design",
+                    "Development Roadmap with Sprints"
+                ],
+                "deliverables": [
+                    "API Architecture Blueprint",
+                    "Endpoint Documentation",
+                    "Development Milestones and Sprint Plan"
+                ]
+            },
+            {
+                "id": 3,
+                "title": "Development & Integration",
+                "description": "Our developers build APIs with optimized server-side logic and integrate third-party services for enhanced functionality.",
+                "activities": [
+                    "Developing RESTful or GraphQL APIs",
+                    "Implementing Authentication Mechanisms",
+                    "Integrating External APIs",
+                    "Optimizing API Performance with Caching"
+                ],
+                "deliverables": [
+                    "Secure and Scalable API Codebase",
+                    "Functional API Endpoints",
+                    "Integrated Cloud Service"
+                ]
+            },
+            {
+                "id": 4,
+                "title": "Testing & Optimization",
+                "description": "We rigorously test APIs to ensure reliability, scalability, and security under real-world conditions.",
+                "activities": [
+                    "Unit and Integration Testing",
+                    "Load and Stress Testing",
+                    "Security Testing",
+                    "Monitoring with APM Tools"
+                ],
+                "deliverables": [
+                    "Comprehensive API Test Reports",
+                    "Debugged API Code",
+                    "Performance Certification"
+                ]
+            },
+            {
+                "id": 5,
+                "title": "Deployment & Continuous Support",
+                "description": "Once tested, the APIs are deployed to production, with continuous monitoring and iterative updates to ensure peak performance and reliability.",
+                "activities": [
+                    "Deployment to Cloud Platforms",
+                    "Monitoring with ELK Stack",
+                    "Patch Management",
+                    "Client Training"
+                ],
+                "deliverables": [
+                    "Fully Deployed API Solution",
+                    "Real-Time Monitoring Dashboards",
+                    "Maintenance Logs and Support SLA"
+                ]
+            }
+        ]
+
+    },
+
+
 };
 
 
@@ -662,7 +838,7 @@ export default function ProcessShowcase({ serviceDetailPageSlug }) {
                                         </ul>
                                     </div>
                                     <div>
-                                        <h3 className="text-xl font-semibold mb-2">Outputs</h3>
+                                        <h3 className="text-xl font-semibold mb-2">deliverables</h3>
                                         <ul className="list-disc list-inside space-y-2 text-gray-300">
                                             {section.deliverables.map((deliverable, index) => (
                                                 <li key={index}>{deliverable}</li>
@@ -762,7 +938,7 @@ export default function ProcessShowcase({ serviceDetailPageSlug }) {
                                                         </div>
 
                                                         <div>
-                                                            <h3 className="text-xl font-semibold mb-4">Outputs</h3>
+                                                            <h3 className="text-xl font-semibold mb-4">deliverables</h3>
                                                             <ul className="list-disc list-inside space-y-2 textsm text-gray-300">
                                                                 {section.deliverables.map((deliverable, index) => (
                                                                     <li key={index}>{deliverable}</li>

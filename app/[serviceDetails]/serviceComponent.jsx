@@ -98,9 +98,6 @@ export default function ServiceDetailsComp() {
 
 
 
-
-
-
   return (
     <>
 
@@ -133,3 +130,4 @@ export default function ServiceDetailsComp() {
     </>
   );
 }
+ 

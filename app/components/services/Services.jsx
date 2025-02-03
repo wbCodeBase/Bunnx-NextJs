@@ -24,7 +24,7 @@ const defaultServicesData = [
     description:
       "Our certified experts perform thorough testing to detect and resolve any errors or bugs that could affect your software’s performance. Guarantee the quality, reliability, and performance of your software applications with our QA Experts and testing services. ",
     slug: "qa-testing",
-    fetchOnSlug: ["custom-software-development-services", "mobile-app-development", "qa-testing", "cloud-services"]
+    fetchOnSlug: ["custom-software-development-services", "mobile-app-development-services", "qa-testing", "cloud-services"]
   },
   {
     title: "Ecommerce",
@@ -36,7 +36,7 @@ const defaultServicesData = [
     title: "Web App Development",
     description:
       "Our team builds responsive, scalable, and efficient web applications tailored to your business needs. We focus on creating seamless user experiences, ensuring high performance, security, and easy navigation.",
-    slug: "web-app-development",
+    slug: "web-app-development-services",
   },
   {
     title: "Devops",
@@ -48,7 +48,7 @@ const defaultServicesData = [
     title: "Mobile App Development",
     description:
       "Our skilled mobile app developers combine deep IT knowledge with extensive hands-on experience across diverse projects. They analyze your business ecosystem to fully understand your needs and goals, delivering tailored solutions that best fit your requirements.",
-    slug: "mobile-app-development",
+    slug: "mobile-app-development-services",
   },
   {
     title: "Cloud App & Hosting Services",
@@ -101,6 +101,21 @@ const OurServicesHeadPara = [
     servicePara: "If you’re upgrading old systems or starting fresh with something new, we focus on creating new technologies. Let’s redefine what your IT systems can do for you.  Our team creates solutions that help you make better decisions backed by data.",
     slug: "it-consulting-services"
   },
+  {
+    serviceTitle: "Best Mobile App Development Services",
+    servicePara: "Our team makes an app that not only looks amazing but works on all devices. Need integrations? We will connect your app with a lot of payment gateways, CRMs, APIs, and more. The team at our mobile app development company also works on push notifications to keep users engaged, data analytics to refine strategies.",
+    slug: "mobile-app-development-services"
+  },
+  {
+    serviceTitle: "Best Web App Development Services",
+    servicePara: "At the core of our website development services is a commitment to building reliable and efficient systems that power high-performing websites. Our expertise lies in crafting solid solutions that support user-friendly and feature-rich websites.",
+    slug: "web-app-development-services"
+  },
+  {
+    serviceTitle: "Best API Development & Integration Services",
+    servicePara: "As a leading API Development & Integration company in India, we specialize in delivering robust custom API Development & Integration services. Our expertise lies in crafting APIs that drive innovation, enhance integration, and streamline workflows across diverse platforms and applications.",
+    slug: "api-development-and-integration-services"
+  },
 ]
 
 
@@ -117,6 +132,10 @@ const keywordToSlug = {
   'CRM development services': 'crm-software-development-services', 
   'custom software development company': 'custom-software-development-services',
   'best IT consulting services in India': 'it-consulting-services',
+  'website development services': 'web-app-development-services',
+  'mobile app development company': 'mobile-app-development-services',
+  'API Development & Integration company': 'api-development-and-integration-services',
+  'custom API Development & Integration services': 'api-development-and-integration-services',
 };
 
 

@@ -22,6 +22,8 @@ const keywordToSlug = {
     'software development services': 'best-software-development-company-in-india',
     'custom software development company': 'custom-software-development-services',
     'best IT consulting services in India': 'it-consulting-services',
+    'back end development': 'back-end-development-services',
+    'API Development & Integration Services': 'api-development-and-integration-services',
 };
 
 
@@ -58,28 +60,27 @@ const contentBySlug = {
         h2: "Methodology",
         h4: "Get Smarter Applications with Effective Back End Solutions",
         p: "Our back end development strategies are specifically designed to improve usability, scalability, and performance. By combining user-centric design with technological competence, we enable organisations to provide digital experiences.",
-        steps: [
+        "steps": [
             {
-                title: "Custom API Development and Integration",
-                description: "At Bunnx, we provide API solutions for communication between your back-end and third-party services. Our team develops RESTful and GraphQL APIs to integrate APIs into your system with minimal downtime.",
-                icon: Agile,
+                "title": "Custom API Development and Integration",
+                "description": "At Bunnx, we create APIs and connect your back-end with other services. Our team is an expert in building RESTful and GraphQL APIs. This simplifies the process of integrating with third-party platforms and minimizes downtime during the process.",
+                "icon": Agile
             },
             {
-                title: "Database Optimization and Management",
-                description: "Our back-end team excels in optimizing and structuring your databases for speed. Whether you need relational databases like MySQL or PostgreSQL, or NoSQL databases like MongoDB, we ensure they are well-tuned for fast queries and easy data retrieval.",
-                icon: Waterfall,
+                "title": "Database Optimization and Management",
+                "description": "At our company, we fine-tune your databases to handle data. We can work on multiple backend platforms like MySQL, PostgreSQL, or NoSQL. Not only that, our team can help you with advanced databases like MongoDB, too.",
+                "icon": Waterfall
             },
             {
-                title: "Cloud Infrastructure and Deployment",
-                description: "Our back-end solutions leverage cloud platforms like AWS, Azure, and Google Cloud. We design custom cloud architectures and deploy applications with high availability, disaster recovery, and cost efficiency in mind.",
-                icon: Rapid,
+                "title": "Cloud Infrastructure and Deployment",
+                "description": "We design systems on cloud platforms like AWS, Azure, or Google Cloud. Our team sets up cloud architectures that focus on quick uptime. We build backup systems to recover from outages.",
+                "icon": Rapid
             },
             {
-                title: "Real-Time Data Processing",
-                description: "We build real-time back-end systems that allow for communication and data updates across multiple users and devices. Our expertise includes setting up WebSockets, Kafka, and RabbitMQ to process streaming data, handle high-throughput messaging, and push notifications.",
-                icon: DevOps,
-            },
-
+                "title": "Real-Time Data Processing",
+                "description": "We have options for regular data updates for chat, notifications, or live data feeds. With tools like WebSockets, Kafka, and RabbitMQ, we stream high-volume data messages and provide instant updates across devices.",
+                "icon": DevOps
+            }
         ]
     },
     "best-software-development-company-in-india": {
@@ -218,22 +219,22 @@ const contentBySlug = {
                 "description": "At Bunnx, the best IT consulting services in India, we create systems that keep users and devices connected. We use technologies like WebSockets for live communication, Kafka for managing high-volume data, and RabbitMQ for efficient message queuing. Our experts also make instant data synchronization across your platforms.",
                 "icon": FeaturesValidation
             },
-              {
+            {
                 "title": "Modular System Integration",
                 "description": "We build pipelines for data and system integration frameworks like Django ORM and Hibernate to simplify the management of relational data. Our expertise extends to APIs that connect your core systems with external platforms, such as ERP, analytics tools, or marketing automation software.",
                 "icon": Agile
             },
-              {
+            {
                 "title": "Advanced Data Management Systems",
                 "description": "Handling structured and unstructured data is at the core of what we do. If it’s setting up databases using PostgreSQL, MySQL or NoSQL for datasets, we design architectures that make data retrieval and management.",
                 "icon": Coding
             },
-              {
+            {
                 "title": "Cloud-Native Solutions",
                 "description": "Our team uses cloud platforms like AWS and EC2 for application deployment, S3 for storage, and RDS. For businesses requiring global reach, we also implement Azure Cosmos DB for distributed, low-latency database solutions.",
                 "icon": RealTime
             },
-              {
+            {
                 "title": "Event-Driven Architectures",
                 "description": "If you are building IT systems, you can rely on proven technologies like WebSockets for instant updates and Apache Kafka for task automation. This strategy makes sure that your systems are not just reactive but proactive.",
                 "icon": Rapid
@@ -241,6 +242,63 @@ const contentBySlug = {
         ]
 
     },
+
+    "mobile-app-development-services": {
+        "h2": "Get Smarter Applications with Effective Mobile App Solutions",
+        "h4": "Our mobile app development strategies include user-centric design with technological competence.",
+        "p": "With advanced tools and programming practices, we create mobile applications that are fast and feature-packed.",
+        "steps": [
+            {
+                "title": "Platform-Specific Mobile Development",
+                "description": "We build mobile apps natively for iOS using Swift and Objective-C, and for Android. The team also checks deep integration with platform-specific features like Siri, Face ID, Google Maps, and more.",
+                "icon": FeaturesValidation
+            },
+            {
+                "title": "API Development and Integration",
+                "description": "We develop mobile-specific APIs to enhance connectivity between the app and back-end systems. At Bunnx, our developers fetch data rapidly and synchronize with third-party services. The team also provides you different payment gateways, social media platforms, and analytics tools.",
+                "icon": Agile
+            },
+            {
+                "title": "Cross-Platform App Solutions",
+                "description": "Our mobile app development services involve usage of code languages like Flutter and React Native to create apps. It makes interfaces for better user experience no matter on which platform the app is being used.",
+                "icon": Coding
+            },
+            {
+                "title": "Advanced Mobile Database Management",
+                "description": "The Bunnx experts have SQLite for local storage and cloud-hosted databases like Firebase Realtime Database, MongoDB Atlas, or Amazon DynamoDB. So, these solutions make high-speed query processing, offline functionality, and data syncing better.",
+                "icon": RealTime
+            }
+        ]
+    },
+
+    "api-development-and-integration-services": {
+        "h2": "Get Smarter Applications with Effective API Solutions",
+        "h4": "Our API Development & Integration strategies are crafted to enhance usability, scalability, and performance. By leveraging cutting-edge technology, we empower organizations to deliver digital experiences.",
+        "p": "With advanced tools and programming practices, we create mobile applications that are fast and feature-packed.",
+        "steps": [
+            {
+                "title": "API Development & Integration",
+                "description": "At Bunnx, we specialize in Custom API Development & Integration Services to connect your systems with third-party platforms and streamline workflows. Our team builds secure RESTful and GraphQL APIs, ensuring smooth data exchange and integration with minimal downtime.",
+                "icon": FeaturesValidation
+            },
+            {
+                "title": "Database Optimization for APIs",
+                "description": "Efficient data handling is at the core of our API Development & Integration Services. We optimize and structure relational databases (MySQL, PostgreSQL) and NoSQL solutions (MongoDB, DynamoDB) to support high-speed queries, scalable storage, and seamless API interactions.",
+                "icon": Agile
+            },
+            {
+                "title": "Cloud-Native API Solutions",
+                "description": "Our API Integration Services leverage cloud platforms like AWS, Azure, and Google Cloud to deploy APIs with high availability and resilience. From designing serverless architectures to implementing disaster recovery strategies, we ensure cost-effective and robust cloud-based solutions.",
+                "icon": Coding
+            },
+            {
+                "title": "Real-Time API Development & Integration",
+                "description": "We build APIs that power real-time data processing and communication. Using WebSockets, Apache Kafka, and RabbitMQ, we enable live updates, high-throughput messaging, and instant notifications across devices and platforms.",
+                "icon": RealTime
+            }
+        ]
+    },
+
 }
 
 

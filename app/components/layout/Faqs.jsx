@@ -478,6 +478,108 @@ const faqData = {
                 "content": "If you're struggling with various tech problems you can’t solve on your own, that’s when you should reach out to an IT consultant. We’re here to help you with technical and make sure everything works like it should."
             }
         }
+    ],
+
+    "mobile-app-development-services": [
+        {
+            "id": "1",
+            "question": "What technologies will you use for mobile app development?",
+            "answer": {
+                "type": "text",
+                "content": "We have a mix of technologies and our usage depends on what type of project you have. For apps, we work with Swift for iOS and Kotlin for Android. Also, if you need a cross-platform app, we use React Native and Flutter. This way, we can pick what works best for your mobile application development."
+            }
+        },
+        {
+            "id": "2",
+            "question": "How do you keep mobile apps secure?",
+            "answer": {
+                "type": "text",
+                "content": "We stick to the strategy of creating apps that have clean content, safe codes, encrypt sensitive data, and follow the latest industry rules. We also test and review the app so that we quickly catch and fix app issues."
+            }
+        },
+        {
+            "id": "3",
+            "question": "What’s your approach to project management for mobile app development?",
+            "answer": {
+                "type": "text",
+                "content": "When it comes to working for our clients, we work with agility. We break the project into smaller tasks, stay in regular contact with you, and make changes based on your feedback. You’ll get regular updates on what’s happening so you always know where things stand."
+            }
+        },
+        {
+            "id": "4",
+            "question": "Do you provide post-launch support for mobile apps?",
+            "answer": {
+                "type": "text",
+                "content": "Yes, we do! After your app is live, we’re still here to help. If it’s fixing bugs or handling a lot of people on the app at one time, we'll do it all. Our team always helps you become the best among competitors."
+            }
+        },
+        {
+            "id": "5",
+            "question": "How do you make sure the app can grow with the business?",
+            "answer": {
+                "type": "text",
+                "content": "We have designers that make apps with the future in mind. From writing codes that work to handling data, we do everything that will help you grow your business."
+            }
+        },
+        {
+            "id": "6",
+            "question": "Why should I choose your mobile app development services?",
+            "answer": {
+                "type": "text",
+                "content": "When you work with us, you’re not just getting a development team—you’re getting a partner for a long time. That's because we care about your app as much as you do. And that's why our team makes the whole process easy and transparent for you."
+            }
+        }
+    ],
+
+    "api-development-and-integration-services": [
+        {
+            "id": "1",
+            "question": "How do you ensure the scalability of your solutions?",
+            "answer": {
+                "type": "text",
+                "content": "Scalability is built into our development process by leveraging cloud-native technologies, microservices architecture, and containerized environments. This ensures your system can handle growing user demands, traffic spikes, and larger datasets without performance degradation."
+            }
+        },
+        {
+            "id": "2",
+            "question": "What technologies do you specialize in?",
+            "answer": {
+                "type": "text",
+                "content": "We specialize in a wide range of programming languages and frameworks, including Python, Node.js, Java, Ruby on Rails, and PHP. Our expertise extends to relational and non-relational databases, cloud platforms like AWS and Azure, and containerization tools like Docker. These tools allow us to address challenges such as real-time data processing, complex system integrations, and global deployments."
+            }
+        },
+        {
+            "id": "3",
+            "question": "How do you address security concerns in API Development & Integration?",
+            "answer": {
+                "type": "text",
+                "content": "Security is integrated at every stage of development. We implement advanced authentication protocols, data encryption techniques, and API security layers. Regular vulnerability assessments and compliance checks ensure your application meets industry standards and remains safeguarded against threats."
+            }
+        },
+        {
+            "id": "4",
+            "question": "Do you provide post-launch support?",
+            "answer": {
+                "type": "text",
+                "content": "We offer extensive post-launch support, addressing issues such as system monitoring, bug fixes, and performance tuning. Our team also provides updates and feature enhancements, ensuring your application evolves with user needs and market demands."
+            }
+        },
+        {
+            "id": "5",
+            "question": "How do you tackle data management challenges?",
+            "answer": {
+                "type": "text",
+                "content": "We handle data management by designing optimized database schemas, implementing indexing for faster queries, and employing data partitioning techniques. These practices ensure seamless data handling, even with large volumes, and maintain data integrity across systems."
+            }
+        },
+        {
+            "id": "6",
+            "question": "How do you ensure timely delivery of projects?",
+            "answer": {
+                "type": "text",
+                "content": "We achieve timely project delivery by breaking down tasks into sprints and using agile workflows. Regular updates and reviews ensure alignment with the timeline, and potential delays are addressed proactively through contingency planning."
+            }
+        }
     ]
 
 };

@@ -222,7 +222,7 @@ export default function HireDetailsComponentt() {
         title: "Web App Development",
         description:
           "Our team builds responsive, scalable, and efficient web applications tailored to your business needs. We focus on creating seamless user experiences, ensuring high performance, security, and easy navigation.",
-        ctaRedirectUrl: "web-app-development",
+        ctaRedirectUrl: "web-app-development-services",
       },
       {
         title: "Devops",
@@ -234,7 +234,7 @@ export default function HireDetailsComponentt() {
         title: "Mobile App Development",
         description:
           "Our skilled mobile app developers combine deep IT knowledge with extensive hands-on experience across diverse projects. They analyze your business ecosystem to fully understand your needs and goals, delivering tailored solutions that best fit your requirements.",
-        ctaRedirectUrl: "mobile-app-development",
+        ctaRedirectUrl: "mobile-app-development-services",
       },
       {
         title: "API & Software Integration",

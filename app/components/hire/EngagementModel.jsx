@@ -44,7 +44,7 @@ const engageMentModelData = [
     {
         slug: "back-end-development-services",
         h2: "Choose From Our Hiring Models",
-        h4: "Collaborate with Top Back-End Developer Through Engagement Models",
+        h4: "Collaborate with Top Back-End Developers Through Engagement Models",
         p: "Our engagement models are designed with one goal in mind: to deliver the right back-end development solution for your brand. We analyze your project’s scope, goals, and timeline to propose a customized collaboration plan.",
         engagement: engagement,
     },
@@ -83,6 +83,20 @@ const engageMentModelData = [
         p: "Our engagement models are based on the size of the project and timeline. After you've chosen a plan that works for you, we'll help with a single project or provide ongoing support. Our team believes that the client should be on the same page with us to make a real difference.",
         engagement: engagement,
     },
+    {
+        slug: "mobile-app-development-services",
+        h2: "Choose From Our Hiring Models",
+        h4: "Collaborate with Top Mobile App Developers Through Engagement Models",
+        p: "We understand that your mobile app development will require a different approach. That’s why we offer various engagement models. If you need a team to take full ownership of your mobile app development or a project-based approach for short-term goals, our services are for all types of your workflow. With us, you’ll get a partnership that’s as precise as your app demands.",
+        engagement: engagement,
+    },
+    {
+        slug: "api-development-and-integration-services",
+        h2: "Choose From Our Hiring Models",
+        h4: "Collaborate with Top API Developers Through Engagement Models",
+        p: "Our engagement models are designed with one goal in mind: to deliver the right API Development & Integration Solution for your brand. We analyze your project’s scope, goals, and timeline to propose a customized collaboration plan.",
+        engagement: engagement,
+    },
 ];
 
 
@@ -110,10 +124,10 @@ export default function EngagementModel({ serviceDetailPageSlug }) {
     return (
         <>
             <section className="container mx-auto max-w-screen-xl px-4 md:px-6 py-10">
-                <h2 className="font-semibold text-orange-500 text-lg">
+                <h4 className="font-semibold text-orange-500 text-lg">
                     {content.h2}
-                </h2>
-                <h4 className="font-semibold text-3xl my-2">{content.h4}</h4>
+                </h4>
+                <h2 className="font-semibold text-3xl my-2">{content.h4}</h2>
                 <p className="text-md text-gray-800">{content.p}</p>
 
                 <div className="flex justify-center flex-wrap gap-5 mt-12">

@@ -37,13 +37,13 @@ const techStackData = {
             "title": "Application Development",
             "description": "Transforming ideas into powerful digital solutions, we craft innovative web and mobile applications that drive your business forward with smart & hi-tech technology.",
             "columns": [
-                { "name": "Web App Development", "description": "Next-gen web experiences", "slug": "web-app-development" },
-                { "name": "Mobile App Development", "description": "Fast, dynamic web apps", "slug": "mobile-app-development" },
+                { "name": "Web App Development", "description": "Next-gen web experiences", "slug": "web-app-development-services" },
+                { "name": "Mobile App Development", "description": "Fast, dynamic web apps", "slug": "mobile-app-development-services" },
                 { "name": "Frontend Development", "description": "Sleek, powerful iOS apps", "slug": "frontend-development" },
                 { "name": "Backend Development", "description": "Robust Android solutions", "slug": "backend-development" },
-                { "name": "API Development", "description": "Build once, run everywhere", "slug": "api-development" },
+                { "name": "API Development & Integration", "description": "Build once, run everywhere", "slug": "api-development-and-integration-services" },
                 { "name": "Full stack Development", "description": "Build once, run everywhere", "slug": "full-stack-development" },
-                { "name": "Website Development", "description": "Build once, run everywhere", "slug": "website-development" },
+                { "name": "Website Development", "description": "Build once, run everywhere", "slug": "website-development-services" },
             ],
             linkViewMore: "application-development"
         },

@@ -10,6 +10,8 @@ const keywordToSlug = {
   'software development services': 'best-software-development-company-in-india',
   'CRM software solutions': 'crm-software-development-services',
   'custom software development companies': 'custom-software-development-services',
+  'Custom API Development & Integration Services': 'api-development-and-integration-services',
+  'API Development & Integration Company': 'api-development-and-integration-services',
 };
 
 
@@ -38,8 +40,8 @@ const data = [
   {
     slug: "back-end-development-services",
     title: "Leading Back End Development Experts",
-    description1: "We excel in building dynamic back-end infrastructures that are optimized for performance and long-term growth. We are the best back end company that uses cutting-edge technologies like Node.js, Django, and Spring Boot.",
-    description2: "Our solutions include seamless API integrations, efficient database management, and real-time data processing, ensuring that your application remains fast and secure.",
+    description1: "We don’t just specialize in back-end development—we offer many application development services to help your business succeed in competitive markets.",
+    description2: "From front-end interfaces to complete app solutions, our work isn't limited to only one service. Our innovations in all types of services have made us one of the top backend development services companies.",
     buttonText: "Get Started! ",
     link: "#contact-us",
     imageSrc: softwareDev,
@@ -84,6 +86,26 @@ const data = [
     link: "#contact-us",
     imageSrc: softwareDev,
     altText: "Software Development",
+  },
+  {
+    slug: "mobile-app-development-services",
+    title: "Leading Mobile App Development Experts",
+    description1: "We develop apps for each ecosystem by sticking to human interface guidelines. Our experts fine-tune it for speed, low loading time and conserve battery life.",
+    description2: "With cloud-based architectures on AWS, Google Cloud, or Azure, your app will also handle user demands without breaking a sweat.",
+    buttonText: "Get Started! ",
+    link: "#contact-us",
+    imageSrc: softwareDev,
+    altText: "Mobile App Development",
+  },
+  {
+    slug: "api-development-and-integration-services",
+    title: "Leading Mobile App Development Experts",
+    description1: "As a leading API Development & Integration Company, we leverage advanced technologies like Node.js, Django, and Spring Boot to deliver robust solutions.",
+    description2: "Our services include Custom API Development & Integration Services, efficient database optimization, and real-time data processing, ensuring your application is fast, secure, and future-ready.",
+    buttonText: "Get Started! ",
+    link: "#contact-us",
+    imageSrc: softwareDev,
+    altText: "Mobile App Development",
   },
 
 

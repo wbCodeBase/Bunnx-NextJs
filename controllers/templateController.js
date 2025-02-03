@@ -334,6 +334,6 @@ export const deleteComponentContent = async ({ id, templateName, componentName }
 //     description:
 //       "Our certified experts perform thorough testing to detect and resolve any errors or bugs that could affect your software’s performance. Guarantee the quality, reliability, and performance of your software applications with our QA Experts and testing services.",
 //     ctaRedirectUrl: "qa-testing",
-//     fetchOnSlug: ["software-development", "mobile-app-development", "qa-testing", "cloud-services"]
+//     fetchOnSlug: ["software-development", "mobile-app-development-services", "qa-testing", "cloud-services"]
 //   }
 // ],

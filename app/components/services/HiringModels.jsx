@@ -510,6 +510,140 @@ const serviceData = {
     ]
   },
 
+
+  "mobile-app-development-services": {
+    "title": "Choose From Our Mobile App Development Service Models",
+    "description": "Every project comes with its own set of challenges, whether it’s maintaining system reliability, integrating third-party services, or managing large datasets. Our models are designed to allow you to bring in the right expertise at each stage—whether it's a single developer for a task or a team for ongoing maintenance.",
+    "models": [
+      {
+        "title": "Dedicated Mobile App Team",
+        "subtitle": "(also known as mobile app teams)",
+        "icon": lightdotnetmodalicon,
+        "sections": [
+          {
+            "type": "para",
+            "content": "If you're looking for a long-term collaboration on your mobile app project, partner with a top mobile app development company's team. With this approach, you’ll have a fully committed group of developers working only for your project."
+          },
+          {
+            "type": "list",
+            "content": [
+              "A team of full-time mobile app developers always committed to your project.",
+              "Integration with your existing processes and version control systems.",
+              "Adjust team size as your app grows.",
+              "Specialization in technologies like Node.js, Django, Laravel, or cloud-based solutions.",
+              "Complete accountability for meeting deadlines and maintain code quality."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Mobile App Team Augmentation",
+        "subtitle": "(also known as team extension or staff augmentation)",
+        "icon": teamAug,
+        "sections": [
+          {
+            "type": "para",
+            "content": "This model lets you improve your existing team with highly skilled mobile app developers. It has been made for businesses who want employees to handle specific tasks, meet tight deadlines, or manage high-demand phases of your project. It can accelerate app development, maintain high-quality standards without the overhead of hiring full-time resources."
+          },
+          {
+            "type": "list",
+            "content": [
+              "Access to specialized skills in systems, API development, and database optimization.",
+              "Rapid onboarding of developers to support peak workloads.",
+              "Expansion of your technical team without hiring full-time staff.",
+              "Support for advanced integrations, such as payment gateways, push notification systems, or third-party SDKs."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Project Based",
+        "subtitle": "(best suited for small-mid scale mobile app projects)",
+        "icon": ProjectBased,
+        "sections": [
+          {
+            "type": "para",
+            "content": "For smaller or mid-sized projects, a project-based model might be the best fit."
+          },
+          {
+            "type": "para",
+            "content": "Fixed Price Model:\nIt is a great fit for mobile application development projects where everything is mapped out from the beginning—features, designs, and deliverables. For example, if you're building an e-commerce app with standard features like user registration, product browsing, and payment integration, this model makes the development stay on track without unexpected costs."
+          },
+          {
+            "type": "para",
+            "content": "Time & Material Model:\nThe Time & Material Model works best for developing a social media app and wants to refine features like real-time messaging or AI-based recommendations as you go. With this model, you pay for the hours and resources used. With our mobile app development services, you'll also get new features, or pivot mid-development. This project includes innovation, experimentation, or iterative improvement."
+          }
+        ]
+      }
+    ]
+  },
+
+  "api-development-and-integration-services": {
+    "title": "Choose From Our API Development & Integration Service Models",
+    "description": "Every project comes with its own set of challenges, whether it’s maintaining system reliability, integrating third-party services, or managing large datasets. Our models are designed to allow you to bring in the right expertise at each stage—whether it's a single developer for a task or a team for ongoing maintenance",
+    "models": [
+      {
+        "title": "Dedicated API Team",
+        "subtitle": "(also known as product interface teams)",
+        "icon": lightdotnetmodalicon,
+        "sections": [
+          {
+            "type": "para",
+            "content": "A team from the top API Development & Integration company is the ideal solution for projects that require long-term collaboration. With this model, you get a fully dedicated group of API developers who work exclusively on your project. This team integrates with your internal processes, and maintains high-quality standards throughout the development lifecycle."
+          },
+          {
+            "type": "list",
+            "content": [
+              "Full-time, dedicated API developers",
+              "Integration with your existing team and workflows.",
+              "Scalable team size",
+              "Complete ownership of project deadlines.",
+              "Long-term collaboration",
+              "Specialized expertise in API technologies",
+              "Flexibility to adapt and adjust team composition"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "API Team Augmentation",
+        "subtitle": "(also known as team extension or staff augmentation)",
+        "icon": teamAug,
+        "sections": [
+          {
+            "type": "para",
+            "content": "API team augmentation is a flexible solution that allows you to extend your existing team with additional specialized resources. This model is perfect when you need extra expertise for specific tasks or to scale up quickly during critical project phases. By adding expert API developers to your team, you can accelerate development."
+          },
+          {
+            "type": "list",
+            "content": [
+              "Ideal for scaling up development resources during peak project phases.",
+              "Temporary or long-term support.",
+              "Cost-effective solution for handling surges in work without hiring full-time staff.",
+              "Reduces the overhead of recruitment.",
+              "Facilitates knowledge transfer and skill development."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Project Based",
+        "subtitle": "(best suited for small-mid scale API projects)",
+        "icon": ProjectBased,
+        "sections": [
+          {
+            "type": "para",
+            "content": "Fixed Price Model:\nIt is perfect for API projects with well-defined requirements, specifications, and deliverables. This approach works best when the scope is clear. Ideal for small- to medium-scale API Development & Integration, this model makes sure that both you and the development team are aligned on objectives."
+          },
+          {
+            "type": "para",
+            "content": "Time & Material Model:\nIt is designed for API projects with dynamic requirements and evolving scopes. This model allows for flexible engagement, where developers work based on hourly or resource-based billing. It’s perfect for projects with uncertain or rapidly changing requirements, such as complex UI/UX needs."
+          }
+        ]
+      }
+    ]
+  }
+
 };
 
 export default function HiringModels({ serviceDetailPageSlug }) {
