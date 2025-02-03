@@ -244,9 +244,9 @@ const contentBySlug = {
     },
 
     "mobile-app-development-services": {
-        "h2": "Get Smarter Applications with Effective Mobile App Solutions",
-        "h4": "Our mobile app development strategies include user-centric design with technological competence.",
-        "p": "With advanced tools and programming practices, we create mobile applications that are fast and feature-packed.",
+        "h2": "Methodology",
+        "h4": "Get Smarter Applications with Effective Mobile App Solutions",
+        "p": "Our mobile app development strategies include user-centric design with technological competence. With advanced tools and programming practices, we create mobile applications that are fast and feature-packed.",
         "steps": [
             {
                 "title": "Platform-Specific Mobile Development",
@@ -272,9 +272,9 @@ const contentBySlug = {
     },
 
     "api-development-and-integration-services": {
-        "h2": "Get Smarter Applications with Effective API Solutions",
-        "h4": "Our API Development & Integration strategies are crafted to enhance usability, scalability, and performance. By leveraging cutting-edge technology, we empower organizations to deliver digital experiences.",
-        "p": "With advanced tools and programming practices, we create mobile applications that are fast and feature-packed.",
+        "h2": "Methodology",
+        "h4": "Get Smarter Applications with Effective API Solutions",
+        "p": "Our API Development & Integration strategies are crafted to enhance usability, scalability, and performance. By leveraging cutting-edge technology, we empower organizations to deliver digital experiences.",
         "steps": [
             {
                 "title": "API Development & Integration",
