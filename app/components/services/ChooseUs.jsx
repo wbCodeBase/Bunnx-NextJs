@@ -107,6 +107,26 @@ const data = [
     imageSrc: softwareDev,
     altText: "Mobile App Development",
   },
+  {
+    slug: "agile-consulting-services",
+    title: "Experienced Agile Consulting Specialists",
+    description1: "It’s not just about meeting deadlines, it’s about consistently delivering. With Agile consulting services, we’ll help you break big projects down into manageable goals.",
+    description2: "Our team will make you set up clear checkpoints, so your team can focus on what truly matters—delivering great results, on time and with ease.",
+    buttonText: "Get Started! ",
+    link: "#contact-us",
+    imageSrc: softwareDev,
+    altText: "Agile Consulting Development",
+  },
+  {
+    slug: "application-development-services",
+    title: "Leading Application Development Experts",
+    description1: "We bring years of experience and a team that’s passionate about building apps. Our application development services focus on what type of apps you need and create solutions that truly help your business grow.",
+    description2: "With us, you get a partner who sticks to security policies and enables easier deployment of your software.",
+    buttonText: "Get Started! ",
+    link: "#contact-us",
+    imageSrc: softwareDev,
+    altText: "Application Development",
+  },
 
 
 ];

@@ -76,8 +76,23 @@ const PlaneCta = ({ serviceDetailPageSlug }) => {
             ctaText: "Let's Connect!",
             slug: "api-development-and-integration-services"
         }, 
+        {
+            span: "Let’s Create Something Your Customers Can’t Resist!",
+            head: "Frustrated with unreliable systems and frequent downtimes?",
+            para: "With our Agile consulting services, we’ll design workflows that evolve with your business. Stay ahead of the competition with processes that evolve as your business grows.",
+            ctaText: "Let's Connect!",
+            slug: "api-development-and-integration-services"
+        }, 
+        {
+            span: "We build apps that are not just powerful but a joy to use.",
+            head: "With us, get mobile apps that become a gateway to your business growth!",
+            para: "Every app starts with a vision, and we’re here to turn that vision into an architecture. With our Agile consulting services, we design dynamic workflows that evolve with your business.",
+            ctaText: "Let's Connect!",
+            slug: "application-development-services"
+        }, 
         
     ]
+    
 
     const ctaMainObj = CtaMain?.find((ctaMain) => ctaMain?.slug === serviceDetailPageSlug) || {
         span: `Where Your Goals Become Our Mission`,

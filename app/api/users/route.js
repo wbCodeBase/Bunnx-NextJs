@@ -7,7 +7,7 @@ export async function GET(request) {
   try {
     // Connect to the database
     await connectToDatabase();
-
+ 
     // Extract the search parameters
     const url = new URL(request.url);
     const id = url.searchParams.get('id');

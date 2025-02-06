@@ -642,6 +642,134 @@ const serviceData = {
         ]
       }
     ]
+  },
+
+  "agile-consulting-services": {
+    "title": "Choose From Our Agile Consulting Service Models",
+    "description": "Pay as you go for flexibility as our models are ideal for projects that evolve during the process. It’s perfect for complex or shifting requirements. If you have small- to medium-sized projects, our hiring model can be the best as it includes fixed cost and clear expectations from the get-go.",
+    "models": [
+      {
+        "title": "Dedicated Agile Team",
+        "subtitle": "When you need deep, consistent collaboration, our dedicated agile team is the perfect choice.",
+        "icon": lightdotnetmodalicon,
+        "sections": [
+          {
+            "type": "para",
+            "content": "This team becomes an extension of your own, offering full-time support to refine your processes and overcome challenges. Think of them as your Agile consultant services partners, focused entirely on your project."
+          },
+          {
+            "type": "list",
+            "content": [
+              "Integration with your internal workflows",
+              "Full-time agile experts at your disposal",
+              "Scale the team as the project evolves",
+              "Long-term collaboration with continuous support"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Back-End Team Augmentation",
+        "subtitle": "Need a boost? Our team augmentation model helps you add agile experts to your existing team.",
+        "icon": teamAug,
+        "sections": [
+          {
+            "type": "para",
+            "content": "This is ideal for tackling specific challenges or scaling up during critical phases. You get the extra hands you need without the overhead of hiring full-time staff."
+          },
+          {
+            "type": "list",
+            "content": [
+              "Add specialized skills when needed",
+              "Support during peak times",
+              "Cost-effective solution with easy knowledge transfer",
+              "No more recruitment hassles"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Project Based",
+        "subtitle": "Get these benefits with our project-based model:",
+        "icon": ProjectBased,
+        "sections": [
+          {
+            "type": "para",
+            "content": "Fixed Price Model:\nFor projects with well-defined requirements, this model gives you a clear scope, set budget, and defined deliverables. It’s ideal for straightforward agile consulting tasks where everyone is aligned from the start."
+          },
+          {
+            "type": "para",
+            "content": "Time & Material Model:\nIf your project is more dynamic with changing requirements, this model is your best option. You only pay for the hours worked, giving you flexibility to evolve as you go. It’s ideal for situations where the scope can shift over time."
+          }
+        ]
+      },
+
+    ]
+  },
+
+  "application-development-services": {
+    "title": "Choose From Our Application Development Service Models",
+    "description": "We understand that every project comes with its own unique hurdles when you are building for your business growth. But our service models are designed to provide exactly the kind of support you need.",
+    "models": [
+      {
+        "title": "Dedicated Application Team",
+        "subtitle": "Also known as product interface teams",
+        "icon": lightdotnetmodalicon,
+        "sections": [
+          {
+            "type": "para",
+            "content": "This model works best for projects that require strong teamwork and long-term focus. You’ll have a group of talented developers fully focused on your project. They will work closely with your team to give top-notch results."
+          },
+          {
+            "type": "list",
+            "content": [
+              "Full-time developers for your project.",
+              "Easily fit into your existing team.",
+              "Adjust the team size.",
+              "Take full responsibility for meeting deadlines.",
+              "Expert knowledge in application development.",
+              "Flexibly make changes as your project evolves."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Application Team Augmentation",
+        "subtitle": "Also known as team extension or staff augmentation",
+        "icon": teamAug,
+        "sections": [
+          {
+            "type": "para",
+            "content": "Our application development services are a great option when you need extra help for a short time or a particular phase of your project. It helps in scaling up without committing to permanent hires."
+          },
+          {
+            "type": "list",
+            "content": [
+              "Add skilled developers to your team.",
+              "Suitable for short-term or long-term requirements.",
+              "Saves costs compared to hiring full-time employees.",
+              "Skip the hassle of recruiting and training new staff.",
+              "Brings fresh expertise to your team."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Project-Based Model",
+        "subtitle": "Best for small to medium application projects",
+        "icon": ProjectBased,
+        "sections": [
+          {
+            "type": "para",
+            "content": "Fixed Price Model: Model for projects where the scope is clearly defined. This model should be chosen if you want everything to be delivered on time and within budget. It works best for clearly outlined timelines and has transparent pricing with no surprises."
+          },
+          {
+            "type": "para",
+            "content": "Time & Material Model: Perfect for projects where things might change along the way. This model allows developers to work on an hourly basis, which is great for projects with uncertain requirements."
+          }
+        ]
+      }
+    ]
   }
 
 };

@@ -804,6 +804,185 @@ const contentBySlug = {
     },
 
 
+    "agile-consulting-services": {
+        h2: "Our Process",
+        h4: "Our Process for Agile Consulting",
+        p: "Our process isn’t about just applying a set of methods—it’s about working alongside you, step by step. From getting to know your team to fine-tuning the approach, we ensure every move we make brings you closer to success.",
+        "processSections": [
+            {
+                "id": 1,
+                "title": "Finding Your Agile Sweet Spot",
+                "description": "Not every Agile framework is a perfect fit for every team. We analyze your current processes and understand how your teams work to identify the best approach.",
+                "activities": [
+                    "Break down your processes",
+                    "Identifying suitable Agile tools",
+                    "Build a clear plan",
+                    "Easy transition"
+                ],
+                "deliverables": [
+                    "An Agile game plan",
+                    "Insightful reports of your processes",
+                    "Team alignment strategy"
+                ]
+            },
+            {
+                "id": 2,
+                "title": "Designing Processes That Get Results",
+                "description": "We design workflows that help your teams deliver with confidence, from automating repetitive tasks to enhancing collaboration.",
+                "activities": [
+                    "Workflow planning",
+                    "Sprint planning",
+                    "Introduce smart automation",
+                    "Agile coaching for your teams"
+                ],
+                "deliverables": [
+                    "An Agile process",
+                    "Crystal-clear sprint plans",
+                    "Training modules for implementation"
+                ]
+            },
+            {
+                "id": 3,
+                "title": "Agile in Action",
+                "description": "We put the plan into action, ensuring seamless project management, product development, and quality checks.",
+                "activities": [
+                    "Agile project execution",
+                    "Get teams working together",
+                    "Project tracking",
+                    "Agile setup"
+                ],
+                "deliverables": [
+                    "A fully functioning app",
+                    "Tools for collaboration",
+                    "Clear project dashboards"
+                ]
+            },
+            {
+                "id": 4,
+                "title": "Keep Getting Better",
+                "description": "We fine-tune your processes and adapt to new challenges, ensuring continuous improvement and growth.",
+                "activities": [
+                    "Keep an eye on Agile system",
+                    "Provide continuous coaching",
+                    "Retrospectives to find opportunities",
+                    "Look for improvement areas"
+                ],
+                "deliverables": [
+                    "Team performance insights",
+                    "Actionable improvement strategies",
+                    "A future-ready Agile strategy"
+                ]
+            },
+            {
+                "id": 5,
+                "title": "Support You Can Count On",
+                "description": "We provide ongoing support post-launch, ensuring your platform runs smoothly and continues to grow.",
+                "activities": [
+                    "Monitor performance post-launch",
+                    "Keep everything updated",
+                    "Train your team",
+                    "Conducting operations"
+                ],
+                "deliverables": [
+                    "A live platform for success",
+                    "Easy-to-use dashboards",
+                    "Support to grow your business"
+                ]
+            }
+        ]
+
+    },
+
+    "application-development-services": {
+        h2: "Our Process",
+        h4: "Our Process for Application Development",
+        p: "Building an application is challenging but solves complex problems for its users. We follow a structured process while following this to give you a functional product.",
+        "processSections": [
+            {
+                "id": 1,
+                "title": "Know Your Vision and Mission",
+                "description": "Some of the best experts engage in in-depth discussions to understand the project before our team initiates development. We check your functional requirements and anticipated outcomes. This discovery phase is helpful in defining the technical roadmap.",
+                "activities": [
+                    "Conducting a gathering session.",
+                    "Performing daily updates",
+                    "User persona analysis.",
+                    "Documenting technical specifications."
+                ],
+                "deliverables": [
+                    "A detailed project document.",
+                    "Well-defined user stories.",
+                    "Measurable outcomes."
+                ]
+            },
+            {
+                "id": 2,
+                "title": "Designing Your App",
+                "description": "In this phase, we provide you with tangible and intuitive designs of your apps. With the use of user experience (UX) principles and user interface (UI) methodologies, we create aesthetically appealing designs that prioritize usability.",
+                "activities": [
+                    "Developing wireframes and high-fidelity mockups.",
+                    "Using UI components",
+                    "Checking color schemes and typography.",
+                    "Creating interactive prototypes."
+                ],
+                "deliverables": [
+                    "Wireframes outlining application architecture.",
+                    "Clickable prototypes for iterative feedback.",
+                    "Finalized UI/UX design specifications."
+                ]
+            },
+            {
+                "id": 3,
+                "title": "Executing the Plan",
+                "description": "With designs approved, we move towards the development phase. Our team uses modern frameworks and programming languages to make maintainable applications while adhering to industry best practices.",
+                "activities": [
+                    "Using interfaces and back-end logic.",
+                    "Configuring databases",
+                    "Integrating APIs.",
+                    "Conducting unit testing."
+                ],
+                "deliverables": [
+                    "Application with core modules.",
+                    "Optimized back-end infrastructure.",
+                    "Progress report & test results."
+                ]
+            },
+            {
+                "id": 4,
+                "title": "Perfecting App Through Testing",
+                "description": "This stage involves extensive quality assurance (QA) to understand its functionality, performance, and security. We simulate real-world scenarios to identify and resolve any issues so that it becomes deployment-ready.",
+                "activities": [
+                    "Conducting security testing.",
+                    "Debugging application features.",
+                    "Collecting feedback",
+                    "Controlled testing environments."
+                ],
+                "deliverables": [
+                    "A production-ready application.",
+                    "A resolved issue log",
+                    "A user feedback summary."
+                ]
+            },
+            {
+                "id": 5,
+                "title": "Launching and Supporting",
+                "description": "The application is deployed and made available to end-users. Post-launch, we keep it in the monitoring phase where our experts provide technical support to address any issues or implement iterative improvements.",
+                "activities": [
+                    "Deploying the application",
+                    "Production environments or app stores.",
+                    "Monitoring application metrics",
+                    "Feature enhancements."
+                ],
+                "deliverables": [
+                    "A deployed application.",
+                    "Performance metrics and insights.",
+                    "A roadmap for updates."
+                ]
+            }
+        ]
+
+    },
+
+
 };
 
 

@@ -171,7 +171,7 @@ const Footer = () => {
                                     <h3 className="text-md font-medium mb-4">Services</h3>
                                     <ul className="space-y-2 text-gray-400 text-sm">
                                         <li><Link href="/best-software-development-company-in-india" className="text-gray-300 hover:text-white">Software Development</Link></li>
-                                        <li><Link href="/application-development" className="text-gray-300 hover:text-white">Application Development</Link></li>
+                                        <li><Link href="/application-development-services" className="text-gray-300 hover:text-white">Application Development</Link></li>
                                         <li><Link href="/cloud-services" className="text-gray-300 hover:text-white">Cloud Services</Link></li>
                                         <li><Link href="/ecommerce-development" className="text-gray-300 hover:text-white">Ecommerce Development</Link></li>
                                         <li><Link href="/qa-testing" className="text-gray-300 hover:text-white">QA Testing</Link></li>

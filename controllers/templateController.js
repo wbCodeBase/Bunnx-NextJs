@@ -250,7 +250,7 @@ export const deleteComponentContent = async ({ id, templateName, componentName }
 //         "imageUrl": "soon",
 //         "ctaRedirectUrl": "#contact-us",
 //         "ctaText": "Get connected with us",
-//         "fetchOnSlug": "application-development"
+//         "fetchOnSlug": "application-development-services"
 //       },
 //       {
 //         "titlePrefix": "Professional",

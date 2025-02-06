@@ -1559,7 +1559,7 @@ const guideContent = {
           ],
           image: {
             src: guideIntroDefault,
-            alt: 'Api development &* Integration img on a laptop screen',
+            alt: 'Api development & Integration img on a laptop screen',
           },
         }
       },
@@ -1752,6 +1752,371 @@ const guideContent = {
           ]
         }
       }
+    ]
+
+  },
+
+
+  "agile-consulting-services": {
+    "title": "User Guide to Agile Consulting",
+    "description": "Did you ever feel like your projects are going out of your control? Deadlines seem to sprint ahead, while your team struggles to keep up? If all this seems like your situation, Agile consultant services can help you bring everything back into balance. It makes for better teamwork and results that make you feel accomplished. This guide will walk you through the essentials of Agile practices and how they can turn your team into a powerhouse of productivity.",
+    "sections": [
+
+      {
+        "id": "0",
+        "title": "What is Agile Consulting?",
+        "content": {
+          "heading": "Introduction and Importance of Agile Consulting",
+          "description": [
+            "Let’s face it—business projects often feel like juggling fire while riding a unicycle. Agile makes life easier by breaking complex tasks into manageable chunks. It promotes frequent check-ins, teamwork, and adjustments along the way, rather than scrambling to fix things at the last moment. Why is this important? Because it transforms confusion into clarity. It gives your team the confidence to make progress every single day instead of stumbling through uncertainty. If you’re managing a software, a marketing campaign, or even internal operations, Agile keeps everyone on the same page."
+          ],
+          image: {
+            src: guideIntroDefault,
+            alt: 'Agile cosnulting img on a laptop screen',
+          },
+        }
+      },
+
+      {
+        "id": "1",
+        "title": "Types of Agile Consulting Services We Offer",
+        "content": {
+          "heading": "Types of Agile Consulting Services We Offer",
+          "description": [
+            "At our Agile consulting services, we believe that it isn't just a methodology; it's a mindset. If you’re just starting with Agile or looking to refine your approach, we offer a range of services designed to help you take full advantage. Here’s a look at the different ways we can help your team thrive in an Agile environment:"
+          ],
+          "list": [
+            {
+              "title": "Sprint Planning Workshops",
+              "detail": "Think of these as power sessions where we help your team break down projects into achievable milestones so every step feels doable."
+            },
+            {
+              "title": "New Tool Setups",
+              "detail": "If you’re drawn to Scrum, Kanban, or a mix of both, we’ll guide you in choosing the best approach for your team."
+            },
+            {
+              "title": "Problem-Solving Workshops",
+              "detail": "Got roadblocks slowing things down? We identify what’s getting in your way. The team at Bunnx then offers quick fixes that keep your project moving."
+            },
+            {
+              "title": "Collaboration Tools Integration",
+              "detail": "Let’s get your team using tools that make communication engaging. From task tracking to instant updates, we’ll simplify how your team works together."
+            },
+            {
+              "title": "Retrospective Reviews",
+              "detail": "After a project or sprint, we sit down with your team and analyze what worked, what didn’t, and how to improve moving forward."
+            }
+          ]
+        }
+      },
+      {
+        "id": "2",
+        "title": "Why Choose Agile Consulting?",
+        "content": {
+          "heading": "Why Choose Agile Consulting?",
+          "description": [
+            "Because it doesn’t just give your projects structure—it makes life easier for everyone involved. Imagine your team starting every day with clarity on what to tackle, knowing they’re moving the needle instead of running in circles. Agile keeps frustration at bay and momentum high. It’s not about squeezing more work out of your team but making sure their efforts lead to results that count. Here’s why you should choose Agile consultant services:"
+          ],
+          "list": [
+            {
+              "title": "Speedier Delivery with Continuous Progress",
+              "detail": "An Agile consultant helps you break down large projects into manageable chunks, ensuring that your team makes steady progress and delivers value early on. No more waiting months for results!"
+            },
+            {
+              "title": "Adaptation to Change Made Easy",
+              "detail": "The business landscape can change fast, and Agile makes sure you’re not stuck in rigid plans. With expert Agile guidance, you can respond to shifts in customer needs or market demands quickly, without missing a beat."
+            },
+            {
+              "title": "Empowered Teams, Better Collaboration",
+              "detail": "A skilled Agile consultant nurtures a collaborative environment where teams are empowered to make decisions, improving both morale and efficiency. This leads to smoother workflows and more creative problem-solving."
+            },
+            {
+              "title": "Clearer Focus and Prioritization",
+              "detail": "With an Agile consultant, you’ll ensure your team spends time on what truly matters. They’ll help you prioritize tasks, eliminate unnecessary steps, and keep the project laser-focused on delivering high-impact results."
+            }
+          ]
+        }
+      },
+      {
+        "id": "3",
+        "title": "What are the Types of Agile Consulting Specializations?",
+        "content": {
+          "heading": "What are the Types of Agile Consulting Specializations?",
+          "description": [
+            "Agile consulting services can vary depending on your team, project, and how you want to work. These specialists help you navigate the complexities of Agile, ensuring you get the best from your process. Here’s a breakdown of the different types of Agile consulting specializations you can explore:"
+          ],
+          "list": [
+            {
+              "title": "Agile Transformation",
+              "detail": "This is for businesses that want to fully embrace Agile but aren’t sure where to start. Consultants here guide your organization through the transition, helping you adopt Agile principles and practices across teams and processes."
+            },
+            {
+              "title": "Scrum Master Consulting",
+              "detail": "Scrum Masters are the heartbeat of an Agile team. They ensure smooth communication, eliminate obstacles, and keep the team moving forward. Agile consultants in this area help teams by coaching Scrum Masters to create the best environments for Agile to thrive."
+            },
+            {
+              "title": "Agile Coaching for Teams",
+              "detail": "Teams often need hands-on guidance to adjust to Agile ways of working. Agile coaches work directly with teams, fostering a deeper understanding of Agile techniques and helping them tackle any hurdles, so they work smarter and more effectively."
+            },
+            {
+              "title": "Agile Project Management Consulting",
+              "detail": "For larger projects, Agile consultants specialize in leading with an Agile mindset. They bring their expertise to plan, track, and lead projects in an iterative, high-energy way. They guide your team to ensure that milestones are hit while keeping things agile and adaptable."
+            }
+          ]
+        }
+      },
+      {
+        "id": "4",
+        "title": "Choosing the Right Agile Consulting Partner",
+        "content": {
+          "heading": "Choosing the Right Agile Consulting Partner",
+          "description": [
+            "Not all consultants are created equal, so it’s worth finding one who gets your challenges and works alongside you to solve them. A good partner won’t throw jargon at you or offer cookie-cutter solutions. Instead, they’ll listen, understand your specific hurdles, and roll up their sleeves to make things happen. Look for experience, creativity, and a commitment to empowering your team—not just fixing problems for you."
+          ],
+          "list": [
+            {
+              "title": "Experience That Speaks for Itself",
+              "detail": "Look for a partner with a proven track record of helping businesses like yours. You want someone who knows the ropes and has delivered successful projects."
+            },
+            {
+              "title": "Clear Communication",
+              "detail": "Choose a partner who makes complex concepts easy to understand. Communication should be open, honest, and straightforward throughout the process."
+            },
+            {
+              "title": "Collaborative Mindset",
+              "detail": "Your Agile consultant should feel like an extension of your team, working together to solve problems and reach objectives. They should value your input and encourage shared ideas."
+            },
+            {
+              "title": "Practical Problem-Solving",
+              "detail": "The right partner doesn't just focus on theory—they offer actionable solutions. They should provide insights that directly address your unique challenges and make a tangible impact."
+            }
+          ]
+        }
+      },
+      {
+        "id": "5",
+        "title": "Strategies to Reduce Time and Cost in Agile Projects",
+        "content": {
+          "heading": "Strategies to Reduce Time and Cost in Agile Projects",
+          "description": [
+            "When it comes to Agile consulting services, speeding things up and keeping costs in check is all about working smarter, not harder. Agile thrives on breaking complex processes into manageable steps, reducing waste, and delivering value faster. From prioritizing tasks to leveraging the right tools, there are plenty of ways to stay on track. Here’s a glimpse at how we keep things efficient:"
+          ],
+          "list": [
+            {
+              "title": "Start Small, Scale Later",
+              "detail": "We recommend starting Agile with a smaller team or a pilot project. It’s a risk-free way to test the waters before diving in headfirst."
+            },
+            {
+              "title": "Simplify Meetings",
+              "detail": "Keep daily standups under 15 minutes. Stay focused on what’s important and cut out unnecessary chatter."
+            },
+            {
+              "title": "Embrace Automation",
+              "detail": "Use tools that handle repetitive tasks so your team can spend their energy on things that require creativity and critical thinking."
+            },
+            {
+              "title": "Incremental Changes",
+              "detail": "Instead of trying to overhaul your entire process at once, make small, meaningful tweaks. These add up to significant improvements without overwhelming your team."
+            }
+          ]
+        }
+      }
+    ]
+
+  },
+
+
+
+  "application-development-services": {
+    "title": "User Guide to Application Development",
+    "description": "Application development is the process of building both the visible parts of an app that users interact with (the front end) and the systems that run behind the scenes (the back end). It can be a web app, mobile app, or custom software solution. With the right technologies and expertise, we can create the best product for you.",
+    "sections": [
+
+      {
+        "id": "0",
+        "title": "What is Application Development?",
+        "content": {
+          "heading": "Introduction and Importance of Application Development",
+          "description": [
+            "With the help of some advanced tools, programming languages, and development tools, application development solutions can be used for user-friendly softwares. Application development is about creating software to solve problems, automate tasks, or create better audience experiences. It covers front-end interfaces, back-end systems, and mobile platforms."
+          ],
+          image: {
+            src: guideIntroDefault,
+            alt: 'App Development img on a laptop screen',
+          },
+        }
+      },
+
+      {
+        "id": "1",
+        "title": "Types of Application Development Services",
+        "content": {
+          "heading": "Types of Application Development Services",
+          "description": [
+            "Our application development services address various issues and help businesses create various softwares."
+          ],
+          "list": [
+            {
+              "title": "Custom Application Development",
+              "detail": "It involves software designing for any type of business. You can build from scratch to align with operational goals. It is also ideal for businesses with better workflows. But companies make sure there's complete control over features and architecture."
+            },
+            {
+              "title": "Mobile Application Development",
+              "detail": "If you are developing applications for iOS, Android, or cross-platform, use technologies like Swift, Kotlin, and Flutter. It's a native development if you want outstanding performance of your app. As a result, it reduces costs and gives faster delivery."
+            },
+            {
+              "title": "Progressive Web Applications (PWAs)",
+              "detail": "Applications that combine web and mobile, provide offline capabilities, push notifications, and fast performance are included in this. PWAs are built using technologies like Service Workers and Web App Manifests."
+            },
+            {
+              "title": "Web Application Development",
+              "detail": "Experts use technologies like Django or Node.js for the back end. Even integration with APIs for dynamic functionality is important for web development. It helps to build responsive web applications using languages like React, Angular, or Vue.js for the front end."
+            },
+            {
+              "title": "E-commerce Application Development",
+              "detail": "Development of platforms for online sales, integrating payment gateways, and inventory management. Also, it is used to handle high transaction volumes. With e-commerce application development, developers use features like real-time tracking and inventory updates."
+            },
+            {
+              "title": "Integration Services",
+              "detail": "We connect different systems to work as a cohesive unit, enabling data flow and functionality. The team makes strategies for third-party APIs, cloud services, and legacy systems use."
+            },
+            {
+              "title": "Maintenance and Support",
+              "detail": "Updates, debugging, and improvements are our go-to choice to keep applications running. And that's why we set up updates in a short time span and for issue resolution."
+            }
+          ]
+        }
+      },
+      {
+        "id": "2",
+        "title": "Why Choose Custom Application Development?",
+        "content": {
+          "heading": "Why Choose Custom Application Development?",
+          "description": [
+            "Custom application development is the only solution designed to handle dynamic scaling for users."
+          ],
+          "list": [
+            {
+              "title": "Integration with APIs",
+              "detail": "Custom solutions are made with RESTful APIs, GraphQL endpoints, or legacy SOAP services for smooth communication across systems."
+            },
+            {
+              "title": "Best Architecture",
+              "detail": "Applications are created with custom workflows and integration with your existing software ecosystem is done. Tools like ERP systems and CRM platforms are used."
+            },
+            {
+              "title": "Performance Optimization Techniques",
+              "detail": "Use tools like in-memory caching (Redis, Memcached), asynchronous task execution (RabbitMQ, Celery), and database query for faster processing, reduced latency, and resource utilization."
+            }
+          ]
+        }
+      },
+      {
+        "id": "3",
+        "title": "What are the Types of Application Specializations?",
+        "content": {
+          "heading": "What are the Types of Application Specializations?",
+          "description": [
+            "Here are key areas of back-end expertise offered in application development services:"
+          ],
+          "list": [
+            {
+              "title": "Front-End Development",
+              "detail": "We make sure that your apps that cut down redundant steps and reinvent them with responsive user interfaces. Some technologies like HTML5, CSS3, JavaScript, React or Angular are used for this."
+            },
+            {
+              "title": "Data Security",
+              "detail": "Our experts implement encryption, user authentication, and compliance with standards like GDPR or HIPAA for the safety of your sensitive data."
+            },
+            {
+              "title": "Back-End Development",
+              "detail": "Our team manages server-side logic, databases, and APIs using languages like Python, Java, PHP, Django or Node.js."
+            },
+            {
+              "title": "Mobile Development",
+              "detail": "We specializes in building native or hybrid apps for platforms like iOS and Android."
+            },
+            {
+              "title": "Cloud Integration",
+              "detail": "Incorporates cloud services like AWS, Azure, or Google Cloud to ensure scalability and availability."
+            },
+            {
+              "title": "Real-Time Functionality",
+              "detail": "Uses tools like WebSockets or Apache Kafka to enable features like live chats, notifications, or real-time analytics."
+            },
+            {
+              "title": "DevOps Integration",
+              "detail": "We automate testing, deployment, and monitoring to speed up development cycles and for your application updates."
+            }
+          ]
+        }
+      },
+      {
+        "id": "4",
+        "title": "Choosing the Right Application Partner",
+        "content": {
+          "heading": "Choosing the Right Application Partner",
+          "description": [
+            "To choose an application development partner, evaluate the following specialized aspects:"
+          ],
+          "list": [
+            {
+              "title": "Proficiency in Development Stacks",
+              "detail": "Look for expertise in specific front-end frameworks (React.js, Vue.js, Svelte), back-end platforms (Spring Boot, Express.js, ASP.NET Core), and mobile technologies (Swift for iOS, Kotlin for Android, or Flutter for cross-platform)."
+            },
+            {
+              "title": "Advanced Version Control",
+              "detail": "Our team has expertise in distributed version control systems (DVCS) like Git. We also have proficiency with platforms such as GitHub Actions, GitLab CI, or Bitbucket Pipelines for managing pull requests."
+            },
+            {
+              "title": "Security-Oriented Development Practices",
+              "detail": "Our experts understand software development lifecycle (SSDLC) principles, including static and dynamic application security testing, and data encryption standards like TLS 1.3 and AES-256."
+            },
+            {
+              "title": "Architectural Scalability",
+              "detail": "Our application development company makes architectures using microservices, serverless computing and containerization platforms like Docker. We also look for orchestration systems such as Kubernetes or Amazon ECS for load balancing and fault tolerance."
+            },
+            {
+              "title": "Agile SDLC Implementation",
+              "detail": "We verify software development lifecycle (SDLC) methodologies like Agile or DevOps. Our team also uses tools such as Jenkins or Azure DevOps to automate code deployment and reduce release cycles."
+            }
+          ]
+        }
+      },
+      {
+        "id": "5",
+        "title": "Strategies to Reduce Time and Cost in Application Development",
+        "content": {
+          "heading": "Strategies to Reduce Time and Cost in Application Development",
+          "description": [
+            "Creating applications doesn’t mean sacrificing quality. Here are five ways to make the process faster and more cost-effective:"
+          ],
+          "list": [
+            {
+              "title": "Break It into Modules",
+              "detail": "Split the application into smaller, independent sections that can be developed and tested separately. This lets different teams work on parts of the project at the same time, speeding up the process."
+            },
+            {
+              "title": "Leverage Open-Source Tools",
+              "detail": "These ready-made components save time and effort while delivering reliable results. Instead of starting from scratch, use trusted open-source libraries and tools."
+            },
+            {
+              "title": "Write Reusable Code",
+              "detail": "This avoids repeating work and makes debugging easier and faster. We also create reusable pieces of code for tasks that include user login and data checks."
+            },
+            {
+              "title": "Automate Testing and Updates",
+              "detail": "It reduces manual checks and speeds up the workflow. Our team uses Selenium or Jenkins to deploy changes."
+            },
+            {
+              "title": "Start with an MVP",
+              "detail": "We focus on building a Minimum Viable Product (MVP) along with its core features. This allows you to launch quickly, get user feedback, and make improvements step by step."
+            }
+          ]
+        }
+      }
+
+
     ]
 
   },

@@ -74,6 +74,22 @@ const data = [
     buttonText: "Contact Us Now",
     backgroundImage: "https://images.pexels.com/photos/316681/pexels-photo-316681.jpeg",
   },
+  {
+    slug: "agile-consulting-services",
+    tagline: "Let’s set you up for lasting success.",
+    title: "Sharpen your approach with us.",
+    description: "We’ll work side by side with you to fine-tune workflows, smooth out bumps, and get your team firing on all cylinders.",
+    buttonText: "Contact Us Now",
+    backgroundImage: "https://images.pexels.com/photos/316681/pexels-photo-316681.jpeg",
+  },
+  {
+    slug: "application-development-services",
+    tagline: "Get Lightweight Frameworks, Heavy Results!",
+    title: "Drive Unstoppable Growth with Agile, Secure Application Development.",
+    description: "Our experts code to make custom architectures for smarter applications. So, from APIs to algorithms, we’ve got it covered. That’s because we build applications with performance-first engineering.",
+    buttonText: "Contact Us Now",
+    backgroundImage: "https://images.pexels.com/photos/316681/pexels-photo-316681.jpeg",
+  },
 ];
 
 const getCtaContent = (data, serviceDetailPageSlug) => {

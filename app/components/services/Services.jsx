@@ -116,6 +116,21 @@ const OurServicesHeadPara = [
     servicePara: "As a leading API Development & Integration company in India, we specialize in delivering robust custom API Development & Integration services. Our expertise lies in crafting APIs that drive innovation, enhance integration, and streamline workflows across diverse platforms and applications.",
     slug: "api-development-and-integration-services"
   },
+  {
+    serviceTitle: "Best Agile Consulting Services",
+    servicePara: "Together, we’ll break the chains of outdated practices, empower your team to collaborate like never before. Ready to see your business thrive in real-time? Let’s make it happen!",
+    slug: "agile-consulting-services"
+  },
+  {
+    serviceTitle: "Best CMS Development Services",
+    servicePara: "Your CMS should work for you—not the other way around. Let’s build a system that takes the stress out of website management so you can focus on what really matters—creating great content and growing your business awareness.",
+    slug: "cms-development-services"
+  },
+  {
+    serviceTitle: "Best Application Development Services",
+    servicePara: "Looking to bring your app idea to life? Bunnx, the best application development company is here to help you.",
+    slug: "application-development-services"
+  },
 ]
 
 
@@ -136,6 +151,8 @@ const keywordToSlug = {
   'mobile app development company': 'mobile-app-development-services',
   'API Development & Integration company': 'api-development-and-integration-services',
   'custom API Development & Integration services': 'api-development-and-integration-services',
+  'Agile consultant services': 'agile-consulting-services',
+  'Agile consulting services': 'agile-consulting-services',
 };
 
 

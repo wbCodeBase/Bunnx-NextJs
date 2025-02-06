@@ -24,12 +24,12 @@ const techStackData = {
             "description": "Bunnx is your go-to software development agency in this evolving and dynamic era. Our software development services adhere to high-quality coding.",
             "columns": [
                 { "name": "Custom Software Development", "description": "Tailored solutions for excellence", "slug": "custom-software-development-services" },
-                { "name": "CMS Development", "description": "Faster CMS Development", "slug": "cms-development" },
+                { "name": "CMS Development", "description": "Faster CMS Development", "slug": "cms-development-services" },
                 { "name": "CRM Software Development", "description": "Transform ideas into powerful apps", "slug": "crm-software-development-services" },
                 { "name": "Software Consulting", "description": "Expert advice on tech", "slug": "software-development-consultants" },
 
                 { "name": "IT Consulting", "description": "Software Outsourcing", "slug": "it-consulting-services" },
-                { "name": "Agile Consulting", "description": "Optimizing customer relations", "slug": "agile-consulting" },
+                { "name": "Agile Consulting", "description": "Optimizing customer relations", "slug": "agile-consulting-services" },
             ],
             linkViewMore: "best-software-development-company-in-india"
         },
@@ -45,7 +45,7 @@ const techStackData = {
                 { "name": "Full stack Development", "description": "Build once, run everywhere", "slug": "full-stack-development" },
                 { "name": "Website Development", "description": "Build once, run everywhere", "slug": "website-development-services" },
             ],
-            linkViewMore: "application-development"
+            linkViewMore: "application-development-services"
         },
         "Dedicated Software Teams": {
             "title": "Dedicated Software Teams",
@@ -101,7 +101,7 @@ const techStackData = {
 const keywordToSlug = {
     'CRM software development': 'crm-software-development-services',
     'software development agency': 'best-software-development-company-in-india',
-    'web and mobile applications': 'application-development',
+    'web and mobile applications': 'application-development-services',
     'Seamless staff augmentation': 'staff-augmentation',
     'smart eCommerce solutions': 'ecommerce-development',
 };

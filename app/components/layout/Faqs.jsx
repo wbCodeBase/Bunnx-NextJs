@@ -580,6 +580,101 @@ const faqData = {
                 "content": "We achieve timely project delivery by breaking down tasks into sprints and using agile workflows. Regular updates and reviews ensure alignment with the timeline, and potential delays are addressed proactively through contingency planning."
             }
         }
+    ],
+
+
+    "agile-consulting-services": [
+        {
+            "id": "1",
+            "question": "How does Agile actually work for my business?",
+            "answer": {
+                "type": "text",
+                "content": "Agile is like a team huddle before the big game. It’s all about breaking down your big plans into small, doable steps. But we make sure there are regular check-ins and tweaks along the way so the process feels less overwhelming and more manageable."
+            }
+        },
+        {
+            "id": "2",
+            "question": "What kind of businesses can benefit from Agile?",
+            "answer": {
+                "type": "text",
+                "content": "From tech startups to retail giants, Agile can work for any team that wants to deliver projects with accuracy and within deadlines. If you are managing a product launch, a website revamp, or even day-to-day operations, Agile adds structure without the stress."
+            }
+        },
+        {
+            "id": "3",
+            "question": "Will Agile assist my team?",
+            "answer": {
+                "type": "text",
+                "content": "Agile consultants will work with your workflow and collaborate without upending everything. It’s not about forcing change but about making small adjustments so your team works smarter, not harder."
+            }
+        },
+        {
+            "id": "4",
+            "question": "Do we need any special tool or software for Agile?",
+            "answer": {
+                "type": "text",
+                "content": "Nope, you don’t need anything fancy! Tools like Trello, Asana, or even simple spreadsheets work great. Agile is more about the mindset than the tools—regular check-ins, task prioritization, and a clear plan are what really make it work."
+            }
+        },
+        {
+            "id": "5",
+            "question": "Why should I choose your team for Agile consulting services?",
+            "answer": {
+                "type": "text",
+                "content": "We’re not about forcing textbook solutions onto your business. Our team takes time to understand how you already work and show you how Agile consulting services can bring out the best in your experts. We stick with you every step of the way, guiding you through the process without any confusion."
+            }
+        }
+    ],
+
+    "application-development-services": [
+        {
+            "id": "1",
+            "question": "What technologies do you use for application development?",
+            "answer": {
+                "type": "text",
+                "content": "Our application development company uses React, Angular, and Vue.js for front-end development; Node.js, Python, and Java for back-end development for mobile apps. We also work with AWS, Azure, and Google Cloud."
+            }
+        },
+        {
+            "id": "2",
+            "question": "Can you connect third-party services to the applications?",
+            "answer": {
+                "type": "text",
+                "content": "At Bunnx, we use APIs and third-party tools like payment gateways, CRM systems, or analytics platforms. This helps us in extending the functionality of your app."
+            }
+        },
+        {
+            "id": "3",
+            "question": "Do you provide support after launching application development?",
+            "answer": {
+                "type": "text",
+                "content": "We do offer support for bug fixing and adding new features in your app."
+            }
+        },
+        {
+            "id": "4",
+            "question": "How will you manage my projects?",
+            "answer": {
+                "type": "text",
+                "content": "We follow methods and break the work into smaller phases to allow for feedback. Jira also keeps us on track and communicates with clients."
+            }
+        },
+        {
+            "id": "5",
+            "question": "Do you create mobile apps on Flutter?",
+            "answer": {
+                "type": "text",
+                "content": "We develop your apps for iOS and Android using Flutter or React Native. Whatever language we use to code your app depends on the type of application you want us to create."
+            }
+        },
+        {
+            "id": "6",
+            "question": "How do we build safe applications?",
+            "answer": {
+                "type": "text",
+                "content": "Security is built into every step of our application development process because we use encryption (e.g., SSL/TLS, OAuth and JWT). Our team also follows standards like GDPR, HIPAA, and PCI-DSS when required."
+            }
+        }
     ]
 
 };

@@ -97,6 +97,20 @@ const engageMentModelData = [
         p: "Our engagement models are designed with one goal in mind: to deliver the right API Development & Integration Solution for your brand. We analyze your project’s scope, goals, and timeline to propose a customized collaboration plan.",
         engagement: engagement,
     },
+    {
+        slug: "agile-consulting-services",
+        h2: "Choose From Our Hiring Models",
+        h4: "Collaborate with Top Agile Consultants Through Engagement Models",
+        p: "Agile is all about change, and so are we. Whether you're fine-tuning an existing process or building a brand-new approach, we offer flexible collaboration models to suit your project’s needs.",
+        engagement: engagement,
+    },
+    {
+        slug: "application-development-services",
+        h2: "Choose From Our Hiring Models",
+        h4: "Collaborate with Top App Developers Through Engagement Models",
+        p: "Our engagement models are built by our experts for ongoing support. We use a project-based approach for specific tasks or a time-and-materials model. Each model is designed to get the best from your resources, match your timeline, and deliver exactly what your project requires.",
+        engagement: engagement,
+    },
 ];
 
 

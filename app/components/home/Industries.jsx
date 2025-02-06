@@ -7,7 +7,7 @@ import { Landmark, Book, HeartPulse, Truck, ShoppingCart, Plane, Film, Factory, 
 // const keywordToSlug = {
 //     'CRM software development': 'crm-software-development-services',
 //     'software development agency': 'best-software-development-company-in-india',
-//     'web and mobile applications': 'application-development',
+//     'web and mobile applications': 'application-development-services',
 //     'Seamless staff augmentation': 'staff-augmentation',
 //     'smart eCommerce solutions': 'ecommerce-development',
 // };

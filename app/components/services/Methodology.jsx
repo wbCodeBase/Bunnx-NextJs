@@ -299,6 +299,63 @@ const contentBySlug = {
         ]
     },
 
+
+    "agile-consulting-services": {
+        "h2": "Methodology",
+        "h4": "Get Smarter Applications with Effective Agile Consulting Solutions",
+        "p": "Whether it’s refining your current processes or introducing new frameworks, we help you unlock smoother collaboration and faster project delivery. Our Agile consulting services follow the best methodology.",
+        "steps": [
+            {
+                "title": "Let’s make Agile your superpower",
+                "description": "We’ll help you bring Agile into your workflow in a way that feels natural, not forced. Whether it’s using Scrum to organize your sprints or Kanban to streamline your tasks, we’ll create an approach that works with how your team already operates.",
+                "icon": FeaturesValidation
+            },
+            {
+                "title": "Smooth processes, happy teams",
+                "description": "Tired of complex workflows? We design systems that cut out the chaos and let your team focus on what they do best. With tools like Jira and automating repetitive tasks, we make teamwork feel like actual teamwork.",
+                "icon": Agile
+            },
+            {
+                "title": "Ready for growth, step by step",
+                "description": "As your projects grow, your systems need to keep up. We’ll set up Agile processes that are flexible enough to scale with you, no matter how big your plans get. With a clear roadmap and tools that work behind the scenes, you’re all set to handle anything.",
+                "icon": Coding
+            },
+            {
+                "title": "Get Above Your Competitors",
+                "description": "The planning for Agile consultation doesn’t stop here. We’ll help you stay on track and clear checkpoints so your projects are completed at the earliest. You’ll have everything you need to stay one step ahead.",
+                "icon": RealTime
+            }
+        ]
+    },
+
+    "application-development-services": {
+        "h2": "Methodology",
+        "h4": "Get Smarter Applications with Effective Application Solutions",
+        "p": "Creating an application requires complex problem solving and impactful solutions. But we have it all. Here’s our step-by-step approach to building applications that truly work:",
+        "steps": [
+            {
+                "title": "Discovery and Planning",
+                "description": "This is where the journey begins. We work with you to know the purpose of the application, identify the challenges it will solve, and outline a clear strategy for development. We host strategy sessions and research market trends.",
+                "icon": FeaturesValidation
+            },
+            {
+                "title": "Creating Data Models",
+                "description": "Before building begins, we design the application’s structure and workflow. This phase involves creating wireframes and user flow diagrams. It's a finalized blueprint for development.",
+                "icon": Agile
+            },
+            {
+                "title": "Development in Action",
+                "description": "Our developers code the application, bring every feature and interaction from the blueprint into reality. For this, we write modular code for front-end and back-end. We also integrate third-party tools and APIs.",
+                "icon": Coding
+            },
+            {
+                "title": "Rigorous Testing",
+                "description": "We test every component thoroughly to identify and fix any flaws. This phase focuses on the quality and readiness of your app. Hence, we focus on running functional, performance, and security tests. Our experts also collect feedback from test users.",
+                "icon": RealTime
+            }
+        ]
+    },
+
 }
 
 

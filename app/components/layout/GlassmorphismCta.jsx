@@ -74,6 +74,22 @@ const data = [
     buttonText: "Launch Your Project Now!",
     backgroundImage: "https://spirecapital.com/wp-content/uploads/2017/02/CTA-background-get-in-touch.jpg",
   },
+  {
+    slug: "agile-consulting-services",
+    tagline: "Let’s get you ahead of the game",
+    title: "Streamline your workflow with the right approach",
+    description: "Agile doesn’t need to be complicated—it’s about finding what works best for your team.",
+    buttonText: "Launch Your Project Now!",
+    backgroundImage: "https://spirecapital.com/wp-content/uploads/2017/02/CTA-background-get-in-touch.jpg",
+  },
+  {
+    slug: "application-development-services",
+    tagline: "We build, you succeed.",
+    title: "Smarter apps, simpler lives.",
+    description: "Our team works with you every step of the way, so you get a product that adds real value to your business. With us, you get smart apps that stay ahead of time and help you build a strong foothold in the market.",
+    buttonText: "Launch Your Project Now!",
+    backgroundImage: "https://spirecapital.com/wp-content/uploads/2017/02/CTA-background-get-in-touch.jpg",
+  },
 ];
 
 const getCtaContent = (data, serviceDetailPageSlug) => {

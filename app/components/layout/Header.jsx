@@ -241,7 +241,7 @@ const hireData = {
 const servicesData = {
   categories: [
     { name: 'Software Development', slug: 'best-software-development-company-in-india' },
-    { name: 'Application Development', slug: 'application-development' },
+    { name: 'Application Development', slug: 'application-development-services' },
     { name: 'Ecommerce Development', slug: 'ecommerce-development' },
     { name: 'Dedicated Technical Team', slug: 'dedicated-technical-team' },
     { name: 'QA & Testing', slug: 'qa-testing' },
@@ -255,11 +255,11 @@ const servicesData = {
       description: 'Develop robust software',
       technologies: [
         { name: 'Custom Software Development', slug: 'custom-software-development-services' },
-        { name: 'CMS Development', slug: 'cms-development' },
+        { name: 'CMS Development', slug: 'cms-development-services' },
         { name: 'CRM Software Development', slug: 'crm-software-development-services' },
         { name: 'Software Consulting', slug: 'software-development-consultants' },
         { name: 'IT Consulting', slug: 'it-consulting-services' },
-        { name: 'Agile Consulting', slug: 'agile-consulting' },
+        { name: 'Agile Consulting', slug: 'agile-consulting-services' },
         { name: 'Application Maintenance', slug: 'application-maintenance' },
         { name: 'Application Upgradation', slug: 'application-upgradation' },
       ],
@@ -284,7 +284,7 @@ const servicesData = {
     },
     "Application Development": {
       title: 'Application Development',
-      slug: 'application-development',
+      slug: 'application-development-services',
       description: 'Create your dream app',
       technologies: [
         { name: 'Web App Development', slug: 'web-app-development-services' },
