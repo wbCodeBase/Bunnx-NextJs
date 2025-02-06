@@ -90,6 +90,13 @@ const PlaneCta = ({ serviceDetailPageSlug }) => {
             ctaText: "Let's Connect!",
             slug: "application-development-services"
         }, 
+        {
+            span: "We don’t just build websites!",
+            head: "We create online experiences that your customers will love.",
+            para: "Our team brings your ideas to life with websites that tell your story and engage your customers. From eye-catching visuals to effortless navigation, we create digital spaces that keep visitors coming back. Your vision drives our creativity, and we bring it to life with precision and passion.",
+            ctaText: "Let's Connect!",
+            slug: "website-development-services"
+        }, 
         
     ]
     

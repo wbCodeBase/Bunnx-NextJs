@@ -90,6 +90,14 @@ const data = [
     buttonText: "Launch Your Project Now!",
     backgroundImage: "https://spirecapital.com/wp-content/uploads/2017/02/CTA-background-get-in-touch.jpg",
   },
+  {
+    slug: "website-development-services",
+    tagline: "Your website should do more than exist—it should work hard for your success. ",
+    title: "And we make that happen!",
+    description: "We specialize in the latest web technologies like React, Angular, Node.js, and Laravel. Our expertise enables us to develop websites with cutting-edge functionality, robust back-end systems, and modern user interfaces tailored to your needs.",
+    buttonText: "Launch Your Project Now!",
+    backgroundImage: "https://spirecapital.com/wp-content/uploads/2017/02/CTA-background-get-in-touch.jpg",
+  },
 ];
 
 const getCtaContent = (data, serviceDetailPageSlug) => {

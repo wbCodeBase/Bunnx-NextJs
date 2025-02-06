@@ -982,6 +982,95 @@ const contentBySlug = {
 
     },
 
+    "website-development-services": {
+        h2: "Our Process",
+        h4: "Our Process for Website Development",
+        p: "We take a simple, clear approach to website development that focuses on your needs and goals. From the start, we listen to you and work together to create a plan. Each step is about building a website that fits your business and serves your users well, from design to launch.",
+        "processSections": [
+            {
+                "id": 1,
+                "title": "Discovery & Planning",
+                "description": "This is where we start by understanding what you want to achieve. We talk about your business and what your website needs to do. This stage helps us get a clear picture of your goals, and we also look at your competitors.",
+                "activities": [
+                    "Discussing project goals",
+                    "Researching competitors",
+                    "Identifying what success is",
+                    "Defining the website"
+                ],
+                "deliverables": [
+                    "A clear project timeline",
+                    "A well-defined set of goals",
+                    "A list of functional requirements"
+                ]
+            },
+            {
+                "id": 2,
+                "title": "Design & Wireframing",
+                "description": "Our website development services include creating wireframes and prototypes to map out how the website will look and feel. We focus on the layout, how users will move through the site, and how to best present your content.",
+                "activities": [
+                    "Creating basic wireframes",
+                    "Designing navigation and page layouts",
+                    "Getting feedback on designs",
+                    "Finalizing overall style"
+                ],
+                "deliverables": [
+                    "A clear web page layout",
+                    "Visual designs",
+                    "A user-friendly interface plan"
+                ]
+            },
+            {
+                "id": 3,
+                "title": "Front-End Development",
+                "description": "A stunning design is just the beginning. Our front-end developers bring it to life, transforming static wireframes into an interactive, user-friendly experience. Every click, scroll, and animation is crafted to make navigation smooth and engagement natural.",
+                "activities": [
+                    "Writing the code",
+                    "Design with animations",
+                    "Runs on desktops and tablets",
+                    "Connecting with back-end systems"
+                ],
+                "deliverables": [
+                    "Visually appealing website",
+                    "Design for any screen size",
+                    "An interactive experience"
+                ]
+            },
+            {
+                "id": 4,
+                "title": "Testing & Quality Assurance",
+                "description": "Before launching, we test everything. We check that all features work as expected and function properly on different browsers and devices. If any issues come up with website development, we fix them right away to make sure everything works as it should.",
+                "activities": [
+                    "Testing the website",
+                    "Checking interactive features",
+                    "Running tests for site loads",
+                    "Checking for any security risks"
+                ],
+                "deliverables": [
+                    "A website that functions correctly",
+                    "A website that loads quickly",
+                    "A website that is safe to use"
+                ]
+            },
+            {
+                "id": 5,
+                "title": "Continuous Support",
+                "description": "We monitor it right after launch to make sure everything is working well. Once live, we’re here for any updates or changes you need, whether it’s adding new content, fixing bugs, or adding new features over time.",
+                "activities": [
+                    "Launching on the production server",
+                    "Monitoring performance",
+                    "Update your website’s content",
+                    "Regular checks and backups"
+                ],
+                "deliverables": [
+                    "A live website ready for users",
+                    "Ongoing support for fixes",
+                    "Continuous improvements"
+                ]
+            }
+        ]
+
+    },
+
 
 };
 

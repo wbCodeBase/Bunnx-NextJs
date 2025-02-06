@@ -127,6 +127,16 @@ const data = [
     imageSrc: softwareDev,
     altText: "Application Development",
   },
+  {
+    slug: "website-development-services",
+    title: "Leading Website Development Experts",
+    description1: "As a leading website development company, we bring technical precision, industry knowledge, and a commitment to delivering high-quality solutions.",
+    description2: "Our team combines years of experience with modern technologies to create websites that perform exceptionally and are easy to manage. ",
+    buttonText: "Get Started! ",
+    link: "#contact-us",
+    imageSrc: softwareDev,
+    altText: "Website Development",
+  },
 
 
 ];

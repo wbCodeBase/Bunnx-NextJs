@@ -770,6 +770,70 @@ const serviceData = {
         ]
       }
     ]
+  },
+  "website-development-services": {
+    "title": "Choose From Our Website Development Service Models",
+    "description": "Choosing the right team structure is crucial when building or upgrading your website. Some projects need ongoing collaboration, while others require extra hands or short-term expertise. Our engagement models are built to match your specific needs, offering flexibility and technical expertise at every step of the development process.",
+    "models": [
+      {
+        "title": "Dedicated Website Team",
+        "subtitle": "Also known as product interface teams",
+        "icon": lightdotnetmodalicon,
+        "sections": [
+          {
+            "type": "para",
+            "content": "For long-term, complex projects, a dedicated website team provides consistency and focus. This team becomes an extension of your business, fully integrating with your workflows to deliver quality results. Whether building a platform from scratch or scaling an existing system, this model ensures specialized support throughout website development."
+          },
+          {
+            "type": "list",
+            "content": [
+              "Full-time developers exclusively working on your project.",
+              "Customized workflows that fit your internal processes.",
+              "Easily adjustable team size based on project requirements.",
+              "Accountability for all project deadlines and milestones.",
+              "Long-term collaboration with consistent quality delivery.",
+              "Expertise in advanced web development technologies."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Website Team Augmentation",
+        "subtitle": "Also known as team extension or staff augmentation",
+        "icon": teamAug,
+        "sections": [
+          {
+            "type": "para",
+            "content": "When your in-house team needs extra hands or specific expertise, team augmentation is the answer. It’s a flexible way to add skilled developers to your team for a particular task or period, helping you meet deadlines or scale faster during demanding project phases."
+          },
+          {
+            "type": "list",
+            "content": [
+              "Expand your team with skilled developers without full-time commitments.",
+              "Access specialized talent for specific tasks or technologies.",
+              "Ideal for peak project phases or short-term requirements.",
+              "Reduces recruitment and onboarding time.",
+              "Cost-efficient solution for handling additional workload."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Project-Based Model",
+        "subtitle": "Best suited for small to mid-scale website projects",
+        "icon": ProjectBased,
+        "sections": [
+          {
+            "type": "para",
+            "content": "Fixed Price Model: This model is perfect for projects with clear goals and requirements. It offers a structured approach with agreed deliverables and timelines. Best suited for straightforward website app development like informational websites or simple online stores."
+          },
+          {
+            "type": "para",
+            "content": "Time & Material Model: This model works best for projects with flexible or evolving needs. Developers work on an hourly or task-based billing system, giving you the ability to adapt the scope as requirements change. Great for adding new features or custom functionalities."
+          }
+        ]
+      }
+    ]
   }
 
 };

@@ -111,6 +111,13 @@ const engageMentModelData = [
         p: "Our engagement models are built by our experts for ongoing support. We use a project-based approach for specific tasks or a time-and-materials model. Each model is designed to get the best from your resources, match your timeline, and deliver exactly what your project requires.",
         engagement: engagement,
     },
+    {
+        slug: "website-development-services",
+        h2: "Choose From Our Hiring Models",
+        h4: "Collaborate with Top Website Developers Through Engagement Models",
+        p: "Choosing the right team structure is crucial when building or upgrading your website. Some projects need ongoing collaboration, while others require extra hands or short-term expertise. Our engagement models are built to match your specific needs, offering flexibility and technical expertise at every step of the development process.",
+        engagement: engagement,
+    },
 ];
 
 

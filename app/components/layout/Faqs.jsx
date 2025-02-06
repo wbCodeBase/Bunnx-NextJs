@@ -675,7 +675,58 @@ const faqData = {
                 "content": "Security is built into every step of our application development process because we use encryption (e.g., SSL/TLS, OAuth and JWT). Our team also follows standards like GDPR, HIPAA, and PCI-DSS when required."
             }
         }
-    ]
+    ],
+
+    "website-development-services": [
+        {
+            "id": "1",
+            "question": "What technologies do you specialize in?",
+            "answer": {
+                "type": "text",
+                "content": "We work with a variety of web technologies, including front-end frameworks like React and Angular, back-end frameworks such as WordPress, Laravel, and Django, as well as database and cloud platforms like AWS and Azure."
+            }
+        },
+        {
+            "id": "2",
+            "question": "How do you ensure the security of our websites?",
+            "answer": {
+                "type": "text",
+                "content": "We implement strong encryption, secure login systems, and conduct regular security checks. Our team stays updated on the latest security trends to protect your users' data."
+            }
+        },
+        {
+            "id": "3",
+            "question": "What is your approach to project management?",
+            "answer": {
+                "type": "text",
+                "content": "We use project management tools like Trello and Jira to organize tasks and track progress. Our process ensures clear communication and transparency throughout the project."
+            }
+        },
+        {
+            "id": "4",
+            "question": "Do you offer post-launch support?",
+            "answer": {
+                "type": "text",
+                "content": "Yes, we provide ongoing support, including maintenance, updates, bug fixes, and assistance with any issues after your website goes live."
+            }
+        },
+        {
+            "id": "5",
+            "question": "How do you ensure the scalability of your websites?",
+            "answer": {
+                "type": "text",
+                "content": "We design websites with modular architecture and optimized code, ensuring they can handle increasing traffic and feature expansions as your business grows."
+            }
+        },
+        {
+            "id": "6",
+            "question": "How do you ensure the user-friendliness of the website or app?",
+            "answer": {
+                "type": "text",
+                "content": "Our design team focuses on creating intuitive and visually appealing interfaces with smooth navigation, clear calls to action, and an optimal user experience."
+            }
+        }
+    ],
 
 };
 

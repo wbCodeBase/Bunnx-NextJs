@@ -355,6 +355,34 @@ const contentBySlug = {
             }
         ]
     },
+    "website-development-services": {
+        "h2": "Methodology",
+        "h4": "Get the Best Interface with Effective Website Solutions",
+        "p": "Our website development strategies are specifically designed to improve usability, scalability, and performance. By combining user-centric design with technological competence, we enable organisations to provide digital experiences.",
+        "steps": [
+            {
+                "title": "Understanding Your Needs",
+                "description": "At Bunnx, we help you define exactly what features and functions are needed. We work closely with you to ensure we’re on the same page from the start.",
+                "icon": FeaturesValidation
+            },
+            {
+                "title": "Designing with Purpose",
+                "description": "Once we have a solid understanding of your needs, we move on to designing the user interface and experience. Our designs focus on clarity and ease of use, ensuring that users can navigate your site or app with minimal effort.",
+                "icon": Agile
+            },
+            {
+                "title": "Cloud Infrastructure and Deployment",
+                "description": "Our team writes the code, integrates databases, and ensures everything works as intended. Whether it's adding complex functionalities or ensuring high-speed performance, we handle all the technical aspects to bring your application to life.",
+                "icon": Coding
+            },
+            {
+                "title": "Real-Time Data Processing",
+                "description": "We rigorously test the application to identify any potential issues, from usability to functionality. Our team fixes any bugs and makes necessary improvements before launching. Once it’s live, we continue to monitor and refine it for optimal performance.",
+                "icon": RealTime
+            }
+        ],
+
+    },
 
 }
 

@@ -90,6 +90,14 @@ const data = [
     buttonText: "Contact Us Now",
     backgroundImage: "https://images.pexels.com/photos/316681/pexels-photo-316681.jpeg",
   },
+  {
+    slug: "website-development-services",
+    tagline: "Fuel Innovation with our Architectures That Power Progress.",
+    title: "We Create Digital Foundations That Propel Growth Beyond Limits.",
+    description: "From responsive design to secure coding practices, our website development company builds dynamic, high-performing websites that adapt to your business needs and technological advancements.",
+    buttonText: "Contact Us Now",
+    backgroundImage: "https://images.pexels.com/photos/316681/pexels-photo-316681.jpeg",
+  },
 ];
 
 const getCtaContent = (data, serviceDetailPageSlug) => {
