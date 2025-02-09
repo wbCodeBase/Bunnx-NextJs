@@ -1,7 +1,7 @@
 
 import ServiceDetailsComp from "./serviceComponent";
 
-export async function generateMetadata({ params }, parent) {
+export async function generateMetadata({ params }) {
   // read route params
   const currentSlug = params.serviceDetails
   console.log("Slug service page", currentSlug);

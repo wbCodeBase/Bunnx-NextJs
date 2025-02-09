@@ -4,8 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { createLinkedContent } from '#/utils/LinkBuilder';
-import heroDefault from "/public/heroDefault.png"
-import heroBrain from "/public/developmentServices.jpg"
+// import heroDefault from "/public/heroDefault.png"
 import { FaLocationArrow } from "react-icons/fa";
 
 // Keep value empty if no redirection is required 
@@ -21,12 +20,12 @@ const keywordToSlug = {
   "mobile app development company": 'mobile-app-development-services',
 };
 
-const HeroSection = ({ heroSectionObj, pageSlug, extractNameFromSlug }) => {
+const HeroSection = ({ heroSectionObj, pageSlug, extractNameFromSlug, heroDefaultImg }) => {
 
   const heroSectionData = { 
     title: heroSectionObj?.title || extractNameFromSlug,
     description: heroSectionObj?.description || "Custom Software Development Services and Solutions to build top-tier intelligent enterprises with speed and agility.",
-    imageUrl: heroBrain,
+    imageUrl: heroSectionObj?.imageUrl || heroDefaultImg,
     ctaText: heroSectionObj?.ctaText || "Get Connected With us",
     ctaRedirectUrl: heroSectionObj?.ctaRedirectUrl || "#contact-us",
   };
@@ -53,7 +52,7 @@ const HeroSection = ({ heroSectionObj, pageSlug, extractNameFromSlug }) => {
 
           <div className="md:w-[41%] w-full flex sm:p-10 p-4 items-center justify-center">
             <Image
-              src={imageUrl || heroDefault}
+              src={imageUrl}
               alt="Digital Brain Visualization"
               className="w-full h-auto"
             />

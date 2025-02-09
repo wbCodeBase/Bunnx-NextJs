@@ -23,9 +23,9 @@ import Lottie from "lottie-react";
 import loaderJson from "/public/pageAnimations/loader.json";
 import Techcard from "@/components/hire/Techcard";
 
-import heroDefault from "/public/hireDev.png"
 import PlaneCta from "@/components/layout/PlaneCta";
 // import heroDefault from "/public/hireDev2.png"
+import heroDefaultImg from "/public/hireDev.png"
 
 function formatparameter(input) {
   return input
@@ -294,7 +294,7 @@ export default function HireDetailsComponentt() {
   return (
     <>
 
-      <HeroSection heroSectionObj={heroSectionObj} pageSlug={hireDevOf} extractNameFromSlug={formatparameter(hireDevOf)} />
+      <HeroSection heroSectionObj={heroSectionObj} pageSlug={hireDevOf} heroDefaultImg={heroDefaultImg} extractNameFromSlug={formatparameter(hireDevOf)} />
 
       <NumericCounterInfo />
 
@@ -307,7 +307,6 @@ export default function HireDetailsComponentt() {
       <EngagementModel hiredevOf={formatparameter(hireDevOf)} />
 
       <GlassmorphismCta />
-
 
       <HiringModelsHire />
 

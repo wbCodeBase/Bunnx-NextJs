@@ -1,7 +1,7 @@
 import HireDetailsComponent from "./hireComponent"
 
 
-export async function generateMetadata({ params }, parent) {
+export async function generateMetadata({ params }) {
   // read route params
   const currentSlug = params.hireDevOf
   console.log("Slug", currentSlug);

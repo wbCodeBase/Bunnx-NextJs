@@ -18,7 +18,7 @@ import Lottie from "lottie-react";
 import loaderJson from "../../public/pageAnimations/loader.json";
 
 import { useGetTemplateContentByStrQuery, useGetActiveSlugQuery } from '../../store/api/myApi';
-
+import heroDefaultImg from "/public/developmentServices.jpg"
 
 import PlaneCta from '@/components/layout/PlaneCta';
 import GlassmorphismCta from "@/components/layout/GlassmorphismCta";
@@ -101,7 +101,7 @@ export default function ServiceDetailsComp() {
   return (
     <>
 
-      <HeroSection heroSectionObj={heroSectionObj} pageSlug={serviceDetails} extractNameFromSlug={formatparameter(serviceDetails)} />
+      <HeroSection heroSectionObj={heroSectionObj}  heroDefaultImg={heroDefaultImg} pageSlug={serviceDetails} extractNameFromSlug={formatparameter(serviceDetails)} />
 
       <NumericCounterInfo />
 
