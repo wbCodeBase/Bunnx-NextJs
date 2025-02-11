@@ -1071,6 +1071,182 @@ const contentBySlug = {
 
     },
 
+    "cms-development-services": {
+        h2: "Our Process",
+        h4: "Our Process for CMS Development",
+        p: "A strong CMS isn’t just about what users see—it’s about what’s happening behind the scenes. We build a powerful backend using technologies like Node.js, PHP (Laravel), and Python (Django), so your website processes requests in a flash.",
+        "processSections": [
+            {
+                "id": 1,
+                "title": "Understanding Website’s Structure",
+                "description": "Before jumping into development, you must know how everything is going. We can help you with this in mapping out how your content flows and how different sections interact.",
+                "activities": [
+                    "Organize content types",
+                    "Structure the database",
+                    "Plan connection with tools",
+                    "Selecting the right tech"
+                ],
+                "deliverables": [
+                    "A clear website blueprint",
+                    "A content management plan",
+                    "Tech stack for development"
+                ]
+            },
+            {
+                "id": 2,
+                "title": "Building a Strong Foundation",
+                "description": "A CMS won’t hold up when traffic increases or new features get added. At this stage, we handle growth, security, and day-to-day updates, and work well with any external tools you may need.",
+                "activities": [
+                    "Developing a strong backend",
+                    "Set up a database",
+                    "Plan out API connections",
+                    "Break development into steps"
+                ],
+                "deliverables": [
+                    "A planned-out backend design",
+                    "Guides the development process",
+                    "Initial API documentation"
+                ]
+            },
+            {
+                "id": 3,
+                "title": "Back-End Development & Integration",
+                "description": "We write code that makes managing your website easy. It gives you an easy way to manage content and upload images without dealing with technical headaches.",
+                "activities": [
+                    "Develop servers with Node.js",
+                    "Set up authentication",
+                    "APIs to connect with the website",
+                    "Integrate third-party tools"
+                ],
+                "deliverables": [
+                    "A fully developed backend",
+                    "Login and role-based access",
+                    "Integrated external services"
+                ]
+            },
+            {
+                "id": 4,
+                "title": "Quality Assurance & Testing",
+                "description": "Before launch, we put your CMS through rigorous testing to catch problems before they reach your users. Every element is checked to avoid problems after launch.",
+                "activities": [
+                    "Test every feature",
+                    "Run security scans",
+                    "Simulate high traffic loads",
+                    "Track response times"
+                ],
+                "deliverables": [
+                    "Debugged code",
+                    "Security certifications",
+                    "A fully tested CMS"
+                ]
+            },
+            {
+                "id": 5,
+                "title": "Deployment and Continuous Support",
+                "description": "After testing, your CMS is set up on a live server. But we don’t just disappear after launch—we stick around to handle updates, fix any unexpected issues, and train your team.",
+                "activities": [
+                    "Deploy your CMS",
+                    "Set up monitoring tools",
+                    "Release regular updates",
+                    "Train your team"
+                ],
+                "deliverables": [
+                    "A live and functional CMS",
+                    "Performance tracking dashboards",
+                    "Support documents & assistance"
+                ]
+            }
+        ]
+    },
+
+    "full-stack-development-services": {
+        h2: "Our Process",
+        h4: "Our Process for Full Stack Development",
+        p: "At our full stack development company, we follow a structured approach to deliver high-performing applications. From in-depth requirement analysis to deployment, our process ensures every element application is optimized.",
+        "processSections": [
+            {
+                "id": 1,
+                "title": "Need & System Analysis",
+                "description": "Our process begins with a rough analysis of your business needs, workflows, and technical requirements. This phase lays the foundation for a seamless and future-ready solution.",
+                "activities": [
+                    "Understanding Business Logic",
+                    "ER Diagram Design",
+                    "API Requirement Specification",
+                    "Choosing the Right Technology"
+                ],
+                "deliverables": [
+                    "Detailed System Requirement Specification",
+                    "Proposed Data Flow Diagrams",
+                    "Technology Stack Blueprint"
+                ]
+            },
+            {
+                "id": 2,
+                "title": "Design & Development Strategy",
+                "description": "We create a scalable and modular architecture to ensure your solution delivers high performance, security, and flexibility. Our development strategy is tailored to your goals.",
+                "activities": [
+                    "Designing Scalable Architectures",
+                    "Crafting Database Schemas",
+                    "Defining API Endpoints",
+                    "Sprint Planning for Development"
+                ],
+                "deliverables": [
+                    "Comprehensive Architecture Blueprint",
+                    "Agile Development Roadmap",
+                    "API Documentation for Integration"
+                ]
+            },
+            {
+                "id": 3,
+                "title": "Full Stack Coding & Integration",
+                "description": "Our team develops and integrates front-end and back-end functionalities to create a cohesive, user-friendly application. We focus on secure server-side coding, robust APIs, and seamless third-party integrations.",
+                "activities": [
+                    "Developing Front-End Interfaces",
+                    "Implementing Authentication & Authorization",
+                    "Building APIs",
+                    "Integrating Cloud Platforms"
+                ],
+                "deliverables": [
+                    "End-to-End Functional Codebase",
+                    "Secure API Interfaces",
+                    "Fully Integrated Service Solutions"
+                ]
+            },
+            {
+                "id": 4,
+                "title": "Quality Assurance & Stress Testing",
+                "description": "We perform rigorous testing to ensure reliability, scalability, and performance under real-world conditions. Both manual and automated techniques are employed.",
+                "activities": [
+                    "Integration and End-to-End Testing",
+                    "Load and Scalability Testing",
+                    "Assessments and Vulnerability Scans",
+                    "Monitoring with APM Tools"
+                ],
+                "deliverables": [
+                    "Comprehensive Test Reports",
+                    "Debugged and Optimized Code",
+                    "Performance Certification"
+                ]
+            },
+            {
+                "id": 5,
+                "title": "Deployment & Continuous Support",
+                "description": "The final solution is deployed on production servers, followed by continuous monitoring and updates to ensure optimal performance over time.",
+                "activities": [
+                    "Deployment on Cloud Platforms",
+                    "Setting Up Monitoring Tools",
+                    "Patch Management and Client Training",
+                    "Providing Support and Maintenance"
+                ],
+                "deliverables": [
+                    "Fully Deployed and Functional Application",
+                    "Monitoring Dashboards",
+                    "Support SLA Documentation"
+                ]
+            }
+        ]
+    },
+
 
 };
 

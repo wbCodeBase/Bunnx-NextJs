@@ -97,6 +97,20 @@ const PlaneCta = ({ serviceDetailPageSlug }) => {
             ctaText: "Let's Connect!",
             slug: "website-development-services"
         }, 
+        {
+            span: "Get A Backend That Won’t Slow You Down",
+            head: "Ever clicked on a website that took forever to load? ",
+            para: "We build CMS platforms that keep everything moving like clockwork. With us you not only get the perfect CMS solution but also a team that is there to support and guide you. Enhance your business and streamline every process with the best in class CMS development services.",
+            ctaText: "Let's Connect!",
+            slug: "cms-development-services"
+        }, 
+        {
+            span: "Your tech partner for every step of the journey!",
+            head: "Frustrated with laggy applications and inconsistent performance?",
+            para: "From reducing load times to enhancing data flow, we focus on making a solid and integrated architecture. Connect with the full-stack experts and get your working strengthened in minutes.",
+            ctaText: "Let's Connect!",
+            slug: "full-stack-development-services"
+        }, 
         
     ]
     

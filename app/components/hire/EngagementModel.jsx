@@ -118,6 +118,20 @@ const engageMentModelData = [
         p: "Choosing the right team structure is crucial when building or upgrading your website. Some projects need ongoing collaboration, while others require extra hands or short-term expertise. Our engagement models are built to match your specific needs, offering flexibility and technical expertise at every step of the development process.",
         engagement: engagement,
     },
+    {
+        slug: "cms-development-services",
+        h2: "Choose From Our Hiring Models",
+        h4: "Collaborate with Top CMS Developers Through Engagement Models",
+        p: "Some CMS projects need dedicated developers from start to finish. Others require specialized expertise at critical stages. And sometimes, all it takes is the right team to execute a well-planned strategy. Whatever your case, we let you decide how you want to work with us.",
+        engagement: engagement,
+    },
+    {
+        slug: "full-stack-development-services",
+        h2: "Choose From Our Hiring Models",
+        h4: "Collaborate with Top Full Stack Developers Through Engagement Models",
+        p: "Our models focus on one thing: delivering the perfect back-end solution for your brand. By understanding your project’s aim, goals, and deadlines, we craft a personalized collaboration plan that fits your needs.",
+        engagement: engagement,
+    },
 ];
 
 

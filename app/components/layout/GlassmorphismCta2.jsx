@@ -98,6 +98,22 @@ const data = [
     buttonText: "Contact Us Now",
     backgroundImage: "https://images.pexels.com/photos/316681/pexels-photo-316681.jpeg",
   },
+  {
+    slug: "cms-development-services",
+    tagline: "Need A Full-fledged Team?",
+    title: "Achieve Unmatched Growth with our CMS Solutions",
+    description: "Our developers make the stage where your brand performs its daily show. It helps us add new products, update banners, tweak layouts, and tell your brand story. So, why rely on the ordinary, when you can get the best with Bunnx?",
+    buttonText: "Contact Us Now",
+    backgroundImage: "https://images.pexels.com/photos/316681/pexels-photo-316681.jpeg",
+  },
+  {
+    slug: "full-stack-development-services",
+    tagline: "Get apps that look great and work better!",
+    title: "Drive Unstoppable Growth with Agile, Secure Full Stack Development",
+    description: "Our approach to full stack development brings technical precision to deliver results. Whether it’s designing engaging user experiences or building strong, scalable back-end systems, we focus on creating solutions that drive growth for your business.",
+    buttonText: "Contact Us Now",
+    backgroundImage: "https://images.pexels.com/photos/316681/pexels-photo-316681.jpeg",
+  },
 ];
 
 const getCtaContent = (data, serviceDetailPageSlug) => {

@@ -123,13 +123,18 @@ const OurServicesHeadPara = [
   },
   {
     serviceTitle: "Best CMS Development Services",
-    servicePara: "Your CMS should work for you—not the other way around. Let’s build a system that takes the stress out of website management so you can focus on what really matters—creating great content and growing your business awareness.",
+    servicePara: "Your CMS should work for you—not the other way around. Let’s build a system that takes the stress out of website management so you can focus on what really matters, creating great content and growing your business awareness.",
     slug: "cms-development-services"
   },
   {
     serviceTitle: "Best Application Development Services",
     servicePara: "Looking to bring your app idea to life? Bunnx, the best application development company is here to help you.",
     slug: "application-development-services"
+  },
+  {
+    serviceTitle: "Best Full Stack Development Services",
+    servicePara: "As a leading full stack development company in India, we specialize in creating dynamic, end-to-end solutions designed to drive business growth.",
+    slug: "full-stack-development-services"
   },
 ]
 
@@ -182,7 +187,7 @@ const Services = ({ serviceSectionObj, serviceDetailPageSlug, extractNameFromSlu
         description:
           "Full Stack Development involves building and managing both front-end and back-end of web applications, ensuring seamless functionality.",
         ctaRedirectUrl: {
-          slug: "full-stack-development",
+          slug: "full-stack-development-services",
         },
       },
       {
@@ -197,7 +202,7 @@ const Services = ({ serviceSectionObj, serviceDetailPageSlug, extractNameFromSlu
 
 
   const servicesHeadParaObj = OurServicesHeadPara?.find((serviceHeadPara) => serviceHeadPara?.slug === serviceDetailPageSlug) || {
-    serviceTitle: `Best ${extractNameFromSlug} Services`,
+    serviceTitle: `Best ${extractNameFromSlug}`,
     servicePara: `We are a top ${extractNameFromSlug} service provider in India, focused on delivering the best user solutions. We build powerful, integrated websites that make navigation smoother and drive business growth seamlessly. Our innovative range of front end development services include`,
   };
 

@@ -10,10 +10,12 @@ import Rapid from "/public/iconMethodology/rapid.png";
 import DevOps from "/public/iconMethodology/devops.png";
 import Meeting from "/public/iconMethodology/meeting.png";
 import Startup from "/public/iconMethodology/startup.png";
+import Migration from "/public/iconMethodology/migration.png";
 import Coding from "/public/iconMethodology/coding.png";
 import FeaturesValidation from "/public/iconMethodology/integration.png";
 import Backlog from "/public/iconMethodology/backlog.png";
 import RealTime from "/public/iconMethodology/realTime.png";
+import LaunchSupport from "/public/iconMethodology/launchSupport.png";
 
 import { createLinkedContent } from '#/utils/LinkBuilder';
 
@@ -381,7 +383,76 @@ const contentBySlug = {
                 "icon": RealTime
             }
         ],
+    },
 
+    "cms-development-services": {
+        "h2": "Methodology",
+        "h4": "Get Smarter Applications with Effective CMS Solutions",
+        "p": "Our experts design contact tracking modules with indexed database queries so that you can pull up customer details in seconds. We build APIs that connect your CRM with ERP systems, marketing automation tools, and analytics platforms. It creates a connected ecosystem where everything talks to each other.",
+        "steps": [
+            {
+                "title": "Conceptualization and Planning",
+                "description": "Every great CMS starts with a clear vision. We take the time to understand your business, audience, and what you want to achieve. This helps us map out a strategy that turns ideas into a structured plan.",
+                "icon": FeaturesValidation
+            },
+            {
+                "title": "Design and Prototyping",
+                "description": "Our design team focuses on creating layouts that feel natural to navigate and stay true to your brand. By developing wireframes and prototypes, we craft an interface that not only looks good but also makes content management effortless for your team.",
+                "icon": Agile
+            },
+            {
+                "title": "Development",
+                "description": "Once the blueprint is ready, our developers get to work. We carefully construct the CMS, adding essential features and incorporating external tools where needed. The result? A strong foundation that keeps everything running without a hitch.",
+                "icon": Coding
+            },
+            {
+                "title": "Testing and Quality Assurance",
+                "description": "No detail goes unchecked. Our quality assurance team runs multiple tests to catch any glitches, refines the user experience, and confirms that the CMS performs consistently across different devices and browsers.",
+                "icon": RealTime
+            },
+            {
+                "title": "Data Migration",
+                "description": "Moving to a new system shouldn't feel like a disruption. We handle content migration with care, making sure nothing gets lost along the way. Plus, we guide your team step-by-step so they can confidently use the new platform.",
+                "icon": Migration
+            },
+            {
+                "title": "After Launch Support",
+                "description": "Once everything is ready, we roll out your CMS in a way that minimizes interruptions. But our job doesn't end there—we stay by your side offering continuous support. Our team makes necessary improvements so your CMS keeps up with your growing business.",
+                "icon": LaunchSupport
+            }
+        ]
+    },
+
+    "full-stack-development-services": {
+        "h2": "Methodology",
+        "h4": "Get Smarter Applications with Effective Full Stack Solutions",
+        "p": "Our full stack development services are all about creating smart, scalable, and user-friendly applications. We blend modern technology with thoughtful design to build tools that not only work flawlessly but also feel right for your users.",
+        "steps":  [
+            {
+              "id": 1,
+              "title": "API-Driven Connectivity for Superior Functionality",
+              "description": "At our full stack development company, we create robust RESTful and GraphQL APIs that enable smooth communication between your front end, back end, and third-party services. We integrate with minimal downtime for your systems.",
+              "icon": FeaturesValidation
+            },
+            {
+              "id": 2,
+              "title": "Back-End Powered by Modern Tech",
+              "description": "Harness the power of cloud-native tools, serverless frameworks, and containerization technologies like Docker. Our back-end solutions offer high availability to handle increasing user demands without bottlenecks or downtime.",
+              "icon": Agile
+            },
+            {
+              "id": 3,
+              "title": "Front-End Frameworks for Immersive Interfaces",
+              "description": "Our full stack services create visually stunning, interactive user interfaces with frameworks like React.js, Angular, and Vue.js. These technologies power modern designs, delivering responsive layouts and engaging experiences across all devices.",
+              "icon": Coding
+            },
+            {
+              "id": 4,
+              "title": "Real-Time Analytics",
+              "description": "Integrate real-time data pipelines and advanced visualization tools directly into your application. From MongoDB to SQL-based systems, our solutions transform raw data into actionable insights.",
+              "icon": RealTime
+            }
+          ]
     },
 
 }

@@ -728,6 +728,110 @@ const faqData = {
         }
     ],
 
+    "cms-development-services": [
+        {
+            "id": "1",
+            "question": "What technologies do you use for CMS development?",
+            "answer": {
+                "type": "text",
+                "content": "We pick the right tools and not just what’s trendy. If your site is packed with content and needs an easy way to manage updates, WordPress or Drupal are solid choices. Need more control? Laravel or Django offer a more customized approach. And if speed is your priority, headless CMS options like Strapi or Contentful keep things lightning-fast."
+            }
+        },
+        {
+            "id": "2",
+            "question": "How do you make CMS websites load faster?",
+            "answer": {
+                "type": "text",
+                "content": "We keep things moving by compressing images, trimming unnecessary code, and cutting out scripts that don’t pull their weight. Instead of making visitors load everything at once, our team uses global delivery networks."
+            }
+        },
+        {
+            "id": "3",
+            "question": "Do you provide support after the website goes live?",
+            "answer": {
+                "type": "text",
+                "content": "We’re here for the long haul. If something breaks, we fix it. If you need updates, we handle them. And if you ever feel stuck using your CMS, we walk you through it. Think of us as your tech partners, not just developers who disappear after launch."
+            }
+        },
+        {
+            "id": "4",
+            "question": "Do you offer help after the site is live?",
+            "answer": {
+                "type": "text",
+                "content": "Yes, just like anything else, Websites need care. If something’s off, we’ll fix it. If you need fresh features, we’ll add them. And if you ever feel lost using your CMS, we’re just a message away. The relationship doesn’t end when the site goes live—it’s just getting started."
+            }
+        },
+        {
+            "id": "5",
+            "question": "Can your CMS handle a sudden spike in traffic?",
+            "answer": {
+                "type": "text",
+                "content": "No one wants their website to crash right when it’s needed the most. That’s why we build CMS platforms that can handle thousands of visitors without breaking a sweat. We set up smart traffic distribution, keep an eye on resource usage, and prepare your site for those big moments—so you don’t have to worry when your content goes viral."
+            }
+        },
+        {
+            "id": "6",
+            "question": "What do you do to keep CMS platforms secure?",
+            "answer": {
+                "type": "text",
+                "content": "A good CMS makes content easy to manage, but not for the wrong people. We lock down access, keep software up to date, and run regular security checks. Encryption and security patches are baked into our process. Your content is yours—no one else should get their hands on it."
+            }
+        }
+    ],
+
+
+    "full-stack-development-services": [
+        {
+            "id": "1",
+            "question": "What is included in your full stack development services?",
+            "answer": {
+                "type": "text",
+                "content": "Our full stack development covers both the front-end and back-end of your application. We handle everything from crafting intuitive user interfaces to building scalable back-end systems that work seamlessly together. Whether it's designing, coding, or deploying, we manage it all to deliver a complete solution."
+            }
+        },
+        {
+            "id": "2",
+            "question": "How do you ensure the user experience is top-notch?",
+            "answer": {
+                "type": "text",
+                "content": "We believe a great app starts with a great user experience. Our full stack development company focuses on designing simple, responsive, and user-friendly interfaces. We make sure every interaction feels intuitive, ensuring your users have the best possible experience on any device."
+            }
+        },
+        {
+            "id": "3",
+            "question": "What tools do you use for development?",
+            "answer": {
+                "type": "text",
+                "content": "We work with a variety of tools and technologies to build robust applications, including React, Angular, Node.js, Django, and more. For databases, we use options like MySQL, MongoDB, and PostgreSQL. Our approach is to select the best tools based on your project needs."
+            }
+        },
+        {
+            "id": "4",
+            "question": "How do you handle project timelines?",
+            "answer": {
+                "type": "text",
+                "content": "We believe in transparency and communication. We break down the development process into clear milestones and deliverables, keeping you updated every step of the way. Using agile methods in our full stack development services, we adapt to any changes while meeting deadlines without compromising on quality."
+            }
+        },
+        {
+            "id": "5",
+            "question": "Do you provide ongoing support after launch?",
+            "answer": {
+                "type": "text",
+                "content": "Absolutely! Once your application is live, we offer continuous support. From fixing bugs to performance tweaks, we're always here to help with any maintenance or updates needed to keep your app performing at its best."
+            }
+        },
+        {
+            "id": "6",
+            "question": "What makes your full stack services different from others?",
+            "answer": {
+                "type": "text",
+                "content": "We focus on creating solutions that are tailored to your specific needs, not just generic templates. Our team’s expertise spans both front-end and back-end technologies for performance, security, and user satisfaction."
+            }
+        }
+    ],
+
+
 };
 
 

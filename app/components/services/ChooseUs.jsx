@@ -137,6 +137,26 @@ const data = [
     imageSrc: softwareDev,
     altText: "Website Development",
   },
+  {
+    slug: "cms-development-services",
+    title: "Leading CMS Development Experts",
+    description1: "We’re experts at building CMS systems that are efficient, secure, and designed with the future in mind. By using the latest technologies like Node.js, Django, and Spring Boot, we create CMS platforms that not only look great but work flawlessly. ",
+    description2: "Our solutions are built to integrate seamlessly with APIs, manage databases effortlessly, and handle live data processing, so you never have to worry about downtime or errors.  ",
+    buttonText: "Get Started! ",
+    link: "#contact-us",
+    imageSrc: softwareDev,
+    altText: "Cms Development",
+  },
+  {
+    slug: "full-stack-development-services",
+    title: "Leading Full Stack Development Experts",
+    description1: "Your ideas and goals are at the center of everything we do. We take the time to understand your vision and turn it into a solution that works for your business.",
+    description2: "At Bunnx, the leading full stack development company, we support you every step of the way, from the first idea to long after launch.",
+    buttonText: "Get Started! ",
+    link: "#contact-us",
+    imageSrc: softwareDev,
+    altText: "Full stack Development",
+  },
 
 
 ];

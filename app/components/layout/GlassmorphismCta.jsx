@@ -98,7 +98,28 @@ const data = [
     buttonText: "Launch Your Project Now!",
     backgroundImage: "https://spirecapital.com/wp-content/uploads/2017/02/CTA-background-get-in-touch.jpg",
   },
+  {
+    slug: "cms-development-services",
+    tagline: "Build a CMS That Keeps Visitors Coming Back for More.",
+    title: "Get our CMS solutions for Your Next Big Success Story.",
+    description: "A CMS helps to manage content and expand your online presence effortlessly. At Bunnx, we get that. That’s why we create CMS solutions that don’t just organize content but transform how you connect with your audience.",
+    buttonText: "Launch Your Project Now!",
+    backgroundImage: "https://spirecapital.com/wp-content/uploads/2017/02/CTA-background-get-in-touch.jpg",
+  },
+  {
+    slug: "full-stack-development-services",
+    tagline: "Design it, code it, launch it – we handle everything.",
+    title: "All-in-one development, made just for you!",
+    description: "We craft sophisticated yet seamless back-end systems that power every interaction effortlessly. So, get the best outcome and ensure there are no lapses in the process at all.",
+    buttonText: "Launch Your Project Now!",
+    backgroundImage: "https://spirecapital.com/wp-content/uploads/2017/02/CTA-background-get-in-touch.jpg",
+  },
 ];
+
+
+
+
+
 
 const getCtaContent = (data, serviceDetailPageSlug) => {
   // First try to find content matching the page slug

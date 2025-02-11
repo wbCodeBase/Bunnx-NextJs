@@ -761,16 +761,17 @@ const serviceData = {
         "sections": [
           {
             "type": "para",
-            "content": "Fixed Price Model: Model for projects where the scope is clearly defined. This model should be chosen if you want everything to be delivered on time and within budget. It works best for clearly outlined timelines and has transparent pricing with no surprises."
+            "content": "Fixed Price Model:\nModel for projects where the scope is clearly defined. This model should be chosen if you want everything to be delivered on time and within budget. It works best for clearly outlined timelines and has transparent pricing with no surprises."
           },
           {
             "type": "para",
-            "content": "Time & Material Model: Perfect for projects where things might change along the way. This model allows developers to work on an hourly basis, which is great for projects with uncertain requirements."
+            "content": "Time & Material Model:\nPerfect for projects where things might change along the way. This model allows developers to work on an hourly basis, which is great for projects with uncertain requirements."
           }
         ]
       }
     ]
   },
+
   "website-development-services": {
     "title": "Choose From Our Website Development Service Models",
     "description": "Choosing the right team structure is crucial when building or upgrading your website. Some projects need ongoing collaboration, while others require extra hands or short-term expertise. Our engagement models are built to match your specific needs, offering flexibility and technical expertise at every step of the development process.",
@@ -825,11 +826,140 @@ const serviceData = {
         "sections": [
           {
             "type": "para",
-            "content": "Fixed Price Model: This model is perfect for projects with clear goals and requirements. It offers a structured approach with agreed deliverables and timelines. Best suited for straightforward website app development like informational websites or simple online stores."
+            "content": "Fixed Price Model:\nThis model is perfect for projects with clear goals and requirements. It offers a structured approach with agreed deliverables and timelines. Best suited for straightforward website app development like informational websites or simple online stores."
           },
           {
             "type": "para",
-            "content": "Time & Material Model: This model works best for projects with flexible or evolving needs. Developers work on an hourly or task-based billing system, giving you the ability to adapt the scope as requirements change. Great for adding new features or custom functionalities."
+            "content": "Time & Material Model:\nThis model works best for projects with flexible or evolving needs. Developers work on an hourly or task-based billing system, giving you the ability to adapt the scope as requirements change. Great for adding new features or custom functionalities."
+          }
+        ]
+      }
+    ]
+  },
+
+  "cms-development-services": {
+    "title": "Choose From Our CMS Development Service Models",
+    "description": "Every business operates differently, and a one-size-fits-all approach rarely works. That’s why we offer multiple collaboration models, so you can bring in expert CMS developers exactly how and when you need them—without committing to a full project if it’s not required.",
+    "models": [
+      {
+        "title": "Exclusive CMS Development Team",
+        "subtitle": "Also known as CMS developers",
+        "icon": lightdotnetmodalicon,
+        "sections": [
+          {
+            "type": "para",
+            "content": "This setup gives you a team that works only on your project. They don’t juggle multiple clients, which means they follow your processes, collaborate closely with your internal team, and focus entirely on building a high-quality CMS."
+          },
+          {
+            "type": "list",
+            "content": [
+              "Full-time experts dedicated to your CMS project",
+              "Adapts to your existing workflow and company culture",
+              "Specialists with the right mix of skills and experience",
+              "Complete control over timelines and project milestones",
+              "Long-term commitment with continuous enhancements"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "CMS Development Team Augmentation",
+        "subtitle": "Also known as team extension or staff augmentation",
+        "icon": teamAug,
+        "sections": [
+          {
+            "type": "para",
+            "content": "Already have a development team but need extra support? Whether it’s a specialist for custom integrations or additional developers to meet a deadline, this model helps you bring in the right people at the right time."
+          },
+          {
+            "type": "list",
+            "content": [
+              "Best for scaling resources as project demands change",
+              "Available for short-term or long-term work",
+              "Skip the recruitment process—get experienced developers immediately",
+              "Learn from industry professionals while strengthening your in-house team"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Project Based",
+        "subtitle": "Best suited for small-mid scale CMS projects",
+        "icon": ProjectBased,
+        "sections": [
+          {
+            "type": "para",
+            "content": "Fixed Price Model: Need to set up a CMS with specific features, integrate third-party tools, or improve the admin panel? We handle it at a fixed cost, with a transparent budget and timeline. No unexpected expenses or delays."
+          },
+          {
+            "type": "para",
+            "content": "Time & Material Model: Need ongoing tweaks, layout improvements, or functionality upgrades? Pay based on actual work done, either hourly or per resource. This model is best suited for projects where priorities shift frequently."
+          }
+        ]
+      }
+    ]
+  },
+
+  "full-stack-development-services": {
+    "title": "Choose From Our Full Stack Development Service Models",
+    "description": "Our models are designed to allow you to bring in the right expertise at each stage—whether it's a single developer for a task or a team for ongoing maintenance.",
+    "models": [
+      {
+        "title": "Dedicated Full Stack Team",
+        "subtitle": "Also known as product interface teams",
+        "icon": lightdotnetmodalicon,
+        "sections": [
+          {
+            "type": "para",
+            "content": "A team from the top full stack development company is the ideal solution for projects that require long-term collaboration. With this model, you get a fully dedicated group of back-end developers who work exclusively on your project. This team integrates with your internal processes, and maintains high-quality standards throughout the development lifecycle."
+          },
+          {
+            "type": "list",
+            "content": [
+              "Full-time, dedicated back-end developers",
+              "Integration with your existing team and workflows.",
+              "Scalable team size",
+              "Complete ownership of project deadlines.",
+              "Long-term collaboration",
+              "Specialized expertise in back-end technologies",
+              "Flexibility to adapt and adjust team composition"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Full Stack Team Augmentation",
+        "subtitle": "Also known as team extension or staff augmentation",
+        "icon": teamAug,
+        "sections": [
+          {
+            "type": "para",
+            "content": "Back-end team augmentation is a flexible solution that allows you to extend your existing team with additional specialized resources. This model is perfect when you need extra expertise for specific tasks or to scale up quickly during critical project phases. By adding expert back-end developers to your team, you can accelerate development."
+          },
+          {
+            "type": "list",
+            "content": [
+              "Ideal for scaling up development resources during peak project phases.",
+              "Temporary or long-term support.",
+              "Cost-effective solution for handling surges in work without hiring full-time staff.",
+              "Reduces the overhead of recruitment.",
+              "Facilitates knowledge transfer and skill development."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Project Based",
+        "subtitle": "Best suited for small-mid scale Full Stack projects",
+        "icon": ProjectBased,
+        "sections": [
+          {
+            "type": "para",
+            "content": "Fixed Price Model: It is perfect for back-end projects with well-defined requirements, specifications, and deliverables. This approach works best when the scope is clear. Ideal for small- to medium-scale back-end development, this model makes sure that both you and the development team are aligned on objectives."
+          },
+          {
+            "type": "para",
+            "content": "Time & Material Model: It is designed for back-end projects with dynamic requirements and evolving scopes. This model allows for flexible engagement, where developers work based on hourly or resource-based billing. It’s perfect for projects with uncertain or rapidly changing requirements, such as complex UI/UX needs."
           }
         ]
       }

@@ -292,7 +292,7 @@ const servicesData = {
         { name: 'Front End Development', slug: 'front-end-development-services' },
         { name: 'Back End Development', slug: 'back-end-development-services' },
         { name: 'API Development & Integration', slug: 'api-development-and-integration-services' },
-        { name: 'Full Stack Development', slug: 'full-stack-development' },
+        { name: 'Full Stack Development', slug: 'full-stack-development-services' },
         { name: 'Website Development', slug: 'website-development-services' },
       ],
       hiring: [
