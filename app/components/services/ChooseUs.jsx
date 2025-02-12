@@ -157,9 +157,33 @@ const data = [
     imageSrc: softwareDev,
     altText: "Full stack Development",
   },
+  {
+    slug: "ecommerce-development-company",
+    title: "Leading Ecommerce Development Experts",
+    description1: "We master in building dynamic ecommerce web design India infrastructures that are optimized for performance and long-term growth.",
+    description2: "We are the best eCommerce development company in India that uses the latest technologies like Node.js, Django, and Spring Boot. Our solutions include API integrations, efficient database management, and data processing.",
+    buttonText: "Get Started! ",
+    link: "#contact-us",
+    imageSrc: softwareDev,
+    altText: "Full stack Development",
+  },
+  {
+    slug: "ecommerce-consulting-services",
+    title: "Experienced eCommerce Web Consulting Specialists",
+    description1: "As your business grows, so should your platform. Our eCommerce consulting services will help you design a system that scales smoothly, whether you’re adding new products or handling more customers.",
+    description2: "You can rest easy knowing your platform is ready for whatever’s next.",
+    buttonText: "Get Started! ",
+    link: "#contact-us",
+    imageSrc: softwareDev,
+    altText: "Full stack Development",
+  },
 
 
 ];
+
+
+
+
 
 
 const ChooseUs = ({ serviceDetailPageSlug }) => {

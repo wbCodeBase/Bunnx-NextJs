@@ -132,6 +132,20 @@ const engageMentModelData = [
         p: "Our models focus on one thing: delivering the perfect back-end solution for your brand. By understanding your project’s aim, goals, and deadlines, we craft a personalized collaboration plan that fits your needs.",
         engagement: engagement,
     },
+    {
+        slug: "ecommerce-development-company",
+        h2: "Choose From Our Hiring Models",
+        h4: "Collaborate with Top eCommerce Developers Through Engagement Models",
+        p: "Our engagement models are designed with one goal in mind: to deliver the right ecommerce development India solution for your brand. We analyze your project’s scope, goals, and timeline to propose a customized collaboration plan.",
+        engagement: engagement,
+    },
+    {
+        slug: "ecommerce-consulting-services",
+        h2: "Choose From Our Hiring Models",
+        h4: "Collaborate with Top CRM Software Developers Through Engagement Models",
+        p: "Creating a successful ecommerce platform is more than just setting up an online store. It's about building a system that can grow with your business and offer a seamless experience to your customers. If you’re just starting or already established, we have the right mix of expertise and flexibility.",
+        engagement: engagement,
+    },
 ];
 
 

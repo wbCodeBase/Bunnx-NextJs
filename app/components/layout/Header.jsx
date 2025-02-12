@@ -15,237 +15,237 @@ import { useSession } from "next-auth/react";
 const menuItems = [
   { title: 'Home', slug: '/', hasSubmenu: false },
   { title: 'Service', slug: '/best-software-development-company-in-india', hasSubmenu: true },
-  { title: 'Hire', slug: '/hire/php-developer', hasSubmenu: true },
+  // { title: 'Hire', slug: '/hire/php-developer', hasSubmenu: true },
   { title: 'About Us', slug: '/about-us', hasSubmenu: false },
   { title: 'Contact Us', slug: '/contact-us', hasSubmenu: false },
 ]
 
 
-const hireData = {
-  categories: [
-    { name: 'Backend', slug: 'backend-developer' },
-    { name: 'Frontend', slug: 'frontend-developer' },
-    { name: 'Mobile', slug: 'mobile-developer' },
-    { name: 'Full Stack', slug: 'full-stack-developer' },
-    { name: 'DevOps', slug: 'devops-engineer' },
-    { name: 'CMS', slug: 'cms-developer' },
-    { name: 'eCommerce', slug: 'ecommerce-developer' },
-  ],
-  content: {
-    Backend: {
-      title: 'Backend',
-      slug: 'backend-developer',
-      description: 'Build robust backend',
-      technologies: [
-        { name: 'Php', slug: 'php-developer' },
-        { name: 'Laravel', slug: 'laravel-developer' },
-        { name: 'Node', slug: 'node-developer' },
-        { name: 'Codeigniter', slug: 'codeigniter-developer' },
-        { name: 'C#', slug: 'c-sharp-developer' },
-        { name: 'Ruby on Rails', slug: 'ruby-on-rails-developer' },
-        { name: 'Django', slug: 'django-developer' },
-        { name: 'Golang', slug: 'golang-developer' },
-        { name: 'Java', slug: 'java-developer' },
-        { name: '.Net', slug: 'dot-net-developer' },
-      ],
-      hiring: [
+// const hireData = {
+//   categories: [
+//     { name: 'Backend', slug: 'backend-developer' },
+//     { name: 'Frontend', slug: 'frontend-developer' },
+//     { name: 'Mobile', slug: 'mobile-developer' },
+//     { name: 'Full Stack', slug: 'full-stack-developer' },
+//     { name: 'DevOps', slug: 'devops-engineer' },
+//     { name: 'CMS', slug: 'cms-developer' },
+//     { name: 'eCommerce', slug: 'ecommerce-developer' },
+//   ],
+//   content: {
+//     Backend: {
+//       title: 'Backend',
+//       slug: 'backend-developer',
+//       description: 'Build robust backend',
+//       technologies: [
+//         { name: 'Php', slug: 'php-developer' },
+//         { name: 'Laravel', slug: 'laravel-developer' },
+//         { name: 'Node', slug: 'node-developer' },
+//         { name: 'Codeigniter', slug: 'codeigniter-developer' },
+//         { name: 'C#', slug: 'c-sharp-developer' },
+//         { name: 'Ruby on Rails', slug: 'ruby-on-rails-developer' },
+//         { name: 'Django', slug: 'django-developer' },
+//         { name: 'Golang', slug: 'golang-developer' },
+//         { name: 'Java', slug: 'java-developer' },
+//         { name: '.Net', slug: 'dot-net-developer' },
+//       ],
+//       hiring: [
 
-        {
-          title: 'Staff Augmentation',
-          slug: 'staff-augmentation',
-          description: 'Access top technical resources on-demand',
-        },
-        {
-          title: 'Hire Software Developer',
-          slug: 'hire-software-developer',
-          description: 'Work with skilled & dedicated developers',
-        },
-        {
-          title: 'Dedicated Software Teams',
-          slug: 'dedicated-software-teams',
-          description: 'Hire Dedicated Developers',
-        },
-      ],
-    },
-    Frontend: {
-      title: 'Frontend',
-      slug: 'frontend',
-      description: 'Create stunning user interfaces',
-      technologies: [
-        { name: 'ReactJs', slug: 'reactJs-developer' },
-        { name: 'Angular', slug: 'angularJs-developer' },
-        { name: 'VueJs', slug: 'vueJs-developer' },
-      ],
-      hiring: [
-        {
-          title: 'Hire Frontend Developers',
-          slug: 'hire-frontend-developer',
-          description: 'Expert UI/UX implementers',
-        },
-        {
-          title: 'Frontend Team Augmentation',
-          slug: 'frontend-team-augmentation',
-          description: 'Boost your frontend capabilities',
-        },
-        {
-          title: 'Dedicated Frontend Teams',
-          slug: 'dedicated-frontend-teams',
-          description: 'Full-service frontend development',
-        },
-      ],
-    },
-    CMS: {
-      title: 'CMS',
-      slug: 'content-management-system',
-      description: 'Create stunning user interfaces',
-      technologies: [
-        { name: 'Wordpress', slug: 'wordpress-developer' },
-        { name: 'Drupal', slug: 'drupal-developer' },
-        { name: 'Sitecore', slug: 'sitecore-developer' },
-        { name: 'Magento', slug: 'magento-developer' },
-      ],
-      hiring: [
-        {
-          title: 'Hire Frontend Developers',
-          slug: 'hire-frontend-developer',
-          description: 'Expert UI/UX implementers',
-        },
-        {
-          title: 'Frontend Team Augmentation',
-          slug: 'frontend-team-augmentation',
-          description: 'Boost your frontend capabilities',
-        },
-        {
-          title: 'Dedicated Frontend Teams',
-          slug: 'dedicated-frontend-teams',
-          description: 'Full-service frontend development',
-        },
-      ],
-    },
-    eCommerce: {
-      title: 'eCommerce',
-      slug: 'eCommerce-developer',
-      description: 'Create stunning user interfaces',
-      technologies: [
-        { name: 'Shopify', slug: 'shopify-developer' },
-        { name: 'Magento', slug: 'magento-developer' },
-        { name: 'Squarespace', slug: 'squarespace-developer' },
-      ],
-      hiring: [
-        {
-          title: 'Hire Frontend Developers',
-          slug: 'hire-frontend-developer',
-          description: 'Expert UI/UX implementers',
-        },
-        {
-          title: 'Frontend Team Augmentation',
-          slug: 'frontend-team-augmentation',
-          description: 'Boost your frontend capabilities',
-        },
-        {
-          title: 'Dedicated Frontend Teams',
-          slug: 'dedicated-frontend-teams',
-          description: 'Full-service frontend development',
-        },
-      ],
-    },
-    Mobile: {
-      title: 'Mobile',
-      slug: 'mobile-developer',
-      description: 'Create stunning user interfaces',
-      technologies: [
-        { name: 'Android', slug: 'android-developer' },
-        { name: 'Flutter', slug: 'flutter-developer' },
-        { name: 'Ios', slug: 'ios-developer' },
-        { name: 'Swift', slug: 'swift-developer' },
-        { name: 'Iconic', slug: 'iconic-developer' },
-        { name: 'React Native', slug: 'react-native-developer' },
-      ],
-      hiring: [
-        {
-          title: 'Hire Frontend Developers',
-          slug: 'hire-frontend-developer',
-          description: 'Expert UI/UX implementers',
-        },
-        {
-          title: 'Frontend Team Augmentation',
-          slug: 'frontend-team-augmentation',
-          description: 'Boost your frontend capabilities',
-        },
-        {
-          title: 'Dedicated Frontend Teams',
-          slug: 'dedicated-frontend-teams',
-          description: 'Full-service frontend development',
-        },
-      ],
-    },
-    "Full Stack": {
-      title: 'Full Stack Developer',
-      slug: 'full-stack-developer',
-      description: 'Create stunning user interfaces',
-      technologies: [
-        { name: 'NextJs', slug: 'nextJs-developer' },
-        { name: 'MEAN', slug: 'mean-developer' },
-        { name: 'MERN', slug: 'mern-developer' },
-      ],
-      hiring: [
-        {
-          title: 'Hire Frontend Developers',
-          slug: 'hire-frontend-developer',
-          description: 'Expert UI/UX implementers',
-        },
-        {
-          title: 'Frontend Team Augmentation',
-          slug: 'frontend-team-augmentation',
-          description: 'Boost your frontend capabilities',
-        },
-        {
-          title: 'Dedicated Frontend Teams',
-          slug: 'dedicated-frontend-teams',
-          description: 'Full-service frontend development',
-        },
-      ],
-    },
-    "DevOps": {
-      title: 'DevOps',
-      slug: 'devops',
-      description: 'Create stunning user interfaces',
-      technologies: [
-        { name: 'Azure', slug: 'azure-developer' },
-        { name: 'AWS', slug: 'aws-developer' },
-        { name: 'Digital Ocean', slug: 'digital-ocean-developer' },
-      ],
-      hiring: [
-        {
-          title: 'Hire Frontend Developers',
-          slug: 'hire-frontend-developer',
-          description: 'Expert UI/UX implementers',
-        },
-        {
-          title: 'Frontend Team Augmentation',
-          slug: 'frontend-team-augmentation',
-          description: 'Boost your frontend capabilities',
-        },
-        {
-          title: 'Dedicated Frontend Teams',
-          slug: 'dedicated-frontend-teams',
-          description: 'Full-service frontend development',
-        },
-      ],
-    },
-  },
+//         {
+//           title: 'Staff Augmentation',
+//           slug: 'staff-augmentation',
+//           description: 'Access top technical resources on-demand',
+//         },
+//         {
+//           title: 'Hire Software Developer',
+//           slug: 'hire-software-developer',
+//           description: 'Work with skilled & dedicated developers',
+//         },
+//         {
+//           title: 'Dedicated Software Teams',
+//           slug: 'dedicated-software-teams',
+//           description: 'Hire Dedicated Developers',
+//         },
+//       ],
+//     },
+//     Frontend: {
+//       title: 'Frontend',
+//       slug: 'frontend',
+//       description: 'Create stunning user interfaces',
+//       technologies: [
+//         { name: 'ReactJs', slug: 'reactJs-developer' },
+//         { name: 'Angular', slug: 'angularJs-developer' },
+//         { name: 'VueJs', slug: 'vueJs-developer' },
+//       ],
+//       hiring: [
+//         {
+//           title: 'Hire Frontend Developers',
+//           slug: 'hire-frontend-developer',
+//           description: 'Expert UI/UX implementers',
+//         },
+//         {
+//           title: 'Frontend Team Augmentation',
+//           slug: 'frontend-team-augmentation',
+//           description: 'Boost your frontend capabilities',
+//         },
+//         {
+//           title: 'Dedicated Frontend Teams',
+//           slug: 'dedicated-frontend-teams',
+//           description: 'Full-service frontend development',
+//         },
+//       ],
+//     },
+//     CMS: {
+//       title: 'CMS',
+//       slug: 'content-management-system',
+//       description: 'Create stunning user interfaces',
+//       technologies: [
+//         { name: 'Wordpress', slug: 'wordpress-developer' },
+//         { name: 'Drupal', slug: 'drupal-developer' },
+//         { name: 'Sitecore', slug: 'sitecore-developer' },
+//         { name: 'Magento', slug: 'magento-developer' },
+//       ],
+//       hiring: [
+//         {
+//           title: 'Hire Frontend Developers',
+//           slug: 'hire-frontend-developer',
+//           description: 'Expert UI/UX implementers',
+//         },
+//         {
+//           title: 'Frontend Team Augmentation',
+//           slug: 'frontend-team-augmentation',
+//           description: 'Boost your frontend capabilities',
+//         },
+//         {
+//           title: 'Dedicated Frontend Teams',
+//           slug: 'dedicated-frontend-teams',
+//           description: 'Full-service frontend development',
+//         },
+//       ],
+//     },
+//     eCommerce: {
+//       title: 'eCommerce',
+//       slug: 'eCommerce-developer',
+//       description: 'Create stunning user interfaces',
+//       technologies: [
+//         { name: 'Shopify', slug: 'shopify-developer' },
+//         { name: 'Magento', slug: 'magento-developer' },
+//         { name: 'Squarespace', slug: 'squarespace-developer' },
+//       ],
+//       hiring: [
+//         {
+//           title: 'Hire Frontend Developers',
+//           slug: 'hire-frontend-developer',
+//           description: 'Expert UI/UX implementers',
+//         },
+//         {
+//           title: 'Frontend Team Augmentation',
+//           slug: 'frontend-team-augmentation',
+//           description: 'Boost your frontend capabilities',
+//         },
+//         {
+//           title: 'Dedicated Frontend Teams',
+//           slug: 'dedicated-frontend-teams',
+//           description: 'Full-service frontend development',
+//         },
+//       ],
+//     },
+//     Mobile: {
+//       title: 'Mobile',
+//       slug: 'mobile-developer',
+//       description: 'Create stunning user interfaces',
+//       technologies: [
+//         { name: 'Android', slug: 'android-developer' },
+//         { name: 'Flutter', slug: 'flutter-developer' },
+//         { name: 'Ios', slug: 'ios-developer' },
+//         { name: 'Swift', slug: 'swift-developer' },
+//         { name: 'Iconic', slug: 'iconic-developer' },
+//         { name: 'React Native', slug: 'react-native-developer' },
+//       ],
+//       hiring: [
+//         {
+//           title: 'Hire Frontend Developers',
+//           slug: 'hire-frontend-developer',
+//           description: 'Expert UI/UX implementers',
+//         },
+//         {
+//           title: 'Frontend Team Augmentation',
+//           slug: 'frontend-team-augmentation',
+//           description: 'Boost your frontend capabilities',
+//         },
+//         {
+//           title: 'Dedicated Frontend Teams',
+//           slug: 'dedicated-frontend-teams',
+//           description: 'Full-service frontend development',
+//         },
+//       ],
+//     },
+//     "Full Stack": {
+//       title: 'Full Stack Developer',
+//       slug: 'full-stack-developer',
+//       description: 'Create stunning user interfaces',
+//       technologies: [
+//         { name: 'NextJs', slug: 'nextJs-developer' },
+//         { name: 'MEAN', slug: 'mean-developer' },
+//         { name: 'MERN', slug: 'mern-developer' },
+//       ],
+//       hiring: [
+//         {
+//           title: 'Hire Frontend Developers',
+//           slug: 'hire-frontend-developer',
+//           description: 'Expert UI/UX implementers',
+//         },
+//         {
+//           title: 'Frontend Team Augmentation',
+//           slug: 'frontend-team-augmentation',
+//           description: 'Boost your frontend capabilities',
+//         },
+//         {
+//           title: 'Dedicated Frontend Teams',
+//           slug: 'dedicated-frontend-teams',
+//           description: 'Full-service frontend development',
+//         },
+//       ],
+//     },
+//     "DevOps": {
+//       title: 'DevOps',
+//       slug: 'devops',
+//       description: 'Create stunning user interfaces',
+//       technologies: [
+//         { name: 'Azure', slug: 'azure-developer' },
+//         { name: 'AWS', slug: 'aws-developer' },
+//         { name: 'Digital Ocean', slug: 'digital-ocean-developer' },
+//       ],
+//       hiring: [
+//         {
+//           title: 'Hire Frontend Developers',
+//           slug: 'hire-frontend-developer',
+//           description: 'Expert UI/UX implementers',
+//         },
+//         {
+//           title: 'Frontend Team Augmentation',
+//           slug: 'frontend-team-augmentation',
+//           description: 'Boost your frontend capabilities',
+//         },
+//         {
+//           title: 'Dedicated Frontend Teams',
+//           slug: 'dedicated-frontend-teams',
+//           description: 'Full-service frontend development',
+//         },
+//       ],
+//     },
+//   },
 
 
-}
+// }
 
 const servicesData = {
   categories: [
     { name: 'Software Development', slug: 'best-software-development-company-in-india' },
     { name: 'Application Development', slug: 'application-development-services' },
-    { name: 'Ecommerce Development', slug: 'ecommerce-development' },
+    { name: 'Ecommerce Development', slug: 'ecommerce-development-company' },
     { name: 'Dedicated Technical Team', slug: 'dedicated-technical-team' },
-    { name: 'QA & Testing', slug: 'qa-testing' },
-    { name: 'Cloud Services', slug: 'cloud-services' },
+    // { name: 'QA & Testing', slug: 'qa-testing' },
+    // { name: 'Cloud Services', slug: 'cloud-services' },
 
   ],
   content: {
@@ -315,11 +315,11 @@ const servicesData = {
     },
     "Ecommerce Development": {
       title: 'Ecommerce Development',
-      slug: 'ecommerce-development',
+      slug: 'ecommerce-development-company',
       description: 'Create your dream app',
       technologies: [
         { name: 'Ecommerce Web Development', slug: 'ecommerce-web-development' },
-        { name: 'Ecommerce Web Consulting', slug: 'ecommerce-web-consulting' },
+        { name: 'Ecommerce Web Consulting', slug: 'ecommerce-consulting-services' },
         { name: 'Ecommerce Advancement', slug: 'ecommerce-advancement' },
         { name: 'Ecommerce Maintenance & Support', slug: 'ecommerce-maintenance-support' },
         { name: 'Shopify', slug: 'shopify' },
@@ -373,63 +373,63 @@ const servicesData = {
         },
       ],
     },
-    "QA & Testing": {
-      title: 'QA & Testing',
-      slug: 'qa-testing',
-      description: 'Testing desc',
-      technologies: [
-        { name: 'QA Consulting', slug: 'qa-consulting' },
-        { name: 'Software Testing', slug: 'software-testing' },
-        { name: 'Mobile App Testing', slug: 'mobile-app-testing' },
-        { name: 'Web App Testing', slug: 'web-app-testing' },
-        { name: 'QA Outsourcing', slug: 'qa-outsourcing' },
-      ],
-      hiring: [
-        {
-          title: 'Hire Frontend Developers',
-          slug: 'hire-frontend-developer',
-          description: 'Expert UI/UX implementers',
-        },
-        {
-          title: 'Frontend Team Augmentation',
-          slug: 'frontend-team-augmentation',
-          description: 'Boost your frontend capabilities',
-        },
-        {
-          title: 'Dedicated Frontend Teams',
-          slug: 'dedicated-frontend-teams',
-          description: 'Full-service frontend development',
-        },
-      ],
-    },
-    "Cloud Services": {
-      title: 'Cloud Services',
-      slug: 'cloud-services',
-      description: 'Cloud service',
-      technologies: [
-        { name: 'Cloud Application Development', slug: 'cloud-application-development' },
-        { name: 'Cloud Strategy & Consulting', slug: 'cloud-strategy-consulting' },
-        { name: 'Cloud Migration', slug: 'cloud-migration' },
-        { name: 'Devops & CI/CD Pipelines', slug: 'devops-and-ci-cd-pipelines' },
-      ],
-      hiring: [
-        {
-          title: 'Hire Frontend Developers',
-          slug: 'hire-frontend-developer',
-          description: 'Expert UI/UX implementers',
-        },
-        {
-          title: 'Frontend Team Augmentation',
-          slug: 'frontend-team-augmentation',
-          description: 'Boost your frontend capabilities',
-        },
-        {
-          title: 'Dedicated Frontend Teams',
-          slug: 'dedicated-frontend-teams',
-          description: 'Full-service frontend development',
-        },
-      ],
-    },
+    // "QA & Testing": {
+    //   title: 'QA & Testing',
+    //   slug: 'qa-testing',
+    //   description: 'Testing desc',
+    //   technologies: [
+    //     { name: 'QA Consulting', slug: 'qa-consulting' },
+    //     { name: 'Software Testing', slug: 'software-testing' },
+    //     { name: 'Mobile App Testing', slug: 'mobile-app-testing' },
+    //     { name: 'Web App Testing', slug: 'web-app-testing' },
+    //     { name: 'QA Outsourcing', slug: 'qa-outsourcing' },
+    //   ],
+    //   hiring: [
+    //     {
+    //       title: 'Hire Frontend Developers',
+    //       slug: 'hire-frontend-developer',
+    //       description: 'Expert UI/UX implementers',
+    //     },
+    //     {
+    //       title: 'Frontend Team Augmentation',
+    //       slug: 'frontend-team-augmentation',
+    //       description: 'Boost your frontend capabilities',
+    //     },
+    //     {
+    //       title: 'Dedicated Frontend Teams',
+    //       slug: 'dedicated-frontend-teams',
+    //       description: 'Full-service frontend development',
+    //     },
+    //   ],
+    // },
+    // "Cloud Services": {
+    //   title: 'Cloud Services',
+    //   slug: 'cloud-services',
+    //   description: 'Cloud service',
+    //   technologies: [
+    //     { name: 'Cloud Application Development', slug: 'cloud-application-development' },
+    //     { name: 'Cloud Strategy & Consulting', slug: 'cloud-strategy-consulting' },
+    //     { name: 'Cloud Migration', slug: 'cloud-migration' },
+    //     { name: 'Devops & CI/CD Pipelines', slug: 'devops-and-ci-cd-pipelines' },
+    //   ],
+    //   hiring: [
+    //     {
+    //       title: 'Hire Frontend Developers',
+    //       slug: 'hire-frontend-developer',
+    //       description: 'Expert UI/UX implementers',
+    //     },
+    //     {
+    //       title: 'Frontend Team Augmentation',
+    //       slug: 'frontend-team-augmentation',
+    //       description: 'Boost your frontend capabilities',
+    //     },
+    //     {
+    //       title: 'Dedicated Frontend Teams',
+    //       slug: 'dedicated-frontend-teams',
+    //       description: 'Full-service frontend development',
+    //     },
+    //   ],
+    // },
   },
 
 

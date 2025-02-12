@@ -427,32 +427,121 @@ const contentBySlug = {
         "h2": "Methodology",
         "h4": "Get Smarter Applications with Effective Full Stack Solutions",
         "p": "Our full stack development services are all about creating smart, scalable, and user-friendly applications. We blend modern technology with thoughtful design to build tools that not only work flawlessly but also feel right for your users.",
-        "steps":  [
+        "steps": [
             {
-              "id": 1,
-              "title": "API-Driven Connectivity for Superior Functionality",
-              "description": "At our full stack development company, we create robust RESTful and GraphQL APIs that enable smooth communication between your front end, back end, and third-party services. We integrate with minimal downtime for your systems.",
-              "icon": FeaturesValidation
+                "id": 1,
+                "title": "API-Driven Connectivity for Superior Functionality",
+                "description": "At our full stack development company, we create robust RESTful and GraphQL APIs that enable smooth communication between your front end, back end, and third-party services. We integrate with minimal downtime for your systems.",
+                "icon": FeaturesValidation
             },
             {
-              "id": 2,
-              "title": "Back-End Powered by Modern Tech",
-              "description": "Harness the power of cloud-native tools, serverless frameworks, and containerization technologies like Docker. Our back-end solutions offer high availability to handle increasing user demands without bottlenecks or downtime.",
-              "icon": Agile
+                "id": 2,
+                "title": "Back-End Powered by Modern Tech",
+                "description": "Harness the power of cloud-native tools, serverless frameworks, and containerization technologies like Docker. Our back-end solutions offer high availability to handle increasing user demands without bottlenecks or downtime.",
+                "icon": Agile
             },
             {
-              "id": 3,
-              "title": "Front-End Frameworks for Immersive Interfaces",
-              "description": "Our full stack services create visually stunning, interactive user interfaces with frameworks like React.js, Angular, and Vue.js. These technologies power modern designs, delivering responsive layouts and engaging experiences across all devices.",
-              "icon": Coding
+                "id": 3,
+                "title": "Front-End Frameworks for Immersive Interfaces",
+                "description": "Our full stack services create visually stunning, interactive user interfaces with frameworks like React.js, Angular, and Vue.js. These technologies power modern designs, delivering responsive layouts and engaging experiences across all devices.",
+                "icon": Coding
             },
             {
-              "id": 4,
-              "title": "Real-Time Analytics",
-              "description": "Integrate real-time data pipelines and advanced visualization tools directly into your application. From MongoDB to SQL-based systems, our solutions transform raw data into actionable insights.",
-              "icon": RealTime
+                "id": 4,
+                "title": "Real-Time Analytics",
+                "description": "Integrate real-time data pipelines and advanced visualization tools directly into your application. From MongoDB to SQL-based systems, our solutions transform raw data into actionable insights.",
+                "icon": RealTime
             }
-          ]
+        ]
+    },
+
+    "ecommerce-development-company": {
+        "h2": "Methodology",
+        "h4": "Get Smarter Applications with Effective Ecommerce Solutions",
+        "p": "Our eCommerce development company in India specializes in creating user-friendly solutions designed for your organization's requirements.",
+        "steps": [
+            {
+                "id": 1,
+                "title": "Agile Development",
+                "description": "Instead of building everything at once, development happens in small, manageable steps. Teams regularly test and improve the platform. It also makes room for feedback along the way. This method keeps projects from getting stuck in rigid plans and allows the final product.",
+                "icon": FeaturesValidation
+            },
+            {
+                "id": 2,
+                "title": "Scrum Framework",
+                "description": "Scrum is a focused and disciplined version of Agile. Work is divided into short cycles, where developers, testers, and stakeholders work together toward set goals. Daily check-ins help resolve issues on the go to keep progress steady. With a structured backlog of tasks, teams know exactly what to tackle next.",
+                "icon": Agile
+            },
+            {
+                "id": 3,
+                "title": "DevOps Methodology",
+                "description": "Bridging the gap between coding and deployment, DevOps speeds up the process of launching new features. Developers and operations teams work side by side to keep the platform running. Automated testing and continuous deployments make sure updates roll out without affecting daily operations.",
+                "icon": Coding
+            },
+            {
+                "id": 4,
+                "title": "Waterfall Model",
+                "description": "Waterfall follows a step-by-step process, moving from planning to execution without looping back. It’s best for projects with a clear vision from the start, where major changes aren’t expected. Since each phase is well-defined, the development moves forward in a structured manner.",
+                "icon": RealTime
+            },
+            {
+                "id": 5,
+                "title": "Lean Development",
+                "description": "Lean strips away anything unnecessary and focuses only on what truly matters. The idea is to build the foundation fast—starting with an MVP and then modify it based on actual user feedback. This method is great for startups and businesses looking to test ideas before committing to full-scale development.",
+                "icon": FeaturesValidation
+            },
+            {
+                "id": 6,
+                "title": "Microservices Architecture",
+                "description": "Instead of building everything as one big block, microservices break an ecommerce platform into smaller and independent parts. Each service such as payments, product listings, or user authentication. This makes it easier to update, expand, and troubleshoot without affecting the entire system.",
+                "icon": Agile
+            }
+        ]
+    },
+
+    "ecommerce-consulting-services": {
+        "h2": "Methodology",
+        "h4": "Get Smarter Applications with Effective eCommerce Web Consulting Solutions",
+        "p": "Our team is here to help you create an eCommerce website that not only works but works smarter—driving real value and connecting the dots for you and your team. Ready to take your customer relationships to the next level? Let’s get started.",
+        "steps": [
+            {
+                "id": 1,
+                "title": "Agile E-commerce Strategy",
+                "description": "A flexible, iterative approach adapting to market trends and customer needs. It ensures quick implementation and continuous improvement by breaking projects into smaller sprints. Agile aligns business goals with actionable steps, fostering faster, more responsive development.",
+                "icon": FeaturesValidation
+            },
+            {
+                "id": 2,
+                "title": "Data-Driven Decision Making",
+                "description": "Using analytics to guide e-commerce strategies, it identifies customer behavior and sales trends. This optimizes marketing campaigns and product placements, ensuring decisions are backed by real-time data for informed choices. Data provides insights to optimize user experiences.",
+                "icon": Agile
+            },
+            {
+                "id": 3,
+                "title": "Conversion Rate Optimization (CRO)",
+                "description": "Analyzing and optimizing the customer journey to maximize conversions. CRO increases sales without increasing traffic by addressing usability issues. Improve the conversion rates that will lead to better ROI and leads.",
+                "icon": Coding
+            },
+            {
+                "id": 4,
+                "title": "Omnichannel Integration",
+                "description": "It helps create a seamless shopping experience across web, mobile, social media, and offline channels. With this, offer a consistent experience to your customers and boost their experience. Create a win-win situation for all.",
+                "icon": RealTime
+            },
+            {
+                "id": 5,
+                "title": "End-to-End Platform Audits",
+                "description": "Comprehensive audits of e-commerce platforms identify gaps and opportunities. This pinpoints technical and operational inefficiencies, recommending actionable improvements for performance. Ultimately platform audits can ensure a future-ready, optimized e-commerce presence.",
+                "icon": FeaturesValidation
+            },
+            {
+                "id": 6,
+                "title": "Customer-Centric UX/UI Design",
+                "description": "Designing intuitive and engaging interfaces tailored to your target audience. It improves navigation and usability, enhancing customer satisfaction. Great UX/UI increases conversion rates and reduces bounce rates by prioritizing user convenience and needs.",
+                "icon": Agile
+            }
+        ]
+
     },
 
 }

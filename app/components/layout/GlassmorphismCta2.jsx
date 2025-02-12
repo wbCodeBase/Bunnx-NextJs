@@ -114,6 +114,22 @@ const data = [
     buttonText: "Contact Us Now",
     backgroundImage: "https://images.pexels.com/photos/316681/pexels-photo-316681.jpeg",
   },
+  {
+    slug: "ecommerce-development-company",
+    tagline: "Your success, coded into every detail. ",
+    title: "Achieve Unmatched Growth with Secure Ecommerce Solutions",
+    description: "From efficient database management to cloud deployment, our ecommerce development company creates systems designed to grow alongside your business. We make the store that is no longer static and creates more traffic.",
+    buttonText: "Contact Us Now",
+    backgroundImage: "https://images.pexels.com/photos/316681/pexels-photo-316681.jpeg",
+  },
+  {
+    slug: "ecommerce-consulting-services",
+    tagline: "Keep your customers coming back for more.",
+    title: "Looking to make your online store?",
+    description: "We’ll dig into your current platform and work together to create an experience for both you and your customers. With detailed analysis, our solutions not only ensure you get the best but also your customer’s get the best.",
+    buttonText: "Contact Us Now",
+    backgroundImage: "https://images.pexels.com/photos/316681/pexels-photo-316681.jpeg",
+  },
 ];
 
 const getCtaContent = (data, serviceDetailPageSlug) => {

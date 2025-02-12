@@ -889,11 +889,11 @@ const serviceData = {
         "sections": [
           {
             "type": "para",
-            "content": "Fixed Price Model: Need to set up a CMS with specific features, integrate third-party tools, or improve the admin panel? We handle it at a fixed cost, with a transparent budget and timeline. No unexpected expenses or delays."
+            "content": "Fixed Price Model:\nNeed to set up a CMS with specific features, integrate third-party tools, or improve the admin panel? We handle it at a fixed cost, with a transparent budget and timeline. No unexpected expenses or delays."
           },
           {
             "type": "para",
-            "content": "Time & Material Model: Need ongoing tweaks, layout improvements, or functionality upgrades? Pay based on actual work done, either hourly or per resource. This model is best suited for projects where priorities shift frequently."
+            "content": "Time & Material Model:\nNeed ongoing tweaks, layout improvements, or functionality upgrades? Pay based on actual work done, either hourly or per resource. This model is best suited for projects where priorities shift frequently."
           }
         ]
       }
@@ -955,16 +955,147 @@ const serviceData = {
         "sections": [
           {
             "type": "para",
-            "content": "Fixed Price Model: It is perfect for back-end projects with well-defined requirements, specifications, and deliverables. This approach works best when the scope is clear. Ideal for small- to medium-scale back-end development, this model makes sure that both you and the development team are aligned on objectives."
+            "content": "Fixed Price Model:\nIt is perfect for back-end projects with well-defined requirements, specifications, and deliverables. This approach works best when the scope is clear. Ideal for small- to medium-scale back-end development, this model makes sure that both you and the development team are aligned on objectives."
           },
           {
             "type": "para",
-            "content": "Time & Material Model: It is designed for back-end projects with dynamic requirements and evolving scopes. This model allows for flexible engagement, where developers work based on hourly or resource-based billing. It’s perfect for projects with uncertain or rapidly changing requirements, such as complex UI/UX needs."
+            "content": "Time & Material Model:\nIt is designed for back-end projects with dynamic requirements and evolving scopes. This model allows for flexible engagement, where developers work based on hourly or resource-based billing. It’s perfect for projects with uncertain or rapidly changing requirements, such as complex UI/UX needs."
           }
         ]
       }
     ]
-  }
+  },
+
+
+  "ecommerce-development-company": {
+    "title": "Choose From Our Ecommerce Development Service Models",
+    "description": "Our models are designed to bring in the right expertise at each stage—whether it's a single developer for a task or a team for ongoing maintenance.",
+    "models": [
+      {
+        "title": "Dedicated Team",
+        "subtitle": "Also known as product interface teams",
+        "icon": lightdotnetmodalicon,
+        "sections": [
+          {
+            "type": "para",
+            "content": "A team from the top eCommerce Development services is the ideal solution for projects that require long-term collaboration. With this model, you get a fully dedicated group of eCommerce website developers who work exclusively on your project. This team integrates with your internal processes, and maintains high-quality standards throughout the development lifecycle."
+          },
+          {
+            "type": "list",
+            "content": [
+              "Full-time, dedicated eCommerce website developers",
+              "Integration with your existing team and workflows.",
+              "Scalable team size",
+              "Complete ownership of project deadlines.",
+              "Long-term collaboration",
+              "Specialized expertise in eCommerce website technologies",
+              "Flexibility to adapt and adjust team composition"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Ecommerce Team Augmentation",
+        "subtitle": "Also known as team extension or staff augmentation",
+        "icon": teamAug,
+        "sections": [
+          {
+            "type": "para",
+            "content": "Team augmentation is a flexible solution that allows you to extend your existing team with additional specialized resources. This model is perfect when you need extra expertise for specific tasks or to scale up quickly during critical project phases. By adding expert ecommerce developers to your team, you can accelerate development."
+          },
+          {
+            "type": "list",
+            "content": [
+              "Ideal for scaling up eCommerce development resources during peak project phases.",
+              "Temporary or long-term support.",
+              "Cost-effective solution for handling surges in work without hiring full-time staff.",
+              "Reduces the overhead of recruitment.",
+              "Facilitates knowledge transfer and skill development."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Project Based",
+        "subtitle": "Best suited for small-mid scale eCommerce projects",
+        "icon": ProjectBased,
+        "sections": [
+          {
+            "type": "para",
+            "content": "Fixed Price Model:\nIt is perfect for eCommerce projects with well-defined specifications and deliverables. This approach works best when the scope is clear. Ideal for small- to medium-scale back-end development, this model makes sure that both you and the eCommerce development team are aligned on objectives."
+          },
+          {
+            "type": "para",
+            "content": "Time & Material Model:\nIt is designed for eCommerce projects with dynamic requirements and evolving scopes. This model allows for flexible engagement, where developers work based on hourly or resource-based billing. It’s perfect for projects with uncertain or rapidly changing requirements, such as complex UI/UX needs."
+          }
+        ]
+      }
+    ]
+  },
+
+
+  "ecommerce-consulting-services": {
+    "title": "Choose From Our Ecommerce Consulting Service Models",
+    "description": "We have hiring models that are ideal for clear-cut projects. They include fixed cost and predictable timeline. Perfect for initial builds, it has a pricing as per the project. No extra or hidden costs and great for complex needs. Also, if you want ongoing improvements in your project, we have a different pricing model for it.",
+    "models": [
+      {
+        "title": "Dedicated Ecommerce Team",
+        "subtitle": "Also known as product interface teams",
+        "icon": lightdotnetmodalicon,
+        "sections": [
+          {
+            "type": "para",
+            "content": "When you need ongoing support, our dedicated team model is the best fit. Our team works solely on your ecommerce project and brings continuous focus to optimize your store. We streamline every process and improve your customer experience."
+          },
+          {
+            "type": "list",
+            "content": [
+              "A team working exclusively on your project",
+              "Full ownership of project deadlines",
+              "Resources as your business grows",
+              "Long-term collaboration and expertise"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Team Augmentation",
+        "subtitle": "Also known as team extension or staff augmentation",
+        "icon": teamAug,
+        "sections": [
+          {
+            "type": "para",
+            "content": "If your existing team needs a little extra help, our back-end team augmentation model is designed for you. It allows you to bring in developers without the overhead of hiring full-time staff, perfect for addressing bottlenecks or scaling during busy periods."
+          },
+          {
+            "type": "list",
+            "content": [
+              "Add expertise without the hiring process",
+              "Support for development phases",
+              "Short-term or long-term options",
+              "Cost-effective and growing projects"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Project-Based Model",
+        "subtitle": "Best suited for small-mid scale eCommerce projects",
+        "icon": ProjectBased,
+        "sections": [
+          {
+            "type": "para",
+            "content": "Fixed Price Model:\nFor ecommerce projects, the fixed price model should be your way to go. This approach offers you clarity on cost and deliverables from the start, perfect for small- to medium-scale projects where the scope is clear."
+          },
+          {
+            "type": "para",
+            "content": "Time & Material Model:\nWhen your ecommerce project has shifting requirements or complex needs, the time and material model gives you the flexibility to adapt as you go. You only pay for the work done, allowing for adjustments along the way."
+          }
+        ]
+      }
+    ]
+
+  },
 
 };
 

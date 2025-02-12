@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import { FaLocationArrow } from "react-icons/fa";
+// import Link from 'next/link';
+// import { FaLocationArrow } from "react-icons/fa";
 import { Landmark, Book, HeartPulse, Truck, ShoppingCart, Plane, Film, Factory, Home } from 'lucide-react';
 
 
@@ -9,7 +9,7 @@ import { Landmark, Book, HeartPulse, Truck, ShoppingCart, Plane, Film, Factory, 
 //     'software development agency': 'best-software-development-company-in-india',
 //     'web and mobile applications': 'application-development-services',
 //     'Seamless staff augmentation': 'staff-augmentation',
-//     'smart eCommerce solutions': 'ecommerce-development',
+//     'smart eCommerce solutions': 'ecommerce-development-company',
 // };
 
 const Industries = () => {
@@ -98,7 +98,7 @@ const Industries = () => {
                                 <p>{service.description}</p>
                             </div>
 
-                            <Link
+                            {/* <Link
                                 className='flex items-center justify-center gap-2 p-1 pl-3 font-medium text-sm bg-orange-500 rounded-full mt-4 text-white'
                                 href={service.link}
                             >
@@ -106,7 +106,7 @@ const Industries = () => {
                                 <span className='bg-white rounded-full p-2 text-black'>
                                     <FaLocationArrow />
                                 </span>
-                            </Link>
+                            </Link> */}
                         </div>
                     ))}
                 </div>

@@ -201,12 +201,6 @@ export default function HireDetailsComponentt() {
         ctaRedirectUrl: "dedicated-development-teams"
       },
       {
-        title: "QA & Testing",
-        description:
-          "Our certified experts perform thorough testing to detect and resolve any errors or bugs that could affect your software performance. Guarantee the quality, reliability, and performance of your software applications with our QA Experts and testing services. ",
-        ctaRedirectUrl: "qa-testing",
-      },
-      {
         title: "Ecommerce",
         description:
           "As a leading software development company in India, we offer comprehensive e-commerce solutions, including secure payment gateways and streamlined shopping experiences, ensuring convenience for your customers.",

@@ -121,7 +121,7 @@ export default function ServiceDetailsComp() {
 
       <HiringModels serviceDetailPageSlug={serviceDetails} />
 
-      <GlassmorphismCta2 serviceDetailPageSlug={serviceDetails} />
+      <GlassmorphismCta2 serviceDetailPageSlug={serviceDetails} /> 
 
       <GuideTopics serviceDetailPageSlug={serviceDetails} />
 

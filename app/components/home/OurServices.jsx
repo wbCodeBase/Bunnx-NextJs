@@ -14,8 +14,8 @@ const techStackData = {
         'Application Development',
         'Dedicated Software Teams',
         'eCommerce',
-        'QA & Testing',
-        'Cloud Services',
+        // 'QA & Testing',
+        // 'Cloud Services',
     ],
 
     "content": {
@@ -64,35 +64,35 @@ const techStackData = {
             "description": "Transform your online business with smart eCommerce solutions. We build powerful web experiences, drive sales, and provide strategic development and consulting.",
             "columns": [
                 { "name": "Ecommerce Web Development", "description": "Next-gen web experiences", "slug": "ecommerce-web-development" },
-                { "name": "Ecommerce Web Consulting", "description": "Fast, dynamic web apps", "slug": "ecommerce-web-consulting" },
+                { "name": "Ecommerce Web Consulting", "description": "Fast, dynamic web apps", "slug": "ecommerce-consulting-services" },
                 { "name": "Ecommerce Advancement", "description": "Sleek, powerful iOS apps", "slug": "ecommerce-advancement" },
                 { "name": "Ecommerce Maintenance & Support", "description": "Robust Android solutions", "slug": "ecommerce-maintenance-support" },
             ],
-            linkViewMore: "ecommerce-development"
+            linkViewMore: "ecommerce-development-company"
         },
-        "QA & Testing": {
-            "title": "QA & Testing",
-            "description": "Ensure software excellence with comprehensive testing services. Precision-driven methodologies, expert consulting, and quality assurance that guarantee robust performance.",
-            "columns": [
-                { "name": "QA Consulting", "description": "Next-gen web experiences", "slug": "qa-consulting" },
-                { "name": "Software Testing", "description": "Fast, dynamic web apps", "slug": "software-testing" },
-                { "name": "Web App Testing", "description": "Sleek, powerful iOS apps", "slug": "web-app-testing" },
-                { "name": "Mobile App Testing", "description": "Robust Android solutions", "slug": "mobile-app-testing" },
-                { "name": "QA Outsourcing", "description": "Build once, run everywhere", "slug": "qa-outsourcing" }
-            ],
-            linkViewMore: "qa-testing"
-        },
-        "Cloud Services": {
-            "title": "Cloud Services",
-            "description": "Navigate digital transformation with intelligent cloud solutions. Strategic development, migration, and consulting that enhance your technological capabilities.",
-            "columns": [
-                { "name": "Cloud Application Development", "description": "Sleek, powerful iOS apps", "slug": "cloud-application-development" },
-                { "name": "Cloud Strategy & Consulting", "description": "Next-gen web experiences", "slug": "cloud-strategy-consulting" },
-                { "name": "Cloud Migration", "description": "Fast, dynamic web apps", "slug": "cloud-migration" },
-                { "name": "Devops & CI/CD Pipelines", "description": "Build once, run everywhere", "slug": "devops-and-ci-cd-pipelines" },
-            ],
-            linkViewMore: "cloud-services"
-        }
+        // "QA & Testing": {
+        //     "title": "QA & Testing",
+        //     "description": "Ensure software excellence with comprehensive testing services. Precision-driven methodologies, expert consulting, and quality assurance that guarantee robust performance.",
+        //     "columns": [
+        //         { "name": "QA Consulting", "description": "Next-gen web experiences", "slug": "qa-consulting" },
+        //         { "name": "Software Testing", "description": "Fast, dynamic web apps", "slug": "software-testing" },
+        //         { "name": "Web App Testing", "description": "Sleek, powerful iOS apps", "slug": "web-app-testing" },
+        //         { "name": "Mobile App Testing", "description": "Robust Android solutions", "slug": "mobile-app-testing" },
+        //         { "name": "QA Outsourcing", "description": "Build once, run everywhere", "slug": "qa-outsourcing" }
+        //     ],
+        //     linkViewMore: "qa-testing"
+        // },
+        // "Cloud Services": {
+        //     "title": "Cloud Services",
+        //     "description": "Navigate digital transformation with intelligent cloud solutions. Strategic development, migration, and consulting that enhance your technological capabilities.",
+        //     "columns": [
+        //         { "name": "Cloud Application Development", "description": "Sleek, powerful iOS apps", "slug": "cloud-application-development" },
+        //         { "name": "Cloud Strategy & Consulting", "description": "Next-gen web experiences", "slug": "cloud-strategy-consulting" },
+        //         { "name": "Cloud Migration", "description": "Fast, dynamic web apps", "slug": "cloud-migration" },
+        //         { "name": "Devops & CI/CD Pipelines", "description": "Build once, run everywhere", "slug": "devops-and-ci-cd-pipelines" },
+        //     ],
+        //     linkViewMore: "cloud-services"
+        // }
     }
 
 }
@@ -103,7 +103,7 @@ const keywordToSlug = {
     'software development agency': 'best-software-development-company-in-india',
     'web and mobile applications': 'application-development-services',
     'Seamless staff augmentation': 'staff-augmentation',
-    'smart eCommerce solutions': 'ecommerce-development',
+    'smart eCommerce solutions': 'ecommerce-development-company',
 };
 
 

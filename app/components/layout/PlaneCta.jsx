@@ -56,13 +56,6 @@ const PlaneCta = ({ serviceDetailPageSlug }) => {
             slug: "it-consulting-services"
         },
         {
-            span: "Get Results with Smart IT Solutions!",
-            head: "Stay away from outdated systems with the best IT consulting firm!",
-            para: "Use our IT consulting services India to tackle your challenges and simplify complex processes. Let’s turn technology into a tool that helps your business thrive every step of the way.",
-            ctaText: "Let's Connect!",
-            slug: "it-consulting-services"
-        },
-        {
             span: "Code That Scales, Apps That Shine!",
             head: "Struggling with apps that lag, crash, or fail?",
             para: "Say no more! With Bunnx, you can get the best-in-class solution for all your mobile app development needs. Be it a gaming app or an educational app, our experts are here to help you out in every way. So, let's make the next best app together!",
@@ -110,6 +103,20 @@ const PlaneCta = ({ serviceDetailPageSlug }) => {
             para: "From reducing load times to enhancing data flow, we focus on making a solid and integrated architecture. Connect with the full-stack experts and get your working strengthened in minutes.",
             ctaText: "Let's Connect!",
             slug: "full-stack-development-services"
+        }, 
+        {
+            span: "Turning browsers into buyers, one click at a time.",
+            head: "You build your eCommerce business, while we build your eCommerce store!",
+            para: "Struggling with slow-loading pages and checkout failures? Say no more! We have got you covered with the best solutions to ensure that your eCommerce business is not impacted at all.",
+            ctaText: "Let's Connect!",
+            slug: "ecommerce-development-company"
+        }, 
+        {
+            span: "Let us Build an eCommerce Experience Customers will Love",
+            head: "Your website is your storefront in the digital world—make it unforgettable.",
+            para: "From custom storefronts to order management, we’ll build a platform that’s as bold as your brand. With our experts, get the best w-commerce web consulting and ensure that your website stands out!",
+            ctaText: "Let's Connect!",
+            slug: "ecommerce-consulting-services"
         }, 
         
     ]

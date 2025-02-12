@@ -170,12 +170,12 @@ const Footer = () => {
                                 <div>
                                     <h3 className="text-md font-medium mb-4">Services</h3>
                                     <ul className="space-y-2 text-gray-400 text-sm">
-                                        <li><Link href="/best-software-development-company-in-india" className="text-gray-300 hover:text-white">Software Development</Link></li>
-                                        <li><Link href="/application-development-services" className="text-gray-300 hover:text-white">Application Development</Link></li>
-                                        <li><Link href="/cloud-services" className="text-gray-300 hover:text-white">Cloud Services</Link></li>
-                                        <li><Link href="/ecommerce-development" className="text-gray-300 hover:text-white">Ecommerce Development</Link></li>
-                                        <li><Link href="/qa-testing" className="text-gray-300 hover:text-white">QA Testing</Link></li>
-                                        <li><Link href="/dedicated-technical-team" className="text-gray-300 hover:text-white">Dedicated Technical-Team</Link></li>
+                                        <li><Link href="best-software-development-company-in-india" className="text-gray-300 hover:text-white">Software Development</Link></li>
+                                        <li><Link href="application-development-services" className="text-gray-300 hover:text-white">Application Development</Link></li>
+                                        <li><Link href="cloud-services" className="text-gray-300 hover:text-white">Cloud Services</Link></li>
+                                        <li><Link href="ecommerce-development-company" className="text-gray-300 hover:text-white">Ecommerce Development</Link></li>
+                                        <li><Link href="qa-testing" className="text-gray-300 hover:text-white">QA Testing</Link></li>
+                                        <li><Link href="dedicated-technical-team" className="text-gray-300 hover:text-white">Dedicated Technical-Team</Link></li>
                                     </ul>
                                 </div>
 
@@ -183,12 +183,12 @@ const Footer = () => {
                                 <div className='sm:ml-12 ml-0'>
                                     <h3 className="text-md font-medium mb-4">Hire</h3>
                                     <ul className="space-y-2 text-gray-400 text-sm">
-                                        <li><Link href="/node-developer" className="text-gray-300 hover:text-white">Node Developer</Link></li>
-                                        <li><Link href="/java-developer" className="text-gray-300 hover:text-white">Java Developer</Link></li>
-                                        <li><Link href="/c-sharp-developer" className="text-gray-300 hover:text-white">C Sharp Developer</Link></li>
-                                        <li><Link href="/nextJs-developer" className="text-gray-300 hover:text-white">Next Developer</Link></li>
-                                        <li><Link href="/devops-engineer" className="text-gray-300 hover:text-white">DevOps</Link></li>
-                                        <li><Link href="/django-developer" className="text-gray-300 hover:text-white">Django</Link></li>
+                                        <li><Link href="node-developer" className="text-gray-300 hover:text-white">Node Developer</Link></li>
+                                        <li><Link href="java-developer" className="text-gray-300 hover:text-white">Java Developer</Link></li>
+                                        <li><Link href="c-sharp-developer" className="text-gray-300 hover:text-white">C Sharp Developer</Link></li>
+                                        <li><Link href="nextJs-developer" className="text-gray-300 hover:text-white">Next Developer</Link></li>
+                                        <li><Link href="devops-engineer" className="text-gray-300 hover:text-white">DevOps</Link></li>
+                                        <li><Link href="django-developer" className="text-gray-300 hover:text-white">Django</Link></li>
                                     </ul>
                                 </div>
 

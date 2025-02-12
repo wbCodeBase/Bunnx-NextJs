@@ -1246,6 +1246,180 @@ const contentBySlug = {
             }
         ]
     },
+    "ecommerce-development-company": {
+        h2: "Our Process",
+        h4: "Our Process for Ecommerce Development",
+        p: "A systematic approach and dedication to particulars are necessary for creating a successful eCommerce platform. We make sure every stage, from system analysis to ongoing support, is in line with your company's objectives.",
+        "processSections": [
+            {
+                "id": 1,
+                "title": "Requirement Engineering & Analysis",
+                "description": "We kick off with a thorough analysis of your business processes, system requirements, and integration needs to set a strong foundation for your eCommerce platform.",
+                "activities": [
+                    "Business Logic Mapping",
+                    "ER Diagram Creation",
+                    "API Requirement Definition",
+                    "Technology Selection"
+                ],
+                "deliverables": [
+                    "Comprehensive System Requirement Document (SRD)",
+                    "Proposed Architecture Diagram",
+                    "Finalized Technology Stack"
+                ]
+            },
+            {
+                "id": 2,
+                "title": "Architecture Design & Development",
+                "description": "Our team creates a scalable, modular back-end architecture for optimized data flow, high security, and superior performance, along with a clear roadmap for execution.",
+                "activities": [
+                    "Designing Monolithic Structures",
+                    "Database Schema Design",
+                    "API Endpoint Mapping",
+                    "Sprint Planning and Allocation"
+                ],
+                "deliverables": [
+                    "Back-End Architecture Design",
+                    "Development Plan with Milestones",
+                    "Initial API Documentation"
+                ]
+            },
+            {
+                "id": 3,
+                "title": "Development & Integration",
+                "description": "We implement core features, secure APIs, and third-party integrations, ensuring the back end operates without any errors with the front end and external services.",
+                "activities": [
+                    "Server-Side Programming",
+                    "User and Role-Based Authorization",
+                    "API Development",
+                    "Integration Other APIs"
+                ],
+                "deliverables": [
+                    "Functional Back-End Codebase",
+                    "Documented API Interfaces",
+                    "Integrated Third-Party Services"
+                ]
+            },
+            {
+                "id": 4,
+                "title": "Quality Assurance & Testing",
+                "description": "To ensure reliability and scalability, we perform extensive testing under replicated real-world conditions to deliver a smooth eCommerce experience.",
+                "activities": [
+                    "Unit and Integration Testing",
+                    "Load Testing",
+                    "Security Assessments",
+                    "Performance Monitoring with APM"
+                ],
+                "deliverables": [
+                    "Comprehensive Testing Reports",
+                    "Optimized and Debugged Code",
+                    "Security Certifications"
+                ]
+            },
+            {
+                "id": 5,
+                "title": "Deployment and Support",
+                "description": "Once tested and approved, your eCommerce platform is deployed to production, followed by ongoing monitoring and updates to maintain peak performance.",
+                "activities": [
+                    "Cloud Deployment on AWS",
+                    "Configuring Monitoring Tools",
+                    "Regular Security Patches",
+                    "Knowledge Transfer for Client"
+                ],
+                "deliverables": [
+                    "Deployed ECommerce Solution",
+                    "Real-Time Monitoring Dashboards",
+                    "Logs and Support Documentation"
+                ]
+            }
+        ]
+    },
+    "ecommerce-consulting-services": {
+        h2: "Our Process",
+        h4: "Our Process for Ecommerce Web Consulting",
+        p: "A business cannot thrive on a rigid plan in a market that shifts daily. Crafting an e-commerce strategy that adapts on the go allows businesses to fine-tune their approach and experiment with new ideas.",
+        "processSections": [
+            {
+                "id": 1,
+                "title": "Adaptive Strategy Development",
+                "description": "We adjust your methods based on actual customer behavior. This approach prevents companies from getting stuck with outdated tactics and keeps them ahead of the competition.",
+                "activities": [
+                    "Monitor behavior patterns",
+                    "Test new pricing models",
+                    "Break goals into smaller actions",
+                    "Strategies as per market trends"
+                ],
+                "deliverables": [
+                    "Roadmap with steps",
+                    "Adapt to market shifts",
+                    "Higher engagement"
+                ]
+            },
+            {
+                "id": 2,
+                "title": "Data-Powered Business Moves",
+                "description": "Numbers tell a story, and businesses that pay attention to data can predict what customers want before they even ask. By analyzing trends, businesses can create highly marketing campaigns and introduce new products at the right time.",
+                "activities": [
+                    "Track website interactions",
+                    "Use analytics tools",
+                    "Adjust marketing strategies",
+                    "Eliminate weak points"
+                ],
+                "deliverables": [
+                    "Targeting and personalization",
+                    "Use of marketing budgets",
+                    "Increased revenue"
+                ]
+            },
+            {
+                "id": 3,
+                "title": "Turning Visitors into Buyers",
+                "description": "Bringing traffic to a website is one thing, but making sure those visitors turn into paying customers is another challenge. Every step in the buying process should feel effortless—product pages should answer all questions. Checkout should be quick and distractions should be minimal.",
+                "activities": [
+                    "A/B test different layouts",
+                    "Simplify checkout",
+                    "Use persuasive elements",
+                    "Optimize website speed"
+                ],
+                "deliverables": [
+                    "Higher sales",
+                    "Reduced abandonment rates",
+                    "More satisfied customers"
+                ]
+            },
+            {
+                "id": 4,
+                "title": "Shopping Without Boundaries",
+                "description": "Customers no longer shop in just one place—they might browse on social media, compare prices on a website, and buy from an app. A business that connects all these channels makes shopping effortless and increases the chances of repeat purchases.",
+                "activities": [
+                    "Synchronize inventory",
+                    "Link customer accounts",
+                    "Personalized recommendations",
+                    "Streamline checkout"
+                ],
+                "deliverables": [
+                    "Increased sales",
+                    "Stronger brand recognition",
+                    "Higher customer retention"
+                ]
+            },
+            {
+                "id": 5,
+                "title": "E-commerce Platform Review",
+                "description": "A successful e-commerce business isn't just about flashy designs—it needs a solid foundation. Regularly auditing the entire system helps identify slow-loading pages, outdated payment gateways, and weak security points. Fixing these issues before they become major problems leads to a more shopping experience.",
+                "activities": [
+                    "Review site performance",
+                    "Assess backend processes",
+                    "Identify gaps in security",
+                    "Conduct load testing"
+                ],
+                "deliverables": [
+                    "Faster loading times",
+                    "Reduced technical errors",
+                    "Future-proofed platform"
+                ]
+            }
+        ]
+    },
 
 
 };

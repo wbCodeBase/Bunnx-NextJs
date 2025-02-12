@@ -20,13 +20,6 @@ const defaultServicesData = [
     fetchOnSlug: ["support-maintenance", "software-outsourcing", "devops", "ecommerce"]
   },
   {
-    title: "QA & Testing",
-    description:
-      "Our certified experts perform thorough testing to detect and resolve any errors or bugs that could affect your software’s performance. Guarantee the quality, reliability, and performance of your software applications with our QA Experts and testing services. ",
-    slug: "qa-testing",
-    fetchOnSlug: ["custom-software-development-services", "mobile-app-development-services", "qa-testing", "cloud-services"]
-  },
-  {
     title: "Ecommerce",
     description:
       "As a leading software development company in India, we offer comprehensive e-commerce solutions, including secure payment gateways and streamlined shopping experiences, ensuring convenience for your customers.",
@@ -136,6 +129,16 @@ const OurServicesHeadPara = [
     servicePara: "As a leading full stack development company in India, we specialize in creating dynamic, end-to-end solutions designed to drive business growth.",
     slug: "full-stack-development-services"
   },
+  {
+    serviceTitle: "Best Ecommerce Development Services",
+    servicePara: "As a reputable eCommerce website development company in India, we create feature-loaded, that attracts online surfers to boost your Business.",
+    slug: "ecommerce-web-development"
+  },
+  {
+    serviceTitle: "Best Ecommerce Web Consulting Services",
+    servicePara: "With our eCommerce consulting services, we’ll help you build a shopping experience your customers can’t resist. From smoother checkouts to eye-catching designs, let’s make your online store the one everyone’s talking about.",
+    slug: "ecommerce-consulting-services"
+  },
 ]
 
 
@@ -202,7 +205,7 @@ const Services = ({ serviceSectionObj, serviceDetailPageSlug, extractNameFromSlu
 
 
   const servicesHeadParaObj = OurServicesHeadPara?.find((serviceHeadPara) => serviceHeadPara?.slug === serviceDetailPageSlug) || {
-    serviceTitle: `Best ${extractNameFromSlug}`,
+    serviceTitle: `${extractNameFromSlug}`,
     servicePara: `We are a top ${extractNameFromSlug} service provider in India, focused on delivering the best user solutions. We build powerful, integrated websites that make navigation smoother and drive business growth seamlessly. Our innovative range of front end development services include`,
   };
 

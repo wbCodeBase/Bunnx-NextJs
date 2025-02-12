@@ -832,6 +832,102 @@ const faqData = {
     ],
 
 
+    "ecommerce-development-company": [
+      {
+        "id": "1",
+        "question": "Which technology do you use while creating eCommerce websites?",
+        "answer": {
+            "type": "text",
+            "content": "We use a number of technologies customized for your eCommerce requirements. This includes databases like MySQL and MongoDB for effective data management, as well as frameworks for back-end programming like Node.js, Python, and PHP. Our experience as an eCommerce development company guarantees that we choose the best resources to create safe and scalable online stores."
+        }
+      },
+      {
+        "id": "2",
+        "question": "How can you make sure eCommerce stores load quickly?",
+        "answer": {
+            "type": "text",
+            "content": "The efficiency of eCommerce depends on speed. We use strategies like caching, effective database queries, and reducing code bloat to maximize website performance. As an eCommerce development services, we additionally guarantee responsive designs and optimize load speeds on all platforms by utilizing content delivery networks (CDNs)."
+        }
+      },
+      {
+        "id": "3",
+        "question": "How do you ensure fast loading times for eCommerce websites?",
+        "answer": {
+            "type": "text",
+            "content": "Speed is critical for ecommerce success. We optimize website performance through techniques like caching, efficient database queries, and minimizing code bloat. We also ensure responsive designs and use content delivery networks (CDNs) to enhance load times across all devices."
+        }
+      },
+      {
+        "id": "4",
+        "question": "Do you provide support after launch?",
+        "answer": {
+            "type": "text",
+            "content": "Yes, we offer full post-launch support which involves bug fixes, upkeep, performance enhancements, and continuous assistance to guarantee your program keeps running well."
+        }
+      },
+      {
+        "id": "5",
+        "question": "When sales are at their highest, can your solutions manage excessive traffic?",
+        "answer": {
+            "type": "text",
+            "content": "Yes, we look into scalability while designing e-commerce platforms, using load balancing and cloud services to manage unexpected spikes in traffic."
+        }
+      },
+      {
+        "id": "6",
+        "question": "How is the security of eCommerce platforms managed?",
+        "answer": {
+            "type": "text",
+            "content": "When creating eCommerce websites, security comes first. To protect your platform and client data, we use encryption for sensitive data, secure payment gateway integration, and frequent vulnerability checks."
+        }
+      }
+    ],
+
+
+    "ecommerce-consulting-services": [
+        {
+          "id": "1",
+          "question": "How can you help my online store stand out?",
+          "answer": {
+            "type": "text",
+            "content": "It’s not just about a pretty website or a flashy app. We dive into the nitty-gritty—like making your product pages irresistible, streamlining the checkout process, and building trust with your customers."
+          }
+        },
+        {
+          "id": "2",
+          "question": "Will you help me handle the tech side of things?",
+          "answer": {
+            "type": "text",
+            "content": "Absolutely. If you are setting up payment systems, managing inventory tools, or making a website that works like a charm during the busiest sales, Bunnx is what you should choose. We are the best eCommerce consultant in India that makes the tech part feel less daunting so you can focus on growing your business."
+          }
+        },
+        {
+          "id": "3",
+          "question": "What kind of businesses do you work with?",
+          "answer": {
+            "type": "text",
+            "content": "We’ve helped everyone from niche boutique stores to large-scale online retailers. Whether you’re just starting or looking to level up your existing store, we know how to get you where you want to be."
+          }
+        },
+        {
+          "id": "4",
+          "question": "Can Bunnx help me attract more customers?",
+          "answer": {
+            "type": "text",
+            "content": "Of course! Our experts design loyalty programs, create personalized marketing strategies to keep your customers coming back for more. Plus, we’ll help you understand what’s working and what’s not, so you can keep refining your approach."
+          }
+        },
+        {
+          "id": "5",
+          "question": "Why should I choose your eCommerce consulting services?",
+          "answer": {
+            "type": "text",
+            "content": "Because we care about making your success feel personal. We’re not just consultants—we’re your brainstorming buddies, your troubleshooting team, and your biggest cheerleaders. When your store thrives, we celebrate right alongside you."
+          }
+        },
+      ],
+
+
 };
 
 

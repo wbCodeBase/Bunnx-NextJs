@@ -114,8 +114,26 @@ const data = [
     buttonText: "Launch Your Project Now!",
     backgroundImage: "https://spirecapital.com/wp-content/uploads/2017/02/CTA-background-get-in-touch.jpg",
   },
+  {
+    slug: "ecommerce-development-company",
+    tagline: "Molding the Symphony of Your Success: Great merchants need masterful mechanics!",
+    title: "Turning your brand into the next big eCommerce story",
+    description: "Our eCommerce development company doesn’t just keep your site running—it transforms your ideas into experiences. We build exactly what businesses and customers expect. It allows you to expand your reach and increase your ROI.",
+    buttonText: "Launch Your Project Now!",
+    backgroundImage: "https://spirecapital.com/wp-content/uploads/2017/02/CTA-background-get-in-touch.jpg",
+  },
+  {
+    slug: "ecommerce-consulting-services",
+    tagline: "Tools that simplify your business",
+    title: "Growth is easier when you have the right foundation",
+    description: "Bunnx is the top eCommerce consulting services in India that help you set up the right systems to manage your orders, track customer behavior, and keep everything in sync.",
+    buttonText: "Launch Your Project Now!",
+    backgroundImage: "https://spirecapital.com/wp-content/uploads/2017/02/CTA-background-get-in-touch.jpg",
+  },
 ];
-
+  
+  
+ 
 
 
 
