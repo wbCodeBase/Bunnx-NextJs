@@ -69,7 +69,7 @@ export default function ServiceDetailsComp() {
         {/* Display error messages */}
         {pageContentError && (
           <p className="text-red-500 text-lg">
-            Error fetching page data: {pageContentError?.data?.error || error?.message || "Unknown error"}
+            Error fetching page data: {pageContentError?.data?.error || pageContentError?.message || "Unknown error"}
           </p>
         )}
         {activeSlugError && (
