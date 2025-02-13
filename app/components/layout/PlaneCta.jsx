@@ -118,6 +118,13 @@ const PlaneCta = ({ serviceDetailPageSlug }) => {
             ctaText: "Let's Connect!",
             slug: "ecommerce-consulting-services"
         }, 
+        {
+            span: "Web Apps That Work, Results That Matter!",
+            head: "We Build Fast and Responsive Web Apps. ",
+            para: "If you're launching a high-traffic platform or a data-driven dashboard, we make sure your app does its job—and does it well. Ready to ditch the bugs and build something real?",
+            ctaText: "Let's Connect!",
+            slug: "web-application-development-services"
+        }, 
         
     ]
     

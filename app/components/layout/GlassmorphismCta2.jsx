@@ -130,7 +130,19 @@ const data = [
     buttonText: "Contact Us Now",
     backgroundImage: "https://images.pexels.com/photos/316681/pexels-photo-316681.jpeg",
   },
+  {
+    slug: "web-application-development-services",
+    tagline: "Get Engaging Web Apps Built for the Future!",
+    title: "Web Apps That Work Harder, So You Don’t Have To",
+    description: "Your web app should tell your story, serve your audience, and create connections. We build applications that are fast and have the best layout. Our web application development services put thought into every detail, so your app leaves an impression.",
+    buttonText: "Contact Us Now",
+    backgroundImage: "https://images.pexels.com/photos/316681/pexels-photo-316681.jpeg",
+  },
 ];
+
+
+
+
 
 const getCtaContent = (data, serviceDetailPageSlug) => {
   // First try to find content matching the page slug

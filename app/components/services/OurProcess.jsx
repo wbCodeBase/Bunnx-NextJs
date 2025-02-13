@@ -1422,6 +1422,96 @@ const contentBySlug = {
     },
 
 
+
+    "web-application-development-services": {
+        h2: "Our Process",
+        h4: "Our Process for Web App Development",
+        p: "We are always providing web applications through a technology-driven approach. Here’s how our web development company build apps to exceed expectations: ",
+        "processSections": [
+            {
+                "id": 1,
+                "title": "Planning & Technical Breakdown",
+                "description": "Before we touch a single line of code, we break everything down to make sure nothing is left to chance. This phase sets the foundation for what’s ahead. A web app is only as good as its blueprint, and we take our time ensuring the roadmap is airtight.",
+                "activities": [
+                    "Create detailed flowcharts",
+                    "Define the right technology",
+                    "Outline backend & frontend",
+                    "Set up database schemas"
+                ],
+                "deliverables": [
+                    "A development roadmap",
+                    "Wireframes and prototypes",
+                    "A solid tech stack plan"
+                ]
+            },
+            {
+                "id": 2,
+                "title": "Designing Interfaces",
+                "description": "Looks matter, but usability matters more. Our design team builds layouts that feel natural and work across devices. A great web app isn’t just visually appealing, it should be easy to navigate and functional across different screen sizes.",
+                "activities": [
+                    "Use Figma for UI mockups",
+                    "Conduct motion studies",
+                    "Design adaptive layouts",
+                    "Build a design system"
+                ],
+                "deliverables": [
+                    "Interactive prototypes",
+                    "A complete design package",
+                    "A layout for navigation"
+                ]
+            },
+            {
+                "id": 3,
+                "title": "Full Stack Development",
+                "description": "This is where the magic happens. A web development process is key to keeping the application bug-free and easy to scale in the future. We use the latest technologies for interactions, rapid data processing, and a backend that can handle heavy traffic.",
+                "activities": [
+                    "Develop responsive interfaces",
+                    "Implement API connections",
+                    "Structure NoSQL databases",
+                    "Optimize fast-loading pages"
+                ],
+                "deliverables": [
+                    "A functional web app",
+                    "API for communication",
+                    "A backend without delays"
+                ]
+            },
+            {
+                "id": 4,
+                "title": "Testing",
+                "description": "Before launch, we put the app through rigorous testing to catch any weak spots. No web app is complete without debugging and testing to iron out flaws before it goes live. Our web application development services run various tests on different devices and browsers to check for inconsistencies.",
+                "activities": [
+                    "Run cross-browser testing",
+                    "Simulate high-traffic scenarios",
+                    "Conduct security audits",
+                    "Perform automated testing"
+                ],
+                "deliverables": [
+                    "Fast loading web app",
+                    "Detailed test reports",
+                    "Polished product"
+                ]
+            },
+            {
+                "id": 5,
+                "title": "Maintenance and Support",
+                "description": "Even after deployment, our work isn’t done. We make sure the transition from development to a live environment happens without any interruptions. We configure production environments and fix any post-launch issues that arise.",
+                "activities": [
+                    "Set up production environments",
+                    "Monitor application health",
+                    "Regular feature enhancements",
+                    "Post-launch support"
+                ],
+                "deliverables": [
+                    "Application with store links",
+                    "Continuous performance tracking",
+                    "Team ready to support"
+                ]
+            }
+        ]
+    },
+
+
 };
 
 

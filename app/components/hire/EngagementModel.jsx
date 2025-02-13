@@ -146,6 +146,13 @@ const engageMentModelData = [
         p: "Creating a successful ecommerce platform is more than just setting up an online store. It's about building a system that can grow with your business and offer a seamless experience to your customers. If you’re just starting or already established, we have the right mix of expertise and flexibility.",
         engagement: engagement,
     },
+    {
+        slug: "web-application-development-services",
+        h2: "Choose From Our Hiring Models",
+        h4: "Collaborate with Top Web App Developers Through Engagement Models",
+        p: "Web application development is not an easy process and neither is hiring. If you're looking for a team to jump in for a specific phase, we have models for you. You can get long-term commitments and project-based collaborations with this to get your work within deadlines. No unnecessary processes, no rigid contracts—just the right talent at the right time.",
+        engagement: engagement,
+    },
 ];
 
 

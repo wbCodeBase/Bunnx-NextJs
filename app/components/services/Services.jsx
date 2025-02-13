@@ -99,11 +99,7 @@ const OurServicesHeadPara = [
     servicePara: "Our team makes an app that not only looks amazing but works on all devices. Need integrations? We will connect your app with a lot of payment gateways, CRMs, APIs, and more. The team at our mobile app development company also works on push notifications to keep users engaged, data analytics to refine strategies.",
     slug: "mobile-app-development-services"
   },
-  // {
-  //   serviceTitle: "Best Web App Development Services",
-  //   servicePara: "At the core of our website development services is a commitment to building reliable and efficient systems that power high-performing websites. Our expertise lies in crafting solid solutions that support user-friendly and feature-rich websites.",
-  //   slug: "web-application-development-services"
-  // },
+
   {
     serviceTitle: "Best API Development & Integration Services",
     servicePara: "As a leading API Development & Integration company in India, we specialize in delivering robust custom API Development & Integration services. Our expertise lies in crafting APIs that drive innovation, enhance integration, and streamline workflows across diverse platforms and applications.",
@@ -144,6 +140,11 @@ const OurServicesHeadPara = [
     servicePara: "While creating the first sketch or releasing the final product, we shape every element with care. We don’t believe in providing you with less accurate solutions. Instead, our team builds with purpose. If you're looking for something beyond the usual, let's create something that stands out. Here’s what our web development company offers: ",
     slug: "web-application-development-services"
   },
+  {
+    serviceTitle: "Best Website Development Services",
+    servicePara: "At the core of our website development services is a commitment to building reliable and efficient systems that power high-performing websites. Our expertise lies in crafting solid solutions that support user-friendly and feature-rich websites. ",
+    slug: "website-development-services"
+  },
 ]
 
 
@@ -157,15 +158,16 @@ const keywordToSlug = {
   'CRM software development companies': 'crm-software-development-services',
   'CRM development services': 'crm-software-development-services',
   'CRM software development company': 'crm-software-development-services',
-  'CRM development services': 'crm-software-development-services', 
+  'CRM development services': 'crm-software-development-services',
   'custom software development company': 'custom-software-development-services',
   'best IT consulting services in India': 'it-consulting-services',
-  'website development services': 'web-application-development-services',
   'mobile app development company': 'mobile-app-development-services',
   'API Development & Integration company': 'api-development-and-integration-services',
   'custom API Development & Integration services': 'api-development-and-integration-services',
   'Agile consultant services': 'agile-consulting-services',
-  'Agile consulting services': 'agile-consulting-services',
+  'website development services': 'website-development-services',
+  'website development company': 'website-development-services',
+  'web development company': 'web-application-development-services',
 };
 
 

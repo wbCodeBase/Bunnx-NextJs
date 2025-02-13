@@ -1097,6 +1097,72 @@ const serviceData = {
 
   },
 
+
+  "web-application-development-services": {
+    "title": "Choose From Our Web App Development Service Models",
+    "description": "Instead of normal hiring models, we provide expertise exactly when and where it's needed. If you need an entire team for a long-term project or talented developers to fill in the gaps, our models keep development predictable without unnecessary commitments.",
+    "models": [
+      {
+        "title": "Dedicated Web App Team",
+        "subtitle": "Also known as web app teams",
+        "icon": lightdotnetmodalicon,
+        "sections": [
+          {
+            "type": "para",
+            "content": "For businesses with long-term web application development plans, having a dedicated team maintains the execution process. This model provides a full-time group of developers who work on your project."
+          },
+          {
+            "type": "list",
+            "content": [
+              "A development team fully committed to your project.",
+              "Collaboration with your internal tools and workflows.",
+              "The ability to adjust team size as development progresses.",
+              "Expertise in Node.js, Django, Laravel, and beyond.",
+              "Full accountability for meeting deadlines and maintaining code standards."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Web App Team Augmentation",
+        "subtitle": "Also known as team extension or staff augmentation",
+        "icon": teamAug,
+        "sections": [
+          {
+            "type": "para",
+            "content": "When your in-house team needs extra support, this model provides skilled developers. If it's a feature, a complex integration, or a tight deadline, you can bring in experts without long-term hiring commitments."
+          },
+          {
+            "type": "list",
+            "content": [
+              "Developers for API development, database structuring, and backend frameworks.",
+              "Quick onboarding to meet tight delivery schedules.",
+              "Expanded technical capabilities without permanent hires.",
+              "Support for advanced integrations such as payment gateways, push notifications, or third-party services."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Project Based",
+        "subtitle": "Best suited for small-mid scale web app projects",
+        "icon": ProjectBased,
+        "sections": [
+          {
+            "type": "para",
+            "content": "Fixed Price Model:\nBest suited for projects with uncertain requirements from the start. If you're building an online store with standard features like user authentication, product browsing, and checkout, this model keeps everything predictable."
+          },
+          {
+            "type": "para",
+            "content": "Time & Material Model:\nFor applications that require continuous refinement, this model allows adjustments throughout development. If you’re building a social media platform with interactive messaging and AI-based recommendations, this model lets you experiment along the way."
+          }
+        ]
+      }
+    ]
+
+
+  },
+
 };
 
 export default function HiringModels({ serviceDetailPageSlug }) {

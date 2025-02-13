@@ -544,6 +544,48 @@ const contentBySlug = {
 
     },
 
+
+    "web-application-development-services": {
+        "h2": "Methodology",
+        "h4": "Get Smarter Applications with Effective Web App Solutions",
+        "p": "Our web development strategies include user-centric design with technological competence. With advanced tools and programming practices, we create web applications that are fast and feature-packed.",
+        
+        "steps": [
+            {
+                "id": 1,
+                "title": "Waterfall Methodology",
+                "description": "The Waterfall model is a traditional and linear approach to software development. It begins with implementation, testing, and maintenance. However, each stage must be completed before moving on to the next.",
+                "icon": FeaturesValidation
+            },
+            {
+                "id": 2,
+                "title": "Prototyping",
+                "description": "Prototyping involves creating an early, simplified version of a web application to visualize its functionality before full-scale development. This allows developers to explore ideas through iterative feedback. Prototyping is particularly useful when the projects are not fully understood or are expected to evolve.",
+                "icon": Agile
+            },
+            {
+                "id": 3,
+                "title": "Web Application Design",
+                "description": "Web application design process allows to plan the UI and know the application's structure across various screen sizes. If a design is extremely good, it improves accessibility and contributes to the application's growth.",
+                "icon": Coding
+            },
+            {
+                "id": 4,
+                "title": "Backend Framework",
+                "description": "A backend framework is a collection of tools and libraries that provide a foundation for building the server-side components of a web application. This framework development offers pre-built modules for tasks such as database interactions, authentication, and routing.",
+                "icon": RealTime
+            },
+            {
+                "id": 5,
+                "title": "Creating Wireframes",
+                "description": "Wireframes are visual guides that outline the skeletal structure of a web application's interface. They serve as blueprints and illustrate the placement of elements such as navigation menus, content areas, and features.",
+                "icon": FeaturesValidation
+            }
+        ]
+
+
+    },
+
 }
 
 

@@ -15,7 +15,7 @@ export async function middleware(request) {
       req: request, secret: process.env.NEXTAUTH_SECRET,
       secureCookie: true
     });
-    console.log("Token exists:", token, process.env.NEXTAUTH_SECRET);
+    // console.log("Token exists:", token, process.env.NEXTAUTH_SECRET);
 
     if (!token && !isAuthPage) {
       return NextResponse.redirect(new URL('/login', request.url));

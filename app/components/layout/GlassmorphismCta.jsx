@@ -130,6 +130,14 @@ const data = [
     buttonText: "Launch Your Project Now!",
     backgroundImage: "https://spirecapital.com/wp-content/uploads/2017/02/CTA-background-get-in-touch.jpg",
   },
+  {
+    slug: "web-application-development-services",
+    tagline: "Get Web Apps to Handle the Heavy Lifting",
+    title: "Precision-Built Apps That Run Fast",
+    description: "We build apps that don’t freeze when you need them most, drain your battery by mid-day, and crash when thousands of users log in at once. Our team works on animations, balances resource usage, and cuts unnecessary processing every time.",
+    buttonText: "Launch Your Project Now!",
+    backgroundImage: "https://spirecapital.com/wp-content/uploads/2017/02/CTA-background-get-in-touch.jpg",
+  },
 ];
   
   

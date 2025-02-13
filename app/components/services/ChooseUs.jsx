@@ -177,9 +177,22 @@ const data = [
     imageSrc: softwareDev,
     altText: "Full stack Development",
   },
+  {
+    slug: "web-application-development-services",
+    title: "Leading Web Application Development Experts",
+    description1: "Every platform has its own language and behavior. We don’t just build apps; we make experiences that feel natural to users.",
+    description2: "With our approach, we strip away unnecessary bloat. Our web development services team tweak every function to consume the least possible power, reducing CPU strain and optimizing background tasks.",
+    buttonText: "Get Started! ",
+    link: "#contact-us",
+    imageSrc: softwareDev,
+    altText: "Full stack Development",
+  },
 
 
 ];
+
+ 
+
 
 
 
