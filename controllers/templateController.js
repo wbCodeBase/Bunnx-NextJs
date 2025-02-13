@@ -32,6 +32,57 @@ export const getTemplateContent = async () => {
 };
 
 
+export const getPageByStr = async (templateName, pageSlug) => {
+
+  // console.log("templateName, pageSlug", templateName, pageSlug);
+  
+  try {
+    // Fetch the template and populate fetchOnSlug references
+    const templateComponent = await Template.findOne({ templateName })
+      .populate({
+        path: 'heroSection.fetchOnSlug',
+        model: 'ActiveSlug',
+      })
+      .populate({
+        path: 'servicesSection.fetchOnSlug',
+        model: 'ActiveSlug',
+      })
+      .populate({
+        path: 'servicesSection.ctaRedirectUrl',
+        model: 'ActiveSlug',
+      });
+
+    if (!templateComponent) {
+      throw new Error(`Template with name ${templateName} not found`);
+    }
+
+    // Filter heroSection where fetchOnSlug.slug matches pageSlug
+    const filteredHeroSection = templateComponent.heroSection.find(
+      (hero) => hero.fetchOnSlug && hero.fetchOnSlug.slug === pageSlug
+    );
+
+    // Filter servicesSection where at least one fetchOnSlug.slug matches pageSlug
+    const filteredServicesSection = templateComponent.servicesSection.filter(
+      (service) =>
+        service.fetchOnSlug.some((slugObj) => slugObj.slug === pageSlug)
+    );
+
+    return {
+      success: true,
+      data: {
+        heroSection: filteredHeroSection,
+        servicesSection: filteredServicesSection,
+      },
+    };
+  } catch (error) {
+    console.error('Error in getPageByStr:', error.message);
+    return { success: false, error: error.message };
+  }
+};
+
+
+
+
 export const getTemplateByStr = async (data) => {
   try {
     const templateComponent = await Template.findOne({ templateName: data })

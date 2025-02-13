@@ -4,7 +4,7 @@ import HireDetailsComponent from "./hireComponent"
 export async function generateMetadata({ params }) {
   // read route params
   const currentSlug = params.hireDevOf
-  console.log("Slug", currentSlug);
+  // console.log("Slug", currentSlug);
 
   // fetch data
   const response = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/metadata/${currentSlug}`);

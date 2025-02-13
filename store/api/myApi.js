@@ -21,6 +21,12 @@ export const myApi = createApi({
       providesTags: ['Template'], // Ensures refetching after creating or deleting
     }),
 
+    
+    getPageContentByStr: builder.query({
+      query: ({ templateName, pageSlug }) => `page/${templateName}/${pageSlug}`,
+    }),
+    
+
     getTemplateContentByStr: builder.query({
       query: (identifier) => `template/${identifier}`,
     }),
@@ -217,6 +223,7 @@ export const {
   useDeleteComponentContentMutation,
   useGetHeaderMenuQuery,
   useGetTemplateContentByStrQuery,
+  useGetPageContentByStrQuery,
   useGetTemplateQuery,
 
   useGetUsersQuery,

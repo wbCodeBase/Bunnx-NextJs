@@ -1,6 +1,6 @@
 'use client'
 
-import { useParams, useRouter, usePathname } from "next/navigation";
+import { useParams, useRouter } from "next/navigation";
 
 import Services from "@/components/services/Services";
 import HeroSection from '@/components/layout/HeroSection';
@@ -14,15 +14,19 @@ import GuideTopics from '@/components/services/GuideTopics';
 import EngagementModel from '@/components/hire/EngagementModel';
 
 
-import Lottie from "lottie-react";
-import loaderJson from "../../public/pageAnimations/loader.json";
+// import Lottie from "lottie-react";
+// import loaderJson from "../../public/pageAnimations/loader.json";
 
-import { useGetTemplateContentByStrQuery, useGetActiveSlugQuery } from '../../store/api/myApi';
+import { useGetPageContentByStrQuery, useGetActiveSlugQuery } from '../../store/api/myApi';
 import heroDefaultImg from "/public/developmentServices.jpg"
 
 import PlaneCta from '@/components/layout/PlaneCta';
 import GlassmorphismCta from "@/components/layout/GlassmorphismCta";
 import GlassmorphismCta2 from "@/components/layout/GlassmorphismCta2";
+
+
+import PageTransition from "@/components/PageTransition";
+import { AnimatePresence } from "framer-motion";
 
 
 function formatparameter(input) {
@@ -34,35 +38,38 @@ function formatparameter(input) {
 
 
 
-
 export default function ServiceDetailsComp() {
   const params = useParams();
   const router = useRouter();
-  const pathname = usePathname();
   const { serviceDetails } = params;
 
 
+  const { data: pageContentData, error: pageContentError, isLoading: pageContentIsLoading } = useGetPageContentByStrQuery({
+    templateName: "service",
+    pageSlug: serviceDetails
+  });
 
-  const { data, error, isLoading } = useGetTemplateContentByStrQuery("service");
+  // const { data, error, isLoading } = useGetTemplateContentByStrQuery("service");
   const { data: activeSlugData, error: activeSlugError, isLoading: activeSlugIsLoading } = useGetActiveSlugQuery();
 
-  // console.log(activeSlugData, activeSlugError, activeSlugIsLoading);
+
+  console.log(pageContentError);
 
 
-  if (isLoading || activeSlugIsLoading || activeSlugError || error) {
+  if (pageContentIsLoading || pageContentError || activeSlugIsLoading || activeSlugError) {
     return (
       <div className="flex flex-col items-center justify-center h-screen w-full space-y-4">
         {/* Show loader if either loading flag is true */}
-        {(isLoading || activeSlugIsLoading) && (
+        {/* {(pageContentIsLoading) && (
           <div className="flex items-center justify-center h-screen w-full">
             <Lottie animationData={loaderJson} loop={true} />
           </div>
-        )}
+        )} */}
 
         {/* Display error messages */}
-        {error && (
+        {pageContentError && (
           <p className="text-red-500 text-lg">
-            Error fetching template data: {error?.data?.error || error?.message || "Unknown error"}
+            Error fetching page data: {pageContentError?.data?.error || error?.message || "Unknown error"}
           </p>
         )}
         {activeSlugError && (
@@ -76,11 +83,8 @@ export default function ServiceDetailsComp() {
 
 
 
-
-
-  if (!isLoading && activeSlugData) {
-    const isSlugActive = activeSlugData?.some((item) => `/${item?.slug}` === pathname);
-    console.log("isSlugActive", activeSlugData);
+  if (activeSlugData) {
+    const isSlugActive = activeSlugData?.some((item) => `${item?.slug}` === serviceDetails);
 
     // Redirect to 404 if no matching slug is found
     if (!isSlugActive) {
@@ -91,9 +95,9 @@ export default function ServiceDetailsComp() {
 
 
 
-  const heroSectionObj = data?.heroSection?.find((heroData) => heroData?.fetchOnSlug?.slug === serviceDetails) || {};
+  // const heroSectionObj = data?.heroSection?.find((heroData) => heroData?.fetchOnSlug?.slug === serviceDetails) || {};
 
-  const serviceSectionObj = data?.servicesSection?.filter((service) => service?.fetchOnSlug?.map((slug) => slug?.slug).includes(serviceDetails)) || [];
+  // const serviceSectionObj = data?.servicesSection?.filter((service) => service?.fetchOnSlug?.map((slug) => slug?.slug).includes(serviceDetails)) || [];
 
 
 
@@ -101,33 +105,37 @@ export default function ServiceDetailsComp() {
   return (
     <>
 
-      <HeroSection heroSectionObj={heroSectionObj}  heroDefaultImg={heroDefaultImg} pageSlug={serviceDetails} extractNameFromSlug={formatparameter(serviceDetails)} />
+      <AnimatePresence mode="wait">
+        <PageTransition key={router.route}>
 
-      <NumericCounterInfo />
+          <HeroSection heroSectionObj={pageContentData?.heroSection} heroDefaultImg={heroDefaultImg} pageSlug={serviceDetails} extractNameFromSlug={formatparameter(serviceDetails)} />
 
-      <Services serviceSectionObj={serviceSectionObj} serviceDetailPageSlug={serviceDetails} extractNameFromSlug={formatparameter(serviceDetails)} />
+          <NumericCounterInfo />
 
-      <PlaneCta serviceDetailPageSlug={serviceDetails} />
+          <Services serviceSectionObj={pageContentData?.servicesSection} serviceDetailPageSlug={serviceDetails} extractNameFromSlug={formatparameter(serviceDetails)} />
 
-      <ProcessShowcase serviceDetailPageSlug={serviceDetails} />
+          <PlaneCta serviceDetailPageSlug={serviceDetails} />
 
-      <Methodology serviceDetailPageSlug={serviceDetails} />
+          <ProcessShowcase serviceDetailPageSlug={serviceDetails} />
 
-      <ChooseUs serviceDetailPageSlug={serviceDetails} />
+          <Methodology serviceDetailPageSlug={serviceDetails} />
 
-      <GlassmorphismCta serviceDetailPageSlug={serviceDetails} />
+          <ChooseUs serviceDetailPageSlug={serviceDetails} />
 
-      <EngagementModel serviceDetailPageSlug={serviceDetails} hiredevOf={formatparameter(serviceDetails)} />
+          <GlassmorphismCta serviceDetailPageSlug={serviceDetails} />
 
-      <HiringModels serviceDetailPageSlug={serviceDetails} />
+          <EngagementModel serviceDetailPageSlug={serviceDetails} hiredevOf={formatparameter(serviceDetails)} />
 
-      <GlassmorphismCta2 serviceDetailPageSlug={serviceDetails} /> 
+          <HiringModels serviceDetailPageSlug={serviceDetails} />
 
-      <GuideTopics serviceDetailPageSlug={serviceDetails} />
+          <GlassmorphismCta2 serviceDetailPageSlug={serviceDetails} />
 
-      <Faqs serviceDetailPageSlug={serviceDetails} />
+          <GuideTopics serviceDetailPageSlug={serviceDetails} />
 
+          <Faqs serviceDetailPageSlug={serviceDetails} />
+
+        </PageTransition>
+      </AnimatePresence>
     </>
   );
 }
- 

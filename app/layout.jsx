@@ -10,19 +10,6 @@ import { Toaster } from "@/components/ui/sonner"
 import HeaderFooterWrapper from "@/components/layout/HeaderFooterWrapper";
 import ScrollToTop from "@/components/layout/ScrollToTop";
 
-
-// const geistSans = localFont({
-//   src: "./fonts/GeistVF.woff",
-//   variable: "--font-geist-sans",
-//   weight: "100 900",
-// });
-
-// const geistMono = localFont({
-//   src: "./fonts/GeistMonoVF.woff",
-//   variable: "--font-geist-mono",
-//   weight: "100 900",
-// });
-
 const arOneSans = AR_One_Sans({
   subsets: ['latin'],
   variable: '--font-arOneSans',
@@ -76,7 +63,6 @@ export const metadata = {
 }
 
 
-
 export default async function RootLayout({ children }) {
 
   return (
@@ -86,12 +72,15 @@ export default async function RootLayout({ children }) {
         <SessionProvider>
           <ReduxProvider>
             <ScrollToTop />
-            <HeaderFooterWrapper>{children}</HeaderFooterWrapper>
+
+                <HeaderFooterWrapper>{children}</HeaderFooterWrapper>
+
             <Toaster />
+
           </ReduxProvider>
         </SessionProvider>
       </body>
-    </html> 
+    </html>
   );
 }
 

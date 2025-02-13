@@ -9,7 +9,7 @@ export async function GET(request, { params }) {
     await connectToDatabase();
 
     const { identifier } = params;
-    const templateContent = await getTemplateByStr(identifier);
+    const templateContent = await getTemplateByStr(identifier); 
 
     if (!templateContent.success) {
       return new Response(
