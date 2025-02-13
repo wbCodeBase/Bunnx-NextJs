@@ -37,7 +37,7 @@ const techStackData = {
             "title": "Application Development",
             "description": "Transforming ideas into powerful digital solutions, we craft innovative web and mobile applications that drive your business forward with smart & hi-tech technology.",
             "columns": [
-                { "name": "Web App Development", "description": "Next-gen web experiences", "slug": "web-app-development-services" },
+                { "name": "Web App Development", "description": "Next-gen web experiences", "slug": "web-application-development-services" },
                 { "name": "Mobile App Development", "description": "Fast, dynamic web apps", "slug": "mobile-app-development-services" },
                 { "name": "Frontend Development", "description": "Sleek, powerful iOS apps", "slug": "frontend-development" },
                 { "name": "Backend Development", "description": "Robust Android solutions", "slug": "backend-development" },

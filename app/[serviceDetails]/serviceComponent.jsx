@@ -53,7 +53,7 @@ export default function ServiceDetailsComp() {
   const { data: activeSlugData, error: activeSlugError, isLoading: activeSlugIsLoading } = useGetActiveSlugQuery();
 
 
-  console.log(pageContentError);
+  // console.log(pageContentError);
 
 
   if (pageContentIsLoading || pageContentError || activeSlugIsLoading || activeSlugError) {

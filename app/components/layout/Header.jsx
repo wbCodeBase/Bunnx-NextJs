@@ -287,7 +287,7 @@ const servicesData = {
       slug: 'application-development-services',
       description: 'Create your dream app',
       technologies: [
-        { name: 'Web App Development', slug: 'web-app-development-services' },
+        { name: 'Web App Development', slug: 'web-application-development-services' },
         { name: 'Mobile App Development', slug: 'mobile-app-development-services' },
         { name: 'Front End Development', slug: 'front-end-development-services' },
         { name: 'Back End Development', slug: 'back-end-development-services' },

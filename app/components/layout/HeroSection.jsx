@@ -16,7 +16,7 @@ const keywordToSlug = {
   'CRM software solutions': 'crm-software-development-services',
   "custom software development company": 'custom-software-development-services',
   "IT consulting services India": 'it-consulting-services',
-  "web application development": 'web-app-development-services',
+  "web development": 'web-application-development-services',
   "mobile app development company": 'mobile-app-development-services',
 };
 

@@ -216,7 +216,7 @@ export default function HireDetailsComponentt() {
         title: "Web App Development",
         description:
           "Our team builds responsive, scalable, and efficient web applications tailored to your business needs. We focus on creating seamless user experiences, ensuring high performance, security, and easy navigation.",
-        ctaRedirectUrl: "web-app-development-services",
+        ctaRedirectUrl: "web-application-development-services",
       },
       {
         title: "Devops",
