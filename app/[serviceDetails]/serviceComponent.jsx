@@ -14,8 +14,8 @@ import GuideTopics from '@/components/services/GuideTopics';
 import EngagementModel from '@/components/hire/EngagementModel';
 
 
-// import Lottie from "lottie-react";
-// import loaderJson from "../../public/pageAnimations/loader.json";
+import Lottie from "lottie-react";
+import loaderJson from "../../public/pageAnimations/loader.json";
 
 import { useGetPageContentByStrQuery, useGetActiveSlugQuery } from '../../store/api/myApi';
 import heroDefaultImg from "/public/developmentServices.jpg"
@@ -60,11 +60,11 @@ export default function ServiceDetailsComp() {
     return (
       <div className="flex flex-col items-center justify-center h-screen w-full space-y-4">
         {/* Show loader if either loading flag is true */}
-        {/* {(pageContentIsLoading) && (
+        {(pageContentIsLoading) && (
           <div className="flex items-center justify-center h-screen w-full">
             <Lottie animationData={loaderJson} loop={true} />
           </div>
-        )} */}
+        )}
 
         {/* Display error messages */}
         {pageContentError && (
