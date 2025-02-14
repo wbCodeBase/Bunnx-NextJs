@@ -142,8 +142,23 @@ const OurServicesHeadPara = [
   },
   {
     serviceTitle: "Best Website Development Services",
-    servicePara: "At the core of our website development services is a commitment to building reliable and efficient systems that power high-performing websites. Our expertise lies in crafting solid solutions that support user-friendly and feature-rich websites. ",
+    servicePara: "At the core of our website development services is a commitment to building reliable and efficient systems that power high-performing websites. Our expertise lies in crafting solid solutions that support user-friendly and feature-rich websites.",
     slug: "website-development-services"
+  },
+  {
+    serviceTitle: "Best Ecommerce Implementation Services",
+    servicePara: "We build apps that work on any device to give users an enjoyable experience. If you want your app to handle payments, connect with customer databases, or pull data from third-party services, we’ve got it covered. And with built-in data tracking, you’ll always know what’s working and what needs a tweak.",
+    slug: "ecommerce-implementation"
+  },
+  {
+    serviceTitle: "Best Shopify Development Services",
+    servicePara: "Our Shopify web development services India leverage the power of Shopify to craft dynamic online stores that align perfectly with your business needs.",
+    slug: "shopify-development-company-in-india"
+  },
+  {
+    serviceTitle: "Best Ecommerce Maintenance & Support Services",
+    servicePara: "Your eCommerce website should do more than just exist—it should pull people in, keep them engaged, and make every visit worth their time. We bring years of expertise to the table to provide the best eCommerce website maintenance & support services.",
+    slug: "ecommerce-maintenance-and-support-services"
   },
 ]
 

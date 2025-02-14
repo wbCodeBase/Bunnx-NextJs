@@ -320,9 +320,9 @@ const servicesData = {
       technologies: [
         { name: 'Ecommerce Web Development', slug: 'ecommerce-web-development' },
         { name: 'Ecommerce Web Consulting', slug: 'ecommerce-consulting-services' },
-        { name: 'Ecommerce Advancement', slug: 'ecommerce-advancement' },
-        { name: 'Ecommerce Maintenance & Support', slug: 'ecommerce-maintenance-support' },
-        { name: 'Shopify', slug: 'shopify' },
+        { name: 'Ecommerce Implementation', slug: 'ecommerce-implementation' },
+        { name: 'Ecommerce Maintenance & Support', slug: 'ecommerce-maintenance-and-support-services' },
+        { name: 'Shopify', slug: 'shopify-development-company-in-india' },
         { name: 'WooCommerce', slug: 'woo-commerce' },
       ],
       hiring: [

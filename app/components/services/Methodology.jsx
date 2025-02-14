@@ -549,7 +549,7 @@ const contentBySlug = {
         "h2": "Methodology",
         "h4": "Get Smarter Applications with Effective Web App Solutions",
         "p": "Our web development strategies include user-centric design with technological competence. With advanced tools and programming practices, we create web applications that are fast and feature-packed.",
-        
+
         "steps": [
             {
                 "id": 1,
@@ -582,8 +582,116 @@ const contentBySlug = {
                 "icon": FeaturesValidation
             }
         ]
+    },
 
 
+
+    "ecommerce-implementation": {
+        "h2": "Methodology",
+        "h4": "Get Smarter Applications with eCommerce Implementation",
+        "p": "Building an online store requires making a product page and checkout button. It also needs a system that handles transactions, keeps inventory in sync, and delivers a good shopping experience. Here’s how we put that into action:",
+
+        "steps": [
+            {
+                "id": 1,
+                "title": "Platform-Specific Store Development",
+                "description": "Choosing the right platform is the foundation of your store’s success. We develop stores on Shopify, WooCommerce, and Magento. Our team also configures tax rules, multi-currency support, and region-based pricing.",
+                "icon": FeaturesValidation
+            },
+            {
+                "id": 2,
+                "title": "API Development and Store Connectivity",
+                "description": "An online store is a system that connects payment processors, shipping providers, and customer management tools. Hence, our team builds custom APIs to keep everything in sync. We connect third-party tools like CRM systems, analytics, and logistics providers.",
+                "icon": Agile
+            },
+            {
+                "id": 3,
+                "title": "Multi-Platform eCommerce Solutions",
+                "description": "Customers shop on different devices, so your store should work without friction on desktops, tablets, and smartphones. We create adaptive storefronts that keep navigation and checkout better no matter the screen size.",
+                "icon": Coding
+            },
+            {
+                "id": 4,
+                "title": "Advanced Data Handling & Inventory Management",
+                "description": "The Bunnx experts keep stock levels accurate across multiple warehouses or suppliers and require more than just a spreadsheet. We develop inventory systems that prevent overselling and automate stock updates.",
+                "icon": RealTime
+            },
+
+        ]
+    },
+
+
+    "shopify-development-company-in-india": {
+        "h2": "Methodology",
+        "h4": "Get Smarter Applications with Effective Shopify Solutions",
+        "p": "Our Shopify development agency has strategies specifically designed to improve usability, scalability, and performance. By combining user-centric design with technological competence, we enable organisations to provide digital experiences.",
+
+        "steps": [
+            {
+                "id": 5,
+                "title": "Business-Centric Strategy Development",
+                "description": "At Bunnx, the best Shopify development company in India, we create a strategy that aligns Shopify solutions with your business goals. This involves conducting an in-depth analysis of your market and competitors. We define your unique value propositions and key performance indicators (KPIs) to measure success effectively.",
+                "icon": FeaturesValidation
+            },
+            {
+                "id": 6,
+                "title": "Modular and Scalable Architecture Design",
+                "description": "Advanced functionalities like AI-based product recommendations are embedded into the architecture, along with third-party app and API integration to support enhanced store operations.",
+                "icon": Agile
+            },
+            {
+                "id": 7,
+                "title": "Intelligent Customization and Automation",
+                "description": "Intelligent automation is implemented to streamline inventory and order management processes, reducing manual workload. Personalized shopping experiences, powered by customer data insights, keep your users engaged.",
+                "icon": Coding
+            },
+            {
+                "id": 8,
+                "title": "Continuous Innovation and Optimization",
+                "description": "Our process doesn’t end with deployment. We monitor site performance and analyze user behavior. Regular updates are implemented to keep your store in sync with industry trends, while features like SEO optimization and speed enhancements.",
+                "icon": RealTime
+            },
+        ]
+    },
+
+
+    "ecommerce-maintenance-and-support-services": {
+        "h2": "Methodology",
+        "h4": "Get Smarter Applications with Effective eCommerce Maintenance and Support Solutions",
+        "p": "Running an eCommerce store is about keeping it free from technical troubles. A slow checkout, a broken payment link, or stock updates that don’t sync can drive customers away in seconds. That’s where we come in. Our maintenance and support team keeps everything running properly.",
+
+        "steps": [
+            {
+                "id": 9,
+                "title": "CRO Audits and Stress Tests",
+                "description": "Conversion Rate Optimization (CRO) audits help identify what’s working and what’s stopping potential buyers from making a purchase. By analyzing visitor behavior, testing different page elements and reviewing checkout processes. Stress tests are equally important—they simulate heavy traffic loads to check if your site can handle peak shopping seasons without crashing or slowing down.",
+                "icon": FeaturesValidation
+            },
+            {
+                "id": 10,
+                "title": "Updating Product Information",
+                "description": "Accurate product details are essential for gaining customer trust. Regularly updating descriptions, pricing, availability, and images keeps your catalog fresh and ensures shoppers find the latest information. Outdated listings can lead to confusion, abandoned carts, and even lost sales.",
+                "icon": Agile
+            },
+            {
+                "id": 11,
+                "title": "Assessing Traffic, Leads, and Sales",
+                "description": "Understanding how visitors interact with your store is key to making informed decisions. We regularly review website traffic, track lead generation, and analyze sales performance to spot patterns and uncover opportunities for growth. By diving into analytics, we can refine marketing strategies, tweak product offerings, and improve conversion paths to drive better results.",
+                "icon": Coding
+            },
+            {
+                "id": 12,
+                "title": "Reviewing and Updating Plugin Files",
+                "description": "E-commerce websites rely on various plugins and extensions for added functionality, from payment gateways to customer reviews. Over time, outdated or incompatible plugins can cause security risks or slow down your site.",
+                "icon": RealTime
+            },
+            {
+                "id": 13,
+                "title": "Recovery Audits",
+                "description": "If something goes wrong—be it a data breach, site crash, or revenue drop—a recovery audit helps pinpoint the issue and get things back on track. This process involves reviewing error logs, security patches, and backup systems to restore operations quickly.",
+                "icon": FeaturesValidation
+            }
+        ]
     },
 
 }

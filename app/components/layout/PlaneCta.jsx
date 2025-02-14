@@ -120,10 +120,32 @@ const PlaneCta = ({ serviceDetailPageSlug }) => {
         }, 
         {
             span: "Web Apps That Work, Results That Matter!",
-            head: "We Build Fast and Responsive Web Apps. ",
+            head: "We Build Fast and Responsive Web Apps.",
             para: "If you're launching a high-traffic platform or a data-driven dashboard, we make sure your app does its job—and does it well. Ready to ditch the bugs and build something real?",
             ctaText: "Let's Connect!",
             slug: "web-application-development-services"
+        }, 
+        
+        {
+            slug: "ecommerce-implementation",
+            span: "From Concept to Checkout – We Make It Happen!",
+            head: "eCommerce implementation That Works Without the Extra Work.",
+            para: "The right setup connects the front and back end, so each click moves the customer closer to checkout, while updates and operations stay streamlined.",
+            ctaText: "Let's Connect!",
+        }, 
+        {
+            slug: "shopify-development-company-in-india",
+            span: "We don’t just build Shopify stores.",
+            head: "We craft Shopify experiences your customers will keep coming back to!",
+            para: "Our team transforms your ideas into high-performing Shopify stores. With us, you not only ensure that your shopify store is perfect but also loaded with the best features to help your business grow.",
+            ctaText: "Let's Connect!",
+        }, 
+        {
+            slug: "ecommerce-maintenance-and-support-services",
+            span: "Keeping your online store open 24/7!",
+            head: "Frustrated with site crashes or slow-loading product pages?",
+            para: "Our eCommerce maintenance and support team fine-tunes server performance, streamlines database processes, and integrates essential APIs to keep your store running. With a hands-on team keeping every detail in check, your store stays strong, secure, and ready for growth.",
+            ctaText: "Let's Connect!",
         }, 
         
     ]

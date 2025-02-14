@@ -977,7 +977,262 @@ const faqData = {
                 "content": "Web apps need maintenance to fix bugs, improve speed, and add new features. Check-ins help keep the app up-to-date and run with no slow speed and interruptions."
             }
         }
-    ]
+    ],
+
+    "ecommerce-implementation": [
+        {
+            "id": "1",
+            "question": "How long does it take to build a web app?",
+            "answer": {
+                "type": "text",
+                "content": "The timeline depends on the project’s complexity. A basic app with standard features can take a few weeks, while a custom-built platform with advanced functionality might take months. Breaking the project into stages speeds up development."
+            }
+        },
+        {
+            "id": "2",
+            "question": "Will my web app work on different devices?",
+            "answer": {
+                "type": "text",
+                "content": "Yes, web apps are built to run across desktops, tablets, and mobile browsers. A responsive design approach makes sure the layout adjusts based on screen size."
+            }
+        },
+        {
+            "id": "3",
+            "question": "Can I update my web app later with new features?",
+            "answer": {
+                "type": "text",
+                "content": "Web apps aren’t set in stone. Features can be added over time to make apps that work as your business grows. Planning for future upgrades from the start makes expansion easier."
+            }
+        },
+        {
+            "id": "4",
+            "question": "How much does web development cost?",
+            "answer": {
+                "type": "text",
+                "content": "Costs vary based on features, design, and the development approach. A simple app will be more affordable, while a feature-rich platform requires more time and resources."
+            }
+        },
+        {
+            "id": "5",
+            "question": "What technologies do you use for web development?",
+            "answer": {
+                "type": "text",
+                "content": "The choice depends on the project requirements. Popular options include JavaScript with React and Angular, backend solutions like Node.js, Python, or PHP, and databases like PostgreSQL and MongoDB."
+            }
+        },
+        {
+            "id": "6",
+            "question": "Do you offer support after the app is launched?",
+            "answer": {
+                "type": "text",
+                "content": "Web apps need maintenance to fix bugs, improve speed, and add new features. Check-ins help keep the app up-to-date and run with no slow speed and interruptions."
+            }
+        }
+    ],
+
+    "shopify-development-company-in-india": [
+        {
+            "id": "1",
+            "question": "How long does it take to build a web app?",
+            "answer": {
+                "type": "text",
+                "content": "The timeline depends on the project’s complexity. A basic app with standard features can take a few weeks, while a custom-built platform with advanced functionality might take months. Breaking the project into stages speeds up development."
+            }
+        },
+        {
+            "id": "2",
+            "question": "Will my web app work on different devices?",
+            "answer": {
+                "type": "text",
+                "content": "Yes, web apps are built to run across desktops, tablets, and mobile browsers. A responsive design approach makes sure the layout adjusts based on screen size."
+            }
+        },
+        {
+            "id": "3",
+            "question": "Can I update my web app later with new features?",
+            "answer": {
+                "type": "text",
+                "content": "Web apps aren’t set in stone. Features can be added over time to make apps that work as your business grows. Planning for future upgrades from the start makes expansion easier."
+            }
+        },
+        {
+            "id": "4",
+            "question": "How much does web development cost?",
+            "answer": {
+                "type": "text",
+                "content": "Costs vary based on features, design, and the development approach. A simple app will be more affordable, while a feature-rich platform requires more time and resources."
+            }
+        },
+        {
+            "id": "5",
+            "question": "What technologies do you use for web development?",
+            "answer": {
+                "type": "text",
+                "content": "The choice depends on the project requirements. Popular options include JavaScript with React and Angular, backend solutions like Node.js, Python, or PHP, and databases like PostgreSQL and MongoDB."
+            }
+        },
+        {
+            "id": "6",
+            "question": "Do you offer support after the app is launched?",
+            "answer": {
+                "type": "text",
+                "content": "Web apps need maintenance to fix bugs, improve speed, and add new features. Check-ins help keep the app up-to-date and run with no slow speed and interruptions."
+            }
+        }
+    ],
+
+    "ecommerce-maintenance-and-support-services": [
+        {
+            "id": "1",
+            "question": "Which technology do you use while maintaining e-commerce websites?",
+            "answer": {
+                "type": "text",
+                "content": "We use a combination of tried-and-true technologies and rely on databases like MySQL and MongoDB to handle your data. For the back-end, we use dependable frameworks such as Node.js, Python, and PHP, so your website remains fast."
+            }
+        },
+        {
+            "id": "2",
+            "question": "How do you make sure the website remains fast after launch?",
+            "answer": {
+                "type": "text",
+                "content": "Bunnx team uses a mix of strategies to make sure your customers never experience delays. We also make sure your website is mobile-friendly and looks great on any device, so your customers won’t have to wait around."
+            }
+        },
+        {
+            "id": "3",
+            "question": "How do you keep everything running during high traffic times?",
+            "answer": {
+                "type": "text",
+                "content": "We know that your busiest days can cause your site to get a lot of attention. That’s why we make sure your site is built with traffic spikes in mind. Using things like load balancing and advanced server management, we make sure your platform can handle a crowd."
+            }
+        },
+        {
+            "id": "4",
+            "question": "Do you provide eCommerce website maintenance and support services after the website goes live?",
+            "answer": {
+                "type": "text",
+                "content": "Our job isn’t done just because your eCommerce site is live. We provide ongoing support to fix any bugs and improve performance. If it’s tweaking something that’s not quite right or keeping up with software updates, we’re here for you."
+            }
+        },
+        {
+            "id": "5",
+            "question": "Can your eCommerce maintenance and support solutions handle unexpected issues?",
+            "answer": {
+                "type": "text",
+                "content": "Things don’t always go according to plan, and we understand that. Our maintenance services include quick troubleshooting to fix any issues that arise, whether it’s a broken link, slow loading speed, or something else. We’re fast to react without a lot of downtime."
+            }
+        },
+        {
+            "id": "6",
+            "question": "How is the security of e-commerce platforms maintained?",
+            "answer": {
+                "type": "text",
+                "content": "We protect your data, but also your customers’ sensitive information. To safeguard everything, our team also uses encryption for payment data. They make sure transactions are safe and carry out regular vulnerability scans to stay ahead of any threats."
+            }
+        }
+    ],
+
+    "shopify-development-company-in-india": [
+        {
+            "id": "1",
+            "question": "What is Shopify development?",
+            "answer": {
+                "type": "text",
+                "content": "Shopify development refers to the process of building and customizing Shopify e-commerce websites. It includes designing unique themes, creating custom apps, and integrating third-party services."
+            }
+        },
+        {
+            "id": "2",
+            "question": "Why should I choose Shopify for my e-commerce store?",
+            "answer": {
+                "type": "text",
+                "content": "Shopify is a robust, scalable e-commerce platform that allows businesses to create customizable, mobile-friendly online stores. It provides an easy-to-use interface, secure payment integrations, inventory management, and a variety of apps and plugins to help businesses grow."
+            }
+        },
+        {
+            "id": "3",
+            "question": "Can I customize my Shopify store?",
+            "answer": {
+                "type": "text",
+                "content": "Yes, Shopify allows extensive customization options. You can modify existing themes, develop custom themes, and create personalized features through Shopify's API. Shopify developers can help ensure your store matches your branding and functional requirements."
+            }
+        },
+        {
+            "id": "4",
+            "question": "How long does it take to develop a custom Shopify store?",
+            "answer": {
+                "type": "text",
+                "content": "The development timeline for a custom Shopify store varies depending on the complexity of the project. A simple store with basic customization can take around 2–4 weeks, while more complex stores with advanced features, custom apps, and integrations may take 6–8 weeks or more."
+            }
+        },
+        {
+            "id": "5",
+            "question": "Is Shopify secure for online transactions?",
+            "answer": {
+                "type": "text",
+                "content": "Yes, Shopify is a highly secure platform. It offers SSL certification, PCI DSS compliance for payment processing, and continuous security updates. These measures protect your store and customer data."
+            }
+        },
+        {
+            "id": "6",
+            "question": "Can I migrate my existing store to Shopify?",
+            "answer": {
+                "type": "text",
+                "content": "Yes, Shopify provides migration services to help move your existing online store from platforms like WooCommerce, Magento, or BigCommerce. A migration expert ensures that all your products, customer data, and other critical information are safely transferred with minimal downtime."
+            }
+        }
+    ],
+
+    "ecommerce-implementation": [
+        {
+            "id": "1",
+            "question": "How long does it take to set up an online store?",
+            "answer": {
+                "type": "text",
+                "content": "A basic setup with a ready-made template can go live in a few days, while a fully custom-built store with features might take a few months."
+            }
+        },
+        {
+            "id": "2",
+            "question": "Do I need technical skills to manage my store?",
+            "answer": {
+                "type": "text",
+                "content": "Your store should be easy to update, even if you’ve never worked with an ecommerce site before. Adding products, changing prices, and handling orders should feel as simple as posting on social media. We set things up in a way that lets you handle the day-to-day without calling a developer every five minutes."
+            }
+        },
+        {
+            "id": "3",
+            "question": "What’s the best platform for eCommerce platform implementation?",
+            "answer": {
+                "type": "text",
+                "content": "Some platforms are great for small stores, while others work better for big brands with thousands of products. We help you pick the right one based on what you sell, how much control you want, and how you plan to grow."
+            }
+        },
+        {
+            "id": "4",
+            "question": "How do payments and shipping work?",
+            "answer": {
+                "type": "text",
+                "content": "Your store should accept payments the way your customers prefer credit cards, UPI, wallets, or even cash on delivery. Shipping is just as important. The right setup will connect you with reliable couriers and send automatic tracking updates."
+            }
+        },
+        {
+            "id": "5",
+            "question": "Can I make changes after the store is live?",
+            "answer": {
+                "type": "text",
+                "content": "Your business isn’t set in stone, and your store shouldn’t be either. You can add new features, update your design, or tweak your product catalog whenever you want."
+            }
+        },
+        {
+            "id": "6",
+            "question": "What if something goes wrong after the launch of eCommerce implementation services?",
+            "answer": {
+                "type": "text",
+                "content": "Sometimes things break or you might want to add new features. That’s why ongoing support is important. If it’s a quick fix or a bigger upgrade, an expert would figure out things alone."
+            }
+        }
+    ],
 
 
 

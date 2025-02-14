@@ -153,6 +153,27 @@ const engageMentModelData = [
         p: "Web application development is not an easy process and neither is hiring. If you're looking for a team to jump in for a specific phase, we have models for you. You can get long-term commitments and project-based collaborations with this to get your work within deadlines. No unnecessary processes, no rigid contracts—just the right talent at the right time.",
         engagement: engagement,
     },
+    {
+        slug: "ecommerce-implementation",
+        h2: "Choose From Our Hiring Models",
+        h4: "Collaborate with Top eCommerce Implementation through Engagement Models",
+        p: "Not all ecommerce projects are the same, and neither should be the way you build them. If you're launching a new online store or upgrading an existing one, have the right team in place. It will make all the difference if you will add advanced features. We also offer different engagement models to bring in the right expertise.",
+        engagement: engagement,
+    },
+    {
+        slug: "shopify-development-company-in-india",
+        h2: "Choose From Our Hiring Models",
+        h4: "Collaborate with Top Shopify Developers through Engagement Models",
+        p: "Our engagement models are crafted to match your unique project requirements and ensure the best Shopify development solutions for your business. We carefully assess your project scope, objectives, and deadlines to recommend a collaboration model.",
+        engagement: engagement,
+    },
+    {
+        slug: "ecommerce-maintenance-and-support-services",
+        h2: "Choose From Our Hiring Models",
+        h4: "Collaborate with Top eCommerce website maintenance services Developers Through Engagement Models",
+        p: "Every online store has its quirks. Maybe your site needs a quick tune-up, a dedicated team to keep things running, or extra hands during peak seasons. Whatever the case, we’ve got you covered with different engagement models that bring in the right kind of expertise at the right time.",
+        engagement: engagement,
+    },
 ];
 
 

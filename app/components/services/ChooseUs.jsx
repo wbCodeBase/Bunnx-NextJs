@@ -187,6 +187,36 @@ const data = [
     imageSrc: softwareDev,
     altText: "Full stack Development",
   },
+  {
+    slug: "ecommerce-implementation",
+    title: "Leading eCommerce Implementation Experts",
+    description1: "Building an online store needs you to pick a platform and add products. It’s about structuring a system that handles high traffic, processes payments without errors, and keeps inventory in sync across multiple channels.",
+    description2: "That’s where we step in.",
+    buttonText: "Get Started! ",
+    link: "#contact-us",
+    imageSrc: softwareDev,
+    altText: "eCommerce Implementation",
+  },
+  {
+    slug: "shopify-development-company-in-india",
+    title: "Leading Shopify Development Experts",
+    description1: "Why settle for average when you can work with the best? As leading Shopify development experts, we combine creativity, technical expertise, and industry insights to build eCommerce stores that deliver results.",
+    description2: "From custom designs to advanced integrations, we give better experiences to your brand.",
+    buttonText: "Get Started! ",
+    link: "#contact-us",
+    imageSrc: softwareDev,
+    altText: "Shopify Development",
+  },
+  {
+    slug: "ecommerce-maintenance-and-support-services",
+    title: "Leading Ecommerce Maintenance & Support Experts",
+    description1: "Our eCommerce website maintenance services team keeps servers sturdy, databases clean, and transactions flowing. With  top technologies such as Node.js, Django, and Spring Boot.",
+    description2: "We handle system updates, security patches, and feature upgrades. It makes sure stock levels, payments, and orders sync perfectly.",
+    buttonText: "Get Started! ",
+    link: "#contact-us",
+    imageSrc: softwareDev,
+    altText: "eCommerce maintenance and support",
+  },
 
 
 ];

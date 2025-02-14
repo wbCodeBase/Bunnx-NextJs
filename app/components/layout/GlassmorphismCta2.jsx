@@ -138,6 +138,30 @@ const data = [
     buttonText: "Contact Us Now",
     backgroundImage: "https://images.pexels.com/photos/316681/pexels-photo-316681.jpeg",
   },
+  {
+    slug: "ecommerce-implementation",
+    tagline: "Build Smart. Scale Fast. Succeed",
+    title: "We Make Tech That Works the Way You Want it To",
+    description: "Ecommerce implementation or hiring developers: whatever you choose, we make sure you get nothing less than excellence. Bunnx don't just place developers but train, upskill, and mentor them.",
+    buttonText: "Contact Us Now",
+    backgroundImage: "https://images.pexels.com/photos/316681/pexels-photo-316681.jpeg",
+  },
+  {
+    slug: "shopify-development-company-in-india",
+    tagline: "Bring Your Vision to Life with Shopify Stores That Truly Reflect Your Brand.",
+    title: "We Create Experiences That Feel Like Home to Your Customers.",
+    description: "With every click, we ensure your Shopify store tells your story. From easy navigation to personalized features, we design and build stores that grow with your business. It’s not just about selling—it’s about building a space where customers feel valued.",
+    buttonText: "Contact Us Now",
+    backgroundImage: "https://images.pexels.com/photos/316681/pexels-photo-316681.jpeg",
+  },
+  {
+    slug: "ecommerce-maintenance-and-support-services",
+    tagline: "No wasted budget, no unnecessary commitments.",
+    title: "Just Expert Help When You Need It!",
+    description: "Not everything in eCommerce website maintenance services comes with a neatly packaged to-do list. It’s a broken checkout button costing you sales. The unexpected happens and that’s where we step in. Our team dives into the details, fine-tuning your store’s back-end, and fixing glitches before they become problems.",
+    buttonText: "Contact Us Now",
+    backgroundImage: "https://images.pexels.com/photos/316681/pexels-photo-316681.jpeg",
+  },
 ];
 
 

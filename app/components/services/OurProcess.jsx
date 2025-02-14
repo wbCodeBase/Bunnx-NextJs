@@ -1426,7 +1426,7 @@ const contentBySlug = {
     "web-application-development-services": {
         h2: "Our Process",
         h4: "Our Process for Web App Development",
-        p: "We are always providing web applications through a technology-driven approach. Here’s how our web development company build apps to exceed expectations: ",
+        p: "We are always providing web applications through a technology-driven approach. Here’s how our web development company build apps to exceed expectations:",
         "processSections": [
             {
                 "id": 1,
@@ -1511,6 +1511,271 @@ const contentBySlug = {
         ]
     },
 
+
+    "ecommerce-implementation": {
+        h2: "Our Process",
+        h4: "Our Process for eCommerce Implementation",
+        p: "Building a high-functioning online store isn’t just about adding products and hitting publish. Design, backend, payment processing, and performance must work together to create a shopping experience that drives conversions. Here’s how we make that happen:",
+        "processSections": [
+            {
+                "id": 1,
+                "title": "Requirements & Technical Planning",
+                "description": "Before writing a single line of code, we map out the entire structure of your eCommerce store, covering everything from product management to checkout flows.",
+                "activities": [
+                    "Define product catalog structure",
+                    "Plan database models",
+                    "Set up API connections",
+                    "Payment providers"
+                ],
+                "deliverables": [
+                    "Technical architecture diagrams",
+                    "Store requirement documentation (SRD)",
+                    "Data flowcharts for transactions"
+                ]
+            },
+            {
+                "id": 2,
+                "title": "Design & Storefront Development",
+                "description": "Your store should be more than just visually appealing—it should be easy to navigate and built for conversions. Our design team crafts intuitive layouts that make buying effortless.",
+                "activities": [
+                    "Wireframing with Figma",
+                    "Develop interactive prototypes",
+                    "Design checkout processes",
+                    "Minimal friction"
+                ],
+                "deliverables": [
+                    "UI/UX mockups",
+                    "Clickable demos for testing",
+                    "Design assets for developers"
+                ]
+            },
+            {
+                "id": 3,
+                "title": "Backend Development & Integration",
+                "description": "A great storefront is nothing without a rock-solid backend. We develop a fast, structured system to manage products, users, orders, and third-party integrations.",
+                "activities": [
+                    "Build REST or GraphQL APIs",
+                    "Implement caching with Redis",
+                    "Set up cron jobs",
+                    "Develop microservices for cart"
+                ],
+                "deliverables": [
+                    "Functional backend with API",
+                    "Connected payment gateways",
+                    "Order processing"
+                ]
+            },
+            {
+                "id": 4,
+                "title": "Testing & Performance Benchmarking",
+                "description": "Bugs and slow load times kill conversions. Before launch, we stress-test everything to make sure your store runs at top speed.",
+                "activities": [
+                    "Run load tests",
+                    "Validate checkout flows",
+                    "Test integrations",
+                    "Tax calculation services"
+                ],
+                "deliverables": [
+                    "Performance benchmark reports",
+                    "Detailed bug reports",
+                    "Automated test scripts"
+                ]
+            },
+            {
+                "id": 5,
+                "title": "Deployment & Ongoing Maintenance",
+                "description": "Once everything is running, we don’t just disappear. We deploy updates, monitor store activity, and keep your platform in sync with evolving customer expectations. It's the final step of our eCommerce platform implementation services.",
+                "activities": [
+                    "Deploy to AWS",
+                    "Set up monitoring tools",
+                    "Implement automated backups",
+                    "Rollback strategies"
+                ],
+                "deliverables": [
+                    "Live store with public URLs",
+                    "Admin dashboard with analytics",
+                    "Scheduled updates"
+                ]
+            }
+        ]
+    },
+
+    "shopify-development-company-in-india": {
+        h2: "Our Process",
+        h4: "Our Process for Shopify Development",
+        p: "Our Shopify development process is designed to deliver exceptional results by combining creativity, technical expertise, and a strategic approach.",
+        "processSections": [
+            {
+                "id": 1,
+                "title": "Requirement Analysis",
+                "description": "Our Shopify development company in India begin by understanding your business goals, target audience, and functional requirements to create a roadmap for development.",
+                "activities": [
+                    "Conduct detailed sessions",
+                    "Analyze competitor stores",
+                    "Document required features",
+                    "Define deliverables for the project"
+                ],
+                "deliverables": [
+                    "Clear project scope",
+                    "Comprehensive feature list",
+                    "Wireframes or sketches outlining"
+                ]
+            },
+            {
+                "id": 2,
+                "title": "Design & Prototyping",
+                "description": "Our Shopify web development services India include crafting a visually engaging, brand-centric design that enhances user experience.",
+                "activities": [
+                    "Develop custom Shopify themes",
+                    "Design responsive layouts",
+                    "Create prototypes for user flow",
+                    "Gather client feedback"
+                ],
+                "deliverables": [
+                    "Approved design mockups",
+                    "Responsive prototypes for review",
+                    "Defined color typography"
+                ]
+            },
+            {
+                "id": 3,
+                "title": "Development & Integration",
+                "description": "We build your Shopify store using clean code and integrate required functionalities to ensure a robust eCommerce platform.",
+                "activities": [
+                    "Code and implement custom themes",
+                    "Integrate APIs and payment gateways",
+                    "Optimize for performance and scalability",
+                    "Ensure cross-browser compatibility"
+                ],
+                "deliverables": [
+                    "Fully functional Shopify store",
+                    "Seamless third-party integrations",
+                    "Optimized frontend systems"
+                ]
+            },
+            {
+                "id": 4,
+                "title": "Quality Assurance & Testing",
+                "description": "Before launching, we test everything. We rigorously test your store to identify and resolve issues, ensuring it runs smoothly across all devices and platforms.",
+                "activities": [
+                    "Conduct performance testing",
+                    "Test payment gateways",
+                    "Check mobile responsiveness",
+                    "Optimize user experience"
+                ],
+                "deliverables": [
+                    "Bug-free, stable Shopify store",
+                    "Validated payment and shipping workflows",
+                    "Ready-to-launch eCommerce platform"
+                ]
+            },
+            {
+                "id": 5,
+                "title": "Launch & Post-Launch Support",
+                "description": "We deploy your Shopify store and provide ongoing support to maintain performance and implement updates as needed.",
+                "activities": [
+                    "Configure DNS settings",
+                    "Monitor site performance",
+                    "Provide training on store managing",
+                    "Maintenance and updates"
+                ],
+                "deliverables": [
+                    "Live Shopify store",
+                    "Training documentation or sessions",
+                    "Post-launch support plan"
+                ]
+            }
+        ]
+    },
+
+
+    "ecommerce-maintenance-and-support-services": {
+        h2: "Our Process",
+        h4: "Our Process for Ecommerce Maintenance & Support",
+        p: "Building an eCommerce platform is just the beginning. It’s about constant care, tightening security, and fine-tuning everything. Our maintenance and support services take the hassle out of managing your online store, so you can concentrate on selling. From setup to ongoing support, we handle every detail to make your eCommerce maintenance and support experience worry-free.",
+        "processSections": [
+            {
+                "id": 1,
+                "title": "Know Your Store Inside Out",
+                "description": "Our team at Bunnx kick things off by diving into how your store operates. We map out key processes, identify any weak points, and create a blueprint for efficient management and support.",
+                "activities": [
+                    "Charting out product listings",
+                    "Structuring the database",
+                    "Setting up API links",
+                    "Choosing the right tech stack"
+                ],
+                "deliverables": [
+                    "Overview of store’s technical structure",
+                    "Visual plan to connect everything",
+                    "Actionable plan for support"
+                ]
+            },
+            {
+                "id": 2,
+                "title": "Strong Digital Foundation",
+                "description": "We craft a solid, adaptable back-end setup that keeps your store fast and ready to handle whatever comes its way. Every step is mapped out to prevent slowdowns.",
+                "activities": [
+                    "Make a modular structure",
+                    "Create a database layout",
+                    "Map out API connections",
+                    "Outline a step-by-step plan"
+                ],
+                "deliverables": [
+                    "A dependable back-end design",
+                    "Support plan to track progress",
+                    "Initial API Documentation"
+                ]
+            },
+            {
+                "id": 3,
+                "title": "Add Essential Features",
+                "description": "Our experts put the pieces together, from rock-solid security measures to essential third-party connections. It will keep your store and systems in sync.",
+                "activities": [
+                    "Writing back-end code",
+                    "Set up user authentication",
+                    "APIs to check payments",
+                    "Connect with payment gateways"
+                ],
+                "deliverables": [
+                    "A solid back-end system",
+                    "Documented API Interfaces",
+                    "Integration with payment systems"
+                ]
+            },
+            {
+                "id": 4,
+                "title": "Testing and Perfecting",
+                "description": "Before we go live, we run comprehensive tests to catch bugs, improve load times, and prepare your store for high traffic.",
+                "activities": [
+                    "Testing every feature",
+                    "Simulating high-traffic scenarios",
+                    "Running security checks",
+                    "Catch and fix issues"
+                ],
+                "deliverables": [
+                    "Bug-free platform",
+                    "Fast-loading pages",
+                    "Advanced security protocols"
+                ]
+            },
+            {
+                "id": 5,
+                "title": "Deployment and Continuous Support",
+                "description": "Once everything checks out, we launch your store and continue to provide support. From software updates to security patches, we’ve got it covered so you can focus on growing your business.",
+                "activities": [
+                    "Launching the store",
+                    "Set up tracking tools",
+                    "Security fixes regularly",
+                    "Training your team"
+                ],
+                "deliverables": [
+                    "Active monitoring",
+                    "A fully launched store",
+                    "Maintenance logs and a plan"
+                ]
+            }
+        ]
+    },
 
 };
 

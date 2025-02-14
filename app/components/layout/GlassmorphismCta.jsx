@@ -138,6 +138,30 @@ const data = [
     buttonText: "Launch Your Project Now!",
     backgroundImage: "https://spirecapital.com/wp-content/uploads/2017/02/CTA-background-get-in-touch.jpg",
   },
+  {
+    slug: "ecommerce-implementation",
+    tagline: "Built for Performance, Designed for Growth",
+    title: "Faster Checkouts, Better Conversions",
+    description: "A growing user base means increasing data loads. Every scroll, tap, and interaction is backed by a system designed for users. No lag and breakdowns, just an app that works as expected.",
+    buttonText: "Launch Your Project Now!",
+    backgroundImage: "https://spirecapital.com/wp-content/uploads/2017/02/CTA-background-get-in-touch.jpg",
+  },
+  {
+    slug: "shopify-development-company-in-india",
+    tagline: "Transforming Shopify Stores into Unforgettable Shopping Experiences.",
+    title: "Where Innovation Meets eCommerce Success with Shopify.",
+    description: "Your Shopify store deserves to be more than just a platform—it should be the heart of your online business. We bring unmatched expertise to craft bespoke Shopify solutions. If you're building a brand-new Shopify store or scaling an existing one, our team is dedicated to providing specialized support.",
+    buttonText: "Launch Your Project Now!",
+    backgroundImage: "https://spirecapital.com/wp-content/uploads/2017/02/CTA-background-get-in-touch.jpg",
+  },
+  {
+    slug: "ecommerce-maintenance-and-support-services",
+    tagline: "Built for Your Business, Backed by Expertise",
+    title: "Examine Traffic Patterns With Us! ",
+    description: "Get a technical setup and a support plan that keeps everything running with our team. If you need constant monitoring, quick fixes, or full-scale upgrades, our approach is built around what works best for you.",
+    buttonText: "Launch Your Project Now!",
+    backgroundImage: "https://spirecapital.com/wp-content/uploads/2017/02/CTA-background-get-in-touch.jpg",
+  },
 ];
   
   

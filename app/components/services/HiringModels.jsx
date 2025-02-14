@@ -1163,7 +1163,210 @@ const serviceData = {
 
   },
 
+
+  "ecommerce-maintenance-and-support-services": {
+    "title": "Choose From Our Ecommerce Website Maintenance & Support Service Models",
+    "description": "Websites don’t just run themselves. From fixing bugs to integrating new features and keeping everything in top shape, maintenance is an ongoing process. That’s why we offer models that fit how you want to work—if you need a full-fledged team, a few extra experts, or a fixed project approach.",
+    "models": [
+      {
+        "title": "Dedicated Team",
+        "subtitle": "Also known as product interface teams",
+        "icon": lightdotnetmodalicon,
+        "sections": [
+          {
+            "type": "para",
+            "content": "If your ecommerce website is a big, ongoing project, this is your best bet. You get a dedicated team of developers who work exclusively on your store—just like an in-house team but without the hassle of hiring. They become an extension of your business, diving deep into the details, maintaining standards, and keeping everything running like a well-oiled machine."
+          },
+          {
+            "type": "list",
+            "content": [
+              "A full team of ecommerce website developers working solely on your project.",
+              "Works hand-in-hand with your internal team, following your workflows.",
+              "Scale up or down depending on what your store needs.",
+              "You call the shots on timelines and project priorities.",
+              "Built for long-term engagement.",
+              "Expert-level knowledge in ecommerce platforms and technologies.",
+              "Adjust the team structure as your project moves forward."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Ecommerce Website Team Augmentation",
+        "subtitle": "Also known as team extension or staff augmentation",
+        "icon": teamAug,
+        "sections": [
+          {
+            "type": "para",
+            "content": "Need more hands on deck? This model is for those times when your team is stretched thin. Whether you’re rolling out new features, fixing bugs, or tackling heavy updates, we’ll plug in the right experts so you don’t have to hire full-time staff. Think of it as adding reinforcements—without the overhead."
+          },
+          {
+            "type": "list",
+            "content": [
+              "Get extra developers whenever your project demands it.",
+              "Perfect for short bursts of work or long-term maintenance.",
+              "No need to go through the long hiring process—get experts, fast.",
+              "Keep your costs in check while boosting your development power.",
+              "Your team stays in control, and we provide the backup.",
+              "Knowledge sharing helps your in-house team stay ahead."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Project Based",
+        "subtitle": "Benefits you'll get with this model:",
+        "icon": ProjectBased,
+        "sections": [
+          {
+            "type": "para",
+            "content": "Fixed Price Model: Made for projects with clear-cut requirements. If you already know exactly what needs to be done—like a security patch, plugin upgrade, or minor backend revamp—this option gives you a set cost upfront. No surprises, just results."
+          },
+          {
+            "type": "para",
+            "content": "Time & Material Model: Perfect for projects with changing requirements. Need continuous improvements, complex updates, or enhancements that aren’t easy to define in advance? This model works on an hourly or resource-based approach."
+          }
+        ]
+      }
+    ]
+  },
+
+  "shopify-development-company-in-india": {
+    "title": "Choose From Our Shopify Development Service Models",
+    "description": "Selecting the right team structure is key when building or upgrading your website. Different projects require different levels of collaboration, expertise, and flexibility. Our service models cater to your unique needs, whether you’re seeking long-term partnership, extra resources, or specialized short-term support throughout your Shopify development journey.",
+    "models": [
+      {
+        "title": "Dedicated Website Team",
+        "subtitle": "Also known as product interface teams",
+        "icon": lightdotnetmodalicon,
+        "sections": [
+          {
+            "type": "para",
+            "content": "For large and long-term projects, our Shopify development agency offers deep focus and continuous support. This model works as an extension of your business, allowing seamless integration with your workflows while delivering consistent, high-quality results throughout the entire project."
+          },
+          {
+            "type": "list",
+            "content": [
+              "Full-time developers working exclusively on your project.",
+              "Customized workflows to align with your internal processes.",
+              "Team size adjusted based on project complexity.",
+              "Accountability for timelines and milestone delivery.",
+              "Long-term collaboration with consistent results."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Team Augmentation",
+        "subtitle": "Also known as team extension or staff augmentation",
+        "icon": teamAug,
+        "sections": [
+          {
+            "type": "para",
+            "content": "Website team augmentation provides the flexibility to scale your in-house team with skilled developers on demand. This model is ideal when your existing team needs extra support or specialized skills during a particular phase of the project."
+          },
+          {
+            "type": "list",
+            "content": [
+              "Augmenting your team with experts for targeted tasks.",
+              "Gaining access to niche skills without long-term commitments.",
+              "Scaling your team quickly during peak project phases.",
+              "Reduced onboarding time.",
+              "Quick adaptation to evolving project requirements."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Project Based",
+        "subtitle": "Benefits for you:",
+        "icon": ProjectBased,
+        "sections": [
+          {
+            "type": "para",
+            "content": "Fixed Price Model: This model is ideal for projects with clear specifications and timelines, offering predictability in terms of costs and deadlines. It is perfect for simple Shopify stores or informational websites that require a set structure."
+          },
+          {
+            "type": "para",
+            "content": "Time & Material Model: This model works best for more dynamic projects where scope may change. Developers work on an hourly or task-based billing system, allowing the flexibility to adjust the project as needed. This model is great for adding custom features or additional functionalities to your Shopify store."
+          }
+        ]
+      }
+    ]
+  },
+
+  "ecommerce-implementation": {
+    "title": "Choose From Our Ecommerce Implementation Service Models",
+    "description": "Choosing the right engagement model can make a big difference in how your project progresses. Here’s a detailed breakdown of different models given by Bunnx so that you can pick the one that aligns best with your project.",
+    "models": [
+      {
+        "title": "Dedicated Ecommerce App Team",
+        "subtitle": "Also known as mobile app teams",
+        "icon": lightdotnetmodalicon,
+        "sections": [
+          {
+            "type": "para",
+            "content": "Are you looking for a long-term team to bring your ecommerce vision to reality? If yes, then this is the way to go. We assign a team of ecommerce specialists who work on your store. They create, improve, or maintain it. Our team is always available for updates and managing integrations."
+          },
+          {
+            "type": "list",
+            "content": [
+              "A full-time team that knows your ecommerce store inside out.",
+              "Direct communication and collaboration, just like an in-house team.",
+              "Complete control over project timelines and updates.",
+              "Experts who specialize in ecommerce platforms, payment systems, and backend automation.",
+              "A long-term partnership that grows with your business."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Ecommerce Team Augmentation",
+        "subtitle": "Also known as team extension or staff augmentation",
+        "icon": teamAug,
+        "sections": [
+          {
+            "type": "para",
+            "content": "Already have an in-house team but need extra hands to move things faster? This model allows you to bring in ecommerce developers, UX designers, or backend engineers as needed. If you want a big sales event, migrate to a new platform, or fix performance issues, you can scale your team without hiring full-time employees."
+          },
+          {
+            "type": "list",
+            "content": [
+              "Additional resources for handling high-demand periods.",
+              "Short-term or long-term engagement, whatever works best for you.",
+              "A way to expand your development team without hiring full-time staff.",
+              "Faster turnaround for updates, features, or troubleshooting.",
+              "Knowledge-sharing and skill development for your in-house team."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Project Based",
+        "icon": ProjectBased,
+        "sections": [
+          {
+            "type": "para",
+            "content": "Get these benefits under this model:"
+          },
+          {
+            "type": "para",
+            "content": "Fixed Price Model:\nBest for projects with a well-defined scope, where everything from features to timelines is planned in advance. This model is made for people who have small to mid-scale ecommerce stores. You have to pay a set price, regardless of how much time the developers take."
+          },
+          {
+            "type": "para",
+            "content": "Time & Material Model:\nThe time & material model is for a structured approach for fixed-scope projects. If you're experimenting with new designs or adding complex features, you only pay for the time spent. You'll get hourly or resource-based billing under this model. We increase or decrease resources as per workload."
+          }
+        ]
+      }
+    ]
+  },
+
 };
+
+
+
+
 
 export default function HiringModels({ serviceDetailPageSlug }) {
   const containerRef = useRef(null);
