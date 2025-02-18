@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const pageVariants = {
   hidden: { opacity: 0 },
-  visible: { opacity: 1, transition: { duration: 0.5 } },
+  visible: { opacity: 1, transition: { duration: 0.2 } },
 };
 
 const PageTransition = ({ children }) => {
