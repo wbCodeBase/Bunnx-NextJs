@@ -173,7 +173,7 @@ const HeroSection = ({ pageSlug, extractNameFromSlug, heroDefaultImg }) => {
     description: heroSectionObj?.description || "Custom Software Development Services and Solutions to build top-tier intelligent enterprises with speed and agility.",
     imageUrl: heroSectionObj?.imageUrl || heroDefaultImg,
     ctaText: heroSectionObj?.ctaText || "Get Connected With us",
-    ctaRedirectUrl: heroSectionObj?.ctaRedirectUrl || "#contact-us",
+    ctaRedirectUrl: heroSectionObj?.ctaRedirectUrl || "#contact-us", 
   };
 
   const { title, description, imageUrl, ctaText, ctaRedirectUrl } = heroSectionData;
