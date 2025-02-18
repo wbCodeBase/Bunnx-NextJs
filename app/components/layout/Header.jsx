@@ -260,8 +260,8 @@ const servicesData = {
         { name: 'Software Consulting', slug: 'software-development-consultants' },
         { name: 'IT Consulting', slug: 'it-consulting-services' },
         { name: 'Agile Consulting', slug: 'agile-consulting-services' },
-        { name: 'Application Maintenance', slug: 'application-maintenance' },
-        { name: 'Application Upgradation', slug: 'application-upgradation' },
+        // { name: 'Application Maintenance', slug: 'application-maintenance' },
+        // { name: 'Application Upgradation', slug: 'application-upgradation' },
       ],
       hiring: [
 

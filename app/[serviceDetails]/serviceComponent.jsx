@@ -14,10 +14,11 @@ import GuideTopics from '@/components/services/GuideTopics';
 import EngagementModel from '@/components/hire/EngagementModel';
 
 
-import Lottie from "lottie-react";
-import loaderJson from "../../public/pageAnimations/loader.json";
+// import Lottie from "lottie-react";
+// import loaderJson from "../../public/pageAnimations/loader.json";
 
-import { useGetPageContentByStrQuery, useGetActiveSlugQuery } from '../../store/api/myApi';
+import { useGetActiveSlugQuery } from '../../store/api/myApi';
+// import { useGetPageContentByStrQuery, useGetActiveSlugQuery } from '../../store/api/myApi';
 import heroDefaultImg from "/public/developmentServices.jpg"
 
 import PlaneCta from '@/components/layout/PlaneCta';
@@ -44,34 +45,19 @@ export default function ServiceDetailsComp() {
   const { serviceDetails } = params;
 
 
-  const { data: pageContentData, error: pageContentError, isLoading: pageContentIsLoading } = useGetPageContentByStrQuery({
-    templateName: "service",
-    pageSlug: serviceDetails
-  });
+  // const { data: pageContentData, error: pageContentError, isLoading: pageContentIsLoading } = useGetPageContentByStrQuery({
+  //   templateName: "service",
+  //   pageSlug: serviceDetails
+  // });
 
   // const { data, error, isLoading } = useGetTemplateContentByStrQuery("service");
-  const { data: activeSlugData, error: activeSlugError, isLoading: activeSlugIsLoading } = useGetActiveSlugQuery();
+  const { data: activeSlugData, error: activeSlugError } = useGetActiveSlugQuery();
 
 
-  // console.log(pageContentError);
 
-
-  if (pageContentIsLoading || pageContentError || activeSlugIsLoading || activeSlugError) {
+  if (activeSlugError) {
     return (
       <div className="flex flex-col items-center justify-center h-screen w-full space-y-4">
-        {/* Show loader if either loading flag is true */}
-        {(pageContentIsLoading) && (
-          <div className="flex items-center justify-center h-screen w-full">
-            <Lottie animationData={loaderJson} loop={true} />
-          </div>
-        )}
-
-        {/* Display error messages */}
-        {pageContentError && (
-          <p className="text-red-500 text-lg">
-            Error fetching page data: {pageContentError?.data?.error || pageContentError?.message || "Unknown error"}
-          </p>
-        )}
         {activeSlugError && (
           <p className="text-red-500 text-lg">
             Error fetching active slug data: {activeSlugError?.data?.error || activeSlugError?.message || "Unknown error"}
@@ -80,6 +66,32 @@ export default function ServiceDetailsComp() {
       </div>
     );
   }
+
+
+  // if (pageContentIsLoading || pageContentError || activeSlugError) {
+  //   return (
+  //     <div className="flex flex-col items-center justify-center h-screen w-full space-y-4">
+  //       {/* Show loader if either loading flag is true */}
+  //       {(pageContentIsLoading) && (
+  //         <div className="flex items-center justify-center h-screen w-full">
+  //           <Lottie animationData={loaderJson} loop={true} />
+  //         </div>
+  //       )}
+
+  //       {/* Display error messages */}
+  //       {pageContentError && (
+  //         <p className="text-red-500 text-lg">
+  //           Error fetching page data: {pageContentError?.data?.error || pageContentError?.message || "Unknown error"}
+  //         </p>
+  //       )}
+  //       {activeSlugError && (
+  //         <p className="text-red-500 text-lg">
+  //           Error fetching active slug data: {activeSlugError?.data?.error || activeSlugError?.message || "Unknown error"}
+  //         </p>
+  //       )}
+  //     </div>
+  //   );
+  // }
 
 
 
@@ -95,24 +107,18 @@ export default function ServiceDetailsComp() {
 
 
 
-  // const heroSectionObj = data?.heroSection?.find((heroData) => heroData?.fetchOnSlug?.slug === serviceDetails) || {};
-
-  // const serviceSectionObj = data?.servicesSection?.filter((service) => service?.fetchOnSlug?.map((slug) => slug?.slug).includes(serviceDetails)) || [];
-
-
-
-
   return (
     <>
 
       <AnimatePresence mode="wait">
         <PageTransition key={router.route}>
 
-          <HeroSection heroSectionObj={pageContentData?.heroSection} heroDefaultImg={heroDefaultImg} pageSlug={serviceDetails} extractNameFromSlug={formatparameter(serviceDetails)} />
+          <HeroSection heroDefaultImg={heroDefaultImg} pageSlug={serviceDetails} extractNameFromSlug={formatparameter(serviceDetails)} />
 
           <NumericCounterInfo />
 
-          <Services serviceSectionObj={pageContentData?.servicesSection} serviceDetailPageSlug={serviceDetails} extractNameFromSlug={formatparameter(serviceDetails)} />
+          {/* <Services serviceSectionObj={pageContentData?.servicesSection} serviceDetailPageSlug={serviceDetails} extractNameFromSlug={formatparameter(serviceDetails)} /> */}
+          <Services serviceDetailPageSlug={serviceDetails} extractNameFromSlug={formatparameter(serviceDetails)} />
 
           <PlaneCta serviceDetailPageSlug={serviceDetails} />
 
