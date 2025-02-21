@@ -1777,6 +1777,185 @@ const contentBySlug = {
         ]
     },
 
+
+    "ecommerce-web-development": {
+        "h2": "Our Process",
+        "h4": "Our Process for eCommerce Web Development",
+        "p": "Our experts are always providing eCommerce applications through a technology-driven approach. Here’s how our eCommerce web development company builds apps to exceed expectations:",
+        "processSections": [
+            {
+                "id": 1,
+                "title": "Blueprint & Structural Planning",
+                "description": "A solid foundation sets the stage for a website that works under any load. We break down the technical framework before a single line of code is written. This means designing a layout that flows naturally, setting up a data structure that keeps transactions fast, and choosing the right tools to balance speed.",
+                "activities": [
+                    "Define structured navigation",
+                    "Fast content rendering",
+                    "Set up database schemas",
+                    "High-speed queries"
+                ],
+                "deliverables": [
+                    "Detailed system architecture",
+                    "Support high-traffic operations",
+                    "Wireframes capturing elements"
+                ]
+            },
+            {
+                "id": 2,
+                "title": "Precision-Driven UI/UX Engineering",
+                "description": "Our designers don’t just draw; they engineer layouts that guide users from product discovery to checkout. Interactive elements are built with precision, colors and fonts are chosen with intent. Every click should feel intuitive, and every transition should serve a purpose.",
+                "activities": [
+                    "Craft interfaces using Figma",
+                    "Implement micro-interactions",
+                    "Develop adaptable layouts",
+                    "Make interfaces for all screens"
+                ],
+                "deliverables": [
+                    "UI prototypes with animations",
+                    "Design system with components",
+                    "High-fidelity mockups"
+                ]
+            },
+            {
+                "id": 3,
+                "title": "Full-Stack Engineering & Feature Deployment",
+                "description": "We use the latest technologies that will work on your app's performance, no matter how complex the features are.",
+                "activities": [
+                    "Develop custom components",
+                    "Implement APIs",
+                    "Use database queries",
+                    "Maintain fast response times"
+                ],
+                "deliverables": [
+                    "A functional eCommerce platform",
+                    "Backend synchronization",
+                    "API-driven architecture"
+                ]
+            },
+            {
+                "id": 4,
+                "title": "Testing & Performance Stress Checks",
+                "description": "No launch happens without rigorous testing. Every feature is put through a stress test—can the checkout page handle thousands of simultaneous orders? Will the images load just as fast on a slow connection? From manual testing to automated scripts, we prevent them before they reach the final stage.",
+                "activities": [
+                    "Simulate high-traffic scenarios",
+                    "Run automated tests",
+                    "Profile the resource consumption",
+                    "Eliminate unnecessary lags"
+                ],
+                "deliverables": [
+                    "Performance benchmarks tracking",
+                    "Fixing errors before deployment",
+                    "Security compliance checks"
+                ]
+            },
+            {
+                "id": 5,
+                "title": "Deployment and Post-Launch Monitoring",
+                "description": "A website launch is just the beginning. We deploy in a way that eliminates downtime. Once live, monitoring tools track everything from response rates to user engagement. It allows instant fixes if anything isn’t working as intended. With structured deployment pipelines, every future update rolls out without interfering with existing operations.",
+                "activities": [
+                    "Deploy servers with infrastructure",
+                    "Implement monitoring tools",
+                    "Schedule feature rollouts",
+                    "Tracking page load speeds"
+                ],
+                "deliverables": [
+                    "A fully deployed eCommerce site",
+                    "Live dashboards monitoring",
+                    "Detailed documentation"
+                ]
+            }
+        ]
+    },
+
+
+    "woocommerce-development-services-india": {
+        "h2": "Our Process",
+        "h4": "Our Process for WooCommerce",
+        "p": "A WooCommerce store isn’t just about listing products and waiting for sales to roll in. It takes a well-thought structure and a solid back-end. We take care of every detail—so you don’t have to think for slow checkouts, broken pages, or security issues.",
+        "processSections": [
+            {
+                "id": 1,
+                "title": "Understanding Your Store",
+                "description": "No two businesses are the same, and neither should their WooCommerce stores be. Our team at Bunnx start by knowing about what should be your product range, customer flow, and must-have features. We offer these in our WooCommerce services.",
+                "activities": [
+                    "Outline product category",
+                    "Handle orders and payments",
+                    "Identify must-have integrations",
+                    "Choose the right tech stack"
+                ],
+                "deliverables": [
+                    "A WooCommerce blueprint that works for your business",
+                    "A well-planned architecture",
+                    "The right technology choices"
+                ]
+            },
+            {
+                "id": 2,
+                "title": "Structuring the Store",
+                "description": "We lay the technical foundation, define how different sections of your store interact, set up security protocols, and plan the development roadmap.",
+                "activities": [
+                    "Structure the database",
+                    "Database Schema Design",
+                    "Map out your store",
+                    "Clear development roadmap"
+                ],
+                "deliverables": [
+                    "A store structure",
+                    "Step-by-Step Development Plan",
+                    "Documented workflow"
+                ]
+            },
+            {
+                "id": 3,
+                "title": "Back-End Development & Integration",
+                "description": "From back-end to front-end design, we create a WooCommerce store that’s fast and built to handle shopping experiences.",
+                "activities": [
+                    "Develop the back-end",
+                    "Implement a checkout system",
+                    "Fraud prevention measures",
+                    "Connect third-party tools"
+                ],
+                "deliverables": [
+                    "Functional WooCommerce store",
+                    "A checkout process",
+                    "Secure integrations for payment"
+                ]
+            },
+            {
+                "id": 4,
+                "title": "Testing & Eliminating Weak Spots",
+                "description": "An online store isn’t useful if it breaks under pressure. So, we test every feature and transaction to make sure everything works.",
+                "activities": [
+                    "Stress test the site",
+                    "Fix security vulnerabilities",
+                    "Run transaction tests",
+                    "Exceptional loading speeds"
+                ],
+                "deliverables": [
+                    "A store that won’t crash",
+                    "A bug-free shopping experience",
+                    "Fraud prevention measures"
+                ]
+            },
+            {
+                "id": 5,
+                "title": "Launching",
+                "description": "The launch is just the beginning. We keep an eye on how your store runs, apply regular updates, and provide ongoing support so that nothing slows down your sales.",
+                "activities": [
+                    "Deploy your store",
+                    "Set up monitoring tools",
+                    "Regular updates",
+                    "Offer training and documentation"
+                ],
+                "deliverables": [
+                    "Store ready to start selling",
+                    "Monitoring dashboards",
+                    "A dedicated support team"
+                ]
+            }
+        ]
+    }
+
+
 };
 
 

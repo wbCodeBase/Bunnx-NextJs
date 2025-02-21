@@ -238,6 +238,7 @@ const menuItems = [
 
 // }
 
+
 const servicesData = {
   categories: [
     { name: 'Software Development', slug: 'best-software-development-company-in-india' },
@@ -323,7 +324,7 @@ const servicesData = {
         { name: 'Ecommerce Implementation', slug: 'ecommerce-implementation' },
         { name: 'Ecommerce Maintenance & Support', slug: 'ecommerce-maintenance-and-support-services' },
         { name: 'Shopify', slug: 'shopify-development-company-in-india' },
-        { name: 'WooCommerce', slug: 'woo-commerce' },
+        { name: 'WooCommerce', slug: 'woocommerce-development-services-india' },
       ],
       hiring: [
         {

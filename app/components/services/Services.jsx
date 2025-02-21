@@ -4,6 +4,63 @@ import { IoArrowForward } from "react-icons/io5";
 import { createLinkedContent } from '#/utils/LinkBuilder';
 
 
+const defaultServices = [
+  {
+    title: "Front-End Development",
+    description:
+      "Take the user level to the next level and develop a flawless website with the top front end development company.",
+    ctaRedirectUrl: {
+      slug: "front-end-development-services",
+    }
+  },
+  {
+    title: "Back-End Development",
+    description:
+      "Redesign the future of your web presence with a flawlessly tuned website, crafted by the wizards of the best back end development.",
+    ctaRedirectUrl: {
+      slug: "back-end-development-services",
+    }
+  },
+  {
+    title: "Full Stack Development",
+    description:
+      "Full Stack Development involves building and managing both front-end and back-end of web applications, ensuring seamless functionality.",
+    ctaRedirectUrl: {
+      slug: "full-stack-development-services",
+    },
+  },
+  {
+    title: "Software Development",
+    description: "Custom Software Development Services and Solutions to build top-tier intelligent enterprises with speed and agility.",
+    ctaRedirectUrl: {
+      slug: "best-software-development-company-in-india",
+    },
+  },
+];
+
+
+const keywordToSlug = {
+  'top front end development service provider': 'front-end-development-services',
+  'front end development services': 'front-end-development-services',
+  'front end development company': 'front-end-development-services',
+  'software development company in India': 'best-software-development-company-in-india',
+  'custom application development company': 'best-software-development-company-in-india',
+  'best software development companies': 'best-software-development-company-in-india',
+  'CRM software development companies': 'crm-software-development-services',
+  'CRM development services': 'crm-software-development-services',
+  'CRM software development company': 'crm-software-development-services',
+  'CRM development services': 'crm-software-development-services',
+  'custom software development company': 'custom-software-development-services',
+  'best IT consulting services in India': 'it-consulting-services',
+  'mobile app development company': 'mobile-app-development-services',
+  'API Development & Integration company': 'api-development-and-integration-services',
+  'custom API Development & Integration services': 'api-development-and-integration-services',
+  'Agile consultant services': 'agile-consulting-services',
+  'website development services': 'website-development-services',
+  'website development company': 'website-development-services',
+  'web development company': 'web-application-development-services',
+};
+
 
 
 const services = [
@@ -1317,6 +1374,7 @@ const services = [
       "ecommerce-maintenance-and-support-services"
     ]
   },
+
   {
     "title": "eCommerce Support Services",
     "description": "Our eCommerce website maintenance & support services team is ready to swiftly address and resolve any site issues, minimizing downtime and ensuring continuous, efficient operations.",
@@ -1324,49 +1382,140 @@ const services = [
     "fetchOnSlug": [
       "ecommerce-maintenance-and-support-services"
     ]
+  },
+
+  {
+    "title": "eCommerce Support Services",
+    "description": "Our eCommerce website maintenance & support services team is ready to swiftly address and resolve any site issues, minimizing downtime and ensuring continuous, efficient operations.",
+    "fetchOnSlug": ["ecommerce-web-development"]
+  },
+  {
+    "title": "Custom eCommerce Website Design",
+    "description": "Your store’s look and feel should do more than just exist. That's why our design team builds layouts that match your brand’s personality. Every button, menu, and interaction is made to keep shoppers engaged. It helps to guide them from product discovery to checkout without distractions.",
+    "fetchOnSlug": ["ecommerce-web-development"]
+  },
+  {
+    "title": "Shopping Cart Implementation",
+    "description": "A clunky checkout process can kill conversions in seconds. We build shopping carts to control product availability, apply discounts dynamically, and allow friction-free payments. Customers can save items, switch between devices without losing their carts, and complete transactions with just a few taps.",
+    "fetchOnSlug": ["ecommerce-web-development"]
+  },
+  {
+    "title": "Payment Gateway Setup",
+    "description": "No matter how your customers prefer to pay. We make multiple payment options, from credit cards and digital wallets to regional payment providers. Every transaction is processed, with no unnecessary redirects or page reloads.",
+    "fetchOnSlug": ["ecommerce-web-development"]
+  },
+  {
+    "title": "Product Management Dashboard",
+    "description": "Managing hundreds—or thousands—of products shouldn’t feel like a chore. Our dashboard lets you add, edit, and categorize products in bulk. Update prices, track stock levels, and highlight featured items with a few clicks.",
+    "fetchOnSlug": ["ecommerce-web-development"]
+  },
+  {
+    "title": "Customer Data & Service Tools",
+    "description": "Understanding your shoppers is the key to bringing them back. Our eCommerce web development company lets you track past purchases and interactions so you can personalize offers and provide better support. Automated responses, customer segmentation, and feedback collection tools keep your customer service proactive.",
+    "fetchOnSlug": ["ecommerce-web-development"]
+  },
+  {
+    "title": "eCommerce SEO Strategies",
+    "description": "A great store is useless if no one finds it. We fine-tune your product pages, URLs, and metadata to rank higher on search engines. Structured data implementation makes your listings stand out with price and rating snippets in search results.",
+    "fetchOnSlug": ["ecommerce-web-development"]
+  },
+  {
+    "title": "Mobile-Friendly Storefronts",
+    "description": "Your store should look and work just as well on a phone as it does on a desktop. We create layouts that adapt automatically to different screen sizes, ensuring images, buttons, and checkout flows work in a better way.",
+    "fetchOnSlug": ["ecommerce-web-development"]
+  },
+  {
+    "title": "Advanced Sales & Customer Insights",
+    "description": "Tracking numbers isn't enough—you need insights that drive action. Our analytics tools go beyond basic traffic reports, providing deep insights into conversion rates and revenue trends. Find out which products sell the most, where visitors drop off, and how different campaigns impact sales.",
+    "fetchOnSlug": ["ecommerce-web-development"]
+  },
+  {
+    "title": "Security & Fraud Prevention",
+    "description": "Your store must protect customers’ data at all costs. Our team uses SSL encryption, multi-factor authentication, and advanced fraud detection to safeguard transactions. Automatic alerts notify you of suspicious activity, prevent chargebacks and unauthorized access before they become an issue.",
+    "fetchOnSlug": ["ecommerce-web-development"]
+  },
+  {
+    "title": "Hosting & Server Infrastructure",
+    "description": "Your store needs a foundation that can handle growth without slowing down. We set up hosting environments that balance speed and reliability. Auto-scaling servers and CDN integration keep things running fast, no matter how many visitors arrive at once.",
+    "fetchOnSlug": ["ecommerce-web-development"]
+  },
+  {
+    "title": "Content Control & Management",
+    "description": "Keeping your store fresh shouldn’t require a developer. Our eCommerce web development services allow you to update banners, tweak product descriptions, and publish blog content without touching a single line of code. Custom templates and drag-and-drop builders make managing your store as easy as editing a document.",
+    "fetchOnSlug": ["ecommerce-web-development"]
+  },
+  {
+    "title": "Support & Store Evolution",
+    "description": "A store launch is just the beginning. We provide performance tuning and feature updates to keep your eCommerce site at the top of its game. If it’s adding new payment methods or fixing minor glitches, we handle it all while you focus on selling.",
+    "fetchOnSlug": ["ecommerce-web-development"]
+  },
+
+  {
+    "title": "Setup and Integration",
+    "description": "Our team uses WooCommerce like any WordPress plugin. Find it in your dashboard, click 'Activate,' and launch your store. You don’t need any technology knowledge.",
+    "fetchOnSlug": ["woocommerce-development-services-india"]
+  },
+  {
+    "title": "Guided Store Setup",
+    "description": "The Setup team checks your store basics: currency, payment methods, and shipping zones. It will skip the unnecessary and focus on what gets your shop ready for customers.",
+    "fetchOnSlug": ["woocommerce-development-services-india"]
+  },
+  {
+    "title": "Wordpress Theme Integration",
+    "description": "Works smoothly with 99% of WordPress themes. Prefer something built just for Woo? Take help from our team for a free Storefront theme which is clean and lightweight.",
+    "fetchOnSlug": ["woocommerce-development-services-india"]
+  },
+  {
+    "title": "Data Control",
+    "description": "Your data must stay under confidentiality. No third-party platform will be holding it. We host everything on your server, and tweak/backup customer info, sales stats, and inventory as you please.",
+    "fetchOnSlug": ["woocommerce-development-services-india"]
+  },
+  {
+    "title": "Data Protection",
+    "description": "WooCommerce doesn’t share your data with middlemen. Our experts pair it with trusted hosting and plugins.",
+    "fetchOnSlug": ["woocommerce-development-services-india"]
+  },
+  {
+    "title": "Checkout Customization",
+    "description": "We design checkout flows that match your brand. Our team also adds/removes fields, enables guest purchases, or redirects customers to a custom 'Thank You' page.",
+    "fetchOnSlug": ["woocommerce-development-services-india"]
+  },
+  {
+    "title": "Payment Gateways",
+    "description": "At Bunnx, our experts take cash, checks, bank transfers, or digital payments via PayPal or Stripe. You'll get the payment methods on/off in minutes.",
+    "fetchOnSlug": ["woocommerce-development-services-india"]
+  },
+  {
+    "title": "Automatic Tax & Location",
+    "description": "Show prices with taxes included based on a customer’s location. For this, we set rules once, and WooCommerce handles the math.",
+    "fetchOnSlug": ["woocommerce-development-services-india"]
+  },
+  {
+    "title": "Checkout Process Control",
+    "description": "You can now decide who can buy countries or global, force secure checkout, or let shoppers come as guests. We make your rules come to reality by setting your checkout flow URLs.",
+    "fetchOnSlug": ["woocommerce-development-services-india"]
   }
+
+
 ]
 
-const defaultServices = [
-      {
-        title: "Front-End Development",
-        description:
-          "Take the user level to the next level and develop a flawless website with the top front end development company.",
-        ctaRedirectUrl: {
-          slug: "front-end-development-services",
-        }
-      },
-      {
-        title: "Back-End Development",
-        description:
-          "Redesign the future of your web presence with a flawlessly tuned website, crafted by the wizards of the best back end development.",
-        ctaRedirectUrl: {
-          slug: "back-end-development-services",
-        }
-      },
-      {
-        title: "Full Stack Development",
-        description:
-          "Full Stack Development involves building and managing both front-end and back-end of web applications, ensuring seamless functionality.",
-        ctaRedirectUrl: {
-          slug: "full-stack-development-services",
-        },
-      },
-      {
-        title: "Software Development",
-        description: "Custom Software Development Services and Solutions to build top-tier intelligent enterprises with speed and agility.",
-        ctaRedirectUrl: {
-          slug: "best-software-development-company-in-india",
-        },
-      },
-    ];
 
 
 const OurServicesHeadPara = [
   {
+    serviceTitle: "Best WooCommerce Development Services",
+    servicePara: "Your business isn’t static, and neither is your website. Whether you’re adding 10 products or 10,000, we create a foundation. Need a new feature down the road? We’ve got your back.",
+    slug: "woocommerce-development-services-india"
+  },
+  {
     serviceTitle: "Best Front End Development Services",
-    servicePara: "We are a top front end development service provider in India, focused on delivering the best user solutions. We build powerful, integrated websites that make navigation smoother and drive business growth seamlessly. Our innovative range of front end development services include",
+    servicePara: "We are a top front end development service provider in India, focused on delivering the best user solutions. We build powerful, integrated websites that make navigation smoother and drive business growth seamlessly. Our innovative range of front end development services include.",
     slug: "front-end-development-services"
+  },
+  {
+    serviceTitle: "Best eCommerce Web Development Services",
+    servicePara: "Need integrations? We will connect your app with a lot of payment gateways, CRMs, APIs, and more. The team at our eCommerce web development company will work on push notifications for better data analytics to refine strategies.",
+    slug: "ecommerce-web-development"
   },
   {
     serviceTitle: "Best Back End Development Services",
@@ -1467,31 +1616,11 @@ const OurServicesHeadPara = [
 ]
 
 
-const keywordToSlug = {
-  'top front end development service provider': 'front-end-development-services',
-  'front end development services': 'front-end-development-services',
-  'front end development company': 'front-end-development-services',
-  'software development company in India': 'best-software-development-company-in-india',
-  'custom application development company': 'best-software-development-company-in-india',
-  'best software development companies': 'best-software-development-company-in-india',
-  'CRM software development companies': 'crm-software-development-services',
-  'CRM development services': 'crm-software-development-services',
-  'CRM software development company': 'crm-software-development-services',
-  'CRM development services': 'crm-software-development-services',
-  'custom software development company': 'custom-software-development-services',
-  'best IT consulting services in India': 'it-consulting-services',
-  'mobile app development company': 'mobile-app-development-services',
-  'API Development & Integration company': 'api-development-and-integration-services',
-  'custom API Development & Integration services': 'api-development-and-integration-services',
-  'Agile consultant services': 'agile-consulting-services',
-  'website development services': 'website-development-services',
-  'website development company': 'website-development-services',
-  'web development company': 'web-application-development-services',
-};
+
 
 
 const Services = ({ serviceDetailPageSlug, extractNameFromSlug }) => {
-// const Services = ({ serviceSectionObj, serviceDetailPageSlug, extractNameFromSlug }) => {
+  // const Services = ({ serviceSectionObj, serviceDetailPageSlug, extractNameFromSlug }) => {
 
   // const servicesData = (Array.isArray(serviceSectionObj) && serviceSectionObj.length > 0)
   //   ? serviceSectionObj
@@ -1530,7 +1659,7 @@ const Services = ({ serviceDetailPageSlug, extractNameFromSlug }) => {
 
   //   ];
 
-  var matchingServices = services.filter(service => 
+  var matchingServices = services.filter(service =>
     service.fetchOnSlug.includes(serviceDetailPageSlug)
   );
 
@@ -1562,7 +1691,6 @@ const Services = ({ serviceDetailPageSlug, extractNameFromSlug }) => {
               <h3 className='font-semibold my-3 pb-3 text-gray-800 text-xl border-b border-orange-500'>{service.title}</h3>
 
               <p className='text-gray-600'>{createLinkedContent(service.description, keywordToSlug, serviceDetailPageSlug)}</p>
-
 
               {service?.ctaRedirectUrl && service?.ctaRedirectUrl?.slug &&
                 <div className='flex justify-end items-center mt-2'>

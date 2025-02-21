@@ -162,6 +162,26 @@ const data = [
     buttonText: "Contact Us Now",
     backgroundImage: "https://images.pexels.com/photos/316681/pexels-photo-316681.jpeg",
   },
+  
+  
+  
+
+  {
+    slug: "ecommerce-web-development",
+    tagline: "Build an eCommerce App That Turns Heads!",
+    title: "We Create a Lasting Impression.",
+    description: "With a shopping flow, safe payments, and a layout that helps to explore, customers don’t just browse—they buy. Give them a reason to stay, return, and rave about your brand.",
+    buttonText: "Contact Us Now",
+    backgroundImage: "https://images.pexels.com/photos/316681/pexels-photo-316681.jpeg",
+  },
+  {
+    slug: "woocommerce-development-services-india",
+    tagline: "Your Store, Built to Thrive!",
+    title: "Get An Online Business That Stands The Test of Time.",
+    description: "We build each aspect of your store with care, from designing the perfect storefront to ensuring every technical detail works together to support your business. This makes Bunnx a leading Woo Commerce development agency in India.",
+    buttonText: "Contact Us Now",
+    backgroundImage: "https://images.pexels.com/photos/316681/pexels-photo-316681.jpeg",
+  },
 ];
 
 

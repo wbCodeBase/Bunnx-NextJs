@@ -694,6 +694,82 @@ const contentBySlug = {
         ]
     },
 
+    "ecommerce-web-development": {
+        "h2": "Methodology",
+        "h4": "Get Smarter Applications with Effective eCommerce Web Solutions",
+        "p": "Our eCommerce web development services include user-centric design with technological competence. With advanced tools and programming practices, we create eCommerce applications that are feature-packed.",
+        "steps": [
+            {
+                "id": 1,
+                "title": "Online Multistore Expansion",
+                "description": "Managing multiple stores shouldn’t feel like running different businesses. Our multistore framework lets you handle multiple locations, brands, or product catalogs from one place. Want region-specific pricing? No problem. We set up a system where you can tweak inventory, taxes, and shipping rules.",
+                "icon": FeaturesValidation
+            },
+            {
+                "id": 2,
+                "title": "Online Marketplaces Built for Growth",
+                "description": "A marketplace needs the right infrastructure. We develop platforms where vendors can set up shop, list products, and manage sales with ease. Customers get advanced search filters, price comparisons, and secure payment options, while sellers get an intuitive dashboard for tracking orders and analytics.",
+                "icon": Agile
+            },
+            {
+                "id": 3,
+                "title": "Web Portals for Retail Management",
+                "description": "Retail businesses need more than a storefront; they need a system that brings everything together. Our web portals act as a control center, giving you tools to manage vendors and keep product catalogs up to date. Set up vendor processes, track sales data, and automate stock updates—all in one place.",
+                "icon": Coding
+            },
+            {
+                "id": 4,
+                "title": "Headless Commerce for Maximum Control",
+                "description": "Want your store to look stunning on every device without rebuilding the backend? That’s where headless commerce comes in. We separate your online store’s frontend from its backend, giving you complete control over how it looks and functions.",
+                "icon": RealTime
+            },
+            {
+                "id": 5,
+                "title": "PWA (Progressive Web Apps) for Instant Access",
+                "description": "Forget slow load times and clunky mobile experiences. Progressive Web Apps (PWAs) give your store an app-like feel without forcing users to download anything. Our team builds PWAs that work instantly on any device, loading pages in a snap and offering offline browsing.",
+                "icon": FeaturesValidation
+            },
+            {
+                "id": 6,
+                "title": "B2C & B2B eCommerce",
+                "description": "Selling to businesses and individual customers requires two different approaches. We create B2C stores with fast checkouts, personalized recommendations, and product pages that drive impulse buys. For B2B, our team adds custom pricing tiers and bulk ordering options.",
+                "icon": Agile
+            }
+        ]
+    },
+
+    "woocommerce-development-services-india": {
+        "h2": "Methodology",
+        "h4": "Get Smarter Applications with Effective WooCommerce Services",
+        "p": "Running a WooCommerce store isn’t just about setting up products and hoping for the best. Get fast loading pages, secure transactions, and a seamless checkout experience with our team. Our WooCommerce agency handles the technical side, so you can focus on what matters.",
+        "steps": [
+            {
+                "id": 1,
+                "title": "Plugin Development & Third-Party Integrations",
+                "description": "Your WooCommerce needs features that standard plugins don’t offer. That’s why we develop custom plugins and know how you want your store to work. From payment gateways to inventory syncing, we make sure every function integrates seamlessly.",
+                "icon": FeaturesValidation
+            },
+            {
+                "id": 2,
+                "title": "WooCommerce Performance Boosting",
+                "description": "A slow WooCommerce site sends customers running. Shoppers don’t wait around for pages to load, and neither should you. Our experts modify your website’s structure so that it loads quickly and handles high traffic.",
+                "icon": Agile
+            },
+            {
+                "id": 3,
+                "title": "Security Enhancements for Transactions",
+                "description": "When customers enter their payment details, they expect complete security. A single breach can ruin your store’s reputation. We build layers of protection so your WooCommerce store stays safe from cyber threats.",
+                "icon": Coding
+            },
+            {
+                "id": 4,
+                "title": "Maintenance & Support",
+                "description": "WooCommerce development requires ongoing care to prevent issues before they affect sales. We provide you with regular plugin and theme updates without breaking functionality. Our team also fixes bugs and provides technical troubleshooting.",
+                "icon": RealTime
+            }
+        ]
+    },
+
 }
 
 

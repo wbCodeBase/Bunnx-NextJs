@@ -1295,6 +1295,8 @@ const serviceData = {
     ]
   },
 
+
+
   "ecommerce-implementation": {
     "title": "Choose From Our Ecommerce Implementation Service Models",
     "description": "Choosing the right engagement model can make a big difference in how your project progresses. Here’s a detailed breakdown of different models given by Bunnx so that you can pick the one that aligns best with your project.",
@@ -1356,6 +1358,140 @@ const serviceData = {
           {
             "type": "para",
             "content": "Time & Material Model:\nThe time & material model is for a structured approach for fixed-scope projects. If you're experimenting with new designs or adding complex features, you only pay for the time spent. You'll get hourly or resource-based billing under this model. We increase or decrease resources as per workload."
+          }
+        ]
+      }
+    ]
+  },
+
+  "ecommerce-web-development": {
+    "title": "Choose From Our eCommerce Web Development Service Models",
+    "description": "Generic solutions don’t cut it when your eCommerce platform is handling real customers. We take the time to analyze your app’s structure and dependencies. Do you need a developer for a short-term fix? Our team will get it done without disrupting your workflow. You can decide the level of involvement, and we handle the execution.",
+    "models": [
+      {
+        "title": "Dedicated eCommerce App Team",
+        "subtitle": "Also known as eCommerce app teams",
+        "icon": lightdotnetmodalicon,
+        "sections": [
+          {
+            "type": "para",
+            "content": "When you’re serious about building an eCommerce app that stands out, you need a team that treats your project as their own. With a dedicated team, you’ll have full-time developers who are completely invested in building and expanding your app. No juggling multiple projects—just a focused team committed to writing solid code and keeping development on track."
+          },
+          {
+            "type": "list",
+            "content": [
+              "A team of full-time developers committed to your eCommerce project.",
+              "Developers who work on your app without splitting attention across multiple projects.",
+              "Works with your existing processes, tools, and version control systems for a seamless development flow.",
+              "Adjust the team size as your app expands.",
+              "Experts in technologies like Node.js, Django, Laravel, and more."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "eCommerce Web Team Augmentation",
+        "subtitle": "Also known as team extension or staff augmentation",
+        "icon": teamAug,
+        "sections": [
+          {
+            "type": "para",
+            "content": "Already have an eCommerce web development team but need extra hands to push through a major update or handle a surge in traffic? Team augmentation brings in the right specialists exactly when you need them. Developers are onboarded quickly, work directly with your existing team, and bridge the gap when tight deadlines demand extra manpower."
+          },
+          {
+            "type": "list",
+            "content": [
+              "Bring in extra developers without long-term hiring commitments.",
+              "Quick onboarding of experts in backend, API development, UI/UX, or database optimization.",
+              "Supports short-term demands like launching a new feature, managing high-traffic seasons, or fixing bugs.",
+              "Expand your technical team temporarily to meet aggressive deadlines.",
+              "Helps with advanced integrations like payment gateways, push notifications, and third-party SDKs."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Project Based",
+        "icon": ProjectBased,
+        "sections": [
+          {
+            "type": "para",
+            "content": "Best suited for small-mid scale eCommerce app projects."
+          },
+          {
+            "type": "para",
+            "content": "Fixed Price Model:\nOur model is best for projects with defined features and timelines. We also build eCommerce apps with standard functionalities such as product catalogs, shopping carts, and checkout systems. The cost is set from the beginning and prevents unexpected budget overruns."
+          },
+          {
+            "type": "para",
+            "content": "Time & Material Model:\nAt Bunnx, our experts design for projects requiring experimentation and iteration. It's also suitable for apps incorporating AI-based recommendations, chatbots, or personalized shopping experiences. You can pay based on the actual work done to modify features or pivot development mid-project."
+          }
+        ]
+      }
+    ]
+  },
+
+  "woocommerce-development-services-india": {
+    "title": "Choose From Our WooCommerce Development Service Models",
+    "description": "Every business has a different journey, and so does every online store. Whether you're launching a brand-new WooCommerce shop or enhancing an existing one, we offer hiring models that bring in the right talent at the right time. From full-time developers to short-term assistance, we have a structure that works for you.",
+    "models": [
+      {
+        "title": "Dedicated WooCommerce Development Team",
+        "subtitle": "Also known as WooCommerce teams",
+        "icon": lightdotnetmodalicon,
+        "sections": [
+          {
+            "type": "para",
+            "content": "If your store is growing and you need a team that works exclusively on your platform, this model is perfect. You get a committed group of WooCommerce developers who fine-tune, upgrade, and expand your store as needed."
+          },
+          {
+            "type": "list",
+            "content": [
+              "Full-time experts who understand your store inside out.",
+              "Works alongside your existing business operations.",
+              "Expands or contracts based on your store’s requirements.",
+              "Complete control over timelines and delivery.",
+              "Specialized WooCommerce skills for store optimization."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "WooCommerce Team Augmentation",
+        "subtitle": "Also known as team extension or staff augmentation",
+        "icon": teamAug,
+        "sections": [
+          {
+            "type": "para",
+            "content": "Need extra hands to tackle new features, integrations, or store maintenance? Our team augmentation model gives you access to a skilled WooCommerce development team who can support your team on demand. Whether it’s a temporary requirement or ongoing collaboration, this model keeps your store on track."
+          },
+          {
+            "type": "list",
+            "content": [
+              "Scale up development resources during peak shopping seasons.",
+              "Short-term or long-term assistance without the permanent hiring.",
+              "Saves hiring costs while maintaining high-quality work.",
+              "A hassle-free way to add WooCommerce expertise to your team.",
+              "Helps transfer knowledge to your in-house team."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Project Based",
+        "icon": ProjectBased,
+        "sections": [
+          {
+            "type": "para",
+            "content": "Get benefits with our model!"
+          },
+          {
+            "type": "para",
+            "content": "Fixed Price Model:\nBest for projects with clear goals, timelines, and specifications. We define the work scope upfront, so you know exactly what to expect. Ideal for small-to-medium WooCommerce improvements."
+          },
+          {
+            "type": "para",
+            "content": "Time & Material Model:\nDesigned for projects that require ongoing tweaks, evolving requirements, or advanced UI/UX work. This approach lets you pay based on actual work done."
           }
         ]
       }

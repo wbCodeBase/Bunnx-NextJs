@@ -162,7 +162,22 @@ const HeroSection = ({ pageSlug, extractNameFromSlug, heroDefaultImg }) => {
     "ctaText": "Get Connected Now",
     "ctaRedirectUrl": "#contact-us",
     "fetchOnSlug": "ecommerce-implementation"
-  }]
+  },
+  {
+    "title": "eCommerce Web Development",
+    "description": "Redefine eCommerce with apps that don’t just function but leave a lasting impression. Our eCommerce web development strategy bridges UI/UX precision with backend stability. It also includes creation of the first blueprint and the final rollout.",
+    "ctaText": "Get Connected Now",
+    "ctaRedirectUrl": "#contact-us",
+    "fetchOnSlug": "ecommerce-web-development"
+  },
+  {
+    "fetchOnSlug": "woocommerce-development-services-india",
+    "title": "WooCommerce Development Services India",
+    "description": "We create a website  that has a bright and welcoming interface. So, team up with our WooCommerce development agency. We’re not just developers; we’re your partners in creating a space that is inviting.",
+    "ctaText": "Get Connected Now",
+    "ctaRedirectUrl": "#contact-us", 
+  },
+]
 
   const heroSectionObj = heroSection.filter(section => 
     section.fetchOnSlug === pageSlug

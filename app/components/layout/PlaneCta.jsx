@@ -148,7 +148,28 @@ const PlaneCta = ({ serviceDetailPageSlug }) => {
             ctaText: "Let's Connect!",
         }, 
         
+        {
+            slug: "ecommerce-web-development",
+            span: "We deliver the Best Shopping Experience for your Customers!",
+            head: "Engineered for Speed and Built for Growth.",
+            para: "An eCommerce platform should list products, drive sales, and improve customer retention. At Bunnx, we develop solutions that support these along with inventory tracking and checkout flows. If you're launching a marketplace or a subscription service, our eCommerce web development team designs every component for fast execution.",
+            ctaText: "Let's Connect!",
+        }, 
+        
+        {
+            slug: "woocommerce-development-services-india",
+            span: "WooCommerce Development That Works without Frustration!",
+            head: "Tired of abandoned carts and checkout pages?",
+            para: "We will make your WooCommerce store so that shoppers can browse, add to cart, and checkout without an issue. With us not just grow your business but make sure that you stand out as the best in the industry.",
+            ctaText: "Let's Connect!",
+        }, 
+        
     ]
+
+    
+     
+    
+
     
 
     const ctaMainObj = CtaMain?.find((ctaMain) => ctaMain?.slug === serviceDetailPageSlug) || {

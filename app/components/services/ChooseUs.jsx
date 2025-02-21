@@ -217,11 +217,35 @@ const data = [
     imageSrc: softwareDev,
     altText: "eCommerce maintenance and support",
   },
-
+  {
+    slug: "woocommerce-development-services-india",
+    title: "Leading Woo Commerce Experts",
+    description1: "We don’t just install plugins and hope for the best. Our developers dig deep into WooCommerce’s architecture to fine-tune every detail. Our team implements top-tier security measures, from fraud detection systems to encrypted payment gateways, so your customers can shop with confidence.",
+    description2: "It makes us the top Woo Commerce development agency in India.",
+    buttonText: "Get Started! ",
+    link: "#contact-us",
+    imageSrc: softwareDev,
+    altText: "Shopify Development",
+  },
+  {
+    slug: "",
+    title: "Leading eCommerce Web Development Experts",
+    description1: "Every project starts with an in-depth breakdown of what makes your business unique, from how customers browse to how they check out.",
+    description2: "Experts at Bunnx work towards your loading times so buyers don’t have to wait. Because in eCommerce, every second counts.",
+    buttonText: "Get Started! ",
+    link: "#contact-us",
+    imageSrc: softwareDev,
+    altText: "eCommerce maintenance and support",
+  },
 
 ];
 
  
+ 
+
+ 
+  
+
 
 
 

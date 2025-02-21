@@ -157,15 +157,37 @@ const data = [
   {
     slug: "ecommerce-maintenance-and-support-services",
     tagline: "Built for Your Business, Backed by Expertise",
-    title: "Examine Traffic Patterns With Us! ",
+    title: "Examine Traffic Patterns With Us!",
     description: "Get a technical setup and a support plan that keeps everything running with our team. If you need constant monitoring, quick fixes, or full-scale upgrades, our approach is built around what works best for you.",
+    buttonText: "Launch Your Project Now!",
+    backgroundImage: "https://spirecapital.com/wp-content/uploads/2017/02/CTA-background-get-in-touch.jpg",
+  },
+
+
+  {
+    slug: "ecommerce-web-development",
+    tagline: "Need lightning-speed searches?",
+    title: "We analyze buying behaviors and build layouts.",
+    description: "An eCommerce store shouldn’t just look good, it should sell. We make high-converting product pages and designs every element to keep customers from abandoning their carts.",
+    buttonText: "Launch Your Project Now!",
+    backgroundImage: "https://spirecapital.com/wp-content/uploads/2017/02/CTA-background-get-in-touch.jpg",
+  },
+  {
+    slug: "woocommerce-development-services-india",
+    tagline: "Crafting Stores That Sell & Scale",
+    title: "Get a Store That Works as Hard as You Do",
+    description: "We have WooCommerce development services that allows us to handle high traffic, sync inventory in real-time, and process payments. No more lost orders, abandoned carts, or checkout errors—just a shopping experience that keeps customers coming back.",
     buttonText: "Launch Your Project Now!",
     backgroundImage: "https://spirecapital.com/wp-content/uploads/2017/02/CTA-background-get-in-touch.jpg",
   },
 ];
   
-  
+
+
+
  
+
+
 
 
 

@@ -174,7 +174,25 @@ const engageMentModelData = [
         p: "Every online store has its quirks. Maybe your site needs a quick tune-up, a dedicated team to keep things running, or extra hands during peak seasons. Whatever the case, we’ve got you covered with different engagement models that bring in the right kind of expertise at the right time.",
         engagement: engagement,
     },
+    {
+        slug: "woocommerce-development-services-india",
+        h2: "Choose From Our Hiring Models",
+        h4: "Collaborate with Top Woo Commerce Development Company Through Engagement Models",
+        p: "Our engagement models are designed with one goal in mind: to deliver the right Woo Commerce development agency for your brand. We analyze your project’s scope, goals, and timeline to propose a customized collaboration plan.",
+        engagement: engagement,
+    },
+    {
+        slug: "ecommerce-web-development",
+        h2: "Choose From Our Hiring Models",
+        h4: "Collaborate with Top eCommerce Developers Through Engagement Models",
+        p: "Need a full-fledged team to take charge from start to finish? We’ll test and launch your app with precision. Working on a short-term project and need experts to step in? We can jump in at any phase—design, backend, or final tweaks. No unnecessary processes, no wasted time, just an eCommerce web development approach that works the way you do.",
+        engagement: engagement,
+    },
 ];
+
+
+
+
 
 
 const getCtaContent = (data, serviceDetailPageSlug) => {

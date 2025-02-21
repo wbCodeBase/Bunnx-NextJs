@@ -1234,6 +1234,108 @@ const faqData = {
         }
     ],
 
+    "woocommerce-development-services-india": [
+        {
+            "id": "1",
+            "question": "What makes WooCommerce a good choice for my online store?",
+            "answer": {
+                "type": "text",
+                "content": "WooCommerce is a powerful eCommerce platform built on WordPress, offering flexibility and ease of use. It is highly customizable, allowing you to adjust product pages and checkout flows."
+            }
+        },
+        {
+            "id": "2",
+            "question": "Can I migrate my existing website to WooCommerce?",
+            "answer": {
+                "type": "text",
+                "content": "Migrating your current website to WooCommerce is entirely possible. Our team specializes in helping businesses transition smoothly from other platforms."
+            }
+        },
+        {
+            "id": "3",
+            "question": "Do I need to know coding to manage my WooCommerce store?",
+            "answer": {
+                "type": "text",
+                "content": "With our WooCommerce development services, you can easily manage the dashboard. But if you do it all alone, you might need some basic coding knowledge or a developer’s help."
+            }
+        },
+        {
+            "id": "4",
+            "question": "What types of payment gateways can I integrate with WooCommerce?",
+            "answer": {
+                "type": "text",
+                "content": "WooCommerce supports a variety of payment gateways, from PayPal and Stripe to bank transfers and credit card processors. You can choose the options and set them up according to your business model."
+            }
+        },
+        {
+            "id": "5",
+            "question": "How long does it take to set up a WooCommerce store?",
+            "answer": {
+                "type": "text",
+                "content": "The timeline for setting up a WooCommerce store depends on the complexity of your requirements. A basic store can be up and running in just a few days, while a store with advanced features might take a few weeks."
+            }
+        },
+        {
+            "id": "6",
+            "question": "Is WooCommerce development suitable for mobile shopping?",
+            "answer": {
+                "type": "text",
+                "content": "WooCommerce is fully responsive, meaning it works well on all devices, from desktops to smartphones and tablets. Your customers will have a seamless shopping experience regardless of the device they use."
+            }
+        }
+    ],
+
+    "ecommerce-web-development": [
+        {
+            "id": "1",
+            "question": "How long does it take to build an online store?",
+            "answer": {
+                "type": "text",
+                "content": "If you’re going for a custom-built store with advanced features, it could take months. The best approach? Start with a base, get your store live, and keep improving along the way instead of waiting for the 'perfect' launch."
+            }
+        },
+        {
+            "id": "2",
+            "question": "How much does it cost to create an eCommerce website?",
+            "answer": {
+                "type": "text",
+                "content": "The price tag depends on design, features, and development style. A basic store with pre-made templates might cost a few thousand, while a platform with tools and functions can stretch into lakhs. There are additional costs such as hosting, payment gateways, and marketing."
+            }
+        },
+        {
+            "id": "3",
+            "question": "Should I use an existing platform or build everything from scratch?",
+            "answer": {
+                "type": "text",
+                "content": "If you want a quick setup, platforms like Shopify, Magento, or WooCommerce make sense, they come packed with ready-to-use tools."
+            }
+        },
+        {
+            "id": "4",
+            "question": "What are the must-have features for an online store?",
+            "answer": {
+                "type": "text",
+                "content": "Your store should be easy to browse, load quickly, and guide buyers to checkout. That's why our eCommerce web development company makes clear product pages, a cart system, multiple payment options, and a design. Extras like recommendations, live chat, and automated email follow-ups can help engage shoppers."
+            }
+        },
+        {
+            "id": "5",
+            "question": "How do I get people to visit my store?",
+            "answer": {
+                "type": "text",
+                "content": "A great store is useless if no one knows about it. Writing clear product descriptions and making checkout easy helps boost sales. On the marketing side, ads, social media promotions, and SEO help drive traffic. Customer reviews and testimonials also work wonders, as people tend to trust what others say before making a purchase."
+            }
+        },
+        {
+            "id": "6",
+            "question": "How do I keep my store running without technical hiccups?",
+            "answer": {
+                "type": "text",
+                "content": "No one likes a slow website or a checkout page that crashes at the last step. Regular maintenance keeps check for broken links, updating software, and keeping backups ready in case something goes wrong."
+            }
+        }
+    ],
+
 
 
 };

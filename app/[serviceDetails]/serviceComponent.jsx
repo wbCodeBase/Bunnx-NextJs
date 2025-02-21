@@ -94,7 +94,6 @@ export default function ServiceDetailsComp() {
   // }
 
 
-
   if (activeSlugData) {
     const isSlugActive = activeSlugData?.some((item) => `${item?.slug}` === serviceDetails);
 
