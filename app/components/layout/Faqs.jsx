@@ -11,9 +11,9 @@ import { createLinkedContent } from '#/utils/LinkBuilder';
 
 
 const keywordToSlug = {
-    "outsourcing software development": "it-outsourcing",
+    "outsourcing software development": "it-outsourcing-services",
     "custom application development company": "custom-software-development-services",
-    "white-label software development services": "it-outsourcing",
+    "white-label software development services": "it-outsourcing-services",
     "Front-End Development companies": "front-end-development-services",
     "Front-End Development company": "front-end-development-services",
     "back-end development agency": "back-end-development-services",
@@ -25,7 +25,7 @@ const keywordToSlug = {
 
 
 const faqData = {
-    "it-outsourcing": [
+    "it-outsourcing-services": [
 
         {
             id: "default-2",
@@ -1336,7 +1336,321 @@ const faqData = {
         }
     ],
 
+    "it-staff-augmentation-services": [
+        {
+            "id": "1",
+            "question": "What exactly is staff augmentation, and how can it help my business?",
+            "answer": {
+                "type": "text",
+                "content": "Staff augmentation involves bringing in skilled professionals from outside your company to work on projects or fill skill gaps in your team. If you need developers, designers, or marketers, this will let you quickly scale your team without the commitment of long-term hires."
+            }
+        },
+        {
+            "id": "2",
+            "question": "How do I know if staff augmentation is the right choice for my company?",
+            "answer": {
+                "type": "text",
+                "content": "Staff augmentation works well for companies looking for expertise on a temporary basis or when there's a need to meet project deadlines. If your business requires extra resources or specific projects, this model offers a great solution without the complexity of hiring full-time staff."
+            }
+        },
+        {
+            "id": "3",
+            "question": "Can I hire remote staff through staff augmentation?",
+            "answer": {
+                "type": "text",
+                "content": "Staff augmentation allows you to hire remote professionals. This is useful when you need skill sets but don't have access to local talent. By extending your team with remote workers, you gain access to a global pool of expertise."
+            }
+        },
+        {
+            "id": "4",
+            "question": "How do I manage augmented staff?",
+            "answer": {
+                "type": "text",
+                "content": "Managing augmented staff is similar to overseeing your internal team. Clear communication, defined roles, and regular check-ins are essential for keeping the work on track. You'll want to provide guidance and feedback, just like you would with in-house employees."
+            }
+        },
+        {
+            "id": "5",
+            "question": "What's the typical duration for a staff augmentation engagement?",
+            "answer": {
+                "type": "text",
+                "content": "Some engagements last for a few weeks, while others may extend for months. Staff augmentation is highly flexible. It helps in your adjustments of the duration as per your business."
+            }
+        },
+        {
+            "id": "6",
+            "question": "How do I connect augmented staff into my existing team?",
+            "answer": {
+                "type": "text",
+                "content": "Establish clear communication channels and set expectations from the start. You should also provide augmented staff with the tools, access to your project management system, and a clear understanding of your company culture."
+            }
+        }
+    ],
 
+
+    "hire-software-developer": [
+        {
+            "id": "1",
+            "question": "How do I hire software developers for my project?",
+            "answer": {
+                "type": "text",
+                "content": "Different projects require different skills. A mobile app developer isn't the same as someone who builds websites. Once you know what you need, look at past work, ask for references, and test their skills with a small task before committing."
+            }
+        },
+        {
+            "id": "2",
+            "question": "Should I hire a freelancer or a full-time developer?",
+            "answer": {
+                "type": "text",
+                "content": "If you need quick fixes or short-term work, a freelancer can be the best option. But if you're building something long-term, hire a dedicated developer or team."
+            }
+        },
+        {
+            "id": "3",
+            "question": "What should I look for besides coding skills?",
+            "answer": {
+                "type": "text",
+                "content": "Great developers do more than just write code. They think critically, solve problems, and communicate well. Someone who can explain their ideas clearly and adapt to challenges is worth more than someone who just follows instructions."
+            }
+        },
+        {
+            "id": "4",
+            "question": "How do I avoid wasting money on the wrong hire?",
+            "answer": {
+                "type": "text",
+                "content": "A bad hire can be expensive—missed deadlines, broken code, and wasted resources. To avoid this, check past projects, conduct trial tasks, and have a clear agreement in place before starting."
+            }
+        },
+        {
+            "id": "5",
+            "question": "How much should I pay a software developer?",
+            "answer": {
+                "type": "text",
+                "content": "Rates vary based on experience, location, and project complexity. While it's tempting to go for the cheapest option, experienced developers often save you money by getting things done right the first time."
+            }
+        },
+        {
+            "id": "6",
+            "question": "What if the developer I hire isn't a good fit?",
+            "answer": {
+                "type": "text",
+                "content": "The best approach is to start with a trial period or a small project before committing to a long-term contract. That way, you can see if they're the right fit before investing too much time and money."
+            }
+        }
+    ],
+
+    "it-outsourcing-services": [
+        {
+            "id": "1",
+            "question": "Is IT outsourcing only for big companies?",
+            "answer": {
+                "type": "text",
+                "content": "Small businesses, startups, and even solo entrepreneurs benefit just as much. If you need a single developer for a short-term fix or a whole team for a project, IT outsourcing lets you work with skilled professionals without the full-time salaries."
+            }
+        },
+        {
+            "id": "2",
+            "question": "Will I lose control over my project if I outsource?",
+            "answer": {
+                "type": "text",
+                "content": "As long as you set things up the right way, regular updates and a structured workflow will help you. Instead of micromanaging every step, you can review progress at important stages. Many businesses actually find outsourcing gives them more control because they can focus on strategy."
+            }
+        },
+        {
+            "id": "3",
+            "question": "How do I make sure the work meets my standards?",
+            "answer": {
+                "type": "text",
+                "content": "Quality depends on two things: hiring the right team and giving clear instructions. If you choose experienced developers who have a solid portfolio, half the battle is won. You must also clearly define what you expect."
+            }
+        },
+        {
+            "id": "4",
+            "question": "Isn’t IT outsourcing expensive?",
+            "answer": {
+                "type": "text",
+                "content": "It can be if you go in blindly. But if done right, outsourcing saves money compared to hiring in-house staff. A full-time developer means salaries, benefits, office costs, software licenses, and training. With outsourcing, you pay only for the work you need."
+            }
+        },
+        {
+            "id": "5",
+            "question": "How do I pick the right IT outsourcing partner?",
+            "answer": {
+                "type": "text",
+                "content": "A good IT outsourcing company is like a good restaurant: great service, excellent reviews, and a portfolio that proves they know what they’re doing."
+            }
+        },
+        {
+            "id": "6",
+            "question": "What if I need changes after the project is done?",
+            "answer": {
+                "type": "text",
+                "content": "Some outsourcing teams have post-launch support for bug fixes and small tweaks. Others may charge extra for extra work after delivery."
+            }
+        }
+    ],
+
+    "hire-dedicated-development-team": [
+        {
+            "id": "1",
+            "question": "What is a dedicated development team?",
+            "answer": {
+                "type": "text",
+                "content": "A dedicated development team is a group of professionals such as developers, designers, testers, and project managers. They function as an extension of your company and handle all technical aspects."
+            }
+        },
+        {
+            "id": "2",
+            "question": "How does this model differ from hiring in-house developers?",
+            "answer": {
+                "type": "text",
+                "content": "Hiring an in-house team means going through recruitment, onboarding, training, and managing payroll. A dedicated team is already experienced, ready to start, and requires no additional administrative effort from your side."
+            }
+        },
+        {
+            "id": "3",
+            "question": "When is it a good idea to hire a dedicated team?",
+            "answer": {
+                "type": "text",
+                "content": "If you have a long-term project or don’t want to spend time on recruitment, a dedicated team is a great choice. It also works well if you expect the project requirements to grow and want a team that can adapt along the way."
+            }
+        },
+        {
+            "id": "4",
+            "question": "How do I find the right dedicated team?",
+            "answer": {
+                "type": "text",
+                "content": "Look for companies with a strong track record, relevant experience, and positive client feedback. Communication is also important—choose a team that understands your project."
+            }
+        },
+        {
+            "id": "5",
+            "question": "How does the development process work?",
+            "answer": {
+                "type": "text",
+                "content": "First, the team is selected based on the skills required. Once assembled, they begin development in phases, with regular updates and discussions to keep things on track. Testing is done throughout the process to catch any issues early."
+            }
+        },
+        {
+            "id": "6",
+            "question": "Can I communicate directly with the team?",
+            "answer": {
+                "type": "text",
+                "content": "You’ll have direct access to the developers, designers, and project managers. Regular meetings, reports, and discussions help in tracking progress."
+            }
+        },
+        {
+            "id": "7",
+            "question": "How is pricing structured?",
+            "answer": {
+                "type": "text",
+                "content": "Most companies charge on a monthly or hourly basis, depending on the size of the team and the length of the project. Since you’re paying for dedicated experts, it’s an alternative to hiring full-time employees."
+            }
+        }
+    ],
+
+    "offshore-software-development-center-india": [
+        {
+            "id": "1",
+            "question": "What is an offshore dedicated centre?",
+            "answer": {
+                "type": "text",
+                "content": "An offshore dedicated centre is a team of experts working exclusively for a company from a different country. It helps businesses expand their development team without setting up an office in another location."
+            }
+        },
+        {
+            "id": "2",
+            "question": "How does an offshore dedicated centre reduce costs?",
+            "answer": {
+                "type": "text",
+                "content": "Setting up an in-house team requires office space, salaries, and infrastructure. An offshore centre provides access to skilled professionals at lower costs."
+            }
+        },
+        {
+            "id": "3",
+            "question": "What kind of services does an offshore dedicated centre provide?",
+            "answer": {
+                "type": "text",
+                "content": "An offshore centre can handle software development, testing, support, and maintenance. Some teams also provide research, data analysis, and project management services."
+            }
+        },
+        {
+            "id": "4",
+            "question": "How do I manage an offshore team?",
+            "answer": {
+                "type": "text",
+                "content": "Regular communication, clear instructions, and project tracking tools help in managing an offshore team. Choosing a reliable partner with experienced professionals also makes collaboration easier."
+            }
+        },
+        {
+            "id": "5",
+            "question": "What industries benefit from offshore development centres?",
+            "answer": {
+                "type": "text",
+                "content": "Offshore teams are useful in various industries, including IT, healthcare, banking, retail, and manufacturing. Companies that require constant software updates or technical support often prefer this model."
+            }
+        },
+        {
+            "id": "6",
+            "question": "How do I choose the right offshore development partner?",
+            "answer": {
+                "type": "text",
+                "content": "Select a partner with a good track record, skilled professionals, and a strong communication system. Checking past work and speaking with previous clients can help you make the right choice."
+            }
+        }
+    ],
+
+
+    // "software-development-outsourcing-company-in-india": [
+    //     {
+    //         "id": "1",
+    //         "question": "What is an offshore dedicated centre?",
+    //         "answer": {
+    //             "type": "text",
+    //             "content": "An offshore dedicated centre is a team of experts working exclusively for a company from a different country. It helps businesses expand their development team without setting up an office in another location."
+    //         }
+    //     },
+    //     {
+    //         "id": "2",
+    //         "question": "How does an offshore dedicated centre reduce costs?",
+    //         "answer": {
+    //             "type": "text",
+    //             "content": "Setting up an in-house team requires office space, salaries, and infrastructure. An offshore centre provides access to skilled professionals at lower costs."
+    //         }
+    //     },
+    //     {
+    //         "id": "3",
+    //         "question": "What kind of services does an offshore dedicated centre provide?",
+    //         "answer": {
+    //             "type": "text",
+    //             "content": "An offshore centre can handle software development, testing, support, and maintenance. Some teams also provide research, data analysis, and project management services."
+    //         }
+    //     },
+    //     {
+    //         "id": "4",
+    //         "question": "How do I manage an offshore team?",
+    //         "answer": {
+    //             "type": "text",
+    //             "content": "Regular communication, clear instructions, and project tracking tools help in managing an offshore team. Choosing a reliable partner with experienced professionals also makes collaboration easier."
+    //         }
+    //     },
+    //     {
+    //         "id": "5",
+    //         "question": "What industries benefit from offshore development centres?",
+    //         "answer": {
+    //             "type": "text",
+    //             "content": "Offshore teams are useful in various industries, including IT, healthcare, banking, retail, and manufacturing. Companies that require constant software updates or technical support often prefer this model."
+    //         }
+    //     },
+    //     {
+    //         "id": "6",
+    //         "question": "How do I choose the right offshore development partner?",
+    //         "answer": {
+    //             "type": "text",
+    //             "content": "Select a partner with a good track record, skilled professionals, and a strong communication system. Checking past work and speaking with previous clients can help you make the right choice."
+    //         }
+    //     }
+    // ],
 
 };
 

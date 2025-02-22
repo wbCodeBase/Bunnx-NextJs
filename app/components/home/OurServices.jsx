@@ -51,11 +51,11 @@ const techStackData = {
             "title": "Dedicated Software Teams",
             "description": "Scale your tech potential with flexible, expert software development teams. Seamless staff augmentation, dedicated developers, and offshore solutions that drive your business growth.",
             "columns": [
-                { "name": "Staff Augmentation", "description": "Next-gen web experiences", "slug": "staff-augmentation" },
+                { "name": "Staff Augmentation", "description": "Next-gen web experiences", "slug": "it-staff-augmentation-services" },
                 { "name": "Hire Software Developer", "description": "Fast, dynamic web apps", "slug": "hire-software-developer" },
-                { "name": "IT Outsourcing", "description": "Sleek, powerful iOS apps", "slug": "it-outsourcing" },
-                { "name": "Dedicated Development Team", "description": "Robust Android solutions", "slug": "dedicated-development-team" },
-                { "name": "Offshore Dedicated Centre", "description": "Build once, run everywhere", "slug": "offshore-dedicated-centre" }
+                { "name": "IT Outsourcing", "description": "Sleek, powerful iOS apps", "slug": "it-outsourcing-services" },
+                { "name": "Dedicated Development Team", "description": "Robust Android solutions", "slug": "hire-dedicated-development-team" },
+                { "name": "Offshore Dedicated Centre", "description": "Build once, run everywhere", "slug": "offshore-software-development-center-india" }
             ],
             linkViewMore: "dedicated-technical-team"
         },
@@ -102,7 +102,7 @@ const keywordToSlug = {
     'CRM software development': 'crm-software-development-services',
     'software development agency': 'best-software-development-company-in-india',
     'web and mobile applications': 'application-development-services',
-    'Seamless staff augmentation': 'staff-augmentation',
+    'Seamless staff augmentation': 'it-staff-augmentation-services',
     'smart eCommerce solutions': 'ecommerce-development-company',
 };
 

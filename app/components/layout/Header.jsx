@@ -268,7 +268,7 @@ const servicesData = {
 
         {
           title: 'Staff Augmentation',
-          slug: 'staff-augmentation',
+          slug: 'it-staff-augmentation-services',
           description: 'Access top technical resources on-demand',
         },
         {
@@ -349,12 +349,12 @@ const servicesData = {
       slug: 'dedicated-technical-team',
       description: 'Hire team for your next project',
       technologies: [
-        { name: 'Staff Augmentation', slug: 'staff-augmentation' },
+        { name: 'Staff Augmentation', slug: 'it-staff-augmentation-services' },
         { name: 'Hire Software Developer', slug: 'hire-software-developer' },
-        { name: 'IT Outsourcing', slug: 'it-outsourcing' },
-        { name: 'Dedicated Development Team', slug: 'dedicated-development-team' },
-        { name: 'Offshore Dedicated Centre', slug: 'offshore-dedicated-centre' },
-        { name: 'Software Development in India', slug: 'software-development-in-india' },
+        { name: 'IT Outsourcing', slug: 'it-outsourcing-services' },
+        { name: 'Dedicated Development Team', slug: 'hire-dedicated-development-team' },
+        { name: 'Offshore Dedicated Centre', slug: 'offshore-software-development-center-india' },
+        { name: 'Outsource Software Development', slug: 'software-development-outsourcing-company-in-india' },
       ],
       hiring: [
         {

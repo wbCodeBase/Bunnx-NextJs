@@ -4,7 +4,7 @@ import { AiOutlineStar } from "react-icons/ai";
 import { createLinkedContent } from '#/utils/LinkBuilder';
 
 const keywordToSlug = {
-"best software development company in India": "it-outsourcing",
+"best software development company in India": "it-outsourcing-services",
 };
 
 const TechStackExpertise = () => {

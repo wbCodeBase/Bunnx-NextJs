@@ -9,7 +9,7 @@ export const createLinkedContent = (content, keywordToSlug, serviceDetailPageSlu
         let match;
 
         while ((match = regex.exec(content)) !== null) {
-            parts.push(content.slice(lastIndex, match.index));
+            parts.push(content?.slice(lastIndex, match.index));
             if(slug === serviceDetailPageSlug || slug === '') {
                 parts.push(
                     <span key={`${slug}-${match.index}`} className="font-semibold">
@@ -35,6 +35,6 @@ export const createLinkedContent = (content, keywordToSlug, serviceDetailPageSlu
         }
     });
 
-    parts.push(content.slice(lastIndex));
+    parts.push(content?.slice(lastIndex));
     return parts;
 };

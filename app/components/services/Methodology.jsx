@@ -738,6 +738,7 @@ const contentBySlug = {
         ]
     },
 
+
     "woocommerce-development-services-india": {
         "h2": "Methodology",
         "h4": "Get Smarter Applications with Effective WooCommerce Services",
@@ -770,7 +771,173 @@ const contentBySlug = {
         ]
     },
 
+
+
+    "it-staff-augmentation-services": {
+        "h2": "Our Augmentation Methodology",
+        "h4": "Systematic Approach to Team Integration",
+        "p": "We follow a proven 4-phase methodology for seamlessly integrating augmented staff into your team. Each phase builds upon the previous one, ensuring smooth onboarding and maximum productivity.",
+        "steps": [
+            {
+                "id": 1,
+                "title": "Assessment & Planning Phase",
+                "description": "We begin with a thorough analysis of your team structure, technical requirements, and project goals. This phase includes skills gap analysis, cultural fit assessment, and creation of detailed integration timelines. We establish clear KPIs and success metrics before proceeding to selection.",
+                "icon": FeaturesValidation
+            },
+            {
+                "id": 2,
+                "title": "Selection & Validation Phase",
+                "description": "Using data from the assessment phase, we implement our multi-step selection process: technical screening, practical skills assessment, team compatibility evaluation, and final validation. Each candidate goes through at least three rounds of verification before being presented to your team.",
+                "icon": Agile
+            },
+            {
+                "id": 3,
+                "title": "Integration & Onboarding Phase",
+                "description": "Following our structured onboarding protocol, we integrate new team members through a series of steps: project documentation review, system access setup, team introduction workshops, and initial sprint participation. Each step includes specific milestones and feedback checkpoints.",
+                "icon": Coding
+            },
+            {
+                "id": 4,
+                "title": "Monitoring & Optimization Phase",
+                "description": "We implement continuous monitoring cycles with weekly performance reviews, bi-weekly alignment checks, and monthly optimization meetings. This iterative process includes productivity tracking, communication effectiveness assessment, and regular adjustment of integration strategies.",
+                "icon": RealTime
+            }
+        ]
+    },
+
+    "hire-software-developer": {
+        "h2": "Development Methodology",
+        "h4": "Structured Software Development Process",
+        "p": "Our development methodology follows an enhanced agile framework, incorporating best practices from both traditional and modern development approaches. Each phase is designed to ensure quality, maintain efficiency, and deliver measurable results.",
+        "steps": [
+            {
+                "id": 1,
+                "title": "Discovery & Architecture Phase",
+                "description": "We begin with systematic requirement gathering, following our CLEAR framework: Collect user stories, List technical requirements, Evaluate constraints, Architect solutions, and Review with stakeholders. This phase produces detailed technical specifications and architecture documents.",
+                "icon": FeaturesValidation
+            },
+            {
+                "id": 2,
+                "title": "Development Sprints Phase",
+                "description": "Development follows our structured sprint methodology: 2-week iterations, daily stand-ups, mid-sprint reviews, and end-sprint demonstrations. Each sprint includes four key stages: feature development, internal testing, code review, and integration testing.",
+                "icon": Agile
+            },
+            {
+                "id": 3,
+                "title": "Quality Assurance Phase",
+                "description": "Our QA methodology involves systematic testing cycles: unit testing (automated), integration testing (automated and manual), user acceptance testing, and performance testing. Each cycle must meet predefined quality gates before proceeding to the next stage.",
+                "icon": Coding
+            },
+            {
+                "id": 4,
+                "title": "Deployment & Optimization Phase",
+                "description": "We follow a staged deployment methodology: development environment testing, staging environment validation, production deployment, and post-deployment monitoring. Each stage includes automated health checks, rollback procedures, and performance benchmarking.",
+                "icon": Coding
+            }
+        ]
+    },
+
+    "it-outsourcing-services": {
+        "h2": "IT Management Methodology",
+        "h4": "Systematic IT Service Delivery Process",
+        "p": "Our IT outsourcing follows a comprehensive methodology that ensures consistent service delivery, proactive management, and continuous improvement. Each phase is designed to maintain system reliability while driving technological advancement.",
+        "steps": [
+            {
+                "id": 1,
+                "title": "Infrastructure Assessment Phase",
+                "description": "We implement our SCAN methodology: System audit, Current state analysis, Architecture review, and Needs assessment. This phase includes comprehensive documentation of existing systems, identification of critical components, and risk assessment using our standardized evaluation framework.",
+                "icon": FeaturesValidation
+            },
+            {
+                "id": 2,
+                "title": "Service Implementation Phase",
+                "description": "Following our transition methodology: establishing service baselines, implementing monitoring systems, deploying management tools, and setting up support channels. Each step follows our documented procedures with specific completion criteria and validation checkpoints.",
+                "icon": Agile
+            },
+            {
+                "id": 3,
+                "title": "Operation & Maintenance Phase",
+                "description": "We apply our MAINTAIN protocol: Monitoring systems, Analyzing performance, Implementing updates, Navigating issues, Testing changes, Adjusting configurations, Initiating improvements, and Notifying stakeholders. This systematic approach ensures consistent service delivery.",
+                "icon": Coding
+            },
+            {
+                "id": 4,
+                "title": "Continuous Improvement Phase",
+                "description": "Our improvement cycle follows the UPGRADE methodology: Understand current performance, Propose improvements, Grade impact, Review with stakeholders, Implement changes, Determine effectiveness, and Establish new baselines. This process repeats quarterly.",
+                "icon": RealTime
+            }
+        ]
+    },
+    "hire-dedicated-development-team": {
+        "h2": "Development Team Integration Methodology",
+        "h4": "Systematic Approach to Building Your Extended Development Team",
+        "p": "Our proven methodology ensures seamless integration of dedicated development teams through a structured four-phase process. Each phase builds upon the previous one, creating a foundation for successful long-term collaboration and consistent delivery.",
+        "steps": [
+            {
+                "id": 1,
+                "title": "Discovery and Assessment Phase",
+                "description": "We begin with our CORE analysis framework: Capability mapping, Organizational fit evaluation, Resource planning, and Engagement strategy development. This systematic approach includes technical skills assessment, team structure analysis, and project requirement documentation to create a precise integration roadmap.",
+                "icon": FeaturesValidation
+            },
+            {
+                "id": 2,
+                "title": "Team Formation and Alignment Phase",
+                "description": "Following our BUILD protocol: Baseline establishment, Understanding transfer, Integration planning, Leadership alignment, and Development framework setup. This phase includes team member selection, communication channel setup, and process alignment to ensure seamless collaboration from day one.",
+                "icon": Agile
+            },
+            {
+                "id": 3,
+                "title": "Integration and Execution Phase",
+                "description": "Implementation of our SYNC methodology: System access setup, Yield metrics establishment, Network integration, and Continuous feedback loops. This phase focuses on getting the team operational through structured onboarding, initial sprint execution, and performance baseline establishment.",
+                "icon": Coding
+            },
+            {
+                "id": 4,
+                "title": "Optimization and Scale Phase",
+                "description": "Deployment of our GROW framework: Goal refinement, Resource optimization, Operational fine-tuning, and Workflow enhancement. This phase includes regular performance reviews, process optimization, and team scaling protocols to maintain peak efficiency as your needs evolve.",
+                "icon": RealTime
+            }
+        ]
+    },
+
+    "offshore-software-development-center-india": {
+        "h2": "Offshore Development Center Methodology",
+        "h4": "Structured Approach to Establishing Your Offshore Development Hub",
+        "p": "Our offshore development center methodology follows a systematic four-phase approach designed to establish, integrate, and optimize your offshore operations. Each phase incorporates specific protocols and checkpoints to ensure successful implementation.",
+        "steps": [
+            {
+                "id": 1,
+                "title": "Foundation and Analysis Phase",
+                "description": "Implementation of our SCAN methodology: Strategic assessment, Current state analysis, Architecture planning, and Needs documentation. This phase establishes the groundwork through comprehensive technical infrastructure analysis, team structure planning, and operational framework development.",
+                "icon": FeaturesValidation
+            },
+            {
+                "id": 2,
+                "title": "Operational Setup Phase",
+                "description": "Following our SETUP protocol: System infrastructure establishment, Environment configuration, Team structure definition, Unified communication implementation, and Process alignment. This phase creates the operational foundation for your offshore center through systematic implementation of tools, processes, and workflows.",
+                "icon": Agile
+            },
+            {
+                "id": 3,
+                "title": "Integration and Development Phase",
+                "description": "Application of our UNITE framework: Understanding transfer, Network establishment, Integration execution, Team alignment, and Efficiency measurement. This phase focuses on creating seamless collaboration between offshore and onshore teams through structured protocols and clear communication channels.",
+                "icon": Coding
+            },
+            {
+                "id": 4,
+                "title": "Enhancement and Evolution Phase",
+                "description": "Implementation of our EVOLVE system: Evaluation of metrics, Validation of processes, Optimization of workflows, Leadership development, Value enhancement. This phase ensures continuous improvement through systematic monitoring, regular assessments, and proactive optimization of all operational aspects.",
+                "icon": RealTime
+            }
+        ]
+    }
+
+
+
+
 }
+
+
 
 
 

@@ -156,7 +156,7 @@ const services = [
   {
     "title": "Software Outsourcing Services",
     "description": "Our software outsourcing services reduce costs, accelerate timelines, and connect you with top-tier talent to give you a competitive edge. At Bunnx, we have domain experts; our team delivers tailored, efficient solutions that meet your business needs.",
-    "ctaRedirectUrl": "it-outsourcing",
+    "ctaRedirectUrl": "it-outsourcing-services",
     "fetchOnSlug": [
       "best-software-development-company-in-india"
     ],
@@ -337,7 +337,7 @@ const services = [
   {
     "title": "Team Augmentation",
     "description": "Need extra hands on deck? We provide skilled developers, testers, and project managers to integrate with your team and fill any gaps in expertise. It is all included in our software consulting services.",
-    "ctaRedirectUrl": "staff-augmentation",
+    "ctaRedirectUrl": "it-staff-augmentation-services",
     "fetchOnSlug": [
       "software-development-consultants"
     ],

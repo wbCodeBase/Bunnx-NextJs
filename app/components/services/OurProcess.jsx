@@ -1953,6 +1953,446 @@ const contentBySlug = {
                 ]
             }
         ]
+    },
+
+    "it-staff-augmentation-services": {
+        "h2": "Our Process",
+        "h4": "Our Process for Staff Augmentation",
+        "p": "Building the right team is about finding people who bring real value and drive projects forward without delays. Traditional hiring can be slow, expensive, and full of uncertainty. That's why we connect you with skilled professionals who integrate into your team.",
+        "processSections": [
+            {
+                "id": 1,
+                "title": "Understanding Your Business",
+                "description": "Before bringing in new talent, we figure out what your team needs. Maybe you're missing a developer or your project demands an extra pair of hands. Whatever the case, we help you bridge the gap.",
+                "activities": [
+                    "Assess your current workforce",
+                    "Define roles and responsibilities",
+                    "Project-based staffing",
+                    "Outline an onboarding plan"
+                ],
+                "deliverables": [
+                    "A hiring roadmap",
+                    "A team to boost productivity",
+                    "Plan that integrates new talent"
+                ]
+            },
+            {
+                "id": 2,
+                "title": "Finding the Right People",
+                "description": "Resumes don't tell the full story, and the wrong hire can slow everything down. That's why we don't just hand over a stack of CVs.",
+                "activities": [
+                    "Conduct skill-based screenings",
+                    "Match candidates",
+                    "Offer experts in development",
+                    "Provide different professionals"
+                ],
+                "deliverables": [
+                    "Skilled professionals",
+                    "Hiring without compromising quality",
+                    "The right talent"
+                ]
+            },
+            {
+                "id": 3,
+                "title": "Onboarding & Integration",
+                "description": "Hiring someone is one thing—getting them to work efficiently is another. We make sure your new team members hit the ground running without wasting time.",
+                "activities": [
+                    "Set up onboarding sessions",
+                    "Provide training resources",
+                    "Establish communication channels",
+                    "Define reporting structures"
+                ],
+                "deliverables": [
+                    "Transition with minimal disruption",
+                    "Clear roles and responsibilities",
+                    "A well-integrated team"
+                ]
+            },
+            {
+                "id": 4,
+                "title": "Support & Performance Tracking",
+                "description": "We don't just drop people into your team and disappear. We stay involved, making sure everything runs smoothly and stepping in when adjustments are needed.",
+                "activities": [
+                    "Monitor work progress",
+                    "Offer ongoing training",
+                    "Provide backup candidates",
+                    "Adjust staffing levels"
+                ],
+                "deliverables": [
+                    "A workforce",
+                    "A team that learns",
+                    "Support always available"
+                ]
+            },
+            {
+                "id": 5,
+                "title": "Scaling & Workforce Planning",
+                "description": "Business needs change, and your workforce should be able to keep up. If you need to expand your team, restructure departments, or transition temporary hires into permanent roles, we help you build for the future.",
+                "activities": [
+                    "Evaluate hiring strategies",
+                    "Adjust staffing levels",
+                    "Provide leadership training",
+                    "Assist in transitioning hires"
+                ],
+                "deliverables": [
+                    "A workforce that grows",
+                    "Adjust staffing without the hassle",
+                    "Approach to build success"
+                ]
+            }
+        ]
+    },
+
+    "hire-software-developer": {
+        "h2": "Our Process",
+        "h4": "How We Help You Hire the Right Software Developer",
+        "p": "Hiring the right software developer isn’t just about scanning resumes. It’s about finding someone who understands your project, aligns with your vision, and delivers results. We simplify the hiring process so you get skilled developers without the hassle.",
+        "processSections": [
+            {
+                "id": 1,
+                "title": "Understanding Your Requirements",
+                "description": "Every project is unique. We start by understanding your business needs, project scope, and tech stack preferences to find the right developer for your team.",
+                "activities": [
+                    "Define project scope and goals",
+                    "Identify required technical skills",
+                    "Understand preferred collaboration model",
+                    "Set hiring timeline and budget"
+                ],
+                "deliverables": [
+                    "A detailed hiring plan",
+                    "A list of required skill sets",
+                    "Timeline for onboarding"
+                ]
+            },
+            {
+                "id": 2,
+                "title": "Candidate Shortlisting & Screening",
+                "description": "We filter through a vast pool of skilled developers, ensuring only the best candidates align with your technical and cultural requirements.",
+                "activities": [
+                    "Screen candidates based on expertise",
+                    "Assess previous work and projects",
+                    "Match candidates with project needs",
+                    "Conduct initial interviews"
+                ],
+                "deliverables": [
+                    "A shortlist of qualified developers",
+                    "Candidate profiles and past project insights",
+                    "Initial screening reports"
+                ]
+            },
+            {
+                "id": 3,
+                "title": "Technical Evaluation & Interviews",
+                "description": "We conduct technical assessments and in-depth interviews to ensure the candidate’s skills match your project’s demands.",
+                "activities": [
+                    "Live coding challenges",
+                    "Problem-solving assessments",
+                    "Technical and behavioral interviews",
+                    "Assess soft skills and communication"
+                ],
+                "deliverables": [
+                    "Tested and verified skill assessments",
+                    "Technical interview reports",
+                    "Recommendations for final selection"
+                ]
+            },
+            {
+                "id": 4,
+                "title": "Onboarding & Integration",
+                "description": "Once the right developer is selected, we ensure a seamless onboarding process to integrate them into your team without delays.",
+                "activities": [
+                    "Set up project access and tools",
+                    "Define clear roles and responsibilities",
+                    "Establish communication channels",
+                    "Kickoff meeting with the team"
+                ],
+                "deliverables": [
+                    "Fully onboarded developer",
+                    "Access to necessary tools and documentation",
+                    "Clear workflow and reporting structure"
+                ]
+            },
+            {
+                "id": 5,
+                "title": "Support & Performance Monitoring",
+                "description": "Hiring doesn’t stop at onboarding. We continuously track performance and provide support to ensure long-term success.",
+                "activities": [
+                    "Regular performance reviews",
+                    "Feedback collection",
+                    "Address technical and workflow challenges",
+                    "Continuous upskilling opportunities"
+                ],
+                "deliverables": [
+                    "A high-performing developer aligned with your needs",
+                    "Regular progress updates",
+                    "Long-term collaboration roadmap"
+                ]
+            }
+        ]
+    },
+
+    "it-outsourcing-services": {
+        "h2": "Our Process",
+        "h4": "Our Process for IT Outsourcing Services",
+        "p": "Outsourcing IT services isn’t just about cutting costs—it’s about gaining access to top-tier expertise, faster development cycles, and seamless execution. We simplify the process so that you get highly skilled developers and IT professionals without the headaches of recruitment and onboarding.",
+        "processSections": [
+            {
+                "id": 1,
+                "title": "Understanding Your Needs",
+                "description": "Every business has unique IT requirements. We start by understanding your challenges, goals, and the kind of technical expertise you need to move forward.",
+                "activities": [
+                    "Analyze project requirements",
+                    "Identify skill sets needed",
+                    "Define project scope and timelines",
+                    "Select the best outsourcing model"
+                ],
+                "deliverables": [
+                    "A tailored IT outsourcing strategy",
+                    "Defined project milestones",
+                    "A clear roadmap for execution"
+                ]
+            },
+            {
+                "id": 2,
+                "title": "Building Your Team",
+                "description": "We connect you with highly skilled IT professionals who match your technical and business needs. Whether it’s developers, testers, or project managers, we bring the right people to your team.",
+                "activities": [
+                    "Shortlist and vet top talent",
+                    "Align team structure with project goals",
+                    "Ensure cultural and workflow compatibility",
+                    "Set up seamless communication channels"
+                ],
+                "deliverables": [
+                    "A dedicated team ready to start work",
+                    "Defined roles and responsibilities",
+                    "Effective collaboration setup"
+                ]
+            },
+            {
+                "id": 3,
+                "title": "Development & Execution",
+                "description": "With the right team in place, we get to work. Our experts follow agile methodologies to ensure continuous progress and iterative improvements.",
+                "activities": [
+                    "Kickstart development with agile sprints",
+                    "Integrate latest technologies and best practices",
+                    "Optimize performance and security",
+                    "Maintain transparent reporting and feedback loops"
+                ],
+                "deliverables": [
+                    "A fully functional IT solution",
+                    "Optimized performance and security",
+                    "Regular progress reports and updates"
+                ]
+            },
+            {
+                "id": 4,
+                "title": "Testing & Quality Assurance",
+                "description": "We leave no room for errors. Our QA experts rigorously test every component to ensure your IT solution is secure, efficient, and user-friendly.",
+                "activities": [
+                    "Conduct manual and automated testing",
+                    "Fix vulnerabilities and optimize performance",
+                    "Ensure compliance with industry standards",
+                    "Simulate real-world scenarios for stress testing"
+                ],
+                "deliverables": [
+                    "Bug-free, high-performing software",
+                    "Comprehensive test reports",
+                    "100% compliance with security and industry standards"
+                ]
+            },
+            {
+                "id": 5,
+                "title": "Deployment & Ongoing Support",
+                "description": "We don’t just build and walk away. Our team ensures a smooth deployment and stays available for ongoing maintenance, updates, and support.",
+                "activities": [
+                    "Deploy software or IT infrastructure",
+                    "Monitor performance post-launch",
+                    "Provide ongoing support and enhancements",
+                    "Scale resources as per business growth"
+                ],
+                "deliverables": [
+                    "Seamless deployment with zero downtime",
+                    "24/7 monitoring and support",
+                    "Scalable solutions for long-term success"
+                ]
+            }
+        ]
+    },
+
+    "hire-dedicated-development-team": {
+        "h2": "Our Process",
+        "h4": "How We Build Your Dedicated Development Team",
+        "p": "Hiring a dedicated development team isn't just about filling positions—it's about finding experts who align with your goals and deliver results. We take care of every step, from understanding your needs to assembling a team that works as an extension of your business.",
+        "processSections": [
+            {
+                "id": 1,
+                "title": "Understanding Your Requirements",
+                "description": "Every business has unique software needs. We start by learning about your project, goals, and the kind of developers you require. Whether it’s frontend, backend, or full-stack, we map out a strategy to find the right fit for you.",
+                "activities": [
+                    "Define project scope and technical requirements",
+                    "Identify required skills and expertise",
+                    "Understand your workflow and team culture",
+                    "Determine project timeline and budget"
+                ],
+                "deliverables": [
+                    "A clear project roadmap",
+                    "A skillset blueprint tailored to your needs",
+                    "Defined expectations for collaboration"
+                ]
+            },
+            {
+                "id": 2,
+                "title": "Assembling the Right Team",
+                "description": "We carefully handpick developers, designers, and project managers who match your project’s demands. Our selection process ensures that every team member is not just skilled but also the right cultural fit.",
+                "activities": [
+                    "Shortlist and interview candidates",
+                    "Assess technical skills and problem-solving abilities",
+                    "Evaluate cultural fit and communication skills",
+                    "Provide onboarding and integration support"
+                ],
+                "deliverables": [
+                    "A team tailored to your business needs",
+                    "Fully vetted and experienced developers",
+                    "Smooth onboarding and transition process"
+                ]
+            },
+            {
+                "id": 3,
+                "title": "Development & Collaboration",
+                "description": "Once the team is in place, they seamlessly integrate into your existing workflow. We ensure transparent communication, regular updates, and agile project execution to keep things running smoothly.",
+                "activities": [
+                    "Set up project management tools",
+                    "Define milestones and sprint planning",
+                    "Ensure real-time collaboration and reporting",
+                    "Facilitate regular progress reviews"
+                ],
+                "deliverables": [
+                    "An agile and productive development process",
+                    "Seamless collaboration with your in-house team",
+                    "Timely progress reports and milestone tracking"
+                ]
+            },
+            {
+                "id": 4,
+                "title": "Quality Assurance & Testing",
+                "description": "No software should go live without rigorous testing. We conduct multiple rounds of QA to ensure your product meets performance, security, and usability standards.",
+                "activities": [
+                    "Run automated and manual tests",
+                    "Fix bugs and optimize performance",
+                    "Conduct security and compliance checks",
+                    "Gather user feedback and make improvements"
+                ],
+                "deliverables": [
+                    "A bug-free and high-performance product",
+                    "Security-tested and compliant software",
+                    "An optimized user experience"
+                ]
+            },
+            {
+                "id": 5,
+                "title": "Ongoing Support & Scaling",
+                "description": "Your development needs may evolve over time. We offer continued support, maintenance, and the flexibility to scale your team as your business grows.",
+                "activities": [
+                    "Provide long-term maintenance and updates",
+                    "Scale the team up or down as required",
+                    "Ensure continuous monitoring and optimization",
+                    "Offer training and documentation support"
+                ],
+                "deliverables": [
+                    "A fully supported and scalable development team",
+                    "Regular updates and system optimizations",
+                    "A long-term partnership focused on growth"
+                ]
+            }
+        ]
+    },
+
+    "offshore-software-development-center-india": {
+        "h2": "Our Process",
+        "h4": "How We Build Your Offshore Software Development Center",
+        "p": "Setting up an offshore development center shouldn’t be complex. We streamline the process, ensuring your remote team operates seamlessly as an extension of your business. From talent acquisition to infrastructure setup, we handle everything so you can focus on growth.",
+        "processSections": [
+            {
+                "id": 1,
+                "title": "Understanding Your Business Needs",
+                "description": "Every business has unique goals, and a one-size-fits-all approach won’t work. We begin by understanding your technical requirements, project scope, and long-term vision to build a team that fits your needs.",
+                "activities": [
+                    "Define project goals and expectations",
+                    "Analyze required tech stack and expertise",
+                    "Identify key roles and team structure",
+                    "Align development strategy with business objectives"
+                ],
+                "deliverables": [
+                    "A detailed roadmap for your offshore team",
+                    "Role-based hiring strategy",
+                    "Custom team structure to match your project"
+                ]
+            },
+            {
+                "id": 2,
+                "title": "Talent Acquisition & Team Formation",
+                "description": "We carefully select top-tier engineers, designers, and project managers who fit your work culture and technical needs. Our recruitment process ensures you get highly skilled professionals without the hassle of hiring.",
+                "activities": [
+                    "Source and screen candidates",
+                    "Conduct technical and cultural assessments",
+                    "Onboard team members with seamless integration",
+                    "Set up communication workflows"
+                ],
+                "deliverables": [
+                    "A dedicated offshore team",
+                    "Expert developers ready to start work",
+                    "A structured onboarding process"
+                ]
+            },
+            {
+                "id": 3,
+                "title": "Infrastructure & Development Setup",
+                "description": "A strong foundation is key to productivity. We establish the required IT infrastructure, security protocols, and project management tools to keep everything running smoothly.",
+                "activities": [
+                    "Set up cloud-based or on-premise infrastructure",
+                    "Implement security and compliance measures",
+                    "Configure development and testing environments",
+                    "Define agile workflows for collaboration"
+                ],
+                "deliverables": [
+                    "A fully operational offshore workspace",
+                    "Secure and scalable infrastructure",
+                    "Optimized development workflows"
+                ]
+            },
+            {
+                "id": 4,
+                "title": "Seamless Collaboration & Execution",
+                "description": "We ensure that your offshore team works as a natural extension of your in-house team. With clear communication and agile methodologies, your project progresses without disruptions.",
+                "activities": [
+                    "Daily stand-ups and progress tracking",
+                    "Real-time collaboration with your team",
+                    "Continuous code review and quality assurance",
+                    "Adapting to project changes with agility"
+                ],
+                "deliverables": [
+                    "A fully integrated offshore development team",
+                    "Clear communication channels",
+                    "Faster project execution with agile methodologies"
+                ]
+            },
+            {
+                "id": 5,
+                "title": "Ongoing Support & Scaling",
+                "description": "Growth doesn’t stop after setup. We provide continuous support, performance monitoring, and scalability options to ensure long-term success.",
+                "activities": [
+                    "Regular performance assessments",
+                    "Scaling the team as per business needs",
+                    "Providing technical support and maintenance",
+                    "Optimizing processes for better efficiency"
+                ],
+                "deliverables": [
+                    "Long-term offshore partnership",
+                    "Flexible team expansion options",
+                    "Consistent support and optimization"
+                ]
+            }
+        ]
     }
 
 

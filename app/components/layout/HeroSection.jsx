@@ -177,9 +177,44 @@ const HeroSection = ({ pageSlug, extractNameFromSlug, heroDefaultImg }) => {
     "ctaText": "Get Connected Now",
     "ctaRedirectUrl": "#contact-us", 
   },
+  {
+    "fetchOnSlug": "it-staff-augmentation-services",
+    "title": "IT Staff Augmentation Services",
+    "description": "Missing a Python developer for your new project? Or do you need a UI/UX designer? Tell us what’s missing in your team and we’ll send you the talented experts. Our staff augmentation company in India will fill the skill gap instantly.",
+    "ctaText": "Get started with us",
+    "ctaRedirectUrl": "#contact-us",
+  },
+  {
+    "title": "Hire Software Developer India",
+    "description": "Every great software product starts with the right people behind it. Finding the right developers, though? We make it easy. If you need a single developer or an entire team, our team connects you with professionals who don’t just write code but build solutions that work.",
+    "ctaText": "Get started with us",
+    "ctaRedirectUrl": "#contact-us",
+    "fetchOnSlug": "hire-software-developer"
+  },
+  {
+    "title": "IT Outsourcing Services",
+    "description": "IT outsourcing brings a skilled tech team without the stress of hiring, training, or managing in-house developers. We handle the heavy lifting while you concentrate on your core business. Our team maintains existing systems and develops the best solutions.",
+    "ctaText": "Get started with us",
+    "ctaRedirectUrl": "#contact-us",
+    "fetchOnSlug": "it-outsourcing-services"
+  },
+  {
+    "title": "Hire Dedicated Software Development Teams",
+    "description": "Great ideas need the right people who can work side by side, tackle challenges, and create a fully functional software. If you're building a startup from the ground up or expanding an existing platform, we bring the right mix of skills to the table.",
+    "ctaText": "Get started with us",
+    "ctaRedirectUrl": "#contact-us",
+    "fetchOnSlug": "hire-dedicated-development-team"
+  },
+  {
+    "title": "Setup An Offshore Development Center",
+    "description": "Why build everything in-house when you can have a dedicated team working on your projects? Our offshore development center gives you access to skilled engineers, architects, and testers. Instead of dealing with hiring headaches or infrastructure costs, you get a team that’s already set up and ready to build. With expertise in multiple programming languages, we take care of the technical side so you can concentrate on growing your business.",
+    "ctaText": "Get started with us",
+    "ctaRedirectUrl": "#contact-us",
+    "fetchOnSlug": "offshore-software-development-center-india"
+  }
 ]
 
-  const heroSectionObj = heroSection.filter(section => 
+  const heroSectionObj = heroSection.find(section => 
     section.fetchOnSlug === pageSlug
   );
 

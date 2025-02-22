@@ -8,7 +8,7 @@ import { Landmark, Book, HeartPulse, Truck, ShoppingCart, Plane, Film, Factory, 
 //     'CRM software development': 'crm-software-development-services',
 //     'software development agency': 'best-software-development-company-in-india',
 //     'web and mobile applications': 'application-development-services',
-//     'Seamless staff augmentation': 'staff-augmentation',
+//     'Seamless staff augmentation': 'it-staff-augmentation-services',
 //     'smart eCommerce solutions': 'ecommerce-development-company',
 // };
 

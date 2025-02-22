@@ -1498,6 +1498,342 @@ const serviceData = {
     ]
   },
 
+
+
+
+  
+  "it-staff-augmentation-services": {
+    "title": "Choose From Our Staff Augmentation Service Models",
+    "description": "Your business is growing, projects are piling up, and hiring takes too long. That’s where we step in. Our staff augmentation models help you bring in skilled professionals without the hassle of recruitment, payroll, or paperwork. If you need a dedicated team, temporary support, or project-based expertise, we’ve got you covered.",
+    "models": [
+      {
+        "title": "Dedicated Development Team",
+        "subtitle": "Also known as your in-house tech expansion",
+        "icon": lightdotnetmodalicon,
+        "sections": [
+          {
+            "type": "para",
+            "content": "Some projects require long-term commitment and a dedicated set of hands. With this model, you get a full-time team that works as an extension of your business, handling every technical aspect with precision."
+          },
+          {
+            "type": "list",
+            "content": [
+              "Full-time professionals aligned with your workflow",
+              "Direct communication and project ownership",
+              "Adjust the team size based on project demands",
+              "Specialization in different tech stacks for diverse requirements"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Team Augmentation",
+        "subtitle": "Also known as team extension or staff augmentation",
+        "icon": teamAug,
+        "sections": [
+          {
+            "type": "para",
+            "content": "Want to add more experts to meet deadlines or tackle specific tasks? This model helps you scale up without long-term commitments. Whether it’s for a few months or ongoing assistance, you get professionals who work with your in-house staff."
+          },
+          {
+            "type": "list",
+            "content": [
+              "Ideal for short-term or urgent projects",
+              "No overhead costs of hiring full-time employees",
+              "Access to skilled professionals without recruitment delays",
+              "Helps upskill your existing team by working alongside experts"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Project Based",
+        "icon": ProjectBased,
+        "sections": [
+          {
+            "type": "para",
+            "content": "Check these benefits you’ll get with this model."
+          },
+          {
+            "type": "para",
+            "content": "Fixed Price Model:\nBest for projects with a clear scope and defined deliverables. You know what you’re paying for upfront, making it ideal for structured work."
+          },
+          {
+            "type": "para",
+            "content": "Time & Material Model:\nWhen project requirements shift, this approach keeps things flexible. You pay for the actual work done, making it ideal for complex or evolving projects."
+          }
+        ]
+      }
+    ]
+  },
+
+  "hire-software-developer": {
+    "title": "Choose From Our Software Developer Service Models",
+    "description": "Picking an engagement model isn’t just about costs—it’s about how you want to build, collaborate, and grow your project. Some businesses prefer a well-structured plan with fixed pricing, while others need the freedom to experiment and adapt. If you want a defined roadmap from day one or prefer ongoing development with room for change, here are the options you must choose.",
+    "models": [
+      {
+        "title": "Dedicated Team",
+        "subtitle": "Also known as product interface teams",
+        "icon": lightdotnetmodalicon,
+        "sections": [
+          {
+            "type": "para",
+            "content": "If you're building a complex product and need a team that’s fully invested in it, this model is the best fit. We assemble a team of developers, testers, and project managers who work on your software. It is made to provide consistency, deep understanding, and long-term reliability."
+          },
+          {
+            "type": "list",
+            "content": [
+              "A full-time team that works on your project.",
+              "Direct collaboration and involvement in daily progress.",
+              "Full control over the development process, from planning to execution.",
+              "Experts across different tech stacks, from frontend to backend development.",
+              "A long-term partnership that grows with your business."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Team Augmentation",
+        "subtitle": "Also known as team extension or staff augmentation",
+        "icon": teamAug,
+        "sections": [
+          {
+            "type": "para",
+            "content": "Do you need more developers to meet deadlines or handle complex integrations? This model allows you to add skilled developers to your existing team without going through the hiring process. If it's frontend, backend, or DevOps expertise, we provide the right talent on demand."
+          },
+          {
+            "type": "list",
+            "content": [
+              "Extra hands when deadlines are tight.",
+              "Short-term or long-term engagement, depending on your workload.",
+              "A budget-friendly way to scale development without hiring full-time employees.",
+              "Faster feature releases and debugging.",
+              "Knowledge-sharing and mentorship for your in-house team."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Project Based",
+        "icon": ProjectBased,
+        "sections": [
+          {
+            "type": "para",
+            "content": "Here are the benefits you'll get if you hire software developers under this model:"
+          },
+          {
+            "type": "para",
+            "content": "Fixed Price Model:\nIt is perfect for projects that have long-term requirements and timelines. Your team will get a clear roadmap and a predictable budget under this model. It works well when you have a clear idea of what you want to build, how it should function, and when it should be delivered."
+          },
+          {
+            "type": "para",
+            "content": "Time & Material Model:\nIf your project isn’t fully defined yet, or you want the flexibility to add new features as you go, this model is a better fit. You pay based on actual work done—either hourly or per resource—so you’re not locked into a fixed scope. With this, you can adjust priorities, features, and scope as needed."
+          }
+        ]
+      }
+    ]
+  },
+
+  "it-outsourcing-services": {
+    "title": "Choose From Our IT Outsourcing Service Models",
+    "description": "Building great software requires writing code and having the right people in place at the right time. If you’re launching a new project, expanding your tech team, or tackling a complex system, hiring the right developers can make all the difference.",
+    "models": [
+      {
+        "title": "Dedicated Team",
+        "subtitle": "Also known as back end teams",
+        "icon": lightdotnetmodalicon,
+        "sections": [
+          {
+            "type": "para",
+            "content": "We don’t just provide developers but rather match you with skilled professionals. You need a team that fits into your workflow and gets things done. If your project requires ongoing development, maintenance, or scaling, a dedicated team is the way to go. These developers work exclusively on your project."
+          },
+          {
+            "type": "list",
+            "content": [
+              "Handpicked developers who work only on your project",
+              "Direct communication and full control over development",
+              "Long-term engagement for consistent progress",
+              "Expertise in back-end, front-end, database management, and integrations"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Team Augmentation",
+        "subtitle": "Also known as team extension or staff augmentation",
+        "icon": teamAug,
+        "sections": [
+          {
+            "type": "para",
+            "content": "Sometimes, you don’t need a full-time team—just a few experts to speed things up. This model allows you to add skilled developers to your existing team for tasks, critical deadlines, or scaling up temporarily."
+          },
+          {
+            "type": "list",
+            "content": [
+              "Get the expertise you need without permanent hires",
+              "Grow your business as project demands change",
+              "Avoid recruitment delay and bring in skilled developers instantly",
+              "Perfect for feature upgrades, system integrations, or workload spikes"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Project Based",
+        "icon": ProjectBased,
+        "sections": [
+          {
+            "type": "para",
+            "content": "Benefits you'll get with this model:"
+          },
+          {
+            "type": "para",
+            "content": "Fixed Price Model:\nFor projects with deadlines and deliverables, our fixed-price model will give you exactly what you need. We don't hide costs as everything is planned upfront. This model is made for small to mid-sized projects. Our team always works towards a set timeline."
+          },
+          {
+            "type": "para",
+            "content": "Time & Material Model:\nIf your projects change most times, our time-and-material model will help you pay for development based on actual work done. It is great for projects with changing priorities as you will pay without any unnecessary commitments."
+          }
+        ]
+      }
+    ]
+  },
+
+  "hire-dedicated-development-team": {
+    "title": "Choose From Our Dedicated Development Service Models",
+    "description": "Different projects come with different technical challenges. Some demand a dedicated team for an ongoing build, while others require additional hands to meet tight deadlines or handle specific tasks. No matter where you are in your development cycle, we provide structured models to match your requirements.",
+    "models": [
+      {
+        "title": "Dedicated Development Team",
+        "subtitle": "Also known as product interface teams",
+        "icon": lightdotnetmodalicon,
+        "sections": [
+          {
+            "type": "para",
+            "content": "For businesses that require constant technical support and structured development, this model offers a fully committed team working exclusively on your software."
+          },
+          {
+            "type": "list",
+            "content": [
+              "A team that works only on your project.",
+              "Developers adapt to your internal processes and reporting structures.",
+              "Long-term partnership that needs continuous updates and expansion.",
+              "Structured sprint planning and final deployment.",
+              "Refine the team with backend architecture to API development."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Team Augmentation",
+        "subtitle": "Also known as team extension or staff augmentation",
+        "icon": teamAug,
+        "sections": [
+          {
+            "type": "para",
+            "content": "When your internal team is overloaded, or a project requires niche expertise, this model helps you expand your development capacity with skilled professionals without hiring full-time employees."
+          },
+          {
+            "type": "list",
+            "content": [
+              "Quick access to experienced developers.",
+              "No long-term commitments on project phases.",
+              "Handle unexpected workload spikes.",
+              "No need to onboard new employees when you require temporary expertise.",
+              "Our developers work directly with your engineers."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Project Based",
+        "icon": ProjectBased,
+        "sections": [
+          {
+            "type": "para",
+            "content": "Get these benefits with this model."
+          },
+          {
+            "type": "para",
+            "content": "Fixed-Price Model:\nWorks best when project specifications are locked in, and the roadmap is clearly defined. Suitable for businesses looking for a straightforward development approach without unexpected deviations. It works well for businesses launching new applications. The pricing is agreed upon before the work starts."
+          },
+          {
+            "type": "para",
+            "content": "Time & Material Model:\nDesigned for projects that require ongoing adjustments, allowing room for changing requirements and iterations. You need to pay for actual work hours instead of committing to a fixed structure. If the software development approach changes midway, this model allows quick adaptations. When design elements and user interactions need frequent refinements."
+          }
+        ]
+      }
+    ]
+  },
+
+  "offshore-software-development-center-india": {
+    "title": "Choose From Our Offshore Dedicated Centre Models",
+    "description": "Backend architecture and full-stack development are made by our offshore teams. It will help you get codes for system management. You can also maintain complete control over priorities while we manage the logistics, infrastructure, and operations of your remote team.",
+    "models": [
+      {
+        "title": "Dedicated Team",
+        "subtitle": "Also known as product interface teams",
+        "icon": lightdotnetmodalicon,
+        "sections": [
+          {
+            "type": "para",
+            "content": "For businesses that require an exclusive offshore team, this model provides long-term collaboration with skilled professionals. The team is handpicked to give you consistent output and streamlined development. It makes your projects move forward with precision while reducing the complexities of hiring a remote workforce."
+          },
+          {
+            "type": "list",
+            "content": [
+              "A fully committed team giving the best output.",
+              "Operates as an extension of your in-house staff.",
+              "Scales up or down.",
+              "Complete control over project roadmaps and timelines.",
+              "Deep technical expertise across various software stacks."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Offshore Team Augmentation",
+        "subtitle": "Also known as team extension or staff augmentation",
+        "icon": teamAug,
+        "sections": [
+          {
+            "type": "para",
+            "content": "Sometimes, you don’t need a full offshore setup but require skilled professionals to support your existing team. Our team augmentation model lets you bring in offshore developers with specialized expertise. If it’s cloud infrastructure or platform development, our developers accelerate project execution."
+          },
+          {
+            "type": "list",
+            "content": [
+              "A quick way to expand your offshore team without long-term contracts.",
+              "Works well for scaling operations during critical project phases.",
+              "Reduces the challenges of hiring talent for niche technologies.",
+              "Brings in expertise for software, platform, and system development.",
+              "Encourages knowledge-sharing between teams."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Project Based",
+        "icon": ProjectBased,
+        "sections": [
+          {
+            "type": "para",
+            "content": "You'll get these benefits under a project-based model."
+          },
+          {
+            "type": "para",
+            "content": "Fixed Price Model:\nIf your offshore project has a well-defined scope with clear deliverables, this model offers a structured approach with predictable costs. Ideal for businesses looking for focused offshore development."
+          },
+          {
+            "type": "para",
+            "content": "Time & Material Model:\nFor projects requiring ongoing development and adaptability, this model allows for a flexible engagement with resource-based billing. Best suited for continuous software enhancements, infrastructure management, or backend system development."
+          }
+        ]
+      }
+    ]
+  },
+
+
 };
 
 

@@ -162,8 +162,6 @@ const data = [
     buttonText: "Launch Your Project Now!",
     backgroundImage: "https://spirecapital.com/wp-content/uploads/2017/02/CTA-background-get-in-touch.jpg",
   },
-
-
   {
     slug: "ecommerce-web-development",
     tagline: "Need lightning-speed searches?",
@@ -172,6 +170,8 @@ const data = [
     buttonText: "Launch Your Project Now!",
     backgroundImage: "https://spirecapital.com/wp-content/uploads/2017/02/CTA-background-get-in-touch.jpg",
   },
+
+
   {
     slug: "woocommerce-development-services-india",
     tagline: "Crafting Stores That Sell & Scale",
@@ -180,6 +180,47 @@ const data = [
     buttonText: "Launch Your Project Now!",
     backgroundImage: "https://spirecapital.com/wp-content/uploads/2017/02/CTA-background-get-in-touch.jpg",
   },
+{
+    slug: "it-staff-augmentation-services",
+    tagline: "Get Expertise Without the Hiring",
+    title: "Expand Your Team at the Speed of Business",
+    description: "Workloads fluctuate, and hiring full-time employees for short-term projects isn’t always practical. With our staff augmentation services, you get the time to scale up when demand rises and down when things stabilize.",
+    buttonText: "Launch Your Project Now!",
+    backgroundImage: "https://spirecapital.com/wp-content/uploads/2017/02/CTA-background-get-in-touch.jpg",
+  },
+  {
+    slug: "hire-software-developer",
+    tagline: "No more frustrating disconnects between your systems!",
+    title: "Building Everything from Scratch with our Developers.",
+    description: "Getting software up and running should be the easiest part. Our developers handle the entire setup, so you don’t have to stress over server choices or downtime. Also, they put backup systems in place to never lose important data.",
+    buttonText: "Launch Your Project Now!",
+    backgroundImage: "https://spirecapital.com/wp-content/uploads/2017/02/CTA-background-get-in-touch.jpg",
+  },
+  {
+    slug: "it-outsourcing-services",
+    tagline: "Code That Works, Developers Who Deliver!",
+    title: "A Team That Stays in the Loop.",
+    description: "You don’t need to decode cryptic IT terms. We keep things simple, so you always know what’s happening. No sorting through applications, just the right people for the job. We don’t just build and disappear. We're here when you need us.",
+    buttonText: "Launch Your Project Now!",
+    backgroundImage: "https://spirecapital.com/wp-content/uploads/2017/02/CTA-background-get-in-touch.jpg",
+  },
+  {
+    slug: "hire-dedicated-development-team",
+    tagline: "Engineering the Future of Your Software!",
+    title: "Making systems that innovate technology",
+    description: "We construct back-end foundations that operate with precision. Our functions run without disruption. We have a team at Bunnx that develops applications.",
+    buttonText: "Launch Your Project Now!",
+    backgroundImage: "https://spirecapital.com/wp-content/uploads/2017/02/CTA-background-get-in-touch.jpg",
+  },
+  {
+    slug: "offshore-software-development-center-india",
+    tagline: "Building foundations that go beyond outsourcing!",
+    title: "Our offshore development center is more than just a cost-saving move.",
+    description: "We work with the same commitment and technical excellence as an in-house unit. From custom software solutions to large-scale system engineering, our developers bring structured problem-solving. With a development environment, we engineer solutions that shape industries.",
+    buttonText: "Launch Your Project Now!",
+    backgroundImage: "https://spirecapital.com/wp-content/uploads/2017/02/CTA-background-get-in-touch.jpg",
+  }
+
 ];
   
 

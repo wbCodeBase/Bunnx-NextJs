@@ -162,9 +162,9 @@ const data = [
     buttonText: "Contact Us Now",
     backgroundImage: "https://images.pexels.com/photos/316681/pexels-photo-316681.jpeg",
   },
-  
-  
-  
+
+
+
 
   {
     slug: "ecommerce-web-development",
@@ -182,6 +182,50 @@ const data = [
     buttonText: "Contact Us Now",
     backgroundImage: "https://images.pexels.com/photos/316681/pexels-photo-316681.jpeg",
   },
+
+
+  {
+    "slug": "it-staff-augmentation-services",
+    "tagline": "Grow Your Team with the Right Talent",
+    "title": "Fill in the Gaps with the Right People",
+    "description": "Our staff augmentation services let you add experts when you need them and help you execute projects without the wait. Whether you require specialized skills for a short-term assignment or long-term support, we provide professionals who integrate with your team.",
+    "buttonText": "Contact Us Now",
+    "backgroundImage": "https://images.pexels.com/photos/316681/pexels-photo-316681.jpeg"
+  },
+  {
+    "slug": "hire-software-developer",
+    "tagline": "We match you with top-tier developers!",
+    "title": "Deliver Results Without Distractions",
+    "description": "A great product starts with a great team. Finding the right developers can be overwhelming. That’s where we step in. We match you with top-tier developers who don’t just write code but work in your time zone.",
+    "buttonText": "Contact Us Now",
+    "backgroundImage": "https://images.pexels.com/photos/316681/pexels-photo-316681.jpeg"
+  },
+  {
+    "slug": "it-outsourcing-services",
+    "tagline": "Find the Right Talent, The Right Way.",
+    "title": "Your In-House Tech Experts, Without the Overhead.",
+    "description": "Need long-term support? Our IT outsourcing company will work exclusively on your project. We create a team that mixes with your workflow completely and makes progress day after day.",
+    "buttonText": "Contact Us Now",
+    "backgroundImage": "https://images.pexels.com/photos/316681/pexels-photo-316681.jpeg"
+  },
+  {
+    "slug": "hire-dedicated-development-team",
+    "tagline": "High-Functioning Software with Expert-Led Engineering",
+    "title": "Your Development Team, Aligned with Your Vision",
+    "description": "We provide skilled engineers, project leads, and QA specialists who work as an extension of your existing setup. Our team also analyzes response times, server loads, and does request handling.",
+    "buttonText": "Contact Us Now",
+    "backgroundImage": "https://images.pexels.com/photos/316681/pexels-photo-316681.jpeg"
+  },
+  {
+    "slug": "offshore-software-development-center-india",
+    "tagline": "Your vision, engineered with precision.",
+    "title": "Expand Your Capabilities with a High-Performance Offshore Development Center",
+    "description": "We create a collaborative space where ideas turn into working systems. If it’s backend development or system architecture, our engineers bring expertise that drives measurable progress.",
+    "buttonText": "Contact Us Now",
+    "backgroundImage": "https://images.pexels.com/photos/316681/pexels-photo-316681.jpeg"
+  }
+
+
 ];
 
 
@@ -191,7 +235,7 @@ const data = [
 const getCtaContent = (data, serviceDetailPageSlug) => {
   // First try to find content matching the page slug
   const contentBySlug = data.find(item => item?.slug === serviceDetailPageSlug);
-  
+
   if (contentBySlug) {
     return contentBySlug;
   }

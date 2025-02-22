@@ -188,6 +188,44 @@ const engageMentModelData = [
         p: "Need a full-fledged team to take charge from start to finish? We’ll test and launch your app with precision. Working on a short-term project and need experts to step in? We can jump in at any phase—design, backend, or final tweaks. No unnecessary processes, no wasted time, just an eCommerce web development approach that works the way you do.",
         engagement: engagement,
     },
+
+
+
+    {
+        "slug": "it-staff-augmentation-services",
+        "h2": "Choose From Our Hiring Models",
+        "h4": "Collaborate with Top Staff Augmentation Experts Through Engagement Models",
+        "p": "Our engagement models are designed with one goal in mind: to deliver the right staff augmentation services for your brand. We analyze your project’s scope, goals, and timeline to propose a customized collaboration plan.",
+        "engagement": engagement
+    },
+    {
+        "slug": "hire-software-developer",
+        "h2": "Choose From Our Hiring Models",
+        "h4": "Collaborate with Top Software Developers Through Engagement Models",
+        "p": "Every software project has challenges that come with it. For businesses who want to develop a new application and fix existing code, the right developers on board can make it happen. Our engagement models allow you to bring in top-tier developers without unnecessary or long-term commitments.",
+        "engagement": engagement
+    },
+    {
+        "slug": "it-outsourcing-services",
+        "h2": "Choose From Our Hiring Models",
+        "h4": "Collaborate with Top IT Outsourcing Through Engagement Models",
+        "p": "Finding the right developers isn’t just about filling a position. And you might not want a team that just ticks boxes. Instead, you will need people who understand what you're trying to create and have the skills to make it happen. That’s where Bunnx steps in. We bring in the right expert for the job.",
+        "engagement": engagement
+    },
+    {
+        "slug": "hire-dedicated-development-team",
+        "h2": "Choose From Our Hiring Models",
+        "h4": "Collaborate with Top Ecommerce Website Developers Through Engagement Models",
+        "p": "Building a strong tech foundation requires the right people, not just the right code. Our development team services are designed to bring in expertise that aligns with your project’s scope and keeps your software evolving without delays or compromises.",
+        "engagement": engagement
+    },
+    {
+        "slug": "offshore-software-development-center-india",
+        "h2": "Choose From Our Hiring Models",
+        "h4": "Collaborate with Top Offshore Dedicated Centre Through Engagement Models",
+        "p": "Our offshore development model is designed for businesses looking to make a strong development presence without the burden of setting up an in-house facility. With a team of experts working on your projects, you gain a highly skilled workforce that operates within your workflows and development cycles. So, check our hiring models.",
+        "engagement": engagement
+    }
 ];
 
 
@@ -198,14 +236,14 @@ const engageMentModelData = [
 const getCtaContent = (data, serviceDetailPageSlug) => {
     // First try to find content matching the page slug
     const contentBySlug = data.find(item => item?.slug === serviceDetailPageSlug);
-    
+
     if (contentBySlug) {
-      return contentBySlug;
+        return contentBySlug;
     }
-  
+
     // Fallback to default content if no match
     return data.find(item => item?.slug === "best-software-development-company-in-india") || data[0];
-  };
+};
 
 export default function EngagementModel({ serviceDetailPageSlug }) {
     // Find the data matching the slug

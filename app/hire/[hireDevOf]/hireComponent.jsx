@@ -198,7 +198,7 @@ export default function HireDetailsComponentt() {
         title: "On-demand Software Teams",
         description:
           "Accelerate development projects and access skilled professionals with our flexible on-demand software teams. Integrate our talent into your workflow for efficient collaboration and faster project delivery.",
-        ctaRedirectUrl: "dedicated-development-teams"
+        ctaRedirectUrl: "hire-dedicated-development-team"
       },
       {
         title: "Ecommerce",

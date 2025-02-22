@@ -228,7 +228,7 @@ const data = [
     altText: "Shopify Development",
   },
   {
-    slug: "",
+    slug: "ecommerce-web-development",
     title: "Leading eCommerce Web Development Experts",
     description1: "Every project starts with an in-depth breakdown of what makes your business unique, from how customers browse to how they check out.",
     description2: "Experts at Bunnx work towards your loading times so buyers don’t have to wait. Because in eCommerce, every second counts.",
@@ -237,6 +237,59 @@ const data = [
     imageSrc: softwareDev,
     altText: "eCommerce maintenance and support",
   },
+
+  {
+    "slug": "it-staff-augmentation-services",
+    "title": "Leading Staff Augmentation Experts",
+    "description1": "Finding the right talent shouldn’t be difficult. If you need a developer for a short-term project or an entire team for long-term work, we provide top professionals who start delivering from day one.",
+    "description2": "We take recruitment off your plate. Our network includes developers, designers, project managers, and quality analysts who have worked on projects of all sizes.",
+    "buttonText": "Get Started!",
+    "link": "#contact-us",
+    "imageSrc": softwareDev,
+    "altText": "Staff Augmentation Services"
+  },
+  {
+    "slug": "hire-software-developer",
+    "title": "Leading Software Development Experts",
+    "description1": "Great software is built by the right people. If you're looking to bring in skilled developers without hiring in-house, you're in the right place.",
+    "description2": "Our team knows how to build, fix, and improve software so your business can keep moving forward without tech getting in the way.",
+    "buttonText": "Get Started!",
+    "link": "#contact-us",
+    "imageSrc": softwareDev,
+    "altText": "Hire Software Developer"
+  },
+  {
+    "slug": "it-outsourcing-services",
+    "title": "Leading IT Outsourcing Experts",
+    "description1": "No endless interviews and no bad hires! Just get developers for your project. You can tell us what you need, and we’ll connect you with the right people to get the job done.",
+    "description2": "Our IT outsourcing company also brings in people for backend, frontend, or full-stack.",
+    "buttonText": "Get Started!",
+    "link": "#contact-us",
+    "imageSrc": softwareDev,
+    "altText": "IT Outsourcing Services"
+  },
+  {
+    "slug": "hire-dedicated-development-team",
+    "title": "Dedicated Software Development Experts",
+    "description1": "We assemble expert software developers that build high-performance applications. Our engineers work with technologies such as Go, Rust, and Elixir to create adaptable systems.",
+    "description2": "They bring in structured API development and high-speed data to keep your software above all competitors.",
+    "buttonText": "Get Started!",
+    "link": "#contact-us",
+    "imageSrc": softwareDev,
+    "altText": "Dedicated Development Team"
+  },
+  {
+    "slug": "offshore-software-development-center-india",
+    "title": "Leading Offshore Dedicated Centre Experts",
+    "description1": "Great ideas need the right hands. Our offshore development center is built around the idea that distance should never be a barrier to quality.",
+    "description2": "We bring together dedicated teams of engineers, strategists, and architects who immerse themselves in your projects as if they were right next door.",
+    "buttonText": "Get Started!",
+    "link": "#contact-us",
+    "imageSrc": softwareDev,
+    "altText": "Offshore Development Center"
+  }
+
+
 
 ];
 
