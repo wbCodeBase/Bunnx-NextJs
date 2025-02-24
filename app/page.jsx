@@ -24,7 +24,7 @@ import { FaLocationArrow } from "react-icons/fa";
 
 export const metadata = {
   robots: "noindex", // Ensures pages are marked as noindex
-};
+}; 
 
 
 export default async function Home() {
