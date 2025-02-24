@@ -219,7 +219,9 @@ const data = [
     description: "We work with the same commitment and technical excellence as an in-house unit. From custom software solutions to large-scale system engineering, our developers bring structured problem-solving. With a development environment, we engineer solutions that shape industries.",
     buttonText: "Launch Your Project Now!",
     backgroundImage: "https://spirecapital.com/wp-content/uploads/2017/02/CTA-background-get-in-touch.jpg",
-  }
+  },
+
+  
 
 ];
   

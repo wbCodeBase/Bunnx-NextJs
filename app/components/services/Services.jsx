@@ -1494,8 +1494,212 @@ const services = [
     "title": "Checkout Process Control",
     "description": "You can now decide who can buy countries or global, force secure checkout, or let shoppers come as guests. We make your rules come to reality by setting your checkout flow URLs.",
     "fetchOnSlug": ["woocommerce-development-services-india"]
-  }
+  },
 
+  {
+    "title": "Dedicated Development Teams",
+    "description": "Build your dream team without the hiring hassle. Our pre-vetted developers seamlessly integrate with your existing workflow, bringing fresh perspectives and specialized skills to accelerate your project timelines.",
+    "fetchOnSlug": ["it-staff-augmentation-services"]
+  },
+  {
+    "title": "Flexible Scaling Solutions",
+    "description": "Adapt your team size as your needs evolve. Whether you're scaling up for a major release or optimizing resources during quiet periods, we ensure you have the right talent at the right time.",
+    "fetchOnSlug": ["it-staff-augmentation-services"]
+  },
+  {
+    "title": "Technology Expertise On-Demand",
+    "description": "Access specialists across the tech spectrum without long-term commitments. From cloud architects to AI developers, we match you with experts who can hit the ground running on your specific technology stack.",
+    "fetchOnSlug": ["it-staff-augmentation-services"]
+  },
+  {
+    "title": "Seamless Knowledge Transfer",
+    "description": "Our augmented staff doesn't just code - they collaborate and share. Through detailed documentation, pair programming, and regular knowledge sharing sessions, we ensure your internal team grows stronger with every engagement.",
+    "fetchOnSlug": ["it-staff-augmentation-services"]
+  },
+  {
+    "title": "Cultural Fit Guarantee",
+    "description": "We understand that technical skills alone aren't enough. Our professionals are selected for their communication abilities, adaptability, and cultural awareness to ensure they truly become part of your team.",
+    "fetchOnSlug": ["it-staff-augmentation-services"]
+  },
+  {
+    "title": "Project Acceleration Support",
+    "description": "Behind schedule or facing tight deadlines? Our experienced developers can jump in at any project stage, quickly understand your codebase, and help deliver results without compromising quality.",
+    "fetchOnSlug": ["it-staff-augmentation-services"]
+  },
+  {
+    "title": "Risk Mitigation Expertise",
+    "description": "Reduce the risks associated with hiring and training. Our professionals come with proven track records and are backed by our quality guarantees, ensuring consistent delivery and minimal onboarding time.",
+    "fetchOnSlug": ["it-staff-augmentation-services"]
+  },
+  {
+    "title": "Innovation Enablement",
+    "description": "Bring fresh perspectives to your projects with our diverse talent pool. Our specialists stay current with emerging technologies and best practices, helping you innovate while maintaining project stability.",
+    "fetchOnSlug": ["it-staff-augmentation-services"]
+  },
+
+
+  {
+    "title": "Full-Stack Development Experts",
+    "description": "Access versatile developers who master both frontend and backend technologies. Our full-stack experts bring comprehensive solutions, reducing communication overhead and accelerating your development cycle.",
+    "fetchOnSlug": ["hire-software-developer"]
+  },
+  {
+    "title": "Cloud Architecture Specialists",
+    "description": "Transform your infrastructure with cloud-native solutions. Our cloud architects design scalable, cost-effective systems that grow with your business, ensuring optimal performance and security.",
+    "fetchOnSlug": ["hire-software-developer"]
+  },
+  {
+    "title": "Mobile App Development Pros",
+    "description": "Create engaging mobile experiences across platforms. Our mobile developers craft native and cross-platform applications that deliver exceptional user experiences while maintaining high performance.",
+    "fetchOnSlug": ["hire-software-developer"]
+  },
+  {
+    "title": "AI & Machine Learning Engineers",
+    "description": "Leverage cutting-edge AI capabilities in your applications. Our specialists implement intelligent features, from predictive analytics to natural language processing, driving innovation in your products.",
+    "fetchOnSlug": ["hire-software-developer"]
+  },
+  {
+    "title": "DevOps Implementation Experts",
+    "description": "Streamline your development pipeline with automated processes. Our DevOps engineers set up efficient CI/CD pipelines, container orchestration, and monitoring systems for reliable deployments.",
+    "fetchOnSlug": ["hire-software-developer"]
+  },
+  {
+    "title": "Quality Assurance Engineers",
+    "description": "Ensure flawless software delivery with comprehensive testing. Our QA experts implement automated testing frameworks and detailed manual testing procedures to maintain high quality standards.",
+    "fetchOnSlug": ["hire-software-developer"]
+  },
+
+  {
+    "title": "Strategic IT Consulting",
+    "description": "Transform your business with expert IT guidance. Our consultants analyze your needs, recommend optimal solutions, and create roadmaps for digital transformation that align with your business goals.",
+    "fetchOnSlug": ["it-outsourcing-services"]
+  },
+  {
+    "title": "Custom Software Development",
+    "description": "Build tailored solutions that perfectly fit your needs. Our development teams create custom applications that streamline your operations and give you a competitive edge in your market.",
+    "fetchOnSlug": ["it-outsourcing-services"]
+  },
+  {
+    "title": "Legacy System Modernization",
+    "description": "Breathe new life into your existing systems. We help you modernize legacy applications, ensuring they integrate seamlessly with current technologies while preserving your valuable business logic.",
+    "fetchOnSlug": ["it-outsourcing-services"]
+  },
+  {
+    "title": "Cloud Migration Services",
+    "description": "Move your operations to the cloud with confidence. Our experts handle complete cloud migrations, from planning to execution, ensuring minimal disruption to your business operations.",
+    "fetchOnSlug": ["it-outsourcing-services"]
+  },
+  {
+    "title": "24/7 IT Support & Maintenance",
+    "description": "Keep your systems running smoothly around the clock. Our dedicated support teams provide continuous monitoring, rapid issue resolution, and proactive maintenance to prevent downtime.",
+    "fetchOnSlug": ["it-outsourcing-services"]
+  },
+  {
+    "title": "Cybersecurity Solutions",
+    "description": "Protect your digital assets with robust security measures. Our security experts implement comprehensive protection strategies, from threat detection to incident response and recovery.",
+    "fetchOnSlug": ["it-outsourcing-services"]
+  },
+
+  {
+    "title": "Turnkey Development Center",
+    "description": "Launch your offshore center without the setup hassle. We handle everything from infrastructure and hiring to team management, allowing you to focus on your core business objectives.",
+    "fetchOnSlug": ["offshore-software-development-center-india"]
+  },
+  {
+    "title": "Technology Innovation Hub",
+    "description": "Create cutting-edge solutions with access to India's top tech talent. Our innovation centers provide the perfect environment for developing next-generation products and services.",
+    "fetchOnSlug": ["offshore-software-development-center-india"]
+  },
+  {
+    "title": "Scalable Team Operations",
+    "description": "Grow your development capabilities on demand. Our offshore centers accommodate rapid scaling, providing the flexibility to expand or contract your team as needed.",
+    "fetchOnSlug": ["offshore-software-development-center-india"]
+  },
+  {
+    "title": "Intellectual Property Protection",
+    "description": "Secure your innovations with robust IP protection. We implement strict security protocols and legal frameworks to ensure your intellectual property remains completely protected.",
+    "fetchOnSlug": ["offshore-software-development-center-india"]
+  },
+  {
+    "title": "Quality Control Systems",
+    "description": "Maintain consistent quality across all deliverables. Our offshore centers implement comprehensive quality management systems, ensuring every piece of code meets your standards.",
+    "fetchOnSlug": ["offshore-software-development-center-india"]
+  },
+  {
+    "title": "Cultural Alignment Programs",
+    "description": "Bridge cultural gaps effectively. Our teams undergo extensive training in your business culture and communication practices, ensuring smooth collaboration across time zones.",
+    "fetchOnSlug": ["offshore-software-development-center-india"]
+  },
+
+
+
+
+  {
+    "title": "Homeshore Software Development",
+    "description": "When a company assigns its software development project to a team within the same city or region, communication is seamless. Face-to-face meetings, brainstorming sessions, and troubleshooting become more efficient, ensuring strong project oversight.",
+    "fetchOnSlug": ["software-development-outsourcing-company-in-india"]
+  },
+  {
+    "title": "Nearshore Software Development",
+    "description": "Nearshore outsourcing expands hiring options beyond national borders while keeping operations within neighboring countries. This approach offers the advantage of similar time zones, making coordination, meetings, and development cycles more streamlined.",
+    "fetchOnSlug": ["software-development-outsourcing-company-in-india"]
+  },
+  {
+    "title": "Offshore Software Development",
+    "description": "Offshoring takes outsourcing to distant countries, often across continents. Companies benefit from lower development costs and access to a diverse talent pool, provided there are clear documentation processes and structured workflows in place.",
+    "fetchOnSlug": ["software-development-outsourcing-company-in-india"]
+  },
+  {
+    "title": "Onshore Software Development",
+    "description": "Onshore outsourcing allows businesses to work with a development team within the same country but outside their immediate region. This ensures compliance with national regulations while expanding access to skilled professionals.",
+    "fetchOnSlug": ["software-development-outsourcing-company-in-india"]
+  },
+
+  {
+    "title": "Handpicked Experts for Your Project",
+    "description": "Skip the hiring hassle—get access to pre-vetted developers with specialized skills tailored to your needs. Scale your team effortlessly with top-tier engineers ready to deliver excellence.",
+    "fetchOnSlug": ["hire-dedicated-development-team"]
+  },
+  {
+    "title": "Flexible Engagement Models",
+    "description": "Choose a hiring model that fits your project’s demands. Whether it’s a short-term requirement or a long-term partnership, we provide dedicated developers to match your workflow.",
+    "fetchOnSlug": ["hire-dedicated-development-team"]
+  },
+  {
+    "title": "Seamless Team Integration",
+    "description": "Our dedicated developers work as an extension of your in-house team. With aligned time zones, smooth communication, and shared goals, collaboration feels natural and efficient.",
+    "fetchOnSlug": ["hire-dedicated-development-team"]
+  },
+  {
+    "title": "Agile & Scalable Teams",
+    "description": "Need to scale up or down quickly? Our dedicated teams are built to adapt, ensuring you always have the right talent at the right time without the overhead of full-time hiring.",
+    "fetchOnSlug": ["hire-dedicated-development-team"]
+  },
+  {
+    "title": "Industry-Specific Expertise",
+    "description": "From fintech to healthcare, e-commerce to AI—our developers bring domain-specific experience to accelerate your project and deliver high-quality solutions with precision.",
+    "fetchOnSlug": ["hire-dedicated-development-team"]
+  },
+  {
+    "title": "100% IP Protection & NDA Compliance",
+    "description": "Your ideas and data are safe with us. We ensure complete confidentiality with airtight NDAs and strict IP protection protocols, so you retain full ownership of your product.",
+    "fetchOnSlug": ["hire-dedicated-development-team"]
+  },
+  {
+    "title": "Full-Stack Development Support",
+    "description": "Hire frontend, backend, or full-stack engineers who are proficient in modern technologies like React, Node.js, Python, and more to build robust and scalable applications.",
+    "fetchOnSlug": ["hire-dedicated-development-team"]
+  },
+  {
+    "title": "Faster Time to Market",
+    "description": "Speed up development with our dedicated team model. Get expert engineers onboarded within days and accelerate your product’s launch while maintaining high-quality standards.",
+    "fetchOnSlug": ["hire-dedicated-development-team"]
+  },
+  {
+    "title": "Ongoing Support & Maintenance",
+    "description": "Beyond development, we offer continuous support to keep your software running smoothly. From bug fixes to performance optimization, our experts have you covered.",
+    "fetchOnSlug": ["hire-dedicated-development-team"]
+  }
 
 ]
 
@@ -1613,6 +1817,46 @@ const OurServicesHeadPara = [
     servicePara: "Your eCommerce website should do more than just exist—it should pull people in, keep them engaged, and make every visit worth their time. We bring years of expertise to the table to provide the best eCommerce website maintenance & support services.",
     slug: "ecommerce-maintenance-and-support-services"
   },
+  {
+    serviceTitle: "Best Ecommerce Maintenance & Support Services",
+    servicePara: "Your eCommerce website should do more than just exist—it should pull people in, keep them engaged, and make every visit worth their time. We bring years of expertise to the table to provide the best eCommerce website maintenance & support services.",
+    slug: "ecommerce-maintenance-and-support-services"
+  },
+
+
+
+  {
+    "serviceTitle": "Top IT Staff Augmentation Services for Scaling Fast",
+    "servicePara": "Finding the right tech talent shouldn’t slow down your growth. Our IT staff augmentation services empower you with skilled developers, engineers, and IT professionals on demand—seamlessly integrating with your team and delivering results from day one.",
+    "slug": "it-staff-augmentation-services"
+  },
+  {
+    "serviceTitle": "Hire Software Developers Who Deliver Excellence",
+    "servicePara": "Your next big project deserves top-tier developers. We help you hire experienced software developers who align with your vision, work with your tech stack, and accelerate your development cycle—without the hiring headaches.",
+    "slug": "hire-software-developer"
+  },
+  {
+    "serviceTitle": "Reliable IT Outsourcing Services for Businesses Worldwide",
+    "servicePara": "Reduce costs, scale faster, and access world-class tech talent with our IT outsourcing services. From software development to infrastructure management, we ensure your business stays agile and competitive in a fast-evolving digital landscape.",
+    "slug": "it-outsourcing-services"
+  },
+  {
+    "serviceTitle": "Hire a Dedicated Development Team That Feels In-House",
+    "servicePara": "Forget one-size-fits-all solutions. Our dedicated development teams are tailored to your project needs, offering specialized expertise, seamless collaboration, and a commitment to your success—just like an in-house team, but better.",
+    "slug": "hire-dedicated-development-team"
+  },
+  {
+    "serviceTitle": "Offshore Software Development Center in India – Your Tech Hub",
+    "servicePara": "Build your dream tech team without borders. Our offshore software development center in India provides skilled developers, robust infrastructure, and cost-effective solutions—so you can scale your software projects with confidence and efficiency.",
+    "slug": "offshore-software-development-center-india"
+  },
+  {
+    "serviceTitle": "Leading Software Development Outsourcing Company in India",
+    "servicePara": "Outsourcing software development isn’t just about cost savings—it’s about innovation, expertise, and efficiency. As a trusted software development outsourcing company in India, we build cutting-edge solutions tailored to your needs, ensuring top-notch quality and timely delivery.",
+    "slug": "software-development-outsourcing-company-in-india"
+  }
+
+
 ]
 
 

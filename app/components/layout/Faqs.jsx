@@ -1601,56 +1601,88 @@ const faqData = {
     ],
 
 
-    // "software-development-outsourcing-company-in-india": [
-    //     {
-    //         "id": "1",
-    //         "question": "What is an offshore dedicated centre?",
-    //         "answer": {
-    //             "type": "text",
-    //             "content": "An offshore dedicated centre is a team of experts working exclusively for a company from a different country. It helps businesses expand their development team without setting up an office in another location."
-    //         }
-    //     },
-    //     {
-    //         "id": "2",
-    //         "question": "How does an offshore dedicated centre reduce costs?",
-    //         "answer": {
-    //             "type": "text",
-    //             "content": "Setting up an in-house team requires office space, salaries, and infrastructure. An offshore centre provides access to skilled professionals at lower costs."
-    //         }
-    //     },
-    //     {
-    //         "id": "3",
-    //         "question": "What kind of services does an offshore dedicated centre provide?",
-    //         "answer": {
-    //             "type": "text",
-    //             "content": "An offshore centre can handle software development, testing, support, and maintenance. Some teams also provide research, data analysis, and project management services."
-    //         }
-    //     },
-    //     {
-    //         "id": "4",
-    //         "question": "How do I manage an offshore team?",
-    //         "answer": {
-    //             "type": "text",
-    //             "content": "Regular communication, clear instructions, and project tracking tools help in managing an offshore team. Choosing a reliable partner with experienced professionals also makes collaboration easier."
-    //         }
-    //     },
-    //     {
-    //         "id": "5",
-    //         "question": "What industries benefit from offshore development centres?",
-    //         "answer": {
-    //             "type": "text",
-    //             "content": "Offshore teams are useful in various industries, including IT, healthcare, banking, retail, and manufacturing. Companies that require constant software updates or technical support often prefer this model."
-    //         }
-    //     },
-    //     {
-    //         "id": "6",
-    //         "question": "How do I choose the right offshore development partner?",
-    //         "answer": {
-    //             "type": "text",
-    //             "content": "Select a partner with a good track record, skilled professionals, and a strong communication system. Checking past work and speaking with previous clients can help you make the right choice."
-    //         }
-    //     }
-    // ],
+    "software-development-outsourcing-company-in-india": [
+        {
+            "id": "1",
+            "question": "Why should I outsource software development to India?",
+            "answer": {
+                "type": "text",
+                "content": "India is home to some of the world's top engineering talent, offering high-quality development at a fraction of the cost. Whether you're a startup looking to scale fast or an enterprise seeking efficiency, outsourcing to India ensures access to skilled developers, 24/7 support due to time zone advantages, and a strong work ethic—all without the hassle of hiring in-house."
+            }
+        },
+        {
+            "id": "2",
+            "question": "Will outsourcing affect the quality of my project?",
+            "answer": {
+                "type": "text",
+                "content": "Not at all! Quality depends on choosing the right outsourcing partner. Top-tier outsourcing companies follow agile development, conduct rigorous testing, and maintain open communication to ensure the final product meets your expectations. You also get access to specialized talent, ensuring your project is handled by experts, not generalists."
+            }
+        },
+        {
+            "id": "3",
+            "question": "I’ve heard communication is a challenge when outsourcing. How do you handle this?",
+            "answer": {
+                "type": "text",
+                "content": "Great question! Communication can be a challenge with the wrong partner. We solve this by ensuring **real-time collaboration**, **daily stand-up meetings**, and **project managers** who act as a bridge between your team and ours. Tools like Slack, Zoom, and Jira ensure seamless updates so you're never left wondering about progress."
+            }
+        },
+        {
+            "id": "4",
+            "question": "What if I need to scale my team up or down?",
+            "answer": {
+                "type": "text",
+                "content": "Outsourcing gives you unmatched flexibility. Need to add more developers during peak times? No problem. Want to scale down once the core development is done? We adjust resources based on your needs—no hiring or firing headaches!"
+            }
+        },
+        {
+            "id": "5",
+            "question": "How do you ensure my idea and data stay secure?",
+            "answer": {
+                "type": "text",
+                "content": "We take security seriously. Every project starts with a **Non-Disclosure Agreement (NDA)**, and all data is handled with strict **access controls and encryption**. Our team follows **GDPR and ISO security standards**, so your intellectual property remains safe and sound."
+            }
+        },
+        {
+            "id": "6",
+            "question": "What engagement models do you offer?",
+            "answer": {
+                "type": "text",
+                "content": "We offer three flexible models: \n1️⃣ **Dedicated Team** – A team that works exclusively on your project, just like an in-house team. \n2️⃣ **Staff Augmentation** – Need extra hands? We add skilled engineers to your existing team. \n3️⃣ **Project-Based Outsourcing** – We handle everything from start to finish with a fixed scope and timeline."
+            }
+        },
+        {
+            "id": "7",
+            "question": "How do I ensure transparency in project development?",
+            "answer": {
+                "type": "text",
+                "content": "We provide **weekly reports, real-time dashboards, and milestone tracking** so you always know what’s happening. Plus, our developers work in an agile methodology, meaning you can review progress every sprint and request changes as needed!"
+            }
+        },
+        {
+            "id": "8",
+            "question": "Can I test a small project before committing long-term?",
+            "answer": {
+                "type": "text",
+                "content": "Absolutely! Many of our clients start with a small pilot project to evaluate our skills, communication, and process. Once satisfied, they scale up their engagement. Think of it as a ‘try before you buy’ model!"
+            }
+        },
+        {
+            "id": "9",
+            "question": "How does outsourcing help my business grow?",
+            "answer": {
+                "type": "text",
+                "content": "By outsourcing, you free up time and resources to focus on your core business while experts handle your development. This means **faster time to market, lower operational costs, and access to top-tier talent** without long-term hiring commitments. Plus, you can scale your team instantly as your business grows."
+            }
+        },
+        {
+            "id": "10",
+            "question": "What industries do you specialize in?",
+            "answer": {
+                "type": "text",
+                "content": "We’ve worked across various industries, including **FinTech, Healthcare, E-commerce, SaaS, EdTech, and AI/ML solutions**. No matter your industry, we customize our approach to meet your specific business needs."
+            }
+        }
+    ],
 
 };
 

@@ -198,6 +198,14 @@ const PlaneCta = ({ serviceDetailPageSlug }) => {
             "ctaText": "Let's Connect!",
             "slug": "offshore-software-development-center-india"
         },
+        {
+            "span": "Outsource Smart, Scale Faster, Innovate Better",
+            "head": "Your Vision, Our Code – Build Exceptional Software with India’s Best Talent",
+            "para": "Skip the hiring struggles and development delays. Our expert teams integrate seamlessly into your workflow, delivering high-quality software at speed and scale. Whether you need full-cycle development or specialized expertise, we’ve got you covered. Let’s turn your ideas into reality with cutting-edge technology and world-class engineering.",
+            "ctaText": "Start Your Project Today!",
+            "slug": "software-development-outsourcing-company-in-india"
+          }
+          
 
     ]
 

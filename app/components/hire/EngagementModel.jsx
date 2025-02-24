@@ -225,6 +225,13 @@ const engageMentModelData = [
         "h4": "Collaborate with Top Offshore Dedicated Centre Through Engagement Models",
         "p": "Our offshore development model is designed for businesses looking to make a strong development presence without the burden of setting up an in-house facility. With a team of experts working on your projects, you gain a highly skilled workforce that operates within your workflows and development cycles. So, check our hiring models.",
         "engagement": engagement
+    },
+    {
+        "slug": "software-development-outsourcing-company-in-india",
+        "h2": "Choose From Our Hiring Models",
+        "h4": "Flexible Engagement Models for Your Software Development Needs",
+        "p": "Every project is unique, and so is our approach to hiring. Whether you need a dedicated team, project-based outsourcing, or a hybrid model, we offer tailored solutions to match your goals. Gain access to top-tier developers, reduce hiring complexities, and accelerate your development process. Explore our hiring models and find the perfect fit for your business.",
+        "engagement": engagement
     }
 ];
 

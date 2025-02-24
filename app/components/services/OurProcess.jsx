@@ -2393,8 +2393,85 @@ const contentBySlug = {
                 ]
             }
         ]
-    }
+    },
 
+    "software-development-outsourcing-company-in-india": {
+        "h2": "Our Process",
+        "h4": "How We Deliver High-Impact Software Solutions",
+        "p": "We simplify software development with a seamless, agile-driven process. From strategy to deployment, we ensure fast execution, top-tier quality, and lasting success.",
+        "processSections": [
+            {
+                "id": 1,
+                "title": "Defining Your Vision & Goals",
+                "description": "Every great software solution starts with clarity. We dive deep into your business needs, industry challenges, and user expectations to craft a tailored development roadmap.",
+                        "activities": [
+                    "Define project scope & objectives",
+                    "Select the best tech stack",
+                    "Align strategy with business goals"
+                ],
+                "deliverables": [
+                    "Comprehensive project plan",
+                    "Clear technical requirements"
+                ]
+            },
+            {
+                "id": 2,
+                "title": "Building Development Team",
+                "description": "We handpick top-tier engineers, designers, and strategists to bring your project to life. Our experts integrate seamlessly into your workflow, ensuring fast and efficient development.",
+                "activities": [
+                    "Source & vet top talent",
+                    "Onboard team for quick integration",
+                    "Set up collaboration channels"
+                ],
+                "deliverables": [
+                    "Dedicated, skilled team",
+                    "Seamless workflow integration"
+                ]
+            },
+            {
+                "id": 3,
+                "title": "Agile Development Execution",
+                "description": "Using agile methodologies, we break projects into manageable sprints, ensuring continuous progress, faster feedback cycles, and adaptable development.",
+                "activities": [
+                    "Sprint-based development",
+                    "Regular testing & code reviews",
+                    "Feature refinements based on feedback"
+                ],
+                "deliverables": [
+                    "Early working prototype",
+                    "Efficient progress tracking"
+                ]
+            },
+            {
+                "id": 4,
+                "title": "User-Centric Design & Testing",
+                "description": "Your users deserve an intuitive, seamless experience. We rigorously test every feature to ensure reliability, security, and exceptional usability across all devices.",
+                "activities": [
+                    "Usability & A/B testing",
+                    "Cross-platform compatibility",
+                    "Automated & manual QA"
+                ],
+                "deliverables": [
+                    "Bug-free, high-performance product",
+                    "Optimized user experience"
+                ]
+            },
+            {
+                "id": 5,
+                "title": "Deployment, Launch & Scaling",
+                "description": "We don’t just launch your software – we ensure it thrives. With scalable architecture and ongoing support, we help you adapt, grow, and stay ahead of the competition.",
+                "activities": [
+                    "Zero-downtime deployment",
+                    "Performance & security optimization",
+                    "Continuous support & updates"
+                ],
+                "deliverables": [
+                    "Seamless product launch",
+                    "Scalable architecture & ongoing support"
+                ]
+            }
+        ]
+    }
 
 };
 

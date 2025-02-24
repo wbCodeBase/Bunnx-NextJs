@@ -806,33 +806,33 @@ const contentBySlug = {
     },
 
     "hire-software-developer": {
-        "h2": "Development Methodology",
-        "h4": "Structured Software Development Process",
-        "p": "Our development methodology follows an enhanced agile framework, incorporating best practices from both traditional and modern development approaches. Each phase is designed to ensure quality, maintain efficiency, and deliver measurable results.",
+        "h2": "Developer Hiring Process",
+        "h4": "Strategic Developer Selection & Onboarding",
+        "p": "Our developer hiring process is designed to identify and onboard the perfect technical talent for your needs. We combine rigorous technical assessment with personality matching to ensure you get developers who not only code well but also fit seamlessly into your team culture.",
         "steps": [
             {
                 "id": 1,
-                "title": "Discovery & Architecture Phase",
-                "description": "We begin with systematic requirement gathering, following our CLEAR framework: Collect user stories, List technical requirements, Evaluate constraints, Architect solutions, and Review with stakeholders. This phase produces detailed technical specifications and architecture documents.",
+                "title": "Requirements & Skill Matching",
+                "description": "We begin by understanding your exact technical needs, team structure, and project goals. Our talent specialists analyze your requirements to identify the ideal skill set, experience level, and cultural attributes needed for your perfect developer match.",
                 "icon": FeaturesValidation
             },
             {
                 "id": 2,
-                "title": "Development Sprints Phase",
-                "description": "Development follows our structured sprint methodology: 2-week iterations, daily stand-ups, mid-sprint reviews, and end-sprint demonstrations. Each sprint includes four key stages: feature development, internal testing, code review, and integration testing.",
+                "title": "Technical Assessment & Screening",
+                "description": "Candidates undergo our comprehensive evaluation process including live coding sessions, architecture design challenges, and problem-solving tests. We assess both theoretical knowledge and practical skills in your required technology stack to ensure technical excellence.",
                 "icon": Agile
             },
             {
                 "id": 3,
-                "title": "Quality Assurance Phase",
-                "description": "Our QA methodology involves systematic testing cycles: unit testing (automated), integration testing (automated and manual), user acceptance testing, and performance testing. Each cycle must meet predefined quality gates before proceeding to the next stage.",
+                "title": "Team Integration & Communication",
+                "description": "Selected developers participate in team interaction sessions to evaluate their communication skills, collaborative approach, and cultural fit. We assess their ability to articulate technical concepts, handle feedback, and adapt to your team's working style.",
                 "icon": Coding
             },
             {
                 "id": 4,
-                "title": "Deployment & Optimization Phase",
-                "description": "We follow a staged deployment methodology: development environment testing, staging environment validation, production deployment, and post-deployment monitoring. Each stage includes automated health checks, rollback procedures, and performance benchmarking.",
-                "icon": Coding
+                "title": "Seamless Onboarding & Support",
+                "description": "Once selected, developers undergo project-specific training and tools setup. We provide continuous support, regular performance reviews, and backup resources to ensure consistent productivity and long-term success of the engagement.",
+                "icon": RealTime
             }
         ]
     },
@@ -868,6 +868,7 @@ const contentBySlug = {
             }
         ]
     },
+
     "hire-dedicated-development-team": {
         "h2": "Development Team Integration Methodology",
         "h4": "Systematic Approach to Building Your Extended Development Team",
@@ -930,9 +931,45 @@ const contentBySlug = {
                 "icon": RealTime
             }
         ]
+    },
+
+    "software-development-outsourcing-company-in-india": {
+        "h2": "Our Outsourcing Development Methodology",
+        "h4": "A Strategic, Scalable & Transparent Outsourcing Model",
+        "p": "We follow a structured outsourcing methodology that ensures seamless integration, efficient collaboration, and high-quality software delivery. Our approach minimizes risks, maximizes productivity, and guarantees alignment with your business goals.",
+        "steps": [
+            {
+                "id": 1,
+                "title": "Needs Assessment & Strategy",
+                "description": "We analyze your project goals, technical requirements, and business challenges to design a tailored outsourcing strategy.",
+                "icon": FeaturesValidation
+            },
+            {
+                "id": 2,
+                "title": "Talent Acquisition & Team Formation",
+                "description": "We handpick top-tier developers, designers, and project managers who align with your technical and cultural expectations.",
+                "icon": Startup
+            },
+            {
+                "id": 3,
+                "title": "Agile Development & Collaboration",
+                "description": "We establish seamless communication channels and follow an agile approach to ensure transparency and efficiency.",
+                "icon": Agile
+            },
+            {
+                "id": 4,
+                "title": "Quality Assurance & Security Compliance",
+                "description": "We implement rigorous testing, code reviews, and security measures to maintain high standards and risk-free software.",
+                "icon": Coding
+            },
+            {
+                "id": 5,
+                "title": "Deployment & Ongoing Optimization",
+                "description": "We ensure smooth deployment, monitor performance, and provide continuous support to help your software scale effectively.",
+                "icon": RealTime
+            }
+        ]
     }
-
-
 
 
 }

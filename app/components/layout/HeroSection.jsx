@@ -211,7 +211,16 @@ const HeroSection = ({ pageSlug, extractNameFromSlug, heroDefaultImg }) => {
     "ctaText": "Get started with us",
     "ctaRedirectUrl": "#contact-us",
     "fetchOnSlug": "offshore-software-development-center-india"
+  },
+
+  {
+    "title": "India’s Leading Software Development Outsourcing Company",
+    "description": "Bring your ideas to life with our expert engineers. With 500+ successful projects, we blend Silicon Valley excellence with India’s innovation. Our 200+ certified developers specialize in AI, Cloud, Blockchain, and more, delivering solutions 40% faster. Skip the hassle of building a team – we provide pre-vetted talent, modern tools, and proven processes. Whether you need a full product team or niche expertise, we’re here to help you build the future.",
+    "ctaText": "Let’s Talk – Free Consultation",
+    "ctaRedirectUrl": "#contact-us",
+    "fetchOnSlug": "software-development-outsourcing-company-in-india"
   }
+
 ]
 
   const heroSectionObj = heroSection.find(section => 

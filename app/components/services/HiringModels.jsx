@@ -1501,7 +1501,7 @@ const serviceData = {
 
 
 
-  
+
   "it-staff-augmentation-services": {
     "title": "Choose From Our Staff Augmentation Service Models",
     "description": "Your business is growing, projects are piling up, and hiring takes too long. That’s where we step in. Our staff augmentation models help you bring in skilled professionals without the hassle of recruitment, payroll, or paperwork. If you need a dedicated team, temporary support, or project-based expertise, we’ve got you covered.",
@@ -1568,7 +1568,7 @@ const serviceData = {
   },
 
   "hire-software-developer": {
-    "title": "Choose From Our Software Developer Service Models",
+    "title": "Choose From Our Hire Software Developer Service Models",
     "description": "Picking an engagement model isn’t just about costs—it’s about how you want to build, collaborate, and grow your project. Some businesses prefer a well-structured plan with fixed pricing, while others need the freedom to experiment and adapt. If you want a defined roadmap from day one or prefer ongoing development with room for change, here are the options you must choose.",
     "models": [
       {
@@ -1833,6 +1833,74 @@ const serviceData = {
     ]
   },
 
+  "software-development-outsourcing-company-in-india": {
+    "title": "Outsource Your Software Development with India’s Top Engineers",
+    "description": "Accelerate your product development with our expert outsourcing solutions. Whether you need a full-scale development team, expert consultants, or project-based execution, we provide flexible engagement models tailored to your business needs. Scale efficiently, reduce costs, and focus on innovation while we handle the development.",
+    "models": [
+      {
+        "title": "Dedicated Development Team",
+        "subtitle": "An exclusive team aligned with your goals",
+        "icon": lightdotnetmodalicon,
+        "sections": [
+          {
+            "type": "para",
+            "content": "Build a long-term, high-performance team that works as an extension of your company. Our dedicated developers integrate seamlessly with your workflows, following your processes and business culture."
+          },
+          {
+            "type": "list",
+            "content": [
+              "Fully managed team committed to your projects.",
+              "Seamless collaboration with your in-house staff.",
+              "Scalable team structure to match project needs.",
+              "Access to top-tier engineering talent.",
+              "End-to-end development, from architecture to deployment."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "IT Staff Augmentation",
+        "subtitle": "Boost your team with expert engineers",
+        "icon": teamAug,
+        "sections": [
+          {
+            "type": "para",
+            "content": "Augment your existing team with highly skilled developers, designers, or QA engineers. Whether you need short-term assistance or specialized expertise, we provide vetted professionals to accelerate your project’s success."
+          },
+          {
+            "type": "list",
+            "content": [
+              "Quickly onboard experienced professionals.",
+              "No long-term hiring commitments.",
+              "Reduce overhead costs and HR burdens.",
+              "Specialized expertise in AI, Cloud, Blockchain, and more.",
+              "Work in sync with your internal teams."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Project-Based Outsourcing",
+        "subtitle": "Turnkey software development solutions",
+        "icon": ProjectBased,
+        "sections": [
+          {
+            "type": "para",
+            "content": "From idea to deployment, our project-based outsourcing model delivers complete software solutions with fixed timelines and budgets. We ensure high-quality development while you focus on business growth."
+          },
+          {
+            "type": "para",
+            "content": "Fixed Price Model:\nBest for well-defined projects with clear objectives and deliverables. Provides cost predictability and structured execution."
+          },
+          {
+            "type": "para",
+            "content": "Time & Material Model:\nIdeal for evolving projects requiring continuous development. Offers flexibility in scope, resources, and billing."
+          }
+        ]
+      },
+
+    ]
+  }
 
 };
 

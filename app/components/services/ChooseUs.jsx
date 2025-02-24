@@ -250,13 +250,13 @@ const data = [
   },
   {
     "slug": "hire-software-developer",
-    "title": "Leading Software Development Experts",
-    "description1": "Great software is built by the right people. If you're looking to bring in skilled developers without hiring in-house, you're in the right place.",
-    "description2": "Our team knows how to build, fix, and improve software so your business can keep moving forward without tech getting in the way.",
-    "buttonText": "Get Started!",
+    "title": "Meet Your Next Software Development Dream Team",
+    "description1": "Building great software shouldn't give you headaches. Whether you're a startup founder with a brilliant idea or an enterprise leader looking to innovate, we'll match you with developers who just 'get it' – no lengthy interviews or HR hassles needed.",
+    "description2": "These aren't just coders – they're problem solvers who love turning complex challenges into elegant solutions. They'll dive deep into understanding your business, speak in plain English (not tech jargon), and become the reliable tech partners you've been looking for.",
+    "buttonText": "Let's Build Something Great",
     "link": "#contact-us",
     "imageSrc": softwareDev,
-    "altText": "Hire Software Developer"
+    "altText": "Collaborative Software Development Team"
   },
   {
     "slug": "it-outsourcing-services",
@@ -287,8 +287,19 @@ const data = [
     "link": "#contact-us",
     "imageSrc": softwareDev,
     "altText": "Offshore Development Center"
-  }
+  },
 
+  {
+    "slug": "software-development-outsourcing-company-in-india",
+    "title": "Your Trusted Partner for Scalable Software Development",
+    "description1": "Outsourcing software development shouldn’t feel like outsourcing—it should feel like an extension of your team. We ensure seamless collaboration, high-quality code, and on-time delivery to help you scale effortlessly.",
+    "description2": "With a team of seasoned engineers, architects, and strategists, we don’t just build software; we build long-term partnerships that drive innovation and business growth.",
+    "buttonText": "Let’s Build Something Great!",
+    "link": "#contact-us",
+    "imageSrc": softwareDev,
+    "altText": "Outsourcing Software Development Company"
+  }
+  
 
 
 ];
@@ -298,11 +309,6 @@ const data = [
 
  
   
-
-
-
-
-
 
 
 

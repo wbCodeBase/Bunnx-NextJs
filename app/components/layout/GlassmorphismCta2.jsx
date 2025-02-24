@@ -223,7 +223,17 @@ const data = [
     "description": "We create a collaborative space where ideas turn into working systems. If it’s backend development or system architecture, our engineers bring expertise that drives measurable progress.",
     "buttonText": "Contact Us Now",
     "backgroundImage": "https://images.pexels.com/photos/316681/pexels-photo-316681.jpeg"
+  },
+
+  {
+    "slug": "software-development-outsourcing-company-in-india",
+    "tagline": "Outsource Smart. Scale Fast. Innovate Without Limits.",
+    "title": "Empower Your Business with India’s Best Software Development Talent",
+    "description": "Why struggle with hiring, infrastructure, and overhead costs? Get a world-class team of developers, designers, and engineers working exclusively on your projects—without the hassle. From MVPs to enterprise-grade solutions, we accelerate your product’s success with cutting-edge technologies and proven expertise. Let’s build something extraordinary, together.",
+    "buttonText": "Get Your Free Consultation",
+    "backgroundImage": "https://images.pexels.com/photos/316681/pexels-photo-316681.jpeg"
   }
+
 
 
 ];
