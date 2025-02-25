@@ -13,9 +13,15 @@ const HeroSection = () => {
                 <div className="sm:mt-8 w-full lg:w-[55%] py-10 px-4 flex gap-20 flex-col sm:pt-18">
                     <div>
                         <span className="lg:text-4xl text-2xl font-bold">Company Overview</span>
-                        <h1 className="lg:text-2xl my-2 font-medium">We transform today&apos;s ideas into tomorrow&apos;s possibilities to drive technology and business changes.</h1>
+                        {/* <h1 className="lg:text-2xl my-2 font-medium">We transform today&apos;s ideas into tomorrow&apos;s possibilities to drive technology and business changes.</h1>
                         <p className="lg:text-lg text-md text-gray-600 my-4">AppsDevPro (App Developers Programmers) is a leading IT company providing expert offshore developers for hire for your project. We provide highly experienced, certified and skilled developers with technical expertise and domain knowledge. We provide 500+ developers that help companies ranging from startups to enterprises. Our large pool of inhouse development team gives us expertise in meeting technology challenges of any magnitude or complexity.</p>
-                        <p className="lg:text-lg text-md text-gray-600 my-4">AppsDevPro&apos; team of professional and dedicated developers offer decades of experience in the different niches and industries to launch custom software, web & mobile apps successfully for seamless performance across different platforms.</p>
+                        <p className="lg:text-lg text-md text-gray-600 my-4">AppsDevPro&apos; team of professional and dedicated developers offer decades of experience in the different niches and industries to launch custom software, web & mobile apps successfully for seamless performance across different platforms.</p> */}
+
+
+                        <h1 className="lg:text-2xl my-2 font-medium">We craft innovative digital solutions that turn ideas into impactful technology, fueling business growth.</h1>
+                        <p className="lg:text-lg text-md text-gray-600 my-4">Bunnx is a trusted software development company delivering top-tier engineering talent for businesses worldwide. We specialize in providing highly skilled, dedicated developers who bring deep technical expertise and industry insights. With a robust team of 500+ professionals, we help startups and enterprises build, scale, and optimize their software solutions efficiently.</p>
+                        <p className="lg:text-lg text-md text-gray-600 my-4">Our passionate team at Bunnx blends years of experience with cutting-edge technology to develop custom web, mobile, and enterprise applications. From concept to deployment, we ensure high-performance solutions tailored to meet evolving business needs.</p>
+
 
                         <div className="flex items-center justify-center sm:justify-start">
                             <Link href="/" className='flex items-center justify-center gap-2 bg[#261E80] p-1 pl-3 font-medium text-lg bg-orange-500 rounded-full mt-4 text-white'><span> Get connected with us </span> <span className='bg-white rounded-full p-3 text-black rotate-45'> <FaLocationArrow /> </span></Link>

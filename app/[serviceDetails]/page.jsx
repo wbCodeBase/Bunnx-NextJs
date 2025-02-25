@@ -10,7 +10,7 @@ export async function generateMetadata({ params }) {
   const response = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/metadata/${currentSlug}`);
   if (!response.ok) {
     console.log(`Failed to fetch metadata: ${response.statusText}`);
-    return null
+    return null 
   }
 
   const jsonData = await response.json(); // Parse JSON once

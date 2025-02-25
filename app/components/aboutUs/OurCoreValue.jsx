@@ -1,10 +1,8 @@
 import React from 'react'
 
 
-import { GoLightBulb } from "react-icons/go";
 import Image from 'next/image';
 
-import excellence from "/public/basicComponent/excellence.png";
 import accountability from "/public/aboutUs/Accountability.png";
 import collaboration from "/public/aboutUs/Collaboration.png";
 import Excellence from "/public/aboutUs/Excellence.png";

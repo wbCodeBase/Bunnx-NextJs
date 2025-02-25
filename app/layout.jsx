@@ -26,7 +26,7 @@ const quando = Quando({
 
 export const metadata = {
   title: {
-    template: '%s | Bunnx',
+    template: '%s',
     default: 'Software Development Company in India | Website Development Agency | Bunnx', // a default is required when creating a template
   },
   description: "Custom Software Development Services and Solutions to build top-tier intelligent enterprises with speed and agility.",
@@ -39,7 +39,7 @@ export const metadata = {
   },
 
   openGraph: {
-    url: '/',
+    url: '/', 
     siteName: 'Bunnx',
     images: [
       {

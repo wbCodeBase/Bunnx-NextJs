@@ -27,7 +27,7 @@ export const metadata = {
 }; 
 
 
-export default async function Home() {
+export default async function Home() { 
 
   const session = await auth()
   console.log("Home - User", session?.user || "Not Authenticated")

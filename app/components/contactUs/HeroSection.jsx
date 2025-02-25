@@ -18,11 +18,10 @@ const HeroSection = () => {
                         <p className="lg:text-xl text-md text-gray-600 my-4">Let’s talk about your next big app idea. Send us a message and we will be in touch to know more about your project requirements. Hire us and work with the world-class web & mobile development teams.</p>
 
                         <div className="flex items-center justify-center sm:justify-start">
-                            <Link href="/" className='flex items-center justify-center gap-2 bg[#261E80] p-1 pl-3 font-medium text-lg bg-orange-500 rounded-full mt-4 text-white'><span> Get in touch </span> <span className='bg-white rounded-full p-3 text-black rotate-45'> <FaLocationArrow /> </span></Link>
+                            <Link href="#contact-us" className='flex items-center justify-center gap-2 bg[#261E80] p-1 pl-3 font-medium text-lg bg-orange-500 rounded-full mt-4 text-white'><span> Get in touch </span> <span className='bg-white rounded-full p-3 text-black rotate-45'> <FaLocationArrow /> </span></Link>
                         </div>
 
                     </div>
-
 
                 </div>
 
