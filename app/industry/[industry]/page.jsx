@@ -287,36 +287,32 @@ export default function Industry({ params }) {
 }
 
 
-{/* <script> livestorm.on('registration-success', function () { window.location = 'https://www.nodinite.com'})</script> */ }
-
-
-
-
-
 
 
 import React from 'react'
 import Image from 'next/image';
 
-import accountability from "/public/aboutUs/Accountability.png";
-import collaboration from "/public/aboutUs/Collaboration.png";
-import Excellence from "/public/aboutUs/Excellence.png";
-import Innovation from "/public/aboutUs/Innovation.png";
-import Integrity from "/public/aboutUs/Integrity.png";
-import Transparency from "/public/aboutUs/Transparency.png";
-
+import agreement from "/public/industry/icons/agreement.png";
+import investmentInsurance from "/public/industry/icons/investmentInsurance.png";
+import logistics from "/public/industry/icons/logistics.png";
+import manufacturing from "/public/industry/icons/manufacturing.png";
+import onlineShopping from "/public/industry/icons/onlineShopping.png";
+import protection from "/public/industry/icons/protection.png";
+import travelTourism from "/public/industry/icons/travelTourism.png";
+import school from "/public/industry/icons/school.png";
+import socialMedia from "/public/industry/icons/socialMedia.png";
 
 
 const industries = [
-  { name: "Finance & Insurance", slug: "finance-insurance-solutions", img: Excellence },
-  { name: "Education", slug: "education-software-development", img: Transparency },
-  { name: "Healthcare", slug: "healthcare-app-development", img: Integrity },
-  { name: "Logistics & Distribution", slug: "logistics-software-development", img: Innovation },
-  { name: "Retail & eCommerce", slug: "retail-ecommerce-solutions", img: collaboration },
-  { name: "Travel & Hospitality", slug: "travel-hospitality-solutions", img: accountability },
-  { name: "Media & Entertainment", slug: "media-entertainment-solutions", img: Excellence },
-  { name: "Manufacturing", slug: "manufacturing-software-solutions", img: Transparency },
-  { name: "Real Estate & Construction", slug: "real-estate-construction-solutions", img: Integrity }
+  { name: "Finance & Insurance", slug: "finance-insurance-solutions", img: investmentInsurance },
+  { name: "Education", slug: "education-software-development", img: school },
+  { name: "Healthcare", slug: "healthcare-app-development", img: protection },
+  { name: "Logistics & Distribution", slug: "logistics-software-development", img: logistics },
+  { name: "Retail & eCommerce", slug: "retail-ecommerce-solutions", img: onlineShopping },
+  { name: "Travel & Hospitality", slug: "travel-hospitality-solutions", img: travelTourism },
+  { name: "Media & Entertainment", slug: "media-entertainment-solutions", img: socialMedia },
+  { name: "Manufacturing", slug: "manufacturing-software-solutions", img: manufacturing },
+  { name: "Real Estate & Construction", slug: "real-estate-construction-solutions", img: agreement }
 ];
 
 function AllIndustry() {
@@ -324,11 +320,11 @@ function AllIndustry() {
     <>
       <section className="border-t border-b container mx-auto max-w-screen-lg xl:max-w-screen-xl px-4 md:px-6 py-10">
         <p className='font-semibold text-orange-500 text-lg'>Our Core Values</p>
-        <h2 className='font-semibold text-3xl my-2'>Inspiring Trust & Driving Growth Across Industries</h2>
-        <h3 className='text-md text-gray-800'>
-          At Bunnx, we believe in fostering transparency, innovation, and collaboration. Our expertise helps industries
-          thrive with future-ready solutions, ensuring lasting success in a fast-evolving digital landscape.
-        </h3>
+        <h2 className='font-semibold text-2xl my-4'>Industries We Serve</h2>
+        <p className='text-md text-gray-800'>
+          We empower businesses across diverse sectors, delivering tailored solutions that drive efficiency and growth.
+          Our expertise spans:
+        </p>
 
         <div className="antialiased mt-8">
           <main className="flex flex-col justify-center overflow-hidden">
