@@ -15,7 +15,7 @@ import { useSession } from "next-auth/react";
 const menuItems = [
   { title: 'Home', slug: '/', hasSubmenu: false },
   { title: 'Service', slug: '/best-software-development-company-in-india', hasSubmenu: true },
-  // { title: 'Hire', slug: '/hire/php-developer', hasSubmenu: true },
+  { title: 'Hire', slug: '/hire/node-developer', hasSubmenu: true },
   { title: 'About Us', slug: '/about-us', hasSubmenu: false },
   { title: 'Contact Us', slug: '/contact-us', hasSubmenu: false },
 ]
