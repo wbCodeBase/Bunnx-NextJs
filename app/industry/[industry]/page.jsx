@@ -319,8 +319,8 @@ function AllIndustry() {
   return (
     <>
       <section className="border-t border-b container mx-auto max-w-screen-lg xl:max-w-screen-xl px-4 md:px-6 py-10">
-        <p className='font-semibold text-orange-500 text-lg'>Our Core Values</p>
-        <h2 className='font-semibold text-2xl my-4'>Industries We Serve</h2>
+        <p className='font-semibold text-orange-500 text-lg'>We deal with</p>
+        <h2 className='font-semibold text-2xl my-3'>Industries We Serve with end-to-end support</h2>
         <p className='text-md text-gray-800'>
           We empower businesses across diverse sectors, delivering tailored solutions that drive efficiency and growth.
           Our expertise spans:
