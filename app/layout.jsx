@@ -2,7 +2,7 @@
 // import localFont from "next/font/local";
 import { AR_One_Sans, Quando } from "next/font/google";
 import "./globals.css";
-import { GoogleAnalytics } from '@next/third-parties/google'
+import { GoogleTagManager } from '@next/third-parties/google'
 
 import { SessionProvider } from "next-auth/react"; // Import SessionProvider
 import { ReduxProvider } from '../store/ReduxProvider';
@@ -68,19 +68,6 @@ export default async function RootLayout({ children }) {
   return (
     <html lang="en">
 
-      <head>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-MWQ723WDF6"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments)}
-          gtag('js', new Date());
-
-          gtag('config', 'G-MWQ723WDF6');
-        </script>
-      </head>
-
-
-      <GoogleAnalytics gaId="G-MWQ723WDF6" />
 
       <body className={` ${quando.variable} ${arOneSans.variable} antialiased`}>
 
@@ -95,6 +82,10 @@ export default async function RootLayout({ children }) {
           </ReduxProvider>
         </SessionProvider>
       </body>
+
+
+      <GoogleTagManager gaId="G-MWQ723WDF6" />
+
     </html>
   );
 }
