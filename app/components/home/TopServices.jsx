@@ -21,7 +21,7 @@ const TopServices = () => {
                         <div className='grid sm:grid-cols-2 gap-10 mt-6 grid-cols-1 px-4'>
                             <div className="">
                                 {/* <span><SiApacheguacamole className='text-purple-500' /></span> */}
-                                <span><MdOutlineSettingsSuggest className='text-purple-500 text-xl' /></span>
+                                <span><MdOutlineSettingsSuggest className='text-purple-500 text-xl' /></span> 
                                 <h5 className='font-semibold my-1'>Product Prototyping</h5>
                                 <p className='text-sm text-gray-500 font-normal'>Turn your ideas into reality with rapid prototyping.</p>
                             </div>

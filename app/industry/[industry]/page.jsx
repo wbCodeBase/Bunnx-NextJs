@@ -139,7 +139,7 @@ export default function Industry({ params }) {
       alert('Error submitting form: ' + err.data.error);
     }
   };
-
+ 
   const currentIndustry = industries.find(industry => industry.slug === currentIndustrySlug);
 
   return (

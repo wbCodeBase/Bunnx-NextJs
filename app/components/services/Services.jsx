@@ -9,32 +9,24 @@ const defaultServices = [
     title: "Front-End Development",
     description:
       "Take the user level to the next level and develop a flawless website with the top front end development company.",
-    ctaRedirectUrl: {
-      slug: "front-end-development-services",
-    }
+    "ctaRedirectUrl": "front-end-development-services",
   },
   {
     title: "Back-End Development",
     description:
       "Redesign the future of your web presence with a flawlessly tuned website, crafted by the wizards of the best back end development.",
-    ctaRedirectUrl: {
-      slug: "back-end-development-services",
-    }
+      "ctaRedirectUrl": "back-end-development-services",
   },
   {
     title: "Full Stack Development",
     description:
       "Full Stack Development involves building and managing both front-end and back-end of web applications, ensuring seamless functionality.",
-    ctaRedirectUrl: {
-      slug: "full-stack-development-services",
-    },
+    ctaRedirectUrl: "full-stack-development-services",
   },
   {
     title: "Software Development",
     description: "Custom Software Development Services and Solutions to build top-tier intelligent enterprises with speed and agility.",
-    ctaRedirectUrl: {
-      slug: "best-software-development-company-in-india",
-    },
+    ctaRedirectUrl: "best-software-development-company-in-india",
   },
 ];
 
@@ -1647,7 +1639,7 @@ const services = [
   {
     "title": "Offshore Software Development",
     "description": "Offshoring takes outsourcing to distant countries, often across continents. Companies benefit from lower development costs and access to a diverse talent pool, provided there are clear documentation processes and structured workflows in place.",
-    "ctaRedirectUrl" : "offshore-software-development-center-india",
+    "ctaRedirectUrl": "offshore-software-development-center-india",
     "fetchOnSlug": ["software-development-outsourcing-company-in-india"]
   },
   {
@@ -1865,7 +1857,7 @@ const OurServicesHeadPara = [
 
 
 const Services = ({ serviceDetailPageSlug, extractNameFromSlug }) => {
- 
+
 
   var matchingServices = services.filter(service =>
     service.fetchOnSlug.includes(serviceDetailPageSlug)
@@ -1902,14 +1894,9 @@ const Services = ({ serviceDetailPageSlug, extractNameFromSlug }) => {
 
               {service?.ctaRedirectUrl &&
                 <div className='flex justify-end items-center mt-2'>
-                  <Link href={`${service.ctaRedirectUrl}`} className='flex items-center justify-center text-orange-500 p-1 pl-3 font-medium text-md'><span className='relative after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[1px] after:bg-orange-500 after:transition-all after:duration-300 hover:after:w-full'> Know more </span> <span className='px-1'> <IoArrowForward /> </span></Link>
+                  <Link href={`${service?.ctaRedirectUrl}`} className='flex items-center justify-center text-orange-500 p-1 pl-3 font-medium text-md'><span className='relative after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[1px] after:bg-orange-500 after:transition-all after:duration-300 hover:after:w-full'> Know more </span> <span className='px-1'> <IoArrowForward /> </span></Link>
                 </div>
               }
-              {/* {service?.ctaRedirectUrl && service?.ctaRedirectUrl?.slug &&
-                <div className='flex justify-end items-center mt-2'>
-                  <Link href={`${service.ctaRedirectUrl.slug}`} className='flex items-center justify-center text-orange-500 p-1 pl-3 font-medium text-md'><span className='relative after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[1px] after:bg-orange-500 after:transition-all after:duration-300 hover:after:w-full'> Know more </span> <span className='px-1'> <IoArrowForward /> </span></Link>
-                </div>
-              } */}
 
             </div>
           ))

@@ -56,6 +56,7 @@ export default function ServiceDetailsComp() {
 
 
   if (activeSlugError) {
+    console.log(activeSlugError);    
     return (
       <div className="flex flex-col items-center justify-center h-screen w-full space-y-4">
         {activeSlugError && (
@@ -117,6 +118,7 @@ export default function ServiceDetailsComp() {
           <NumericCounterInfo />
 
           {/* <Services serviceSectionObj={pageContentData?.servicesSection} serviceDetailPageSlug={serviceDetails} extractNameFromSlug={formatparameter(serviceDetails)} /> */}
+         
           <Services serviceDetailPageSlug={serviceDetails} extractNameFromSlug={formatparameter(serviceDetails)} />
 
           <PlaneCta serviceDetailPageSlug={serviceDetails} />

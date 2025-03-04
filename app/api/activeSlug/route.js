@@ -7,6 +7,7 @@ export async function GET() {
   try {
     await connectToDatabase();
     const ActiveSlug = await getActiveSlug();
+    
     return new Response(JSON.stringify(ActiveSlug), { status: 200 });
   } catch (error) {
     console.error('Error in GET request:', error.message);

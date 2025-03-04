@@ -295,8 +295,7 @@ export default function EngagementModel({ serviceDetailPageSlug }) {
 
                                 <Link
                                     className="text-lg bg-amber-500 group-hover:bg-white group-hover:text-black rounded-lg mt-4 text-white text-center p-2"
-                                    href="/hire/node-developer"
-                                >
+                                    href="/contact-us">
                                     Hire Us
                                 </Link>
                             </div>
