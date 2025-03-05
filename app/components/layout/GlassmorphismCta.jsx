@@ -220,6 +220,15 @@ const data = [
     buttonText: "Launch Your Project Now!",
     backgroundImage: "https://spirecapital.com/wp-content/uploads/2017/02/CTA-background-get-in-touch.jpg",
   },
+  
+  {
+    "slug": "hire-dedicated-technical-team",
+    "tagline": "Tech Talent Without Boundaries, Impact Without Limits!",
+    "title": "Your Success Is Our Obsession",
+    "description": "Imagine a team that breathes your vision, thinks like founders, and transforms complex challenges into breakthrough solutions. Our dedicated developers are more than experts – they're your strategic technology allies, committed to turning your most ambitious technological dreams into reality.",
+    "buttonText": "Transform Your Vision Now!",
+    "backgroundImage": "https://spirecapital.com/wp-content/uploads/2017/02/CTA-background-get-in-touch.jpg"
+}
 
   
 

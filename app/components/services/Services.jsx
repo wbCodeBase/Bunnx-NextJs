@@ -15,7 +15,7 @@ const defaultServices = [
     title: "Back-End Development",
     description:
       "Redesign the future of your web presence with a flawlessly tuned website, crafted by the wizards of the best back end development.",
-      "ctaRedirectUrl": "back-end-development-services",
+    "ctaRedirectUrl": "back-end-development-services",
   },
   {
     title: "Full Stack Development",
@@ -1692,9 +1692,59 @@ const services = [
     "title": "Ongoing Support & Maintenance",
     "description": "Beyond development, we offer continuous support to keep your software running smoothly. From bug fixes to performance optimization, our experts have you covered.",
     "fetchOnSlug": ["hire-dedicated-development-team"]
-  }
+  },
+
+
+
+
+
+  {
+    "title": "IT Staff Augmentation",
+    "description": "Need superhero developers without the hiring headache? We're your talent accelerator, plugging world-class tech experts directly into your team, instantly boosting your innovation power and project momentum.",
+    "ctaRedirectUrl": "it-staff-augmentation-services",
+    "fetchOnSlug": ["hire-dedicated-technical-team"]
+  },
+  {
+    "title": "Hire Software Developer",
+    "description": "Forget endless recruitment cycles. We handpick coding rockstars who don't just write code, but breathe life into your most ambitious technological dreams with precision and passion.",
+    "ctaRedirectUrl": "hire-software-developer",
+    "fetchOnSlug": ["hire-dedicated-technical-team"]
+  },
+  {
+    "title": "IT Outsourcing Services",
+    "description": "Transform your IT challenges into strategic opportunities. Our outsourcing isn't about replacing your team—it's about empowering them with global expertise, seamless collaboration, and breakthrough innovations.",
+    "ctaRedirectUrl": "it-outsourcing-services",
+    "fetchOnSlug": ["hire-dedicated-technical-team"]
+  },
+  {
+    "title": "Dedicated Development Team",
+    "description": "Imagine having a dream team of tech experts who are 100% committed to your project, working as an extension of your own team. We don't just assign developers; we craft a custom squad of innovation champions who live and breathe your technological vision.",
+    "ctaRedirectUrl": "hire-dedicated-development-team",
+    "fetchOnSlug": ["hire-dedicated-technical-team"]
+  },
+
+  {
+    "title": "Offshore Software Development Center India",
+    "description": "Unlock the power of global talent without the global headaches. Our India-based development center is your gateway to world-class tech expertise, delivering cutting-edge solutions with the precision of local collaboration.",
+    "ctaRedirectUrl": "offshore-software-development-center-india",
+    "fetchOnSlug": ["hire-dedicated-technical-team"]
+  },
+  {
+    "title": "Outsourcing Software Development",
+    "description": "Beyond borders, beyond expectations. We're not just an outsourcing company – we're your strategic technology partner, transforming India's rich tech talent into your competitive advantage, with seamless communication and breakthrough innovations.",
+    "ctaRedirectUrl": "software-development-outsourcing-company-in-india",
+    "fetchOnSlug": ["hire-dedicated-technical-team"]
+  },
+  
+  {
+    "title": "Cloud Engineering",
+    "description": "Navigate the cloud revolution with our engineering virtuosos. We design, migrate, and optimize cloud infrastructures that scale seamlessly, secure intelligently, and power your digital transformation.",
+    "ctaRedirectUrl": null,
+    "fetchOnSlug": ["hire-dedicated-technical-team"]
+  },
 
 ]
+
 
 
 
@@ -1703,6 +1753,11 @@ const OurServicesHeadPara = [
     serviceTitle: "Best WooCommerce Development Services",
     servicePara: "Your business isn’t static, and neither is your website. Whether you’re adding 10 products or 10,000, we create a foundation. Need a new feature down the road? We’ve got your back.",
     slug: "woocommerce-development-services-india"
+  },
+  {
+    serviceTitle: "More Than Developers. Your Innovation Partners.",
+    "servicePara": "We're not just filling seats – we're your tech dream team. Imagine having rockstar developers who think like founders, code like artists, and are 100% committed to turning your wildest tech ideas into reality. No more settling for generic talent. We handpick tech wizards who don't just work for you, but work with you – transforming challenges into breakthrough innovations.",
+    "slug": "hire-dedicated-technical-team"
   },
   {
     serviceTitle: "Best Front End Development Services",

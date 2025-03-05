@@ -57,7 +57,7 @@ const techStackData = {
                 { "name": "Dedicated Development Team", "description": "Robust Android solutions", "slug": "hire-dedicated-development-team" },
                 { "name": "Offshore Dedicated Centre", "description": "Build once, run everywhere", "slug": "offshore-software-development-center-india" }
             ],
-            linkViewMore: "dedicated-technical-team"
+            linkViewMore: "hire-dedicated-technical-team"
         },
         "eCommerce": {
             "title": "eCommerce",

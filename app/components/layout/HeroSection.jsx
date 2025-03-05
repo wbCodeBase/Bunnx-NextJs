@@ -30,6 +30,15 @@ const HeroSection = ({ pageSlug, extractNameFromSlug, heroDefaultImg }) => {
     "ctaRedirectUrl": "#contact-us",
     "fetchOnSlug": "front-end-development-services"
   },
+
+  {
+    "title": "A Brilliant Team, Minus the Headaches",
+    "description": "Remember that brilliant idea keeping you up at night? The one that could change everything? We're the secret weapon that turns those 3 AM sparks into world-changing realities. Imagine having a team of tech wizards who don't just code, but truly get your vision.",
+    "ctaText": "Get started with us",
+    "ctaRedirectUrl": "#contact-us",
+    "fetchOnSlug": "hire-dedicated-technical-team"
+  },
+
   {
     "title": "Software Development Services",
     "description": "Bunnx is Leading software Development Company in India to plan, implement new softwares and upgrades, improve customer service, and drive productivity. Enhance user satisfaction, drive results and accelerate innovation with Leading software development services that exceed expectations in functionality and growth.",

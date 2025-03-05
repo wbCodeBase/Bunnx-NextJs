@@ -1900,6 +1900,76 @@ const serviceData = {
       },
 
     ]
+  },
+
+
+  "hire-dedicated-technical-team": {
+    "title": "Unlock Your Vision with Our Expert Dedicated Teams",
+    "description": "Collaborate with top talent and streamline your development process. Our flexible solutions help you innovate and grow your business.",
+    "models": [
+      {
+        "title": "Dedicated Development Team",
+        "subtitle": "An exclusive team aligned with your goals",
+        "icon": lightdotnetmodalicon,
+        "sections": [
+          {
+            "type": "para",
+            "content": "Build a long-term, high-performance team that works as an extension of your company. Our dedicated developers integrate seamlessly with your workflows, following your processes and business culture."
+          },
+          {
+            "type": "list",
+            "content": [
+              "Fully managed team committed to your projects.",
+              "Seamless collaboration with your in-house staff.",
+              "Scalable team structure to match project needs.",
+              "Access to top-tier engineering talent.",
+              "End-to-end development, from architecture to deployment."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "IT Staff Augmentation",
+        "subtitle": "Boost your team with expert engineers",
+        "icon": teamAug,
+        "sections": [
+          {
+            "type": "para",
+            "content": "Augment your existing team with highly skilled developers, designers, or QA engineers. Whether you need short-term assistance or specialized expertise, we provide vetted professionals to accelerate your project’s success."
+          },
+          {
+            "type": "list",
+            "content": [
+              "Quickly onboard experienced professionals.",
+              "No long-term hiring commitments.",
+              "Reduce overhead costs and HR burdens.",
+              "Specialized expertise in AI, Cloud, Blockchain, and more.",
+              "Work in sync with your internal teams."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Project-Based Outsourcing",
+        "subtitle": "Turnkey software development solutions",
+        "icon": ProjectBased,
+        "sections": [
+          {
+            "type": "para",
+            "content": "From idea to deployment, our project-based outsourcing model delivers complete software solutions with fixed timelines and budgets. We ensure high-quality development while you focus on business growth."
+          },
+          {
+            "type": "para",
+            "content": "Fixed Price Model:\nBest for well-defined projects with clear objectives and deliverables. Provides cost predictability and structured execution."
+          },
+          {
+            "type": "para",
+            "content": "Time & Material Model:\nIdeal for evolving projects requiring continuous development. Offers flexibility in scope, resources, and billing."
+          }
+        ]
+      },
+
+    ]
   }
 
 };
@@ -1932,7 +2002,7 @@ export default function HiringModels({ serviceDetailPageSlug }) {
   return (
     <section className="bg-gray-50">
       <div className="container mx-auto max-w-screen-xl px-4 md:px-6 sm:py-10 py-5">
-        <h2 className="font-semibold text-orange-500 text-lg">Hiring Models</h2>
+        <h2 className="font-semibold text-orange-500 text-lg">Engagement Models</h2>
         <h4 className="font-semibold text-3xl my-2">{service.title}</h4>
         <p className="text-md text-gray-800">{service.description}</p>
 

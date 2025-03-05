@@ -232,12 +232,21 @@ const engageMentModelData = [
         "h4": "Flexible Engagement Models for Your Software Development Needs",
         "p": "Every project is unique, and so is our approach to hiring. Whether you need a dedicated team, project-based outsourcing, or a hybrid model, we offer tailored solutions to match your goals. Gain access to top-tier developers, reduce hiring complexities, and accelerate your development process. Explore our hiring models and find the perfect fit for your business.",
         "engagement": engagement
+    },
+
+
+    {
+        "slug": "hire-dedicated-technical-team",
+        "h2": "Choose From Our Hiring Models",
+        "h4": "Tailored Solutions for Your Software Journey",
+        "p": "We help you tell your project's story with precision. Our flexible models—dedicated teams, project-based, or hybrid—ensure a perfect fit for your vision. Unlock top talent, simplify hiring, and accelerate development.",
+        "engagement": engagement
     }
+
+
+
+
 ];
-
-
-
-
 
 
 const getCtaContent = (data, serviceDetailPageSlug) => {

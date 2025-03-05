@@ -244,7 +244,7 @@ const servicesData = {
     { name: 'Software Development', slug: 'best-software-development-company-in-india' },
     { name: 'Application Development', slug: 'application-development-services' },
     { name: 'Ecommerce Development', slug: 'ecommerce-development-company' },
-    { name: 'Dedicated Technical Team', slug: 'dedicated-technical-team' },
+    { name: 'Dedicated Technical Team', slug: 'hire-dedicated-technical-team' },
     // { name: 'QA & Testing', slug: 'qa-testing' },
     // { name: 'Cloud Services', slug: 'cloud-services' },
 
@@ -346,7 +346,7 @@ const servicesData = {
     },
     "Dedicated Technical Team": {
       title: 'Dedicated Technical Team',
-      slug: 'dedicated-technical-team',
+      slug: 'hire-dedicated-technical-team',
       description: 'Hire team for your next project',
       technologies: [
         { name: 'Staff Augmentation', slug: 'it-staff-augmentation-services' },

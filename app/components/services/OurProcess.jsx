@@ -2404,7 +2404,7 @@ const contentBySlug = {
                 "id": 1,
                 "title": "Defining Your Vision & Goals",
                 "description": "Every great software solution starts with clarity. We dive deep into your business needs, industry challenges, and user expectations to craft a tailored development roadmap.",
-                        "activities": [
+                "activities": [
                     "Define project scope & objectives",
                     "Select the best tech stack",
                     "Align strategy with business goals"
@@ -2468,6 +2468,84 @@ const contentBySlug = {
                 "deliverables": [
                     "Seamless product launch",
                     "Scalable architecture & ongoing support"
+                ]
+            }
+        ]
+    },
+
+    "hire-dedicated-technical-team": {
+        "h2": "Our Process",
+        "h4": "Transforming Dreams into Digital Masterpieces",
+        "p": "We're not just building software; we're crafting digital experiences that turn your boldest ideas into reality. Our process is your passport to technological breakthrough.",
+        "processSections": [
+            {
+                "id": 1,
+                "title": "Spark Your Vision",
+                "description": "We become your tech dream interpreters. Our team dives deep into your world, transforming abstract ideas into a crystal-clear technological roadmap that feels like pure magic.",
+                "activities": [
+                    "Decode your business DNA",
+                    "Architect breakthrough strategies",
+                    "Align tech with your wildest dreams"
+                ],
+                "deliverables": [
+                    "Innovation blueprint",
+                    "Strategic technology narrative"
+                ]
+            },
+            {
+                "id": 2,
+                "title": "Curate Your Tech Dream Team",
+                "description": "We handpick tech wizards who are more than just developers—they're innovation alchemists passionate about turning your vision into digital gold.",
+                "activities": [
+                    "Hunt global tech superstars",
+                    "Create collaboration magic",
+                    "Build your perfect tech squad"
+                ],
+                "deliverables": [
+                    "Elite innovation team",
+                    "Seamless collaborative ecosystem"
+                ]
+            },
+            {
+                "id": 3,
+                "title": "Innovation Sprint",
+                "description": "Our agile approach is like a high-performance engine. We break down complex challenges into rapid, precision-driven sprints that keep innovation constantly flowing.",
+                "activities": [
+                    "Rapid iterative development",
+                    "Dynamic feedback loops",
+                    "Continuous refinement"
+                ],
+                "deliverables": [
+                    "Living, breathing prototype",
+                    "Real-time progress tracking"
+                ]
+            },
+            {
+                "id": 4,
+                "title": "Experience Engineering",
+                "description": "We obsess over user experience. Every pixel, interaction, and moment is meticulously crafted to create digital experiences that feel magical and intuitive.",
+                "activities": [
+                    "Immersive user journey mapping",
+                    "Rigorous experience testing",
+                    "Multi-dimensional quality assurance"
+                ],
+                "deliverables": [
+                    "Frictionless digital experience",
+                    "Intuitive, powerful solution"
+                ]
+            },
+            {
+                "id": 5,
+                "title": "Launch & Evolve",
+                "description": "Your product isn't just launched—it's unleashed. We provide a launchpad that propels your solution, ensuring it grows, adapts, and stays ahead of the curve.",
+                "activities": [
+                    "Zero-friction deployment",
+                    "Intelligent performance tuning",
+                    "Continuous innovation support"
+                ],
+                "deliverables": [
+                    "Breakthrough product launch",
+                    "Adaptive, future-proof architecture"
                 ]
             }
         ]

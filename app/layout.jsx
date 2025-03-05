@@ -32,7 +32,7 @@ export const metadata = {
   description: "Custom Software Development Services and Solutions to build top-tier intelligent enterprises with speed and agility.",
   robots: "noindex", // Ensures pages are marked as noindex
 
-  metadataBase: new URL('https://bunnx.com'),
+  metadataBase: new URL('https://www.bunnx.com'),
 
   alternates: {
     canonical: '/',

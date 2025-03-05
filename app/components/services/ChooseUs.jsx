@@ -298,7 +298,18 @@ const data = [
     "link": "#contact-us",
     "imageSrc": softwareDev,
     "altText": "Outsourcing Software Development Company"
-  }
+  },
+
+  {
+    "slug": "hire-dedicated-technical-team",
+    "title": "Your Innovation Catalyst, Beyond Just Coding",
+    "description1": "We're not your typical outsourcing partner—we're your technological soulmates. Imagine a team that doesn't just write code, but breathes life into your most ambitious digital dreams, transforming challenges into breakthrough solutions.",
+    "description2": "Our tech wizards are more than engineers; they're innovation architects who turn your vision into a competitive superpower. We don't just deliver software; we craft digital experiences that propel your business into the future.",
+    "buttonText": "Unleash Your Tech Potential!",
+    "link": "#contact-us",
+    "imageSrc": softwareDev,
+    "altText": "Technology Partnership Redefined"
+ }
   
 
 

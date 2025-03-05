@@ -969,7 +969,41 @@ const contentBySlug = {
                 "icon": RealTime
             }
         ]
+    },
+
+    "hire-dedicated-technical-team": {
+        "h2": "Methodology",
+        "h4": "Hiring Your Dream Team",
+        "p": "Hiring a dedicated technical team requires more than just finding talent—it demands a strategic approach that aligns with your business goals. We help you navigate this process with precision and care.",
+        "steps": [
+            {
+                "id": 1,
+                "title": "Needs Assessment",
+                "description": "We start by understanding your unique project needs, identifying the skills and expertise required to bring your vision to life.",
+                "icon": FeaturesValidation
+            },
+            {
+                "id": 2,
+                "title": "Talent Acquisition",
+                "description": "We curate a team of exceptional developers who not only possess the necessary skills but also share your passion and vision.",
+                "icon": Startup
+            },
+            {
+                "id": 3,
+                "title": "Agile Collaboration",
+                "description": "Our agile methodologies ensure seamless collaboration between your team and ours, fostering an environment of innovation and rapid problem-solving.",
+                "icon": Agile
+            },
+            {
+                "id": 4,
+                "title": "Performance Optimization",
+                "description": "We continuously monitor and optimize team performance, ensuring that your project stays on track and meets the highest standards of quality and efficiency.",
+                "icon": Coding
+            }
+        ]
     }
+
+
 
 
 }

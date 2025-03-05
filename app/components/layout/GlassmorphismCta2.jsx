@@ -229,10 +229,20 @@ const data = [
     "slug": "software-development-outsourcing-company-in-india",
     "tagline": "Outsource Smart. Scale Fast. Innovate Without Limits.",
     "title": "Empower Your Business with India’s Best Software Development Talent",
-    "description": "Why struggle with hiring, infrastructure, and overhead costs? Get a world-class team of developers, designers, and engineers working exclusively on your projects—without the hassle. From MVPs to enterprise-grade solutions, we accelerate your product’s success with cutting-edge technologies and proven expertise. Let’s build something extraordinary, together.",
+    "description": "Why struggle with hiring, infrastructure, and overhead costs? Get a world-class team of developers, designers, and engineers working exclusively on your projects—without the hassle. Let’s build something extraordinary, together.",
     "buttonText": "Get Your Free Consultation",
     "backgroundImage": "https://images.pexels.com/photos/316681/pexels-photo-316681.jpeg"
-  }
+  },
+
+  {
+    "slug": "hire-dedicated-technical-team",
+    "tagline": "Partner with Passion. Scale with Ease. Innovate Without Boundaries.",
+    "title": "Want to Hire Dedicated Software Development Teams?",
+    "description": "Imagine having a dedicated team of innovators working just for you—no hiring headaches, no overhead worries. From MVPs to enterprise solutions, we bring your vision to life with cutting-edge tech and proven expertise. Let’s create something amazing together!",
+    "buttonText": "Start Your Journey with a Free Consultation",
+    "backgroundImage": "https://images.pexels.com/photos/316681/pexels-photo-316681.jpeg"
+}
+
 
 
 

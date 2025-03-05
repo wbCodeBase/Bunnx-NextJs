@@ -204,8 +204,15 @@ const PlaneCta = ({ serviceDetailPageSlug }) => {
             "para": "Skip the hiring struggles and development delays. Our expert teams integrate seamlessly into your workflow, delivering high-quality software at speed and scale. Whether you need full-cycle development or specialized expertise, we’ve got you covered. Let’s turn your ideas into reality with cutting-edge technology and world-class engineering.",
             "ctaText": "Start Your Project Today!",
             "slug": "software-development-outsourcing-company-in-india"
-          }
-          
+        },
+        {
+            "span": "Tech Talent Without Limits, Impact Without Boundaries",
+            "head": "Your Vision, Our Expertise, Zero Compromises",
+            "para": "Forget the recruitment maze and talent wars. We've curated a dream team of tech experts who seamlessly integrate into your workflow, turning your boldest ideas into reality. It's not outsourcing – it's a technological partnership that transforms businesses.",
+            "ctaText": "Let's Connect!",
+            "slug": "hire-dedicated-technical-team"
+        }
+
 
     ]
 

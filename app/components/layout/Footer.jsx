@@ -175,7 +175,7 @@ const Footer = () => {
                                         <li><Link href="cloud-services" className="text-gray-300 hover:text-white">Cloud Services</Link></li>
                                         <li><Link href="ecommerce-development-company" className="text-gray-300 hover:text-white">Ecommerce Development</Link></li>
                                         <li><Link href="qa-testing" className="text-gray-300 hover:text-white">QA Testing</Link></li>
-                                        <li><Link href="dedicated-technical-team" className="text-gray-300 hover:text-white">Dedicated Technical-Team</Link></li>
+                                        <li><Link href="hire-dedicated-technical-team" className="text-gray-300 hover:text-white">Dedicated Technical-Team</Link></li>
                                     </ul>
                                 </div>
 
