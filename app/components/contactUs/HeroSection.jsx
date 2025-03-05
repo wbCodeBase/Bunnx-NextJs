@@ -1,18 +1,19 @@
 "use client"
 
 import React, { useState } from 'react'
-// import { MdShield } from "react-icons/md";
-// import { CgMonday } from "react-icons/cg";
-// import { DiDatabase } from "react-icons/di";
-import { FaLocationArrow } from "react-icons/fa";
+import { FaPhoneAlt } from "react-icons/fa";
 import Link from 'next/link';
 import { useSubmitContactFormMutation } from '#/store/api/myApi';
 
+import clutch from "/public/certification/clutch.svg";
+import androidEnterprise from "/public/certification/androidEnterprise.svg";
+import awsPartner from "/public/certification/aws-partner.png";
+import goodFirm from "/public/certification/goodFirm.svg";
+import MicrosoftMin from "/public/certification/Microsoft-min.png";
+import googlePartner from "/public/certification/googlePartner.png";
+import Image from 'next/image';
+
 const HeroSection = () => {
-
-
-
-
 
     const [formData, setFormData] = useState({ name: '', phone: '', email: '', message: '', activeLead: true });
     const [submitContactForm, { isLoading, isSuccess, isError, error }] = useSubmitContactFormMutation();
@@ -54,55 +55,6 @@ const HeroSection = () => {
 
 
     return (<>
-        {/* <section className="bg-gray800 bg-gray-100">
-            <div className="flex items-cente justify-center flex-wrap container mx-auto sm:w-11/12 w-full">
-
-                <div className="sm:mt-8 w-full lg:w-[55%] py-10 px-4 flex gap-20 flex-col sm:pt-18">
-                    <div>
-                        <h1 className="lg:text-4xl text-2xl font-bold">Contact Us</h1>
-                        <p className="lg:text-xl text-md text-gray-600 my-4">Let’s talk about your next big app idea. Send us a message and we will be in touch to know more about your project requirements. Hire us and work with the world-class web & mobile development teams.</p>
-
-                        <div className="flex items-center justify-center sm:justify-start">
-                            <Link href="#contact-us" className='flex items-center justify-center gap-2 bg[#261E80] p-1 pl-3 font-medium text-lg bg-orange-500 rounded-full mt-4 text-white'><span> Get in touch </span> <span className='bg-white rounded-full p-3 text-black rotate-45'> <FaLocationArrow /> </span></Link>
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div className="md:w-[44%] w-full flex items-center justify-center">
-
-                    <div className='grid gap-4 my-10 grid-cols-1 px-4'>
-                        <div className="">
-                            <span><DiDatabase className='text-purple-500 text-xl' /></span>
-                            <h5 className='font-semibold my-1'>Quick Responses</h5>
-                            <p className='text-sm text-gray-500 font-normal'>Reach out for fast, efficient answers.</p>
-                        </div>
-                        <hr />
-                        <div className="">
-                            <span><MdShield className='text-red-500 text-xl' /></span>
-                            <h5 className='font-semibold my-1'>Expert Advice</h5>
-                            <p className='text-sm text-gray-500 font-normal'>Our team is here to provide tailored solutions.</p>
-                        </div>
-                        <hr />
-
-
-                        <div className="">
-                            <span><CgMonday className='text-yellow-500 text-xl' /></span>
-                            <h5 className='font-semibold my-1'>Reliable Support</h5>
-                            <p className='text-sm text-gray-500 font-normal'>Count on us whenever you need assistance.</p>
-                        </div>
-
-
-                    </div>
-
-
-                </div>
-
-
-            </div>
-        </section> */}
-
 
 
         <div className="relative">
@@ -115,28 +67,50 @@ const HeroSection = () => {
                         <div className='flex flex-wrap z-10 borde h-full'>
                             <div className='z-10 w-full'>
                                 <span className='text-white text-base block lg:tracking-wide'>WE ARE HERE FOR YOU</span>
-                                <h1 className='text-4xl text-white lg:text-5xl font-bold lg:tracking-wide pr10 py-6'>
+                                <h1 className='text-4xl text-white lg:text-5xl font-bold lg:tracking-wide py-6'>
                                     Contact Us
                                 </h1>
                                 <p className='lg:text-lg text-md mb-6 text-white font-medium'>
-                                    Let’s talk about your next big app idea. Send us a message and we will be in touch to know more about your project requirements. Hire us and work with the world-class web & mobile development teams.
+                                    <p className='lg:text-lg text-md mb-6 text-white font-medium'>
+                                        Got a game-changing app idea? Let&apos;s bring it to life! Drop us a message, and our team will reach out to understand your vision, goals, and requirements. Whether you&apos;re looking to build a sleek web platform or a cutting-edge mobile app, we&apos;ve got world-class developers ready to turn your ideas into reality. Let&apos;s create something extraordinary together!
+                                    </p>
+
                                 </p>
+
+
                                 <button className="flex items-center justify-center sm:justify-start">
-                                    <Link href="tel:+91-9971544661" className='flex items-center justify-center gap-2 border-2 p-1 pl-3 font-medium text-lg rounded-full mt-4 text-white'>
-                                        <span className="px-2"> Contact Us </span>
-                                        <span className='bg-white rounded-full p-3 text-black rotate-45'>
-                                            <FaLocationArrow />
+                                    <Link href="tel:+91-9971544661" className='flex items-center justify-center gap-1 border-2 p-1 pr-3 font-medium text-lg rounded-full my-2 text-white'>
+                                        <span className='bg-white rounded-full p-3 text-black vibrating-icon'>
+                                            <FaPhoneAlt size="1.2em" />
                                         </span>
+                                        <span className="px-2"> Contact Us </span>
                                     </Link>
                                 </button>
+
                             </div>
+
+                            <div className='mt-6 w-full'>
+
+                                <span className='text-white'> Awards & Certifications </span>
+
+                                <div className='flex flex-wrap gap-6 justify-around items-center mt-4 border border-white bg-white p-1 rounded-lg'>
+                                    <Image src={clutch} className='sm:w-24 w-20 h-auto' alt="Clutch icon" />
+                                    <Image src={androidEnterprise} className='sm:w-24 w-20 h-auto' alt="Android Enterprise icon" />
+                                    <Image src={awsPartner} className='sm:w-24 w-20 h-auto' alt="awsPartner icon" />
+                                    <Image src={goodFirm} className='sm:w-24 w-20 h-auto' alt="goodFirm icon" />
+                                    <Image src={MicrosoftMin} className='sm:w-24 w-20 h-auto' alt="MicrosoftMin icon" />
+                                    <Image src={googlePartner} className='sm:w-24 w-20 h-auto' alt="MicrosoftMin icon" />
+                                </div>
+
+                            </div>
+
                         </div>
 
                     </div>
                 </div>
 
 
-                {/* half */}
+                {/* 2nd half */}
 
 
                 <div className='lg:w-2/5 w-full flex-shrink-0 flex-grow-0 relative'>

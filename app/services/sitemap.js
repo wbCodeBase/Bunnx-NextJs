@@ -37,7 +37,7 @@ export default async function sitemap() {
 
     // Map slugs to sitemap format
     const serviceLinks = serviceSlugsOnly.map((item) => ({
-      url: `https://bunnx.com/services/${item.slug}`,
+      url: `https://bunnx.com/${item.slug}`,
       lastModified: item.updatedAt,
       changeFrequency: 'monthly',
       priority: 0.8,

@@ -70,7 +70,7 @@ const toolsAndDbs = [
 export default function TechStackMarquee() {
   return (
     <>
-      <section className='lg:w-[46%] w-full '>
+      <section className='lg:w-[46%] w-full'>
         <div className="flex flex-col gap-2 overflow-hidden py-2">
 
           <MarqueeRow direction="right" techArr={frontend} />
