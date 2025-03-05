@@ -16,19 +16,19 @@ export default async function sitemap() {
     // Base sitemap links
     const sitemapLinks = [
       {
-        url: "https://bunnx.com/",
+        url: "https://www.bunnx.com",
         changeFrequency: 'yearly',
         lastModified: "2025-01-27T09:45:58.558Z",
         priority: 1,
       }, // Home link
       {
-        url: "https://bunnx.com/contact-us",
+        url: "https://www.bunnx.com/contact-us",
         changeFrequency: 'yearly',
         lastModified: "2025-01-27T09:45:58.558Z",
         priority: 0.6,
       },
       {
-        url: "https://bunnx.com/about-us",
+        url: "https://www.bunnx.com/about-us",
         changeFrequency: 'yearly',
         lastModified: "2025-01-27T09:45:58.558Z",
         priority: 0.6,
@@ -37,7 +37,7 @@ export default async function sitemap() {
 
     // Map slugs to sitemap format
     const serviceLinks = serviceSlugsOnly.map((item) => ({
-      url: `https://bunnx.com/${item.slug}`,
+      url: `https://www.bunnx.com/${item.slug}`,
       lastModified: item.updatedAt,
       changeFrequency: 'monthly',
       priority: 0.8,

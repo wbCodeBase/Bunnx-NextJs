@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server"
 
 export async function GET() {
-  const baseUrl = "https://bunnx.com"
+  const baseUrl = "https://www.bunnx.com"
 
   // Create XML content for sitemap index
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
