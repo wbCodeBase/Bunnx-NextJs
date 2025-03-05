@@ -815,4 +815,35 @@ export default function Header() {
 
 
 
+// import { SearchConsole } from "../search-console"
+
+// export default function Page() {
+//   return (
+//     <div className="flex min-h-screen flex-col items-center justify-center p-4">
+//       <div className="w-full max-w-md space-y-4">
+//         <h1 className="text-2xl font-bold text-center">Search Console</h1>
+//         <p className="text-center text-muted-foreground">
+//           Press <kbd className="px-1 py-0.5 text-xs border rounded-md">⌘K</kbd> to open the search console
+//         </p>
+//         <div className="flex justify-center">
+//           <SearchConsole />
+//         </div>
+//       </div>
+//     </div>
+//   )
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

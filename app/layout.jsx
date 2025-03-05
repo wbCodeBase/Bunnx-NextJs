@@ -60,18 +60,12 @@ export const metadata = {
     type: 'website',
   },
 
+  verification: {
+    google: 'Oia8GxMFtKnmzOWrmdBLvDlBwK43a5f1sc6IcFhHrR4',
+  },
+
 }
 
-
-// <!-- Google tag (gtag.js) -->
-// <script async src="https://www.googletagmanager.com/gtag/js?id=G-MWQ723WDF6"></script>
-// <script>
-//   window.dataLayer = window.dataLayer || [];
-//   function gtag(){dataLayer.push(arguments);}
-//   gtag('js', new Date());
-
-//   gtag('config', 'G-MWQ723WDF6');
-// </script>
 
 
 export default async function RootLayout({ children }) {
