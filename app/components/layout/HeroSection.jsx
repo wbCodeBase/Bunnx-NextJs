@@ -4,7 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { createLinkedContent } from '#/utils/LinkBuilder';
-// import heroDefault from "/public/heroDefault.png"
 import { FaLocationArrow } from "react-icons/fa";
 
 // Keep value empty if no redirection is required 
