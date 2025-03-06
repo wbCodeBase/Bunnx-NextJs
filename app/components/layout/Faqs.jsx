@@ -1684,6 +1684,94 @@ const faqData = {
         }
     ],
 
+
+
+    "hire-dedicated-technical-team": [
+        {
+            "id": "1",
+            "question": "Why should I hire a dedicated technical team instead of freelancers?",
+            "answer": {
+                "type": "text",
+                "content": "Think of freelancers as sprint runners and dedicated teams as marathon partners. While freelancers are great for quick tasks, dedicated teams become an extension of your vision - they learn your business inside out, share your goals, and stick with you through the entire journey. Plus, you avoid the constant onboarding headaches and knowledge gaps that come with rotating freelancers."
+            }
+        },
+        {
+            "id": "2",
+            "question": "How quickly can a dedicated team start working on my project?",
+            "answer": {
+                "type": "text",
+                "content": "We move at startup speed! Once we understand your needs, we can assemble your dream team within 2-3 weeks. While traditional hiring takes months, we've refined our talent-matching process to handpick the perfect technical minds for your specific challenge. By day one, your team is ready to dive in - no lengthy training periods or adjustment phases."
+            }
+        },
+        {
+            "id": "3",
+            "question": "Will I have direct access to the developers or just a project manager?",
+            "answer": {
+                "type": "text",
+                "content": "You'll have complete access to your entire team! We believe in breaking down communication barriers. Talk directly with your developers, designers, and architects through daily stand-ups, Slack channels, and video calls. Your project manager doesn't act as a gatekeeper but as a facilitator, ensuring everything runs smoothly while you maintain that crucial direct connection with your technical talent."
+            }
+        },
+        {
+            "id": "4",
+            "question": "How do you ensure my dedicated team stays aligned with my company culture?",
+            "answer": {
+                "type": "text",
+                "content": "Culture alignment is our secret sauce! We begin with immersive onboarding where your team learns not just your tech stack, but your company values, communication style, and business goals. We encourage regular virtual team-building activities and ensure your dedicated team participates in your company meetings and celebrations. They don't just work for you - they become true representatives of your brand and vision."
+            }
+        },
+        {
+            "id": "5",
+            "question": "What if I need to scale my team up or down quickly?",
+            "answer": {
+                "type": "text",
+                "content": "Flexibility is built into our DNA! Need to add specialized talent for a major feature? Done. Need to downsize after a product launch? No problem. Unlike traditional hiring with lengthy contracts, we can scale your team size within days - not months. This elasticity means you're never paying for idle resources or scrambling to find talent when opportunity knocks."
+            }
+        },
+        {
+            "id": "6",
+            "question": "How do you handle intellectual property rights and confidentiality?",
+            "answer": {
+                "type": "text",
+                "content": "Your ideas are your crown jewels, and we protect them accordingly. Every engagement begins with comprehensive NDAs and IP agreements ensuring everything your team creates belongs exclusively to you. We implement strict access controls, secure development environments, and regular security training. Your intellectual property isn't just legally protected - it's built into our operational security framework."
+            }
+        },
+        {
+            "id": "7",
+            "question": "What if a developer on my team isn't the right fit?",
+            "answer": {
+                "type": "text",
+                "content": "We believe in perfect matches, not forced relationships. If a team member isn't meeting expectations, we'll replace them within 48 hours - no questions asked. Our deep talent pool means we can quickly find alternatives without disrupting your project flow. We continuously monitor team performance and satisfaction, catching potential misalignments before they become problems."
+            }
+        },
+        {
+            "id": "8",
+            "question": "How do you ensure code quality and maintainability?",
+            "answer": {
+                "type": "text",
+                "content": "Quality isn't an afterthought - it's woven into our development process. Your team follows industry best practices including code reviews, automated testing, and continuous integration. We maintain comprehensive documentation and conduct regular knowledge-sharing sessions. The result? Clean, maintainable code that won't become a nightmare to update six months down the road."
+            }
+        },
+        {
+            "id": "9",
+            "question": "What's the typical cost structure for a dedicated team?",
+            "answer": {
+                "type": "text",
+                "content": "Our pricing is refreshingly transparent. You pay a monthly rate based on team composition and expertise levels - no hidden fees or surprise charges. This predictable cost structure typically saves 40-60% compared to local hiring. Plus, we handle all the overhead costs like equipment, software licenses, and office space, turning unpredictable capital expenses into manageable operational costs."
+            }
+        },
+        {
+            "id": "10",
+            "question": "How do I know if my project is suitable for a dedicated team model?",
+            "answer": {
+                "type": "text",
+                "content": "Dedicated teams shine for ongoing development needs, complex projects, or when you need specialized talent yesterday. They're perfect when you want the benefits of in-house developers without the hiring headaches. During our initial consultation, we'll honestly assess if this model works for your specific situation. For some short-term projects, we might even recommend project-based engagement instead - we're committed to finding the right fit, not just selling services."
+            }
+        }
+    ]
+
+
+
+
 };
 
 
