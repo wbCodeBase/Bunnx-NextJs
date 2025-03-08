@@ -9,6 +9,7 @@ import awsPartner from "/public/certification/aws-partner.png";
 import goodFirm from "/public/certification/goodFirm.svg";
 import MicrosoftMin from "/public/certification/Microsoft-min.png";
 import googlePartner from "/public/certification/googlePartner.png";
+import aboutUsGrpImgMain from "/public/aboutImages/aboutUsGrpImgMain.webp";
 
 
 
@@ -26,7 +27,8 @@ const OurTeam = () => {
 
                     <div className='lg:w-[50%] w-full border rounded-md'>
 
-                        <Image className='h-auto w-full' src={"/whyChooseUs.jpg"} alt="Custom Software Development" width={650} height={600} />
+                        {/* <Image className='h-auto w-full' src={"/whyChooseUs.jpg"} alt="Custom Software Development" width={650} height={600} /> */}
+                        <Image className='h-auto w-full' src={aboutUsGrpImgMain} alt="Custom Software Development" />
 
                         <div className='p-6'>
 

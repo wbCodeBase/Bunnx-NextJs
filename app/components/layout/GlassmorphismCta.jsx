@@ -230,7 +230,6 @@ const data = [
     "backgroundImage": "https://spirecapital.com/wp-content/uploads/2017/02/CTA-background-get-in-touch.jpg"
 }
 
-  
 
 ];
   
@@ -281,7 +280,7 @@ const GlassmorphismCta = ({ serviceDetailPageSlug }) => {
             <p>{content.description}</p>
           </div>
           <div className="xl:w-[47%] w-full flex justify-center items-center">
-            <Link href="tel:+91-9971544661"
+            <Link href="contact-us"
               className="px-6 mt-4 py-3 bg-white/30 backdrop-blur-md text-white font-semibold rounded-full shadow-md hover:bg-white/40 transition duration-300 border border-white/20"
             >
               {content.buttonText}

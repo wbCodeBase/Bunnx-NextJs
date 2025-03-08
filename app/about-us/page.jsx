@@ -10,7 +10,7 @@ import OurPhilosophy from "@/components/aboutUs/OurPhilosophy"
 //   return {
 //     title: "About Us",
 //     description: "Here you can about us",
-//     robots: "noindex, nofollow",
+//     robots: "noindex, nofollow", 
 //   }
 // }
 

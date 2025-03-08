@@ -613,7 +613,6 @@ export default function Header() {
   const renderServicesDropdown = (currentActiveMenu) => (
     <div onMouseEnter={() => setActiveMenu(currentActiveMenu)}
       onMouseLeave={() => setActiveMenu('')}
-
       className="absolute left-0 w-full bg-white shadow-lg z-50 transition-all duration-300 ease-in-out">
       <div className="container mx-auto flex flex-col lg:flex-row">
 
@@ -633,17 +632,14 @@ export default function Header() {
           ))}
         </div>
 
-
+        {/* border border-red-500 */}
         {servicesData.content[activeCategory] && (
           <>
-            <div className='flex w-full flex-col lg:flex-row h-screen sm:min-h-96 sm:h-auto overflow-auto'>
+            <div className='flex w-full flex-col lg:flex-row hscreen sm:min-h-96 sm:h-auto overflow-auto'>
 
               <div className="w-full p-6">
-                {/* <div className="w-full lg:w-8/12 p-6"> */}
-
                 <div className="mb-4 py-4 flex items-center border-b">
                   <span onClick={() => { setActiveMenu(''); setActiveCategory('') }} className="bg-amber-500 p-2 rounded-full mr-3">
-
                     <TbCodeDots className='text-white font-semibold text-2xl' />
                   </span>
                   <span>
@@ -651,7 +647,6 @@ export default function Header() {
                     <p className="text-gray-600">{servicesData.content[activeCategory].description}</p>
                   </span>
                 </div>
-
 
                 <div className="grid grid-cols-1 md:grid-cols-3 sm:mt-8 gap-2 sm:gap-6">
                   {servicesData.content[activeCategory].technologies.map((tech, index) => (
@@ -668,7 +663,6 @@ export default function Header() {
 
 
             </div>
-
           </>
         )}
       </div>
@@ -676,7 +670,7 @@ export default function Header() {
   )
 
   return (
-    <header className={`${isScrolled ? "bg-[#00214E]" : "bg-black"} shadow-md sticky top-0 left-0 w-full z-40`} ref={dropdownRef}>
+    <header className={`${isScrolled ? "bg-[#00214E]" : "bg-black"} shadow-md sm:sticky sm:top-0 left-0 w-full z-40`} ref={dropdownRef}>
 
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between lg:px-10">
@@ -720,7 +714,7 @@ export default function Header() {
                   Logout
                 </div> : null}
 
-            <Link href="tel:+91-9971544661" className="bg-orange-500 text-white px-6 py-3 rounded-full text-md font-medium hover:bg-orange-600 transition-colors duration-300">
+            <Link href="contact-us" className="bg-orange-500 text-white px-6 py-3 rounded-full text-md font-medium hover:bg-orange-600 transition-colors duration-300">
               Get in Touch
             </Link>
           </div>
@@ -741,11 +735,11 @@ export default function Header() {
         </div>
       </div>
 
-      {activeMenu && (
+      {/* {activeMenu && (
         <div className="absolute left-0 w-full bg-white shadow-lg z-50 transition-all duration-300 ease-in-out transform translate-y-0 opacity-100">
           {activeMenu === 'Service' ? renderServicesDropdown(activeMenu) : renderHireDropdown(activeMenu)}
         </div>
-      )}
+      )} */}
 
       {isMobileMenuOpen && (
         <>
@@ -765,29 +759,44 @@ export default function Header() {
                     )}
 
                   </button>
+
                   {item.hasSubmenu && activeMenu === item.title && (
                     <div className="pl-4 mt-2 space-y-2">
                       {(item.title === 'Service' ? servicesData.categories : hireData.categories).map((category) => (
                         <button
                           key={category.name}
                           className="w-full text-left font-medium text-gray-200 hover:text-orange-500 block px-3 py-2 text-sm transition-colors duration-200"
-                          onClick={() => handleCategoryHover(category.name)}
+                          onClick={() => activeCategory === category.name ? handleCategoryHover("") : handleCategoryHover(category.name)}
                         >
                           {category.name}
+
+                          <ChevronDown className={`float-right h-5 w-5 transform transition-transform duration-200 ${activeCategory === category.name ? 'rotate-180' : ''}`} />
+
                         </button>
+
                       ))}
+
+                      {activeMenu && (
+                        <div className="absolute left-0 w-full bg-white shadow-lg z-50 transition-all duration-300 ease-in-out transform translate-y-0 opacity-100">
+                          {activeMenu === 'Service' ? renderServicesDropdown(activeMenu) : renderHireDropdown(activeMenu)}
+                        </div>
+                      )}
+
                     </div>
                   )}
                 </div>
               ))}
             </div>
 
-
             <div className="px-4 py-3 flex items-center justify-center">
 
-              <button className="bg-orange-500 text-white px-4 py-2 rounded-full text-lg font-medium hover:bg-orange-600 transition-colors duration-300">
+              <Link href="contact-us"
+                onClick={() => {
+                  toggleMobileMenu();
+                  setActiveMenu("");
+                }} className="bg-orange-500 text-white px-4 py-2 rounded-full text-lg font-medium hover:bg-orange-600 transition-colors duration-300">
                 Get in Touch
-              </button>
+              </Link>
 
             </div>
           </div>

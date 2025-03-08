@@ -183,12 +183,12 @@ const Footer = () => {
                                 <div className='sm:ml-12 ml-0'>
                                     <h3 className="text-md font-medium mb-4">Hire</h3>
                                     <ul className="space-y-2 text-gray-400 text-sm">
-                                        <li><Link href="node-developer" className="text-gray-300 hover:text-white">Node Developer</Link></li>
-                                        <li><Link href="java-developer" className="text-gray-300 hover:text-white">Java Developer</Link></li>
-                                        <li><Link href="c-sharp-developer" className="text-gray-300 hover:text-white">C Sharp Developer</Link></li>
-                                        <li><Link href="nextJs-developer" className="text-gray-300 hover:text-white">Next Developer</Link></li>
-                                        <li><Link href="devops-engineer" className="text-gray-300 hover:text-white">DevOps</Link></li>
-                                        <li><Link href="django-developer" className="text-gray-300 hover:text-white">Django</Link></li>
+                                        <li><div className="text-gray-300 hover:text-white">Node Developer</div></li>
+                                        <li><div className="text-gray-300 hover:text-white">Java Developer</div></li>
+                                        <li><div className="text-gray-300 hover:text-white">C Sharp Developer</div></li>
+                                        <li><div className="text-gray-300 hover:text-white">Next Developer</div></li>
+                                        <li><div className="text-gray-300 hover:text-white">DevOps</div></li>
+                                        <li><div className="text-gray-300 hover:text-white">Django</div></li>
                                     </ul>
                                 </div>
 
@@ -205,7 +205,7 @@ const Footer = () => {
                                             Noida, Uttar Pradesh 201301
                                         </p>
                                         <Link href="tel:+15614633233" className="text-gray-300 hover:text-white text-sm">
-                                            +1 561 463 3233
+                                            +91-9971544661
                                         </Link>
                                     </div>
                                 </div>
