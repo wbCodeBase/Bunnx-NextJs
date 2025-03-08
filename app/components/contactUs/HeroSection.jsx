@@ -42,8 +42,9 @@ const HeroSection = () => {
 
         try {
             await submitContactForm(formData).unwrap();
-            alert('Form submitted successfully!');
             setFormData({ name: '', phone: '', email: '', message: '' });
+            alert('Form submitted successfully!');
+            window.location.href = "/thank-you"
         } catch (err) {
             console.log(err);
             alert('Error submitting form: ' + err.data.error);
@@ -52,14 +53,10 @@ const HeroSection = () => {
 
 
 
-
-
     return (<>
-
 
         <div className="relative">
             <div className="flex flex-wrap industry-heroSection">
-
 
                 <div className='lg:w-3/5 w-full'>
                     <div className='h-full relative text-gray-500 py-8 sm:py-20 px-7 lg:px-24'>
@@ -154,7 +151,7 @@ const HeroSection = () => {
 
                                     <button
                                         type="submit"
-                                        className="text-base mt-4 lg:text-lg tracking-widest border-2 px-6 lg:px-8 py-3 lg:py-3 inline-block duration-200 border-white rounded-lg hover:bg-white text-white hover:text-[#ee076e]"
+                                        className="text-base mt-4 lg:text-lg tracking-widest border-2 px-6 lg:px-8 py-3 lg:py-3 inline-block duration-200 border-white rounded-lg hover:bg-white text-white hover:text-orange-500"
                                         disabled={isLoading}
                                     >
                                         {isLoading ? 'Submitting...' : 'Submit'}

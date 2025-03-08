@@ -6,7 +6,7 @@ import { GoogleTagManager, GoogleAnalytics } from '@next/third-parties/google'
 
 import { SessionProvider } from "next-auth/react"; // Import SessionProvider
 import { ReduxProvider } from '../store/ReduxProvider';
-import { Toaster } from "@/components/ui/sonner"
+import { Toaster } from "@/components/ui/sonner" 
 import HeaderFooterWrapper from "@/components/layout/HeaderFooterWrapper";
 import ScrollToTop from "@/components/layout/ScrollToTop";
 
@@ -87,6 +87,8 @@ export default async function RootLayout({ children }) {
 
           </ReduxProvider>
         </SessionProvider>
+
+
       </body>
 
 

@@ -43,6 +43,7 @@ const Footer = () => {
             await submitContactForm(formData).unwrap();
             alert('Form submitted successfully!');
             setFormData({ name: '', phone: '', email: '', message: '' });
+            window.location.href = "/thank-you"
         } catch (err) {
             console.log(err);
             alert('Error submitting form: ' + err.data.error);

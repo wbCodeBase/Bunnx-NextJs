@@ -11,6 +11,7 @@ import { useRouter } from 'next/navigation'
 import { signOut } from "next-auth/react";
 
 import { useSession } from "next-auth/react";
+import ContactSidebar from './sidebar'
 
 const menuItems = [
   { title: 'Home', slug: '/', hasSubmenu: false },
@@ -714,7 +715,7 @@ export default function Header() {
                   Logout
                 </div> : null}
 
-            <Link href="contact-us" className="bg-orange-500 text-white px-6 py-3 rounded-full text-md font-medium hover:bg-orange-600 transition-colors duration-300">
+            <Link href="contact-us" className="bg-orange-500 cursor-pointer text-white px-6 py-3 rounded-full text-md font-medium hover:bg-orange-600 transition-colors duration-300">
               Get in Touch
             </Link>
           </div>
@@ -734,12 +735,12 @@ export default function Header() {
           </div>
         </div>
       </div>
-
-      {/* {activeMenu && (
-        <div className="absolute left-0 w-full bg-white shadow-lg z-50 transition-all duration-300 ease-in-out transform translate-y-0 opacity-100">
+ 
+      {activeMenu && (
+        <div className="absolute lg:flex hidden left-0 w-full bg-white shadow-lg z-50 transition-all duration-300 ease-in-out transform translate-y-0 opacity-100">
           {activeMenu === 'Service' ? renderServicesDropdown(activeMenu) : renderHireDropdown(activeMenu)}
         </div>
-      )} */}
+      )}
 
       {isMobileMenuOpen && (
         <>
@@ -806,6 +807,7 @@ export default function Header() {
 
       )}
 
+<ContactSidebar />
 
     </header>
   )
