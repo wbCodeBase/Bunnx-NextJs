@@ -101,6 +101,7 @@ export const createContact = async (data) => {
     await contact.save();
 
     return { success: true, data: contact }; // Return the updated template
+    
   } catch (error) {
     console.error("Error saving active slug content:", error);
     throw new Error(error.message || "Failed to save the active slug content");

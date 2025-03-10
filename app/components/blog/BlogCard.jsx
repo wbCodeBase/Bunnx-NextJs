@@ -2,67 +2,9 @@ import Image from "next/image"
 import Link from "next/link"
 
 
-// import {
-//     Avatar,
-//     AvatarFallback,
-//     AvatarImage,
-// } from "@/components/ui/avatar"
 
-// Define the blog post type
-// type BlogPost = {
-//   id: string
-//   slug: string
-//   title: string
-//   category: string
-//   image: string
-//   author: {
-//     name: string
-//     avatar: string
-//   }
-//   date: string
-// }
 
-// Sample data (you would fetch this from your API/CMS)
-const featuredPosts = [
-    {
-        id: "1",
-        slug: "rust-vs-go-modern-systems-programming",
-        title: "Rust vs Go: Navigating Modern Systems Programming in 2025",
-        category: "Physical Security Industry",
-        image: "https://cdn.prod.website-files.com/6311f5c94c17c1515c3acb72/6689d00b6373f8584568b320_66217ff47b30e80c436ab945_Get%20high-quality%20and%20durable%20IP%20cameras-p-1080-p-500.webp",
-        author: {
-            name: "Neha Sahu",
-            avatar: "https://t3.ftcdn.net/jpg/06/17/13/26/360_F_617132669_YptvM7fIuczaUbYYpMe3VTLimwZwzlWf.jpg?height=50&width=50",
-        },
-        date: "Dec 9, 2024",
-    },
-    {
-        id: "2",
-        slug: null,
-        title: "AI Checker for Text and Video: A Cryptographic Approach",
-        category: "Physical Security Industry",
-        image: "https://cdn.prod.website-files.com/6311f5c94c17c1515c3acb72/6772bca7757c5de3138c1bf8_ridgecrat.avif",
-        author: {
-            name: "Neha Sahu",
-            avatar: "https://t3.ftcdn.net/jpg/06/17/13/26/360_F_617132669_YptvM7fIuczaUbYYpMe3VTLimwZwzlWf.jpg?height=50&width=50",
-        },
-        date: "Nov 14, 2024",
-    },
-    {
-        id: "3",
-        slug: null,
-        title: "Ridgecrest Foundation Modernizes Security with Coram",
-        category: "Customer Success",
-        image: "https://cdn.prod.website-files.com/6311f5c94c17c1515c3acb72/67379dccc1b03a43e31c2285_Blog%20and%20Case%20Study%20Templates%20(43)-p-800.png",
-        author: {
-            name: "Neha Sahu",
-            avatar: "https://t3.ftcdn.net/jpg/06/17/13/26/360_F_617132669_YptvM7fIuczaUbYYpMe3VTLimwZwzlWf.jpg?height=50&width=50",
-        },
-        date: "Sep 23, 2024",
-    },
-]
-
-export default function FeaturedPosts() {
+export default function FeaturedPosts({featuredPosts}) {
     return (
         <section className="py-12 px-4 md:px-6 lg:px-8">
             <div className="max-w-6xl mx-auto">
@@ -77,7 +19,6 @@ export default function FeaturedPosts() {
         </section>
     )
 }
-
 
 
 function BlogCard({ post }) {
@@ -105,10 +46,7 @@ function BlogCard({ post }) {
                     <h3 className="text-lg font-medium mb-6 flex-grow">{post.title}</h3>
 
                     <div className="flex items-center mt-auto">
-                        {/* <Avatar>
-                            <AvatarImage src="https://github.com/shadcn.png" alt="@shadcn" />
-                            <AvatarFallback>CN</AvatarFallback>
-                        </Avatar> */}
+                       
                         <div className="relative w-10 h-10 rounded-full border border-gray-500 overflow-hidden">
                             <Image
                                 src={post.author.avatar}

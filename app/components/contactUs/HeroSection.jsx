@@ -67,14 +67,10 @@ const HeroSection = () => {
                                 <h1 className='text-4xl text-white lg:text-5xl font-bold lg:tracking-wide py-6'>
                                     Contact Us
                                 </h1>
-                                <p className='lg:text-lg text-md mb-6 text-white font-medium'>
                                     <p className='lg:text-lg text-md mb-6 text-white font-medium'>
                                         Got a game-changing app idea? Let&apos;s bring it to life! Drop us a message, and our team will reach out to understand your vision, goals, and requirements. Whether you&apos;re looking to build a sleek web platform or a cutting-edge mobile app, we&apos;ve got world-class developers ready to turn your ideas into reality. Let&apos;s create something extraordinary together!
                                     </p>
-
-                                </p>
-
-
+                                
                                 <button className="flex items-center justify-center sm:justify-start">
                                     <Link href="tel:+91-9971544661" className='flex items-center justify-center gap-1 border-2 p-1 pr-3 font-medium text-lg rounded-full my-2 text-white'>
                                         <span className='bg-white rounded-full p-3 text-black vibrating-icon'>

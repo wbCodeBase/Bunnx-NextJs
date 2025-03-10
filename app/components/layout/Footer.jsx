@@ -47,7 +47,7 @@ const Footer = () => {
         } catch (err) {
             console.log(err);
             alert('Error submitting form: ' + err.data.error);
-        }
+        } 
     };
 
  

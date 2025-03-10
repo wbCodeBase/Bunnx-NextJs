@@ -3,209 +3,198 @@
 import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 
-import { createLinkedContent } from '#/utils/LinkBuilder';
-
-
-
 
 const guideContent = {
-  'front-end-development-services': {
-    title: "User Guide to Front End Development",
-    description:
-      "Explore the essentials of creating, managing, and optimizing web interfaces. It covers methodologies, benefits, best practices, and insights for selecting partners, streamlining development, and understanding the front end's crucial role in modern applications.",
-    sections: [
-      {
-        id: '0',
-        title: 'What is Software Development Service?',
-        content: {
-          heading: 'Introduction and Importance of Front End Development',
-          image: {
-            src: '/techGrpImg.jpg',
-            alt: 'Software development workspace showing code on a laptop screen',
+'rust-vs-go-modern-systems-programming': {
+  title: "Rust vs Go: Modern Systems Programming Contenders",
+  description:
+    "Dive deep into the battle of modern systems programming languages: Rust and Go. This comprehensive comparison explores performance characteristics, memory safety approaches, concurrency models, ecosystem maturity, and real-world use cases to help you choose the right tool for your next project.",
+  sections: [
+    {
+      id: '0',
+      title: 'The New Era of Systems Programming',
+      content: {
+        heading: 'Rust vs Go: Redefining Modern Systems Development',
+        image: {
+          src: 'https://img.freepik.com/free-photo/person-front-computer-working-html_23-2150040428.jpg?t=st=1741264600~exp=1741268200~hmac=05ef51efe23fb3d77675e324f2ffc89df1b10c3eabc42938010da04ea26ebefe&w=1380',
+          alt: 'Rust and Go programming languages logos side by side with code in background',
+        },
+        description: [
+          "The systems programming landscape has dramatically evolved beyond C and C++, with Rust and Go emerging as powerful contenders for building everything from low-level infrastructure to cloud-native applications. Both languages were born in the 2010s with ambitious goals: Rust from Mozilla's research team promising memory safety without garbage collection, and Go from Google's pragmatic approach to network services and concurrency. As organizations increasingly prioritize both performance and developer productivity, understanding the unique strengths and tradeoffs between these languages has become essential for modern software architecture decisions.",
+        ],
+      },
+    },
+    {
+      id: '1',
+      title: 'Key Philosophical Differences',
+      content: {
+        heading: 'Contrasting Philosophies: Safety vs. Simplicity',
+        description: [
+          "While both languages target systems programming, they approach the challenge from fundamentally different perspectives, creating distinct developer experiences and performance characteristics:",
+        ],
+        list: [
+          {
+            title: 'Rust: Memory Safety Without Compromise',
+            detail:
+              'Rust\'s pioneering "borrow checker" enforces strict ownership rules at compile time, preventing entire categories of memory errors without runtime overhead. This approach demands a steeper learning curve but rewards developers with fearless concurrency and the mantra of "if it compiles, it works."',
           },
-          description: [
-            "Front End development is critical to bridging the gap between backend logic and user interaction, translating complex functionalities into appealing interfaces. Our expertise uses modern technologies such as React.js, Angular, Vue.js, and Tailwind CSS to craft high-performance applications. By implementing robust UI frameworks, modular architectures, and scalable design systems, we build apps that align with industry standards.",
-          ],
-        },
+          {
+            title: 'Go: Pragmatic Simplicity',
+            detail:
+              'Go prioritizes developer productivity through minimalist syntax, fast compilation, and straightforward concurrency with goroutines. Its garbage collector and intentionally limited feature set create a language that new team members can become productive with in days rather than weeks.',
+          },
+          {
+            title: 'Type Systems and Expressiveness',
+            detail:
+              'Rust embraces powerful type-level programming with generics, traits, and enums offering exhaustive pattern matching. Go consciously limits language complexity with a simpler type system that emphasizes direct readability over abstraction capabilities.',
+          },
+          {
+            title: 'Compilation and Development Cycle',
+            detail:
+              'Go delivers lightning-fast compilation times and a batteries-included standard library, optimizing for rapid iteration. Rust compilation involves sophisticated analysis that catches bugs early but requires more patience during the build process.',
+          },
+          {
+            title: 'Error Handling Approaches',
+            detail:
+              'Rust uses Result and Option types with pattern matching to enforce error handling at compile time. Go\'s error-as-values approach with explicit error checks represents a middle ground between exceptions and Rust\'s algebraic data types.',
+          },
+          {
+            title: 'Community and Governance',
+            detail:
+              'Rust\'s community-driven RFC process has created a language that evolves deliberately with strong backward compatibility guarantees. Go\'s more centralized decision-making at Google has maintained focus on simplicity even when rejecting popular feature requests.',
+          },
+        ],
       },
-      {
-        id: '1',
-        title: 'Types Of Software Development Services',
-        content: {
-          heading: 'Types of Front End Development Services:',
-          description: [
-            "With front end development services, businesses can reduce time-to-market and achieve alignment between visual design and backend systems. Here are the main types:",
-          ],
-          list: [
-            {
-              title: 'Component Development',
-              detail:
-                'Building reusable UI components tailored to business needs and design systems. Includes everything from initial wireframing through development, testing, and maintenance.',
-            },
-            {
-              title: 'Progressive Web Apps (PWA)',
-              detail:
-                'Development focusing on web applications that offer native-like experiences across devices, with features like offline functionality and push notifications.',
-            },
-            {
-              title: 'Responsive Web Development',
-              detail:
-                'Creating fluid interfaces that adapt seamlessly across devices and screen sizes, ensuring consistent user experience.',
-            },
-            {
-              title: 'Enterprise UI Development',
-              detail:
-                'Specialized in creating large-scale application interfaces that handle complex business processes, such as admin dashboards, analytics platforms, and enterprise portals.',
-            },
-            {
-              title: 'JAMstack Development',
-              detail:
-                'Building performant web experiences using JavaScript, APIs, and Markup, delivered through modern CDNs without traditional server dependencies.',
-            },
-            {
-              title: 'Interface Maintenance and Support',
-              detail:
-                'Ongoing updates, performance optimization, and bug fixes to ensure interfaces remain fast, accessible, and secure over time.',
-            },
-          ],
-        },
+    },
+
+    {
+      id: '2',
+      title: 'Performance Characteristics',
+      content: {
+        heading: 'Performance Showdown: Where Each Language Shines',
+        description: [
+          "Performance differences between Rust and Go derive from their core design choices and optimizations priorities:",
+        ],
+        list: [
+          {
+            title: 'Raw Computation Speed',
+            detail:
+              'Rust typically edges out Go in CPU-intensive tasks thanks to zero-cost abstractions, more aggressive optimizations, and no garbage collection overhead, making it comparable to C++ in many benchmarks.',
+          },
+          {
+            title: 'Memory Efficiency',
+            detail:
+              'Rust\'s ownership model allows precise control over memory layout and lifetimes, often resulting in lower memory usage compared to Go\'s garbage-collected heap allocations and runtime overhead.',
+          },
+          {
+            title: 'Concurrency Performance',
+            detail:
+              'Go\'s lightweight goroutines excel at I/O-bound workloads handling thousands of concurrent connections with minimal resource usage, while Rust offers more explicit control through async/await and thread-based approaches.',
+          },
+          {
+            title: 'Startup Time and Binary Size',
+            detail:
+              'Go produces statically linked binaries with fast startup times ideal for microservices and CLI tools. Rust binaries can be optimized for size but typically prioritize runtime performance over initialization speed.',
+          },
+        ],
       },
+    },
 
-      {
-        id: '2',
-        title: 'Why Choose Custom Front End Development?',
-        content: {
-          heading: 'Why Choose Custom Front End Development?',
-          description: [
-            "Custom front-end development is a premier service offered by leading front end development companies because:",
-          ],
-          list: [
-            {
-              title: 'Tailored User Experience (UX)',
-              detail:
-                'Custom interfaces are specifically built to meet unique user needs, enhancing functionality and optimizing workflow efficiency.',
-            },
-            {
-              title: 'Scalability',
-              detail:
-                'Designed with a component-based architecture that not only supports growth but is also easily extendable as your business needs evolve.',
-            },
-            {
-              title: 'Competitive Advantage',
-              detail:
-                'By offering unique user interactions, custom solutions provide a distinct edge over competitors relying on standardized template solutions.',
-            },
-            {
-              title: 'Enhanced Performance and Security',
-              detail:
-                'Custom front-end development adopts the latest best practices in security, safeguarding your applications against XSS and other client-side vulnerabilities to ensure superior performance.',
-            },
 
-          ],
-        },
+    {
+      id: '3',
+      title: 'Ideal Use Cases and Adoption',
+      content: {
+        heading: 'When to Choose Rust vs Go: Real-World Applications',
+        description: [
+          "Industry adoption patterns reveal where each language delivers maximum value:",
+        ],
+        list: [
+          {
+            title: 'Rust Sweet Spots',
+            detail:
+              'Systems with stringent performance requirements, embedded devices with limited resources, security-critical infrastructure, WebAssembly applications, and scenarios where memory safety bugs would be catastrophic.',
+          },
+          {
+            title: 'Go\'s Natural Habitat',
+            detail:
+              'Cloud-native microservices, API servers, DevOps tooling, distributed systems, and projects where rapid development and team onboarding outweigh the need for maximum performance optimization.',
+          },
+          {
+            title: 'Industry Pioneers',
+            detail:
+              'Rust powers critical components at Microsoft, AWS, Mozilla, Meta, and Cloudflare, while Go dominates at Google, Uber, Twitch, Dropbox, and numerous Kubernetes-related projects.',
+          },
+          {
+            title: 'Growing Cross-Pollination',
+            detail:
+              'The emerging trend of polyglot systems leveraging Rust modules for performance-critical paths while maintaining Go services for broader application logic and developer accessibility.',
+          },
+          {
+            title: 'Learning Curve Investment',
+            detail:
+              'Organizations must weigh immediate productivity against long-term maintainability, with Go offering faster ramp-up while Rust\'s strictness often prevents subtle bugs and maintenance challenges.',
+          },
+          {
+            title: 'Ecosystem Maturity',
+            detail:
+              'Go\'s standard library emphasizes completeness for networked services, while Rust\'s vibrant crate ecosystem offers specialized tools for diverse domains from embedded to game development.',
+          },
+        ],
       },
+    },
 
-
-      {
-        id: '3',
-        title: 'What are the Types of Front End Specializations?',
-        content: {
-          heading: 'What are the Types of Front End Specializations?',
-          description: [
-            "Here are key areas of front-end expertise offered in front end development services:",
-          ],
-          list: [
-            {
-              title: 'UI Development',
-              detail:
-                'Focuses on pixel-perfect implementation of designs using modern HTML5, CSS3, and JavaScript, ensuring accessible and beautiful interfaces.',
-            },
-            {
-              title: 'State Management',
-              detail:
-                'Handles complex application state and data flow using technologies like Redux, MobX, or Zustand for predictable user experiences.',
-            },
-            {
-              title: 'Front-end Architecture',
-              detail:
-                'Combines modular design patterns and performance optimization to build maintainable, scalable applications.',
-            },
-            {
-              title: 'Cross-Platform Development',
-              detail:
-                'Creates consistent experiences across devices using frameworks like React Native or Flutter',
-            },
-            {
-              title: 'Modern Web Development',
-              detail:
-                'Leverages cutting-edge tools like Next.js, Remix, or Astro for optimized web applications.',
-            },
-            {
-              title: 'Desktop Web Apps',
-              detail:
-                'Builds desktop-class web applications using Electron or Tauri with web technologies.',
-            },
-          ],
-        },
+    {
+      id: '4',
+      title: 'Making the Right Choice',
+      content: {
+        heading: 'Decision Framework for Modern Systems Programming',
+        description: [
+          "When evaluating Rust versus Go for your next project, consider these critical factors:",
+        ],
+        list: [
+          {
+            title: 'Team Experience',
+            detail:
+              'Assess your team\'s familiarity with systems programming concepts and willingness to invest in Rust\'s learning curve versus Go\'s accessibility.',
+          },
+          {
+            title: 'Performance Requirements',
+            detail:
+              'Quantify your specific performance needs across dimensions of throughput, latency, memory usage, and predictability under load.',
+          },
+          {
+            title: 'Project Lifespan',
+            detail:
+              'Consider long-term maintenance, with Rust\'s strictness paying dividends for code bases maintained over many years by changing teams.',
+          },
+          {
+            title: 'Integration Requirements',
+            detail:
+              'Evaluate interoperability needs with existing systems, FFI capabilities, and deployment environment constraints.',
+          },
+          {
+            title: 'Development Timeline',
+            detail:
+              'Balance delivery pressure against long-term quality, recognizing Go\'s advantage in rapid prototyping versus Rust\'s investment in correctness.',
+          },
+        ],
       },
-
-      {
-        id: '4',
-        title: 'Choosing the Right Front End Partner',
-        content: {
-          heading: 'Choosing the Right Front End Partner',
-          description: [
-            "Selecting the right front end development company is crucial. Consider:",
-          ],
-          list: [
-            {
-              title: 'Technical Stack',
-              detail:
-                'Verify expertise in modern front end frameworks and tools.',
-            },
-            {
-              title: 'Component Library',
-              detail:
-                'Review their reusable component systems and design implementations.',
-            },
-            {
-              title: 'Communication',
-              detail:
-                ' Assess their ability to collaborate with designers and backend teams.',
-            },
-            {
-              title: 'Development Process',
-              detail:
-                'Ensure their workflow aligns with your continuous deployment needs.',
-            },
-            {
-              title: 'Performance Focus',
-              detail:
-                'Evaluate their approach to web vitals and optimization.',
-            },
-          ],
-        },
-      },
-
-
-    ],
-  },
-
+    },
+  ],
+}
 };
 
 
 
 
-
-
-
-export default function BlogContent({ serviceDetailPageSlug= "front-end-development-services" }) {
+export default function BlogContent({ serviceDetailPageSlug= "rust-vs-go-modern-systems-programming" }) {
   const [activeSection, setActiveSection] = useState('introduction');
   const observerRef = useRef(null);
 
   useEffect(() => {
     observerRef.current = new IntersectionObserver(
-      (entries) => {
+      (entries) => {  
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             setActiveSection(entry.target.id);
@@ -325,3 +314,4 @@ export default function BlogContent({ serviceDetailPageSlug= "front-end-developm
 
 
 
+ 

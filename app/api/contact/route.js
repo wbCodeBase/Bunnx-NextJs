@@ -1,5 +1,6 @@
 import connectToDatabase from '../../../utils/database';
 import { createContact, getQueries } from '../../../controllers/activeSlugController';
+import { sendLeadNotification } from '../../../utils/email';
 
 
 
@@ -41,6 +42,7 @@ export async function POST(request) {
             );
         }
 
+        await sendLeadNotification(data)
         return new Response(JSON.stringify(contact.data), { status: 201 });
     } catch (error) {
         console.error("Error in POST API:", error.message);

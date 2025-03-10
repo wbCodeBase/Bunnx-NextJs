@@ -22,8 +22,6 @@ const contactUs = () => {
       <HeroSection />
 
 
-
-
       <section className="container mx-auto max-w-screen-lg xl:max-w-screen-xl px-4 md:px-6 py-12">
 
 
