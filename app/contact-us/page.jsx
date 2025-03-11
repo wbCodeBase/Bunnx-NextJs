@@ -11,7 +11,7 @@ import Image from 'next/image';
 export const metadata = {
   title: "Contact Bunnx | Get in Touch with Our Team Today",
   description: 'Have questions or need assistance? Contact Bunnx for expert support and personalized solutions. We are here to help you every step of the way!',
-  robots: "noindex, nofollow",
+  robots: "index",
 }
 
 
