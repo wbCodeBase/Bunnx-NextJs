@@ -8,19 +8,19 @@ import { createLinkedContent } from '#/utils/LinkBuilder';
 import "./service.css";
 
 const keywordToSlug = {
-    'front end development company in India': 'front-end-development-services',
-    'software development company in India': 'best-software-development-company-in-india',
+    'front end development company in India': 'front-end-development-services-india',
+    'software development company in India': 'software-development-company-in-india',
     'custom software development company': 'custom-software-development-services',
-    'CRM software solutions': 'crm-software-development-services',
-    'CRM software development company': 'crm-software-development-services',
-    'CRM software solution': 'crm-software-development-services',
-    'mobile app development company': 'mobile-app-development-services',
-    'API Development & Integration Services': 'api-development-and-integration-services',
+    'CRM software solutions': 'crm-software-development-company-india',
+    'CRM software development company': 'crm-software-development-company-india',
+    'CRM software solution': 'crm-software-development-company-india',
+    'mobile app development company': 'mobile-app-development-company-india',
+    'API Development & Integration Services': 'api-integration-and-development-services',
 };
 
 
 const contentBySlug = {
-    "back-end-development-services": {
+    "back-end-development-services-india": {
         h2: "Our Process",
         h4: "Our Process for Back End Development",
         p: "Our back-end development process is not too complex and begins with an analysis of your system requirements. Based on this, we provide you with your server architectures and execute RESTful or GraphQL APIs. Our company also makes database structures using relational or NoSQL technologies. We even use advanced caching strategies, CI/CD pipelines, and QA testing.",
@@ -107,7 +107,7 @@ const contentBySlug = {
             }
         ]
     },
-    "front-end-development-services": {
+    "front-end-development-services-india": {
         h2: "Our Process",
         h4: "Our Process for Frontend Development",
         p: "As an experienced front end development company in India, we create visually appealing and dynamic user interfaces. To boost your digital presence, we combine innovative layouts with modern technologies and interactive features that help your website stand out. We follow a series of well-planned and strategic steps to craft the website that counts.",
@@ -191,7 +191,7 @@ const contentBySlug = {
         ]
     },
 
-    "best-software-development-company-in-india": {
+    "software-development-company-in-india": {
         h2: "Our Process",
         h4: "Our Process for Software Development",
         p: "As a leading software development company in India, we deliver solutions that are visually striking and technically advanced. Our services combine innovative design with advance development techniques to empower your brand.",
@@ -276,7 +276,7 @@ const contentBySlug = {
         ]
     },
 
-    "crm-software-development-services": {
+    "crm-software-development-company-india": {
         h2: "Our Process",
         h4: "Our Process for CRM Software Development",
         p: "Our CRM development process begins by understanding how your business operations take place and about your customer management. Hence, we develop CRM software solutions that help in customer data management and integrate with your existing tools. We also implement proven development methods and quality testing.",
@@ -453,7 +453,7 @@ const contentBySlug = {
         ]
     },
 
-    "software-development-consultants": {
+    "software-consultanting-services-india": {
         h2: "Our Process",
         h4: "Our Process as Software Development Consultants",
         p: "Our process? To help you not just solve problems but transform how your business operates. Let’s build software that doesn’t just support your goals but drives them forward.",
@@ -540,7 +540,7 @@ const contentBySlug = {
         ]
     },
 
-    "it-consulting-services": {
+    "it-consulting-services-india": {
         h2: "Our Process",
         h4: "Our Process for IT Consulting",
         p: "With expertly crafted IT consulting services from Bunnx, a top-tier consulting company, you can completely transform how your business operates. Here’s our strategy.",
@@ -630,7 +630,7 @@ const contentBySlug = {
         ]
     },
 
-    "mobile-app-development-services": {
+    "mobile-app-development-company-india": {
         h2: "Our Process",
         h4: "Our Process for Mobile App Development",
         p: "We are always providing mobile applications through a technology-driven approach. Here’s how our mobile app development company build apps to exceed expectations:",
@@ -714,7 +714,7 @@ const contentBySlug = {
         ]
     },
 
-    "api-development-and-integration-services": {
+    "api-integration-and-development-services": {
         h2: "Our Process",
         h4: "Our Process for API Development & Integration",
         p: "Our API Development & Integration Services follow a structured, detail-oriented approach to deliver secure, scalable, and high-performing APIs. Here's how we transform your requirements into robust API solutions:",
@@ -804,7 +804,7 @@ const contentBySlug = {
     },
 
 
-    "agile-consulting-services": {
+    "agile-consulting-services-india": {
         h2: "Our Process",
         h4: "Our Process for Agile Consulting",
         p: "Our process isn’t about just applying a set of methods—it’s about working alongside you, step by step. From getting to know your team to fine-tuning the approach, we ensure every move we make brings you closer to success.",
@@ -893,7 +893,7 @@ const contentBySlug = {
 
     },
 
-    "application-development-services": {
+    "application-development-company-india": {
         h2: "Our Process",
         h4: "Our Process for Application Development",
         p: "Building an application is challenging but solves complex problems for its users. We follow a structured process while following this to give you a functional product.",
@@ -982,7 +982,7 @@ const contentBySlug = {
 
     },
 
-    "website-development-services": {
+    "website-development-services-india": {
         h2: "Our Process",
         h4: "Our Process for Website Development",
         p: "We take a simple, clear approach to website development that focuses on your needs and goals. From the start, we listen to you and work together to create a plan. Each step is about building a website that fits your business and serves your users well, from design to launch.",
@@ -1071,7 +1071,7 @@ const contentBySlug = {
 
     },
 
-    "cms-development-services": {
+    "cms-development-services-india": {
         h2: "Our Process",
         h4: "Our Process for CMS Development",
         p: "A strong CMS isn’t just about what users see—it’s about what’s happening behind the scenes. We build a powerful backend using technologies like Node.js, PHP (Laravel), and Python (Django), so your website processes requests in a flash.",
@@ -1246,7 +1246,7 @@ const contentBySlug = {
             }
         ]
     },
-    "ecommerce-development-company": {
+    "ecommerce-development-company-india": {
         h2: "Our Process",
         h4: "Our Process for Ecommerce Development",
         p: "A systematic approach and dedication to particulars are necessary for creating a successful eCommerce platform. We make sure every stage, from system analysis to ongoing support, is in line with your company's objectives.",
@@ -1423,7 +1423,7 @@ const contentBySlug = {
 
 
 
-    "web-application-development-services": {
+    "web-application-development-company-india": {
         h2: "Our Process",
         h4: "Our Process for Web App Development",
         p: "We are always providing web applications through a technology-driven approach. Here’s how our web development company build apps to exceed expectations:",
@@ -1955,7 +1955,7 @@ const contentBySlug = {
         ]
     },
 
-    "it-staff-augmentation-services": {
+    "it-staff-augmentation-services-india": {
         "h2": "Our Process",
         "h4": "Our Process for Staff Augmentation",
         "p": "Building the right team is about finding people who bring real value and drive projects forward without delays. Traditional hiring can be slow, expensive, and full of uncertainty. That's why we connect you with skilled professionals who integrate into your team.",
@@ -2043,7 +2043,7 @@ const contentBySlug = {
         ]
     },
 
-    "hire-software-developer": {
+    "hire-software-developer-india": {
         "h2": "Our Process",
         "h4": "How We Help You Hire the Right Software Developer",
         "p": "Hiring the right software developer isn’t just about scanning resumes. It’s about finding someone who understands your project, aligns with your vision, and delivers results. We simplify the hiring process so you get skilled developers without the hassle.",
@@ -2219,7 +2219,7 @@ const contentBySlug = {
         ]
     },
 
-    "hire-dedicated-development-team": {
+    "hire-dedicated-development-team-india": {
         "h2": "Our Process",
         "h4": "How We Build Your Dedicated Development Team",
         "p": "Hiring a dedicated development team isn't just about filling positions—it's about finding experts who align with your goals and deliver results. We take care of every step, from understanding your needs to assembling a team that works as an extension of your business.",
@@ -2307,7 +2307,7 @@ const contentBySlug = {
         ]
     },
 
-    "offshore-software-development-center-india": {
+    "offshore-dedicated-development-center-india": {
         "h2": "Our Process",
         "h4": "How We Build Your Offshore Software Development Center",
         "p": "Setting up an offshore development center shouldn’t be complex. We streamline the process, ensuring your remote team operates seamlessly as an extension of your business. From talent acquisition to infrastructure setup, we handle everything so you can focus on growth.",
@@ -2395,7 +2395,7 @@ const contentBySlug = {
         ]
     },
 
-    "software-development-outsourcing-company-in-india": {
+    "outsourcing-software-development-in-india": {
         "h2": "Our Process",
         "h4": "How We Deliver High-Impact Software Solutions",
         "p": "We simplify software development with a seamless, agile-driven process. From strategy to deployment, we ensure fast execution, top-tier quality, and lasting success.",
@@ -2473,7 +2473,7 @@ const contentBySlug = {
         ]
     },
 
-    "hire-dedicated-technical-team": {
+    "hire-dedicated-technical-team-india": {
         "h2": "Our Process",
         "h4": "Transforming Dreams into Digital Masterpieces",
         "p": "We're not just building software; we're crafting digital experiences that turn your boldest ideas into reality. Our process is your passport to technological breakthrough.",
@@ -2555,7 +2555,7 @@ const contentBySlug = {
 
 
 export default function ProcessShowcase({ serviceDetailPageSlug }) {
-    const content = contentBySlug[serviceDetailPageSlug] || contentBySlug["best-software-development-company-in-india"]; // Fallback to a default slug
+    const content = contentBySlug[serviceDetailPageSlug] || contentBySlug["software-development-company-in-india"]; // Fallback to a default slug
     const { h2, h4, p, processSections } = content;
     const [activeSection, setActiveSection] = useState(1);
 

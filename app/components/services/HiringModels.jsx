@@ -10,7 +10,7 @@ import ProjectBased from '/public/iconMethodology/ProjectBased.webp';
 
 
 const serviceData = {
-  'front-end-development-services': {
+  'front-end-development-services-india': {
     title: 'Choose From Our Front End Development Service Models ',
     description:
       "We customize engagement strategies to match your project’s vision, scale, and complexity. Our hiring models ensure you have the right team and services at your disposal to ensure smooth services.",
@@ -81,7 +81,7 @@ const serviceData = {
     ],
   },
 
-  'back-end-development-services': {
+  'back-end-development-services-india': {
     title: 'Choose From Back End Development Service Models',
     description:
       "Every project comes with its own set of challenges, whether it’s maintaining system reliability, integrating third-party services, or managing large datasets. Our models are designed to allow you to bring in the right expertise at each stage—whether it's a single developer for a task or a team for ongoing maintenance.",
@@ -152,7 +152,7 @@ const serviceData = {
     ],
   },
 
-  'best-software-development-company-in-india': {
+  'software-development-company-in-india': {
     title: 'Custom Engagement Models for Software Development Services',
     description:
       "We make engagement strategies as per your vision, size, and complexity. Our hiring options include the right team and services. And this is what makes us the best custom software development company.",
@@ -230,7 +230,7 @@ const serviceData = {
     ],
   },
 
-  'crm-software-development-services': {
+  'crm-software-development-company-india': {
     title: 'Choose From Our CRM Software Development Service Models',
     description:
       "Each project comes with its own complexities—be it integrating advanced tools, managing extensive datasets, or tackling these challenges. We have it all in our engagement models. If it’s a single expert for a short-term task or a team for continuous development, we’ve got the expertise to help.",
@@ -372,7 +372,7 @@ const serviceData = {
     ],
   },
 
-  'software-development-consultants': {
+  'software-consultanting-services-india': {
     title: 'Choose From Our Software Consulting Service Models',
     description:
       "We understand that every project is different. If it’s a complex integration task, managing a large volume of data, or navigating a new set of challenges. But we can make it happen with our professionals. The team at Bunnx don’t just work for you—we work with you to build a plan that fits your goals, timeline, and resources.",
@@ -442,7 +442,7 @@ const serviceData = {
     ],
   },
 
-  'it-consulting-services': {
+  'it-consulting-services-india': {
     title: 'Choose From Our IT Consulting Service Models',
     description:
       "Each project comes with its own set of challenges—whether it’s working with advanced tools, managing large datasets, or tackling specific tasks. That’s where our engagement models come in. If you need a single expert for a short-term task or a full team for ongoing development, we’ve got you covered.",
@@ -511,7 +511,7 @@ const serviceData = {
   },
 
 
-  "mobile-app-development-services": {
+  "mobile-app-development-company-india": {
     "title": "Choose From Our Mobile App Development Service Models",
     "description": "Every project comes with its own set of challenges, whether it’s maintaining system reliability, integrating third-party services, or managing large datasets. Our models are designed to allow you to bring in the right expertise at each stage—whether it's a single developer for a task or a team for ongoing maintenance.",
     "models": [
@@ -578,7 +578,7 @@ const serviceData = {
     ]
   },
 
-  "api-development-and-integration-services": {
+  "api-integration-and-development-services": {
     "title": "Choose From Our API Development & Integration Service Models",
     "description": "Every project comes with its own set of challenges, whether it’s maintaining system reliability, integrating third-party services, or managing large datasets. Our models are designed to allow you to bring in the right expertise at each stage—whether it's a single developer for a task or a team for ongoing maintenance",
     "models": [
@@ -644,7 +644,7 @@ const serviceData = {
     ]
   },
 
-  "agile-consulting-services": {
+  "agile-consulting-services-india": {
     "title": "Choose From Our Agile Consulting Service Models",
     "description": "Pay as you go for flexibility as our models are ideal for projects that evolve during the process. It’s perfect for complex or shifting requirements. If you have small- to medium-sized projects, our hiring model can be the best as it includes fixed cost and clear expectations from the get-go.",
     "models": [
@@ -707,7 +707,7 @@ const serviceData = {
     ]
   },
 
-  "application-development-services": {
+  "application-development-company-india": {
     "title": "Choose From Our Application Development Service Models",
     "description": "We understand that every project comes with its own unique hurdles when you are building for your business growth. But our service models are designed to provide exactly the kind of support you need.",
     "models": [
@@ -772,7 +772,7 @@ const serviceData = {
     ]
   },
 
-  "website-development-services": {
+  "website-development-services-india": {
     "title": "Choose From Our Website Development Service Models",
     "description": "Choosing the right team structure is crucial when building or upgrading your website. Some projects need ongoing collaboration, while others require extra hands or short-term expertise. Our engagement models are built to match your specific needs, offering flexibility and technical expertise at every step of the development process.",
     "models": [
@@ -837,7 +837,7 @@ const serviceData = {
     ]
   },
 
-  "cms-development-services": {
+  "cms-development-services-india": {
     "title": "Choose From Our CMS Development Service Models",
     "description": "Every business operates differently, and a one-size-fits-all approach rarely works. That’s why we offer multiple collaboration models, so you can bring in expert CMS developers exactly how and when you need them—without committing to a full project if it’s not required.",
     "models": [
@@ -967,7 +967,7 @@ const serviceData = {
   },
 
 
-  "ecommerce-development-company": {
+  "ecommerce-development-company-india": {
     "title": "Choose From Our Ecommerce Development Service Models",
     "description": "Our models are designed to bring in the right expertise at each stage—whether it's a single developer for a task or a team for ongoing maintenance.",
     "models": [
@@ -1098,7 +1098,7 @@ const serviceData = {
   },
 
 
-  "web-application-development-services": {
+  "web-application-development-company-india": {
     "title": "Choose From Our Web App Development Service Models",
     "description": "Instead of normal hiring models, we provide expertise exactly when and where it's needed. If you need an entire team for a long-term project or talented developers to fill in the gaps, our models keep development predictable without unnecessary commitments.",
     "models": [
@@ -1502,7 +1502,7 @@ const serviceData = {
 
 
 
-  "it-staff-augmentation-services": {
+  "it-staff-augmentation-services-india": {
     "title": "Choose From Our Staff Augmentation Service Models",
     "description": "Your business is growing, projects are piling up, and hiring takes too long. That’s where we step in. Our staff augmentation models help you bring in skilled professionals without the hassle of recruitment, payroll, or paperwork. If you need a dedicated team, temporary support, or project-based expertise, we’ve got you covered.",
     "models": [
@@ -1567,7 +1567,7 @@ const serviceData = {
     ]
   },
 
-  "hire-software-developer": {
+  "hire-software-developer-india": {
     "title": "Choose From Our Hire Software Developer Service Models",
     "description": "Picking an engagement model isn’t just about costs—it’s about how you want to build, collaborate, and grow your project. Some businesses prefer a well-structured plan with fixed pricing, while others need the freedom to experiment and adapt. If you want a defined roadmap from day one or prefer ongoing development with room for change, here are the options you must choose.",
     "models": [
@@ -1699,7 +1699,7 @@ const serviceData = {
     ]
   },
 
-  "hire-dedicated-development-team": {
+  "hire-dedicated-development-team-india": {
     "title": "Choose From Our Dedicated Development Service Models",
     "description": "Different projects come with different technical challenges. Some demand a dedicated team for an ongoing build, while others require additional hands to meet tight deadlines or handle specific tasks. No matter where you are in your development cycle, we provide structured models to match your requirements.",
     "models": [
@@ -1766,7 +1766,7 @@ const serviceData = {
     ]
   },
 
-  "offshore-software-development-center-india": {
+  "offshore-dedicated-development-center-india": {
     "title": "Choose From Our Offshore Dedicated Centre Models",
     "description": "Backend architecture and full-stack development are made by our offshore teams. It will help you get codes for system management. You can also maintain complete control over priorities while we manage the logistics, infrastructure, and operations of your remote team.",
     "models": [
@@ -1833,7 +1833,7 @@ const serviceData = {
     ]
   },
 
-  "software-development-outsourcing-company-in-india": {
+  "outsourcing-software-development-in-india": {
     "title": "Outsource Your Software Development with India’s Top Engineers",
     "description": "Accelerate your product development with our expert outsourcing solutions. Whether you need a full-scale development team, expert consultants, or project-based execution, we provide flexible engagement models tailored to your business needs. Scale efficiently, reduce costs, and focus on innovation while we handle the development.",
     "models": [
@@ -1903,7 +1903,7 @@ const serviceData = {
   },
 
 
-  "hire-dedicated-technical-team": {
+  "hire-dedicated-technical-team-india": {
     "title": "Unlock Your Vision with Our Expert Dedicated Teams",
     "description": "Collaborate with top talent and streamline your development process. Our flexible solutions help you innovate and grow your business.",
     "models": [
@@ -1993,7 +1993,7 @@ export default function HiringModels({ serviceDetailPageSlug }) {
   }, [isInView]);
 
 
-  const service = serviceData[serviceDetailPageSlug] || serviceData['best-software-development-company-in-india'];
+  const service = serviceData[serviceDetailPageSlug] || serviceData['software-development-company-in-india'];
 
   if (!service) {
     return <p>Hiring models content not found for the provided slug.</p>;

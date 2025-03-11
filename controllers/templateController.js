@@ -301,7 +301,7 @@ export const deleteComponentContent = async ({ id, templateName, componentName }
 //         "imageUrl": "soon",
 //         "ctaRedirectUrl": "#contact-us",
 //         "ctaText": "Get connected with us",
-//         "fetchOnSlug": "application-development-services"
+//         "fetchOnSlug": "application-development-company-india"
 //       },
 //       {
 //         "titlePrefix": "Professional",
@@ -310,7 +310,7 @@ export const deleteComponentContent = async ({ id, templateName, componentName }
 //         "imageUrl": "soon",
 //         "ctaRedirectUrl": "#contact-us",
 //         "ctaText": "Get connected with us",
-//         "fetchOnSlug": "software-development-consultants"
+//         "fetchOnSlug": "software-consultanting-services-india"
 //       }
 //     ],
 
@@ -385,6 +385,6 @@ export const deleteComponentContent = async ({ id, templateName, componentName }
 //     description:
 //       "Our certified experts perform thorough testing to detect and resolve any errors or bugs that could affect your software’s performance. Guarantee the quality, reliability, and performance of your software applications with our QA Experts and testing services.",
 //     ctaRedirectUrl: "qa-testing",
-//     fetchOnSlug: ["software-development", "mobile-app-development-services", "qa-testing", "cloud-services"]
+//     fetchOnSlug: ["software-development", "mobile-app-development-company-india", "qa-testing", "cloud-services"]
 //   }
 // ],

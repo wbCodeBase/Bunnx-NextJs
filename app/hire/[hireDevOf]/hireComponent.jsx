@@ -198,7 +198,7 @@ export default function HireDetailsComponentt() {
         title: "On-demand Software Teams",
         description:
           "Accelerate development projects and access skilled professionals with our flexible on-demand software teams. Integrate our talent into your workflow for efficient collaboration and faster project delivery.",
-        ctaRedirectUrl: "hire-dedicated-development-team"
+        ctaRedirectUrl: "hire-dedicated-development-team-india"
       },
       {
         title: "Ecommerce",
@@ -216,7 +216,7 @@ export default function HireDetailsComponentt() {
         title: "Web App Development",
         description:
           "Our team builds responsive, scalable, and efficient web applications tailored to your business needs. We focus on creating seamless user experiences, ensuring high performance, security, and easy navigation.",
-        ctaRedirectUrl: "web-application-development-services",
+        ctaRedirectUrl: "web-application-development-company-india",
       },
       {
         title: "Devops",
@@ -228,7 +228,7 @@ export default function HireDetailsComponentt() {
         title: "Mobile App Development",
         description:
           "Our skilled mobile app developers combine deep IT knowledge with extensive hands-on experience across diverse projects. They analyze your business ecosystem to fully understand your needs and goals, delivering tailored solutions that best fit your requirements.",
-        ctaRedirectUrl: "mobile-app-development-services",
+        ctaRedirectUrl: "mobile-app-development-company-india",
       },
       {
         title: "API & Software Integration",

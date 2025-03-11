@@ -14,13 +14,13 @@ const keywordToSlug = {
     "outsourcing software development": "it-outsourcing-services",
     "custom application development company": "custom-software-development-services",
     "white-label software development services": "it-outsourcing-services",
-    "Front-End Development companies": "front-end-development-services",
-    "Front-End Development company": "front-end-development-services",
-    "back-end development agency": "back-end-development-services",
-    "software development services": "best-software-development-company-in-india",
-    "custom software consulting services": "software-development-consultants",
-    "IT consulting services India": "it-consulting-services",
-    "CRM software developers company": "crm-software-development-services",
+    "Front-End Development companies": "front-end-development-services-india",
+    "Front-End Development company": "front-end-development-services-india",
+    "back-end development agency": "back-end-development-services-india",
+    "software development services": "software-development-company-in-india",
+    "custom software consulting services": "software-consultanting-services-india",
+    "IT consulting services India": "it-consulting-services-india",
+    "CRM software developers company": "crm-software-development-company-india",
 };
 
 
@@ -111,7 +111,7 @@ const faqData = {
         },
 
     ],
-    "back-end-development-services": [
+    "back-end-development-services-india": [
         {
             id: "backend-1",
             question: "What technologies do you specialize in?",
@@ -168,7 +168,7 @@ const faqData = {
             },
         },
     ],
-    "front-end-development-services": [
+    "front-end-development-services-india": [
         {
             id: "default-1",
             question: "What technologies do Front-End Development companies use?",
@@ -217,7 +217,7 @@ const faqData = {
         },
     ],
 
-    "best-software-development-company-in-india": [
+    "software-development-company-in-india": [
         {
             "id": "default-1",
             "question": "What software technologies does Bunnx use for development?",
@@ -268,7 +268,7 @@ const faqData = {
         }
     ],
 
-    "crm-software-development-services": [
+    "crm-software-development-company-india": [
         {
             "id": "crm-1",
             "question": "How do you make my CRM systems genuine and authentic?",
@@ -370,7 +370,7 @@ const faqData = {
         }
     ],
 
-    "software-development-consultants": [
+    "software-consultanting-services-india": [
         {
             "id": "csd-1",
             "question": "How do you make sure about our software security?",
@@ -421,7 +421,7 @@ const faqData = {
         }
     ],
 
-    "it-consulting-services": [
+    "it-consulting-services-india": [
         {
             "id": "1",
             "question": "What services are included in IT consulting?",
@@ -480,7 +480,7 @@ const faqData = {
         }
     ],
 
-    "mobile-app-development-services": [
+    "mobile-app-development-company-india": [
         {
             "id": "1",
             "question": "What technologies will you use for mobile app development?",
@@ -531,7 +531,7 @@ const faqData = {
         }
     ],
 
-    "api-development-and-integration-services": [
+    "api-integration-and-development-services": [
         {
             "id": "1",
             "question": "How do you ensure the scalability of your solutions?",
@@ -583,7 +583,7 @@ const faqData = {
     ],
 
 
-    "agile-consulting-services": [
+    "agile-consulting-services-india": [
         {
             "id": "1",
             "question": "How does Agile actually work for my business?",
@@ -626,7 +626,7 @@ const faqData = {
         }
     ],
 
-    "application-development-services": [
+    "application-development-company-india": [
         {
             "id": "1",
             "question": "What technologies do you use for application development?",
@@ -677,7 +677,7 @@ const faqData = {
         }
     ],
 
-    "website-development-services": [
+    "website-development-services-india": [
         {
             "id": "1",
             "question": "What technologies do you specialize in?",
@@ -728,7 +728,7 @@ const faqData = {
         }
     ],
 
-    "cms-development-services": [
+    "cms-development-services-india": [
         {
             "id": "1",
             "question": "What technologies do you use for CMS development?",
@@ -832,7 +832,7 @@ const faqData = {
     ],
 
 
-    "ecommerce-development-company": [
+    "ecommerce-development-company-india": [
         {
             "id": "1",
             "question": "Which technology do you use while creating eCommerce websites?",
@@ -928,7 +928,7 @@ const faqData = {
     ],
 
 
-    "web-application-development-services": [
+    "web-application-development-company-india": [
         {
             "id": "1",
             "question": "How long does it take to build a web app?",
@@ -1336,7 +1336,7 @@ const faqData = {
         }
     ],
 
-    "it-staff-augmentation-services": [
+    "it-staff-augmentation-services-india": [
         {
             "id": "1",
             "question": "What exactly is staff augmentation, and how can it help my business?",
@@ -1388,7 +1388,7 @@ const faqData = {
     ],
 
 
-    "hire-software-developer": [
+    "hire-software-developer-india": [
         {
             "id": "1",
             "question": "How do I hire software developers for my project?",
@@ -1490,7 +1490,7 @@ const faqData = {
         }
     ],
 
-    "hire-dedicated-development-team": [
+    "hire-dedicated-development-team-india": [
         {
             "id": "1",
             "question": "What is a dedicated development team?",
@@ -1549,7 +1549,7 @@ const faqData = {
         }
     ],
 
-    "offshore-software-development-center-india": [
+    "offshore-dedicated-development-center-india": [
         {
             "id": "1",
             "question": "What is an offshore dedicated centre?",
@@ -1601,7 +1601,7 @@ const faqData = {
     ],
 
 
-    "software-development-outsourcing-company-in-india": [
+    "outsourcing-software-development-in-india": [
         {
             "id": "1",
             "question": "Why should I outsource software development to India?",
@@ -1686,7 +1686,7 @@ const faqData = {
 
 
 
-    "hire-dedicated-technical-team": [
+    "hire-dedicated-technical-team-india": [
         {
             "id": "1",
             "question": "Why should I hire a dedicated technical team instead of freelancers?",
@@ -1778,7 +1778,7 @@ const faqData = {
 
 const Faqs = ({ serviceDetailPageSlug }) => {
 
-    const data = faqData[serviceDetailPageSlug] || faqData["best-software-development-company-in-india"];
+    const data = faqData[serviceDetailPageSlug] || faqData["software-development-company-in-india"];
 
     return (
         <section className="border-t container mx-auto max-w-screen-lg xl:max-w-screen-xl px-4 md:px-6 py-8">

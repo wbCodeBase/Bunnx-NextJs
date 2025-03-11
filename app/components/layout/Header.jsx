@@ -15,7 +15,7 @@ import ContactSidebar from './sidebar'
 
 const menuItems = [
   { title: 'Home', slug: '/', hasSubmenu: false },
-  { title: 'Service', slug: '/best-software-development-company-in-india', hasSubmenu: true },
+  { title: 'Service', slug: '/software-development-company-in-india', hasSubmenu: true },
   // { title: 'Hire', slug: '/hire/node-developer', hasSubmenu: true },
   { title: 'About Us', slug: '/about-us', hasSubmenu: false },
   { title: 'Contact Us', slug: '/contact-us', hasSubmenu: false },
@@ -58,7 +58,7 @@ const menuItems = [
 //         },
 //         {
 //           title: 'Hire Software Developer',
-//           slug: 'hire-software-developer',
+//           slug: 'hire-software-developer-india',
 //           description: 'Work with skilled & dedicated developers',
 //         },
 //         {
@@ -242,10 +242,10 @@ const menuItems = [
 
 const servicesData = {
   categories: [
-    { name: 'Software Development', slug: 'best-software-development-company-in-india' },
-    { name: 'Application Development', slug: 'application-development-services' },
-    { name: 'Ecommerce Development', slug: 'ecommerce-development-company' },
-    { name: 'Dedicated Technical Team', slug: 'hire-dedicated-technical-team' },
+    { name: 'Software Development', slug: 'software-development-company-in-india' },
+    { name: 'Application Development', slug: 'application-development-company-india' },
+    { name: 'Ecommerce Development', slug: 'ecommerce-development-company-india' },
+    { name: 'Dedicated Technical Team', slug: 'hire-dedicated-technical-team-india' },
     // { name: 'QA & Testing', slug: 'qa-testing' },
     // { name: 'Cloud Services', slug: 'cloud-services' },
 
@@ -253,15 +253,15 @@ const servicesData = {
   content: {
     "Software Development": {
       title: 'Software Development',
-      slug: 'best-software-development-company-in-india',
+      slug: 'software-development-company-in-india',
       description: 'Develop robust software',
       technologies: [
         { name: 'Custom Software Development', slug: 'custom-software-development-services' },
-        { name: 'CMS Development', slug: 'cms-development-services' },
-        { name: 'CRM Software Development', slug: 'crm-software-development-services' },
-        { name: 'Software Consulting', slug: 'software-development-consultants' },
-        { name: 'IT Consulting', slug: 'it-consulting-services' },
-        { name: 'Agile Consulting', slug: 'agile-consulting-services' },
+        { name: 'CMS Development', slug: 'cms-development-services-india' },
+        { name: 'CRM Software Development', slug: 'crm-software-development-company-india' },
+        { name: 'Software Consulting', slug: 'software-consultanting-services-india' },
+        { name: 'IT Consulting', slug: 'it-consulting-services-india' },
+        { name: 'Agile Consulting', slug: 'agile-consulting-services-india' },
         // { name: 'Application Maintenance', slug: 'application-maintenance' },
         // { name: 'Application Upgradation', slug: 'application-upgradation' },
       ],
@@ -269,12 +269,12 @@ const servicesData = {
 
         {
           title: 'Staff Augmentation',
-          slug: 'it-staff-augmentation-services',
+          slug: 'it-staff-augmentation-services-india',
           description: 'Access top technical resources on-demand',
         },
         {
           title: 'Hire Software Developer',
-          slug: 'hire-software-developer',
+          slug: 'hire-software-developer-india',
           description: 'Work with skilled & dedicated developers',
         },
         {
@@ -286,16 +286,16 @@ const servicesData = {
     },
     "Application Development": {
       title: 'Application Development',
-      slug: 'application-development-services',
+      slug: 'application-development-company-india',
       description: 'Create your dream app',
       technologies: [
-        { name: 'Web App Development', slug: 'web-application-development-services' },
-        { name: 'Mobile App Development', slug: 'mobile-app-development-services' },
-        { name: 'Front End Development', slug: 'front-end-development-services' },
-        { name: 'Back End Development', slug: 'back-end-development-services' },
-        { name: 'API Development & Integration', slug: 'api-development-and-integration-services' },
+        { name: 'Web App Development', slug: 'web-application-development-company-india' },
+        { name: 'Mobile App Development', slug: 'mobile-app-development-company-india' },
+        { name: 'Front End Development', slug: 'front-end-development-services-india' },
+        { name: 'Back End Development', slug: 'back-end-development-services-india' },
+        { name: 'API Development & Integration', slug: 'api-integration-and-development-services' },
         { name: 'Full Stack Development', slug: 'full-stack-development-services' },
-        { name: 'Website Development', slug: 'website-development-services' },
+        { name: 'Website Development', slug: 'website-development-services-india' },
       ],
       hiring: [
         {
@@ -317,7 +317,7 @@ const servicesData = {
     },
     "Ecommerce Development": {
       title: 'Ecommerce Development',
-      slug: 'ecommerce-development-company',
+      slug: 'ecommerce-development-company-india',
       description: 'Create your dream app',
       technologies: [
         { name: 'Ecommerce Web Development', slug: 'ecommerce-web-development' },
@@ -347,15 +347,15 @@ const servicesData = {
     },
     "Dedicated Technical Team": {
       title: 'Dedicated Technical Team',
-      slug: 'hire-dedicated-technical-team',
+      slug: 'hire-dedicated-technical-team-india',
       description: 'Hire team for your next project',
       technologies: [
-        { name: 'Staff Augmentation', slug: 'it-staff-augmentation-services' },
-        { name: 'Hire Software Developer', slug: 'hire-software-developer' },
+        { name: 'Staff Augmentation', slug: 'it-staff-augmentation-services-india' },
+        { name: 'Hire Software Developer', slug: 'hire-software-developer-india' },
         { name: 'IT Outsourcing', slug: 'it-outsourcing-services' },
-        { name: 'Dedicated Development Team', slug: 'hire-dedicated-development-team' },
-        { name: 'Offshore Dedicated Centre', slug: 'offshore-software-development-center-india' },
-        { name: 'Outsource Software Development', slug: 'software-development-outsourcing-company-in-india' },
+        { name: 'Dedicated Development Team', slug: 'hire-dedicated-development-team-india' },
+        { name: 'Offshore Dedicated Centre', slug: 'offshore-dedicated-development-center-india' },
+        { name: 'Outsource Software Development', slug: 'outsourcing-software-development-in-india' },
       ],
       hiring: [
         {

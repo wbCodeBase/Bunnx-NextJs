@@ -15,11 +15,11 @@ import manufacturing from "/public/industry/manufacturing.json";
 
 // Add keyword mapping
 // const keywordToSlug = {
-//     'CRM software development': 'crm-software-development-services',
-//     'software development agency': 'best-software-development-company-in-india',
-//     'web and mobile applications': 'application-development-services',
-//     'Seamless staff augmentation': 'it-staff-augmentation-services', 
-//     'smart eCommerce solutions': 'ecommerce-development-company',
+//     'CRM software development': 'crm-software-development-company-india',
+//     'software development agency': 'software-development-company-in-india',
+//     'web and mobile applications': 'application-development-company-india',
+//     'Seamless staff augmentation': 'it-staff-augmentation-services-india', 
+//     'smart eCommerce solutions': 'ecommerce-development-company-india',
 // };
 
 const Industries = () => {

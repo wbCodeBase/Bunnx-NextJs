@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const data = [
   {
-    slug: "front-end-development-services",
+    slug: "front-end-development-services-india",
     tagline: "Shape the Future of Your Online Presence",
     title: "Elevate Your Brand with Expert Front-End Development!",
     description: "We excel in crafting intuitive, visually appealing websites and applications that ensure an outstanding user experience. Trust us to transform your creative concepts into a dynamic, user-friendly online interface.",
@@ -11,7 +11,7 @@ const data = [
     backgroundImage: "https://spirecapital.com/wp-content/uploads/2017/02/CTA-background-get-in-touch.jpg",
   },
   {
-    slug: "back-end-development-services",
+    slug: "back-end-development-services-india",
     tagline: "We build systems that stay sharp under pressure.",
     title: "We make sure your tech keeps its promises!",
     description: "Get fluid back-end structures that act as the silent architect behind every interaction. Our agency converts everything into real-time experiences.",
@@ -27,7 +27,7 @@ const data = [
     backgroundImage: "https://spirecapital.com/wp-content/uploads/2017/02/CTA-background-get-in-touch.jpg",
   },
   {
-    slug: "crm-software-development-services",
+    slug: "crm-software-development-company-india",
     tagline: "We Make the Foundation of Your Customer Success Through CRM",
     title: "Grow Business by Mapping out Your Customer's Journey.",
     description: "Our experts design and implement CRM software solutions to serve as the central hub for all your customer interactions. At Bunnx, we also balance your app load and do auto-scaling configurations on cloud platforms to handle fluctuating user demands.",
@@ -35,7 +35,7 @@ const data = [
     backgroundImage: "https://spirecapital.com/wp-content/uploads/2017/02/CTA-background-get-in-touch.jpg",
   },
   {
-    slug: "best-software-development-company-in-india",
+    slug: "software-development-company-in-india",
     tagline: "We build industry specific softwares with cost-effective solutions.",
     title: "Get benefit from our expert analysis for better software performance!",
     description: "Access a skilled team that works for your growth. Get people who know how to handle your software in both ups and downs. From fast fixes to system functionality, we focus on everything.",
@@ -43,7 +43,7 @@ const data = [
     backgroundImage: "https://spirecapital.com/wp-content/uploads/2017/02/CTA-background-get-in-touch.jpg",
   },
   {
-    slug: "software-development-consultants",
+    slug: "software-consultanting-services-india",
     tagline: "Make Successful Softwares With Our Experts",
     title: "Get Access to New Technologies and Talented Software Experts.",
     description: "Our IT software consulting services work to make your customer interactions better. At Bunnx, we also dig deep in the roots of your problems rather than giving surface-level advice.",
@@ -51,7 +51,7 @@ const data = [
     backgroundImage: "https://spirecapital.com/wp-content/uploads/2017/02/CTA-background-get-in-touch.jpg",
   },
   {
-    slug: "it-consulting-services",
+    slug: "it-consulting-services-india",
     tagline: "We Help Lay the Foundation for your Business Success through IT Consulting.",
     title: "Fix Tech Challenges or Set Up Better Systems with Us!",
     description: "At Bunnx, we’ll work with you to find the right solutions—like setting up cloud platforms, automating workflows, or making sure your systems can handle busy times.",
@@ -59,7 +59,7 @@ const data = [
     backgroundImage: "https://spirecapital.com/wp-content/uploads/2017/02/CTA-background-get-in-touch.jpg",
   },
   {
-    slug: "mobile-app-development-services",
+    slug: "mobile-app-development-company-india",
     tagline: "Get Mobile Apps with Best Back-End and Front-End",
     title: "Solutions That Increase Your Visitors On the App",
     description: "Behind every swipe and scroll is a back-end made to perfection. If it’s syncing data or live chats on your app, we can still scale it as your audience grows. With our mobile app development services, your app will thrive in the digital world.",
@@ -67,7 +67,7 @@ const data = [
     backgroundImage: "https://spirecapital.com/wp-content/uploads/2017/02/CTA-background-get-in-touch.jpg",
   },
   {
-    slug: "api-development-and-integration-services",
+    slug: "api-integration-and-development-services",
     tagline: "Behind Every Great App Is a Brilliant API.",
     title: "APIs Built to Connect, Scale, and Succeed! ",
     description: "We specialize in advanced custom API Development & Integration services to create efficient, scalable systems that drive seamless functionality. Our focus is on crafting back-end solutions that seamlessly integrate with front-end interfaces, enhancing performance and user experience.",
@@ -75,7 +75,7 @@ const data = [
     backgroundImage: "https://spirecapital.com/wp-content/uploads/2017/02/CTA-background-get-in-touch.jpg",
   },
   {
-    slug: "agile-consulting-services",
+    slug: "agile-consulting-services-india",
     tagline: "Let’s get you ahead of the game",
     title: "Streamline your workflow with the right approach",
     description: "Agile doesn’t need to be complicated—it’s about finding what works best for your team.",
@@ -83,7 +83,7 @@ const data = [
     backgroundImage: "https://spirecapital.com/wp-content/uploads/2017/02/CTA-background-get-in-touch.jpg",
   },
   {
-    slug: "application-development-services",
+    slug: "application-development-company-india",
     tagline: "We build, you succeed.",
     title: "Smarter apps, simpler lives.",
     description: "Our team works with you every step of the way, so you get a product that adds real value to your business. With us, you get smart apps that stay ahead of time and help you build a strong foothold in the market.",
@@ -91,7 +91,7 @@ const data = [
     backgroundImage: "https://spirecapital.com/wp-content/uploads/2017/02/CTA-background-get-in-touch.jpg",
   },
   {
-    slug: "website-development-services",
+    slug: "website-development-services-india",
     tagline: "Your website should do more than exist—it should work hard for your success. ",
     title: "And we make that happen!",
     description: "We specialize in the latest web technologies like React, Angular, Node.js, and Laravel. Our expertise enables us to develop websites with cutting-edge functionality, robust back-end systems, and modern user interfaces tailored to your needs.",
@@ -99,7 +99,7 @@ const data = [
     backgroundImage: "https://spirecapital.com/wp-content/uploads/2017/02/CTA-background-get-in-touch.jpg",
   },
   {
-    slug: "cms-development-services",
+    slug: "cms-development-services-india",
     tagline: "Build a CMS That Keeps Visitors Coming Back for More.",
     title: "Get our CMS solutions for Your Next Big Success Story.",
     description: "A CMS helps to manage content and expand your online presence effortlessly. At Bunnx, we get that. That’s why we create CMS solutions that don’t just organize content but transform how you connect with your audience.",
@@ -115,7 +115,7 @@ const data = [
     backgroundImage: "https://spirecapital.com/wp-content/uploads/2017/02/CTA-background-get-in-touch.jpg",
   },
   {
-    slug: "ecommerce-development-company",
+    slug: "ecommerce-development-company-india",
     tagline: "Molding the Symphony of Your Success: Great merchants need masterful mechanics!",
     title: "Turning your brand into the next big eCommerce story",
     description: "Our eCommerce development company doesn’t just keep your site running—it transforms your ideas into experiences. We build exactly what businesses and customers expect. It allows you to expand your reach and increase your ROI.",
@@ -131,7 +131,7 @@ const data = [
     backgroundImage: "https://spirecapital.com/wp-content/uploads/2017/02/CTA-background-get-in-touch.jpg",
   },
   {
-    slug: "web-application-development-services",
+    slug: "web-application-development-company-india",
     tagline: "Get Web Apps to Handle the Heavy Lifting",
     title: "Precision-Built Apps That Run Fast",
     description: "We build apps that don’t freeze when you need them most, drain your battery by mid-day, and crash when thousands of users log in at once. Our team works on animations, balances resource usage, and cuts unnecessary processing every time.",
@@ -181,7 +181,7 @@ const data = [
     backgroundImage: "https://spirecapital.com/wp-content/uploads/2017/02/CTA-background-get-in-touch.jpg",
   },
 {
-    slug: "it-staff-augmentation-services",
+    slug: "it-staff-augmentation-services-india",
     tagline: "Get Expertise Without the Hiring",
     title: "Expand Your Team at the Speed of Business",
     description: "Workloads fluctuate, and hiring full-time employees for short-term projects isn’t always practical. With our staff augmentation services, you get the time to scale up when demand rises and down when things stabilize.",
@@ -189,7 +189,7 @@ const data = [
     backgroundImage: "https://spirecapital.com/wp-content/uploads/2017/02/CTA-background-get-in-touch.jpg",
   },
   {
-    slug: "hire-software-developer",
+    slug: "hire-software-developer-india",
     tagline: "No more frustrating disconnects between your systems!",
     title: "Building Everything from Scratch with our Developers.",
     description: "Getting software up and running should be the easiest part. Our developers handle the entire setup, so you don’t have to stress over server choices or downtime. Also, they put backup systems in place to never lose important data.",
@@ -205,7 +205,7 @@ const data = [
     backgroundImage: "https://spirecapital.com/wp-content/uploads/2017/02/CTA-background-get-in-touch.jpg",
   },
   {
-    slug: "hire-dedicated-development-team",
+    slug: "hire-dedicated-development-team-india",
     tagline: "Engineering the Future of Your Software!",
     title: "Making systems that innovate technology",
     description: "We construct back-end foundations that operate with precision. Our functions run without disruption. We have a team at Bunnx that develops applications.",
@@ -213,7 +213,7 @@ const data = [
     backgroundImage: "https://spirecapital.com/wp-content/uploads/2017/02/CTA-background-get-in-touch.jpg",
   },
   {
-    slug: "offshore-software-development-center-india",
+    slug: "offshore-dedicated-development-center-india",
     tagline: "Building foundations that go beyond outsourcing!",
     title: "Our offshore development center is more than just a cost-saving move.",
     description: "We work with the same commitment and technical excellence as an in-house unit. From custom software solutions to large-scale system engineering, our developers bring structured problem-solving. With a development environment, we engineer solutions that shape industries.",
@@ -222,7 +222,7 @@ const data = [
   },
   
   {
-    "slug": "hire-dedicated-technical-team",
+    "slug": "hire-dedicated-technical-team-india",
     "tagline": "Tech Talent Without Boundaries, Impact Without Limits!",
     "title": "Your Success Is Our Obsession",
     "description": "Imagine a team that breathes your vision, thinks like founders, and transforms complex challenges into breakthrough solutions. Our dedicated developers are more than experts – they're your strategic technology allies, committed to turning your most ambitious technological dreams into reality.",
@@ -253,7 +253,7 @@ const getCtaContent = (data, serviceDetailPageSlug) => {
   }
 
   // Fallback to default content if no match
-  return data.find(item => item?.slug === "best-software-development-company-in-india") || data[0];
+  return data.find(item => item?.slug === "software-development-company-in-india") || data[0];
 };
 
 const GlassmorphismCta = ({ serviceDetailPageSlug }) => { 

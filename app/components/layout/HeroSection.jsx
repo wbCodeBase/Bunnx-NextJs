@@ -8,26 +8,26 @@ import { FaLocationArrow } from "react-icons/fa";
 
 // Keep value empty if no redirection is required 
 const keywordToSlug = {
-  'top front end development company': 'front-end-development-services',
-  'back end development company': 'back-end-development-services',
-  'software development company in India': 'best-software-development-company-in-india',
-  'software development services': 'best-software-development-company-in-india',
-  'CRM software solutions': 'crm-software-development-services',
+  'top front end development company': 'front-end-development-services-india',
+  'back end development company': 'back-end-development-services-india',
+  'software development company in India': 'software-development-company-in-india',
+  'software development services': 'software-development-company-in-india',
+  'CRM software solutions': 'crm-software-development-company-india',
   "custom software development company": 'custom-software-development-services',
-  "IT consulting services India": 'it-consulting-services',
-  "web development company": 'web-application-development-services',
-  "mobile app development company": 'mobile-app-development-services',
+  "IT consulting services India": 'it-consulting-services-india',
+  "web development company": 'web-application-development-company-india',
+  "mobile app development company": 'mobile-app-development-company-india',
 };
 
 const HeroSection = ({ pageSlug, extractNameFromSlug, heroDefaultImg }) => {
 
 
   const heroSection = [  {
-    "title": "Front End Development Services",
+    "title": "Front End Development Services India",
     "description": "Take the user level to the next level and develop a flawless website with the top front end development company.",
     "ctaText": "Get started with us",
     "ctaRedirectUrl": "#contact-us",
-    "fetchOnSlug": "front-end-development-services"
+    "fetchOnSlug": "front-end-development-services-india"
   },
 
   {
@@ -35,29 +35,29 @@ const HeroSection = ({ pageSlug, extractNameFromSlug, heroDefaultImg }) => {
     "description": "Remember that brilliant idea keeping you up at night? The one that could change everything? We're the secret weapon that turns those 3 AM sparks into world-changing realities. Imagine having a team of tech wizards who don't just code, but truly get your vision.",
     "ctaText": "Get started with us",
     "ctaRedirectUrl": "#contact-us",
-    "fetchOnSlug": "hire-dedicated-technical-team"
+    "fetchOnSlug": "hire-dedicated-technical-team-india"
   },
 
   {
-    "title": "Software Development Services",
+    "title": "Software Development Company in India",
     "description": "Bunnx is Leading software Development Company in India to plan, implement new softwares and upgrades, improve customer service, and drive productivity. Enhance user satisfaction, drive results and accelerate innovation with Leading software development services that exceed expectations in functionality and growth.",
     "ctaText": "Get started with us",
     "ctaRedirectUrl": "#contact-us",
-    "fetchOnSlug": "best-software-development-company-in-india"
+    "fetchOnSlug": "software-development-company-in-india"
   },
   {
-    "title": "Back End Development Services",
+    "title": "Back End Development Services India",
     "description": "Behind every great app is a strong backend. We realise this and write the codes that make things work in the background of your website. This makes us the best back end development company in India.",
     "ctaText": "Get started with us",
     "ctaRedirectUrl": "#contact-us",
-    "fetchOnSlug": "back-end-development-services"
+    "fetchOnSlug": "back-end-development-services-india"
   },
   {
-    "title": "CRM Software Development Services",
+    "title": "CRM Software Development Company India",
     "description": "Using smooth CRM software solutions created by professionals at a top CRM software development company, you can't reimagine how your company will operate in the future.",
     "ctaText": "Get Connected Now",
     "ctaRedirectUrl": "#contact-us",
-    "fetchOnSlug": "crm-software-development-services"
+    "fetchOnSlug": "crm-software-development-company-india"
   },
   {
     "title": "Custom Software Development Services",
@@ -67,67 +67,67 @@ const HeroSection = ({ pageSlug, extractNameFromSlug, heroDefaultImg }) => {
     "fetchOnSlug": "custom-software-development-services"
   },
   {
-    "title": "Software Development Consultants",
+    "title": "Software Consulting Services India",
     "description": "With smart software consulting services, we help you rethink how your business runs, simpler, faster, and more efficiently. As one of India’s leading software consulting companies, we’re all about creating solutions that actually work for you.",
     "ctaText": "Get Connected Now",
     "ctaRedirectUrl": "#contact-us",
-    "fetchOnSlug": "software-development-consultants"
+    "fetchOnSlug": "software-consultanting-services-india"
   },
   {
-    "title": "IT Consulting Services",
+    "title": "IT Consulting Services India",
     "description": "With our IT consulting services India, you can completely change how your business operates and gets ready for the future. As one of India’s top IT consulting firms, it brings innovation to the core of your operations.",
     "ctaText": "Get Connected Now",
     "ctaRedirectUrl": "#contact-us",
-    "fetchOnSlug": "it-consulting-services"
+    "fetchOnSlug": "it-consulting-services-india"
   },
   {
-    "title": "Web Application Development Services",
+    "title": "Web Application Development Company in India",
     "description": "Web applications should do more than just functioning. And hence, our web development company builds such apps that don’t just work but leave a lasting impression. Every project we take on is crafted with a lot of detailed work while balancing design.",
     "ctaText": "Get Connected Now",
     "ctaRedirectUrl": "#contact-us",
-    "fetchOnSlug": "web-application-development-services"
+    "fetchOnSlug": "web-application-development-company-india"
   },
   {
-    "title": "Mobile App Development Services",
+    "title": "Mobile App Development Company India",
     "description": "Get futuristic mobile experiences with apps that go beyond the ordinary. Our mobile app development company creates a balance between design and performance. We also excel in collaboration and precision. From wireframes to the final launch, we pay attention to every detail.",
     "ctaText": "Get Connected Now",
     "ctaRedirectUrl": "#contact-us",
-    "fetchOnSlug": "mobile-app-development-services"
+    "fetchOnSlug": "mobile-app-development-company-india"
   },
   {
-    "title": "API Development & Integration Services",
+    "title": "API Integration & Development Services",
     "description": "We design APIs that make your systems work better together. With our API Development & Integration services, your applications can communicate effortlessly and your business can run smartly. Get the best outcome of API development & integration with no hassle at all!",
     "ctaText": "Get started with us",
     "ctaRedirectUrl": "#contact-us",
-    "fetchOnSlug": "api-development-and-integration-services"
+    "fetchOnSlug": "api-integration-and-development-services"
   },
   {
-    "title": "Agile Consulting Services",
+    "title": "Agile Consulting Services India",
     "description": "Tired of endless meetings and bottlenecks slowing your team down? Agile isn’t just a method and we’re here to help you master it.",
     "ctaText": "Get started with us",
     "ctaRedirectUrl": "#contact-us",
-    "fetchOnSlug": "agile-consulting-services"
+    "fetchOnSlug": "agile-consulting-services-india"
   },
   {
-    "title": "CMS Development Services",
+    "title": "CMS Development Services India",
     "description": "Now no more struggling with updates or dealing with web designs—just an effortless way to manage your content. Our team builds CMS solutions that let you add, edit, and organize everything without the usual maintenance tension.",
     "ctaText": "Get started with us",
     "ctaRedirectUrl": "#contact-us",
-    "fetchOnSlug": "cms-development-services"
+    "fetchOnSlug": "cms-development-services-india"
   },
   {
-    "title": "Application Development Services",
+    "title": "Application Development Company India",
     "description": "Let’s create an application that is built to impress your visitors. With our application development services, we’ll bring better apps that have the right user interface and stand out from the crowd.",
     "ctaText": "Get Connected Now",
     "ctaRedirectUrl": "#contact-us",
-    "fetchOnSlug": "application-development-services"
+    "fetchOnSlug": "application-development-company-india"
   },
   {
-    "title": "Website Development Services",
+    "title": "Website Development Services India",
     "description": "From idea to launch, we build websites that truly reflect your business. You'll get exceptional results from the best website development company.",
     "ctaText": "Get Connected Now",
     "ctaRedirectUrl": "#contact-us",
-    "fetchOnSlug": "website-development-services"
+    "fetchOnSlug": "website-development-services-india"
   },
   {
     "title": "Full Stack Development Services",
@@ -137,11 +137,11 @@ const HeroSection = ({ pageSlug, extractNameFromSlug, heroDefaultImg }) => {
     "fetchOnSlug": "full-stack-development-services"
   },
   {
-    "title": "Ecommerce Development Company",
+    "title": "eCommerce Development Company in India",
     "description": "Transform the future of your online business with a perfectly designed eCommerce website, built by specialists from a leading eCommerce development company. Elevate your brand with innovative solutions and an error-free user experience that sets your digital store apart.",
     "ctaText": "Get started with us",
     "ctaRedirectUrl": "#contact-us",
-    "fetchOnSlug": "ecommerce-development-company"
+    "fetchOnSlug": "ecommerce-development-company-india"
   },
   {
     "title": "Ecommerce Consulting Services to Grow Your Business",
@@ -186,8 +186,8 @@ const HeroSection = ({ pageSlug, extractNameFromSlug, heroDefaultImg }) => {
     "ctaRedirectUrl": "#contact-us", 
   },
   {
-    "fetchOnSlug": "it-staff-augmentation-services",
-    "title": "IT Staff Augmentation Services",
+    "fetchOnSlug": "it-staff-augmentation-services-india",
+    "title": "IT Staff Augmentation Services in India",
     "description": "Missing a Python developer for your new project? Or do you need a UI/UX designer? Tell us what’s missing in your team and we’ll send you the talented experts. Our staff augmentation company in India will fill the skill gap instantly.",
     "ctaText": "Get started with us",
     "ctaRedirectUrl": "#contact-us",
@@ -197,7 +197,7 @@ const HeroSection = ({ pageSlug, extractNameFromSlug, heroDefaultImg }) => {
     "description": "Every great software product starts with the right people behind it. Finding the right developers, though? We make it easy. If you need a single developer or an entire team, our team connects you with professionals who don’t just write code but build solutions that work.",
     "ctaText": "Get started with us",
     "ctaRedirectUrl": "#contact-us",
-    "fetchOnSlug": "hire-software-developer"
+    "fetchOnSlug": "hire-software-developer-india"
   },
   {
     "title": "IT Outsourcing Services",
@@ -207,18 +207,18 @@ const HeroSection = ({ pageSlug, extractNameFromSlug, heroDefaultImg }) => {
     "fetchOnSlug": "it-outsourcing-services"
   },
   {
-    "title": "Hire Dedicated Software Development Teams",
+    "title": "Hire Dedicated Software Development Team in India",
     "description": "Great ideas need the right people who can work side by side, tackle challenges, and create a fully functional software. If you're building a startup from the ground up or expanding an existing platform, we bring the right mix of skills to the table.",
     "ctaText": "Get started with us",
     "ctaRedirectUrl": "#contact-us",
-    "fetchOnSlug": "hire-dedicated-development-team"
+    "fetchOnSlug": "hire-dedicated-development-team-india"
   },
   {
-    "title": "Setup An Offshore Development Center",
+    "title": "Offshore Dedicated Development Center in India",
     "description": "Why build everything in-house when you can have a dedicated team working on your projects? Our offshore development center gives you access to skilled engineers, architects, and testers. Instead of dealing with hiring headaches or infrastructure costs, you get a team that’s already set up and ready to build. With expertise in multiple programming languages, we take care of the technical side so you can concentrate on growing your business.",
     "ctaText": "Get started with us",
     "ctaRedirectUrl": "#contact-us",
-    "fetchOnSlug": "offshore-software-development-center-india"
+    "fetchOnSlug": "offshore-dedicated-development-center-india"
   },
 
   {
@@ -226,7 +226,7 @@ const HeroSection = ({ pageSlug, extractNameFromSlug, heroDefaultImg }) => {
     "description": "Bring your ideas to life with our expert engineers. With 500+ successful projects, we blend Silicon Valley excellence with India’s innovation. Our 200+ certified developers specialize in AI, Cloud, Blockchain, and more, delivering solutions 40% faster. Skip the hassle of building a team – we provide pre-vetted talent, modern tools, and proven processes. Whether you need a full product team or niche expertise, we’re here to help you build the future.",
     "ctaText": "Let’s Talk – Free Consultation",
     "ctaRedirectUrl": "#contact-us",
-    "fetchOnSlug": "software-development-outsourcing-company-in-india"
+    "fetchOnSlug": "outsourcing-software-development-in-india"
   }
 
 ]

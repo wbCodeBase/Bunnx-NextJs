@@ -20,17 +20,17 @@ import LaunchSupport from "/public/iconMethodology/launchSupport.png";
 import { createLinkedContent } from '#/utils/LinkBuilder';
 
 const keywordToSlug = {
-    'front end development': 'front-end-development-services',
-    'software development services': 'best-software-development-company-in-india',
+    'front end development': 'front-end-development-services-india',
+    'software development services': 'software-development-company-in-india',
     'custom software development company': 'custom-software-development-services',
-    'best IT consulting services in India': 'it-consulting-services',
-    'back end development': 'back-end-development-services',
-    'API Development & Integration Services': 'api-development-and-integration-services',
+    'best IT consulting services in India': 'it-consulting-services-india',
+    'back end development': 'back-end-development-services-india',
+    'API Development & Integration Services': 'api-integration-and-development-services',
 };
 
 
 const contentBySlug = {
-    "front-end-development-services": {
+    "front-end-development-services-india": {
         h2: "Methodology",
         h4: "Get Smarter Applications with Effective Front End Solutions",
         p: "Our front end development strategies are specifically designed to improve usability, scalability, and performance. By combining user-centric design with technological competence, we enable organisations to provide seamless digital experiences.",
@@ -58,7 +58,7 @@ const contentBySlug = {
 
         ]
     },
-    "back-end-development-services": {
+    "back-end-development-services-india": {
         h2: "Methodology",
         h4: "Get Smarter Applications with Effective Back End Solutions",
         p: "Our back end development strategies are specifically designed to improve usability, scalability, and performance. By combining user-centric design with technological competence, we enable organisations to provide digital experiences.",
@@ -85,7 +85,7 @@ const contentBySlug = {
             }
         ]
     },
-    "best-software-development-company-in-india": {
+    "software-development-company-in-india": {
         h2: "Methodology",
         h4: "Get Softwares that Require Low Maintenance",
         p: "Our software development services team works towards developing a more secure and advanced software solution by using technologies that are latest and fruitful.",
@@ -123,7 +123,7 @@ const contentBySlug = {
 
         ]
     },
-    "crm-software-development-services": {
+    "crm-software-development-company-india": {
         h2: "Methodology",
         h4: "Get Smarter Applications with Effective CRM Software Development Solutions",
         p: "We build real-time back-end systems that allow for communication and data updates across multiple users and devices. Our expertise includes setting up WebSockets, Kafka, and RabbitMQ to process streaming data, handle high-throughput messaging, and push notifications.",
@@ -181,7 +181,7 @@ const contentBySlug = {
 
     },
 
-    "software-development-consultants": {
+    "software-consultanting-services-india": {
         h2: "Methodology",
         h4: "Get Smarter Software with our Consultants",
         p: "We have IT software consulting services that allow for communication and data updates across multiple users and devices. We process streaming data and handle high-throughput messaging.",
@@ -211,7 +211,7 @@ const contentBySlug = {
     },
 
 
-    "it-consulting-services": {
+    "it-consulting-services-india": {
         h2: "Methodology",
         h4: "Get Smarter Applications with Effective IT Consulting Solutions",
         p: "Bring balance to your tech ecosystem with our experts. We have built methodologies to connect dots of your business ideas and give you the real advantage.",
@@ -245,7 +245,7 @@ const contentBySlug = {
 
     },
 
-    "mobile-app-development-services": {
+    "mobile-app-development-company-india": {
         "h2": "Methodology",
         "h4": "Get Smarter Applications with Effective Mobile App Solutions",
         "p": "Our mobile app development strategies include user-centric design with technological competence. With advanced tools and programming practices, we create mobile applications that are fast and feature-packed.",
@@ -273,7 +273,7 @@ const contentBySlug = {
         ]
     },
 
-    "api-development-and-integration-services": {
+    "api-integration-and-development-services": {
         "h2": "Methodology",
         "h4": "Get Smarter Applications with Effective API Solutions",
         "p": "Our API Development & Integration strategies are crafted to enhance usability, scalability, and performance. By leveraging cutting-edge technology, we empower organizations to deliver digital experiences.",
@@ -302,7 +302,7 @@ const contentBySlug = {
     },
 
 
-    "agile-consulting-services": {
+    "agile-consulting-services-india": {
         "h2": "Methodology",
         "h4": "Get Smarter Applications with Effective Agile Consulting Solutions",
         "p": "Whether it’s refining your current processes or introducing new frameworks, we help you unlock smoother collaboration and faster project delivery. Our Agile consulting services follow the best methodology.",
@@ -330,7 +330,7 @@ const contentBySlug = {
         ]
     },
 
-    "application-development-services": {
+    "application-development-company-india": {
         "h2": "Methodology",
         "h4": "Get Smarter Applications with Effective Application Solutions",
         "p": "Creating an application requires complex problem solving and impactful solutions. But we have it all. Here’s our step-by-step approach to building applications that truly work:",
@@ -357,7 +357,7 @@ const contentBySlug = {
             }
         ]
     },
-    "website-development-services": {
+    "website-development-services-india": {
         "h2": "Methodology",
         "h4": "Get the Best Interface with Effective Website Solutions",
         "p": "Our website development strategies are specifically designed to improve usability, scalability, and performance. By combining user-centric design with technological competence, we enable organisations to provide digital experiences.",
@@ -385,7 +385,7 @@ const contentBySlug = {
         ],
     },
 
-    "cms-development-services": {
+    "cms-development-services-india": {
         "h2": "Methodology",
         "h4": "Get Smarter Applications with Effective CMS Solutions",
         "p": "Our experts design contact tracking modules with indexed database queries so that you can pull up customer details in seconds. We build APIs that connect your CRM with ERP systems, marketing automation tools, and analytics platforms. It creates a connected ecosystem where everything talks to each other.",
@@ -455,7 +455,7 @@ const contentBySlug = {
         ]
     },
 
-    "ecommerce-development-company": {
+    "ecommerce-development-company-india": {
         "h2": "Methodology",
         "h4": "Get Smarter Applications with Effective Ecommerce Solutions",
         "p": "Our eCommerce development company in India specializes in creating user-friendly solutions designed for your organization's requirements.",
@@ -545,7 +545,7 @@ const contentBySlug = {
     },
 
 
-    "web-application-development-services": {
+    "web-application-development-company-india": {
         "h2": "Methodology",
         "h4": "Get Smarter Applications with Effective Web App Solutions",
         "p": "Our web development strategies include user-centric design with technological competence. With advanced tools and programming practices, we create web applications that are fast and feature-packed.",
@@ -773,7 +773,7 @@ const contentBySlug = {
 
 
 
-    "it-staff-augmentation-services": {
+    "it-staff-augmentation-services-india": {
         "h2": "Our Augmentation Methodology",
         "h4": "Systematic Approach to Team Integration",
         "p": "We follow a proven 4-phase methodology for seamlessly integrating augmented staff into your team. Each phase builds upon the previous one, ensuring smooth onboarding and maximum productivity.",
@@ -805,7 +805,7 @@ const contentBySlug = {
         ]
     },
 
-    "hire-software-developer": {
+    "hire-software-developer-india": {
         "h2": "Developer Hiring Process",
         "h4": "Strategic Developer Selection & Onboarding",
         "p": "Our developer hiring process is designed to identify and onboard the perfect technical talent for your needs. We combine rigorous technical assessment with personality matching to ensure you get developers who not only code well but also fit seamlessly into your team culture.",
@@ -869,7 +869,7 @@ const contentBySlug = {
         ]
     },
 
-    "hire-dedicated-development-team": {
+    "hire-dedicated-development-team-india": {
         "h2": "Development Team Integration Methodology",
         "h4": "Systematic Approach to Building Your Extended Development Team",
         "p": "Our proven methodology ensures seamless integration of dedicated development teams through a structured four-phase process. Each phase builds upon the previous one, creating a foundation for successful long-term collaboration and consistent delivery.",
@@ -901,7 +901,7 @@ const contentBySlug = {
         ]
     },
 
-    "offshore-software-development-center-india": {
+    "offshore-dedicated-development-center-india": {
         "h2": "Offshore Development Center Methodology",
         "h4": "Structured Approach to Establishing Your Offshore Development Hub",
         "p": "Our offshore development center methodology follows a systematic four-phase approach designed to establish, integrate, and optimize your offshore operations. Each phase incorporates specific protocols and checkpoints to ensure successful implementation.",
@@ -933,7 +933,7 @@ const contentBySlug = {
         ]
     },
 
-    "software-development-outsourcing-company-in-india": {
+    "outsourcing-software-development-in-india": {
         "h2": "Our Outsourcing Development Methodology",
         "h4": "A Strategic, Scalable & Transparent Outsourcing Model",
         "p": "We follow a structured outsourcing methodology that ensures seamless integration, efficient collaboration, and high-quality software delivery. Our approach minimizes risks, maximizes productivity, and guarantees alignment with your business goals.",
@@ -971,7 +971,7 @@ const contentBySlug = {
         ]
     },
 
-    "hire-dedicated-technical-team": {
+    "hire-dedicated-technical-team-india": {
         "h2": "Methodology",
         "h4": "Hiring Your Dream Team",
         "p": "Hiring a dedicated technical team requires more than just finding talent—it demands a strategic approach that aligns with your business goals. We help you navigate this process with precision and care.",
@@ -1014,7 +1014,7 @@ const contentBySlug = {
 
 export default function Methodology({ serviceDetailPageSlug }) {
 
-    const content = contentBySlug[serviceDetailPageSlug] || contentBySlug["front-end-development-services"]; // Fallback to a default slug
+    const content = contentBySlug[serviceDetailPageSlug] || contentBySlug["front-end-development-services-india"]; // Fallback to a default slug
     const { h2, h4, p, steps } = content;
 
     const containerRef = useRef(null)

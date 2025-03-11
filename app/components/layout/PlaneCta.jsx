@@ -11,28 +11,28 @@ const PlaneCta = ({ serviceDetailPageSlug }) => {
             head: "Frustrated with a lacklustre website design?",
             para: "Our expert Front-End Development team is here to help you captivate your visitors. Whether it’s sleek animations, navigation, or pixel-perfect design, we craft experiences that leave a lasting impact.",
             ctaText: "Let's Connect!",
-            slug: "front-end-development-services"
+            slug: "front-end-development-services-india"
         },
         {
             span: "Growth-Oriented Strategies That Adapt to Your Expanding Needs!",
             head: "Let us handle complex codes for your website while you scale your business!",
             para: "Are you fed up with unreliable servers and constant downtime? Say no more! Our back-end experts will design solid architectures to boost your database performance.",
             ctaText: "Let's Connect!",
-            slug: "back-end-development-services"
+            slug: "back-end-development-services-india"
         },
         {
             span: "Scale Your Success with Adaptive CRM Development!",
             head: "Get Expert Insights to Build Better CRM Solutions with Us!",
             para: "Transform your business operations with a CRM software solution that grows alongside your company. We build powerful systems that eliminate workflow bottlenecks and maximize team efficiency.",
             ctaText: "Let's Connect!",
-            slug: "crm-software-development-services"
+            slug: "crm-software-development-company-india"
         },
         {
             span: "Scale Your Success with Adaptive CRM Development!",
             head: "Get all your details at one place with the best CRM solutions!",
             para: "Transform your business operations with a CRM software solution that grows alongside your company. We build powerful systems that eliminate workflow bottlenecks and maximize team efficiency.",
             ctaText: "Let's Connect!",
-            slug: "software-development-consultants"
+            slug: "software-consultanting-services-india"
         },
         {
             span: "We create softwares that redefines your processes.",
@@ -46,56 +46,56 @@ const PlaneCta = ({ serviceDetailPageSlug }) => {
             head: "Let us handle complex codes for your website while you scale your business!",
             para: "Are you fed up with unreliable servers and constant downtime? Say no more! Our software development services experts will design solid architectures to boost your database performance.",
             ctaText: "Let's Connect!",
-            slug: "best-software-development-company-in-india"
+            slug: "software-development-company-in-india"
         },
         {
             span: "Get Results with Smart IT Solutions!",
             head: "Stay away from outdated systems with the best IT consulting firm!",
             para: "Use our IT consulting services India to tackle your challenges and simplify complex processes. Let’s turn technology into a tool that helps your business thrive every step of the way.",
             ctaText: "Let's Connect!",
-            slug: "it-consulting-services"
+            slug: "it-consulting-services-india"
         },
         {
             span: "Code That Scales, Apps That Shine!",
             head: "Struggling with apps that lag, crash, or fail?",
             para: "Say no more! With Bunnx, you can get the best-in-class solution for all your mobile app development needs. Be it a gaming app or an educational app, our experts are here to help you out in every way. So, let's make the next best app together!",
             ctaText: "Let's Connect!",
-            slug: "mobile-app-development-services"
+            slug: "mobile-app-development-company-india"
         },
         {
             span: "We Code the Connection and Power the Future.",
             head: "Frustrated with unreliable systems and frequent downtimes?",
             para: "Our API Development & Integration Services deliver robust architectures, optimize database performance, and streamline integration services for seamless functionality. So, with us you get the best service with outcomes that matter.",
             ctaText: "Let's Connect!",
-            slug: "api-development-and-integration-services"
+            slug: "api-integration-and-development-services"
         },
         {
             span: "Let’s Create Something Your Customers Can’t Resist!",
             head: "Frustrated with unreliable systems and frequent downtimes?",
             para: "With our Agile consulting services, we’ll design workflows that evolve with your business. Stay ahead of the competition with processes that evolve as your business grows.",
             ctaText: "Let's Connect!",
-            slug: "api-development-and-integration-services"
+            slug: "api-integration-and-development-services"
         },
         {
             span: "We build apps that are not just powerful but a joy to use.",
             head: "With us, get mobile apps that become a gateway to your business growth!",
             para: "Every app starts with a vision, and we’re here to turn that vision into an architecture. With our Agile consulting services, we design dynamic workflows that evolve with your business.",
             ctaText: "Let's Connect!",
-            slug: "application-development-services"
+            slug: "application-development-company-india"
         },
         {
             span: "We don’t just build websites!",
             head: "We create online experiences that your customers will love.",
             para: "Our team brings your ideas to life with websites that tell your story and engage your customers. From eye-catching visuals to effortless navigation, we create digital spaces that keep visitors coming back. Your vision drives our creativity, and we bring it to life with precision and passion.",
             ctaText: "Let's Connect!",
-            slug: "website-development-services"
+            slug: "website-development-services-india"
         },
         {
             span: "Get A Backend That Won’t Slow You Down",
             head: "Ever clicked on a website that took forever to load? ",
             para: "We build CMS platforms that keep everything moving like clockwork. With us you not only get the perfect CMS solution but also a team that is there to support and guide you. Enhance your business and streamline every process with the best in class CMS development services.",
             ctaText: "Let's Connect!",
-            slug: "cms-development-services"
+            slug: "cms-development-services-india"
         },
         {
             span: "Your tech partner for every step of the journey!",
@@ -109,7 +109,7 @@ const PlaneCta = ({ serviceDetailPageSlug }) => {
             head: "You build your eCommerce business, while we build your eCommerce store!",
             para: "Struggling with slow-loading pages and checkout failures? Say no more! We have got you covered with the best solutions to ensure that your eCommerce business is not impacted at all.",
             ctaText: "Let's Connect!",
-            slug: "ecommerce-development-company"
+            slug: "ecommerce-development-company-india"
         },
         {
             span: "Let us Build an eCommerce Experience Customers will Love",
@@ -123,7 +123,7 @@ const PlaneCta = ({ serviceDetailPageSlug }) => {
             head: "We Build Fast and Responsive Web Apps.",
             para: "If you're launching a high-traffic platform or a data-driven dashboard, we make sure your app does its job—and does it well. Ready to ditch the bugs and build something real?",
             ctaText: "Let's Connect!",
-            slug: "web-application-development-services"
+            slug: "web-application-development-company-india"
         },
 
         {
@@ -168,14 +168,14 @@ const PlaneCta = ({ serviceDetailPageSlug }) => {
             "head": "Frustrated by pages that crash in mid-checkout? Let’s fix that.",
             "para": "Our tech developers will connect the tech dots and change engines to give the best outcome. We provide staff augmentation services that will allow you to grow your revenue. It will help you to scale resources while maintaining project timelines and quality.",
             "ctaText": "Let's Connect!",
-            "slug": "it-staff-augmentation-services"
+            "slug": "it-staff-augmentation-services-india"
         },
         {
             "span": "Build with the Best, Scale Without Limits",
             "head": "Finding the right talent, though?",
             "para": "That’s where things get tricky. That’s why businesses turn to us. We connect you with software engineers who build web apps, mobile platforms, AI-powered systems, or complex enterprise solutions.",
             "ctaText": "Let's Connect!",
-            "slug": "hire-software-developer"
+            "slug": "hire-software-developer-india"
         },
         {
             "span": "Let Experts Handle the Tech, You Lead Your Business",
@@ -189,28 +189,28 @@ const PlaneCta = ({ serviceDetailPageSlug }) => {
             "head": "Get Highest ROI with our Dedicated Development Team",
             "para": "We write maintainable code, implement backend architectures, and use automation to speed up testing and deployment. If it’s API development, microservices implementation, or front-end engineering, hire dedicated PHP developers to build systems that work the best.",
             "ctaText": "Let's Connect!",
-            "slug": "hire-dedicated-development-team"
+            "slug": "hire-dedicated-development-team-india"
         },
         {
             "span": "Bunnx - Your full-fledged development team",
             "head": "Grow with our Offshore Dedicated Centre",
             "para": "Why get tangled in recruitment, training, and retention when you can have an expert team ready to dive into your projects? Our offshore development center isn’t just about outsourcing—it’s about having a dedicated extension of your in-house team.",
             "ctaText": "Let's Connect!",
-            "slug": "offshore-software-development-center-india"
+            "slug": "offshore-dedicated-development-center-india"
         },
         {
             "span": "Outsource Smart, Scale Faster, Innovate Better",
             "head": "Your Vision, Our Code – Build Exceptional Software with India’s Best Talent",
             "para": "Skip the hiring struggles and development delays. Our expert teams integrate seamlessly into your workflow, delivering high-quality software at speed and scale. Whether you need full-cycle development or specialized expertise, we’ve got you covered. Let’s turn your ideas into reality with cutting-edge technology and world-class engineering.",
             "ctaText": "Start Your Project Today!",
-            "slug": "software-development-outsourcing-company-in-india"
+            "slug": "outsourcing-software-development-in-india"
         },
         {
             "span": "Tech Talent Without Limits, Impact Without Boundaries",
             "head": "Your Vision, Our Expertise, Zero Compromises",
             "para": "Forget the recruitment maze and talent wars. We've curated a dream team of tech experts who seamlessly integrate into your workflow, turning your boldest ideas into reality. It's not outsourcing – it's a technological partnership that transforms businesses.",
             "ctaText": "Let's Connect!",
-            "slug": "hire-dedicated-technical-team"
+            "slug": "hire-dedicated-technical-team-india"
         }
 
 
@@ -231,9 +231,9 @@ const PlaneCta = ({ serviceDetailPageSlug }) => {
 
 
     const keywordToSlug = {
-        'software development services': 'best-software-development-company-in-india',
-        'IT consulting services India': 'it-consulting-services',
-        'API Development & Integration Services': 'api-development-and-integration-services',
+        'software development services': 'software-development-company-in-india',
+        'IT consulting services India': 'it-consulting-services-india',
+        'API Development & Integration Services': 'api-integration-and-development-services',
     }
 
 

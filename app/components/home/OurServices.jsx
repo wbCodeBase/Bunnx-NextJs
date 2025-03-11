@@ -24,40 +24,40 @@ const techStackData = {
             "description": "Bunnx is your go-to software development agency in this evolving and dynamic era. Our software development services adhere to high-quality coding.",
             "columns": [
                 { "name": "Custom Software Development", "description": "Tailored solutions for excellence", "slug": "custom-software-development-services" },
-                { "name": "CMS Development", "description": "Faster CMS Development", "slug": "cms-development-services" },
-                { "name": "CRM Software Development", "description": "Transform ideas into powerful apps", "slug": "crm-software-development-services" },
-                { "name": "Software Consulting", "description": "Expert advice on tech", "slug": "software-development-consultants" },
+                { "name": "CMS Development", "description": "Faster CMS Development", "slug": "cms-development-services-india" },
+                { "name": "CRM Software Development", "description": "Transform ideas into powerful apps", "slug": "crm-software-development-company-india" },
+                { "name": "Software Consulting", "description": "Expert advice on tech", "slug": "software-consultanting-services-india" },
 
-                { "name": "IT Consulting", "description": "Software Outsourcing", "slug": "it-consulting-services" },
-                { "name": "Agile Consulting", "description": "Optimizing customer relations", "slug": "agile-consulting-services" },
+                { "name": "IT Consulting", "description": "Software Outsourcing", "slug": "it-consulting-services-india" },
+                { "name": "Agile Consulting", "description": "Optimizing customer relations", "slug": "agile-consulting-services-india" },
             ],
-            linkViewMore: "best-software-development-company-in-india"
+            linkViewMore: "software-development-company-in-india"
         },
         "Application Development": {
             "title": "Application Development",
             "description": "Transforming ideas into powerful digital solutions, we craft innovative web and mobile applications that drive your business forward with smart & hi-tech technology.",
             "columns": [
-                { "name": "Web App Development", "description": "Next-gen web experiences", "slug": "web-application-development-services" },
-                { "name": "Mobile App Development", "description": "Fast, dynamic web apps", "slug": "mobile-app-development-services" },
+                { "name": "Web App Development", "description": "Next-gen web experiences", "slug": "web-application-development-company-india" },
+                { "name": "Mobile App Development", "description": "Fast, dynamic web apps", "slug": "mobile-app-development-company-india" },
                 { "name": "Frontend Development", "description": "Sleek, powerful iOS apps", "slug": "frontend-development" },
                 { "name": "Backend Development", "description": "Robust Android solutions", "slug": "backend-development" },
-                { "name": "API Development & Integration", "description": "Build once, run everywhere", "slug": "api-development-and-integration-services" },
+                { "name": "API Development & Integration", "description": "Build once, run everywhere", "slug": "api-integration-and-development-services" },
                 { "name": "Full stack Development", "description": "Build once, run everywhere", "slug": "full-stack-development-services" },
-                { "name": "Website Development", "description": "Build once, run everywhere", "slug": "website-development-services" },
+                { "name": "Website Development", "description": "Build once, run everywhere", "slug": "website-development-services-india" },
             ],
-            linkViewMore: "application-development-services"
+            linkViewMore: "application-development-company-india"
         },
         "Dedicated Software Teams": {
             "title": "Dedicated Software Teams",
             "description": "Scale your tech potential with flexible, expert software development teams. Seamless staff augmentation, dedicated developers, and offshore solutions that drive your business growth.",
             "columns": [
-                { "name": "Staff Augmentation", "description": "Next-gen web experiences", "slug": "it-staff-augmentation-services" },
-                { "name": "Hire Software Developer", "description": "Fast, dynamic web apps", "slug": "hire-software-developer" },
+                { "name": "Staff Augmentation", "description": "Next-gen web experiences", "slug": "it-staff-augmentation-services-india" },
+                { "name": "Hire Software Developer", "description": "Fast, dynamic web apps", "slug": "hire-software-developer-india" },
                 { "name": "IT Outsourcing", "description": "Sleek, powerful iOS apps", "slug": "it-outsourcing-services" },
-                { "name": "Dedicated Development Team", "description": "Robust Android solutions", "slug": "hire-dedicated-development-team" },
-                { "name": "Offshore Dedicated Centre", "description": "Build once, run everywhere", "slug": "offshore-software-development-center-india" }
+                { "name": "Dedicated Development Team", "description": "Robust Android solutions", "slug": "hire-dedicated-development-team-india" },
+                { "name": "Offshore Dedicated Centre", "description": "Build once, run everywhere", "slug": "offshore-dedicated-development-center-india" }
             ],
-            linkViewMore: "hire-dedicated-technical-team"
+            linkViewMore: "hire-dedicated-technical-team-india"
         },
         "eCommerce": {
             "title": "eCommerce",
@@ -68,7 +68,7 @@ const techStackData = {
                 { "name": "Ecommerce Advancement", "description": "Sleek, powerful iOS apps", "slug": "ecommerce-advancement" },
                 { "name": "Ecommerce Maintenance & Support", "description": "Robust Android solutions", "slug": "ecommerce-maintenance-and-support-services" },
             ],
-            linkViewMore: "ecommerce-development-company"
+            linkViewMore: "ecommerce-development-company-india"
         },
         // "QA & Testing": {
         //     "title": "QA & Testing",
@@ -99,11 +99,11 @@ const techStackData = {
 
 // Add keyword mapping
 const keywordToSlug = {
-    'CRM software development': 'crm-software-development-services',
-    'software development agency': 'best-software-development-company-in-india',
-    'web and mobile applications': 'application-development-services',
-    'Seamless staff augmentation': 'it-staff-augmentation-services',
-    'smart eCommerce solutions': 'ecommerce-development-company',
+    'CRM software development': 'crm-software-development-company-india',
+    'software development agency': 'software-development-company-in-india',
+    'web and mobile applications': 'application-development-company-india',
+    'Seamless staff augmentation': 'it-staff-augmentation-services-india',
+    'smart eCommerce solutions': 'ecommerce-development-company-india',
 };
 
 

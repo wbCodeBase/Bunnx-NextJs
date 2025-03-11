@@ -7,11 +7,11 @@ import softwareDev from "/public/Software-Development.webp";
 
 
 const keywordToSlug = {
-  'software development services': 'best-software-development-company-in-india',
-  'CRM software solutions': 'crm-software-development-services',
+  'software development services': 'software-development-company-in-india',
+  'CRM software solutions': 'crm-software-development-company-india',
   'custom software development companies': 'custom-software-development-services',
-  'Custom API Development & Integration Services': 'api-development-and-integration-services',
-  'API Development & Integration Company': 'api-development-and-integration-services',
+  'Custom API Development & Integration Services': 'api-integration-and-development-services',
+  'API Development & Integration Company': 'api-integration-and-development-services',
 };
 
 
@@ -28,7 +28,7 @@ const data = [
     altText: "Custom Software Development",
   },
   {
-    slug: "front-end-development-services",
+    slug: "front-end-development-services-india",
     title: "Leading Front End Development Experts",
     description1: "Crafting pixel-perfect and performant user interfaces customised to your business vision, Bunnx excels at delivering responsive web applications with lightning-fast load times.",
     description2: "We build scalable, component-driven front ends that evolve with your product. Our expertise spans modern frameworks like React and Vue.js, ensuring we solve your unique UX challenges.",
@@ -38,7 +38,7 @@ const data = [
     altText: "Front End Development",
   },
   {
-    slug: "back-end-development-services",
+    slug: "back-end-development-services-india",
     title: "Leading Back End Development Experts",
     description1: "We don’t just specialize in back-end development—we offer many application development services to help your business succeed in competitive markets.",
     description2: "From front-end interfaces to complete app solutions, our work isn't limited to only one service. Our innovations in all types of services have made us one of the top backend development services companies.",
@@ -48,7 +48,7 @@ const data = [
     altText: "Backend Development",
   },
   {
-    slug: "crm-software-development-services",
+    slug: "crm-software-development-company-india",
     title: "Experienced CRM Software Development Specialists",
     description1: "We have created CRM software solutions for the growth of all types of businesses and to strengthen customer relationships. Our CRM software development company also depends on only proven technologies like Salesforce and Microsoft Dynamics",
     description2: "We also have services like comprehensive contact management, sales pipeline automation, and detailed reporting capabilities that help your business track customer interactions.",
@@ -58,7 +58,7 @@ const data = [
     altText: "CRM Development",
   },
   {
-    slug: "best-software-development-company-in-india",
+    slug: "software-development-company-in-india",
     title: "Choose Leading Software Development Company",
     description1: "Offering seamless and efficient software development services customised to your unique business requirements, Bunnx is committed to delivering secure software solutions swiftly.",
     description2: "We create scalable, secure software that grows with your business. Our focus is on developing relevant technical expertise to address industry-specific challenges.",
@@ -68,7 +68,7 @@ const data = [
     altText: "Software Development",
   },
   {
-    slug: "software-development-consultants",
+    slug: "software-consultanting-services-india",
     title: "Experienced Software Consultants",
     description1: "We have created solutions for the growth of all types of businesses and to strengthen customer relationships. Our software consultancy company also depends on only proven technologies like Salesforce and Microsoft Dynamics.",
     description2: "We also have IT software consulting services like comprehensive contact management, sales pipeline automation, and detailed reporting capabilities that help your business track customer interactions.",
@@ -78,7 +78,7 @@ const data = [
     altText: "Software Development",
   },
   {
-    slug: "it-consulting-services",
+    slug: "it-consulting-services-india",
     title: "Experienced IT Consulting Specialists",
     description1: "We help businesses figure out how to use technology to make things easier. If you’re looking to move your systems to the cloud, fix clunky workflows, or get better insights from your data, we’ve got you covered.",
     description2: "We stick to tools like AWS, Azure, and Google Cloud—because they work well and get the job done. Whether it’s setting up smoother processes or organizing your data in a way that actually makes sense, we’re here to make tech feel less complicated.",
@@ -88,7 +88,7 @@ const data = [
     altText: "Software Development",
   },
   {
-    slug: "mobile-app-development-services",
+    slug: "mobile-app-development-company-india",
     title: "Leading Mobile App Development Experts",
     description1: "We develop apps for each ecosystem by sticking to human interface guidelines. Our experts fine-tune it for speed, low loading time and conserve battery life.",
     description2: "With cloud-based architectures on AWS, Google Cloud, or Azure, your app will also handle user demands without breaking a sweat.",
@@ -98,7 +98,7 @@ const data = [
     altText: "Mobile App Development",
   },
   {
-    slug: "api-development-and-integration-services",
+    slug: "api-integration-and-development-services",
     title: "Leading Mobile App Development Experts",
     description1: "As a leading API Development & Integration Company, we leverage advanced technologies like Node.js, Django, and Spring Boot to deliver robust solutions.",
     description2: "Our services include Custom API Development & Integration Services, efficient database optimization, and real-time data processing, ensuring your application is fast, secure, and future-ready.",
@@ -108,7 +108,7 @@ const data = [
     altText: "Mobile App Development",
   },
   {
-    slug: "agile-consulting-services",
+    slug: "agile-consulting-services-india",
     title: "Experienced Agile Consulting Specialists",
     description1: "It’s not just about meeting deadlines, it’s about consistently delivering. With Agile consulting services, we’ll help you break big projects down into manageable goals.",
     description2: "Our team will make you set up clear checkpoints, so your team can focus on what truly matters—delivering great results, on time and with ease.",
@@ -118,7 +118,7 @@ const data = [
     altText: "Agile Consulting Development",
   },
   {
-    slug: "application-development-services",
+    slug: "application-development-company-india",
     title: "Leading Application Development Experts",
     description1: "We bring years of experience and a team that’s passionate about building apps. Our application development services focus on what type of apps you need and create solutions that truly help your business grow.",
     description2: "With us, you get a partner who sticks to security policies and enables easier deployment of your software.",
@@ -128,7 +128,7 @@ const data = [
     altText: "Application Development",
   },
   {
-    slug: "website-development-services",
+    slug: "website-development-services-india",
     title: "Leading Website Development Experts",
     description1: "As a leading website development company, we bring technical precision, industry knowledge, and a commitment to delivering high-quality solutions.",
     description2: "Our team combines years of experience with modern technologies to create websites that perform exceptionally and are easy to manage. ",
@@ -138,7 +138,7 @@ const data = [
     altText: "Website Development",
   },
   {
-    slug: "cms-development-services",
+    slug: "cms-development-services-india",
     title: "Leading CMS Development Experts",
     description1: "We’re experts at building CMS systems that are efficient, secure, and designed with the future in mind. By using the latest technologies like Node.js, Django, and Spring Boot, we create CMS platforms that not only look great but work flawlessly. ",
     description2: "Our solutions are built to integrate seamlessly with APIs, manage databases effortlessly, and handle live data processing, so you never have to worry about downtime or errors.  ",
@@ -158,7 +158,7 @@ const data = [
     altText: "Full stack Development",
   },
   {
-    slug: "ecommerce-development-company",
+    slug: "ecommerce-development-company-india",
     title: "Leading Ecommerce Development Experts",
     description1: "We master in building dynamic ecommerce web design India infrastructures that are optimized for performance and long-term growth.",
     description2: "We are the best eCommerce development company in India that uses the latest technologies like Node.js, Django, and Spring Boot. Our solutions include API integrations, efficient database management, and data processing.",
@@ -178,7 +178,7 @@ const data = [
     altText: "Full stack Development",
   },
   {
-    slug: "web-application-development-services",
+    slug: "web-application-development-company-india",
     title: "Leading Web Application Development Experts",
     description1: "Every platform has its own language and behavior. We don’t just build apps; we make experiences that feel natural to users.",
     description2: "With our approach, we strip away unnecessary bloat. Our web development services team tweak every function to consume the least possible power, reducing CPU strain and optimizing background tasks.",
@@ -239,7 +239,7 @@ const data = [
   },
 
   {
-    "slug": "it-staff-augmentation-services",
+    "slug": "it-staff-augmentation-services-india",
     "title": "Leading Staff Augmentation Experts",
     "description1": "Finding the right talent shouldn’t be difficult. If you need a developer for a short-term project or an entire team for long-term work, we provide top professionals who start delivering from day one.",
     "description2": "We take recruitment off your plate. Our network includes developers, designers, project managers, and quality analysts who have worked on projects of all sizes.",
@@ -249,7 +249,7 @@ const data = [
     "altText": "Staff Augmentation Services"
   },
   {
-    "slug": "hire-software-developer",
+    "slug": "hire-software-developer-india",
     "title": "Meet Your Next Software Development Dream Team",
     "description1": "Building great software shouldn't give you headaches. Whether you're a startup founder with a brilliant idea or an enterprise leader looking to innovate, we'll match you with developers who just 'get it' – no lengthy interviews or HR hassles needed.",
     "description2": "These aren't just coders – they're problem solvers who love turning complex challenges into elegant solutions. They'll dive deep into understanding your business, speak in plain English (not tech jargon), and become the reliable tech partners you've been looking for.",
@@ -269,7 +269,7 @@ const data = [
     "altText": "IT Outsourcing Services"
   },
   {
-    "slug": "hire-dedicated-development-team",
+    "slug": "hire-dedicated-development-team-india",
     "title": "Dedicated Software Development Experts",
     "description1": "We assemble expert software developers that build high-performance applications. Our engineers work with technologies such as Go, Rust, and Elixir to create adaptable systems.",
     "description2": "They bring in structured API development and high-speed data to keep your software above all competitors.",
@@ -279,7 +279,7 @@ const data = [
     "altText": "Dedicated Development Team"
   },
   {
-    "slug": "offshore-software-development-center-india",
+    "slug": "offshore-dedicated-development-center-india",
     "title": "Leading Offshore Dedicated Centre Experts",
     "description1": "Great ideas need the right hands. Our offshore development center is built around the idea that distance should never be a barrier to quality.",
     "description2": "We bring together dedicated teams of engineers, strategists, and architects who immerse themselves in your projects as if they were right next door.",
@@ -290,7 +290,7 @@ const data = [
   },
 
   {
-    "slug": "software-development-outsourcing-company-in-india",
+    "slug": "outsourcing-software-development-in-india",
     "title": "Your Trusted Partner for Scalable Software Development",
     "description1": "Outsourcing software development shouldn’t feel like outsourcing—it should feel like an extension of your team. We ensure seamless collaboration, high-quality code, and on-time delivery to help you scale effortlessly.",
     "description2": "With a team of seasoned engineers, architects, and strategists, we don’t just build software; we build long-term partnerships that drive innovation and business growth.",
@@ -301,7 +301,7 @@ const data = [
   },
 
   {
-    "slug": "hire-dedicated-technical-team",
+    "slug": "hire-dedicated-technical-team-india",
     "title": "Your Innovation Catalyst, Beyond Just Coding",
     "description1": "We're not your typical outsourcing partner—we're your technological soulmates. Imagine a team that doesn't just write code, but breathes life into your most ambitious digital dreams, transforming challenges into breakthrough solutions.",
     "description2": "Our tech wizards are more than engineers; they're innovation architects who turn your vision into a competitive superpower. We don't just deliver software; we craft digital experiences that propel your business into the future.",
@@ -329,7 +329,7 @@ const ChooseUs = ({ serviceDetailPageSlug }) => {
 
   // Handle case where slug doesn't match any data
   if (!content) {
-    content = data.find((item) => item?.slug === "best-software-development-company-in-india")
+    content = data.find((item) => item?.slug === "software-development-company-in-india")
 
     if (!content) {
       return <p>Content not found for the provided slug.</p>;

@@ -221,7 +221,7 @@ export default function BlogContent({ serviceDetailPageSlug= "rust-vs-go-modern-
   };
 
 
-  const guideData = guideContent[serviceDetailPageSlug] || guideContent['best-software-development-company-in-india'];
+  const guideData = guideContent[serviceDetailPageSlug] || guideContent['software-development-company-in-india'];
 
   if (!guideData) {
     return <p>Hiring models content not found for the provided slug.</p>;

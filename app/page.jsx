@@ -33,8 +33,8 @@ export default async function Home() {
   console.log("Home - User", session?.user || "Not Authenticated")
 
   const heroSectionObj = {
-    title: "Dynamic Software Engineering, Strategic Consulting & Affordable Outsourcing",
-    description: "We are an acclaimed Indian software engineering firm dedicated to delivering exceptional outsourced development solutions and expert engineering teams to clients around the world.",
+    title: "Expert Software Development Services in India for Web & Mobile Apps",
+    description: "We are an acclaimed Indian software development firm dedicated to delivering exceptional outsourced development solutions and expert engineering teams to clients around the world.",
     imageUrl: heroHomeImage,
     ctaText: "Get Connected Now",
     ctaRedirectUrl: "#contact-us",

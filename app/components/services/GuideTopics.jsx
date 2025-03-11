@@ -8,18 +8,18 @@ import { createLinkedContent } from '#/utils/LinkBuilder';
 
 
 const keywordToSlug = {
-  'front end development companies': 'front-end-development-services',
-  'back end development services': 'back-end-development-services',
-  'backend development services': 'back-end-development-services',
-  'front end development services': 'front-end-development-services',
-  'front end development companies': 'front-end-development-services',
-  'software development companies in India': 'best-software-development-company-in-india',
+  'front end development companies': 'front-end-development-services-india',
+  'back end development services': 'back-end-development-services-india',
+  'backend development services': 'back-end-development-services-india',
+  'front end development services': 'front-end-development-services-india',
+  'front end development companies': 'front-end-development-services-india',
+  'software development companies in India': 'software-development-company-in-india',
   'custom software development company': 'custom-software-development-services',
-  'IT consulting services India': 'it-consulting-services',
+  'IT consulting services India': 'it-consulting-services-india',
 };
 
 const guideContent = {
-  'front-end-development-services': {
+  'front-end-development-services-india': {
     title: "User Guide to Front End Development",
     description:
       "Explore the essentials of creating, managing, and optimizing web interfaces. It covers methodologies, benefits, best practices, and insights for selecting partners, streamlining development, and understanding the front end's crucial role in modern applications.",
@@ -200,7 +200,7 @@ const guideContent = {
 
     ],
   },
-  "crm-software-development-services": {
+  "crm-software-development-company-india": {
     "title": "User Guide to CRM Software Development",
     "description": "This guide is meant to help you understand CRM systems and how they can support business growth. We’ll cover key features, benefits, and ways on how we use CRM technologies for your business. If you’re just starting with CRM or improving your current system, this guide will help you organize customer management and use CRM.",
     "sections": [
@@ -404,7 +404,7 @@ const guideContent = {
 
     ]
   },
-  'back-end-development-services': {
+  'back-end-development-services-india': {
     title: "User Guide to Back End Development",
     description: "Dive into the fundamentals of developing and managing web interfaces. This guide covers key methodologies, advantages, and best practices. You'll also explore expert tips on selecting the right partners, streamlining the development process, and recognizing the role of back-end systems.",
     sections: [
@@ -623,7 +623,7 @@ const guideContent = {
 
     ],
   },
-  "best-software-development-company-in-india": {
+  "software-development-company-in-india": {
     "title": "Guide to Software Development Services",
     "description": "Explore the various aspects of software development services, their types, and why custom solutions are essential for business growth. This guide also highlights the best platforms and methodologies for software development.",
     "sections": [
@@ -986,7 +986,7 @@ const guideContent = {
     ]
   },
 
-  "software-development-consultants": {
+  "software-consultanting-services-india": {
     "title": "User Guide to Software Consultancy",
     "description": "This guide is designed to help you understand how working with a software consultancy can transform your business. Whether you’re new to the custom software or looking to improve your existing systems, this guide breaks down the essentials to help you make informed decisions and optimize your operations.",
     "sections": [
@@ -1180,7 +1180,7 @@ const guideContent = {
   },
 
 
-  "it-consulting-services": {
+  "it-consulting-services-india": {
     "title": "User Guide to IT consulting",
     "description": "In this guide, we’ll walk you through what IT consulting is all about and how it can support your business. For businesses looking to boost their current systems or starting fresh, we’ve got you covered. We’ll talk about how IT solutions can help streamline your processes, support your growth, and make your operations smoother.",
     "sections": [
@@ -1354,7 +1354,7 @@ const guideContent = {
 
 
 
-  "mobile-app-development-services": {
+  "mobile-app-development-company-india": {
     "title": "User Guide to Mobile App Development",
     "description": "Your go-to guide to know about fundamentals of developing and managing mobile applications. This resource unpacks important methodologies, strategies, and insider tips. Learn how to pick the right partners, processes, and understand the role of back-end systems in mobile app success.",
     "sections": [
@@ -1544,7 +1544,7 @@ const guideContent = {
   },
 
 
-  "api-development-and-integration-services": {
+  "api-integration-and-development-services": {
     "title": "User Guide to API Development & Integration",
     "description": "Master the essentials of building and managing web interfaces with this comprehensive guide. Learn about key approaches, practical benefits, and industry best practices. Discover expert advice on selecting the right development partners, streamlining workflows, and appreciating the critical role of API frameworks.",
     "sections": [
@@ -1757,7 +1757,7 @@ const guideContent = {
   },
 
 
-  "agile-consulting-services": {
+  "agile-consulting-services-india": {
     "title": "User Guide to Agile Consulting",
     "description": "Did you ever feel like your projects are going out of your control? Deadlines seem to sprint ahead, while your team struggles to keep up? If all this seems like your situation, Agile consultant services can help you bring everything back into balance. It makes for better teamwork and results that make you feel accomplished. This guide will walk you through the essentials of Agile practices and how they can turn your team into a powerhouse of productivity.",
     "sections": [
@@ -1927,7 +1927,7 @@ const guideContent = {
 
 
 
-  "application-development-services": {
+  "application-development-company-india": {
     "title": "User Guide to Application Development",
     "description": "Application development is the process of building both the visible parts of an app that users interact with (the front end) and the systems that run behind the scenes (the back end). It can be a web app, mobile app, or custom software solution. With the right technologies and expertise, we can create the best product for you.",
     "sections": [
@@ -2122,7 +2122,7 @@ const guideContent = {
   },
 
 
-  "website-development-services": {
+  "website-development-services-india": {
     "title": "User Guide to Website Development",
     "description": "Explore the core principles of designing and building websites. This guide delves into essential strategies, technical frameworks, and industry best practices. Discover expert insights on choosing the right development team, optimizing workflows, and understanding the importance of front-end and back-end integration.",
     "sections": [
@@ -2340,7 +2340,7 @@ const guideContent = {
 
   },
 
-  "cms-development-services": {
+  "cms-development-services-india": {
     "title": "User Guide to CMS Development",
     "description": "A Content Management System is a tool and the backbone of your website. A strong CMS organizes, structures, and delivers content efficiently. So, visitors get the best experience without delays or broken pages. But how do you build a CMS that’s easy to manage? Let’s break it down in a way that makes sense— no unnecessary complexity, just guidance on building a CMS that works for you.",
     "sections": [
@@ -2700,7 +2700,7 @@ const guideContent = {
   },
 
 
-  "ecommerce-development-company": {
+  "ecommerce-development-company-india": {
     "title": "User Guide to Ecommerce Development",
     "description": "Discover the core principles of creating and managing ecommerce platforms. This guide delves into key methodologies, benefits, and best practices. Learn expert tips for choosing the right ecommerce development company, optimizing the development process, and understanding the critical role of back-end systems in driving success.",
     "sections": [
@@ -2974,7 +2974,7 @@ const guideContent = {
   },
 
 
-  "web-application-development-services": {
+  "web-application-development-company-india": {
     "title": "User Guide to Web App Development",
     "description": "Web applications have changed the way businesses operate. If it’s a booking system, an online store, or a data management tool, these applications are built to simplify tasks and improve engagement. Unlike traditional software that requires installation, web apps run on browsers. This guide will help you learn more about web app development.",
     "sections": [
@@ -4079,7 +4079,7 @@ const guideContent = {
   },
 
 
-  "it-staff-augmentation-services": {
+  "it-staff-augmentation-services-india": {
     "title": "User Guide to Staff Augmentation",
     "description": "If you have a major project or need talent for a limited time, staff augmentation is the perfect solution. This guide explains how staff augmentation works, how to choose the right partners for adding skilled professionals to your team, and how to make the most of this cost-effective approach.",
     "sections": [
@@ -4173,7 +4173,7 @@ const guideContent = {
   },
 
 
-  "hire-software-developer": {
+  "hire-software-developer-india": {
     "title": "User Guide to Hire Software Developers",
     "description": "Every great software project starts with the right team. If you’re building a custom business application or a mobile app, hiring the right developers can grow business. This guide walks you through the process on how to hire software developers for your project.",
     "sections": [
@@ -4519,7 +4519,7 @@ const guideContent = {
   },
 
 
-  "hire-dedicated-development-team": {
+  "hire-dedicated-development-team-india": {
     "title": "User Guide to Hire Dedicated Development Team",
     "description": "Creating high-functioning software requires more than just great code—it demands a team that understands the structure, logic, and long-term growth of your project. This guide breaks down essential strategies for assembling a skilled development team, managing technical workflows.",
     "sections": [
@@ -4697,7 +4697,7 @@ const guideContent = {
   },
 
 
-  "offshore-software-development-center-india": {
+  "offshore-dedicated-development-center-india": {
     "title": "User Guide to Offshore Dedicated Centre",
     "description": "The modern business world is built on technology, but great ideas need more than just ambition—they need hands that can turn code into reality. An offshore development center will help your company get the brightest engineering minds. It will offer a rare blend of skill, dedication, and technical expertise.",
     "sections": [
@@ -4855,7 +4855,7 @@ const guideContent = {
   },
 
 
-  "software-development-outsourcing-company-in-india": {
+  "outsourcing-software-development-in-india": {
     "title": "A Complete Guide to Software Development Outsourcing in India",
     "description": "Outsourcing software development to India is a strategic move for businesses looking to access top-tier talent, cost-effective solutions, and cutting-edge technology. This guide covers everything you need to know—from understanding outsourcing models to finding the right development partner in India.",
     "sections": [
@@ -5036,7 +5036,7 @@ const guideContent = {
     ]
   },
 
-  "hire-dedicated-technical-team": {
+  "hire-dedicated-technical-team-india": {
     "title": "A Complete Guide to Hiring a Dedicated Technical Team",
     "description": "Hiring a dedicated technical team is a strategic approach for businesses looking to scale their development capabilities, access specialized expertise, and accelerate project delivery. This guide covers everything you need to know—from understanding different team structures to finding the right technical talent for your specific needs.",
     "sections": [
@@ -5259,7 +5259,7 @@ export default function GuideTopics({ serviceDetailPageSlug }) {
   };
 
 
-  const guideData = guideContent[serviceDetailPageSlug] || guideContent['best-software-development-company-in-india'];
+  const guideData = guideContent[serviceDetailPageSlug] || guideContent['software-development-company-in-india'];
 
   if (!guideData) {
     return <p>Hiring models content not found for the provided slug.</p>;
