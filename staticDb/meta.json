@@ -120,42 +120,43 @@
   "ecommerce-development-company-india": {
     "title": "E-commerce Development Company in India | Bunnx",
     "description": "Transform your business with Bunnx, a leading e-commerce development company in India. We deliver custom online stores, marketplace solutions, and seamless shopping experiences that drive sales and growth.",
-    "robots": "noindex"
+    "robots": "index"
   },
   
     "ecommerce-web-development": {
       "title": "Best eCommerce Web Development Services - Secure & Scalable",
       "description": "Get expert eCommerce web development services with secure payment integrations, advanced analytics, and custom feature development.",
-      "robots": "noindex"
+      "robots": "index"
     },
+
   "woocommerce-development-services-india": {
     "title": "Best WooCommerce Development Services - Scalable & Feature-Rich",
     "description": "Get top WooCommerce development services in India. We create scalable, feature-rich eCommerce stores with seamless integrations and future-ready solutions.",
-    "robots": "noindex"
+    "robots": "index"
   },
 
   "ecommerce-consulting-services": {
     "title": "eCommerce Consulting Services - Boost Online Sales",
     "description": "Our eCommerce consulting services help businesses optimize online stores, improve UX, and drive sales with advanced strategies.",
-    "robots": "noindex"
+    "robots": "index"
   },
 
   "shopify-development-company-in-india": {
     "title": "Best Shopify Development Company in India - Custom Solutions",
     "description": "We create dynamic Shopify stores with custom themes, integrations, and scalable eCommerce solutions.",
-    "robots": "noindex"
+    "robots": "index"
   },
 
 "ecommerce-maintenance-and-support-services": {
   "title": "E-commerce Maintenance and Support Services | Bunnx",
   "description": "Keep your online store running smoothly with Bunnx's e-commerce maintenance and support services. Get regular updates, security patches, performance optimization, and 24/7 technical assistance.",
-  "robots": "noindex"
+  "robots": "index"
 },
 
 "ecommerce-implementation": {
   "title": "E-commerce Implementation Services | Bunnx",
   "description": "Transform your business vision into reality with Bunnx's e-commerce implementation services. From platform selection to launch, we deliver seamless online stores customized to your unique requirements.",
-  "robots": "noindex"
+  "robots": "index"
 }
 
 
