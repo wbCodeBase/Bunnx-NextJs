@@ -10,7 +10,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 export const myApi = createApi({
   reducerPath: 'myApi',
   // baseQuery: fetchBaseQuery({ baseUrl: dynamicBaseUrl }),
-  baseQuery: fetchBaseQuery({ baseUrl: process.env.NEXT_PUBLIC_API_BASE_URL || 'http://localhost:3000/api', }),
+  baseQuery: fetchBaseQuery({ baseUrl: process.env.NEXT_PUBLIC_API_BASE_URL || 'https://jbdspower.in/api', }),
   tagTypes: ['User', 'Template', 'ActiveSlug', 'Metadata'],  // Optional: for automatic cache invalidation
   endpoints: (builder) => ({
 

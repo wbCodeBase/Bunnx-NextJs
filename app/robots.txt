@@ -7,7 +7,6 @@ Disallow: /hooks/
 Disallow: /lib/ 
 Disallow: /login/ 
 Disallow: /signup/
-Allow: /
 
 # Sitemap URL
 Sitemap: https://www.bunnx.com/sitemap.xml

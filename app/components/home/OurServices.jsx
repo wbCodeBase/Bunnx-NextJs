@@ -65,7 +65,7 @@ const techStackData = {
             "columns": [
                 { "name": "Ecommerce Web Development", "description": "Next-gen web experiences", "slug": "ecommerce-web-development" },
                 { "name": "Ecommerce Web Consulting", "description": "Fast, dynamic web apps", "slug": "ecommerce-consulting-services" },
-                { "name": "Ecommerce Advancement", "description": "Sleek, powerful iOS apps", "slug": "ecommerce-advancement" },
+                { "name": "Ecommerce Implementation", "description": "Sleek, powerful iOS apps", "slug": "ecommerce-implementation" },
                 { "name": "Ecommerce Maintenance & Support", "description": "Robust Android solutions", "slug": "ecommerce-maintenance-and-support-services" },
             ],
             linkViewMore: "ecommerce-development-company-india"
