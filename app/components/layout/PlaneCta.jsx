@@ -32,7 +32,7 @@ const PlaneCta = ({ serviceDetailPageSlug }) => {
             head: "Get all your details at one place with the best CRM solutions!",
             para: "Transform your business operations with a CRM software solution that grows alongside your company. We build powerful systems that eliminate workflow bottlenecks and maximize team efficiency.",
             ctaText: "Let's Connect!",
-            slug: "software-consultanting-services-india"
+            slug: "software-consulting-services-india"
         },
         {
             span: "We create softwares that redefines your processes.",

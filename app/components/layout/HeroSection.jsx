@@ -71,7 +71,7 @@ const HeroSection = ({ pageSlug, extractNameFromSlug, heroDefaultImg }) => {
     "description": "With smart software consulting services, we help you rethink how your business runs, simpler, faster, and more efficiently. As one of India’s leading software consulting companies, we’re all about creating solutions that actually work for you.",
     "ctaText": "Get Connected Now",
     "ctaRedirectUrl": "#contact-us",
-    "fetchOnSlug": "software-consultanting-services-india"
+    "fetchOnSlug": "software-consulting-services-india"
   },
   {
     "title": "IT Consulting Services India",

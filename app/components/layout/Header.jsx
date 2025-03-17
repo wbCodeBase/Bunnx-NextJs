@@ -259,7 +259,7 @@ const servicesData = {
         { name: 'Custom Software Development', slug: 'custom-software-development-services' },
         { name: 'CMS Development', slug: 'cms-development-services-india' },
         { name: 'CRM Software Development', slug: 'crm-software-development-company-india' },
-        { name: 'Software Consulting', slug: 'software-consultanting-services-india' },
+        { name: 'Software Consulting', slug: 'software-consulting-services-india' },
         { name: 'IT Consulting', slug: 'it-consulting-services-india' },
         { name: 'Agile Consulting', slug: 'agile-consulting-services-india' },
         // { name: 'Application Maintenance', slug: 'application-maintenance' },

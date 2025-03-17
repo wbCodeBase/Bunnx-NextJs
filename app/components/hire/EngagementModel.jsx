@@ -49,7 +49,7 @@ const engageMentModelData = [
         engagement: engagement,
     },
     {
-        slug: "software-consultanting-services-india",
+        slug: "software-consulting-services-india",
         h2: "Choose From Hiring Models",
         h4: "Collaborate with Top Software Developer Through Engagement Models",
         p: "At our software consultancy company, our team helps businesses grow by building strong customer relationships. We make solutions that are simple yet powerful, using trusted platforms like Salesforce and Microsoft Dynamics to deliver results that matter. Our IT software consulting services cover everything from smart contact management and automating your sales pipeline to giving you detailed reports that track customer interactions effectively.",

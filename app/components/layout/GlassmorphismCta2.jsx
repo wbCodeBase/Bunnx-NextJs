@@ -35,7 +35,7 @@ const data = [
     backgroundImage: "https://images.pexels.com/photos/316681/pexels-photo-316681.jpeg",
   },
   {
-    slug: "software-consultanting-services-india",
+    slug: "software-consulting-services-india",
     tagline: "Ready to elevate your customer relationships?",
     title: "Turn Your Customer Relationships into Lasting Success with our Software Consulting Services.",
     description: "We’re here to help you with custom software consulting services that fits your business today!",

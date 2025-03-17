@@ -372,7 +372,7 @@ const serviceData = {
     ],
   },
 
-  'software-consultanting-services-india': {
+  'software-consulting-services-india': {
     title: 'Choose From Our Software Consulting Service Models',
     description:
       "We understand that every project is different. If it’s a complex integration task, managing a large volume of data, or navigating a new set of challenges. But we can make it happen with our professionals. The team at Bunnx don’t just work for you—we work with you to build a plan that fits your goals, timeline, and resources.",

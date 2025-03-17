@@ -142,7 +142,7 @@ const services = [
     "ctaRedirectUrl": "custom-software-development-services",
     "fetchOnSlug": [
       "software-development-company-in-india",
-      "software-consultanting-services-india"
+      "software-consulting-services-india"
     ],
   },
   {
@@ -248,7 +248,7 @@ const services = [
   {
     "title": "Software Consulting",
     "description": "Sometimes, finding the right software feels comes with a lot of challenges. That’s where the Bunnx team comes in. Our custom software development company understands your business inside out.",
-    "ctaRedirectUrl": "software-consultanting-services-india",
+    "ctaRedirectUrl": "software-consulting-services-india",
     "fetchOnSlug": [
       "custom-software-development-services"
     ],
@@ -291,7 +291,7 @@ const services = [
     "ctaRedirectUrl": "application-upgradation",
     "fetchOnSlug": [
       "custom-software-development-services",
-      "software-consultanting-services-india"
+      "software-consulting-services-india"
     ],
   },
   {
@@ -299,7 +299,7 @@ const services = [
     "description": "We dig deep into your existing software setup to see what’s working and what’s not. From outdated systems to inefficiencies slowing you down, we pinpoint the issues and plan smarter solutions—whether that’s modernization, refactoring, or a full migration to better technologies.",
     "ctaRedirectUrl": null,
     "fetchOnSlug": [
-      "software-consultanting-services-india"
+      "software-consulting-services-india"
     ],
   },
   {
@@ -307,7 +307,7 @@ const services = [
     "description": "A robust software architecture is the backbone of high performance, security, and scalability. Our team evaluates your current setup, makes improvements for faster deployments, greater resilience, and cost-effective maintenance, and ensures your software can keep up as your business grows.",
     "ctaRedirectUrl": null,
     "fetchOnSlug": [
-      "software-consultanting-services-india"
+      "software-consulting-services-india"
     ],
   },
   {
@@ -315,7 +315,7 @@ const services = [
     "description": "Choosing the right software can feel overwhelming. We cut through the noise by comparing vendors, pricing plans, and features tailored to your needs. Then, we present a summary that makes decision-making painless and straightforward.",
     "ctaRedirectUrl": null,
     "fetchOnSlug": [
-      "software-consultanting-services-india"
+      "software-consulting-services-india"
     ],
   },
   {
@@ -323,7 +323,7 @@ const services = [
     "description": "Stay ahead of industry laws and regulations with our compliance checks. We’ll assess your software, highlight necessary licenses, and make sure everything’s legally airtight.",
     "ctaRedirectUrl": null,
     "fetchOnSlug": [
-      "software-consultanting-services-india"
+      "software-consulting-services-india"
     ],
   },
   {
@@ -331,7 +331,7 @@ const services = [
     "description": "Need extra hands on deck? We provide skilled developers, testers, and project managers to integrate with your team and fill any gaps in expertise. It is all included in our software consulting services.",
     "ctaRedirectUrl": "it-staff-augmentation-services-india",
     "fetchOnSlug": [
-      "software-consultanting-services-india"
+      "software-consulting-services-india"
     ],
   },
   {
@@ -339,7 +339,7 @@ const services = [
     "description": "We set up efficient DevOps pipelines that simplify and speed up your software delivery. From CI/CD implementation to optimizing workflows, we ensure your development process is lean and productive.",
     "ctaRedirectUrl": "devops-and-ci-cd-pipelines",
     "fetchOnSlug": [
-      "software-consultanting-services-india"
+      "software-consulting-services-india"
     ],
   },
   {
@@ -347,7 +347,7 @@ const services = [
     "description": "Say goodbye to bugs slowing down your progress. We establish automated testing processes to save time and improve reliability. Need expert testers? Our team augmentation model has you covered. ",
     "ctaRedirectUrl": "qa-testing",
     "fetchOnSlug": [
-      "software-consultanting-services-india"
+      "software-consulting-services-india"
     ],
   },
   {
@@ -355,7 +355,7 @@ const services = [
     "description": "Sometimes, the solution lies in streamlining how your business operates. We analyze your workflows, find inefficiencies, and design software-based fixes—whether it’s automation, better collaboration tools, or faster reporting systems.",
     "ctaRedirectUrl": null,
     "fetchOnSlug": [
-      "software-consultanting-services-india"
+      "software-consulting-services-india"
     ],
   },
   {
@@ -363,7 +363,7 @@ const services = [
     "description": "We evaluate your development practices, suggest tools and methodologies to speed things up, and keep your projects on track. From Agile adoption to setting up clear project controls, we guide your team toward better efficiency and quality.",
     "ctaRedirectUrl": null,
     "fetchOnSlug": [
-      "software-consultanting-services-india"
+      "software-consulting-services-india"
     ],
   },
   {
@@ -371,7 +371,7 @@ const services = [
     "description": "Got a product idea? We help bring it to life. From analyzing the market and crafting your unique selling point to designing a user-friendly interface and planning a scalable architecture, we turn concepts into software that stands out.",
     "ctaRedirectUrl": null,
     "fetchOnSlug": [
-      "software-consultanting-services-india"
+      "software-consulting-services-india"
     ],
   },
   {
@@ -1792,7 +1792,7 @@ const OurServicesHeadPara = [
   {
     serviceTitle: "Our Software Consulting Services",
     servicePara: "When it comes to optimizing your software ecosystem, we’re here to make sense of the chaos and deliver solutions that work. Here’s how we can help:",
-    slug: "software-consultanting-services-india"
+    slug: "software-consulting-services-india"
   },
   {
     serviceTitle: "Best IT Consulting Services",

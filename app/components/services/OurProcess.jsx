@@ -453,7 +453,7 @@ const contentBySlug = {
         ]
     },
 
-    "software-consultanting-services-india": {
+    "software-consulting-services-india": {
         h2: "Our Process",
         h4: "Our Process as Software Development Consultants",
         p: "Our process? To help you not just solve problems but transform how your business operates. Let’s build software that doesn’t just support your goals but drives them forward.",

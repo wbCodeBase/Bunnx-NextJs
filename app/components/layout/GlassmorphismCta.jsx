@@ -43,7 +43,7 @@ const data = [
     backgroundImage: "https://spirecapital.com/wp-content/uploads/2017/02/CTA-background-get-in-touch.jpg",
   },
   {
-    slug: "software-consultanting-services-india",
+    slug: "software-consulting-services-india",
     tagline: "Make Successful Softwares With Our Experts",
     title: "Get Access to New Technologies and Talented Software Experts.",
     description: "Our IT software consulting services work to make your customer interactions better. At Bunnx, we also dig deep in the roots of your problems rather than giving surface-level advice.",

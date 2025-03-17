@@ -986,7 +986,7 @@ const guideContent = {
     ]
   },
 
-  "software-consultanting-services-india": {
+  "software-consulting-services-india": {
     "title": "User Guide to Software Consultancy",
     "description": "This guide is designed to help you understand how working with a software consultancy can transform your business. Whether you’re new to the custom software or looking to improve your existing systems, this guide breaks down the essentials to help you make informed decisions and optimize your operations.",
     "sections": [

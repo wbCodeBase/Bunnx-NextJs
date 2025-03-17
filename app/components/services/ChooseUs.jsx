@@ -68,7 +68,7 @@ const data = [
     altText: "Software Development",
   },
   {
-    slug: "software-consultanting-services-india",
+    slug: "software-consulting-services-india",
     title: "Experienced Software Consultants",
     description1: "We have created solutions for the growth of all types of businesses and to strengthen customer relationships. Our software consultancy company also depends on only proven technologies like Salesforce and Microsoft Dynamics.",
     description2: "We also have IT software consulting services like comprehensive contact management, sales pipeline automation, and detailed reporting capabilities that help your business track customer interactions.",

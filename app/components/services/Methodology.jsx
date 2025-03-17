@@ -181,7 +181,7 @@ const contentBySlug = {
 
     },
 
-    "software-consultanting-services-india": {
+    "software-consulting-services-india": {
         h2: "Methodology",
         h4: "Get Smarter Software with our Consultants",
         p: "We have IT software consulting services that allow for communication and data updates across multiple users and devices. We process streaming data and handle high-throughput messaging.",

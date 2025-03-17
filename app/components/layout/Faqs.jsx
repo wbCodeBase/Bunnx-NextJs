@@ -18,7 +18,7 @@ const keywordToSlug = {
     "Front-End Development company": "front-end-development-services-india",
     "back-end development agency": "back-end-development-services-india",
     "software development services": "software-development-company-in-india",
-    "custom software consulting services": "software-consultanting-services-india",
+    "custom software consulting services": "software-consulting-services-india",
     "IT consulting services India": "it-consulting-services-india",
     "CRM software developers company": "crm-software-development-company-india",
 };
@@ -370,7 +370,7 @@ const faqData = {
         }
     ],
 
-    "software-consultanting-services-india": [
+    "software-consulting-services-india": [
         {
             "id": "csd-1",
             "question": "How do you make sure about our software security?",

@@ -26,7 +26,7 @@ const techStackData = {
                 { "name": "Custom Software Development", "description": "Tailored solutions for excellence", "slug": "custom-software-development-services" },
                 { "name": "CMS Development", "description": "Faster CMS Development", "slug": "cms-development-services-india" },
                 { "name": "CRM Software Development", "description": "Transform ideas into powerful apps", "slug": "crm-software-development-company-india" },
-                { "name": "Software Consulting", "description": "Expert advice on tech", "slug": "software-consultanting-services-india" },
+                { "name": "Software Consulting", "description": "Expert advice on tech", "slug": "software-consulting-services-india" },
 
                 { "name": "IT Consulting", "description": "Software Outsourcing", "slug": "it-consulting-services-india" },
                 { "name": "Agile Consulting", "description": "Optimizing customer relations", "slug": "agile-consulting-services-india" },
