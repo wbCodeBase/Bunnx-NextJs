@@ -17,21 +17,21 @@ export default async function sitemap() {
       const sitemapLinks = [
         {
           url: "https://www.bunnx.com",
-          changeFrequency: 'yearly',
+          changeFrequency: 'weekly',
           lastModified: "2025-01-27T09:45:58.558Z",
           priority: 1,
         }, // Home link
         {
           url: "https://www.bunnx.com/contact-us",
-          changeFrequency: 'yearly',
+          changeFrequency: 'weekly',
           lastModified: "2025-01-27T09:45:58.558Z",
-          priority: 0.6,
+          priority: 0.8,
         },
         {
           url: "https://www.bunnx.com/about-us",
-          changeFrequency: 'yearly',
+          changeFrequency: 'weekly',
           lastModified: "2025-01-27T09:45:58.558Z",
-          priority: 0.6,
+          priority: 0.8,
         },
       ];
   
@@ -39,7 +39,7 @@ export default async function sitemap() {
       const serviceLinks = serviceSlugsOnly.map((item) => ({
         url: `https://www.bunnx.com/${item.slug}`,
         lastModified: item.updatedAt,
-        changeFrequency: 'monthly',
+        changeFrequency: 'weekly',
         priority: 0.8,
       }));
   
