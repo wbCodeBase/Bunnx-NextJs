@@ -57,8 +57,9 @@ const HeroSectionBlog = () => {
                       <Image
                         src="https://t3.ftcdn.net/jpg/06/17/13/26/360_F_617132669_YptvM7fIuczaUbYYpMe3VTLimwZwzlWf.jpg?height=50&width=50"
                         alt="Neha Garg"
-                        fill
-                        className="object-cover"
+                        width={30}
+                        height={30}
+                        className="object-cover w-10 h-auto"
                       />
                     </div>
 

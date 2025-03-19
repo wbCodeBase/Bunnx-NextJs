@@ -110,7 +110,7 @@ export default function ContactSidebar() {
                             alt="India Flag"
                             width={30}
                             height={20}
-                            className="object-cover rounded"
+                            className="object-cover rounded h-auto w-6"
                         />
                         <span className="text-sm">+91-9971544661</span>
                     </div>

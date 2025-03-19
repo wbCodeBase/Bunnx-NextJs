@@ -16,7 +16,6 @@ export default function HeaderFooterWrapper({ children }) {
         <>
             {!pathname.includes("bunnx-admin") && <Header />}
             {children}
-                
             {!isExcluded && <Footer />}
             {!isExcluded && <WhatsAppButton phoneNumber="+919971744661" />}
         </>

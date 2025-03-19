@@ -199,7 +199,7 @@ const services = [
   {
     "title": "Support and Maintenance",
     "description": "At our software development company in India, we prioritise application maintenance just as much as development. We recognize that even the most innovative solutions are only valuable when supported by a stable, well-maintained ecosystem free from bugs and glitches. ",
-    "ctaRedirectUrl": "application-maintenance",
+    
     "fetchOnSlug": [
       "software-development-company-in-india"
     ],
@@ -288,7 +288,6 @@ const services = [
   {
     "title": "Software Modernization",
     "description": "We’ll keep the features you love, enhance the ones you don’t, and give your system a new lease on life—with minimal disruption to your day-to-day life.",
-    "ctaRedirectUrl": "application-upgradation",
     "fetchOnSlug": [
       "custom-software-development-services",
       "software-consulting-services-india"
@@ -499,7 +498,7 @@ const services = [
   {
     "title": "Maintenance and Support",
     "description": "Your app needs care even after it’s launched. We provide ongoing support to monitor performance, fix any issues, and roll out updates. Post-deployment, we provide monitoring, updates, and maintenance.",
-    "ctaRedirectUrl": "application-maintenance",
+    
     "fetchOnSlug": [
       "mobile-app-development-company-india"
     ],
@@ -507,7 +506,6 @@ const services = [
   {
     "title": "Mobile App Modernization",
     "description": "If your app is starting to feel outdated, we can help. By updating its design, technology, and functionality, we bring it up to speed with modern standards. We handle app store submissions to meet all guidelines for a launch.",
-    "ctaRedirectUrl": "application-upgradation",
     "fetchOnSlug": [
       "mobile-app-development-company-india"
     ],
@@ -579,7 +577,6 @@ const services = [
   {
     "title": "Backend Refactoring",
     "description": "An outdated backend can hold your app back. But don't worry as our team will revamp and optimize your system to boost speed and performance—all without touching your frontend. The result? A backend that works with your existing app and is ready to support your next big step.",
-    "ctaRedirectUrl": "application-upgradation",
     "fetchOnSlug": [
       "back-end-development-services-india"
     ],
@@ -723,7 +720,7 @@ const services = [
   {
     "title": "App Maintenance and Support",
     "description": "We don’t stop at building your app. Our team has a strong belief that an app should be kept running like new. If you need updates, bug fixes, or add new features, we’ll take care of it all.  ",
-    "ctaRedirectUrl": "application-maintenance",
+    
     "fetchOnSlug": [
       "application-development-company-india"
     ]
@@ -739,7 +736,6 @@ const services = [
   {
     "title": "Application Modernization",
     "description": "Have an old app that needs a fresh look or better performance? We’ll update it with emerging and advanced technology. We will add features to make it faster and ready for the future. ",
-    "ctaRedirectUrl": "application-upgradation",
     "fetchOnSlug": [
       "application-development-company-india"
     ]
@@ -831,7 +827,7 @@ const services = [
   {
     "title": "Website Maintenance and Optimization",
     "description": "Our website maintenance services include code optimization, server performance tuning, and database indexing to improve speed and reduce latency. Our team also utilizes tools for website development like Google PageSpeed and GTmetrix to ensure ongoing performance optimization and responsiveness.",
-    "ctaRedirectUrl": "application-maintenance",
+    
     "fetchOnSlug": [
       "website-development-services-india"
     ]
