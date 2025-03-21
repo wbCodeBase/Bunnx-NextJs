@@ -24,7 +24,7 @@ import loaderJson from "/public/pageAnimations/loader.json";
 import Techcard from "@/components/hire/Techcard";
 
 import PlaneCta from "@/components/layout/PlaneCta";
-// import heroDefault from "/public/hireDev2.png"
+// import heroDefault from "/public/hireDev2.png" 
 import heroDefaultImg from "/public/hireDev.png"
 
 function formatparameter(input) {

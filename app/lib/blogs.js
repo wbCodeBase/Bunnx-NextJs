@@ -1,10 +1,11 @@
-import graphqlRequest from "@/lib/graphqlRequest"
+import graphqlRequest from "@/lib/graphqlRequest";
 
 export async function getAllBlogPosts() {
   const query = {
     query: `query NewQuery {
             posts {
               nodes {
+                id
                 title
                 content
                 slug
@@ -29,11 +30,6 @@ export async function getAllBlogPosts() {
                 size
                 width
               }
-              roles {
-                nodes {
-                  name
-                }
-              }
             }
           }
         }
@@ -53,21 +49,64 @@ export async function getAllBlogPosts() {
                 startCursor
               }
             }
-          }`
+          }`,
   };
 
-
-  const resJson = await graphqlRequest(query)
+  const resJson = await graphqlRequest(query);
   const allBlogPosts = resJson.data.posts;
-  return allBlogPosts
+  return allBlogPosts;
 }
 
+export async function getSingleBlogPost(slug) {
+  const query = {
+    query: `query getSingleBlogPost {
+  post(id: "${slug}", idType: SLUG) {
+    content(format: RENDERED)
+    date
+    excerpt(format: RENDERED)
+    modified
+    slug
+    title
+    featuredImage {
+      node {
+        mediaDetails {
+          sizes {
+            height
+            sourceUrl
+            width
+          }
+        }
+      }
+    }
+    categories {
+      nodes {
+        name
+        slug
+      }
+    }
+    author {
+      node {
+        name
+        avatar {
+          size
+          url
+          width
+        }
+      }
+    }
+  }
+}`,
+  };
+
+  const resJson = await graphqlRequest(query);
+  const singleBlogPost = resJson.data.post;
+  return singleBlogPost;
+}
 
 export const formatDate = (dateString) => {
-  return new Intl.DateTimeFormat('en-US', {
-    year: 'numeric',
-    month: 'short', // "Dec"
-    day: '2-digit', // "16"
+  return new Intl.DateTimeFormat("en-US", {
+    year: "numeric",
+    month: "short", // "Dec"
+    day: "2-digit", // "16"
   }).format(new Date(dateString));
 };
-
