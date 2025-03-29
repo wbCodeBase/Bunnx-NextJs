@@ -2,7 +2,7 @@
 // import localFont from "next/font/local";
 import { AR_One_Sans, Quando } from "next/font/google";
 import "./globals.css";
-import { GoogleTagManager, GoogleAnalytics } from '@next/third-parties/google'
+import { GoogleTagManager, GoogleAnalytics } from '@next/third-parties/google' 
 
 import { SessionProvider } from "next-auth/react"; // Import SessionProvider
 import { ReduxProvider } from '../store/ReduxProvider';
@@ -30,7 +30,7 @@ export const metadata = {
     default: 'Software Development Services in India | Custom Development Solutions | Bunnx', // a default is required when creating a template
   },
   description: "Software development services in India for scalable web & mobile apps development.  We believe in innovative and yet cost-effective solutions tailored by expert developers.",
-  robots: "noindex", // Ensures pages are marked as noindex
+  robots: "index", // Ensures pages are marked as noindex
 
   metadataBase: new URL('https://www.bunnx.com'),
 
