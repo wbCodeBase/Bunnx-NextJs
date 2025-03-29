@@ -4631,7 +4631,7 @@ const guideContent = {
               "detail": "Check if the team has a history of delivering work on time. Look at reviews from their past clients, ask for references, and discuss how they handle unexpected delays."
             },
             {
-              "title": "Transparent Pricing",
+              "title": "Affordable Pricing",
               "detail": "The right team will be upfront about their pricing and explain exactly what you're paying for. They should also walk you through their development process."
             },
             {
@@ -4959,7 +4959,7 @@ const guideContent = {
               "detail": "Choose a company that can scale the team size based on your project’s growth."
             },
             {
-              "title": "Transparent Pricing",
+              "title": "Affordable Pricing",
               "detail": "Understand the pricing structure to avoid hidden costs and ensure cost-effectiveness."
             },
             {

@@ -15,7 +15,6 @@ const clients = [
     { name: 'Enkarma', icon: enkarma },
     { name: 'FundingCenter', icon: fundingCenter },
     { name: 'Coreops', icon: coreops },
-    // { name: 'Eastcoast', icon: eastcoast },
     { name: 'Collab', icon: collab },
     { name: 'Whitebunnie', icon: whitebunnie },
 ]

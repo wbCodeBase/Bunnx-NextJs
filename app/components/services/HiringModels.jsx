@@ -761,7 +761,7 @@ const serviceData = {
         "sections": [
           {
             "type": "para",
-            "content": "Fixed Price Model:\nModel for projects where the scope is clearly defined. This model should be chosen if you want everything to be delivered on time and within budget. It works best for clearly outlined timelines and has transparent pricing with no surprises."
+            "content": "Fixed Price Model:\nModel for projects where the scope is clearly defined. This model should be chosen if you want everything to be delivered on time and within budget. It works best for clearly outlined timelines and has Affordable Pricing with no surprises."
           },
           {
             "type": "para",

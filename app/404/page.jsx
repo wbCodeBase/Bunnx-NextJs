@@ -1,6 +1,6 @@
 'use client'
 
-import Lottie from "lottie-react";
+import Lottie from "lottie-react"; 
 import loaderJson1 from "../../public/pageAnimations/notFoundMagnifyingGlass.json";
 // import loaderJson2 from "../../public/pageAnimations/404NotFound.json";
 // import loaderJson from "../../public/pageAnimations/notFoundBoat.json";

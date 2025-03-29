@@ -34,7 +34,7 @@ export default function HiringModelsHire() {
                 },
                 {
                     type: "list",
-                    content: "Agile processes,Transparent pricing,Monthly billing,Maximum flexibility,Suitable for startups, MVPs and software/product companies"
+                    content: "Agile processes,Affordable Pricing,Monthly billing,Maximum flexibility,Suitable for startups, MVPs and software/product companies"
                 }
             ]
         },
@@ -49,7 +49,7 @@ export default function HiringModelsHire() {
                 },
                 {
                     type: "list",
-                    content: "Scale on-demand,Quick & cost-effective,Monthly billing,Avoid hiring hassles,Transparent pricing"
+                    content: "Scale on-demand,Quick & cost-effective,Monthly billing,Avoid hiring hassles,Affordable Pricing"
                 }
             ]
         },

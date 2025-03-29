@@ -1,6 +1,14 @@
 import Link from 'next/link';
 import { CheckCircle, Home, Phone, ArrowLeft } from 'lucide-react';
 
+
+export const metadata = {
+  title: "Thank You for Reaching Out! | Bunnx",
+  description: "We've received your query! Our team will get back to you soon to discuss how we can bring your ideas to life with our expert software development solutions.",
+  robots: "noindex",
+};
+
+
 export default function ThankYouPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-50 flex flex-col items-center justify-center p-4">
