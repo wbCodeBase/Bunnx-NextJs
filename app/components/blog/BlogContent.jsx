@@ -16,6 +16,7 @@ export default function BlogContent({ dedicatedBlogPost }) {
     return <p>Loading...</p>;
   }
 
+  // console.log(`guideData`, guideData.blogHeadingsAcf.blogHeadings);
 
 
   return (
@@ -26,38 +27,25 @@ export default function BlogContent({ dedicatedBlogPost }) {
       <div className="flex min-h-screen gap-8 sm:p-6 p-2 mt-4">
         {/* Navigation */}
         <nav className="sm:block hidden sticky top-20 h-fit w-80 shrink-0">
-          <h2 className="mb-4 text-xl text-gray-700 font-normal">Contents</h2>
+          <h2 className="mb-4 text-2xl text-gray-700 font-medium">Contents</h2>
           <div className="space-y-2">
-            <button className={`block w-full rounded-lg p-3 text-left text-sm transition-colors hover:bg-gray-100 font-normal text-gray-600`}>
+            {/* <button className={`block w-full rounded-lg p-3 text-left text-sm transition-colors hover:bg-gray-100 font-normal text-gray-600`}>
               What is Software Development Service? </button>
 
             <button className={`block w-full rounded-lg p-3 text-left text-sm transition-colors hover:bg-gray-100 font-normal text-gray-600`}>
               Why Choose Custom Software Development? </button>
 
             <button className={`block w-full rounded-lg p-3 text-left text-sm transition-colors hover:bg-gray-100 font-normal text-gray-600`}>
-              How to Choose the Right Development Partner </button>
+              How to Choose the Right Development Partner </button> */}
 
+          <div className="text-gray-800" dangerouslySetInnerHTML={{ __html: guideData.blogHeadingsAcf.blogHeadings || "" }} />
 
-
-            {/* {guideData.sections.map((section) => (
-              <button
-                key={section.id}
-                onClick={() => scrollToSection(section.id)}
-                className={`block w-full rounded-lg p-3 text-left text-sm transition-colors ${activeSection === section.id
-                  ? 'bg-amber-50 font-medium text-amber-900'
-                  : 'hover:bg-gray-100 font-normal text-gray-600'
-                  }`}
-              >
-                {section.title}
-              </button>
-            ))} */}
           </div>
         </nav>
 
 
         {/* Main Content */}
         <main className="max-w-3xl mx-auto">
-
 
           <div className="text-gray-800" dangerouslySetInnerHTML={{ __html: guideData.content || "" }} />
 

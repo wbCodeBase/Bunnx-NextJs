@@ -94,6 +94,9 @@ export async function getSingleBlogPost(slug) {
         }
       }
     }
+    blogHeadingsAcf {
+      blogHeadings
+    }
   }
 }`,
   };

@@ -173,9 +173,9 @@ const Footer = () => {
                                     <ul className="space-y-2 text-gray-400 text-sm">
                                         <li><Link href="software-development-company-in-india" className="text-gray-300 hover:text-white">Software Development</Link></li>
                                         <li><Link href="application-development-company-india" className="text-gray-300 hover:text-white">Application Development</Link></li>
-                                        <li><Link href="cloud-services" className="text-gray-300 hover:text-white">Cloud Services</Link></li>
+                                        <li><Link href="/" className="text-gray-300 hover:text-white">Cloud Services</Link></li>
                                         <li><Link href="ecommerce-development-company-india" className="text-gray-300 hover:text-white">Ecommerce Development</Link></li>
-                                        <li><Link href="qa-testing" className="text-gray-300 hover:text-white">QA Testing</Link></li>
+                                        <li><Link href="/" className="text-gray-300 hover:text-white">QA Testing</Link></li>
                                         <li><Link href="hire-dedicated-technical-team-india" className="text-gray-300 hover:text-white">Dedicated Technical-Team</Link></li>
                                     </ul>
                                 </div>
@@ -233,10 +233,10 @@ const Footer = () => {
                                         </Link>
                                     </div>
                                     <div className="flex gap-4 mb-4 md:mb-0">
-                                        <Link href="/privacy-policy" className="text-gray-400 hover:text-white text-sm">
+                                        {/* <Link href="/privacy-policy" className="text-gray-400 hover:text-white text-sm">
                                             Term of Use
                                         </Link>
-                                        <span className="text-gray-500">|</span>
+                                        <span className="text-gray-500">|</span> */}
                                         <Link href="/privacy-policy" className="text-gray-400 hover:text-white text-sm">
                                             Privacy Policy
                                         </Link>

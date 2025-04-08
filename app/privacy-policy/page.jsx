@@ -1,6 +1,16 @@
-import React from 'react';
+
+export const metadata = {
+    title: "Privacy Policy | Bunnx",
+    description: "Read Bunnx's Privacy Policy to understand how we collect, use, and protect your personal data. We value your privacy and are committed to maintaining transparency and security in all our practices.",
+    robots: "index",
+    alternates: {
+      canonical: "privacy-policy",
+    },
+  }
+  
 
 const PrivacyPolicy = () => {
+
     return (
         <>
             <section>
@@ -126,9 +136,9 @@ const PrivacyPolicy = () => {
                             <p className="mb-4">
                                 If you have any questions regarding this Privacy Policy, please contact us at:
                                 <br />
-                                Email: support@example.com
-                                <br />
-                                Phone: +1-800-123-4567
+                                {/* Email: support@example.com
+                                <br /> */}
+                                Phone: +91-9971544661
                             </p>
                         </div>
                     </section>

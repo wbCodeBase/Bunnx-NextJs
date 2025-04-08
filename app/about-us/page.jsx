@@ -6,7 +6,7 @@ import OurPhilosophy from "@/components/aboutUs/OurPhilosophy"
 
 
 export const metadata = {
-    title: "About us | Bunnx",
+    title: "About Us | Bunnx",
     description: 'Discover the story behind Bunnx – your trusted partner in Software Development. Learn about our mission, values, and commitment to delivering top-notch solutions tailored to your needs.',
     robots: "index",
     alternates: {

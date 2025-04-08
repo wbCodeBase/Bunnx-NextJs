@@ -191,7 +191,7 @@ const services = [
   {
     "title": "Cloud Application Development",
     "description": "Leverage our expertise to build secure, scalable cloud applications tailored to your needs. We assess your requirements, develop a risk-mitigation strategy, ensure smooth integration, and optimize performance for maximum efficiency.",
-    "ctaRedirectUrl": "cloud-application-development",
+    "ctaRedirectUrl": null,
     "fetchOnSlug": [
       "software-development-company-in-india"
     ],
@@ -424,7 +424,7 @@ const services = [
   {
     "title": "Cloud Services",
     "description": "Take your systems to the cloud without breaking a sweat. We simplify cloud migration, maintain control, and provide cost-friendly services. It makes your infrastructure scale while staying resilient with cloud solutions.",
-    "ctaRedirectUrl": "cloud-services",
+    "ctaRedirectUrl": null,
     "fetchOnSlug": [
       "it-consulting-services-india"
     ],
@@ -751,7 +751,7 @@ const services = [
   {
     "title": "Cloud Application Development",
     "description": "Take your app to the cloud with continuous integration and resource orchestration. We build cloud-based solutions that adapt to your needs and grow with your business. ",
-    "ctaRedirectUrl": "cloud-application-development",
+    "ctaRedirectUrl": null,
     "fetchOnSlug": [
       "application-development-company-india",
       "full-stack-development-services"
@@ -1157,7 +1157,7 @@ const services = [
   {
     "title": "QA & Testing Consulting",
     "description": "We offer expert QA consulting as well. This is to ensure seamless software performance. Our approach includes developing expert QA strategies, enhancing product reliability, and providing comprehensive testing solutions.",
-    "ctaRedirectUrl": "qa-consulting",
+    "ctaRedirectUrl": null,
     "fetchOnSlug": [
       "ecommerce-consulting-services"
     ]

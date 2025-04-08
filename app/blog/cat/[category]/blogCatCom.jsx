@@ -16,7 +16,7 @@ export default function BlogCatCom({ allBlogPosts }) {
     );
 
 
-    console.log("filteredPost", filteredPost)
+    // console.log("filteredPost", filteredPost)
 
     return (
         <>

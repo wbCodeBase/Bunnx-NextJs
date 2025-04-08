@@ -2,21 +2,24 @@ import { getAllBlogPosts } from "@/lib/blogs";
 import BlogCatCom from "./blogCatCom"
 
 
-// export async function generateMetadata({ params }) {
-//     const currentSlug = `/blog/cat/${params.category}`;
-//   const meta = {};
+export async function generateMetadata({ params }) {
+    const currentSlug = `/blog/cat/${params.category}`;
 
+    const category = params.category
+        .split("-")
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(" ");
 
+    return {
+        title: `${category} | Bunnx`,
+        description: "",
+        robots: "noindex",
+        alternates: {
+            canonical: currentSlug,
+        },
+    };
+}
 
-//   return {
-//     title: meta.title || "Software Development Services in India | Custom Development Solutions | Bunnx",
-//     description: meta.description || "Software development services in India for scalable web & mobile apps development.  We believe in innovative and yet cost-effective solutions tailored by expert developers.",
-//     robots: "noindex",  
-//     alternates: {
-//       canonical: currentSlug,
-//     },
-//   }
-// }
 
 
 export default async function BlogCardByCategory() {
@@ -27,7 +30,7 @@ export default async function BlogCardByCategory() {
     return (
         <>
 
-            <BlogCatCom allBlogPosts={allBlogPosts.nodes}/>
+            <BlogCatCom allBlogPosts={allBlogPosts.nodes} />
 
 
         </>
