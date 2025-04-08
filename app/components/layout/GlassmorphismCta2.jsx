@@ -283,7 +283,7 @@ const GlassmorphismCta2 = ({ serviceDetailPageSlug }) => {
         <div className="h-full w-full flex gap-8 items-center flex-wrap justify-between sm:px-10 px-4 py-6 bg-gray-200 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-50">
           <div className="text-white flex gap-3 flex-col lg:items-start items-center xl:w-[52%] w-full">
             <span className="italic">{content.tagline}</span>
-            <h3 className="text-3xl font-semibold">{content.title}</h3>
+            <h2 className="text-3xl font-semibold">{content.title}</h2>
             <p>{content.description}</p>
           </div>
           <div className="xl:w-[40%] w-full flex justify-center items-center">

@@ -178,7 +178,7 @@ const OurServices = () => {
                                                                 <span className="relative inline-flex rounded-full h-3 w-3 bg-blue-500"></span>
                                                             </span>
 
-                                                            <h4 className="font-medium inline-block text-lg relative after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-black after:transition-all after:duration-300 group-hover:after:w-full">{column.name}</h4>
+                                                            <p className="font-medium inline-block text-lg relative after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-black after:transition-all after:duration-300 group-hover:after:w-full">{column.name}</p>
 
                                                         </Link>
                                                     </div>

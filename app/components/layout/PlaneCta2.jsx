@@ -14,7 +14,7 @@ const PlaneCta2 = () => {
 
                         <div className='text-white flex gap-4 flex-col lg:items-start items-center xl:w-[58%] w-full'>
                             <span className='italic'>Your Digital Transformation Starts Here...</span>
-                            <h3 className='text-3xl font-semibold'>Crafting Tomorrow&apos;s Technologies, Today</h3>
+                            <h2 className='text-3xl font-semibold'>Crafting Tomorrow&apos;s Technologies, Today</h2>
                             <p>We don&apos;t just develop software. We architect digital futures that redefine what&apos;s possible for your business.
                             </p>
                         </div>

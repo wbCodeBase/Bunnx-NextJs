@@ -22,7 +22,7 @@ const WhyChooseUs = () => {
                         <div className='p-6'>
 
                             <h2 className='font-semibold text-orange-500 text-md'>Our Team</h2>
-                            <h4 className='font-semibold text-xl my-2'>Driven by Passion, Empowered by Expertise</h4>
+                            <h2 className='font-semibold text-xl my-2'>Driven by Passion, Empowered by Expertise</h2>
                             <p className='text-md text-gray-800'>Our team consists of industry experts who are committed to delivering innovative solutions. We work collaboratively to ensure every project exceeds expectations, combining technical prowess with a client-first approach.</p>
 
                         </div>

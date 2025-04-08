@@ -103,8 +103,8 @@ const Testimonial = () => {
 
             <section className="border-t container mx-auto max-w-screen-lg xl:max-w-screen-xl px-4 md:px-6 py-8">
 
-                <h2 className='font-semibold text-orange-500 text-lg'>Testimonial</h2>
-                <h4 className='font-semibold text-3xl my-2'>What our clients say about Bunnx</h4>
+                <span className='font-semibold text-orange-500 text-lg'>Testimonial</span>
+                <h2 className='font-semibold text-3xl my-2'>What our clients say about Bunnx</h2>
                 <p className='text-md text-gray-800'>At Bunnx, our clients’ feedback reflects our dedication to excellence. They appreciate our reliable service, innovative solutions, and personalized approach. Hear directly from our clients about the positive impact we&apos;ve made.</p>
 
 
@@ -156,9 +156,9 @@ const Testimonial = () => {
 
 
                                                         <div>
-                                                            <h3 className="font-semibold text-gray-900">
+                                                            <p className="font-semibold text-gray-900">
                                                                 {testimonial.name}
-                                                            </h3>
+                                                            </p>
                                                             <p className="text-gray-500 text-sm">
                                                                 {testimonial.role}
                                                             </p>

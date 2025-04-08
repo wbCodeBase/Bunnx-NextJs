@@ -26,7 +26,7 @@ const CaseStudiesnProjects = () => {
 
                     <div className="rounded-xl px4">
                         {/* <h2 className='font-semibold text-orange-500 text-lg'>Our Success Stories</h2> */}
-                        <h4 className='font-semibold sm:text-3xl text-2xl my-2'>How We Ensure Code Quality</h4>
+                        <h2 className='font-semibold sm:text-3xl text-2xl my-2'>How We Ensure Code Quality</h2>
                         <p className='text-md text-gray-800'>We prioritize code quality with rigorous testing, detailed reviews, and best practices to deliver reliable, long-lasting software.</p>
 
 
@@ -34,21 +34,21 @@ const CaseStudiesnProjects = () => {
                             <div className="">
                                 {/* <span><SiApacheguacamole className='text-purple-500' /></span> */}
                                 <span><FaClipboardCheck className='text-purple-500 text-xl' /></span>
-                                <h5 className='font-semibold my-1'>Unit Testing</h5>
+                                <h3 className='font-semibold my-1'>Unit Testing</h3>
                                 <p className='text-sm text-gray-500 font-normal'>Ensure functionality with robust and precise test cases.</p>
                             </div>
                             <hr />
                             <div className="">
                                 <span><FaLaptopCode className='text-red-500 text-xl' /></span>
                                 {/* <span><MdOutlineSecurity className='text-red-500 text-xl' /></span> */}
-                                <h5 className='font-semibold my-1'>Code Review Practices</h5>
+                                <h3 className='font-semibold my-1'>Code Review Practices</h3>
                                 <p className='text-sm text-gray-500 font-normal'>Enhance code quality through meticulous peer reviews.</p>
                             </div>
                             <hr />
 
                             <div className="">
                                 <span><MdShield className='text-yellow-500 text-xl' /></span>
-                                <h5 className='font-semibold my-1'>Code Quality Metrics</h5>
+                                <h3 className='font-semibold my-1'>Code Quality Metrics</h3>
                                 <p className='text-sm text-gray-500 font-normal'>Measure and improve software standards with key insights.</p>
                             </div>
 

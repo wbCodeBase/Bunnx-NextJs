@@ -68,7 +68,7 @@ const Solutions = () => {
             <div className='container mx-auto max-w-screen-lg xl:max-w-screen-xl px-0 md:px-6 md:py-8'>
 
                 <span className='font-semibold text-orange-500 text-lg'>Solutions We Deliver</span>
-                <h3 className='text-white font-semibold text-3xl my-2'>Solutions Crafted Just for Your Industry</h3>
+                <h2 className='text-white font-semibold text-3xl my-2'>Solutions Crafted Just for Your Industry</h2>
                 <p className='text-white text-md'>
                     Our expertise spans various business domains, delivering solutions that enhance efficiency and foster innovation for your organization.
                 </p>
