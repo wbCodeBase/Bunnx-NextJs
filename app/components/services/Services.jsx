@@ -156,7 +156,7 @@ const services = [
   {
     "title": "QA & Testing",
     "description": "Our certified experts perform thorough testing to detect and resolve any errors or bugs that could affect your software’s performance. Guarantee the quality, reliability, and performance of your software applications with our QA Experts and testing services.",
-    "ctaRedirectUrl": "qa-testing",
+    "ctaRedirectUrl": null,
     "fetchOnSlug": [
       "software-development-company-in-india",
       "website-development-services-india"
@@ -344,7 +344,7 @@ const services = [
   {
     "title": "QA and Testing Setup",
     "description": "Say goodbye to bugs slowing down your progress. We establish automated testing processes to save time and improve reliability. Need expert testers? Our team augmentation model has you covered. ",
-    "ctaRedirectUrl": "qa-testing",
+    "ctaRedirectUrl": null,
     "fetchOnSlug": [
       "software-consulting-services-india"
     ],

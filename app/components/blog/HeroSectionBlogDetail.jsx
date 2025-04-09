@@ -11,7 +11,7 @@ export default function HeroSectionBlogDetail({ dedicatedBlogPost: latestBlog })
     const heroSectionData = {
         title: latestBlog?.title,
         description: latestBlog?.excerpt,
-        imageUrl: latestBlog.featuredImage.node.mediaDetails.sizes[0].sourceUrl,
+        imageUrl: latestBlog?.featuredImage?.node?.mediaDetails?.sizes[0]?.sourceUrl,
         ctaTextPri: "Read more",
         categories: latestBlog?.categories?.nodes,
         readMoreBtnUrl: `/blog/${latestBlog?.slug}`,
@@ -60,7 +60,7 @@ export default function HeroSectionBlogDetail({ dedicatedBlogPost: latestBlog })
                                     </div>
                                     <div className="flex flex-col gap-1">
                                         <span className="font-medium">{authorName}</span>
-                                        <span className="text-gray-300 text-xs">{formatDate(latestBlog.date)}</span>
+                                        <span className="text-gray-300 text-xs italic">Published on {formatDate(latestBlog.date)}</span>
                                     </div>
                                 </div>
 

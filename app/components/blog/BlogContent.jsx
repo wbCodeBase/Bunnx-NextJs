@@ -21,8 +21,8 @@ export default function BlogContent({ dedicatedBlogPost }) {
 
   return (
     <section className="container mx-auto max-w-screen-lg xl:max-w-screen-xl px-4 md:px-6 sm:py-10 py-5">
-      <h2 className="font-semibold text-orange-500 text-lg">Our Guide</h2>
-      <h4 className="font-semibold text-3xl my-2">{guideData.title}</h4>
+      {/* <span className="font-semibold text-orange-500 text-lg">Our Guide</span> */}
+      {/* <h4 className="font-semibold text-3xl my-2">{guideData.title}</h4> */}
 
       <div className="flex min-h-screen gap-8 sm:p-6 p-2 mt-4">
         {/* Navigation */}
