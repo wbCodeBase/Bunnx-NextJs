@@ -10,6 +10,8 @@ import { Toaster } from "@/components/ui/sonner"
 import HeaderFooterWrapper from "@/components/layout/HeaderFooterWrapper";
 import ScrollToTop from "@/components/layout/ScrollToTop";
 
+
+
 const arOneSans = AR_One_Sans({
   subsets: ['latin'],
   variable: '--font-arOneSans',
