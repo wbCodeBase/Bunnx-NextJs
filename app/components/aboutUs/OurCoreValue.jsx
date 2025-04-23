@@ -30,42 +30,42 @@ export default function OurCoreValue() {
 
 
                                 <article className='hover:border hover:shadow-sm flex cursor-pointer group items-center flex-col p-4 rounded-lg'>
-                                    <h2>
+                                    
                                         <span className="flex tabular-nums text-4xl font-bold mb-2 duration-\[3s\] ease-out" >                                         
                                         <span className="text-gray-500 text-7xl group-hover:text-orange-500">
                                             <Image className="h-12 w-auto" src={Excellence} alt='excellence' />
                                             </span>
                                         </span>
-                                    </h2>
+                                    
                                     <p className="text-md text-gray-700 text-center mt-4">Excellence</p>
                                 </article>
 
 
                                 <article className='hover:border hover:shadow-sm flex cursor-pointer group items-center flex-col p-4 rounded-lg'>
-                                    <h2>
+                                    
                                         <span className="flex tabular-nums text-4xl font-bold mb-2 duration-\[3s\] ease-out" >                                            
                                             <span className="text-gray-500 text-7xl group-hover:text-orange-500">
                                                 <Image className="h-12 w-auto" src={Transparency} alt='Transparency' />
                                                 </span>
                                         </span>
-                                    </h2>
+                                    
                                     <p className="text-md text-gray-700 text-center mt-4">Transparency</p>
                                 </article>
 
 
                                 <article className='hover:border hover:shadow-sm flex cursor-pointer group items-center flex-col p-4 rounded-lg'>
-                                    <h2>
+                                
                                         <span className="flex tabular-nums text-4xl font-bold mb-2 duration-\[3s\] ease-out" >                                            
                                             <span className="text-gray-500 text-7xl group-hover:text-orange-500">
                                             <Image className="h-12 w-auto" src={Integrity} alt='integrity' />
                                                 </span>
                                         </span>
-                                    </h2>
+                                    
                                     <p className="text-md text-gray-700 text-center mt-4">Integrity</p>
                                 </article>
 
                                 <article className='hover:border hover:shadow-sm flex cursor-pointer group items-center flex-col p-4 rounded-lg'>
-                                    <h2>
+                                
                                         <span className="flex tabular-nums text-4xl font-bold mb-2 duration-\[3s\] ease-out" >
                                             <span className="text-gray-500 text-7xl group-hover:text-orange-500">
                                                 
@@ -73,31 +73,31 @@ export default function OurCoreValue() {
 
                                             </span>
                                         </span>
-                                    </h2>
+                                    
                                     <p className="text-md text-gray-700 text-center mt-4">Innovation</p>
                                 </article>
 
                                 <article className='hover:border hover:shadow-sm flex cursor-pointer group items-center flex-col p-4 rounded-lg'>
-                                    <h2>
+                                
                                         <span className="flex tabular-nums text-4xl font-bold mb-2 duration-\[3s\] ease-out" >
                                             <span className="text-gray-500 text-7xl group-hover:text-orange-500">
                                             <Image className="h-12 w-auto" src={collaboration} alt='collaboration' />
                                                 </span>
                                         </span>
-                                    </h2>
+                                    
                                     <p className="text-md text-gray-700 text-center mt-4">Collaboration</p>
                                 </article>
 
 
                                 <article className='hover:border hover:shadow-sm flex cursor-pointer group items-center flex-col p-4 rounded-lg'>
-                                    <h2>
+                                
                                         <span className="flex tabular-nums text-4xl font-bold mb-2 duration-\[3s\] ease-out" >
                                             <span className="text-gray-500 text-7xl group-hover:text-orange-500">
                                             <Image className="h-12 w-auto" src={accountability} alt='accountability' />
 
                                             </span>
                                         </span>
-                                    </h2>
+                                    
                                     <p className="text-md text-gray-700 text-center mt-4">Accountability</p>
                                 </article>
 

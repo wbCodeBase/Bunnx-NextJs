@@ -45,61 +45,61 @@ const HeroSection = () => {
 
                                     <article className='flex justify-center items-center flex-col p-4 rounded-lg'>
 
-                                        <h2>
-                                            <span className="flex tabular-nums text-4xl font-bold mb-2 duration-\[3s\] ease-out" >
-                                                <span className="text-orange-500"><CountUp end={16} enableScrollSpy />+</span>
-                                            </span>
-                                        </h2>
+
+                                        <span className="flex tabular-nums text-4xl font-bold mb-2 duration-\[3s\] ease-out" >
+                                            <span className="text-orange-500"><CountUp end={16} enableScrollSpy />+</span>
+                                        </span>
+
                                         <p className="text-md text-gray-700 text-center">Years in Industry</p>
                                     </article>
 
                                     <article className='flex justify-center items-center flex-col p-4 rounded-lg'>
 
-                                        <h2>
-                                            <span className="flex tabular-nums text-4xl font-bold mb-2 duration-\[3s\] ease-out" >
-                                                <span className="text-orange-500"><CountUp end={60} enableScrollSpy />+</span>
-                                            </span>
-                                        </h2>
+
+                                        <span className="flex tabular-nums text-4xl font-bold mb-2 duration-\[3s\] ease-out" >
+                                            <span className="text-orange-500"><CountUp end={60} enableScrollSpy />+</span>
+                                        </span>
+
                                         <p className="text-md text-gray-700 text-center">Projects Delivered</p>
                                     </article>
 
                                     <article className='flex justify-center items-center flex-col p-4 rounded-lg'>
 
-                                        <h2>
-                                            <span className="flex tabular-nums text-4xl font-bold mb-2 duration-\[3s\] ease-out" >
-                                                <span className="text-orange-500"><CountUp end={200} enableScrollSpy />+</span>
-                                            </span>
-                                        </h2>
+
+                                        <span className="flex tabular-nums text-4xl font-bold mb-2 duration-\[3s\] ease-out" >
+                                            <span className="text-orange-500"><CountUp end={200} enableScrollSpy />+</span>
+                                        </span>
+
                                         <p className="text-md text-gray-700 text-center">Mentors</p>
                                     </article>
 
                                     <article className='flex justify-center items-center flex-col p-4 rounded-lg'>
 
-                                        <h2>
-                                            <span className="flex tabular-nums text-4xl font-bold mb-2 duration-\[3s\] ease-out" >
-                                                <span className="text-orange-500"><CountUp end={800} enableScrollSpy />+</span>
-                                            </span>
-                                        </h2>
+
+                                        <span className="flex tabular-nums text-4xl font-bold mb-2 duration-\[3s\] ease-out" >
+                                            <span className="text-orange-500"><CountUp end={800} enableScrollSpy />+</span>
+                                        </span>
+
                                         <p className="text-md text-gray-700 text-center">Satisfied Clients</p>
                                     </article>
 
                                     <article className='flex justify-center items-center flex-col p-4 rounded-lg'>
 
-                                        <h2>
-                                            <span className="flex tabular-nums text-4xl font-bold mb-2 duration-\[3s\] ease-out" >
-                                                <span className="text-orange-500"><CountUp end={8} enableScrollSpy />+</span>
-                                            </span>
-                                        </h2>
+
+                                        <span className="flex tabular-nums text-4xl font-bold mb-2 duration-\[3s\] ease-out" >
+                                            <span className="text-orange-500"><CountUp end={8} enableScrollSpy />+</span>
+                                        </span>
+
                                         <p className="text-md text-gray-700 text-center">Industries Served</p>
                                     </article>
 
                                     <article className='flex justify-center items-center flex-col p-4 rounded-lg'>
 
-                                        <h2>
-                                            <span className="flex tabular-nums text-4xl font-bold mb-2 duration-\[3s\] ease-out" >
-                                                <span className="text-orange-500"><CountUp end={12} enableScrollSpy />+</span>
-                                            </span>
-                                        </h2>
+
+                                        <span className="flex tabular-nums text-4xl font-bold mb-2 duration-\[3s\] ease-out" >
+                                            <span className="text-orange-500"><CountUp end={12} enableScrollSpy />+</span>
+                                        </span>
+
                                         <p className="text-md text-gray-700 text-center">Countries</p>
                                     </article>
 

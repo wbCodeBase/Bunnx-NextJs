@@ -11,10 +11,10 @@ export default function WhatsAppButton({
     const whatsappUrl = `https://api.whatsapp.com/send/?phone=${phoneNumber}&text=${encodeURIComponent(whatsappText)}`
 
     return (
-        <div className="fixed bottom-6 right-6 z-10 md:bottom-5 md:right-5 hidden">
+        <div className="fixed bottom-6 right-6 z-10 md:bottom-5 md:right-5 hidde">
             <Link
                 href={whatsappUrl}
-                className="flex items-center justify-center rounded-3xl bg-[#25d366] p2.5 p-1.5"
+                className="flex items-center justify-center rounded-3xl bg-[#25d366] p-2.5 p1.5"
                 title="Bunnx on WhatsApp"
                 target="_blank"
                 rel="noopener noreferrer"
