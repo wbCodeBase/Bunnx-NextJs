@@ -58,7 +58,7 @@ export const metadata = {
       },
     ],
 
-    locale: 'en_US',
+    locale: 'en_US', 
     type: 'website',
   },
 

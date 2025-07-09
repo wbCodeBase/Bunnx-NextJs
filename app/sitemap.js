@@ -11,7 +11,7 @@ export default async function sitemap() {
       }
   
       const serviceSlugsOnly = activeSlugData.filter((item) => item?.slugOf === "service");
-  
+     
   
       // Base sitemap links
       const sitemapLinks = [

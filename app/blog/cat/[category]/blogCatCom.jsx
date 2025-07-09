@@ -10,11 +10,9 @@ export default function BlogCatCom({ allBlogPosts }) {
     console.log("Params", params.category)
     // console.log("allBlogPosts", allBlogPosts)
 
-
     const filteredPost = allBlogPosts?.filter((blogPost) =>
         blogPost?.categories?.nodes.some(category => params.category === category.slug)
     );
-
 
     // console.log("filteredPost", filteredPost)
 
