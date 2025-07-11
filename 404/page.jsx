@@ -6,7 +6,7 @@ import loaderJson1 from "../../public/pageAnimations/notFoundMagnifyingGlass.jso
 // import loaderJson from "../../public/pageAnimations/notFoundBoat.json";
 import Link from "next/link";
 
-export default function Custom404() {
+export default function Custom404() { 
   return (
     <div className="container mx-auto max-w-screen-xl px-4 md:px-6 pb-16 flex flex-col gap-20 items-center justify-center min-h-screen">
 
