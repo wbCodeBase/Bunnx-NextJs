@@ -1,5 +1,4 @@
 import NumericCounterInfo from "@/components/layout/NumericCounterInfo";
-import bunnxLogo from "/public/logo/bunnx-logo.png";
 import OurServices from "@/components/home/OurServices";
 import Industries from "@/components/home/Industries";
 import CaseStudiesnProjects from "@/components/home/CaseStudiesnProjects";
@@ -79,7 +78,7 @@ export default async function Home() {
     "@type": "LocalBusiness",
     name: "Software Development Service Company",
     description: "Bunnx offers expert software development services in India, delivering scalable web and mobile app solutions tailored to your business needs.",
-    image: `https://www.bunnx.com${bunnxLogo.src}`,
+    image: "https://www.bunnx.com/logo/bunnx-logo.png",
     "@id": "https://www.bunnx.com",
     url: "https://www.bunnx.com",
     telephone: "+91-9971544661",

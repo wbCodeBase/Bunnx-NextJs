@@ -165,7 +165,7 @@ export default function ContactSidebar() {
                                 className="bg-orange-500 text-white py-2 px-4 rounded-lg w-full font-medium mt-2"
                                 disabled={isLoading}
                             >
-                                {isLoading ? "Submitting..." : "Sumit"}
+                                {isLoading ? "Submitting..." : "Submit"}
                             </button>
                         </div>
                     </form>

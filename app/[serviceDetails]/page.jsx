@@ -1,7 +1,6 @@
 
 // import ServiceDetailsPage from "./serviceComponent";
 import metaData from "#/staticDb/meta.json";
-import bunnxLogo from "/public/logo/bunnx-logo.png";
 
 import { notFound } from "next/navigation";
 import { getActiveSlugs } from "@/lib/api"; // <-- you'll create this server-side fetch
@@ -95,7 +94,7 @@ const ServiceDetails = async ({ params }) => {
     "@type": "ProfessionalService",
     name: metaData[serviceDetails].title,
     description: metaData[serviceDetails].description,
-    image: `https://www.bunnx.com${bunnxLogo.src}`,
+    image: `https://www.bunnx.com/logo/bunnx-logo.png`,
     "@id": "https://www.bunnx.com",
     url: serviceDetails,
     aggregateRating: {
@@ -110,6 +109,7 @@ const ServiceDetails = async ({ params }) => {
       streetAddress: companyInfo.address.streetAddress,
       addressLocality: companyInfo.address.addressLocality,
       postalCode: companyInfo.address.postalCode,
+      addressRegion: "Delhi-NCR",
       addressCountry: companyInfo.address.addressCountry,
     }, 
     contactPoint: {

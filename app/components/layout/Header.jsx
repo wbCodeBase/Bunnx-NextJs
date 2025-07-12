@@ -453,26 +453,7 @@ const logOut = async () => {
 
 
 
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Corporation",
-  "name": "Bunnx",
-  "alternateName": "BunnX",
-  "url": "https://www.bunnx.com/",
-  image: `https://www.bunnx.com${bunnxLogo.src}`,
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "telephone": "+91-9971544661",
-    "contactType": "customer service",
-    "areaServed": "IN",
-    "availableLanguage": ["en", "Hindi"]
-  },
-  "sameAs": [
-    "https://www.facebook.com/Bunnx.official/",
-    "https://www.instagram.com/bunn_x.official/",
-    "https://www.linkedin.com/company/bunnx/"
-  ]
-}
+
 
 
 
@@ -484,12 +465,6 @@ const jsonLd = {
 
 export default function Header() {
 
-  <script
-    type="application/ld+json"
-    dangerouslySetInnerHTML={{
-      __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
-    }}
-  />
 
   const { data: session, status } = useSession();
   // if (session?.user?.role === "admin" && status === "authenticated") {
