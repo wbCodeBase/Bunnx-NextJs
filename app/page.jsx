@@ -1,5 +1,5 @@
 import NumericCounterInfo from "@/components/layout/NumericCounterInfo";
-// import HeroSection from "@/components/layout/HeroSection";
+import bunnxLogo from "/public/logo/bunnx-logo.png";
 import OurServices from "@/components/home/OurServices";
 import Industries from "@/components/home/Industries";
 import CaseStudiesnProjects from "@/components/home/CaseStudiesnProjects";
@@ -29,8 +29,39 @@ export const metadata = {
 }
 
 
+// Company information - centralized for consistency
+const companyInfo = {
+  telephone: "+91-9971544661",
+  address: {
+    streetAddress: "H-160, 203A BSI Business Park, Sector-63",
+    addressLocality: "Noida",
+    postalCode: "201301",
+    addressCountry: "IN",
+  },
+  geo: {
+    latitude: 28.625605488625713,
+    longitude: 77.37881815528482,
+  },
+  aggregateRating: {
+    ratingValue: "5",
+    reviewCount: "957",
+    bestRating: "5",
+    worstRating: "1",
+  },
+  openingHours: {
+    dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+    opens: "10:00",
+    closes: "19:00",
+  },
+  sameAs: [
+    "https://www.facebook.com/Bunnx.official/",
+    "https://www.instagram.com/bunn_x.official/",
+    "https://www.linkedin.com/company/bunnx/",
+  ],
+}
 
-export default async function Home() { 
+
+export default async function Home() {
 
   const session = await auth()
   console.log("Home - User", session?.user || "Not Authenticated")
@@ -43,8 +74,58 @@ export default async function Home() {
     ctaRedirectUrl: "#contact-us",
   };
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    name: "Software Development Service Company",
+    description: "Bunnx offers expert software development services in India, delivering scalable web and mobile app solutions tailored to your business needs.",
+    image: `https://www.bunnx.com${bunnxLogo.src}`,
+    "@id": "https://www.bunnx.com",
+    url: "https://www.bunnx.com",
+    telephone: "+91-9971544661",
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: companyInfo.aggregateRating.ratingValue,
+      reviewCount: companyInfo.aggregateRating.reviewCount,
+      bestRating: companyInfo.aggregateRating.bestRating,
+      worstRating: companyInfo.aggregateRating.worstRating,
+    },
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: companyInfo.address.streetAddress,
+      addressLocality: companyInfo.address.addressLocality,
+      postalCode: companyInfo.address.postalCode,
+      addressCountry: companyInfo.address.addressCountry,
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: companyInfo.geo.latitude,
+      longitude: companyInfo.geo.longitude,
+    },
+    openingHoursSpecification: {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: companyInfo.openingHours.dayOfWeek,
+      opens: companyInfo.openingHours.opens,
+      closes: companyInfo.openingHours.closes,
+    },
+    "sameAs": [
+      "https://www.facebook.com/Bunnx.official/",
+      "https://www.instagram.com/bunn_x.official/",
+      "https://www.linkedin.com/company/bunnx/"
+    ]
+
+  }
+
+
   return (
     <>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
 
       <section className="borde pb20 bg-gray800 bg-black text-white">
         <div className="flex justify-center flex-wrap container mx-auto sm:w-11/12 w-full">

@@ -1,6 +1,7 @@
 
 // import ServiceDetailsPage from "./serviceComponent";
 import metaData from "#/staticDb/meta.json";
+import bunnxLogo from "/public/logo/bunnx-logo.png";
 
 import { notFound } from "next/navigation";
 import { getActiveSlugs } from "@/lib/api"; // <-- you'll create this server-side fetch
@@ -94,10 +95,9 @@ const ServiceDetails = async ({ params }) => {
     "@type": "ProfessionalService",
     name: metaData[serviceDetails].title,
     description: metaData[serviceDetails].description,
-    // image: serviceData.image,
+    image: `https://www.bunnx.com${bunnxLogo.src}`,
     "@id": "https://www.bunnx.com",
     url: serviceDetails,
-    telephone: companyInfo.telephone,
     aggregateRating: {
       "@type": "AggregateRating",
       ratingValue: companyInfo.aggregateRating.ratingValue,
@@ -111,23 +111,14 @@ const ServiceDetails = async ({ params }) => {
       addressLocality: companyInfo.address.addressLocality,
       postalCode: companyInfo.address.postalCode,
       addressCountry: companyInfo.address.addressCountry,
-    },
-    geo: {
-      "@type": "GeoCoordinates",
-      latitude: companyInfo.geo.latitude,
-      longitude: companyInfo.geo.longitude,
-    },
-    openingHoursSpecification: {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: companyInfo.openingHours.dayOfWeek,
-      opens: companyInfo.openingHours.opens,
-      closes: companyInfo.openingHours.closes,
-    },
-    "sameAs": [
-      "https://www.facebook.com/Bunnx.official/",
-      "https://www.instagram.com/bunn_x.official/",
-      "https://www.linkedin.com/company/bunnx/"
-    ]
+    }, 
+    contactPoint: {
+    "@type": "ContactPoint",
+    "telephone": "+91-9971544661",
+    "contactType": "customer service",
+    "areaServed": "IN",
+    "availableLanguage": ["en", "Hindi"]
+  }
 
   }
 

@@ -449,11 +449,49 @@ const logOut = async () => {
 
 
 
+
+
+
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Corporation",
+  "name": "Bunnx",
+  "alternateName": "BunnX",
+  "url": "https://www.bunnx.com/",
+  image: `https://www.bunnx.com${bunnxLogo.src}`,
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+91-9971544661",
+    "contactType": "customer service",
+    "areaServed": "IN",
+    "availableLanguage": ["en", "Hindi"]
+  },
+  "sameAs": [
+    "https://www.facebook.com/Bunnx.official/",
+    "https://www.instagram.com/bunn_x.official/",
+    "https://www.linkedin.com/company/bunnx/"
+  ]
+}
+
+
+
+
+
+
+
+
+
 export default function Header() {
 
+  <script
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{
+      __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
+    }}
+  />
+
   const { data: session, status } = useSession();
-
-
   // if (session?.user?.role === "admin" && status === "authenticated") {
   //   console.log("Header admin", session?.user?.name);
   // } else if (session?.user?.role === "user" && status === "authenticated") {
@@ -735,7 +773,7 @@ export default function Header() {
           </div>
         </div>
       </div>
- 
+
       {activeMenu && (
         <div className="absolute lg:flex hidden left-0 w-full bg-white shadow-lg z-50 transition-all duration-300 ease-in-out transform translate-y-0 opacity-100">
           {activeMenu === 'Service' ? renderServicesDropdown(activeMenu) : renderHireDropdown(activeMenu)}
@@ -807,7 +845,7 @@ export default function Header() {
 
       )}
 
-<ContactSidebar />
+      <ContactSidebar />
 
     </header>
   )
