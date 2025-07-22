@@ -40,12 +40,6 @@ const companyInfo = {
     latitude: 28.625605488625713,
     longitude: 77.37881815528482,
   },
-  aggregateRating: {
-    ratingValue: "5",
-    reviewCount: "957",
-    bestRating: "5",
-    worstRating: "1",
-  },
   openingHours: {
     dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
     opens: "10:00",
@@ -91,34 +85,32 @@ const ServiceDetails = async ({ params }) => {
   // Generate dynamic JSON-LD schema
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "ProfessionalService",
+    "@type": "Product",
     name: metaData[serviceDetails].title,
     description: metaData[serviceDetails].description,
     image: `https://www.bunnx.com/logo/bunnx-logo.png`,
     "@id": "https://www.bunnx.com",
     url: serviceDetails,
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: companyInfo.aggregateRating.ratingValue,
-      reviewCount: companyInfo.aggregateRating.reviewCount,
-      bestRating: companyInfo.aggregateRating.bestRating,
-      worstRating: companyInfo.aggregateRating.worstRating,
-    },
+    "telephone": "+91-9971544661",
+    "priceRange": "$$",
+    "serviceProvider": "BunnX",
+
     address: {
       "@type": "PostalAddress",
+      "hasMap": "https://maps.app.goo.gl/8VmvbyhhHqqgmVNU8",
       streetAddress: companyInfo.address.streetAddress,
       addressLocality: companyInfo.address.addressLocality,
       postalCode: companyInfo.address.postalCode,
       addressRegion: "Delhi-NCR",
       addressCountry: companyInfo.address.addressCountry,
-    }, 
+    },
     contactPoint: {
-    "@type": "ContactPoint",
-    "telephone": "+91-9971544661",
-    "contactType": "customer service",
-    "areaServed": "IN",
-    "availableLanguage": ["en", "Hindi"]
-  }
+      "@type": "ContactPoint",
+      "telephone": "+91-9971544661",
+      "contactType": "customer service",
+      "areaServed": "IN",
+      "availableLanguage": ["en", "Hindi"]
+    }
 
   }
 

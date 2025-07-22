@@ -42,7 +42,7 @@ const companyInfo = {
     longitude: 77.37881815528482,
   },
   aggregateRating: {
-    ratingValue: "5",
+    ratingValue: "4.9",
     reviewCount: "957",
     bestRating: "5",
     worstRating: "1",
@@ -82,6 +82,7 @@ export default async function Home() {
     "@id": "https://www.bunnx.com",
     url: "https://www.bunnx.com",
     telephone: "+91-9971544661",
+    "priceRange": "$$",
     aggregateRating: {
       "@type": "AggregateRating",
       ratingValue: companyInfo.aggregateRating.ratingValue,
@@ -100,6 +101,7 @@ export default async function Home() {
       "@type": "GeoCoordinates",
       latitude: companyInfo.geo.latitude,
       longitude: companyInfo.geo.longitude,
+      "hasMap": "https://maps.app.goo.gl/8VmvbyhhHqqgmVNU8"
     },
     openingHoursSpecification: {
       "@type": "OpeningHoursSpecification",

@@ -6,7 +6,6 @@ import { useRouter } from 'next/navigation';
 
 import { toast } from "sonner"
 import credentialsLogin from "@/actions/loginFunction";
-
 import { useSession } from "next-auth/react";
 
 const Login = () => {

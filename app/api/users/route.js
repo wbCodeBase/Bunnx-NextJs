@@ -54,10 +54,8 @@ export async function POST(request) {
   const result = await createUser(data);
 
   // Use the status code and data from the result
-  return new Response(JSON.stringify(result), { status: result.status });
+  return new Response(JSON.stringify(result), { status: result.status }); 
 } 
-
-
 
 
 export async function PUT(request) {
