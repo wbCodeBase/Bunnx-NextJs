@@ -1,6 +1,8 @@
 import HireDetailsComponent from "./hireComponent"
 
-import metaData from "#/staticDb/meta.json";
+import { notFound } from "next/navigation";
+import metaData from "#/staticDb/hiremeta.json";
+
 
 export async function generateMetadata({ params }) {
   // read route params
@@ -24,9 +26,10 @@ export async function generateMetadata({ params }) {
   return {
     title: meta.title,
     description: meta.description,
-    robots: meta.robots,  
+    robots: "noindex",
+    // robots: meta.robots,  
     alternates: {
-      canonical: currentSlug,
+      canonical: `hire/${currentSlug}`,
     },
   }
 }
@@ -35,6 +38,11 @@ export async function generateMetadata({ params }) {
 
 
 export default function HireDevOf() {
+
+
+
+  notFound();
+
 
   return (
     <>
