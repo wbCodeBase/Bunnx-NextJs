@@ -72,7 +72,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Corporation",
   "name": "BunnX",
-  "alternateName": "BunnX",
+  "alternateName": "Bunnx",
   "url": "https://www.bunnx.com/",
   image: "https://www.bunnx.com/logo/bunnx-logo.png",
   "contactPoint": {

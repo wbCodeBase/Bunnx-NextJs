@@ -85,7 +85,7 @@ const ServiceDetails = async ({ params }) => {
   // Generate dynamic JSON-LD schema
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "Product",
+    "@type": "ProfessionalService",
     name: metaData[serviceDetails].title,
     description: metaData[serviceDetails].description,
     image: `https://www.bunnx.com/logo/bunnx-logo.png`,
@@ -114,6 +114,33 @@ const ServiceDetails = async ({ params }) => {
 
   }
 
+  const fullTitle = metaData[serviceDetails].title;
+
+  const jsonLdProduct = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: fullTitle.split(" ").slice(0, 3).join(" "),
+    description: metaData[serviceDetails].description,
+
+
+    "brand": {
+      "@type": "Brand",
+      "name": "BunnX"
+    },
+
+    aggregateRating: {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "bestRating": "5",
+      "worstRating": "1",
+      "ratingCount": "957"
+    }
+
+
+
+
+  }
+
 
   return (
     <>
@@ -122,6 +149,12 @@ const ServiceDetails = async ({ params }) => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(jsonLdProduct).replace(/</g, "\\u003c"),
         }}
       />
 
