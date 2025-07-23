@@ -22,9 +22,9 @@ import { FaLocationArrow } from "react-icons/fa";
 
 
 export const metadata = {
-  title: "Software Development Services in India | Software Development Agency | Bunnx",
+  title: "Software Development Services in India | Software Development Agency | BunnX",
   description: 'Bunnx offers expert software development services in India, delivering scalable web and mobile app solutions tailored to your business needs.',
-  robots: "index",
+  robots: "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
 }
 
 

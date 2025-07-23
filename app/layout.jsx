@@ -29,10 +29,10 @@ const quando = Quando({
 export const metadata = {
   title: {
     template: '%s',
-    default: 'Software Development Services in India | Custom Development Solutions | Bunnx', // a default is required when creating a template
+    default: 'Software Development Services in India | Custom Development Solutions | BunnX', // a default is required when creating a template
   },
   description: "Software development services in India for scalable web & mobile apps development.  We believe in innovative and yet cost-effective solutions tailored by expert developers.",
-  robots: "index", // Ensures pages are marked as noindex
+  robots: "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large", // Ensures pages are marked as noindex
 
   metadataBase: new URL('https://www.bunnx.com'),
 

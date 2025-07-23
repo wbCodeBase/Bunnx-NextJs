@@ -3,7 +3,7 @@ import { CheckCircle, Home, Phone, ArrowLeft } from 'lucide-react';
 
 
 export const metadata = {
-  title: "Thank You for Reaching Out! | Bunnx",
+  title: "Thank You for Reaching Out! | BunnX",
   description: "We've received your query! Our team will get back to you soon to discuss how we can bring your ideas to life with our expert software development solutions.",
   robots: "noindex",
 };

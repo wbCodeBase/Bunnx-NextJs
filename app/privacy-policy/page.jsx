@@ -1,8 +1,8 @@
 
 export const metadata = {
-    title: "Privacy Policy | Bunnx",
+    title: "Privacy Policy | BunnX",
     description: "Read Bunnx's Privacy Policy to understand how we collect, use, and protect your personal data. We value your privacy and are committed to maintaining transparency and security in all our practices.",
-    robots: "index",
+    robots: "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
     alternates: {
       canonical: "privacy-policy",
     },

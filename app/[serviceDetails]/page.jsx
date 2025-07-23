@@ -58,7 +58,7 @@ export async function generateMetadata({ params }) {
   const meta = metaData[currentSlug] || {};
 
   return {
-    title: meta.title || "Software Development Services in India | Custom Development Solutions | Bunnx",
+    title: meta.title || "Software Development Services in India | Custom Development Solutions | BunnX",
     description: meta.description || "Software development services in India for scalable web & mobile apps development.  We believe in innovative and yet cost-effective solutions tailored by expert developers.",
     robots: meta.robots,
     alternates: {

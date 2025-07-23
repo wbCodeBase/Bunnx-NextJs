@@ -11,7 +11,7 @@ export async function generateMetadata({ params }) {
         .join(" ");
 
     return {
-        title: `${category} Blogs | Bunnx`,
+        title: `${category} Blogs | BunnX`,
         description: "",
         robots: "noindex",
         alternates: {

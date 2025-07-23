@@ -26,7 +26,7 @@ export async function generateMetadata({ params }) {
   // console.log("singleBlogPost", singleBlogPost);
 
   return { 
-    title: `${singleBlogPost?.title} | Bunnx`,
+    title: `${singleBlogPost?.title} | BunnX`,
     description: extractCleanText(singleBlogPost?.excerpt),
     robots: "noindex",  
     alternates: {

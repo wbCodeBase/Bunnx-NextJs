@@ -9,9 +9,9 @@ import Image from 'next/image';
 
 
 export const metadata = {
-  title: "Contant Us | Bunnx",
+  title: "Contant Us | BunnX",
   description: 'Have questions or need assistance? Contact Bunnx for expert support and personalized solutions. We are here to help you every step of the way!',
-  robots: "index",  
+  robots: "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",  
   alternates: {
     canonical: "contact-us",
 },
