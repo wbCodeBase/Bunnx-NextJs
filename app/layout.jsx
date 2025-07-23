@@ -71,7 +71,7 @@ export const metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Corporation",
-  "name": "Bunnx",
+  "name": "BunnX",
   "alternateName": "BunnX",
   "url": "https://www.bunnx.com/",
   image: "https://www.bunnx.com/logo/bunnx-logo.png",
