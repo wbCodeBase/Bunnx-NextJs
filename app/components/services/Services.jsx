@@ -204,14 +204,14 @@ const services = [
       "software-development-company-in-india"
     ],
   },
-  {
-    "title": "DevOps & CI/CD Pipelines",
-    "description": "Adopt DevOps to optimize software development and operations. With our expertise in collaboration, automation, continuous integration, and delivery pipelines, we empower your business to achieve greater efficiency, quality, and agility.\n",
-    "ctaRedirectUrl": "devops-and-ci-cd-pipelines",
-    "fetchOnSlug": [
-      "software-development-company-in-india"
-    ],
-  },
+  // {
+  //   "title": "DevOps & CI/CD Pipelines",
+  //   "description": "Adopt DevOps to optimize software development and operations. With our expertise in collaboration, automation, continuous integration, and delivery pipelines, we empower your business to achieve greater efficiency, quality, and agility.\n",
+  //   "ctaRedirectUrl": "devops-and-ci-cd-pipelines",
+  //   "fetchOnSlug": [
+  //     "software-development-company-in-india"
+  //   ],
+  // },
   {
     "title": "Implementation & Migration",
     "description": "Our CRM implementation services will make better sales, marketing, and customer support tasks. We also identify current challenges in your CRM system and make migrations to strategies that really work. If you are building a new CRM system or transferring historical data, we handle it all through our experts",
@@ -333,14 +333,14 @@ const services = [
       "software-consulting-services-india"
     ],
   },
-  {
-    "title": "Streamlined DevOps Processes",
-    "description": "We set up efficient DevOps pipelines that simplify and speed up your software delivery. From CI/CD implementation to optimizing workflows, we ensure your development process is lean and productive.",
-    "ctaRedirectUrl": "devops-and-ci-cd-pipelines",
-    "fetchOnSlug": [
-      "software-consulting-services-india"
-    ],
-  },
+  // {
+  //   "title": "Streamlined DevOps Processes",
+  //   "description": "We set up efficient DevOps pipelines that simplify and speed up your software delivery. From CI/CD implementation to optimizing workflows, we ensure your development process is lean and productive.",
+  //   "ctaRedirectUrl": "devops-and-ci-cd-pipelines",
+  //   "fetchOnSlug": [
+  //     "software-consulting-services-india"
+  //   ],
+  // },
   {
     "title": "QA and Testing Setup",
     "description": "Say goodbye to bugs slowing down your progress. We establish automated testing processes to save time and improve reliability. Need expert testers? Our team augmentation model has you covered. ",
@@ -1000,14 +1000,14 @@ const services = [
       "full-stack-development-services"
     ]
   },
-  {
-    "title": "DevOps and CI/CD Pipelines",
-    "description": "Streamline your development process with our automated deployment pipelines and CI/CD setups using Jenkins, GitLab CI/CD, or CircleCI.",
-    "ctaRedirectUrl": "devops-and-ci-cd-pipelines",
-    "fetchOnSlug": [
-      "full-stack-development-services"
-    ]
-  },
+  // {
+  //   "title": "DevOps and CI/CD Pipelines",
+  //   "description": "Streamline your development process with our automated deployment pipelines and CI/CD setups using Jenkins, GitLab CI/CD, or CircleCI.",
+  //   "ctaRedirectUrl": "devops-and-ci-cd-pipelines",
+  //   "fetchOnSlug": [
+  //     "full-stack-development-services"
+  //   ]
+  // },
   {
     "title": "Database Design and Management",
     "description": "Our experts design, optimize, and manage relational databases like MySQL and PostgreSQL, as well as NoSQL solutions like MongoDB and Cassandra, ensuring scalability and high performance.",

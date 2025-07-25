@@ -55,12 +55,21 @@ const companyInfo = {
 export async function generateMetadata({ params }) {
   // read route params
   const currentSlug = params.serviceDetails
-  const meta = metaData[currentSlug] || {};
+  const meta = metaData[currentSlug] || null;
+
+  if (!meta) {
+    // Optional: allow fallback SEO for invalid slugs
+    return {
+      title: "404 - Page Not Found | BunnX",
+      description: "This page does not exist. Please check the URL or return to the homepage.",
+      robots: "noindex, nofollow"
+    };
+  }
 
   return {
-    title: meta.title || "Software Development Services in India | Custom Development Solutions | BunnX",
-    description: meta.description || "Software development services in India for scalable web & mobile apps development.  We believe in innovative and yet cost-effective solutions tailored by expert developers.",
-    robots: meta.robots,
+    title: meta?.title || "404 - Page Not Found | BunnX",
+    description: meta?.description || "This page does not exist. Please check the URL or return to the homepage.",
+    robots: meta?.robots || "noindex, nofollow",
     alternates: {
       canonical: currentSlug,
     },
@@ -86,14 +95,18 @@ const ServiceDetails = async ({ params }) => {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
-    name: metaData[serviceDetails].title,
-    description: metaData[serviceDetails].description,
+    name: metaData[serviceDetails]?.title,
+    description: metaData[serviceDetails]?.description,
     image: `https://www.bunnx.com/logo/bunnx-logo.png`,
     "@id": "https://www.bunnx.com",
     url: serviceDetails,
     "telephone": "+91-9971544661",
     "priceRange": "$$",
-    "serviceProvider": "BunnX",
+
+    "provider": {
+      "@type": "Organization",
+      "name": "BunnX"
+    },
 
     address: {
       "@type": "PostalAddress",
@@ -114,7 +127,7 @@ const ServiceDetails = async ({ params }) => {
 
   }
 
-  const fullTitle = metaData[serviceDetails].title;
+  const fullTitle = metaData[serviceDetails]?.title;
 
   const jsonLdProduct = {
     "@context": "https://schema.org",

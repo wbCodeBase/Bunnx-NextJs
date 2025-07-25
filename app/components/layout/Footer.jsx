@@ -9,7 +9,6 @@ import { Linkedin, Twitter, Facebook, Youtube, Instagram } from 'lucide-react'
 import indianFlag from "/public/india-flag.svg"
 import { useSubmitContactFormMutation } from '../../../store/api/myApi';
 
-
 import bigLogo from "/public/big-logo.png"
 
 
@@ -215,20 +214,20 @@ const Footer = () => {
                             {/* Bottom Section */}
                             <div className="mt-6 pt-8 border-t border-gray-700">
                                 <div className="flex flex-col md:flex-row justify-between items-center">
-                                    <div className="flex gap-6 mb-4 md:mb-0">
-                                        <Link href="https://linkedin.com" className="text-gray-300 hover:text-white">
+                                     <div className="flex gap-6 mb-4 md:mb-0">
+                                        <Link href="https://www.linkedin.com/company/bunnx/" className="text-gray-300 hover:text-white">
                                             <Linkedin className="w-6 h-6" />
                                         </Link>
                                         <Link href="https://twitter.com" className="text-gray-300 hover:text-white">
                                             <Twitter className="w-6 h-6" />
                                         </Link>
-                                        <Link href="https://facebook.com" className="text-gray-300 hover:text-white">
+                                        <Link href="https://www.facebook.com/Bunnx.official/" className="text-gray-300 hover:text-white">
                                             <Facebook className="w-6 h-6" />
                                         </Link>
                                         <Link href="https://youtube.com" className="text-gray-300 hover:text-white">
                                             <Youtube className="w-6 h-6" />
                                         </Link>
-                                        <Link href="https://instagram.com" className="text-gray-300 hover:text-white">
+                                        <Link href="https://www.instagram.com/bunn_x.official/" className="text-gray-300 hover:text-white">
                                             <Instagram className="w-6 h-6" />
                                         </Link>
                                     </div>

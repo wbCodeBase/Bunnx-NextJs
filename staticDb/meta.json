@@ -13,7 +13,7 @@
     "title": "Expert Software Consulting Services in India | BunnX",
     "description": "Bunnx provides strategic software consulting services in India. Get expert advice for technology, architecture, and development.",
     "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
-  }, 
+  },
   "it-consulting-services-india": {
     "title": "IT Consulting Services in India | BunnX",
     "description": "Bunnx offers expert IT consulting services in India. Optimize technology, enhance operations, and achieve business success.",
@@ -28,7 +28,7 @@
     "title": "Leading Software Development Company in India | BunnX",
     "description": "Bunnx offers expert software development services in India. Build custom, scalable, and secure software solutions for your business.",
     "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
-  },  
+  },
   "agile-consulting-services-india": {
     "title": "Agile Consulting Services in India | BunnX",
     "description": "Implement Agile successfully with Bunnx's agile consulting services in India. Enhance efficiency, collaboration, and project success.",
@@ -64,7 +64,6 @@
     "description": "Bunnx provides expert web application development services in India. Build fast, secure, and scalable websites with our skilled developers.",
     "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
   },
-
   "hire-dedicated-technical-team-india": {
     "title": "Hire Dedicated Technical Team in India | BunnX",
     "description": "Partner with Bunnx to hire dedicated technical teams in India. Access skilled developers, engineers, and IT professionals for your projects with flexible engagement models and competitive rates.",
@@ -74,7 +73,7 @@
     "title": "Offshore Dedicated Development Center India | BunnX",
     "description": "Set up an offshore dedicated development center in India with Bunnx. Scale your business with expert developers and seamless collaboration.",
     "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
-  },   
+  },
   "outsourcing-software-development-in-india": {
     "title": "Outsource Software Development in India | BunnX",
     "description": "Bunnx provides cost-effective outsourced software development in India. Get expert developers for scalable and secure solutions.",
@@ -84,7 +83,7 @@
     "title": "Expert Staff Augmentation Services in India | BunnX",
     "description": "Scale your team effortlessly with Bunnx's staff augmentation services in India. Get skilled professionals on demand.",
     "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
-  },  
+  },
   "application-development-company-india": {
     "title": "Leading Application Development Company in India | BunnX",
     "description": "Build custom applications with Bunnx, a top application development company in India. Scalable, secure, and feature-rich solutions.",
@@ -95,70 +94,54 @@
     "description": "Bunnx offers expert full stack development services in India. Build scalable, secure, and modern applications with our skilled developers.",
     "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
   },
-
   "hire-software-developer-india": {
     "title": "Hire Skilled Software Developers in India | BunnX",
     "description": "Looking for expert developers? Hire top software developers in India with Bunnx for custom, scalable, and high-quality solutions.",
     "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
   },
-  
   "it-outsourcing-services": {
     "title": "Leading IT Outsourcing Company in India | BunnX",
     "description": "Bunnx offers top IT outsourcing services in India. Reduce costs, scale faster, and access skilled professionals for your projects.",
     "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
   },
-
-  
   "hire-dedicated-development-team-india": {
     "title": "Hire Dedicated Development Team in India | BunnX",
     "description": "Need skilled developers? Hire a dedicated development team in India with Bunnx for scalable and efficient software solutions.",
     "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
   },
-
-
-  
   "ecommerce-development-company-india": {
     "title": "E-commerce Development Company in India | BunnX",
     "description": "Transform your business with Bunnx, a leading e-commerce development company in India. We deliver custom online stores, marketplace solutions, and seamless shopping experiences that drive sales and growth.",
     "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
   },
-  
-    "ecommerce-web-development": {
-      "title": "Best eCommerce Web Development Services - Secure & Scalable",
-      "description": "Get expert eCommerce web development services with secure payment integrations, advanced analytics, and custom feature development.",
-      "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
-    },
-
+  "ecommerce-web-development": {
+    "title": "Best eCommerce Web Development Services - Secure & Scalable",
+    "description": "Get expert eCommerce web development services with secure payment integrations, advanced analytics, and custom feature development.",
+    "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+  },
   "woocommerce-development-services-india": {
     "title": "Best WooCommerce Development Services - Scalable & Feature-Rich",
     "description": "Get top WooCommerce development services in India. We create scalable, feature-rich eCommerce stores with seamless integrations and future-ready solutions.",
     "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
   },
-
   "ecommerce-consulting-services": {
     "title": "eCommerce Consulting Services - Boost Online Sales",
     "description": "Our eCommerce consulting services help businesses optimize online stores, improve UX, and drive sales with advanced strategies.",
     "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
   },
-
   "shopify-development-company-in-india": {
     "title": "Best Shopify Development Company in India - Custom Solutions",
     "description": "We create dynamic Shopify stores with custom themes, integrations, and scalable eCommerce solutions.",
     "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
   },
-
-"ecommerce-maintenance-and-support-services": {
-  "title": "E-commerce Maintenance and Support Services | BunnX",
-  "description": "Keep your online store running smoothly with Bunnx's e-commerce maintenance and support services. Get regular updates, security patches, performance optimization, and 24/7 technical assistance.",
-  "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
-},
-
-"ecommerce-implementation": {
-  "title": "E-commerce Implementation Services | BunnX",
-  "description": "Transform your business vision into reality with Bunnx's e-commerce implementation services. From platform selection to launch, we deliver seamless online stores customized to your unique requirements.",
-  "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
-}
-
-
-
+  "ecommerce-maintenance-and-support-services": {
+    "title": "E-commerce Maintenance and Support Services | BunnX",
+    "description": "Keep your online store running smoothly with Bunnx's e-commerce maintenance and support services. Get regular updates, security patches, performance optimization, and 24/7 technical assistance.",
+    "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+  },
+  "ecommerce-implementation": {
+    "title": "E-commerce Implementation Services | BunnX",
+    "description": "Transform your business vision into reality with Bunnx's e-commerce implementation services. From platform selection to launch, we deliver seamless online stores customized to your unique requirements.",
+    "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+  }
 }

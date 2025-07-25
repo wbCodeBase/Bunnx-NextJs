@@ -1,12 +1,18 @@
 'use client'
 
-import Lottie from "lottie-react"; 
-import loaderJson1 from "../../public/pageAnimations/notFoundMagnifyingGlass.json";
+import Lottie from "lottie-react";
+import loaderJson1 from "#/public/pageAnimations/notFoundMagnifyingGlass.json";
 // import loaderJson2 from "../../public/pageAnimations/404NotFound.json";
 // import loaderJson from "../../public/pageAnimations/notFoundBoat.json";
 import Link from "next/link";
 
-export default function Custom404() { 
+export const metadata = {
+  title: "404 - Page Not Found | Bunnx",
+  description: "This page could not be found. Please check the URL or return to the homepage.",
+};
+
+export default function Custom404() {
+
   return (
     <div className="container mx-auto max-w-screen-xl px-4 md:px-6 pb-16 flex flex-col gap-20 items-center justify-center min-h-screen">
 
@@ -49,7 +55,7 @@ export default function Custom404() {
         </Link>
       </div>
 
-      
+
       {/* <div className="border border-gray-200 w-full"></div> */}
 
       {/* Third 404 Section */}

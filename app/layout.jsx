@@ -27,18 +27,21 @@ const quando = Quando({
 
 
 export const metadata = {
-  title: {
+  // title: {
+  //   template: '%s',
+  //   default: 'Software Development Services in India | Custom Development Solutions | BunnX', // a default is required when creating a template
+  // },
+  // description: "Software development services in India for scalable web & mobile apps development.  We believe in innovative and yet cost-effective solutions tailored by expert developers.",
+  robots: {
     template: '%s',
-    default: 'Software Development Services in India | Custom Development Solutions | BunnX', // a default is required when creating a template
-  },
-  description: "Software development services in India for scalable web & mobile apps development.  We believe in innovative and yet cost-effective solutions tailored by expert developers.",
-  robots: "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large", // Ensures pages are marked as noindex
+    default: 'noindex, nofollow'
+  }, // Ensures pages are marked as noindex
 
   metadataBase: new URL('https://www.bunnx.com'),
 
-  alternates: {
-    canonical: '/',
-  },
+  // alternates: {
+  //   canonical: '/',
+  // }, 
 
   openGraph: {
     url: '/',
@@ -104,7 +107,7 @@ export default async function RootLayout({ children }) {
 
 
       <body className={` ${quando.variable} ${arOneSans.variable} antialiased`}>
-      <GoogleTagManager gtmId="G-MWQ723WDF6" />
+        <GoogleTagManager gtmId="G-MWQ723WDF6" />
 
         <SessionProvider>
           <ReduxProvider>
