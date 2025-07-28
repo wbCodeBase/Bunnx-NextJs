@@ -83,7 +83,7 @@ const jsonLd = {
     "telephone": "+91-9971544661",
     "contactType": "customer service",
     "areaServed": "IN",
-    "availableLanguage": ["en", "Hindi"]
+    "availableLanguage": ["en", "Hindi"] 
   },
   "sameAs": [
     "https://www.facebook.com/Bunnx.official/",
