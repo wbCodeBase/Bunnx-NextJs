@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import Image from 'next/image';
+import Image from 'next/image'; 
 import guideIntroDefault from "/public/guideIntroDefault.jpeg";
 
 import { createLinkedContent } from '#/utils/LinkBuilder';
@@ -5296,9 +5296,9 @@ export default function GuideTopics({ serviceDetailPageSlug }) {
         <main className="max-w-3xl mx-auto">
           {guideData.sections.map(({ id, content }) => (
             <section id={id} key={id} className="mb-12">
-              <h1 className="mb-6 text-xl font-semibold text-gray-800">
+              <h3 className="mb-6 text-xl font-semibold text-gray-800">
                 {content.heading}
-              </h1>
+              </h3>
               {content.image && (
                 <Image
                   src={content.image.src}
