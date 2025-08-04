@@ -27,11 +27,6 @@ const quando = Quando({
 
 
 export const metadata = {
-  // title: {
-  //   template: '%s',
-  //   default: 'Software Development Services in India | Custom Development Solutions | BunnX', // a default is required when creating a template
-  // },
-  // description: "Software development services in India for scalable web & mobile apps development.  We believe in innovative and yet cost-effective solutions tailored by expert developers.",
   robots: {
     template: '%s',
     default: 'noindex, nofollow'
@@ -83,7 +78,7 @@ const jsonLd = {
     "telephone": "+91-9971544661",
     "contactType": "customer service",
     "areaServed": "IN",
-    "availableLanguage": ["en", "Hindi"] 
+    "availableLanguage": ["en", "Hindi"]
   },
   "sameAs": [
     "https://www.facebook.com/Bunnx.official/",

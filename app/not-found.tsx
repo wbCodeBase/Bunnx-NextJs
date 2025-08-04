@@ -6,10 +6,10 @@ import loaderJson1 from "#/public/pageAnimations/notFoundMagnifyingGlass.json";
 // import loaderJson from "../../public/pageAnimations/notFoundBoat.json";
 import Link from "next/link";
 
-export const metadata = {
-  title: "404 - Page Not Found | Bunnx",
-  description: "This page could not be found. Please check the URL or return to the homepage.",
-};
+// export const metadata = {
+//   title: "404 - Page Not Found | Bunnx",
+//   description: "This page could not be found. Please check the URL or return to the homepage.",
+// };
 
 export default function Custom404() {
 
