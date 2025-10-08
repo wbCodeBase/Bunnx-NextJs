@@ -3,20 +3,37 @@ import React from 'react'
 import Image from 'next/image'
 import CountUp from 'react-countup';
 
-import eqipped from "/public/clientLogos/eqipped.webp"
-import enkarma from "/public/clientLogos/enkarma.png"
-import fundingCenter from "/public/clientLogos/fundingCenter.png"
-import coreops from "/public/clientLogos/coreops.png"
-import collab from "/public/clientLogos/collab.jpg"
-import whitebunnie from "/public/clientLogos/whitebunnie.svg"
+// import eqipped from "/public/clientLogos/eqipped.webp"
+// import enkarma from "/public/clientLogos/enkarma.png"
+// import fundingCenter from "/public/clientLogos/fundingCenter.png"
+// import coreops from "/public/clientLogos/coreops.png"
+// import collab from "/public/clientLogos/collab.jpg"
+// import whitebunnie from "/public/clientLogos/whitebunnie.svg"
+
+
+import coreops from "/public/logo/coreops.png"
+import deselect from "/public/logo/deselect.png"
+import hexaview from "/public/logo/hexaview.png"
+import jera from "/public/logo/Jera.png"
+import netrika from "/public/logo/Netrika.png"
+import nimble from "/public/logo/nimble.png"
+import nodinite from "/public/logo/nodinite.png"
+import Peersol from "/public/logo/Peersol.png"
+import saaswork from "/public/logo/saaswork.png"
+
+
+
 
 const clients = [
-    { name: 'Eqipped', icon: eqipped },
-    { name: 'Enkarma', icon: enkarma },
-    { name: 'FundingCenter', icon: fundingCenter },
+    { name: 'Peersol', icon: Peersol },
+    { name: 'Saaswork', icon: saaswork },
+    { name: 'Nodinite', icon: nodinite },
     { name: 'Coreops', icon: coreops },
-    { name: 'Collab', icon: collab },
-    { name: 'Whitebunnie', icon: whitebunnie },
+    { name: 'Nimble', icon: nimble },
+    { name: 'Netrika', icon: netrika },
+    { name: 'Jera', icon: jera },
+    { name: 'Hexaview', icon: hexaview },
+    { name: 'Deselect', icon: deselect },
 ]
 
 export default function NumericCounterInfo() {
