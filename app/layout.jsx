@@ -13,7 +13,7 @@ import ScrollToTop from "@/components/layout/ScrollToTop";
 
 
 const arOneSans = AR_One_Sans({
-  subsets: ['latin'],
+  subsets: ['latin'], 
   variable: '--font-arOneSans',
   display: 'swap',
 })

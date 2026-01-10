@@ -52,11 +52,7 @@ const CaseStudiesnProjects = () => {
                                 <p className='text-sm text-gray-500 font-normal'>Measure and improve software standards with key insights.</p>
                             </div>
 
-                            {/* <div className="">
-                                <span><IoIosCloud className='text-blue-500 text-xl' /></span>
-                                <h5 className='font-semibold my-1'>Real Time Data</h5>
-                                <p className='text-sm text-gray-500 font-normal'>Every success story reflects design by Abhishek Kashyap</p>
-                            </div> */}
+                        
 
                         </div>
 

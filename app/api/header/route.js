@@ -1,4 +1,4 @@
-// app/api/header/route.js
+// app/api/Header/route.js
 import connectToDatabase from '../../../utils/database';
 import { getHeaderMenu } from '../../../controllers/headerController';
 
