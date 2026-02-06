@@ -19,7 +19,7 @@ export const sendLeadNotification = async (leadData) => {
       to: "whitebunniewebleads@gmail.com",
       subject: "New Lead Notification from Bunnx Website",
       html: `
-        <h1>New Lead Details</h1>
+        <h1>Bunnx Lead Details</h1>
         <p><strong>Name:</strong> ${leadData.name || "N/A"}</p>
         <p><strong>Email:</strong> ${leadData.email || "N/A"}</p>
         <p><strong>Phone:</strong> ${leadData.phone || "N/A"}</p>

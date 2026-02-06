@@ -5,13 +5,15 @@
       "dom.iterable",
       "esnext"
     ],
-
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./app/*"],
-      "#/*": ["./*"]
+      "@/*": [
+        "./app/*"
+      ],
+      "#/*": [
+        "./*"
+      ]
     },
-
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -27,14 +29,17 @@
       {
         "name": "next"
       }
-    ]
+    ],
+    "target": "ES2017"
   },
   "include": [
     "next-env.d.ts",
-    ".next/types/**/*.ts", 
+    ".next/types/**/*.ts",
     "**/*.ts",
-    "**/*.tsx"
-, "app/service/[serviceDetails]/page.jsx", "utils/email.js"  ],
+    "**/*.tsx",
+    "app/service/[serviceDetails]/page.jsx",
+    "utils/email.js"
+  ],
   "exclude": [
     "node_modules"
   ]

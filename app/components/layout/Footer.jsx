@@ -45,7 +45,7 @@ const Footer = () => {
             window.location.href = "/thank-you"
         } catch (err) {
             console.log(err);
-            alert('Error submitting form: ' + err.data.error);
+            // alert('Error submitting form: ' + err);
         }
     };
 

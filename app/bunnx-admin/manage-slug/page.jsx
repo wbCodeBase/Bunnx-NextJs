@@ -3,7 +3,7 @@
 import "../template.css";
 
 import AdminpanelLayout from "@/components/adminpanel/AdminpanelLayout";
-import ActiveSlugManage from "@/components/adminpanel/ActiveSlugManage";
+// import ActiveSlugManage from "@/components/adminpanel/ActiveSlugManage";
 
 const ActiveSlug = () => {
 
@@ -11,7 +11,6 @@ const ActiveSlug = () => {
     <AdminpanelLayout>
 
       <ActiveSlugManage />
-
     </AdminpanelLayout>
   );
 };
